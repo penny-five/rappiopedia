@@ -26,7 +26,7 @@ Marraskuun 16. päivän 2024 Reddit-ketjussa seurattiin [[pullis|Pulliksen]] [[p
 
 ## Mallorca syyskuussa
 
-Syyskuussa Megis oli [[mallorca_livet_2026|Mallorcan yhteisstriimeissä]] Pulliksen, Sampen ja Chiaran seurueessa. [@P178]
+Syyskuussa Megis oli [[mallorca_livet_2026|Mallorcan yhteisstriimeissä]] Pulliksen, Sampen ja Chiaran seurueessa. Matkan 22. syyskuuta striimatulla rantapäivällä [[sampe|Sampen]] ja [[pullis|Pulliksen]] laukut katosivat. Megis oli muiden seurueen jäsenten kanssa rannalla, kun laukkujen katoaminen huomattiin. [@P178] [@P264]
 
 ## Yhteislähetykset lokakuussa 2026
 
