@@ -137,6 +137,50 @@ export function projectedEdgePoint(a, b, t) {
   };
 }
 
+/** Place relationship verbs in screen space so they do not disappear when links
+ * are foreshortened by camera rotation or overlap other nodes. Always return
+ * a visible placement for each projected relationship, even in a crowded view. */
+export function placeRelationshipLabels(links, nodeBoxes, width, height) {
+  if (width < 100 || height < 40) return [];
+  const placed = [];
+  const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
+  const overlapArea = (a, b) =>
+    Math.max(0, Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x)) *
+    Math.max(0, Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y));
+
+  for (const link of links) {
+    const {p, q, w, h} = link;
+    const dx = q.x - p.x, dy = q.y - p.y;
+    const length = Math.hypot(dx, dy);
+    // A projected 3D edge can be nearly a point, even when both nodes are visible.
+    const nx = length > 1 ? -dy / length : 0;
+    const ny = length > 1 ? dx / length : -1;
+    let best = null, bestScore = Infinity;
+    for (const t of [.5, .35, .65, .2, .8]) {
+      for (const offset of [0, 18, -18, 36, -36, 60, -60, 90, -90, 125, -125]) {
+        const rawX = p.x + dx * t + nx * offset - w / 2;
+        const rawY = p.y + dy * t + ny * offset - h / 2;
+        const x = clamp(rawX, 8, Math.max(8, width - w - 8));
+        const y = clamp(rawY, 8, Math.max(8, height - h - 8));
+        const rect = {x, y, w, h};
+        // Prefer labels near their link, but keep labels and node titles apart.
+        const collision = placed.reduce((cost, prev) =>
+          cost + overlapArea(rect, prev) / (w * h) * 900, 0);
+        const nodeCollision = nodeBoxes.reduce((cost, node) =>
+          cost + overlapArea(rect, node) / (w * h) * 700, 0);
+        const score = collision + nodeCollision + Math.abs(offset) * .15 +
+          Math.abs(t - .5) * 40 + (Math.abs(x - rawX) + Math.abs(y - rawY)) * .12;
+        if (score < bestScore) {
+          bestScore = score;
+          best = rect;
+        }
+      }
+    }
+    placed.push({...link, ...best});
+  }
+  return placed;
+}
+
 /** Keep the focused neighborhood readable while other labels reflect zoom/depth. */
 export function graphLabelScale(perspectiveScale, inFocus) {
   return inFocus ? 1 : Math.max(.6, Math.min(1, perspectiveScale * 2.75));
