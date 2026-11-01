@@ -8,7 +8,7 @@ Big Brother toi Willmanille televisiojulkisuutta vuosia ennen Kick-lähetyksiä.
 
 ## TikTok ja Kick vuonna 2026
 
-Willmanin Kick-kanava tunnetaan nimellä *jjuliaelisa*, ja hänen TikTok-tunnuksensa on *jjuliaelisaa*. StreamRecorderin julkisessa lähetysarkistossa näkyy syys–lokakuun 2026 videoita arkisista tilanteista, matkustamisesta ja muiden somepersoonien seurasta.
+Willman striimaa Kickissä nimimerkillä *jjuliaelisa* ja julkaisee TikTokissa nimellä *jjuliaelisaa*. Syys–lokakuussa 2026 hän kuvasi arkisia tilanteita, matkustamista ja muiden somepersoonien kanssa viettämiään hetkiä.
 
 ## Mökkistriimit Pulliksen ja Megiksen kanssa
 
@@ -16,7 +16,7 @@ Heinäkuun 2026 [[mokkistriimit_july_2026|mökkireissulla]] Julia esiintyi [[meg
 
 ## Helsingin-lähetys Sampen kanssa
 
-Lokakuun 29. päivän Julian striimi *sampen kans stadin yössä* ja Sampen *Hki w/ @jjuliaelisa* dokumentoivat [[julia_sampe_helsinki_2026|yhteisen Helsingin-lähetyksen]]. [@P179] [@P180]
+Lokakuun 29. päivänä Julia teki [[julia_sampe_helsinki_2026|Helsingin yössä kuvatun yhteislähetyksen]] [[sampe|SampeF2:n]] kanssa. Julia otsikoi oman striiminsä *sampen kans stadin yössä* ja Sampe omansa *Hki w/ @jjuliaelisa*. [@P179] [@P180]
 
 ## Kristian Heiskarin yhteislähetys
 
