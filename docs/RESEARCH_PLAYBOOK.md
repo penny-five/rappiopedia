@@ -48,6 +48,12 @@ Lähteitä ei tarvitse rajata vain suurten uutismedioiden aineistoon, mutta erot
 
 **Subathonien kartoitus:** etsi jokaiselle lähetysmaratonille erikseen paikka, aloitus, tiedossa oleva päättyminen, formaatti, vieraat ja tallenne. Tulevasta maratonista kertova ennakko ei osoita toteutumista. Varmista myös hakutuloksen henkilö: KP2Timesin subathon ei ole Pottukoiran subathon.
 
+### Ylilaudan lukurajoitukset ja korvaavat lähteet
+
+Ylilaudan `robots.txt` kieltää muun muassa ChatGPT-User-, GPTBot- ja OAI-SearchBot-tunnuksilta sivujen automaattisen hakemisen. Sivustoa seuraava Crawl Census -mittaus on myös havainnut, että palvelin palauttaa datakeskusosoitteista tuleville hauille HTTP 410 -vastauksia. ChatGPT:n selaustyökalu voi siksi palauttaa ketjun avaamisesta `DisabledError`-virheen. Tämä on tekninen este, eikä se tarkoita, ettei ketjua olisi olemassa. Mittaus: https://crawlcensus.com/site/ylilauta.org.
+
+Älä oleta lukeneesi Ylilaudan ketjun viestejä pelkän hakukatkelman perusteella. Etsi sama henkilö, videokooste tai tapahtuma alkuperäisistä YouTube-/Kick-tallenteista, Redditin päivätyistä ketjuista ja muista julkisista uutisista. Google-hakutulos voi ohjata lähteen jäljille, mutta tarkista yksityiskohdat avattavasta lähteestä ennen julkaisemista. Älä yritä ohittaa palvelimen estoa muuttamalla hakijan tunnistetta. Jos alkuperäinen ketju jää lukematta, jätä avoin tarkistuskysymys `research/leads.json`-tiedostoon.
+
 ### Käytä keskustelupalstojen aineistoa
 
 Redditin, Ylilaudan ja muiden julkisten keskustelujen viestit voivat auttaa selvittämään striimausvierailuja, matkaseurueita ja tapahtumia. Yksilöity viesti tai ketju voi olla myös artikkelin lähde.
