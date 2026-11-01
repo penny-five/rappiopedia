@@ -6,6 +6,7 @@
 import { articleBreadcrumbParts } from './lib/article-breadcrumb.js';
 import { groupRelatedByType } from './lib/relations.js';
 import { articleMarkdownFor } from './lib/article-content.js';
+import { nodeFallbackMarkup } from './lib/node-fallback.js';
 const authored = import.meta.glob('./articles/*.md', {query:'?raw',import:'default',eager:true});
 export function escapeHtml(value){
   return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -53,9 +54,9 @@ export function renderNodeArticle({node,related,nodes,sources,levels,group,categ
   const name=escapeHtml(node.name);
   const breadcrumb=articleBreadcrumbParts(node,group).map(escapeHtml).join(' <span>›</span> ');
   document.getElementById('dochead').innerHTML='<div class="breadcrumbs">'+breadcrumb+'</div><h2>'+name+'</h2>';
-  const initials=node.name.replace(/[^\p{L}\p{N} ]/gu,' ').trim().split(/\s+/).slice(0,2).map(x=>x[0]).join('');
+  const fallback=nodeFallbackMarkup(node,2);
   const picture=node.image?'<img loading="lazy" referrerpolicy="no-referrer" alt="'+name+'" src="'+escapeHtml(node.image)+'">':'';
-  const box='<div class="infobox"><div class="infobox-head">'+name+'</div><div class="infobox-media"><span>'+escapeHtml(initials)+'</span>'+picture+'</div><dl>'+
+  const box='<div class="infobox"><div class="infobox-head">'+name+'</div><div class="infobox-media"><span class="infobox-fallback">'+fallback+'</span>'+picture+'</div><dl>'+
     '<div><dt>'+(node.types?.length>1?'Tyypit':'Tyyppi')+'</dt><dd>'+escapeHtml(category)+'</dd></div><div><dt>Skene</dt><dd>'+escapeHtml(group)+'</dd></div>'+
     '<div><dt>Yhteyksiä</dt><dd>'+related.length+'</dd></div><div><dt>Lähteitä</dt><dd>'+sourceIds.length+'</dd></div></dl></div>';
   document.getElementById('articleBody').innerHTML=box+markdownToHtml(text,nodes,sources);
