@@ -1679,6 +1679,32 @@
         -90
       ],
       "featured": false
+    },
+    {
+      "id": "rauno77",
+      "name": "Rauno77",
+      "group": "rappio",
+      "cat": "person",
+      "note": "Kick-striimaaja, joka teki Pottukoiran kanssa yhteisiä live-lähetyksiä loppuvuonna 2025.",
+      "pos3": [
+        1390,
+        -390,
+        830
+      ],
+      "featured": false
+    },
+    {
+      "id": "alisa_bamat",
+      "name": "Alisa / Bämät matkoilla",
+      "group": "talks",
+      "cat": "person",
+      "note": "Redditin lokakuun 2026 keskusteluissa Ruusutossun kanssa Bämät matkoilla -striimireissuun liitetty julkinen somehahmo.",
+      "pos3": [
+        1230,
+        455,
+        -140
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -3797,6 +3823,67 @@
       "src": [
         "P63"
       ]
+    },
+    {
+      "a": "pottu",
+      "b": "rauno77",
+      "label": "yhteisiä Kick-lähetyksiä loppuvuonna 2025",
+      "level": "reported",
+      "src": [
+        "P62"
+      ],
+      "date": "2025-12"
+    },
+    {
+      "a": "bamat",
+      "b": "ruusu",
+      "label": "Ranskan striimireissun osallistuja keskusteluketjun mukaan",
+      "level": "reported",
+      "src": [
+        "P65"
+      ],
+      "date": "2026-10"
+    },
+    {
+      "a": "bamat",
+      "b": "alisa_bamat",
+      "label": "Ranskan striimireissun osallistuja keskusteluketjun mukaan",
+      "level": "reported",
+      "src": [
+        "P65"
+      ],
+      "date": "2026-10"
+    },
+    {
+      "a": "ruusu",
+      "b": "alisa_bamat",
+      "label": "Bämät matkoilla -matkakumppanit keskusteluketjun mukaan",
+      "level": "reported",
+      "src": [
+        "P65"
+      ],
+      "date": "2026-10"
+    },
+    {
+      "a": "saini",
+      "b": "bamat",
+      "label": "Redditin mukaan jakoi Bämät matkoilla -sisältöä; tuotantorooli avoin",
+      "level": "reported",
+      "src": [
+        "P66"
+      ],
+      "date": "2026-10"
+    },
+    {
+      "a": "bamat",
+      "b": "talks",
+      "label": "PactTalks-vierailut jaksoissa 97 ja 98",
+      "level": "verified",
+      "src": [
+        "P64",
+        "P67"
+      ],
+      "date": "2026-10-30"
     }
   ],
   "sources": {
@@ -4114,6 +4201,31 @@
       "label": "Gekkonen 12.10.2026: Pasi Viheraho PactTalksissa",
       "url": "https://gekkonen.net/pasi-viheraho-paljasti-pact-talksissa-totuuden-vesihanalegendasta-ihmiset-on-niin-dilleja/",
       "note": "11.10.2026 lähetys, juontaja Jethro Rostedt, vieras Pasi Viheraho."
+    },
+    "P62": {
+      "label": "Gekkonen 9.12.2025: Pottukoiran ja Rauno77:n yhteisstriimit",
+      "url": "https://gekkonen.net/ystava-vaittaa-pottukoira-pahoinpiteli-pesismailalla-ja-kaasusumuttimella/",
+      "note": "Artikkelissa kuvataan Pottukoiran ja Rauno77:n yhteislähetyksiä. Yksityisiä tai kiistettyjä tapahtumaväitteitä ei kopioida verkostoon."
+    },
+    "P64": {
+      "label": "KickTracker: PACTin lokakuun 2026 lähetykset",
+      "url": "https://kicktracker.net/pact/streams",
+      "note": "PactTalks EP 97 ja 98: Bämät matkoilla vieraana; !stake-tunniste. Otsikkohistoria ei vahvista sponsorisopimuksen ehtoja."
+    },
+    "P65": {
+      "label": "Reddit 23.10.2026: Bämät matkoilla, Alisa ja Ruusutossu",
+      "url": "https://www.reddit.com/r/snappijuorut/comments/1xddl2r/joko_on_t%C3%A4%C3%A4ll%C3%A4_postaus_t%C3%A4st%C3%A4/",
+      "note": "Useat kommentit kuvailevat Alisan ja Ruusutossun yhteistä Ranskan-matkaa ja Bämät matkoilla -kanavaa. Foorumilähde matka-/ohjelmayhteydelle."
+    },
+    "P66": {
+      "label": "Reddit 24.10.2026: Bämät matkoilla ja Saini",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1xe0q6x/miss%C3%A4_menee_raja/",
+      "note": "Käyttäjien mukaan Saini oli jakanut Bämät matkoilla -julkaisuja; tuotantorooli ja mahdolliset sopimukset ovat avoimia."
+    },
+    "P67": {
+      "label": "AeroKick: PACT-kanavan lähetysarkisto",
+      "url": "https://aerokick.app/stats/channels/pact",
+      "note": "Tukee KickTrackerin EP 97–98 -lähetyspäivien ja vierasnimien havaintoja."
     }
   },
   "date": "2026-11-01"
