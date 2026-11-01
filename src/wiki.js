@@ -4,6 +4,7 @@
  * only from the validated network registries.
  */
 import { articleBreadcrumbParts } from './lib/article-breadcrumb.js';
+import { groupRelatedByType } from './lib/relations.js';
 const authored = import.meta.glob('./articles/*.md', {query:'?raw',import:'default',eager:true});
 export function escapeHtml(value){
   return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -69,11 +70,13 @@ export function renderNodeArticle({node,related,nodes,sources,levels,group,categ
   const img=document.querySelector('#articleBody .infobox-media img');
   if(img){img.addEventListener('error',()=>img.remove(),{once:true})}
   document.getElementById('relhead').textContent='Yhteydet ('+related.length+')';
-  document.getElementById('relations').innerHTML=related.map(e=>'<div class="rel"><div class="rel-top">'+
+  document.getElementById('relations').innerHTML=groupRelatedByType(related).map(({label,edges})=>
+    '<section class="relation-group"><h4 class="relation-group-title">'+escapeHtml(label.charAt(0).toLocaleUpperCase('fi')+label.slice(1))+' <span>('+edges.length+')</span></h4>'+
+    edges.map(e=>'<div class="rel"><div class="rel-top">'+
     '<button type="button" data-focus="'+escapeHtml(e.other.id)+'">'+escapeHtml(e.other.name)+'</button>'+
-    '<label>'+escapeHtml(levels[e.level]?.label||e.level)+'</label></div><div class="lbl"><span class="rel-verb">'+escapeHtml(e.relationVerb)+'</span> '+escapeHtml(e.label)+(e.date?' · '+escapeHtml(e.date):'')+'</div>'+
+    '<label>'+escapeHtml(levels[e.level]?.label||e.level)+'</label></div><div class="lbl">'+escapeHtml(e.label)+(e.date?' · '+escapeHtml(e.date):'')+'</div>'+
     (e.detail?'<div class="meta">'+escapeHtml(e.detail)+'</div>':'')+
-    '<div>'+e.src.filter(id=>sources[id]).map(id=>'<a href="'+escapeHtml(sources[id].url)+'" target="_blank" rel="noopener noreferrer">['+escapeHtml(id)+']</a>').join(' ')+'</div></div>').join('')||'<p class="empty">Ei suoria yhteysmerkintöjä.</p>';
+    '<div>'+e.src.filter(id=>sources[id]).map(id=>'<a href="'+escapeHtml(sources[id].url)+'" target="_blank" rel="noopener noreferrer">['+escapeHtml(id)+']</a>').join(' ')+'</div></div>').join('')+'</section>').join('')||'<p class="empty">Ei suoria yhteysmerkintöjä.</p>';
   document.getElementById('srcHead').textContent='Lähteet ('+sourceIds.length+')';
   document.getElementById('sources').innerHTML=sourceIds.map(id=>'<a target="_blank" rel="noopener noreferrer" href="'+escapeHtml(sources[id].url)+'">['+escapeHtml(id)+'] '+escapeHtml(sources[id].label)+'<small>'+escapeHtml(sources[id].note||'')+'</small></a>').join('')||'<p class="empty">Ei lähteitä.</p>';
 }
