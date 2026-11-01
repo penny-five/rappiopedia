@@ -2679,7 +2679,10 @@
         35,
         -1440
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/joonas_jaaskelainen.webp",
+      "imageSource": "https://image.seiska.fi/1944833.webp?compression=70&format=jpg&height=349&imageId=1944833&width=620",
+      "imageCredit": "Nelonen / Seiska, Joonas Jääskeläisen Temptation Island -henkilökuva (29.9.2025)"
     },
     {
       "id": "venni_kananen",
