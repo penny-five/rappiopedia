@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 const data=JSON.parse(readFileSync(new URL('../src/data/network.json',import.meta.url),'utf8'));
 const nodeIds=new Set(data.nodes.map(n=>n.id));
 const sourceIds=new Set(Object.keys(data.sources));
@@ -21,11 +21,18 @@ test('markdown wikilinks and source IDs resolve',()=>{
   assert.ok(!/<\/?script|onerror\s*=/i.test(body),file+' unsafe markup');
  }
 });
-test('optimized image paths point to local WebP files',()=>{
+test('optimized image paths refer to present or regenerable WebP assets',()=>{
  for(const n of data.nodes){
   if(!n.image) continue;
   assert.equal(n.image,'images/'+n.id+'.webp',n.id+' requires local image path');
-  assert.ok(readFileSync(new URL('../public/'+n.image,import.meta.url)).length>0,n.id+' local image missing');
+  const path=new URL('../public/'+n.image,import.meta.url);
+  if(existsSync(path)){
+   assert.ok(readFileSync(path).length>0,n.id+' local image is empty');
+  }else{
+   // WebPs may be generated from imageSource during the deployment workflow.
+   assert.match(n.imageSource||'',/^https?:\/\//,n.id+' missing a source image URL');
+   assert.ok(process.env.CI!=='true',n.id+' local image missing after CI image preparation');
+  }
  }
 });
 
