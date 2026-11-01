@@ -4,9 +4,21 @@
 
 Pirkkis tuli katsojille tutuksi muun muassa Pottukoiran [[spurgu|Spurgu-TV]]-lähetyksistä. Gekkonen uutisoi heidän yhteisestä lähetyksestään toukokuussa 2025. Pirkkiksen on kerrottu vierailleen myös [[iippa|Iippadaan]] suoratoistossa. [@P48] [@P57]
 
+## Yhteissubathonit ja pitkä tuttavuus Pottukoiran kanssa
+
+[[pottu|Pottukoira]] kertoi Seiskalle marraskuussa 2025 tunteneensa Pirkkiksen pitkään. Kärkkäisen mukaan tuttavuus alkoi, kun Pirkkis tuli kommentoimaan hänen YouTube-videoitaan. [@P50]
+
+Marraskuussa 2024 kaksikko piti [[pottu_viro_sub_2024|Viron subathonin]], jonka aikana he lähettivät ohjelmaa Tallinnasta ja Pottukoiran kodista. Tammikuussa 2025 he tekivät [[pottu_espanja_sub_2025|Gran Canarian subathonin]] Playa del Inglésissä. Espanjassa Kärkkäinen kertoi lähetyksessään auttaneensa Pirkkistä tilanteessa, jossa tämän oli hänen kertomuksensa mukaan ollut vähällä tukehtua tajuttomana. Tapahtuma ei tallentunut livekameraan. [@P188] [@P189]
+
+Heinäkuussa 2026 Reddit-ketjussa jaettiin tieto Pirkkiksen uudesta vierailusta Pottukoiran luona. Kyseessä oli uusi vierailu, ei sama tapahtuma kuin vuosien 2024 ja 2025 subathonit. [@P193]
+
 ## Striimit eri tekijöiden kanssa
 
 Liimatta ei ole esiintynyt ainoastaan Pottukoiran kanssa. Marraskuun 2025 uutisissa häntä kuvattiin myös [[iippa|Iippadaan]] lähetyksissä vierailleeksi. Hän on siten liikkunut useiden rappiostriimaajien suoratoistoyhteisöissä ilman, että kaikki lähetykset olisivat samaa ohjelmasarjaa. [@P57]
+
+## Väkivaltatilanne suorassa lähetyksessä toukokuussa 2026
+
+Gekkonen uutisoi 22. toukokuuta 2026, että Pirkkikseen oli kohdistunut väkivaltaa Kick-lähetyksen aikana. Lehden kuvailemassa videotilanteessa mies läpsäisi Liimattaa ensin takaraivoon ja löi myöhemmin kasvoihin. Pirkkiksen silmäkulmaan tuli haava. Julkaistu uutinen ei yksilöinyt tilanteen mahdollisia myöhempiä rikosoikeudellisia ratkaisuja. [@P192]
 
 ## Kieksi-dokumentti
 
