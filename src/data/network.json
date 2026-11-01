@@ -1,0 +1,3551 @@
+{
+  "nodes": [
+    {
+      "id": "pact",
+      "name": "PACT / PactHouse",
+      "group": "core",
+      "cat": "show",
+      "note": "Kickissä esitettävä suomalainen live-realityformaatti; erilliset kaudet ja PactTalks.",
+      "x": 2080,
+      "y": 170,
+      "image": "https://pacthouse3.net/pact-logo.jpg",
+      "imageCredit": "PactHouse, brändin logo",
+      "pos3": [
+        0,
+        50,
+        0
+      ],
+      "featured": true
+    },
+    {
+      "id": "saini",
+      "name": "Anthony ”Saini” Singh",
+      "group": "core",
+      "cat": "person",
+      "note": "PactHouse-perustajaksi uutisoitu.",
+      "x": 1890,
+      "y": 285,
+      "pos3": [
+        150,
+        -50,
+        -5
+      ],
+      "featured": true
+    },
+    {
+      "id": "kick",
+      "name": "Kick",
+      "group": "core",
+      "cat": "platform",
+      "note": "Suoratoistopalvelu; yhteinen alusta ei tarkoita henkilöiden välistä sopimusta.",
+      "x": 2260,
+      "y": 320,
+      "pos3": [
+        -200,
+        -30,
+        -160
+      ],
+      "featured": false
+    },
+    {
+      "id": "s1",
+      "name": "PactHouse 1",
+      "group": "season1",
+      "cat": "show",
+      "note": "Ensimmäinen kausi 2025; osallistujalähde osittain jälkikäteinen koonti.",
+      "x": 560,
+      "y": 455,
+      "pos3": [
+        -980,
+        400,
+        -500
+      ],
+      "featured": true
+    },
+    {
+      "id": "s2",
+      "name": "PactHouse 2",
+      "group": "season2",
+      "cat": "show",
+      "note": "Marbella 1.–7.12.2025; voittaja Ilari Sahamies.",
+      "x": 1500,
+      "y": 520,
+      "pos3": [
+        -850,
+        -425,
+        570
+      ],
+      "featured": true
+    },
+    {
+      "id": "s3",
+      "name": "PactHouse 3",
+      "group": "season3",
+      "cat": "show",
+      "note": "Kreikka 1.–10.5.2026; voittaja Jethro Rostedt.",
+      "x": 2590,
+      "y": 455,
+      "pos3": [
+        -200,
+        665,
+        -890
+      ],
+      "featured": true
+    },
+    {
+      "id": "talks",
+      "name": "PactTalks",
+      "group": "talks",
+      "cat": "show",
+      "note": "PACT-kanavan Kick-talkshow, syksyn 2026 vieraat ja juontajat dokumentoitu lähetysotsikoissa.",
+      "x": 3650,
+      "y": 380,
+      "pos3": [
+        800,
+        490,
+        -210
+      ],
+      "featured": true
+    },
+    {
+      "id": "jethro",
+      "name": "Jethro Rostedt",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n voittaja ja PactTalksin juontaja.",
+      "x": 2750,
+      "y": 640,
+      "image": "https://image.seiska.fi/2141143.webp?compression=100&croph=57.33&cropw=80.13&height=630&imageId=2141143&width=1200&x=6.16&y=15.88",
+      "imageCredit": "Seiska, PactHouse 3 -uutinen",
+      "pos3": [
+        -290,
+        495,
+        -780
+      ],
+      "featured": true
+    },
+    {
+      "id": "joachim",
+      "name": "Joachim Rostedt",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2 -osallistuja; Jethro Rostedtin poika.",
+      "x": 1690,
+      "y": 760,
+      "pos3": [
+        -1020,
+        -275,
+        430
+      ],
+      "featured": true
+    },
+    {
+      "id": "sahamies",
+      "name": "Ilari Sahamies",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n voittaja.",
+      "x": 1330,
+      "y": 715,
+      "pos3": [
+        -850,
+        -395,
+        805
+      ],
+      "featured": true
+    },
+    {
+      "id": "lassi",
+      "name": "Lassi Kuhlman",
+      "group": "season1",
+      "cat": "person",
+      "note": "PactHouse 1 -osallistujalistalla; myös omaa Kick-sisältöä.",
+      "x": 430,
+      "y": 680,
+      "pos3": [
+        -1127,
+        706,
+        -479
+      ],
+      "featured": true
+    },
+    {
+      "id": "ruusu",
+      "name": "Pinja Ruusutossu",
+      "group": "talks",
+      "cat": "person",
+      "note": "PactTalks-vieras 24.8. ja 26.10.2026; EI väitetty PactHouse-kausikilpailija.",
+      "x": 3800,
+      "y": 580,
+      "pos3": [
+        1060,
+        390,
+        -10
+      ],
+      "featured": true
+    },
+    {
+      "id": "iippa",
+      "name": "Iippadaa / Iida Kurvinen",
+      "group": "rappio",
+      "cat": "person",
+      "note": "Striimaaja; Kieksi-dokumentin kohde, PactTalks-vieras ja Bailupaatti-konteksti.",
+      "x": 880,
+      "y": 1820,
+      "image": "https://image.seiska.fi/1680693.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=1680693&width=576&x=0.00&y=0.00",
+      "imageCredit": "Seiska, Iippadaa ja Pottukoira yhteiskuvassa",
+      "pos3": [
+        1270,
+        -100,
+        830
+      ],
+      "featured": true
+    },
+    {
+      "id": "pottu",
+      "name": "Pottukoira / Jouko Kärkkäinen",
+      "group": "rappio",
+      "cat": "person",
+      "note": "Striimaaja; Kieksi-dokumentin kohde, Bailupaatti-markkinointi; jäi pois risteilyltä 2026.",
+      "x": 650,
+      "y": 2000,
+      "image": "https://image.seiska.fi/2184001.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=2184001&width=576&x=0.00&y=0.00",
+      "imageCredit": "Seiska, Pottukoira-haastattelu",
+      "pos3": [
+        1330,
+        -300,
+        500
+      ],
+      "featured": true
+    },
+    {
+      "id": "sami",
+      "name": "Sami Kieksi",
+      "group": "rappio",
+      "cat": "person",
+      "note": "Dokumentaristi ja Revul Media Groupin perustaja / toimitusjohtaja.",
+      "x": 830,
+      "y": 2180,
+      "image": "https://res.cloudinary.com/findance/image/fetch/ar_3%3A2%2Cw_640%2Cc_auto%2Cg_auto%2Cf_auto/https%3A/www.findance.com/kuvat/cloudinary/tapausaarnio-tv-qhmyD.jpg",
+      "imageCredit": "Findance, Sami Kieksi",
+      "pos3": [
+        975,
+        -50,
+        485
+      ],
+      "featured": true
+    },
+    {
+      "id": "revul",
+      "name": "Revul Media Group Oy",
+      "group": "rappio",
+      "cat": "org",
+      "note": "Dokumentti- ja tapahtumatuotantoyhtiö, mm. Kieksi ja Bailupaatti.",
+      "x": 1090,
+      "y": 2260,
+      "pos3": [
+        1192,
+        -33,
+        367
+      ],
+      "featured": true
+    },
+    {
+      "id": "kieksidoc",
+      "name": "Kieksi: rappiostriimaus",
+      "group": "rappio",
+      "cat": "show",
+      "note": "Ylellä julkaistun 2026 jakson kohteita ovat Pottukoira, Iippadaa ja Upi.",
+      "x": 670,
+      "y": 2440,
+      "pos3": [
+        1120,
+        -260,
+        610
+      ],
+      "featured": true
+    },
+    {
+      "id": "upi",
+      "name": "Upi / Arttu Pulkkinen",
+      "group": "rappio",
+      "cat": "person",
+      "note": "Kieksi-dokumentin henkilö.",
+      "x": 450,
+      "y": 2620,
+      "pos3": [
+        1289,
+        -260,
+        956
+      ],
+      "featured": false
+    },
+    {
+      "id": "pirkkis",
+      "name": "Pirkka Ukko / Kari Liimatta",
+      "group": "rappio",
+      "cat": "person",
+      "note": "Kieksi-dokumentin henkilö.",
+      "x": 900,
+      "y": 2610,
+      "pos3": [
+        822,
+        -547,
+        493
+      ],
+      "featured": false
+    },
+    {
+      "id": "bailu",
+      "name": "Bailupaatti 2026",
+      "group": "events",
+      "cat": "event",
+      "note": "31.10.–2.11.2026 juhlaristeilyt; osallistumiset ja poisjäännit erotetaan.",
+      "x": 1900,
+      "y": 2000,
+      "image": "https://www.matkapojat.fi/images/imagemanager/thumbnails/MP_Bailupaatti_2026_Paakuva%2C%20p%C3%A4ivitetty.f5256ef39a95e9cb4b0a97be2f0240059485db75.jpg",
+      "imageCredit": "Matkapojat, Bailupaatti 2026 -juliste",
+      "pos3": [
+        400,
+        -700,
+        -440
+      ],
+      "featured": true
+    },
+    {
+      "id": "korelon",
+      "name": "Korelon",
+      "group": "rap",
+      "cat": "person",
+      "note": "Slikin yhteistyöartisti; Sastamalan keikka ja Bailupaatin esiintyjälista.",
+      "x": 3250,
+      "y": 1880,
+      "image": "https://cdn.s-cloud.fi/v1/w1024_q75/assets/dam-id/3f2bOjJQKr1B_8pGLdRUaj.webp?clientId=2085",
+      "imageCredit": "KPO Festarit, Korelon",
+      "pos3": [
+        -270,
+        -660,
+        -560
+      ],
+      "featured": true
+    },
+    {
+      "id": "sliki",
+      "name": "Sliki / Slik",
+      "group": "rap",
+      "cat": "person",
+      "note": "Räppäri; Sastamalan tilaisuus ja sitä seuranneet Paavo Pesusieni -häiriöt.",
+      "x": 3430,
+      "y": 2000,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg",
+      "imageCredit": "Wikimedia Commons, Slikin muotokuva",
+      "pos3": [
+        -380,
+        -790,
+        -460
+      ],
+      "featured": true
+    },
+    {
+      "id": "ossi",
+      "name": "Ossi ”Monarch” Ketola",
+      "group": "rap",
+      "cat": "person",
+      "note": "Sastamalan tapahtuman järjestäjäksi uutisoitu; itse kiistänyt myöhemmät häiriökytkökset.",
+      "x": 3290,
+      "y": 2180,
+      "image": "https://visnyk.poker/storage/news/5586-a7583226ac34a01a1364ab8803f3d86c12cb8043.png.webp",
+      "imageCredit": "Visnyk Poker, Ossi Ketola",
+      "pos3": [
+        -580,
+        -880,
+        -310
+      ],
+      "featured": true
+    },
+    {
+      "id": "sastamala",
+      "name": "Sastamalan yllätyskeikka",
+      "group": "rap",
+      "cat": "event",
+      "note": "Syyskuun 2026 tapahtuma, jossa esiintyivät Sliki ja Korelon.",
+      "x": 3100,
+      "y": 2320,
+      "pos3": [
+        -308,
+        -563,
+        -703
+      ],
+      "featured": false
+    },
+    {
+      "id": "freak",
+      "name": "Paavo Pesusieni / Freakbob",
+      "group": "rap",
+      "cat": "meme",
+      "note": "Asuun ja meemiin liittyviä keikkahäiriöitä; puku ei yksilöi henkilöä tai tilaajaa.",
+      "x": 3550,
+      "y": 2350,
+      "pos3": [
+        -211,
+        -790,
+        -114
+      ],
+      "featured": false
+    },
+    {
+      "id": "keikkah",
+      "name": "Sliki-keikkojen häiriöt",
+      "group": "rap",
+      "cat": "event",
+      "note": "Syksy 2026 eri keikkapaikoissa. Tekijöiden henkilöllisyys ja mahdollinen toimeksianto eivät vahvistettuja.",
+      "x": 3740,
+      "y": 2210,
+      "pos3": [
+        -678,
+        -1077,
+        -577
+      ],
+      "featured": false
+    },
+    {
+      "id": "ice",
+      "name": "Ice Cage 8",
+      "group": "events",
+      "cat": "event",
+      "note": "Syyskuu 2026; näkyvyyttä Aleksi Nurmisen osallistumisen kautta.",
+      "x": 2390,
+      "y": 2140,
+      "pos3": [
+        537,
+        -473,
+        -227
+      ],
+      "featured": true
+    },
+    {
+      "id": "duel",
+      "name": "Duel / Monarch Duel MMA",
+      "group": "events",
+      "cat": "org",
+      "note": "Ketolaan liitetty brändi ja Ice Cage -näkyvyys; sopimuksen sisältö ei selvä.",
+      "x": 2600,
+      "y": 2250,
+      "pos3": [
+        28,
+        -700,
+        -538
+      ],
+      "featured": true
+    },
+    {
+      "id": "kasinok",
+      "name": "Kasinokurki",
+      "group": "stream",
+      "cat": "lead",
+      "note": "Nimi näkyy osan Kick-lähetysten komentoina; toimijan taustaa ei ole vahvistettu.",
+      "x": 4090,
+      "y": 1510,
+      "pos3": [
+        1550,
+        320,
+        340
+      ],
+      "featured": true
+    },
+    {
+      "id": "pullis",
+      "name": "Pullis",
+      "group": "stream",
+      "cat": "person",
+      "note": "Striimaaja; lähetysotsikoissa !kasinokurki. Epävarma väite PactHouse 2:n tuotantoroolista.",
+      "x": 3970,
+      "y": 1680,
+      "pos3": [
+        1380,
+        180,
+        440
+      ],
+      "featured": true
+    },
+    {
+      "id": "sampe",
+      "name": "SampeF2",
+      "group": "stream",
+      "cat": "person",
+      "note": "Striimaaja; lähetysotsikoissa !kasinokurki.",
+      "x": 4210,
+      "y": 1670,
+      "pos3": [
+        1710,
+        470,
+        365
+      ],
+      "featured": false
+    },
+    {
+      "id": "kp",
+      "name": "KP2Times",
+      "group": "season1",
+      "cat": "person",
+      "note": "PactHouse 1 -listalla ja 2026 lähetysotsikossa !kasinokurki.",
+      "x": 980,
+      "y": 660,
+      "pos3": [
+        -740,
+        340,
+        -400
+      ],
+      "featured": true
+    },
+    {
+      "id": "julwill",
+      "name": "Julia Willman",
+      "group": "events",
+      "cat": "person",
+      "note": "Bailupaatilla 2026 mukana Seiskan mukaan.",
+      "x": 2110,
+      "y": 2110,
+      "pos3": [
+        684,
+        -987,
+        -589
+      ],
+      "featured": false
+    },
+    {
+      "id": "heiskari",
+      "name": "Kristian Heiskari",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3 -osallistuja; mukana Bailupaatilla 2026.",
+      "x": 2570,
+      "y": 920,
+      "pos3": [
+        -5,
+        565,
+        -820
+      ],
+      "featured": false
+    },
+    {
+      "id": "tegel",
+      "name": "Juhana Tegelberg",
+      "group": "season1",
+      "cat": "person",
+      "note": "Kausilla 1/2 listattu; Bailupaatille suunniteltu osallistuminen, mutta jäi pois.",
+      "x": 580,
+      "y": 830,
+      "pos3": [
+        -760,
+        370,
+        -640
+      ],
+      "featured": true
+    },
+    {
+      "id": "gekkonen",
+      "name": "Gekkonen",
+      "group": "media",
+      "cat": "media",
+      "note": "Viihdejulkaisu, jossa PactHouseen ja rappiostriimaukseen liittyvää uutisointia.",
+      "x": 4447,
+      "y": 1739,
+      "pos3": [
+        -1360,
+        -107,
+        -553
+      ],
+      "featured": true
+    },
+    {
+      "id": "uuno",
+      "name": "Uuno.fi",
+      "group": "media",
+      "cat": "media",
+      "note": "Viihdejulkaisu, jossa esimerkiksi PactTalksista kirjoitettu.",
+      "x": 4883,
+      "y": 1727,
+      "pos3": [
+        -1713,
+        -198,
+        -215
+      ],
+      "featured": true
+    },
+    {
+      "id": "seiska",
+      "name": "Seiska",
+      "group": "media",
+      "cat": "media",
+      "note": "Useita reportaaseja tapahtumista, PactHouse-kilpailuista ja Bailupaatista.",
+      "x": 4441,
+      "y": 1894,
+      "pos3": [
+        -1622,
+        -318,
+        -916
+      ],
+      "featured": false
+    },
+    {
+      "id": "hs",
+      "name": "Helsingin Sanomat",
+      "group": "media",
+      "cat": "media",
+      "note": "Käyttäjän alkuperäisen HS-linkin julkaisu.",
+      "x": 4869,
+      "y": 1897,
+      "pos3": [
+        -1270,
+        -447,
+        -302
+      ],
+      "featured": false
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit / snappijuorut",
+      "group": "media",
+      "cat": "media",
+      "note": "Johtolankoja, julkisia keskusteluja; kommenttiväitteet eivät ole vahvistettuja faktoja.",
+      "x": 4460,
+      "y": 2033,
+      "pos3": [
+        -1871,
+        -582,
+        -464
+      ],
+      "featured": false
+    },
+    {
+      "id": "ylilauta",
+      "name": "Ylilauta",
+      "group": "media",
+      "cat": "media",
+      "note": "Johtolankoja, julkisia keskusteluja; toistaiseksi ei yksilöityä varmistettua henkilösuhdetta.",
+      "x": 4877,
+      "y": 2046,
+      "pos3": [
+        -1540,
+        -390,
+        -500
+      ],
+      "featured": true
+    },
+    {
+      "id": "nettipokeri",
+      "name": "Nettipokeri.com",
+      "group": "media",
+      "cat": "media",
+      "note": "Sastamalan ja Ice Cage -brändinäkyvyyden uutisointi.",
+      "x": 4433,
+      "y": 2198,
+      "pos3": [
+        -1383,
+        -748,
+        -679
+      ],
+      "featured": false
+    },
+    {
+      "id": "pactchannel",
+      "name": "Kick /pact-kanava",
+      "group": "talks",
+      "cat": "platform",
+      "note": "PactHouse ja PactTalks näkyvät samassa Kick-kanavassa.",
+      "x": 3670,
+      "y": 260,
+      "pos3": [
+        950,
+        792,
+        -254
+      ],
+      "featured": false
+    },
+    {
+      "id": "slay",
+      "name": "Slaybabyangel",
+      "group": "season1",
+      "cat": "person",
+      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "x": 98,
+      "y": 999,
+      "pos3": [
+        -806,
+        670,
+        -712
+      ],
+      "featured": false
+    },
+    {
+      "id": "emsku",
+      "name": "Emsku",
+      "group": "season1",
+      "cat": "person",
+      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "x": 505,
+      "y": 987,
+      "pos3": [
+        -960,
+        615,
+        -128
+      ],
+      "featured": false
+    },
+    {
+      "id": "ada",
+      "name": "Ada",
+      "group": "season1",
+      "cat": "person",
+      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "x": 869,
+      "y": 1003,
+      "pos3": [
+        -1212,
+        502,
+        -727
+      ],
+      "featured": false
+    },
+    {
+      "id": "krisse",
+      "name": "Krissefitnesse",
+      "group": "season1",
+      "cat": "person",
+      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "x": 1248,
+      "y": 989,
+      "pos3": [
+        -597,
+        438,
+        -487
+      ],
+      "featured": false
+    },
+    {
+      "id": "testo",
+      "name": "Testoosku",
+      "group": "season1",
+      "cat": "person",
+      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "x": 96,
+      "y": 1155,
+      "pos3": [
+        -1305,
+        357,
+        -222
+      ],
+      "featured": false
+    },
+    {
+      "id": "chiara",
+      "name": "Chiara",
+      "group": "season1",
+      "cat": "person",
+      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "x": 500,
+      "y": 1143,
+      "pos3": [
+        -941,
+        298,
+        -822
+      ],
+      "featured": false
+    },
+    {
+      "id": "megis",
+      "name": "Megis / Megarokkistara",
+      "group": "season1",
+      "cat": "person",
+      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "x": 881,
+      "y": 1155,
+      "pos3": [
+        -786,
+        208,
+        -229
+      ],
+      "featured": false
+    },
+    {
+      "id": "anton",
+      "name": "Anton Koskela",
+      "group": "season1",
+      "cat": "person",
+      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "x": 1257,
+      "y": 1146,
+      "pos3": [
+        -1280,
+        99,
+        -564
+      ],
+      "featured": false
+    },
+    {
+      "id": "karva",
+      "name": "Karvalakkimies",
+      "group": "season1",
+      "cat": "person",
+      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "x": 99,
+      "y": 1296,
+      "pos3": [
+        -852,
+        94,
+        -575
+      ],
+      "featured": false
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel Hellman",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 1276,
+      "y": 982,
+      "pos3": [
+        -909,
+        -116,
+        699
+      ],
+      "featured": false
+    },
+    {
+      "id": "ella",
+      "name": "Ella Toivainen",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 1602,
+      "y": 966,
+      "pos3": [
+        -931,
+        -145,
+        319
+      ],
+      "featured": false
+    },
+    {
+      "id": "isabell",
+      "name": "Isabell Jansson",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 1918,
+      "y": 966,
+      "pos3": [
+        -537,
+        -190,
+        748
+      ],
+      "featured": false
+    },
+    {
+      "id": "joni",
+      "name": "Joni Hesselgren",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 2255,
+      "y": 959,
+      "pos3": [
+        -1159,
+        -301,
+        641
+      ],
+      "featured": false
+    },
+    {
+      "id": "kelly",
+      "name": "Kelly Kalonji",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 1272,
+      "y": 1126,
+      "pos3": [
+        -635,
+        -355,
+        258
+      ],
+      "featured": false
+    },
+    {
+      "id": "liina",
+      "name": "Liina Simpson",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 1599,
+      "y": 1114,
+      "pos3": [
+        -791,
+        -425,
+        996
+      ],
+      "featured": false
+    },
+    {
+      "id": "maga",
+      "name": "Magamed ”Maga” Gadiev",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 1902,
+      "y": 1129,
+      "pos3": [
+        -1107,
+        -487,
+        357
+      ],
+      "featured": false
+    },
+    {
+      "id": "nilu",
+      "name": "Nilu Soleimani",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 2226,
+      "y": 1112,
+      "pos3": [
+        -492,
+        -565,
+        552
+      ],
+      "featured": false
+    },
+    {
+      "id": "stagala",
+      "name": "Stagala / Alexander Krigsman",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 1283,
+      "y": 1263,
+      "pos3": [
+        -1103,
+        -660,
+        826
+      ],
+      "featured": false
+    },
+    {
+      "id": "janely",
+      "name": "Janely / Jaanika Leino",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 1587,
+      "y": 1271,
+      "pos3": [
+        -841,
+        -672,
+        337
+      ],
+      "featured": false
+    },
+    {
+      "id": "julle",
+      "name": "Julle",
+      "group": "season2",
+      "cat": "person",
+      "note": "PactHouse 2:n osallistuja.",
+      "x": 1915,
+      "y": 1290,
+      "pos3": [
+        -746,
+        -775,
+        692
+      ],
+      "featured": false
+    },
+    {
+      "id": "sara",
+      "name": "Sara Chafak",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2296,
+      "y": 1077,
+      "pos3": [
+        -95,
+        987,
+        -920
+      ],
+      "featured": false
+    },
+    {
+      "id": "amanda",
+      "name": "Amanda Harkimo",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2588,
+      "y": 1093,
+      "pos3": [
+        -308,
+        989,
+        -713
+      ],
+      "featured": false
+    },
+    {
+      "id": "henny",
+      "name": "Henny Harjusola",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2853,
+      "y": 1092,
+      "pos3": [
+        -257,
+        982,
+        -1175
+      ],
+      "featured": false
+    },
+    {
+      "id": "crista",
+      "name": "Crista Jaatinen / BelleBarbie",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 3142,
+      "y": 1083,
+      "pos3": [
+        12,
+        880,
+        -734
+      ],
+      "featured": false
+    },
+    {
+      "id": "alex",
+      "name": "Alex Lindfors",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 3445,
+      "y": 1070,
+      "pos3": [
+        -525,
+        868,
+        -855
+      ],
+      "featured": false
+    },
+    {
+      "id": "minna",
+      "name": "Minna Pajulahti",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2278,
+      "y": 1242,
+      "pos3": [
+        57,
+        846,
+        -1183
+      ],
+      "featured": false
+    },
+    {
+      "id": "aleksi",
+      "name": "Aleksi Nurminen",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2590,
+      "y": 1235,
+      "pos3": [
+        -193,
+        772,
+        -567
+      ],
+      "featured": false
+    },
+    {
+      "id": "jussi",
+      "name": "Jussi Pirttikangas",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2859,
+      "y": 1227,
+      "pos3": [
+        -460,
+        746,
+        -1162
+      ],
+      "featured": false
+    },
+    {
+      "id": "pok",
+      "name": "Pok Biil",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 3162,
+      "y": 1238,
+      "pos3": [
+        227,
+        710,
+        -861
+      ],
+      "featured": false
+    },
+    {
+      "id": "max",
+      "name": "Max Blomfelt",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 3435,
+      "y": 1234,
+      "pos3": [
+        -466,
+        665,
+        -678
+      ],
+      "featured": false
+    },
+    {
+      "id": "tuuli",
+      "name": "Tuuli Lehtonen",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2290,
+      "y": 1389,
+      "pos3": [
+        -141,
+        624,
+        -1268
+      ],
+      "featured": false
+    },
+    {
+      "id": "og",
+      "name": "OG Ulla-Maija",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2576,
+      "y": 1376,
+      "pos3": [
+        33,
+        574,
+        -540
+      ],
+      "featured": false
+    },
+    {
+      "id": "erika",
+      "name": "Erika Helin",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2854,
+      "y": 1399,
+      "pos3": [
+        -513,
+        558,
+        -967
+      ],
+      "featured": false
+    },
+    {
+      "id": "aapo",
+      "name": "Aapo Olervo",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 3140,
+      "y": 1381,
+      "pos3": [
+        107,
+        503,
+        -1057
+      ],
+      "featured": false
+    },
+    {
+      "id": "elmer",
+      "name": "Elmer Andberg",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 3439,
+      "y": 1376,
+      "pos3": [
+        -318,
+        439,
+        -544
+      ],
+      "featured": false
+    },
+    {
+      "id": "janina",
+      "name": "Janina Lohilahti",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2273,
+      "y": 1532,
+      "pos3": [
+        -306,
+        450,
+        -1132
+      ],
+      "featured": false
+    },
+    {
+      "id": "harri",
+      "name": "Harri Eskola",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2586,
+      "y": 1530,
+      "pos3": [
+        38,
+        381,
+        -785
+      ],
+      "featured": false
+    },
+    {
+      "id": "renne",
+      "name": "Renne Korppila",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 2880,
+      "y": 1545,
+      "pos3": [
+        -420,
+        303,
+        -816
+      ],
+      "featured": false
+    },
+    {
+      "id": "teemu",
+      "name": "Teemu Potapoff",
+      "group": "season3",
+      "cat": "person",
+      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "x": 3140,
+      "y": 1540,
+      "pos3": [
+        -147,
+        343,
+        -985
+      ],
+      "featured": false
+    },
+    {
+      "id": "pyhimys",
+      "name": "Pyhimys",
+      "group": "talks",
+      "cat": "person",
+      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "x": 3522,
+      "y": 846,
+      "pos3": [
+        651,
+        747,
+        35
+      ],
+      "featured": false
+    },
+    {
+      "id": "andypyro",
+      "name": "AndyPyro",
+      "group": "talks",
+      "cat": "person",
+      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "x": 3852,
+      "y": 842,
+      "pos3": [
+        725,
+        681,
+        -588
+      ],
+      "featured": false
+    },
+    {
+      "id": "bamat",
+      "name": "Bämät Matkoilla",
+      "group": "talks",
+      "cat": "person",
+      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "x": 4216,
+      "y": 839,
+      "pos3": [
+        1067,
+        566,
+        -14
+      ],
+      "featured": false
+    },
+    {
+      "id": "juha",
+      "name": "Juha Korhonen",
+      "group": "talks",
+      "cat": "person",
+      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "x": 4561,
+      "y": 840,
+      "pos3": [
+        417,
+        490,
+        -168
+      ],
+      "featured": false
+    },
+    {
+      "id": "cuck",
+      "name": "CuckTommi",
+      "group": "talks",
+      "cat": "person",
+      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "x": 3521,
+      "y": 992,
+      "pos3": [
+        1077,
+        394,
+        -525
+      ],
+      "featured": false
+    },
+    {
+      "id": "akam",
+      "name": "Akam",
+      "group": "talks",
+      "cat": "person",
+      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "x": 3868,
+      "y": 998,
+      "pos3": [
+        806,
+        339,
+        95
+      ],
+      "featured": false
+    },
+    {
+      "id": "kimrusi",
+      "name": "Kim Rusi",
+      "group": "talks",
+      "cat": "person",
+      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "x": 4198,
+      "y": 987,
+      "pos3": [
+        602,
+        233,
+        -418
+      ],
+      "featured": false
+    },
+    {
+      "id": "jasmilla",
+      "name": "Jasmilla Rostedt",
+      "group": "talks",
+      "cat": "person",
+      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "x": 4572,
+      "y": 991,
+      "pos3": [
+        997,
+        108,
+        -197
+      ],
+      "featured": false
+    },
+    {
+      "id": "julkkis",
+      "name": "Nettipokeri.com: Julkkispelit",
+      "group": "poker",
+      "cat": "show",
+      "note": "Pokeri- ja julkkislähetykset, joissa esiintyy useita PactHouse 2:n ja 3:n nimiä. Osallistuminen johonkin jaksoon ei tarkoita yhteistä yritystä.",
+      "pos3": [
+        280,
+        50,
+        1060
+      ],
+      "featured": true
+    },
+    {
+      "id": "bratislava",
+      "name": "Julkkispelit / Bratislava 26.–27.5.2026",
+      "group": "poker",
+      "cat": "event",
+      "note": "Nettipokeri.comin ennakkoon julkaisema Bratislavan osallistujalista.",
+      "pos3": [
+        80,
+        -190,
+        1260
+      ],
+      "featured": false
+    },
+    {
+      "id": "tallinna_poker",
+      "name": "Julkkispelit / Tallinna 25.–26.9.2026",
+      "group": "poker",
+      "cat": "event",
+      "note": "Nettipokeri.comin julkaiseman tapahtumaohjelman pelaajalista.",
+      "pos3": [
+        560,
+        220,
+        1250
+      ],
+      "featured": false
+    },
+    {
+      "id": "noorak",
+      "name": "Noora Karma",
+      "group": "poker",
+      "cat": "person",
+      "note": "Mentalisti; nimetty Bratislavan Julkkispelien toukokuun 2026 osallistujaksi.",
+      "pos3": [
+        280,
+        310,
+        1340
+      ],
+      "featured": false
+    },
+    {
+      "id": "vp",
+      "name": "VP Alakorva",
+      "group": "poker",
+      "cat": "person",
+      "note": "Tapahtuman pelaajaksi ilmoitettu molempina tarkastelluilla Julkkispelit-kerroilla.",
+      "pos3": [
+        -40,
+        300,
+        1290
+      ],
+      "featured": false
+    },
+    {
+      "id": "tero",
+      "name": "Tero Lipponen",
+      "group": "poker",
+      "cat": "person",
+      "note": "Julkisen Julkkispelit-osallistujalistan striimaaja.",
+      "pos3": [
+        430,
+        -265,
+        1470
+      ],
+      "featured": false
+    },
+    {
+      "id": "hune",
+      "name": "Henri ”Hune” Hyttinen",
+      "group": "poker",
+      "cat": "person",
+      "note": "Julkisen Julkkispelit-osallistujalistan striimaaja.",
+      "pos3": [
+        640,
+        -70,
+        1420
+      ],
+      "featured": false
+    },
+    {
+      "id": "pact_augtalk",
+      "name": "PactTalks / 11.8.2026",
+      "group": "talks",
+      "cat": "event",
+      "note": "Yksittäinen Jethro Rostedtin juontama PactTalks-lähetys. Vieraslista uutisoitu, ei päätelmiä vieraiden muista suhteista.",
+      "pos3": [
+        1020,
+        320,
+        -140
+      ],
+      "featured": false
+    },
+    {
+      "id": "johanna",
+      "name": "Johanna Tukiainen",
+      "group": "talks",
+      "cat": "person",
+      "note": "Vieraana 11.8.2026 PactTalks-lähetyksessä.",
+      "pos3": [
+        1180,
+        480,
+        -390
+      ],
+      "featured": false
+    },
+    {
+      "id": "joonasm",
+      "name": "Joonas Mäkäräinen",
+      "group": "talks",
+      "cat": "person",
+      "note": "Vieraana samassa 11.8.2026 PactTalks-lähetyksessä.",
+      "pos3": [
+        1080,
+        720,
+        -120
+      ],
+      "featured": false
+    },
+    {
+      "id": "milla",
+      "name": "Milla Säilynoja",
+      "group": "talks",
+      "cat": "person",
+      "note": "Vieraana samassa 11.8.2026 PactTalks-lähetyksessä.",
+      "pos3": [
+        1150,
+        260,
+        100
+      ],
+      "featured": false
+    }
+  ],
+  "edges": [
+    {
+      "a": "pact",
+      "b": "saini",
+      "label": "perustaja",
+      "src": [
+        "P21"
+      ],
+      "level": "reported",
+      "detail": "Julkaisu nimittää Singhiä perustajaksi.",
+      "date": ""
+    },
+    {
+      "a": "pact",
+      "b": "s1",
+      "label": "tuotantokausi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pact",
+      "b": "s2",
+      "label": "tuotantokausi",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pact",
+      "b": "s3",
+      "label": "tuotantokausi",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pact",
+      "b": "talks",
+      "label": "sama Pact-brändi",
+      "src": [
+        "P7"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pact",
+      "b": "kick",
+      "label": "striimausalusta",
+      "src": [
+        "P4"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pact",
+      "b": "pactchannel",
+      "label": "oma Kick-kanava",
+      "src": [
+        "P2"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pactchannel",
+      "b": "talks",
+      "label": "julkaisee ohjelman",
+      "src": [
+        "P7"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pactchannel",
+      "b": "s2",
+      "label": "lähetyskanava",
+      "src": [
+        "P2"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pactchannel",
+      "b": "s3",
+      "label": "lähetyskanava",
+      "src": [
+        "P4"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "lassi",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "tegel",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "kp",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "slay",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "emsku",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "ada",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "krisse",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "testo",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "chiara",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "megis",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "anton",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "karva",
+      "b": "s1",
+      "label": "listattu osallistujaksi",
+      "src": [
+        "P1"
+      ],
+      "level": "reported",
+      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
+      "date": ""
+    },
+    {
+      "a": "joachim",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "sahamies",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "tegel",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "daniel",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "ella",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "isabell",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "joni",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "kelly",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "liina",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "maga",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "nilu",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "stagala",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P2",
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "janely",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "julle",
+      "b": "s2",
+      "label": "osallistuja",
+      "src": [
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "jethro",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "heiskari",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "sara",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "amanda",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "henny",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "crista",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "alex",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "minna",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "aleksi",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "jussi",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pok",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "max",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "tuuli",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "og",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "erika",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "aapo",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "elmer",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "janina",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "harri",
+      "b": "s3",
+      "label": "osallistuja",
+      "src": [
+        "P0",
+        "P4",
+        "P42"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "renne",
+      "b": "s3",
+      "label": "juontaja",
+      "src": [
+        "P4",
+        "P42"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "teemu",
+      "b": "s3",
+      "label": "juontaja",
+      "src": [
+        "P4",
+        "P42"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "sahamies",
+      "b": "s2",
+      "label": "voittaja",
+      "src": [
+        "P5",
+        "P24"
+      ],
+      "level": "verified",
+      "detail": "Kilpailu päättyi joulukuussa 2025.",
+      "date": ""
+    },
+    {
+      "a": "jethro",
+      "b": "s3",
+      "label": "voittaja",
+      "src": [
+        "P6",
+        "P23"
+      ],
+      "level": "verified",
+      "detail": "Päävoitto 50 000 euroa; lisätehtävistä 2 500 euroa.",
+      "date": ""
+    },
+    {
+      "a": "jethro",
+      "b": "joachim",
+      "label": "isä–poika",
+      "src": [
+        "P3",
+        "P5"
+      ],
+      "level": "reported",
+      "detail": "Joachim on Jethron poika. Perhesuhde on julkisesti uutisoitu.",
+      "date": ""
+    },
+    {
+      "a": "joni",
+      "b": "s3",
+      "label": "osallistui myös toiselle kaudelle",
+      "src": [
+        "P0",
+        "P4"
+      ],
+      "level": "verified",
+      "detail": "Joni on 2. ja 3. kausien yhteinen osallistuja.",
+      "date": ""
+    },
+    {
+      "a": "lassi",
+      "b": "chiara",
+      "label": "yhteinen striimissä kuvattu tilanne",
+      "src": [
+        "P25"
+      ],
+      "level": "reported",
+      "detail": "Gekkosen 17.3.2026 jutussa he ovat samassa ravintolassa striimin aikana; ei päätelmää suhteesta.",
+      "date": ""
+    },
+    {
+      "a": "tegel",
+      "b": "s2",
+      "label": "toistuva kausiosallistuja",
+      "src": [
+        "P1",
+        "P2"
+      ],
+      "level": "reported",
+      "detail": "1. kauden osuus perustuu koontiin, 2. kausi tuotannon omaan listaan.",
+      "date": ""
+    },
+    {
+      "a": "jethro",
+      "b": "talks",
+      "label": "juontaja",
+      "src": [
+        "P7",
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Syksyn 2026 toistuvat jaksot.",
+      "date": ""
+    },
+    {
+      "a": "ruusu",
+      "b": "talks",
+      "label": "vieras, jakso 93 / myös elokuussa",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "26.10.2026"
+    },
+    {
+      "a": "iippa",
+      "b": "talks",
+      "label": "vieras, jakso 87",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "20.10.2026"
+    },
+    {
+      "a": "megis",
+      "b": "talks",
+      "label": "vieras, jakso 87",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "20.10.2026"
+    },
+    {
+      "a": "pyhimys",
+      "b": "talks",
+      "label": "vieras, jakso 92",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "25.10.2026"
+    },
+    {
+      "a": "andypyro",
+      "b": "talks",
+      "label": "vieras, jakso 95",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "28.10.2026"
+    },
+    {
+      "a": "bamat",
+      "b": "talks",
+      "label": "vieras, jakso 90",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "23.10.2026"
+    },
+    {
+      "a": "alex",
+      "b": "talks",
+      "label": "vieras, jakso 89",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "22.10.2026"
+    },
+    {
+      "a": "juha",
+      "b": "talks",
+      "label": "vieras, jakso 91",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "24.10.2026"
+    },
+    {
+      "a": "crista",
+      "b": "talks",
+      "label": "vieras, jakso 94",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "27.10.2026"
+    },
+    {
+      "a": "cuck",
+      "b": "talks",
+      "label": "vieras, jakso 94",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "27.10.2026"
+    },
+    {
+      "a": "stagala",
+      "b": "talks",
+      "label": "vieras, jakso 86",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "18.10.2026"
+    },
+    {
+      "a": "akam",
+      "b": "talks",
+      "label": "vieras, jakso 86",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "18.10.2026"
+    },
+    {
+      "a": "kimrusi",
+      "b": "talks",
+      "label": "vieras, jakso 85",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
+      "date": "17.10.2026"
+    },
+    {
+      "a": "jasmilla",
+      "b": "talks",
+      "label": "jakson 84 juontaja",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Jakson vieraana oli Jethro.",
+      "date": "16.10.2026"
+    },
+    {
+      "a": "ruusu",
+      "b": "jethro",
+      "label": "haastattelu / vierailu",
+      "src": [
+        "P8",
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Vahvistettu ainakin 24.8.2026 ja 26.10.2026.",
+      "date": ""
+    },
+    {
+      "a": "iippa",
+      "b": "jethro",
+      "label": "PactTalks-vierailu",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Vierailu myös Megarokkistaran kanssa, ei päätelmää yksityissuhteista.",
+      "date": "20.10.2026"
+    },
+    {
+      "a": "megis",
+      "b": "iippa",
+      "label": "sama talkshow-jakso",
+      "src": [
+        "P19"
+      ],
+      "level": "verified",
+      "detail": "Vierailivat yhdessä PactTalksissa.",
+      "date": "20.10.2026"
+    },
+    {
+      "a": "pottu",
+      "b": "iippa",
+      "label": "yhteinen subathon / vierailu",
+      "src": [
+        "P9",
+        "P10"
+      ],
+      "level": "verified",
+      "detail": "Vuonna 2025 Iippadaa matkusti Pottukoiran luo Viroon; yhteistä striimiä kuvattiin.",
+      "date": ""
+    },
+    {
+      "a": "sami",
+      "b": "pottu",
+      "label": "dokumentin kuvaus",
+      "src": [
+        "P9",
+        "P10"
+      ],
+      "level": "verified",
+      "detail": "Sami Kieksin kuvausryhmä seurasi Pottukoiran ja Iippadaan yhteistä striimausta.",
+      "date": ""
+    },
+    {
+      "a": "sami",
+      "b": "iippa",
+      "label": "dokumentin kuvaus",
+      "src": [
+        "P9",
+        "P10"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "sami",
+      "b": "revul",
+      "label": "perustaja / toimitusjohtaja",
+      "src": [
+        "P11",
+        "P12"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "revul",
+      "b": "kieksidoc",
+      "label": "tuotanto",
+      "src": [
+        "P11"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pottu",
+      "b": "kieksidoc",
+      "label": "esiintyy dokumentissa",
+      "src": [
+        "P10",
+        "P9"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "iippa",
+      "b": "kieksidoc",
+      "label": "esiintyy dokumentissa",
+      "src": [
+        "P10",
+        "P9"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "upi",
+      "b": "kieksidoc",
+      "label": "esiintyy dokumentissa",
+      "src": [
+        "P10"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "pirkkis",
+      "b": "kieksidoc",
+      "label": "esiintyy dokumentissa",
+      "src": [
+        "P10"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "revul",
+      "b": "bailu",
+      "label": "tapahtumatuotanto",
+      "src": [
+        "P11"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "sami",
+      "b": "bailu",
+      "label": "taustalla tuotantoyhtiön kautta",
+      "src": [
+        "P11",
+        "P13"
+      ],
+      "level": "verified",
+      "detail": "Tämä ei tarkoita henkilökohtaista suhdetta jokaiseen esiintyjään.",
+      "date": ""
+    },
+    {
+      "a": "iippa",
+      "b": "bailu",
+      "label": "osallistuminen uutisoitu",
+      "src": [
+        "P13"
+      ],
+      "level": "reported",
+      "detail": "Seiska kertoo osallistumisesta 31.10.2026.",
+      "date": ""
+    },
+    {
+      "a": "pottu",
+      "b": "bailu",
+      "label": "markkinointikasvo, jäi pois",
+      "src": [
+        "P13"
+      ],
+      "level": "verified",
+      "detail": "Osallistumista oli mainostettu, mutta Pottukoira kertoi jääneensä pois nettiyhteyksien ja korvauksen vuoksi.",
+      "date": ""
+    },
+    {
+      "a": "heiskari",
+      "b": "bailu",
+      "label": "osallistuminen uutisoitu",
+      "src": [
+        "P13"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "julwill",
+      "b": "bailu",
+      "label": "osallistuminen uutisoitu",
+      "src": [
+        "P13"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "tegel",
+      "b": "bailu",
+      "label": "suunniteltu, jäi pois",
+      "src": [
+        "P13"
+      ],
+      "level": "reported",
+      "detail": "Seiskan mukaan jäi satamassa matkasta.",
+      "date": ""
+    },
+    {
+      "a": "korelon",
+      "b": "bailu",
+      "label": "esiintyjälistalla",
+      "src": [
+        "P14"
+      ],
+      "level": "verified",
+      "detail": "Esiintyjä tapahtuman virallisessa ohjelmassa.",
+      "date": ""
+    },
+    {
+      "a": "ossi",
+      "b": "sastamala",
+      "label": "järjesti tempauksen",
+      "src": [
+        "P15"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "sliki",
+      "b": "sastamala",
+      "label": "esiintyi",
+      "src": [
+        "P15",
+        "P16"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "korelon",
+      "b": "sastamala",
+      "label": "esiintyi",
+      "src": [
+        "P15",
+        "P16"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "sliki",
+      "b": "korelon",
+      "label": "yhteiskeikka ja kappaleita",
+      "src": [
+        "P15",
+        "P26"
+      ],
+      "level": "verified",
+      "detail": "Musiikillista yhteistyötä ja Sastamalan tapahtuma.",
+      "date": ""
+    },
+    {
+      "a": "sastamala",
+      "b": "freak",
+      "label": "asuhahmo esiintyi lavalla",
+      "src": [
+        "P16"
+      ],
+      "level": "reported",
+      "detail": "Asuun pukeutuneen henkilöllisyys ei ole vahvistettu.",
+      "date": ""
+    },
+    {
+      "a": "freak",
+      "b": "keikkah",
+      "label": "samankaltaiset häirintäasuja käyttäneet",
+      "src": [
+        "P16"
+      ],
+      "level": "reported",
+      "detail": "Ei osoita samaa tekijää eri keikoilla.",
+      "date": ""
+    },
+    {
+      "a": "sliki",
+      "b": "keikkah",
+      "label": "keikkojen kohde",
+      "src": [
+        "P16"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "ossi",
+      "b": "freak",
+      "label": "liitetty brändi-/meemikäytössä",
+      "src": [
+        "P17"
+      ],
+      "level": "reported",
+      "detail": "Ketola on kiistänyt osallisuutensa myöhempiin häiriöihin.",
+      "date": ""
+    },
+    {
+      "a": "ossi",
+      "b": "keikkah",
+      "label": "väitetty järjestäminen – kiistetty",
+      "src": [
+        "P17"
+      ],
+      "level": "lead",
+      "detail": "Ketola on kiistänyt tapahtumien järjestämisen. Tekijöitä tai toimeksiantoa ei vahvistettu.",
+      "date": ""
+    },
+    {
+      "a": "ossi",
+      "b": "duel",
+      "label": "Ketolaan liitetty brändi",
+      "src": [
+        "P17"
+      ],
+      "level": "reported",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "duel",
+      "b": "ice",
+      "label": "näkyi esittelygrafiikassa",
+      "src": [
+        "P17"
+      ],
+      "level": "reported",
+      "detail": "Monarch Duel MMA / Freakbob Fighting -merkinnät, sopimusmuoto ei tiedossa.",
+      "date": ""
+    },
+    {
+      "a": "aleksi",
+      "b": "ice",
+      "label": "ottelija",
+      "src": [
+        "P17",
+        "P22"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "aleksi",
+      "b": "duel",
+      "label": "brändimerkintä ottelun yhteydessä",
+      "src": [
+        "P17"
+      ],
+      "level": "reported",
+      "detail": "Ei osoita sopimuksen osapuolia tai korvausta.",
+      "date": ""
+    },
+    {
+      "a": "kasinok",
+      "b": "kp",
+      "label": "!kasinokurki-kanavakomennon näkyvyys → vahva yhteistyöviite",
+      "src": [
+        "P18"
+      ],
+      "level": "observed",
+      "detail": "Havainto: !kasinokurki-komento näkyy julkisessa lähetysotsikossa. Päättely: toistuva kaupallinen kanavaintegraatio tekee mainos- tai affiliate-yhteistyöstä todennäköisen. Maksaja, sopimus, korvaus tai omistaja eivät ole tarkistettuja.",
+      "date": "1.11.2026"
+    },
+    {
+      "a": "kasinok",
+      "b": "pullis",
+      "label": "!kasinokurki-kanavakomennon näkyvyys → vahva yhteistyöviite",
+      "src": [
+        "P18"
+      ],
+      "level": "observed",
+      "detail": "Havainto: !kasinokurki-komento näkyy julkisessa lähetysotsikossa. Päättely: toistuva kaupallinen kanavaintegraatio tekee mainos- tai affiliate-yhteistyöstä todennäköisen. Maksaja, sopimus, korvaus tai omistaja eivät ole tarkistettuja.",
+      "date": "1.11.2026"
+    },
+    {
+      "a": "kasinok",
+      "b": "sampe",
+      "label": "!kasinokurki-kanavakomennon näkyvyys → vahva yhteistyöviite",
+      "src": [
+        "P18"
+      ],
+      "level": "observed",
+      "detail": "Havainto: !kasinokurki-komento näkyy julkisessa lähetysotsikossa. Päättely: toistuva kaupallinen kanavaintegraatio tekee mainos- tai affiliate-yhteistyöstä todennäköisen. Maksaja, sopimus, korvaus tai omistaja eivät ole tarkistettuja.",
+      "date": "1.11.2026"
+    },
+    {
+      "a": "pullis",
+      "b": "s2",
+      "label": "väitetty suunniteltu tuotantorooli",
+      "src": [
+        "P27"
+      ],
+      "level": "lead",
+      "detail": "Yksittäinen viihdeblogi kirjoittaa suunnitellusta roolista ja poisjäännistä; vahvistava tuotantolähde puuttuu.",
+      "date": ""
+    },
+    {
+      "a": "gekkonen",
+      "b": "s2",
+      "label": "uutisoi tuotantokaudesta",
+      "src": [
+        "P3"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "gekkonen",
+      "b": "s3",
+      "label": "julkaisi osallistujat",
+      "src": [
+        "P4"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "gekkonen",
+      "b": "pottu",
+      "label": "uutisoi yhteisstriimistä",
+      "src": [
+        "P9"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "uuno",
+      "b": "talks",
+      "label": "uutisoi Ruusutossun haastattelusta",
+      "src": [
+        "P8"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "seiska",
+      "b": "bailu",
+      "label": "uutisoi osallistumisista",
+      "src": [
+        "P13"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "seiska",
+      "b": "s3",
+      "label": "uutisoi voittajasta",
+      "src": [
+        "P6"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "hs",
+      "b": "keikkah",
+      "label": "alkuperäinen uutisartikkeli",
+      "src": [
+        "P28"
+      ],
+      "level": "verified",
+      "detail": "Artikkelia ei saatu kokonaisuudessaan avattua; ensisijaiset yksityiskohdat tarkistettiin muualta.",
+      "date": ""
+    },
+    {
+      "a": "nettipokeri",
+      "b": "sastamala",
+      "label": "haastattelu / uutisoi",
+      "src": [
+        "P15"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "nettipokeri",
+      "b": "ice",
+      "label": "uutisoi brändimerkinnöistä",
+      "src": [
+        "P17"
+      ],
+      "level": "verified",
+      "detail": "",
+      "date": ""
+    },
+    {
+      "a": "reddit",
+      "b": "sastamala",
+      "label": "keskustelu, myös spekulaatiota",
+      "src": [
+        "P20"
+      ],
+      "level": "lead",
+      "detail": "Keskustelukommentit dokumentoivat väitteiden olemassaolon, eivät todenna sisältöä.",
+      "date": ""
+    },
+    {
+      "a": "sami",
+      "b": "ylilauta",
+      "label": "mukana Ylilaudan toiminnassa (Yle 2020)",
+      "src": [
+        "P33"
+      ],
+      "level": "verified",
+      "detail": "Ylen 2020 henkilöhaastattelussa sanotaan Kieksin olleen mukana Ylilauta-viestipalvelun toiminnassa. Se ei yksilöi omistus- tai nykyroolia.",
+      "date": "2020"
+    },
+    {
+      "a": "tegel",
+      "b": "s3",
+      "label": "vieraili kolmannella kaudella (ei kilpailija)",
+      "src": [
+        "P34"
+      ],
+      "level": "verified",
+      "detail": "Juhana Tegelberg vieraili PactHouse 3 -talossa toukokuussa 2026. Tämä ei merkitse osallistujastatusta.",
+      "date": "5.5.2026"
+    },
+    {
+      "a": "aleksi",
+      "b": "jethro",
+      "label": "yhteinen kameratilanne PactHouse 3:ssa",
+      "src": [
+        "P36"
+      ],
+      "level": "reported",
+      "detail": "Gekkosen mukaan Nurminen auttoi Rostedtia eräässä suorassa lähetyksessä. Ei osoita muuta henkilökohtaista tai kaupallista suhdetta.",
+      "date": "7.5.2026"
+    },
+    {
+      "a": "julkkis",
+      "b": "bratislava",
+      "label": "Julkkispelit-tapahtuma",
+      "src": [
+        "P38"
+      ],
+      "level": "verified",
+      "detail": "Nettipokeri.comin julkaisema tapahtumaohjelma.",
+      "date": "26.–27.5.2026"
+    },
+    {
+      "a": "julkkis",
+      "b": "tallinna_poker",
+      "label": "Julkkispelit-tapahtuma",
+      "src": [
+        "P39"
+      ],
+      "level": "verified",
+      "detail": "Nettipokeri.comin 25.9. julkaisema pelaajalista.",
+      "date": "25.–26.9.2026"
+    },
+    {
+      "a": "sahamies",
+      "b": "bratislava",
+      "label": "nimetty osallistujaksi",
+      "src": [
+        "P38"
+      ],
+      "level": "reported",
+      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
+      "date": "26.–27.5.2026"
+    },
+    {
+      "a": "daniel",
+      "b": "bratislava",
+      "label": "nimetty osallistujaksi",
+      "src": [
+        "P38"
+      ],
+      "level": "reported",
+      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
+      "date": "26.–27.5.2026"
+    },
+    {
+      "a": "jethro",
+      "b": "bratislava",
+      "label": "nimetty osallistujaksi",
+      "src": [
+        "P38"
+      ],
+      "level": "reported",
+      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
+      "date": "26.–27.5.2026"
+    },
+    {
+      "a": "joachim",
+      "b": "bratislava",
+      "label": "nimetty osallistujaksi",
+      "src": [
+        "P38"
+      ],
+      "level": "reported",
+      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
+      "date": "26.–27.5.2026"
+    },
+    {
+      "a": "amanda",
+      "b": "bratislava",
+      "label": "nimetty osallistujaksi",
+      "src": [
+        "P38"
+      ],
+      "level": "reported",
+      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
+      "date": "26.–27.5.2026"
+    },
+    {
+      "a": "noorak",
+      "b": "bratislava",
+      "label": "nimetty osallistujaksi",
+      "src": [
+        "P38"
+      ],
+      "level": "reported",
+      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
+      "date": "26.–27.5.2026"
+    },
+    {
+      "a": "vp",
+      "b": "bratislava",
+      "label": "nimetty osallistujaksi",
+      "src": [
+        "P38"
+      ],
+      "level": "reported",
+      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
+      "date": "26.–27.5.2026"
+    },
+    {
+      "a": "tero",
+      "b": "bratislava",
+      "label": "nimetty osallistujaksi",
+      "src": [
+        "P38"
+      ],
+      "level": "reported",
+      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
+      "date": "26.–27.5.2026"
+    },
+    {
+      "a": "hune",
+      "b": "bratislava",
+      "label": "nimetty osallistujaksi",
+      "src": [
+        "P38"
+      ],
+      "level": "reported",
+      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
+      "date": "26.–27.5.2026"
+    },
+    {
+      "a": "sahamies",
+      "b": "tallinna_poker",
+      "label": "julkaistulla pelaajalistalla",
+      "src": [
+        "P39"
+      ],
+      "level": "reported",
+      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
+      "date": "25.–26.9.2026"
+    },
+    {
+      "a": "amanda",
+      "b": "tallinna_poker",
+      "label": "julkaistulla pelaajalistalla",
+      "src": [
+        "P39"
+      ],
+      "level": "reported",
+      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
+      "date": "25.–26.9.2026"
+    },
+    {
+      "a": "jethro",
+      "b": "tallinna_poker",
+      "label": "julkaistulla pelaajalistalla",
+      "src": [
+        "P39"
+      ],
+      "level": "reported",
+      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
+      "date": "25.–26.9.2026"
+    },
+    {
+      "a": "crista",
+      "b": "tallinna_poker",
+      "label": "julkaistulla pelaajalistalla",
+      "src": [
+        "P39"
+      ],
+      "level": "reported",
+      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
+      "date": "25.–26.9.2026"
+    },
+    {
+      "a": "vp",
+      "b": "tallinna_poker",
+      "label": "julkaistulla pelaajalistalla",
+      "src": [
+        "P39"
+      ],
+      "level": "reported",
+      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
+      "date": "25.–26.9.2026"
+    },
+    {
+      "a": "tero",
+      "b": "tallinna_poker",
+      "label": "julkaistulla pelaajalistalla",
+      "src": [
+        "P39"
+      ],
+      "level": "reported",
+      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
+      "date": "25.–26.9.2026"
+    },
+    {
+      "a": "hune",
+      "b": "tallinna_poker",
+      "label": "julkaistulla pelaajalistalla",
+      "src": [
+        "P39"
+      ],
+      "level": "reported",
+      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
+      "date": "25.–26.9.2026"
+    },
+    {
+      "a": "sara",
+      "b": "julkkis",
+      "label": "aiempi Julkkispelit-kasvo",
+      "src": [
+        "P37"
+      ],
+      "level": "reported",
+      "detail": "Nettipokeri.com listaa Sara Chafakin Julkkispeleistä tutuksi. Ei tästä lähteestä tarkkaa jaksoa.",
+      "date": "2026"
+    },
+    {
+      "a": "jethro",
+      "b": "julkkis",
+      "label": "Julkkispelit-kasvo",
+      "src": [
+        "P37",
+        "P38",
+        "P39"
+      ],
+      "level": "verified",
+      "detail": "Useita yksilöityjä lähetyskokoonpanoja.",
+      "date": "2026"
+    },
+    {
+      "a": "amanda",
+      "b": "julkkis",
+      "label": "Julkkispelit-kasvo",
+      "src": [
+        "P37",
+        "P38",
+        "P39"
+      ],
+      "level": "verified",
+      "detail": "Useita yksilöityjä lähetyskokoonpanoja.",
+      "date": "2026"
+    },
+    {
+      "a": "sahamies",
+      "b": "julkkis",
+      "label": "Julkkispelit-pokerikasvo",
+      "src": [
+        "P37",
+        "P38",
+        "P39"
+      ],
+      "level": "verified",
+      "detail": "Ilari Sahamies liittää PactHouse 2:n Julkkispelit-pokerituotantoihin.",
+      "date": "2026"
+    },
+    {
+      "a": "jethro",
+      "b": "amanda",
+      "label": "keskustelivat Julkkispeleistä PactHouse 3:ssa",
+      "src": [
+        "P40"
+      ],
+      "level": "verified",
+      "detail": "Julkisesti kuvattu yhteinen ohjelmatilanne; ei yksin muuta liikesuhdetta.",
+      "date": "6.5.2026"
+    },
+    {
+      "a": "joni",
+      "b": "julkkis",
+      "label": "ilmaisi kiinnostuksensa tuleviin peleihin",
+      "src": [
+        "P40"
+      ],
+      "level": "reported",
+      "detail": "Kiinnostus tapahtumaan on raportoitu, mutta osallistumista ei ole tällä perusteella vahvistettu.",
+      "date": "6.5.2026"
+    },
+    {
+      "a": "talks",
+      "b": "pact_augtalk",
+      "label": "yksittäinen lähetys",
+      "src": [
+        "P41"
+      ],
+      "level": "verified",
+      "detail": "Seiska raportoi ohjelman 11.8.2026 jaksosta.",
+      "date": "11.8.2026"
+    },
+    {
+      "a": "jethro",
+      "b": "pact_augtalk",
+      "label": "juontaja",
+      "src": [
+        "P41"
+      ],
+      "level": "verified",
+      "detail": "Jethro Rostedt juonsi lähetyksen.",
+      "date": "11.8.2026"
+    },
+    {
+      "a": "johanna",
+      "b": "pact_augtalk",
+      "label": "vieras samassa lähetyksessä",
+      "src": [
+        "P41"
+      ],
+      "level": "verified",
+      "detail": "Uutisoitu yhteisesiintyminen PactTalksin ohjelmajaksossa, ei todistus laajemmasta yhteistyöstä.",
+      "date": "11.8.2026"
+    },
+    {
+      "a": "joonasm",
+      "b": "pact_augtalk",
+      "label": "vieras samassa lähetyksessä",
+      "src": [
+        "P41"
+      ],
+      "level": "verified",
+      "detail": "Uutisoitu yhteisesiintyminen PactTalksin ohjelmajaksossa, ei todistus laajemmasta yhteistyöstä.",
+      "date": "11.8.2026"
+    },
+    {
+      "a": "milla",
+      "b": "pact_augtalk",
+      "label": "vieras samassa lähetyksessä",
+      "src": [
+        "P41"
+      ],
+      "level": "verified",
+      "detail": "Uutisoitu yhteisesiintyminen PactTalksin ohjelmajaksossa, ei todistus laajemmasta yhteistyöstä.",
+      "date": "11.8.2026"
+    }
+  ],
+  "sources": {
+    "P0": {
+      "label": "PactHouse: osallistujat",
+      "url": "https://pacthouse.net/participants",
+      "note": "PactHousen oma osallistujasivu; 3. kauden nimet"
+    },
+    "P1": {
+      "label": "Casinohai: kolme tuotantokautta",
+      "url": "https://www.kasinohai.com/uutiset/pacthouse-rappiostriimisisaltoa-ja-laitonta-rahapelimarkkinointia",
+      "note": "Yhteenvetolista; erityisesti 1. kauden osalta tarvitaan rinnakkaisvahvistusta"
+    },
+    "P2": {
+      "label": "PactHouse Telegram: kausi 2",
+      "url": "https://t.me/s/pacthouse/44",
+      "note": "Tuotannon oman kanavan julkaisema nimilista, osittain ennakkolista"
+    },
+    "P3": {
+      "label": "Gekkonen: PactHouse 2 ja Stagala",
+      "url": "https://gekkonen.net/stagala-ja-onlyfans-tahti-liina-simpson-sutinaa-pacthousessa/",
+      "note": "Juttu 2.12.2025; kauden laaja henkilölista"
+    },
+    "P4": {
+      "label": "Gekkonen: PactHouse 3 osallistujat",
+      "url": "https://gekkonen.net/pacthouse-3-starttaa-kreikassa-nama-kaikki-julkkikset-ovat-mukana/",
+      "note": "30.4.2026; nimet ja juontajat"
+    },
+    "P5": {
+      "label": "Seiska: PactHouse 2 tulokset",
+      "url": "https://www.seiska.fi/vain-seiskassa/suomalaisartisti-loukkaantui-jethro-rostedtille/2023662",
+      "note": "PactHouse 2 -kausi ja voittaja"
+    },
+    "P6": {
+      "label": "Seiska: Jethro voitti PactHouse 3:n",
+      "url": "https://www.seiska.fi/kotimaa/jehtro-rostedtille-tuli-joulu-nyt-vedetaan/2148760",
+      "note": "11.5.2026; voittaja ja finaalin sijoitukset"
+    },
+    "P7": {
+      "label": "KickTracker: PactTalks lähetyshistoria",
+      "url": "https://kicktracker.net/pact/streams",
+      "note": "Lähetysten otsikot, päivämäärät, juontaja ja vieraat"
+    },
+    "P8": {
+      "label": "Uuno: Ruusutossu PactTalksissa",
+      "url": "https://www.uuno.fi/pinja-ruusutossu-tunnusti-talkshowssa-oon-neitsyt-valehteli-sampo-kaulasesta/",
+      "note": "24.8.2026 jaksoa käsittelevä uutinen"
+    },
+    "P9": {
+      "label": "Gekkonen: Pottukoira, Iippadaa ja Kieksi",
+      "url": "https://gekkonen.net/pottukoiralta-jattiyllatys/",
+      "note": "15.4.2025; vierailu ja kuvausryhmä"
+    },
+    "P10": {
+      "label": "Voice: Kieksi rappiostriimijakso",
+      "url": "https://www.voice.fi/viihde/uusi-sarja-seuraa-rappiostriimaajien-elamaa-nain-paljon-iippadaa-tienaa-kuukaudessa-sekoilemalla",
+      "note": "Yle Kieksi -dokumentista kertova juttu"
+    },
+    "P11": {
+      "label": "Revul Media Group: tuotannot",
+      "url": "https://revul.fi/author/tip100",
+      "note": "Yhtiön oma esittely, Kieksi ja Bailupaatti"
+    },
+    "P12": {
+      "label": "Asiakastieto: Revul",
+      "url": "https://www.asiakastieto.fi/yritykset/fi/revul-media-group-oy/27536681/rekisteritiedot",
+      "note": "Yhtiön toimitusjohtaja Sami Kieksi"
+    },
+    "P13": {
+      "label": "Seiska: Bailupaatti ja Pottukoiran poissaolo",
+      "url": "https://www.seiska.fi/kotimaa/pottukoira-teki-oharit-yhta-tyhjan-kanssa/2308841",
+      "note": "31.10.2026; markkinointi, poissaolo, osallistujia"
+    },
+    "P14": {
+      "label": "Bailupaatti: virallinen ohjelma",
+      "url": "https://www.bailupaatti.fi/",
+      "note": "Esiintyjälistat, mm. Korelon"
+    },
+    "P15": {
+      "label": "Nettipokeri: Ketolan Sastamala",
+      "url": "https://nettipokeri.com/nain-ossi-ketolan-sastamalan-torijuhlat-syntyivat-olin-vahan-tiloissa-ja-improvisoin-vaan/",
+      "note": "6.9.2026; Sastamalan keikka"
+    },
+    "P16": {
+      "label": "Klangi: Slikin keikkojen häiriöt",
+      "url": "https://www.klangi.fi/uutiset/jarjestyshairiot-jatkuvat-slikin-keikoilla/",
+      "note": "Syksy 2026; Paavo Pesusieni -hahmot ja artistin kannanotto"
+    },
+    "P17": {
+      "label": "Nettipokeri: Ice Cage ja Duel -merkinnät",
+      "url": "https://nettipokeri.com/ossi-ketolalla-taas-melkoinen-viikonloppu-hairikointisyytoksia-slikin-keikalla-ja-sponsorointia-ice-cagessa/",
+      "note": "20.9.2026; sponsorointimerkintöjen näkyminen sekä Ketolan kiistäminen keikkahäiriöissä"
+    },
+    "P18": {
+      "label": "Livesuomi: suomalaiset live-otsikot",
+      "url": "https://livesuomi.fi/live/",
+      "note": "Seurantapalvelun 1.11.2026 havainto otsikoiden !kasinokurki-komennosta"
+    },
+    "P19": {
+      "label": "KickTracker: PactTalks jaksot",
+      "url": "https://kicktracker.net/pact",
+      "note": "Jaksot 84–95 lokakuussa 2026"
+    },
+    "P20": {
+      "label": "Reddit: Korelon & Sliki -keskustelu",
+      "url": "https://www.reddit.com/r/snappijuorutofftopic/comments/1w9oo4m/korelon_sliki/",
+      "note": "Kommenttien spekulaatiot eivät ole itsenäistä näyttöä"
+    },
+    "P21": {
+      "label": "Seiska: Sainin asema perustajana",
+      "url": "https://www.seiska.fi/rikos/pacthousen-sainille-tuomio-pahoinpitelysta/2247807",
+      "note": "PactHouse-perustajan tunnistaminen; artikkeli käsittelee myös erillistä oikeusasiaa"
+    },
+    "P22": {
+      "label": "Ice Cage: Aleksi Nurminen",
+      "url": "https://icecage.fi/ajankohtaista/aleksi-nurminen-vs-matias-koistinen/",
+      "note": "Ice Cagen oma Nurmis-artikkeli"
+    },
+    "P23": {
+      "label": "Gekkonen: Jethro voitti",
+      "url": "https://gekkonen.net/jethro-rostedt-voitti-pacthousen-ja-50-000-euroa-video/",
+      "note": "10.5.2026; kausi 3"
+    },
+    "P24": {
+      "label": "Seiska: PactHouse 2",
+      "url": "https://www.seiska.fi/kotimaa/matias-petaistoon-yhdistetty-tis-kaunotar-ikava-uutinen/2014501",
+      "note": "8.12.2025; kausi 2"
+    },
+    "P25": {
+      "label": "Gekkonen: Lassi ja Chiara",
+      "url": "https://gekkonen.net/hyokkays-ravintolassa-lassi-kuhlman-hakattiin-suorassa-lahetyksessa/",
+      "note": "17.3.2026; yhteinen lähetys / esiintyminen"
+    },
+    "P26": {
+      "label": "Biletti: Slikin ja Korelonin musiikkiyhteistyö",
+      "url": "https://biletti.fi/e/korelon-jolly-joker-pori",
+      "note": "Korelonin artistiesittely, yhteiskappaleet WHITEBOY ja Ylibuukattu"
+    },
+    "P27": {
+      "label": "Come: PactHouse 2 ja Pullis - väite",
+      "url": "https://tubetus.fi/rappiotube/pacthouse-alkoi-villeilla-viagra-bileilla/",
+      "note": "Viihdeblogin epävarma tieto suunnitellusta tuotantoroolista"
+    },
+    "P28": {
+      "label": "HS: Slikin keikkojen häiriöt",
+      "url": "https://www.hs.fi/helsinki/art-2000012378697.html",
+      "note": "Alkuperäinen käyttäjän linkittämä juttu; kokoteksti ei ollut haettavissa"
+    },
+    "P29": {
+      "label": "Uuno.fi",
+      "url": "https://www.uuno.fi/",
+      "note": "Viihdeuutisointi"
+    },
+    "P30": {
+      "label": "Gekkonen",
+      "url": "https://gekkonen.net/",
+      "note": "Viihdeuutisointi"
+    },
+    "P31": {
+      "label": "Reddit: r/snappijuorut",
+      "url": "https://www.reddit.com/r/snappijuorut/",
+      "note": "Keskustelujen johtolähde, ei faktavarmistus"
+    },
+    "P32": {
+      "label": "Ylilauta",
+      "url": "https://ylilauta.org/",
+      "note": "Keskustelujen johtolähde, ei faktavarmistus"
+    },
+    "P33": {
+      "label": "Yle 2020: Sami Kieksi ja Ylilaudan toiminta",
+      "url": "https://yle.fi/a/3-11375848",
+      "note": "Yle kertoo Kieksin olleen mukana Ylilauta-viestipalvelun toiminnassa; tarkka rooli ja aika eivät selviä tässä jutussa."
+    },
+    "P34": {
+      "label": "Gekkonen 5.5.2026: Juhana Tegelberg vieraili PactHouse 3:ssa",
+      "url": "https://gekkonen.net/pacthouse-talon-kaunottaret-vaihtoivat-bikinit-paalle-kuumat-kuvat/",
+      "note": "Juhana Tegelberg saapui vieraaksi PactHouse 3:een."
+    },
+    "P35": {
+      "label": "Mesta.net 1.5.2026: PactHouse 3:n osallistujat ja juontajat",
+      "url": "https://mesta.net/suomalainen-liveviihdekonsepti-aktivoituu-hurja-maara-julkkiksia-muuttaa-jalleen-saman-katon-alle/",
+      "note": "Täysi 3. kauden lista ja juontajat; alkuperäisen tiedotteen pohjalta."
+    },
+    "P36": {
+      "label": "Gekkonen 7.5.2026: Jethro Rostedt ja Aleksi Nurminen",
+      "url": "https://gekkonen.net/jethro-rostedt-lysahti-lattialle-kesken-kostean-karaokeillan-video/",
+      "note": "Yksilöity, uutisoitu tapahtuma PactHouse 3:ssa. Ei viittaa muihin suhteisiin."
+    },
+    "P37": {
+      "label": "Nettipokeri.com 2.5.2026: PactHouse 3 ja Julkkispelit",
+      "url": "https://nettipokeri.com/pacthouse-3-kaynnissa-julkkispeleista-tuttuja-nimia-mukana-kreikassa/",
+      "note": "Jethro Rostedt, Amanda Harkimo ja Sara Chafak tuttuja Julkkispeleistä; Ilari Sahamies PactHouse 2 -voittaja."
+    },
+    "P38": {
+      "label": "Nettipokeri.com 25.5.2026: Bratislavan Julkkispelien osallistujat",
+      "url": "https://nettipokeri.com/nettipokeri-comin-julkkispelit-palaavat-huomenna-pokerilegenda-ilari-sahamiehen-johdolla/",
+      "note": "Tapahtuman ennakkojulkaisu vahvistaa toukokuun osallistujiksi ilmoitetut; ennakkolistaa ei tule sekoittaa varmennettuihin paikallaoloihin."
+    },
+    "P39": {
+      "label": "Nettipokeri.com 25.9.2026: Tallinnan Julkkispelien osallistujat",
+      "url": "https://nettipokeri.com/julkkispelit-kaynnistyvat-tanaan-tuttuja-nimia-poytaan-tallinnassa/",
+      "note": "Ilari Sahamies, Amanda Harkimo, Jethro Rostedt, Crista Jaatinen ja muita nimetty tapahtuman 25.–26.9.2026 osallistujiksi."
+    },
+    "P40": {
+      "label": "Nettipokeri.com 6.5.2026: Jethro ja Amanda keskustelivat Julkkispeleistä PactHouse 3:ssa",
+      "url": "https://nettipokeri.com/pacthouse-3ssa-valayteltiin-uusia-nettipokeri-comin-julkkispelien-kohteita/",
+      "note": "Jethro Rostedt ja Amanda Harkimo keskustelivat Julkkispeleistä PactHouse 3:n suorassa lähetyksessä; Joni Hesselgren ilmaisi kiinnostuksensa, ei vahvistettua osallistumista."
+    },
+    "P41": {
+      "label": "Seiska 12.8.2026: PactTalks 11.8. – vieraat",
+      "url": "https://www.seiska.fi/kotimaa/johanna-tukiainen-jarkytti-suorassa-lahetyksessa-hiusten-repimista-ja-rajua-riitelya/2232702",
+      "note": "PactTalksin 11.8. lähetyksessä esiintyivät Johanna Tukiainen, Joonas Mäkäräinen ja Milla Säilynoja; juontajana Jethro Rostedt. Yksittäinen yhteisesiintyminen."
+    },
+    "P42": {
+      "label": "PactHouse 3: virallinen tiedote 30.4.2026",
+      "url": "https://www.epressi.com/tiedotteet/musiikki-ja-viihde/pacthouse-3-alkaa-1.-toukokuuta-julkkikset-ja-somevaikuttajat-muuttavat-live-realityyn-kymmeneksi-paivaksi.html",
+      "note": "PactHousen virallinen kausi 3 -julkaisu. 20 kilpailijaa, kaksi juontajaa, ajankohta."
+    },
+    "P43": {
+      "label": "Gekkonen 2.12.2025: PactHouse 2 -kilpailijat",
+      "url": "https://gekkonen.net/stagala-ja-onlyfans-tahti-liina-simpson-sutinaa-pacthousessa/",
+      "note": "PactHouse 2 -kilpailijoiden listaus ja kuvauspaikka Espanjan Marbellassa."
+    },
+    "P44": {
+      "label": "Kasinohai 2026: PactHouse 1–3 osallistujakatsaus",
+      "url": "https://www.kasinohai.com/uutiset/pacthouse-rappiostriimisisaltoa-ja-laitonta-rahapelimarkkinointia",
+      "note": "Ensimmäisen kauden osallistujalistaan käytetty sekundäärilähde; ei sama näyttötaso kuin ohjelman virallinen osallistujasivu."
+    }
+  },
+  "date": "2026-11-01"
+}
