@@ -54,6 +54,9 @@ Esimerkiksi **Upin, Pirkkiksen ja Taigan Amsterdamin-matkaa** koskevan ketjun vo
 ## Kuvien käyttö
 `node.image`: tunnistettu, käyttökelpoinen kuva-URL; `node.imageCredit`: attribuutio. Älä julkaise luvattomia mediakuvia repoon tai esitä generoitua kasvokuvaa oikeana henkilönä. Jos kuva ei lataudu, käyttöliittymä näyttää nimikirjaimet.
 
+## Tiedonhankinnan toistettava työprosessi
+Laajemmat käytännöt ovat [Research Playbookissa](RESEARCH_PLAYBOOK.md). Uusi tutkimushaara aloitetaan nimeämällä **kaksi tutkittavaa sektoria**, etsimällä niiden väliin sopivaa tapahtumaa tai henkilöä ja kirjaamalla haussa käytetyt nimialiakset. Lähetysmetadatasta tarkistetaan vieraat ja päivät. Foorumien ajankohtaisista kommenteista saadaan osallistujien kertomukset; kummallakaan lähdetyypillä ei yksin päätellä yksityisiä sopimuksia. Kirjaa myös mikä ei auennut tai mitä ei löytynyt.
+
 ## Tarkistuslista
 - Identiteetti (esim. Ruusutossu) ja ohjelmakausi täsmäävät.
 - Yhteys ja lähde kuvaavat samaa tapahtumaa.
