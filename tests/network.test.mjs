@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { shortestPath } from '../src/lib/graph.js';
 import { hierarchyGroups } from '../src/lib/hierarchy.js';
-import { relationVerb } from '../src/lib/relations.js';
+import { relationVerb, relationHeading } from '../src/lib/relations.js';
 const relationTypes=JSON.parse(readFileSync(new URL('../src/data/relation-types.json',import.meta.url),'utf8'));
 const data=JSON.parse(readFileSync(new URL('../src/data/network.json',import.meta.url),'utf8'));
 const nodes=new Map(data.nodes.map(n=>[n.id,n]));
@@ -68,15 +68,20 @@ test('suhdetyypit toimivat molempiin suuntiin',()=>{
    assert.ok(typeof type.verb==='string'&&type.verb.trim(),id);
    assert.equal(type.forward,undefined,id);
    assert.equal(type.reverse,undefined,id);
+   assert.ok(typeof type.heading==='string'&&type.heading.trim(),id);
   }else{
    assert.ok(typeof type.forward==='string'&&type.forward.trim(),id);
    assert.ok(typeof type.reverse==='string'&&type.reverse.trim(),id);
+   assert.ok(typeof type.headingForward==='string'&&type.headingForward.trim(),id);
+   assert.ok(typeof type.headingReverse==='string'&&type.headingReverse.trim(),id);
   }
  }
  for(const e of data.edges){
   const type=relationTypes[e.type];
   assert.equal(relationVerb(e,e.a,relationTypes),type.symmetric?type.verb:type.forward);
   assert.equal(relationVerb(e,e.b,relationTypes),type.symmetric?type.verb:type.reverse);
+  assert.equal(relationHeading(e,e.a,relationTypes),type.symmetric?type.heading:type.headingForward);
+  assert.equal(relationHeading(e,e.b,relationTypes),type.symmetric?type.heading:type.headingReverse);
  }
  const father=data.edges.find(e=>e.a==='jethro'&&e.b==='joachim');
  assert.equal(relationVerb(father,'jethro',relationTypes),'on isä');
