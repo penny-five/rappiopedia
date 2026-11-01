@@ -34,6 +34,6 @@ Viheraho kertoi haluavansa Kickin uudeksi kanavaksi mielipiteidensä esittämise
 
 ## PactTalks ja vesihanalegenda vuonna 2026
 
-Viheraho vieraili 11. lokakuuta 2026 [[talk_pasi|PactTalksin jaksossa 80]], jonka juonsi [[jethro|Jethro Rostedt]]. Lähetysotsikossa toiseksi vieraaksi oli merkitty myös [[megis|Megarokkistara]]. [@P7] [@P63]
+Viheraho vieraili 11. lokakuuta 2026 [[talk_pasi|PactTalksin jaksossa 80]], jonka juonsi [[jethro|Jethro Rostedt]]. Samassa jaksossa vieraili myös [[megis|Megarokkistara]]. [@P7] [@P63]
 
 Haastattelussa palattiin Viherahosta levinneeseen vesihanameemiin. Hän kertoi, ettei ollut todellisuudessa jättänyt keittiön hanaa jatkuvasti valumaan: hänen mukaansa ajatus oli lähtenyt katsojien ärsyttämisestä ja muuttunut internetissä kiertäväksi legendaksi. [@P63]
