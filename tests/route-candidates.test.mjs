@@ -39,7 +39,11 @@ test('the sidebar preserves SKENET while removing technical jargon elsewhere',()
   assert.ok(html.includes(text),text);
  }
  assert.doesNotMatch(html,/>SOLMUTYYPIT<|>SOLMUJEN NIMET<|>NÄYTÖN TASO<|>YHTEYSPOLKU</);
- assert.match(html,/<datalist id="routeCandidates"><\/datalist>/);
+ assert.match(html,/<input id="from" type="search" role="combobox"[^>]*aria-controls="fromSuggestions"/);
+ assert.match(html,/<input id="to" type="search" role="combobox"[^>]*aria-controls="toSuggestions"/);
+ assert.match(html,/<div id="fromSuggestions" class="search-suggestions" role="listbox"/);
+ assert.match(html,/<div id="toSuggestions" class="search-suggestions" role="listbox"/);
+ assert.doesNotMatch(html,/<datalist|list="routeCandidates"/);
  assert.match(html,/<label class="route-label" for="from">Ensimmäinen kohde<\/label>/);
  assert.match(html,/<label class="route-label" for="to">Toinen kohde<\/label>/);
  assert.match(html,/id="pathbtn">Näytä yhteys<\/button>/);
@@ -59,4 +63,25 @@ test('sector selection pans camera without opening any arbitrary article',()=>{
  assert.match(main,/resolveRouteTarget\(document\.getElementById\(field\)\.value,routeTargets\)/);
  assert.doesNotMatch(main,/document\.getElementById\('from'\)\.value='iippa'/);
  assert.match(main,/document\.getElementById\('categoryCount'\)\.textContent=`\$\{chosenCount\} kohdetta valittu`/);
+});
+
+
+test('both connection searches reuse navbar results, photos, ranking and keyboard selection',()=>{
+ const main=readFileSync(new URL('../src/main.js',import.meta.url),'utf8');
+ const css=readFileSync(new URL('../src/styles.css',import.meta.url),'utf8');
+ assert.match(main,/setupRouteSearch\('from'\);setupRouteSearch\('to'\)/);
+ assert.match(main,/matches=searchNodes\(routeSearchNodes,value\)/);
+ assert.match(main,/searchSuggestionMarkup\(n,i,i===0,formatNodeTypes\(by\[n.id\],ENTITY_TYPES\),optionPrefix\)/);
+ assert.match(main,/choose\(matches\[activeIndex\]\.id\)/);
+ assert.match(main,/menu\.addEventListener\('error'/);
+ assert.match(main,/input\.setAttribute\('aria-activedescendant',optionPrefix\+'-0'\)/);
+ assert.match(main,/const option=e\.target\.closest\('\[data-search-id\]'\)/);
+ assert.match(css,/\.route-search\{position:relative;display:flex/);
+ assert.match(css,/\.route-search \.search-suggestions\{max-height:/);
+ assert.match(css,/\.search-suggestion\{display:grid;grid-template-columns:38px minmax\(0,1fr\)/);
+ assert.match(css,/\.search-avatar-image\{[^}]*object-fit:cover/);
+ assert.match(css,/grid-template-columns:276px minmax\(0,1fr\) minmax\(365px/);
+ assert.match(css,/grid-template-columns:245px minmax\(0,1fr\) minmax\(330px/);
+ assert.match(css,/\.app\.article-collapsed\{grid-template-columns:276px/);
+ assert.match(css,/\.app\.article-collapsed\{grid-template-columns:245px/);
 });
