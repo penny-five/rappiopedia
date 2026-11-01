@@ -132,6 +132,12 @@ Katso lisäksi itse, että teksti on luontevaa suomea, nimet ja päivät pitäv�
 
 Laajempaa lähteiden etsimistä varten on [tutkimusopas](RESEARCH_PLAYBOOK.md). Kesken jääneet tarkistukset voi kirjata [tutkimuslokiin](RESEARCH_LOG.md).
 
-## Suhdeverbit kartalla
+## Suhdetyypit kartalla
 
-Jokaisella `src/data/network.json`-tiedoston `edges`-yhteydellä on `verb`-kenttä. Kirjoita siihen lyhyt, täsmällinen suomenkielinen verbi tai verbirakenne (esimerkiksi `juontaa`, `osallistui`, `vieraili`, `perusti`). Kenttä kuvaa suunnan `a` → `b`: `jethro` → `talks`, `verb: "juontaa"`. Rappioverse näyttää verbin valitun solmun yhteysviivalla. `label` kertoo tarkemman suhteen ja `src` sisältää sitä tukevat lähteet. Kiistetyissä ja keskeneräisissä suhteissa verbinkin tulee kuvata tiedon epävarmuus.
+Rappioverse näyttää suhteen valitun solmun näkökulmasta. Yhteyden `type` viittaa `src/data/relation-types.json`-tiedostossa määriteltyyn suhdetyyppiin, eikä jokaiselle yhteydelle kirjoiteta erillistä `verb`-kenttää.
+
+- **Suunnattu suhde:** `forward` on suunta `a → b`, `reverse` on suunta `b → a`. Esimerkiksi `jethro → joachim`: `on isä` / `on poika`.
+- **Symmetrinen suhde:** `symmetric: true` ja `verb` tarkoittaa samaa verbiä kumpaankin suuntaan, esimerkiksi `striimasi yhdessä`.
+- `label` kertoo yksittäisen suhteen tarkemmasta tapahtumasta ja `src` sisältää sitä tukevat lähteet.
+
+Kun tarvitset uudenlaisen suhteen, lisää määritelmä ensin suhdetyyppirekisteriin ja viittaa sen tunnisteeseen `edges`-taulukossa.
