@@ -7,7 +7,7 @@ import { formatNodeTypes } from './lib/entity-types.js';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
 import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
-import { hierarchyGroups } from './lib/hierarchy.js';
+import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierarchyRootForChild } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
 import { searchNodes } from './lib/search.js';
@@ -20,7 +20,13 @@ let W=0,H=0,dpr=1,yaw=-.32,pitch=.20,dist=5700,target={x:-950,y:0,z:-100},select
 const labelAnchors=new Map();
 const pressedTravelKeys=new Set(),travelKeys=new Set(['w','a','s','d','q','e']);
 let lastDrawTime=0,cameraNavigation=0,movementSpeed=DEFAULT_MOVEMENT_SPEED;
-const centers={},groupBounds={};for(const g of Object.keys(groupMeta)){const box=bounds3D(N.filter(n=>n.group===g),SKENES[g].padding??100);groupBounds[g]=box;centers[g]=box.min.map((v,i)=>(v+box.max[i])/2)}
+const centers={},groupBounds={};
+for(const g of Object.keys(groupMeta)){
+ const family=hierarchyGroups.find(h=>h.rootGroup===g);
+ const box=family?hierarchyBounds(N,family):bounds3D(N.filter(n=>n.group===g),SKENES[g].padding??100);
+ groupBounds[g]=box;
+ centers[g]=box.min.map((v,i)=>(v+box.max[i])/2);
+}
 function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function image(n){return n.image||''}const photo={};for(const n of N){if(!n.image)continue;const im=new Image();im.referrerPolicy='no-referrer';im.onload=()=>{photo[n.id]=im};im.onerror=()=>{photo[n.id]=null};im.src=n.image;photo[n.id]=null}
 const rng=(seed)=>{let z=seed;return()=>{z=(z*1664525+1013904223)>>>0;return z/4294967296}};const R=rng(41),stars=Array.from({length:260},()=>({x:R(),y:R(),radius:R()*1.4+.25,alpha:R()*.42+.08}));
@@ -117,7 +123,8 @@ function pr(v,camera){let dif=sub(vec(v[0],v[1],v[2]),camera.cam),z=dot(dif,came
 function tint(c,a){const v=parseInt(c.replace('#',''),16);return `rgba(${(v>>16)&255},${(v>>8)&255},${v&255},${a})`}
 function RR(x,y,w,h,r){ctx.beginPath();ctx.roundRect(x,y,w,h,r)}
 function hasFocus(n){return focusIds.has(n.id)}
-function inSector(n){return sector==='all'||n.group===sector||n.id===selected}
+function sectorMatches(group){return sector==='all'||sectorGroups(sector).includes(group)}
+function inSector(n){return sectorMatches(n.group)||n.id===selected}
 function onPath(id){return pathNodes.includes(id)}
 const groundY=-1240;
 function drawBackground(){
@@ -181,19 +188,21 @@ function drawWireVolume(c, bounds, color, opacity, lineWidth = 1, dash = [5, 8])
  }
  ctx.restore();
 }
-/** The parent volume is computed from every PACT member, not just its five hubs. */
-function drawPactHierarchy(c) {
- const family = hierarchyGroups.find(h => h.id === 'pact-universe');
- if (!family || (sector !== 'all' && !family.groups.includes(sector))) return;
- const bounds = bounds3D(N.filter(n => family.groups.includes(n.group)), 145);
- if (!bounds) return;
- const alpha = sector === 'all' ? .37 : .61;
- drawWireVolume(c, bounds, '#25899d', alpha, 1.75, [11, 6]);
- const marker = pr([(bounds.min[0] + bounds.max[0]) / 2, bounds.max[1], bounds.min[2]], c);
- if (marker) {
-  ctx.save();ctx.fillStyle = tint('#226d7e', Math.min(1, alpha * 2.4));
-  ctx.font = '700 11px DM Sans,Arial';ctx.textAlign = 'center';
-  ctx.fillText('◈ PACT / OHJELMAPERHE', marker.x, marker.y - 12);ctx.restore();
+/** Draw each parent volume from declarative metadata, without PACT-specific rendering. */
+function drawHierarchyVolumes(c) {
+ for(const family of hierarchyGroups){
+  if(sector!=='all'&&!family.groups.includes(sector))continue;
+  const bounds=hierarchyBounds(N,family);
+  if(!bounds)continue;
+  const alpha=sector==='all'?.37:.61;
+  if(family.fillOpacity)drawTintedVolume(c,bounds,family.color,family.fillOpacity);
+  drawWireVolume(c,bounds,family.color,alpha,1.75,[11,6]);
+  const marker=pr([(bounds.min[0]+bounds.max[0])/2,bounds.max[1],bounds.min[2]],c);
+  if(marker){
+   ctx.save();ctx.fillStyle=tint(family.labelColor??family.color,Math.min(1,alpha*2.4));
+   ctx.font='700 11px DM Sans,Arial';ctx.textAlign='center';
+   ctx.fillText('◈ '+family.title,marker.x,marker.y-12);ctx.restore();
+  }
  }
 }
 /** A barely tinted volume makes each skene legible without hiding its links. */
@@ -220,7 +229,7 @@ function drawTintedVolume(c, bounds, color, alpha) {
 /** Each skene occupies a fully enclosed, spatially separate 3D region. */
 function drawCluster(c) {
  for (const [g, bounds] of Object.entries(groupBounds)) {
-  if (!bounds) continue;
+  if (!bounds || isHierarchyRoot(g)) continue;
   const coords = centers[g], middle = pr(coords, c);
   if (!middle || middle.x < -950 || middle.x > W + 950 || middle.y < -950 || middle.y > H + 950) continue;
   const col = groupMeta[g][1], active = sector === 'all' || sector === g;
@@ -403,7 +412,7 @@ function draw(now){
  const routeView=routeVisibility(pathNodes,pathEdges);
  focusIds=routeView.active?new Set(pathNodes):focusedNodeIds(selected,E,showLevels);
  drawWorldGrid(c);
- if(!routeView.active){drawPactHierarchy(c);drawCluster(c);drawDepthGuides(c,ps)}
+ if(!routeView.active){drawHierarchyVolumes(c);drawCluster(c);drawDepthGuides(c,ps)}
  const nodes=N.filter(n=>routeView.showsNode(n.id)).map(n=>({n,p:ps[n.id]}))
   .filter(item=>item.p&&item.p.x>-190&&item.p.x<W+200&&item.p.y>-170&&item.p.y<H+200)
   .map(({n,p})=>nodeLayout(n,p));
@@ -420,7 +429,7 @@ function draw(now){
   const a=ps[e.a],b=ps[e.b];if(!a||!b)return;
   if((a.x<-W&&b.x<-W)||(a.x>W*2&&b.x>W*2))return;
   const hi=routeView.active||!!selected&&(e.a===selected||e.b===selected);
-  let dim=(!!selected&&!hi)||(sector!=='all'&&by[e.a].group!==sector&&by[e.b].group!==sector&&!hi);
+  let dim=(!!selected&&!hi)||(sector!=='all'&&!sectorMatches(by[e.a].group)&&!sectorMatches(by[e.b].group)&&!hi);
   // Subdivide edges in depth so a closer line can correctly occlude a distant label.
   const segments=Math.min(16,Math.max(1,Math.ceil(Math.abs(a.z-b.z)/240)));
   let dashPhase=0;
@@ -483,7 +492,31 @@ function showDetails(id){
  document.getElementById('wikiArticleTab').classList.add('active');
  document.getElementById('wikiSourcesTab').classList.remove('active');
 }
-function renderSectors(){let box=document.getElementById('sectors');box.innerHTML=`<button class="sector ${sector==='all'?'active':''}" data-sector="all"><span class="led" style="color:#444;background:#444"></span><span class="title">KOKO AVARUUS</span><span class="count">${N.length}</span></button>`+Object.entries(groupMeta).map(([id,[name,color]])=>`<button class="sector ${id===sector?'active':''}" data-sector="${id}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${N.filter(n=>n.group===id).length}</span></button>`).join('');box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{sector=b.dataset.sector;renderSectors();if(sector!=='all'){let p=centers[sector],n=N.find(n=>n.group===sector);let st={...target},ed=vec(...p),stDist=dist,desiredDist=Math.max(1600,Math.max(...groupBounds[sector].max.map((v,i)=>v-groupBounds[sector].min[i]))*2.4),start=performance.now(),navigation=++cameraNavigation;let a=(time)=>{if(navigation!==cameraNavigation)return;let t=Math.min(1,(time-start)/620);t=1-(1-t)**3;target=vec(st.x+(ed.x-st.x)*t,st.y+(ed.y-st.y)*t,st.z+(ed.z-st.z)*t);dist=stDist+(desiredDist-stDist)*t;if(t<1)requestAnimationFrame(a)};requestAnimationFrame(a);if(n)showDetails(n.id)}else{cameraNavigation++;target=vec(800,0,350);dist=8800}})}
+function renderSectors(){
+ const box=document.getElementById('sectors');
+ const button=(id,name,color,count,child=false)=>`<button class="sector ${child?'sector-child ':''}${id===sector?'active':''}" data-sector="${id}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${count}</span></button>`;
+ box.innerHTML=button('all','KOKO AVARUUS','#444',N.length)+
+  Object.entries(groupMeta).map(([id,[name,color]])=>
+   button(id,name,color,N.filter(n=>sectorGroups(id).includes(n.group)).length,!!hierarchyRootForChild(id))
+  ).join('');
+ box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{
+  sector=b.dataset.sector;renderSectors();
+  if(sector==='all'){cameraNavigation++;target=vec(800,0,350);dist=8800;return}
+  const p=centers[sector],n=N.find(n=>sectorGroups(sector).includes(n.group));
+  const st={...target},ed=vec(...p),stDist=dist;
+  const desiredDist=Math.max(1600,Math.max(...groupBounds[sector].max.map((v,i)=>v-groupBounds[sector].min[i]))*2.4);
+  const start=performance.now(),navigation=++cameraNavigation;
+  const animate=time=>{
+   if(navigation!==cameraNavigation)return;
+   let t=Math.min(1,(time-start)/620);t=1-(1-t)**3;
+   target=vec(st.x+(ed.x-st.x)*t,st.y+(ed.y-st.y)*t,st.z+(ed.z-st.z)*t);
+   dist=stDist+(desiredDist-stDist)*t;
+   if(t<1)requestAnimationFrame(animate);
+  };
+  requestAnimationFrame(animate);
+  if(n)showDetails(n.id);
+ });
+}
 function renderNameDensity(){
  document.querySelectorAll('[data-name-density]').forEach(button=>{
   const active=button.dataset.nameDensity===nameDensity;
