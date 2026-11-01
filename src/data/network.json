@@ -250,7 +250,7 @@
       "image": "images/iippa.webp",
       "imageCredit": "Seiska, Iippadaa ja Pottukoira yhteiskuvassa",
       "pos3": [
-        1794,
+        2094,
         30,
         749
       ],
@@ -271,7 +271,7 @@
       "image": "images/pottu.webp",
       "imageCredit": "Seiska, Pottukoira-haastattelu",
       "pos3": [
-        1854,
+        2154,
         -170,
         419
       ],
@@ -291,7 +291,7 @@
       "y": 2180,
       "imageCredit": "Julius Konttinen / Televisioakatemia ry, Wikimedia Commons (CC BY-SA 4.0)",
       "pos3": [
-        1499,
+        1799,
         80,
         404
       ],
@@ -312,7 +312,7 @@
       "x": 1090,
       "y": 2260,
       "pos3": [
-        1716,
+        2016,
         97,
         286
       ],
@@ -330,7 +330,7 @@
       "x": 670,
       "y": 2440,
       "pos3": [
-        1644,
+        1944,
         -130,
         529
       ],
@@ -348,7 +348,7 @@
       "x": 450,
       "y": 2620,
       "pos3": [
-        1813,
+        2113,
         -130,
         875
       ],
@@ -369,7 +369,7 @@
       "x": 900,
       "y": 2610,
       "pos3": [
-        1346,
+        1646,
         -417,
         412
       ],
@@ -413,7 +413,7 @@
       "image": "images/korelon.webp",
       "imageCredit": "KPO Festarit, Korelon",
       "pos3": [
-        1815,
+        2025,
         -440,
         -1401
       ],
@@ -433,7 +433,7 @@
       "y": 2000,
       "imageCredit": "Wikimedia Commons, Slikin muotokuva",
       "pos3": [
-        1705,
+        1915,
         -570,
         -1301
       ],
@@ -455,7 +455,7 @@
       "image": "images/ossi.webp",
       "imageCredit": "Visnyk Poker, Ossi Ketola",
       "pos3": [
-        1505,
+        1715,
         -660,
         -1151
       ],
@@ -474,7 +474,7 @@
       "x": 3100,
       "y": 2320,
       "pos3": [
-        1777,
+        1987,
         -343,
         -1544
       ],
@@ -492,7 +492,7 @@
       "x": 3550,
       "y": 2350,
       "pos3": [
-        1874,
+        2084,
         -570,
         -955
       ],
@@ -510,7 +510,7 @@
       "x": 3740,
       "y": 2210,
       "pos3": [
-        1407,
+        1617,
         -857,
         -1418
       ],
@@ -1934,7 +1934,7 @@
       "cat": "show",
       "note": "Spurgu-TV on Pottukoiraan liittyvä Kick-lähetyskonsepti, jonka yhteislähetyksissä on esiintynyt Pirkkis.",
       "pos3": [
-        2054,
+        2354,
         -270,
         499
       ],
@@ -2133,7 +2133,7 @@
       "cat": "person",
       "note": "Rauno77 on Kick-striimaaja, joka teki Pottukoiran kanssa yhteislähetyksiä loppuvuonna 2025.",
       "pos3": [
-        1914,
+        2214,
         -260,
         749
       ],
@@ -2249,7 +2249,7 @@
       "group": "rappio",
       "note": "Iida-Sofia Heimonen (2003–2026), tunnettu nimellä Iidasofya, oli kotkalainen TikTok- ja Kick-striimaaja. Hän kuoli 23-vuotiaana 20. lokakuuta 2026.",
       "pos3": [
-        1730,
+        2030,
         -420,
         1150
       ],
@@ -2269,7 +2269,7 @@
       "group": "rappio",
       "note": "Susanna Lehto eli Evesussu on suomalainen somepersoona, joka teki yhteisiä lähetyksiä Iidasofyan kanssa ja julkaisi hänestä muistovideon lokakuussa 2026.",
       "pos3": [
-        1950,
+        2250,
         -150,
         1410
       ],
