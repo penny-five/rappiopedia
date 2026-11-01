@@ -4100,7 +4100,7 @@
         810
       ],
       "featured": false,
-      "note": "Misantrooppi-nimiseltä verkkokanavalta kerrottiin katsotun Arttu ”Upi” Pulkkisen suoria lähetyksiä marraskuussa 2022. Kanavan tarkkaa osoitetta tai ylläpitäjän henkilöllisyyttä ei ole vahvistettu."
+      "note": "Misantrooppi oli Upin vanhojen suoratoistolähetysten yhteydessä mainittu verkkokanava. Marraskuussa 2022 katsojat kertoivat Upin lähetyksiä esitetyn Misantrooppi-nimisellä kanavalla. Nimi esiintyy myös myöhemmissä Upi-videoiden katsojakeskusteluissa."
     }
   ],
   "edges": [
@@ -10468,6 +10468,11 @@
       "label": "Reddit 4.11.2025: Snappisensuroimat0n:n kehorauhaa koskevat moderointisäännöt",
       "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1ooirhk",
       "note": "Keskustelu ja moderaattorin kommentti: kehon arvosteluun ja ulkonäön pilkkaamiseen liittyviä viestejä poistetaan."
+    },
+    "P291": {
+      "label": "Reddit 11.10.2022: vanha r/snappisensuroimaton mainittiin Snappijuoruissa",
+      "url": "https://www.reddit.com/r/snappijuorut/comments/y1kt77",
+      "note": "Snappijuorujen automoderointia koskevassa keskustelussa lukija viittasi r/snappisensuroimaton-yhteisöön, joka oli toiminnassa jo lokakuussa 2022."
     }
   },
   "date": "2026-11-01"
