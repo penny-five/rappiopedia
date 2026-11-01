@@ -40,6 +40,10 @@ Suhdetyypin `forward` tarkoittaa suunnan `a → b` ilmaisua, `reverse` tarkoitta
 
 Käytä tarkkoja suhdekuvauksia. ”Vieraili PactTalksissa 11.10.2026” kertoo enemmän kuin ”Pact-yhteys”. Jos kyse on suunnitellusta esiintymisestä, älä nimeä sitä toteutuneeksi osallistumiseksi.
 
+**Älä täytä `detail`-kenttää vain täyttämisen vuoksi.** Se näkyy suoraan yhteyden kuvauksen alla ja on vapaaehtoinen. Lisää siihen vain uusi, yhteyskohtainen tieto (esimerkiksi poissaolon syy, voittosumma tai tietyn tapahtuman kiistetty osallisuus). Jos `label` ja lähde jo kertovat kaiken olennaisen, jätä `detail` pois. Älä kopioi samaa selitettä kymmeniin yhteyksiin.
+
+Huonoja kuvauksia ovat ”julkisesti kuvattu ohjelmatilanne; ei yksin muuta liikesuhdetta”, ”tallenteiden otsikkojen metadataa”, ”tarkennettava alkutuotannon lähteellä” ja ”yhteinen esiintyminen ei osoita henkilökohtaista suhdetta”. Ne ovat tutkimusprosessin kommentteja tai yleisvaraumia, eivät lukijaa auttavaa tietoa. Täsmennä sen sijaan tapahtuma `label`-kentässä ja käytä oikeaa `level`-tasoa. Lähteen puuttuva tarkistus kuuluu `research/leads.json`-jonoon, ei julkaistavaan yhteyskuvaukseen. Mahdollinen kiistäminen kirjoitetaan yksilöiden, kuka kiisti mitä.
+
 ### Mitä näyttötaso tarkoittaa?
 
 | Taso | Milloin sitä käytetään |
