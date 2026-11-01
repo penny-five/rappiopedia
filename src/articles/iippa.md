@@ -28,6 +28,12 @@ Iippadaa palasi [[pottu|Pottukoiran]] luo Viron Harjumaalle 10. maaliskuuta 2026
 
 Ylen *Kieksi*-sarjan toisen tuotantokauden avausjakso julkaistiin 13. huhtikuuta 2026. Jaksossa Kieksi tapasi Kurvisen Oulussa ja seurasi tämän valmistautumista [[pottu|Pottukoiran]] kanssa tehtyyn matkaan. Dokumentin haastattelussa Kurvinen arvioi saavansa striimauksesta noin tuhat euroa kuukaudessa tai hieman enemmän, mikä oli vähemmän kuin moni katsoja saattoi ajatella. [@P45] [@P168]
 
+## Yhteislähetys Megarokkistaran kanssa lokakuussa 2026
+
+Lokakuun 19. päivänä 2026 julkaistussa Reddit-ketjussa esitettiin katkelma, jossa Kurvinen esiintyi [[megis|Megarokkistaran]] eli Juulia Valikaisen kanssa suorassa lähetyksessä. Kyseinen [[iippa_megis_livet_2026|yhteislähetys]] oli ennen seuraavan päivän PactTalks-vierailua, johon molemmat osallistuivat. [@P204] [@P19]
+
+## Vuoden 2026 julkisuus ja PactTalks
+
 ## Vuoden 2026 julkisuus ja PactTalks
 
 Heinäkuussa 2026 Seiska haastatteli Kurvista tämän taloudellisesta tilanteesta ja arjen uudelleenrakentamisesta. Kurvinen kertoi käyvänsä terapiassa ja pyrkivänsä vakaampaan elämäntilanteeseen. [@P169]

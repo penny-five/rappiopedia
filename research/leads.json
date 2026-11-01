@@ -748,16 +748,20 @@
       "nodeIds": [
         "monnirs",
         "keppada",
-        "monni_keppada_africa_2025"
+        "monni_keppada_africa_2025",
+        "monni_pyoraily_2024"
       ],
       "sourceIds": [
         "P197",
-        "P199"
+        "P199",
+        "P202",
+        "P201"
       ],
-      "notes": "1.11.2026: Julkaistu 5.9.2025 alkanut liftaus Jyväskylästä kohti Afrikkaa. Määränpäähän pääsyä ei ole vahvistettu.",
+      "notes": "1.11.2026: Julkaistu 5.9.2025 alkanut liftaus Jyväskylästä kohti Afrikkaa. Määränpäähän pääsyä ei ole vahvistettu.\n1.11.2026 jatkokartoitus: LiveSearch arkistoi kaksikon yhteisen 'DAY 5' -lähetyksen 9.9.2025. Ylen 12.2.2026 jutun mukaan Sihvonen on liftannut Afrikkaan, mutta tekstistä ei selviä tapahtuiko se juuri Keppadan kanssa tehdyllä syyskuun 2025 matkalla.",
       "questions": [
         "Mihin asti matka eteni ja milloin se päättyi?",
-        "Löytyykö arkistoituja Kick-VOD-tallenteita?"
+        "Löytyykö arkistoituja Kick-VOD-tallenteita?",
+        "Oliko Ylen Afrikkaan ulottunut liftaus juuri 5.9.2025 alkanut Keppadan ja MonniRS:n yhteisreissu?"
       ],
       "queries": [
         "\"MonniRS\" \"Keppada\" Afrikka 2025",
@@ -891,6 +895,92 @@
         "Tarkista uutisen linkkaama alkuperäinen video ja lähetysajankohta.",
         "Vältä hyökkääjän henkilöllisyyden arvaamista keskustelupalstoilta.",
         "Vertaa heinäkuun yksilöityjä videoita nykyisiin yhteysreunoihin."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "pasi-kick-2025",
+      "title": "Pasi Viherahon Kick-debyytin 2025 alkuperäistallenne",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "pasi",
+        "keppada",
+        "pasi_kick_2025"
+      ],
+      "sourceIds": [
+        "P200"
+      ],
+      "notes": "Mediamaailma raportoi 13.9.2025 ensimmäisestä Kick-lähetyksestä ja Keppadan katsojaohjauksesta; varsinainen VOD puuttuu.",
+      "questions": [
+        "Mikä oli debyyttilähetyksen tarkka aloitusaika?",
+        "Mille toiselle kanavalle Pasi ohjasi katsojansa lähetyksen päättyessä?"
+      ],
+      "queries": [
+        "\"Pasi Viheraho\" \"Keppada\" 13.9.2025",
+        "\"pasiviherahovirallinen\" \"13.9.2025\""
+      ],
+      "nextSteps": [
+        "Etsi alkuperäinen Kick-VOD tai striimiarkisto.",
+        "Vahvista mahdolliset muut lähetysvieraat."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "pirkkis-chiara-megis-july2026",
+      "title": "Pirkkiksen, Chiaran ja Megiksen 5.7.2026 kohtaamisen tallenne",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "pirkkis",
+        "chiara",
+        "megis",
+        "pirkkis_chiara_megis_2026"
+      ],
+      "sourceIds": [
+        "P203"
+      ],
+      "notes": "Redditin 5.7.2026 julkaisema video osoittaa yhteisen lähetyskontekstin, mutta kommentoijat ovat erimielisiä ensitapaamisesta.",
+      "questions": [
+        "Minkä tekijän kanavalla kohtaaminen lähetettiin?",
+        "Oliko kolmikko tavannut ennen heinäkuuta 2026?"
+      ],
+      "queries": [
+        "\"Pirkkis\" \"Chiara\" \"Megis\" 5.7.2026",
+        "\"Pirkka Ukko\" \"Megarokkistara\" heinäkuu 2026"
+      ],
+      "nextSteps": [
+        "Etsi alkuperäinen VOD ja tarkista esiintyjät videolta."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "iippa-megis-oct19-2026",
+      "title": "Iippadaan ja Megiksen 19.10.2026 yhteislähetys",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "iippa",
+        "megis",
+        "iippa_megis_livet_2026",
+        "talks"
+      ],
+      "sourceIds": [
+        "P204",
+        "P19"
+      ],
+      "notes": "Redditiin 19.10.2026 julkaistu klippi kertoo yhteislähetyksestä PactTalks-vierailua edeltäneenä päivänä. Redditin yksityiskohdista on keskenään ristiriitaisia väitteitä.",
+      "questions": [
+        "Minkä kanavan alkuperäinen tallenne oli?",
+        "Ketä muita lähetyksessä on vahvistettavasti mukana?"
+      ],
+      "queries": [
+        "\"iippadaa\" \"megis\" \"19.10.2026\"",
+        "\"iippa\" \"juulia\" \"valvoja\" 19.10.2026"
+      ],
+      "nextSteps": [
+        "Hanki alkuperäinen tallenne ja aikaleimat.",
+        "Älä kirjaa katsojakommenttien henkilöllisiä väitteitä varmoina."
       ],
       "updatedAt": "2026-11-01"
     }

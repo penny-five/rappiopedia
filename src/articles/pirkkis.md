@@ -16,6 +16,10 @@ Heinäkuussa 2026 Reddit-ketjussa jaettiin tieto Pirkkiksen uudesta vierailusta 
 
 Liimatta ei ole esiintynyt ainoastaan Pottukoiran kanssa. Marraskuun 2025 uutisissa häntä kuvattiin myös [[iippa|Iippadaan]] lähetyksissä vierailleeksi. Hän on siten liikkunut useiden rappiostriimaajien suoratoistoyhteisöissä ilman, että kaikki lähetykset olisivat samaa ohjelmasarjaa. [@P57]
 
+## Yhteisstriimi Chiaran ja Megiksen kanssa heinäkuussa 2026
+
+Heinäkuun 5. päivänä 2026 Redditissä julkaistiin videokatkelma, jossa Pirkkis esiintyi [[chiara|Chiara Eklundin]] ja [[megis|Megarokkistaran]] seurassa suorassa lähetyksessä. Kohtaamisesta on [[pirkkis_chiara_megis_2026|oma artikkelinsa]]. Keskustelussa kiisteltiin siitä, oliko kyse ensimmäisestä tapaamisesta, eikä asia selviä käytettävissä olevasta katkelmasta. [@P203]
+
 ## Väkivaltatilanne suorassa lähetyksessä toukokuussa 2026
 
 Gekkonen uutisoi 22. toukokuuta 2026, että Pirkkikseen oli kohdistunut väkivaltaa Kick-lähetyksen aikana. Lehden kuvailemassa videotilanteessa mies läpsäisi Liimattaa ensin takaraivoon ja löi myöhemmin kasvoihin. Pirkkiksen silmäkulmaan tuli haava. Julkaistu uutinen ei yksilöinyt tilanteen mahdollisia myöhempiä rikosoikeudellisia ratkaisuja. [@P192]

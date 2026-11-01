@@ -12,6 +12,12 @@ Viheraho käynnisti [[pasiradio|Pasiradion]] vuonna 2007. Omien verkkosivujensa 
 
 Viheraho on jatkanut videoiden ja radioaiheisen sisällön julkaisemista myös 2020-luvulla. Pasiradion omilla verkkosivuilla on suoratoiston kuuntelu- ja videolinkkejä sekä linkki hänen YouTube-kanavalleen. [@P118]
 
+## Ensimmäinen Kick-lähetys syyskuussa 2025
+
+Viheraho teki ensimmäisen [[pasi_kick_2025|Kick-lähetyksensä]] lauantaina 13. syyskuuta 2025. Alussa katsojia oli hieman yli sata. [[keppada|Keppada]] ohjasi oman, noin 800 katsojan yleisönsä Viherahon striimiin, ja Mediamaailman mukaan yli 300 heistä jäi seuraamaan lähetystä. [@P200]
+
+Viheraho kertoi haluavansa Kickin uudeksi kanavaksi mielipiteidensä esittämiseen YouTuben rinnalle. Ensilähetyksessä oli myös Pasiradiosta tuttuja yleisöpuheluita. Hän suunnitteli selvittävänsä, voisiko [[pasiradio|Pasiradion]] ja Kick-striimauksen yhdistää. [@P200]
+
 ## PactTalks ja vesihanalegenda vuonna 2026
 
 Viheraho vieraili 11. lokakuuta 2026 [[talk_pasi|PactTalksin jaksossa 80]], jonka juonsi [[jethro|Jethro Rostedt]]. Lähetysotsikossa toiseksi vieraaksi oli merkitty myös [[megis|Megarokkistara]]. [@P7] [@P63]

@@ -3257,6 +3257,66 @@
         -275,
         1795
       ]
+    },
+    {
+      "id": "pasi_kick_2025",
+      "name": "Pasi Viherahon ensimmäinen Kick-lähetys 13.9.2025",
+      "group": "old-school-tubetus",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Pasi Viheraho aloitti Kick-lähetykset 13. syyskuuta 2025. Keppada ohjasi hänen ensimmäiseen lähetykseensä noin 800 katsojan yleisön.",
+      "pos3": [
+        1770,
+        245,
+        2520
+      ]
+    },
+    {
+      "id": "monni_pyoraily_2024",
+      "name": "MonniRS:n pyöräilyretki kohti Lappeenrantaa 5.6.2024",
+      "group": "reality",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "note": "MonniRS lähti Jyväskylästä pyöräilemään kohti Lappeenrantaa kesäkuussa 2024 ja teki matkastaan Kick-lähetystä.",
+      "pos3": [
+        1810,
+        840,
+        -220
+      ]
+    },
+    {
+      "id": "pirkkis_chiara_megis_2026",
+      "name": "Pirkkiksen, Chiaran ja Megiksen yhteisstriimi 5.7.2026",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Heinäkuun 5. päivänä 2026 Redditissä julkaistiin video Pirkkiksen tapaamisesta Chiaran ja Megiksen kanssa suorassa lähetyksessä.",
+      "pos3": [
+        2160,
+        -310,
+        1000
+      ]
+    },
+    {
+      "id": "iippa_megis_livet_2026",
+      "name": "Iippadaan ja Megiksen yhteislähetys 19.10.2026",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Iippadaa ja Megarokkistara esiintyivät yhdessä 19. lokakuuta 2026 suorassa lähetyksessä, jota seurattiin aktiivisesti Redditissä.",
+      "pos3": [
+        2445,
+        -15,
+        985
+      ]
     }
   ],
   "edges": [
@@ -6973,6 +7033,105 @@
       "src": [
         "P199"
       ]
+    },
+    {
+      "a": "pasi",
+      "b": "pasi_kick_2025",
+      "type": "striimasi",
+      "label": "aloitti ensimmäisen Kick-lähetyksensä",
+      "date": "13.9.2025",
+      "src": [
+        "P200"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "keppada",
+      "b": "pasi_kick_2025",
+      "type": "avusti",
+      "label": "ohjasi noin 800 katsojan yleisönsä Pasin ensilähetykseen",
+      "date": "13.9.2025",
+      "src": [
+        "P200"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "keppada",
+      "b": "pasi",
+      "type": "avusti",
+      "label": "toi katsojia Pasin ensimmäiseen Kick-striimiin",
+      "date": "13.9.2025",
+      "src": [
+        "P200"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "monnirs",
+      "b": "monni_pyoraily_2024",
+      "type": "matkusti",
+      "label": "striimasi pyöräilymatkaansa Jyväskylästä Lappeenrantaa kohti",
+      "date": "5.6.2024",
+      "src": [
+        "P201"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pirkkis",
+      "b": "pirkkis_chiara_megis_2026",
+      "type": "osallistui",
+      "label": "esiintyi yhteislähetyksessä Chiaran ja Megiksen kanssa",
+      "date": "5.7.2026",
+      "src": [
+        "P203"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "chiara",
+      "b": "pirkkis_chiara_megis_2026",
+      "type": "osallistui",
+      "label": "esiintyi yhteislähetyksessä Pirkkiksen ja Megiksen kanssa",
+      "date": "5.7.2026",
+      "src": [
+        "P203"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "megis",
+      "b": "pirkkis_chiara_megis_2026",
+      "type": "osallistui",
+      "label": "esiintyi yhteislähetyksessä Pirkkiksen ja Chiaran kanssa",
+      "date": "5.7.2026",
+      "src": [
+        "P203"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "iippa",
+      "b": "iippa_megis_livet_2026",
+      "type": "osallistui",
+      "label": "esiintyi Megiksen kanssa samassa suorassa lähetyksessä",
+      "date": "19.10.2026",
+      "src": [
+        "P204"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "megis",
+      "b": "iippa_megis_livet_2026",
+      "type": "osallistui",
+      "label": "esiintyi Iippadaan kanssa samassa suorassa lähetyksessä",
+      "date": "19.10.2026",
+      "src": [
+        "P204"
+      ],
+      "level": "reported"
     }
   ],
   "sources": {
@@ -7975,6 +8134,31 @@
       "label": "Mediamaailma 5.9.2025: Keppadan ja MonniRS:n liftausmatka",
       "url": "https://mediamaailma.fi/keppada-ja-monnirs-liftaten-afrikkaan-henkan-ja-vesan-roadtrip-seka-muut-irl-striimit-viikonlopulle/",
       "note": "Kaksikko lähti Jyväskylästä liftaten Afrikkaa kohti omissa Kick-lähetyksissään; pääsyä Afrikkaan ei vahvisteta."
+    },
+    "P200": {
+      "label": "Mediamaailma 14.9.2025: Pasi Viherahon Kick-debyytti ja Keppadan yleisöohjaus",
+      "url": "https://mediamaailma.fi/pasi-viheraho-aloitti-striimauksen-kickissa/",
+      "note": "Viherahon ensimmäinen Kick-lähetys lauantaina 13.9.2025; Keppadan noin 800 katsojan yleisö ohjautui lähetykseen."
+    },
+    "P201": {
+      "label": "Mediamaailma 5.6.2024: MonniRS:n pyöräily kohti Lappeenrantaa",
+      "url": "https://mediamaailma.fi/monnirs-aloitti-pyorailyn-kohti-itarajaa/",
+      "note": "MonniRS lähti 5.6.2024 Jyväskylästä pyöräilemään Lappeenrantaa kohti yhdessä Cameron-nimisen ystävän kanssa; Kick-lähetys."
+    },
+    "P202": {
+      "label": "LiveSearch: MonniRS:n 9.9.2025 Kick-lähetys, liftausmatkan 5. päivä",
+      "url": "https://www.livesearch.app/stream.php?bid=73401345&id=20890530",
+      "note": "Lähetysarkisto kirjaa 9.9.2025 lähetyksen '7 PÄIVÄÄ LIFTATEN ... FT KEPPADA DAY 5'. Arkistomerkintä kertoo lähetysotsikosta, ei tallenteen yksityiskohdista."
+    },
+    "P203": {
+      "label": "Reddit 5.7.2026: Pirkkis tapaa Chiaran ja Megiksen striimissä",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1unppe5/pirkkis_tapaa_chiaran_ja_megiksen_ensimm%C3%A4ist%C3%A4/",
+      "note": "Keskustelun yhteydessä jaettu videokatkelma striimikohtaamisesta 5.7.2026. Kommentoijat ovat eri mieltä siitä, oliko tapaaminen henkilöiden ensimmäinen."
+    },
+    "P204": {
+      "label": "Reddit 19.10.2026: Megiksen ja Iippadaan yhteinen suora lähetys",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1xa5ld2/megis_ja_iippa_nuoleskelee/",
+      "note": "Päivätty ketju kuvaa Iippadaan ja Megiksen yhteistä 19.10.2026 liveä. Yksityisten tekojen kommentteja ei käsitellä vahvistettuina."
     }
   },
   "date": "2026-11-01"

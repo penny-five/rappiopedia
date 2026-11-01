@@ -10,6 +10,10 @@ Seiskan lokakuussa 2026 julkaisemassa jutussa Eklund kertoi saaneensa Kickiltä 
 
 Heinäkuussa Chiara esiintyi [[mokkistriimit_july_2026|mökkireissulla]] yhdessä [[megis|Megiksen]], [[julwill|Julia Willmanin]], [[pullis|Pulliksen]], [[sampe|Sampen]], [[pirkkis|Pirkkiksen]] ja [[isabell|Isabell Janssonin]] kanssa. Syyskuun [[mallorca_livet_2026|Mallorcan-matkalla]] hän oli Sampen, Pulliksen ja Megiksen seurueessa. [@P174] [@P178]
 
+## Pirkkiksen tapaaminen heinäkuun alussa
+
+Heinäkuun 5. päivänä 2026 Eklund esiintyi [[pirkkis_chiara_megis_2026|yhteislähetyksessä]] [[pirkkis|Pirkkiksen]] ja [[megis|Megarokkistaran]] kanssa. Redditissä jaettiin tilanteesta videokatkelma. Kohtaaminen oli erillinen saman kuun lopulla alkaneesta mökkireissusta. [@P203]
+
 ## Televisio ja PactHouse
 
 Eklund ja Megarokkistara olivat MTV Katsomossa 18. lokakuuta 2026 julkaistun *Asian ytimessä.doc: Kohujulkkikset* -ohjelman haastateltavina. Dokumentin toimittaja Iriz Silander seurasi heidän Kick-toimintaansa. [@P133]
