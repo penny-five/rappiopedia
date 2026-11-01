@@ -1055,7 +1055,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/ella.webp",
+      "imageSource": "https://image.seiska.fi/1832569.webp?compression=70&croph=50.65&cropw=60.00&format=jpg&height=348&imageId=1832569&width=620&x=20.12&y=2.90",
+      "imageCredit": "Atte Kajova / Seiska, Ella Toivaisen haastattelukuva (20.6.2025)"
     },
     {
       "id": "isabell",
