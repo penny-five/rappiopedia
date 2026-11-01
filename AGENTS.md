@@ -105,6 +105,8 @@ Skenen tunnisteet, suomenkieliset nimet, värit ja mahdollinen poikkeava 3D-marg
 
 Rappiostriimauksen yhteisellä ylätason laatikolla on `padding: 160` (`hierarchyGroups`), PACTilla 145 ja skenelaatikoilla `src/data/skenes.json`-rekisterin mukaiset marginaalit (oletus 100). **Tarkista vanhempien, lasten, suoraan vanhempaan sijoitettujen solmujen ja muiden skenejen tilavuuksien rajat**, kun muokkaat ryhmiä tai koordinaatteja.
 
+Katso myös [3D-skenesijoittelun periaatteet](docs/SCENE_LAYOUT.md): skenet tulee sijoittaa niiden lähteistettyjen yhteyksien perusteella, ei pelkän tilavuuksien erillisyyden vuoksi. Siirrä skenen solmuja yhtenä kokonaisuutena, säilytä ylätason hierarkiat ja tarkista myös vierekkäisyyttä koskevat regressiotestit.
+
 ## Rappioverse: 3D-skenet eivät saa leikata toisiaan
 
 **Tämä on toistuva regressio:** uusien solmujen lisääminen, niiden `pos3`-koordinaattien tai `group`-ryhmän muuttaminen sekä skenejen uudelleensijoittelu ovat aiemmin aiheuttaneet `tests/layout.test.mjs`-testien kaatumisen (esimerkiksi `rappio intersects PACT` ja `talks intersects rappio`).
