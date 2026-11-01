@@ -6,6 +6,10 @@ Seiska kuvasi Viherahoa heinäkuussa 2017 yhdeksi Suomen varhaisista YouTube-jul
 
 Viherahon kiinnostus tekniikkaan näkyi myös hänen kotistudiossaan, radio- ja puhelinlaitteissaan sekä itse rakentamissaan järjestelmissä. Seiskan haastattelussa hän kertoi saaneensa katsojilta lahjoituksina muun muassa elektroniikkaa ja muuta välineistöä. [@P114]
 
+## Vlogidokumentin kuvaukset vuonna 2012
+
+Pasi Viheraho oli yksi Jens Hattuniemen ja Mikko Lambergin [[vlogidokumentti_2012|Vlogidokumentin]] kolmesta haastateltavasta. Muut olivat [[niilo22|Niilo22]] ja [[markorepairs|MarkoRepairs]]. Tekijät kuvasivat henkilöitä ja yhdistivät materiaaliin heidän omia YouTube-videoitaan. Hattuniemi käsitteli dokumentin tekemistä ja sen tarjoamista tuotantoyhtiöille vuoden 2012 opinnäytetyössään. [@P227]
+
 ## Tubettajat-dokumentti vuonna 2013
 
 Viheraho oli yksi Sanna-Sisko Tohkan ohjaaman [[tubettajat_2014|Tubettajat-dokumentin]] kolmesta päähenkilöstä. Yle TV1 esitti elokuvan ensimmäisen kerran 21. lokakuuta 2013. Se kuvasi Viherahon arkea, ruoanlaittoa muun muassa dyykatusta ruoasta ja hänen tapaansa julkaista elämäänsä koskevaa videomateriaalia suoraan yleisölleen. Samassa dokumentissa esiintyivät [[niilo22|Niilo22]] ja [[iltapalamies|Iltapalamies]]. [@P211] [@P134]
