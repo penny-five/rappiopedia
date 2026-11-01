@@ -88,7 +88,8 @@ Yhden tutkimusaiheen kentät ovat:
 - `id` ja `title`: tunniste ja ymmärrettävä nimi
 - `status`: `open`, `in-progress`, `blocked` tai `done`
 - `priority`: `high`, `medium` tai `low`
-- `nodeIds` ja `sourceIds`: olemassa oleviin verkostosolmuihin ja lähteisiin viittaavat tunnisteet
+- `nodeIds` ja `sourceIds`: olemassa oleviin verkostosolmuihin ja lähteisiin viittaavat tunnisteet (voivat olla tyhjiä, jos aihe on uusi)
+- `sourceUrls`: mahdolliset alkuperäiset linkit, joita ei vielä ole lähderekisterissä
 - `notes`: mitä on jo löytynyt, mistä lähteestä ja missä tiedot ovat epäselviä
 - `questions`: kysymykset, joihin tarvitaan vastaus
 - `queries`: seuraaviin hakuihin soveltuvat hakulausekkeet
