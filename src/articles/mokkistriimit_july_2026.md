@@ -2,7 +2,7 @@
 
 ## Seurue ja matka
 
-Heinäkuun 23. päivänä avatussa Reddit-keskustelussa katsojat nimesivät mukana olleet tekijät ja seurasivat eri kanavien rinnakkaisia striimejä. [[daniel|Daniel Hellmanin]] kerrottiin liittyvän porukkaan myöhemmin. [@P174] [@P175]
+Heinäkuun 23. päivänä seurue matkusti mökille useassa autossa. Lähetyksiä kuvattiin muun muassa Pulliksen, Sampen ja Julia Willmanin Kick-kanavilla. Samassa matkaseurueessa esiintyivät sekä Julia Willman että [[megis|Juulia ”Megis” Valikainen]]. [[daniel|Daniel Hellman]] liittyi seurueen ohjelmaan myöhemmin. [@P174] [@P175]
 
 ## Hellmanin keikka ja suppailu
 
