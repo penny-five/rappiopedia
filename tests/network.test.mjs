@@ -22,6 +22,29 @@ test('kaikissa yhteyksissä validit solmut, tyypit ja lähteet',()=>{
  for(const id of e.src)assert.ok(data.sources[id]?.url,`Missing source: ${id}`);
  }
 });
+test('yhteyksien lisätiedot ovat yksilöllisiä eivätkä tutkimusmuistiinpanoja tai yleisvaraumia',()=>{
+ const details=new Map();
+ const filler=[
+  /tallenteiden otsikkojen metadataa/i,
+  /ei (?:yksin |itsessään |automaattisesti )?(?:osoita|todista|tarkoita|merkitse)/i,
+  /ei päätelmää/i,
+  /(?:tarkennettava|tarkistettava|ei saatu .*avattua|ei käyty läpi|ei (?:ole )?tarkistettu)/i,
+  /(?:tapahtumakuvaus riittää|väitteiden olemassaolon)/i,
+  /(?:ei väitettä sopimuksista|ei todistus laajemmasta yhteistyöstä)/i,
+ ];
+ for(const e of data.edges){
+  if(!('detail' in e))continue;
+  const relation=e.a+'–'+e.b;
+  assert.equal(typeof e.detail,'string',relation+' detail must be a string');
+  const detail=e.detail.trim();
+  assert.ok(detail.length>=15,relation+' has an empty or unhelpful detail');
+  assert.notEqual(detail,e.label.trim(),relation+' detail repeats the label');
+  assert.ok(!details.has(detail),relation+' repeats the detail of '+details.get(detail));
+  details.set(detail,relation);
+  for(const pattern of filler)assert.doesNotMatch(detail,pattern,relation+' contains editorial filler');
+ }
+});
+
 test('ylätason ryhmä viittaa olemassa oleviin kausiin ja solmuihin',()=>{
  const groups=new Set(data.nodes.map(n=>n.group));
  for(const h of hierarchyGroups){
