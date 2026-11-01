@@ -172,7 +172,10 @@
         "striimaaja",
         "juontaja",
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/joachim.webp",
+      "imageSource": "https://nettipokeri.com/wp-content/uploads/2026/03/Okkishow-e1774713184753.jpg",
+      "imageCredit": "Nettipokeri.com, Joachim ”Okkishow” Rostedt veneilemässä (29.3.2026)"
     },
     {
       "id": "sahamies",
@@ -1828,7 +1831,10 @@
       "featured": false,
       "types": [
         "henkilo"
-      ]
+      ],
+      "image": "images/vp.webp",
+      "imageSource": "https://nettipokeri.com/wp-content/uploads/2026/03/mf6df6c9c2e.jpg",
+      "imageCredit": "Nettipokeri.com, Veli-Pekka Alakorva pokeripöydässä muiden pelaajien kanssa (24.3.2026)"
     },
     {
       "id": "tero",
@@ -2371,7 +2377,10 @@
         420,
         65
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/tippa_t.webp",
+      "imageSource": "https://image.seiska.fi/2172806.webp?compression=70&croph=37.53&cropw=100.00&format=jpg&height=348&imageId=2172806&width=620&x=0.00&y=0.00",
+      "imageCredit": "Amanda Harkimo / Seiskan arkisto, Tippa T (5.6.2026)"
     },
     {
       "id": "cruella_johansson",
@@ -2403,7 +2412,10 @@
         160,
         -70
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/tuukka_kuru.webp",
+      "imageSource": "https://images.cdn.yle.fi/image/upload/c_crop%2Ch_2880%2Cw_5120%2Cx_0%2Cy_48/ar_1.7777777777777777%2Cc_fill%2Cg_faces%2Ch_431%2Cw_767/dpr_2.0/q_auto%3Aeco/f_auto/fl_lossy/v1681015715/39-10970446432436592a39",
+      "imageCredit": "Emmi Korhonen / Lehtikuva, Tuukka Kuru Ylen pienpuoluetentissä 2023"
     },
     {
       "id": "jouni_honkanen",
@@ -2483,7 +2495,10 @@
         840,
         -1480
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/max_hynninen.webp",
+      "imageSource": "https://media.content.livearena.io/icecage/ice-cage-podcast-800x581.jpg",
+      "imageCredit": "Ice Cage Fighting, Max Hynninen Ice Cage -podcastin kansikuvassa (28.10.2026)"
     },
     {
       "id": "ice_cage_podcast",
@@ -2515,7 +2530,10 @@
         -930,
         -1370
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/patrik_antonius.webp",
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Patrik_Antonius_2018.jpg",
+      "imageCredit": "Paf – Games Sport Casino / Wikimedia Commons, Patrik Antonius Battle of Malta 2018 (CC BY 2.0)"
     },
     {
       "id": "duel_jeju_2026",
