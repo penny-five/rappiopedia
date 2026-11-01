@@ -294,7 +294,8 @@
       "types": [
         "dokumentaristi",
         "yrittaja"
-      ]
+      ],
+      "image": "images/sami.webp"
     },
     {
       "id": "revul",
@@ -1214,7 +1215,8 @@
       "imageCredit": "Rob Watkins / Club Paf, Wikimedia Commons (CC BY 2.0)",
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/sara.webp"
     },
     {
       "id": "amanda",
