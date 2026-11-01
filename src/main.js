@@ -1,5 +1,7 @@
 import './styles.css';
 import DATA from './data/network.json';
+import RELATION_TYPES from './data/relation-types.json';
+import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
 import { focusedNodeIds, graphLabelScale, projectedEdgePoint } from './lib/scene.js';
 import { hierarchyGroups } from './lib/hierarchy.js';
@@ -216,7 +218,7 @@ function layoutRelationshipLabels(ps,nodeItems){
   const p=ps[e.a],q=ps[e.b];if(!p||!q)continue;
   const dx=q.x-p.x,dy=q.y-p.y,len=Math.hypot(dx,dy);
   if(len<55||W<100)continue;
-  const verb=e.verb||e.label;
+  const verb=relationVerb(e,selected,RELATION_TYPES);
   const text=e.a===selected?verb+' · '+by[e.b].name:by[e.a].name+' · '+verb;
   const w=Math.min(Math.max(40,W-16),Math.max(68,Math.ceil(ctx.measureText(text).width)+25)),h=24;
   const nx=-dy/len,ny=dx/len;
@@ -317,7 +319,7 @@ function showDetails(id){
  const n=by[id];if(!n)return;
  selected=id;document.title=n.name+' — Rappiopedia';
  if(location.hash!=='#/node/'+id)history.replaceState({node:id},'','#/node/'+id);
- const related=E.filter(e=>e.a===id||e.b===id).map(e=>({...e,other:by[e.a===id?e.b:e.a]}))
+ const related=E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
   .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
  renderNodeArticle({node:n,related,nodes:by,sources:S,levels,group:groupMeta[n.group][0],category:catNames[n.cat]||n.cat});
  document.getElementById('rightpanel').scrollTop=0;
