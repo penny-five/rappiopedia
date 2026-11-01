@@ -3,7 +3,7 @@ import DATA from './data/network.json';
 import RELATION_TYPES from './data/relation-types.json';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
-import { focusedNodeIds, graphLabelScale, projectedEdgePoint } from './lib/scene.js';
+import { focusedNodeIds, graphLabelScale, projectedEdgePoint, cameraTravelDirection } from './lib/scene.js';
 import { hierarchyGroups } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
@@ -14,6 +14,8 @@ const levels={verified:{label:'Vahvistettu',color:'#16856c'},reported:{label:'Uu
 const catNames={person:'HENKILÖ',org:'YHTIÖ / BRÄNDI',event:'TAPAHTUMA',show:'OHJELMA',lead:'SELVITETTÄVÄ NIMI',media:'JULKAISU',platform:'ALUSTA',meme:'ILMIÖ'};
 const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d'),space=document.getElementById('space');
 let W=0,H=0,dpr=1,yaw=-.32,pitch=.20,dist=3700,target={x:0,y:-70,z:0},selected='pact',sector='all',mode='focus',query='',hover=null,pathNodes=[],pathEdges=[],pointer=null,frame=0,visiblePoints=[],showLevels=new Set(['verified','reported','observed','lead']),focusIds=new Set();
+const pressedTravelKeys=new Set(),travelKeys=new Set(['w','a','s','d','q','e']);
+let lastDrawTime=0,cameraNavigation=0;
 const centers={}; for(const g of Object.keys(groupMeta)){let arr=N.filter(n=>n.group===g);let hub=arr.find(n=>['pact','s1','s2','s3','talks','kieksidoc','bailu','sliki','kasinok','ylilauta'].includes(n.id))||arr[0];centers[g]=hub?.pos3||[0,0,0]}
 function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function image(n){return n.image||''}const photo={};for(const n of N){if(!n.image)continue;const im=new Image();im.referrerPolicy='no-referrer';im.onload=()=>{photo[n.id]=im};im.onerror=()=>{photo[n.id]=null};im.src=n.image;photo[n.id]=null}
@@ -252,8 +254,19 @@ function drawRelationshipLabel(label){
  ctx.textAlign='left';ctx.fillStyle='#1f3442';ctx.fillText(text,x+17,y+h/2+.5,w-22);
  ctx.restore();
 }
-function draw(){
- if(!W||!H)return;frame++;
+function draw(now){
+ if(!W||!H){requestAnimationFrame(draw);return}
+ const dt=lastDrawTime?Math.min((now-lastDrawTime)/1000,.05):0;
+ lastDrawTime=now;
+ if(dt&&!pointer?.pan&&pressedTravelKeys.size){
+  const direction=cameraTravelDirection(pressedTravelKeys,projection());
+  if(direction.x||direction.y||direction.z){
+   const speed=Math.max(280,Math.min(1450,dist*.7))*(pressedTravelKeys.has('shift')?2.5:1);
+   target=vec(target.x+direction.x*speed*dt,target.y+direction.y*speed*dt,target.z+direction.z*speed*dt);
+   cameraNavigation++;hover=null;dirty=true;
+  }
+ }
+ frame++;
  drawBackground();
  const c=projection(),ps={};for(const n of N)ps[n.id]=pr(n.pos3,c);
  focusIds=focusedNodeIds(selected,E,showLevels);
@@ -313,8 +326,8 @@ function clearSelection(){
  document.getElementById('rightpanel').classList.remove('mobileopen');
 }
 function touchInfo(id){selected=id;pathNodes=[];pathEdges=[];showDetails(id);dirty=true;document.getElementById('rightpanel').classList.add('mobileopen')}
-function flyTo(id,zoom=true){const n=by[id];if(!n)return;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
-function reset(){sector='all';mode='focus';query='';document.getElementById('search').value='';pathNodes=[];pathEdges=[];selected='pact';target=vec(0,-70,0);dist=3650;yaw=-.35;pitch=.22;renderSectors();renderModes();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
+function flyTo(id,zoom=true){const n=by[id];if(!n)return;const navigation=++cameraNavigation;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){if(navigation!==cameraNavigation)return;let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
+function reset(){cameraNavigation++;pressedTravelKeys.clear();sector='all';mode='focus';query='';document.getElementById('search').value='';pathNodes=[];pathEdges=[];selected='pact';target=vec(0,-70,0);dist=3650;yaw=-.35;pitch=.22;renderSectors();renderModes();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
 function relatedForNode(id){
  return E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
   .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
@@ -329,14 +342,24 @@ function showDetails(id){
  document.getElementById('wikiArticleTab').classList.add('active');
  document.getElementById('wikiSourcesTab').classList.remove('active');
 }
-function renderSectors(){let box=document.getElementById('sectors');box.innerHTML=`<button class="sector ${sector==='all'?'active':''}" data-sector="all"><span class="led" style="color:#444;background:#444"></span><span class="title">KOKO AVARUUS</span><span class="count">${N.length}</span></button>`+Object.entries(groupMeta).map(([id,[name,color]])=>`<button class="sector ${id===sector?'active':''}" data-sector="${id}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${N.filter(n=>n.group===id).length}</span></button>`).join('');box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{sector=b.dataset.sector;renderSectors();if(sector!=='all'){let p=centers[sector],n=N.find(n=>n.group===sector);let st={...target},ed=vec(...p),start=performance.now();let a=(time)=>{let t=Math.min(1,(time-start)/620);t=1-(1-t)**3;target=vec(st.x+(ed.x-st.x)*t,st.y+(ed.y-st.y)*t,st.z+(ed.z-st.z)*t);dist=Math.max(1250,dist+(1450-dist)*.08);if(t<1)requestAnimationFrame(a)};requestAnimationFrame(a);if(n)showDetails(n.id)}else{target=vec(0,0,0);dist=3650}})}
+function renderSectors(){let box=document.getElementById('sectors');box.innerHTML=`<button class="sector ${sector==='all'?'active':''}" data-sector="all"><span class="led" style="color:#444;background:#444"></span><span class="title">KOKO AVARUUS</span><span class="count">${N.length}</span></button>`+Object.entries(groupMeta).map(([id,[name,color]])=>`<button class="sector ${id===sector?'active':''}" data-sector="${id}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${N.filter(n=>n.group===id).length}</span></button>`).join('');box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{sector=b.dataset.sector;renderSectors();if(sector!=='all'){let p=centers[sector],n=N.find(n=>n.group===sector);let st={...target},ed=vec(...p),start=performance.now(),navigation=++cameraNavigation;let a=(time)=>{if(navigation!==cameraNavigation)return;let t=Math.min(1,(time-start)/620);t=1-(1-t)**3;target=vec(st.x+(ed.x-st.x)*t,st.y+(ed.y-st.y)*t,st.z+(ed.z-st.z)*t);dist=Math.max(1250,dist+(1450-dist)*.08);if(t<1)requestAnimationFrame(a)};requestAnimationFrame(a);if(n)showDetails(n.id)}else{cameraNavigation++;target=vec(0,0,0);dist=3650}})}
 function renderModes(){document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('on',b.dataset.mode===mode))}document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;renderModes()});
 document.querySelectorAll('[data-level]').forEach(b=>b.onclick=()=>{let k=b.dataset.level;if(showLevels.has(k))showLevels.delete(k);else showLevels.add(k);b.classList.toggle('on',showLevels.has(k));b.setAttribute('aria-pressed',String(showLevels.has(k)))});
 function jumpSearch(){let q=document.getElementById('search').value.trim().toLowerCase();query=q;if(!q)return;let matches=N.filter(n=>n.name.toLocaleLowerCase('fi').includes(q));document.getElementById('searchhint').textContent=matches.length?`${matches.length} osumaa. Enter → lähimpään osumaan.`:'Ei osumia';if(matches.length===1)flyTo(matches[0].id)}
-document.getElementById('search').addEventListener('input',jumpSearch);document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter'){let q=e.target.value.trim().toLocaleLowerCase('fi');let n=N.find(n=>n.name.toLocaleLowerCase('fi').includes(q));if(n)flyTo(n.id)}});window.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();document.getElementById('search').focus()}if(e.key==='Escape'){clearSelection();document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.remove('mobileopen')}});
+document.getElementById('search').addEventListener('input',jumpSearch);document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter'){let q=e.target.value.trim().toLocaleLowerCase('fi');let n=N.find(n=>n.name.toLocaleLowerCase('fi').includes(q));if(n)flyTo(n.id)}});window.addEventListener('keydown',e=>{
+ if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();document.getElementById('search').focus();return}
+ if(e.key==='Escape'){pressedTravelKeys.clear();clearSelection();document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.remove('mobileopen');return}
+ if(e.ctrlKey||e.metaKey||e.altKey||e.target.closest?.('input, textarea, select, [contenteditable="true"], [role="textbox"]'))return;
+ const key=e.key.toLowerCase();
+ if(travelKeys.has(key)||key==='shift'){pressedTravelKeys.add(key);e.preventDefault()}
+});
+window.addEventListener('keyup',e=>pressedTravelKeys.delete(e.key.toLowerCase()));
+window.addEventListener('blur',()=>pressedTravelKeys.clear());
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pressedTravelKeys.clear()});
+document.addEventListener('focusin',e=>{if(e.target.closest?.('input, textarea, select, [contenteditable="true"], [role="textbox"]'))pressedTravelKeys.clear()});
 function fillSelects(){let sorted=N.slice().sort((a,b)=>a.name.localeCompare(b.name,'fi'));for(let id of ['from','to'])document.getElementById(id).innerHTML=sorted.map(n=>`<option value="${esc(n.id)}">${esc(n.name)}</option>`).join('');document.getElementById('from').value='iippa';document.getElementById('to').value='sliki'}
 function route(from,to){return shortestPath(from,to,E,showLevels)}
-function doRoute(a,b){let r=route(a,b);if(!r){document.getElementById('pathresult').textContent='Polkua ei löydy näillä näytönsuodattimilla.';pathNodes=[];pathEdges=[];return}pathNodes=r.ns;pathEdges=r.es;let names=r.ns.map(id=>by[id].name);document.getElementById('pathresult').innerHTML=`<strong>${r.es.length} välivaihetta:</strong><br/>${names.map(esc).join(' → ')}<br/><span style="color:#777">Polku ei osoita sopimusta tai osallisuutta välikäsien tekoihin.</span>`;selected=a;showDetails(a);if(r.ns.length){let pts=r.ns.map(id=>by[id].pos3),m=[0,1,2].map(i=>pts.reduce((s,p)=>s+p[i],0)/pts.length);target=vec(...m);dist=Math.max(1450,Math.min(3150,550+Math.max(...pts.map(p=>Math.hypot(p[0]-m[0],p[1]-m[1],p[2]-m[2])))*3.2))}}
+function doRoute(a,b){let r=route(a,b);if(!r){document.getElementById('pathresult').textContent='Polkua ei löydy näillä näytönsuodattimilla.';pathNodes=[];pathEdges=[];return}pathNodes=r.ns;pathEdges=r.es;let names=r.ns.map(id=>by[id].name);document.getElementById('pathresult').innerHTML=`<strong>${r.es.length} välivaihetta:</strong><br/>${names.map(esc).join(' → ')}<br/><span style="color:#777">Polku ei osoita sopimusta tai osallisuutta välikäsien tekoihin.</span>`;selected=a;showDetails(a);if(r.ns.length){cameraNavigation++;let pts=r.ns.map(id=>by[id].pos3),m=[0,1,2].map(i=>pts.reduce((s,p)=>s+p[i],0)/pts.length);target=vec(...m);dist=Math.max(1450,Math.min(3150,550+Math.max(...pts.map(p=>Math.hypot(p[0]-m[0],p[1]-m[1],p[2]-m[2])))*3.2))}}
 const tours={pact:['pact','s3','jethro','talks','ruusu'],bridge:['iippa','sami','bailu','korelon','sastamala','ossi'],casino:['kasinok','kp','s1','pact'],ylilauta:['sami','ylilauta']};document.querySelectorAll('[data-tour]').forEach(b=>b.onclick=()=>{let t=tours[b.dataset.tour];document.getElementById('from').value=t[0];document.getElementById('to').value=t[t.length-1];doRoute(t[0],t[t.length-1])});
 document.getElementById('pathbtn').onclick=()=>doRoute(document.getElementById('from').value,document.getElementById('to').value);document.getElementById('clearpath').onclick=()=>{pathNodes=[];pathEdges=[];document.getElementById('pathresult').textContent='Polku tyhjennetty.'};
 function openSources(){
@@ -368,7 +391,7 @@ function updateTooltip(){
  }
 }
 function hit(x,y){let hit=null,d=Infinity;for(let p of visiblePoints){if(x>=p.x-3&&x<=p.x+p.w+3&&y>=p.y-3&&y<=p.y+p.h+3){if(p.depth<d){hit=p.id;d=p.depth}}else if(Math.hypot(x-p.cx,y-p.cy)<p.r&&p.depth<d){hit=p.id;d=p.depth}}return hit}
-space.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;if(e.button!==0&&e.button!==1)return;pointer={x:e.clientX,y:e.clientY,yaw,pitch,target:{...target},moved:false,pan:e.shiftKey||e.button===1};space.setPointerCapture(e.pointerId);space.classList.add('drag')});space.addEventListener('pointermove',e=>{let r=space.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(pointer){let dx=e.clientX-pointer.x,dy=e.clientY-pointer.y;if(Math.hypot(dx,dy)>3)pointer.moved=true;if(pointer.pan){let c=projection(),p=dist/Math.min(W,H)*1.05;target=vec(pointer.target.x-(c.right.x*dx-c.up.x*dy)*p,pointer.target.y-(c.right.y*dx-c.up.y*dy)*p,pointer.target.z-(c.right.z*dx-c.up.z*dy)*p)}else{yaw=pointer.yaw-dx*.005;pitch=Math.max(-1.35,Math.min(1.35,pointer.pitch+dy*.005))}}else{let h=hit(x,y);if(h!==hover){hover=h;dirty=true}space.style.cursor=h?'pointer':'grab'}});space.addEventListener('pointerup',e=>{let r=space.getBoundingClientRect();if(pointer&&!pointer.moved){let n=hit(e.clientX-r.left,e.clientY-r.top);if(n)flyTo(n);else clearSelection()}pointer=null;space.classList.remove('drag')});space.addEventListener('pointerleave',()=>{if(!pointer){hover=null;dirty=true}});space.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(450,Math.min(7600,dist*Math.exp(e.deltaY*.001)))},{passive:false});
+space.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;if(e.button!==0&&e.button!==1)return;cameraNavigation++;pointer={x:e.clientX,y:e.clientY,yaw,pitch,target:{...target},moved:false,pan:e.shiftKey||e.button===1};space.setPointerCapture(e.pointerId);space.classList.add('drag')});space.addEventListener('pointermove',e=>{let r=space.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(pointer){let dx=e.clientX-pointer.x,dy=e.clientY-pointer.y;if(Math.hypot(dx,dy)>3)pointer.moved=true;if(pointer.pan){let c=projection(),p=dist/Math.min(W,H)*1.05;target=vec(pointer.target.x-(c.right.x*dx-c.up.x*dy)*p,pointer.target.y-(c.right.y*dx-c.up.y*dy)*p,pointer.target.z-(c.right.z*dx-c.up.z*dy)*p)}else{yaw=pointer.yaw-dx*.005;pitch=Math.max(-1.35,Math.min(1.35,pointer.pitch+dy*.005))}}else{let h=hit(x,y);if(h!==hover){hover=h;dirty=true}space.style.cursor=h?'pointer':'grab'}});space.addEventListener('pointerup',e=>{let r=space.getBoundingClientRect();if(pointer&&!pointer.moved){let n=hit(e.clientX-r.left,e.clientY-r.top);if(n)flyTo(n);else clearSelection()}pointer=null;space.classList.remove('drag')});space.addEventListener('pointerleave',()=>{if(!pointer){hover=null;dirty=true}});space.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(450,Math.min(7600,dist*Math.exp(e.deltaY*.001)))},{passive:false});
 document.getElementById('zoomIn').onclick=()=>dist=Math.max(450,dist*.75);document.getElementById('zoomOut').onclick=()=>dist=Math.min(7600,dist*1.32);document.getElementById('home').onclick=reset;document.getElementById('reset').onclick=reset;document.getElementById('clearSelection').onclick=clearSelection;
 document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.toggle('mobileopen')};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderModes();
 function openUrlNode(){
