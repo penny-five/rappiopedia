@@ -263,6 +263,10 @@
     "tosi-tv-ohjelma": {
       "category": "show",
       "label": "Tosi-tv-ohjelma"
+    },
+    "laulaja": {
+      "category": "person",
+      "label": "Laulaja"
     }
   }
 }
