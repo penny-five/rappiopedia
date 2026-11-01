@@ -372,7 +372,16 @@
         "esko_eerikainen",
         "susanna_penttila",
         "harri",
-        "og"
+        "og",
+        "tegel",
+        "tegel_pact3_vierailu_2026",
+        "pacttalks_96_2026",
+        "pacttalks_4_2026",
+        "pacttalks_86_2026",
+        "stagala",
+        "akam",
+        "crista",
+        "ice_cage_5_stagala_akam_2025"
       ],
       "sourceIds": [
         "P7",
@@ -396,29 +405,43 @@
         "P237",
         "P6",
         "P238",
-        "P239"
+        "P239",
+        "P243",
+        "P246",
+        "P247",
+        "P248",
+        "P249",
+        "P250",
+        "P251"
       ],
-      "notes": "1.11.2026: PactHouse 2:n 1.–3. sijat kirjattu, PactHouse 3:n Elmerin poistaminen ja Harri Eskolan toinen sija lisätty. Okkishow vahvistettu Joachim Rostedtiksi. PactTalks-arkistosta 1, 20, 80–83 ja 84 löydetty uusia vieraita/juontajia. Jaksojen otsikot eivät yksin paljasta haastattelujen tarkkaa sisältöä.\n1.11.2026 jatkotutkimus: Janelyn laulajaura ja New Yorkin esiintymiset on täydennetty omaksi artikkelikseen (MTV, artistin sivu, Seiska). PactHouse 2:n riidasta löytyi Gekkosen 4.12.2025 aikalaisraportti tuotannon varoituksineen. PactTalksin 11.8.2026 välikohtaus sai oman artikkelin, ja Pyhimyksen 25.10.2026 jaksosta kirjattiin Uunon selostus.\n1.11.2026 uusi erä: 8.5.2026 PactHouse 3:n treffitehtävä lisätty omaksi tapahtumakseen (Esko–Tuuli ja Susanna–Harri). Seiskan mukaan finaalissa OG Ulla-Maija oli kolmas ja sai samoin kuin Harri Eskola 18 % äänistä. Seiska vahvisti Harri Eskolan voittaneen Mini PactHousen, minkä perusteella puuttuva toinen yhteisvoittaja täydennettiin. Esko, Susanna, Harri ja OG saivat henkilöartikkelit.",
+      "notes": "1.11.2026: PactHouse 2:n 1.–3. sijat kirjattu, PactHouse 3:n Elmerin poistaminen ja Harri Eskolan toinen sija lisätty. Okkishow vahvistettu Joachim Rostedtiksi. PactTalks-arkistosta 1, 20, 80–83 ja 84 löydetty uusia vieraita/juontajia. Jaksojen otsikot eivät yksin paljasta haastattelujen tarkkaa sisältöä.\n1.11.2026 jatkotutkimus: Janelyn laulajaura ja New Yorkin esiintymiset on täydennetty omaksi artikkelikseen (MTV, artistin sivu, Seiska). PactHouse 2:n riidasta löytyi Gekkosen 4.12.2025 aikalaisraportti tuotannon varoituksineen. PactTalksin 11.8.2026 välikohtaus sai oman artikkelin, ja Pyhimyksen 25.10.2026 jaksosta kirjattiin Uunon selostus.\n1.11.2026 uusi erä: 8.5.2026 PactHouse 3:n treffitehtävä lisätty omaksi tapahtumakseen (Esko–Tuuli ja Susanna–Harri). Seiskan mukaan finaalissa OG Ulla-Maija oli kolmas ja sai samoin kuin Harri Eskola 18 % äänistä. Seiska vahvisti Harri Eskolan voittaneen Mini PactHousen, minkä perusteella puuttuva toinen yhteisvoittaja täydennettiin. Esko, Susanna, Harri ja OG saivat henkilöartikkelit.\n1.11.2026 lisäkartoitus: Seiskan 16.5.2026 haastattelu tarkensi Tegelbergin vierailun 4.–6.5. päiville ja hänen sekä tuotannon ristiriitaiset näkemykset yleisöäänestyksestä; aiheesta oma tapahtumasivu. 21.5. Seiska raportoi Jethron anteeksipyynnön Esko Eerikäiselle. KickTrackerista yksilöitiin PactTalks 4 (BelleBarbie, Aapo, CuckTommi), 86 (Stagala vs Akam) ja 96 (Jethro ja Aure). Yle raportoi Stagalan voittaneen Akamin nyrkkeilyottelussa 6.9.2025 Ice Cage 5:ssä; historiallinen ottelu erotettiin lokakuun 2026 PactTalks-jaksosta. Cristan, Stagalan ja Akamin henkilöartikkelit laadittu.",
       "questions": [
         "Ketkä olivat PactHouse 3:n muut finalistit ja missä järjestyksessä putoamiset tapahtuivat?",
         "Mitä PactTalksin jaksoissa 1, 20 ja 80–83 todella keskusteltiin?",
         "Mikä on PactTalksin loppuvuoden 2026 alkuperäis-VOD:ien pysyvä osoite?",
         "Löytyykö Pyhimyksen 25.10.2026 PactTalks-jaksosta säilynyt alkuperäinen VOD, jotta Uunon kuvausta voi verrata haastatteluun?",
         "Onko PactHouse 3:n 8.5.2026 treffitehtävän alkuperäinen Kick-VOD vielä nähtävissä?",
-        "Ketkä olivat finaalin muut kilpailijat ja mitkä olivat heidän täsmälliset sijoituksensa?"
+        "Ketkä olivat finaalin muut kilpailijat ja mitkä olivat heidän täsmälliset sijoituksensa?",
+        "Kuka on PactTalksin jakson 96 otsikossa juontajana mainittu Aure, ja mitä hänen muusta toiminnastaan voidaan vahvistaa?",
+        "Löytyykö jaksojen 4, 86 ja 96 alkuperäisiä Kick-tallenteita, joiden avulla ohjelmasisältö selviää otsikkoa tarkemmin?"
       ],
       "queries": [
         "\"PactHouse 3\" finaali kilpailijat poistumiset toukokuu 2026",
         "\"Mini PactHouse\" kaksi voittajaa maaliskuu 2026",
         "site:kick.com/pact/videos \"PactTalks\"",
-        "\"PactTalks\" \"Pyhimys\" \"EP. 92\" kick.com"
+        "\"PactTalks\" \"Pyhimys\" \"EP. 92\" kick.com",
+        "\"PACTTALKS #4\" \"BELLEBARBIE\" \"AAPO\"",
+        "\"PACTTALKS EP 86\" \"STAGALA\" \"AKAM\"",
+        "\"PACTTALKS EP 96\" \"AURE\""
       ],
       "nextSteps": [
         "Tarkista PactHouse 3:n pudotukset alkuperäisistä koosteista tai videoista.",
         "Tunnista Mini PactHousen toinen voittaja ensikäden lähteellä.",
         "Katso PactTalksin yksittäiset VOD:t ja lisää asiallisia sisältöyhteyksiä, jos aihetta.",
         "Vertaa Janelyn ja Tegelbergin riidan tapahtumakulkua PactHouse 2:n alkuperäiseen lähetykseen.",
-        "Tarkista 8.5.2026 treffipäivän VOD ja ohjelman kolmannen kauden 10.5. finaalin tarkempi putoamisjärjestys."
+        "Tarkista 8.5.2026 treffipäivän VOD ja ohjelman kolmannen kauden 10.5. finaalin tarkempi putoamisjärjestys.",
+        "Tarkista uusien PactTalks-tapahtumien alkuperäiset VOD:t ja korjaa havaintotason reunat varmennetuiksi vain, jos tallenne näyttää tiedon.",
+        "Selvitä Stagala–Akam-suhteen mahdolliset muut dokumentoidut ohjelmaesiintymiset Ice Cage 5:n ja PactTalksin välissä."
       ],
       "updatedAt": "2026-11-01"
     },
@@ -500,7 +523,8 @@
         "sillu10",
         "sillu_henri_2024",
         "djpate246",
-        "vlogidokumentti_2012"
+        "vlogidokumentti_2012",
+        "djpate_sillu_pasi_2014"
       ],
       "sourceIds": [
         "P134",
@@ -520,12 +544,17 @@
         "P232",
         "P233",
         "P234",
-        "P235"
+        "P235",
+        "P240",
+        "P241",
+        "P242",
+        "P244",
+        "P245"
       ],
       "sourceUrls": [
         "https://kaupunkikanava.fi/hyppy-tyhjyyteen-sisallontuotannon-pimea-puoli/"
       ],
-      "notes": "1.11.2026: Ylen 21.10.2013 ensiesitetty Tubettajat liittää Niilo22:n, Pasin ja Iltapalamiehen yhteen. Markoboylle Ylen 2018 henkilöhaastattelu. Laitela92:n kuolema ja vuoden 2025 Viron-vierailut Seiskassa. Kaupunkikanavan 2022 artikkeli nimeää lisäksi Aatami86:n, Sillu100:n, MarkoRepairsin ja DjPate246:n; niistä ei vielä tarkkaa uraselvitystä.\n1.11.2026 jatkotutkimus: Ylen alkuperäinen TV1-ohjelmatieto vahvisti Tubettajat-elokuvan ensiesityksen 21.10.2013 ja ohjaajaksi Sanna-Sisko Tohkan. Vuoden 2014 arkistojulkaisua ei tule käyttää elokuvan ensiesitysvuotena. YleX:n 2014 haastattelu täydentää Markoboy87:n juomatestivideoiden alkua.\n1.11.2026 uusi erä: MarkoRepairsin ÄKS:n 2014 haastattelu vahvisti oman YouTube-uran, Suolahden-vaiheen ja Keksijätehdas-voiton. Hattuniemen vuoden 2012 opinnäytetyö vahvisti Niilon, Pasin ja Markon Vlogidokumentti-hankkeen haastateltaviksi, mutta levitys ei selviä lähteestä. Sillu100%:n 2011 ruokavideo, 2022 kanavatilasto ja 16.5.2024 Julma Henri & Ystävät -jakso löytyivät. Djpate246:sta 2011 ja 2014 foorumiketjut. Kaupunkikanava käsitteli Aatami86:n Swindonin-videoita, ja Rahapelisuomi yhdisti hänet 23.6.2026 Ratinan tapahtumaan. Poliisi vahvisti vain tapahtuman ja epäilyn, ei henkilön nimeä.",
+      "notes": "1.11.2026: Ylen 21.10.2013 ensiesitetty Tubettajat liittää Niilo22:n, Pasin ja Iltapalamiehen yhteen. Markoboylle Ylen 2018 henkilöhaastattelu. Laitela92:n kuolema ja vuoden 2025 Viron-vierailut Seiskassa. Kaupunkikanavan 2022 artikkeli nimeää lisäksi Aatami86:n, Sillu100:n, MarkoRepairsin ja DjPate246:n; niistä ei vielä tarkkaa uraselvitystä.\n1.11.2026 jatkotutkimus: Ylen alkuperäinen TV1-ohjelmatieto vahvisti Tubettajat-elokuvan ensiesityksen 21.10.2013 ja ohjaajaksi Sanna-Sisko Tohkan. Vuoden 2014 arkistojulkaisua ei tule käyttää elokuvan ensiesitysvuotena. YleX:n 2014 haastattelu täydentää Markoboy87:n juomatestivideoiden alkua.\n1.11.2026 uusi erä: MarkoRepairsin ÄKS:n 2014 haastattelu vahvisti oman YouTube-uran, Suolahden-vaiheen ja Keksijätehdas-voiton. Hattuniemen vuoden 2012 opinnäytetyö vahvisti Niilon, Pasin ja Markon Vlogidokumentti-hankkeen haastateltaviksi, mutta levitys ei selviä lähteestä. Sillu100%:n 2011 ruokavideo, 2022 kanavatilasto ja 16.5.2024 Julma Henri & Ystävät -jakso löytyivät. Djpate246:sta 2011 ja 2014 foorumiketjut. Kaupunkikanava käsitteli Aatami86:n Swindonin-videoita, ja Rahapelisuomi yhdisti hänet 23.6.2026 Ratinan tapahtumaan. Poliisi vahvisti vain tapahtuman ja epäilyn, ei henkilön nimeä.\n1.11.2026 lisäkartoitus: DjPate246:n alkuperäinen 19.1.2014 YouTube-tapaamisvideo osoittaa Pasi Viherahon, Sillu100%:n ja DjPate246:n esiintyneen samalla videolla; tapaamisesta oma tapahtuma, kolme relaatiota ja artikkeli. DjPaten 2010 YouTube- ja 2014 Vimeo-julkaisut sekä Kansalliskirjaston 52 MarkoRepairs-videon hakemistotiedot täydentävät uria. Vuoden 2012 Omalla naamalla -opinnäyte mainitsee DjPaten, Pasin ja MarkoRepairsin tuolloisina videobloggaajina.",
       "questions": [
         "Mitä alkuperäisiä videoita Aatami86:n Englannin-vaiheesta löytyy?",
         "Mitä uusia lähteitä Sillu100:n, MarkoRepairsin ja DjPate246:n urista löytyy?",
@@ -534,7 +563,9 @@
         "Missä ovat Sillu10:n ja Niilo22:n vuoden 2022–2023 yhteisvideoiden alkuperäiset osoitteet?",
         "Julkaistiinko Jens Hattuniemen ja Mikko Lambergin Vlogidokumentti (2012) lopulta televisiossa tai festivaalilla?",
         "Mitä alkuperäisiä Djpate246:n Pajakatsaus-videoita on edelleen nähtävissä?",
-        "Onko Ratinan 23.6.2026 tutkinnasta julkaistu myöhempi syyttämis- tai ratkaisupäätös?"
+        "Onko Ratinan 23.6.2026 tutkinnasta julkaistu myöhempi syyttämis- tai ratkaisupäätös?",
+        "Onko DjPate246:n ja Viherahon marraskuun 2010 yllätysvierasvideosta saatavissa koko tapahtuman henkilöt osoittava alkuperäinen tallenne?",
+        "Mitkä Kansalliskirjaston MarkoRepairs-videoiden metatiedot voidaan sitoa konkreettisiin tapahtumiin ilman aineiston katselua?"
       ],
       "queries": [
         "\"Aatami86\" Swindon vlog",
@@ -550,7 +581,9 @@
         "Erottele yhteinen dokumenttiin osallistuminen aidosta yhteistyöstä.",
         "Älä arvaa Laitela92:n kuolinsyytä.",
         "Tarkista uudet vanhan YouTuben henkilöartikkelit alkuperäiskanavien videoilta ja etsi tarkemmat julkaisuajankohdat.",
-        "Seuraa Ratinan esitutkinnan mahdollisia myöhempiä julkisia tietoja erottamalla poliisin tiedotteet muiden tekemästä henkilöyhdistämisestä."
+        "Seuraa Ratinan esitutkinnan mahdollisia myöhempiä julkisia tietoja erottamalla poliisin tiedotteet muiden tekemästä henkilöyhdistämisestä.",
+        "Etsi DjPate246:n, Viherahon ja Sillun 19.1.2014 tapaamiselle mahdolliset toisesta kuvakulmasta julkaistut videot.",
+        "Tarkista Kansalliskirjaston videoiden sisällöt vapaakappaletyöasemalla ennen tapahtumarelaatioiden tekemistä pelkistä otsikoista."
       ],
       "updatedAt": "2026-11-01"
     },
