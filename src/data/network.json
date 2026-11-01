@@ -1521,7 +1521,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/elmer.webp",
+      "imageSource": "https://image.seiska.fi/2070716.webp?compression=70&croph=17.93&cropw=47.75&format=jpg&height=348&imageId=2070716&width=620&x=19.88&y=5.20",
+      "imageCredit": "Atte Kajova / Seiska, Elmer Andberg Temptation Islandin lehdistötilaisuudessa lokakuussa 2023"
     },
     {
       "id": "janina",
@@ -1539,7 +1542,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/janina.webp",
+      "imageSource": "https://image.seiska.fi/2144293.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=773&imageId=2144293&width=576&x=0.00&y=0.00",
+      "imageCredit": "Janina Lohilahden kotisivut / Seiska, Janina Lohilahti (6.5.2026)"
     },
     {
       "id": "harri",
