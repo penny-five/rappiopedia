@@ -21,8 +21,10 @@ test('markdown wikilinks and source IDs resolve',()=>{
   assert.ok(!/<\/?script|onerror\s*=/i.test(body),file+' unsafe markup');
  }
 });
-test('image paths are valid local assets or legacy source URLs',()=>{
+test('optimized image paths point to local WebP files',()=>{
  for(const n of data.nodes){
-  if(n.image) assert.ok(/^(https:\/\/|\/images\/)[^\s]+$/.test(n.image),n.id+' invalid image path');
+  if(!n.image) continue;
+  assert.equal(n.image,'images/'+n.id+'.webp',n.id+' requires local image path');
+  assert.ok(readFileSync(new URL('../public/'+n.image,import.meta.url)).length>0,n.id+' local image missing');
  }
 });
