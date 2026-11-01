@@ -546,7 +546,7 @@
       "id": "kasinok",
       "name": "Kasinokurki",
       "group": "stream",
-      "cat": "concept",
+      "cat": "service",
       "note": "Kasinokurki on nettikasinoiden vertailu- ja kumppanuusmarkkinointipalvelu, jonka nimi näkyy muun muassa Pulliksen, SampeF2:n ja KP2Timesin Kick-lähetyksissä !kasinokurki-komentona.",
       "x": 4090,
       "y": 1510,
@@ -557,7 +557,7 @@
       ],
       "featured": true,
       "types": [
-        "striimikomento"
+        "kasinovertailupalvelu"
       ]
     },
     {
