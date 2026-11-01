@@ -14,7 +14,7 @@ Huhtikuussa 2025 Kurvinen matkusti Viroon tekemään yhteisiä lähetyksiä [[po
 
 ## Varjofestivaalin välikohtaus kesäkuussa 2025
 
-Kurvinen kuvasi livelähetystä Oulun Varjofestivaalilla 14. kesäkuuta 2025. Seiskan mukaan hän ajautui häiriötilanteeseen ja joutui järjestyksenvalvojien kiinniottamaksi. Kurvinen kertoi viettäneensä yön poliisin säilössä ja piti voimankäyttöä ylimitoitettuna. Poliisi vahvisti Seiskalle kyseisenä iltana tapahtuneen kiinnioton mutta ei kertonut henkilön nimeä. Tapahtumasta on [[iippa_varjofest_2025|oma artikkelinsa]]. [@P195]
+Kurvinen kuvasi livelähetystä Oulun Varjofestivaalilla 14. kesäkuuta 2025. Seiskan mukaan hän ajautui häiriötilanteeseen ja joutui järjestyksenvalvojien kiinniottamaksi. Kurvinen kertoi viettäneensä yön poliisin säilössä ja piti voimankäyttöä ylimitoitettuna. Poliisi vahvisti Seiskalle kyseisenä iltana tapahtuneen kiinnioton mutta ei kertonut henkilön nimeä. Kiinniottoa käsitellään myös [[iippa_varjofest_2025|Varjofestin välikohtauksena]]. [@P195]
 
 ## Kesän 2025 virheellinen kuolemailmoitus
 
