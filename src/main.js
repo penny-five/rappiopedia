@@ -7,7 +7,7 @@ import { formatNodeTypes } from './lib/entity-types.js';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
 import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
-import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierarchyRootForChild } from './lib/hierarchy.js';
+import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierarchyNavigationItems } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
 import { searchNodes } from './lib/search.js';
@@ -27,6 +27,12 @@ for(const g of Object.keys(groupMeta)){
  const box=family?hierarchyBounds(N,family):bounds3D(N.filter(n=>n.group===g),SKENES[g].padding??100);
  groupBounds[g]=box;
  centers[g]=box.min.map((v,i)=>(v+box.max[i])/2);
+}
+// Parent-only selectors (e.g. PACT) use the complete family volume for navigation.
+for(const family of hierarchyGroups.filter(f=>!f.rootGroup)){
+ const box=hierarchyBounds(N,family);
+ groupBounds[family.id]=box;
+ centers[family.id]=box.min.map((v,i)=>(v+box.max[i])/2);
 }
 function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function image(n){return n.image||''}const photo={};for(const n of N){if(!n.image)continue;const im=new Image();im.referrerPolicy='no-referrer';im.onload=()=>{photo[n.id]=im};im.onerror=()=>{photo[n.id]=null};im.src=n.image;photo[n.id]=null}
@@ -203,7 +209,7 @@ function drawWireVolume(c, bounds, color, opacity, lineWidth = 1, dash = [5, 8])
 /** Draw each parent volume from declarative metadata, without PACT-specific rendering. */
 function drawHierarchyVolumes(c) {
  for(const family of hierarchyGroups){
-  if(sector!=='all'&&!family.groups.includes(sector))continue;
+  if(sector!=='all'&&sector!==family.id&&!family.groups.includes(sector))continue;
   const bounds=hierarchyBounds(N,family);
   if(!bounds)continue;
   const alpha=sector==='all'?.37:.61;
@@ -241,7 +247,7 @@ function drawTintedVolume(c, bounds, color, alpha) {
 /** Each skene occupies a fully enclosed, spatially separate 3D region. */
 function drawCluster(c) {
  for (const [g, bounds] of Object.entries(groupBounds)) {
-  if (!bounds || isHierarchyRoot(g)) continue;
+  if (!bounds || isHierarchyRoot(g) || !groupMeta[g]) continue;
   const coords = centers[g], middle = pr(coords, c);
   if (!middle || middle.x < -950 || middle.x > W + 950 || middle.y < -950 || middle.y > H + 950) continue;
   const col = groupMeta[g][1], active = sectorMatches(g);
@@ -283,7 +289,7 @@ function nodeLayout(n,p){
  const isHub=['pact','s1','s2','s3','talks','kieksidoc','bailu','sliki','kasinok','ylilauta'].includes(n.id);
  const {dot,showLabel}=graphNodePresentation({
   nameDensity,selected:isSel,hovered:isHover,focused:hot,onPath:inPath,
-  featured:!!n.featured,inSelectedSector:sector!=='all'&&sector===n.group,
+  featured:!!n.featured,inSelectedSector:sector!=='all'&&sectorMatches(n.group),
   isHub,wholeSpace:sector==='all'
  });
  const scale=Math.max(.43,Math.min(1.48,p.sc*2.75));
@@ -514,8 +520,8 @@ function renderSectors(){
  const box=document.getElementById('sectors');
  const button=(id,name,color,count,child=false)=>`<button class="sector ${child?'sector-child ':''}${id===sector?'active':''}" data-sector="${id}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${count}</span></button>`;
  box.innerHTML=button('all','KOKO AVARUUS','#444',N.length)+
-  Object.entries(groupMeta).map(([id,[name,color]])=>
-   button(id,name,color,N.filter(n=>sectorGroups(id).includes(n.group)).length,!!hierarchyRootForChild(id))
+  hierarchyNavigationItems(SKENES).map(({id,label,color,child})=>
+   button(id,label,color,N.filter(n=>sectorGroups(id).includes(n.group)).length,child)
   ).join('');
  box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{
   sector=b.dataset.sector;renderSectors();
