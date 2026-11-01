@@ -6,6 +6,12 @@ Vanhanen esitteli videoillaan vanhoja kodinkoneita, videonauhureita ja erilaisia
 
 Videoilla näkyi myös Vanhasen kiinnostus kauppojen pois heittämien tuotteiden hyödyntämiseen. Hän kertoi etsivänsä käyttökelpoista ruokaa ja tavaraa roskalavoilta sekä korjaavansa laitteita. Suolahteen vuonna 2013 muuttanut Vanhanen kunnosti myös vanhoja asuntoja ja puhui haastattelussa työttömyydestään. [@P226]
 
+## Videot Kansalliskirjaston Verkkoarkistossa
+
+Kansalliskirjaston Verkkoarkiston hakutuloksissa on 52 Marko Vanhasen videota vuosilta 2010–2017. Niiden ilmoitetuista julkaisuajoista ja nimistä käy ilmi, miten laajasti hänen kanavansa käsitteli arkea ja laitteiden rakentelua: esimerkiksi *Lisäakuilla ajelu johtaa katastrofiin* on päivätty 6.6.2010, *DiscoScooter* 12.7.2012 ja *Phenom tietokoneen rakentelua* 5.2.2016. [@P242]
+
+Arkiston hakemistossa on myös 14. tammikuuta 2013 julkaistuksi merkitty *Pasiradion valvontakameran poisto*. Otsikko osoittaa, että Vanhanen käsitteli omalla kanavallaan [[pasiradio|Pasiradioon]] liittyvää laitteistoa. Arkistointipäiväksi on merkitty 7. joulukuuta 2017; itse videot ovat katsottavissa vain Kansalliskirjaston vapaakappaletyöasemilla. [@P242]
+
 ## Diskokahvinkeitin ja Keksijätehdas
 
 Vuonna 2011 Vanhanen voitti [[marko_keksijatehdas_2011|Keksijätehdas-televisio-ohjelman]] itse rakentamallaan diskokahvinkeittimellä. ÄKS:n mukaan ohjelman tuottaja oli löytänyt Vanhasen YouTube-videon ja kutsunut hänet mukaan kilpailuun. Vanhanen arvioi televisioesiintymisen lisänneen kanavansa tunnettavuutta. [@P226]
