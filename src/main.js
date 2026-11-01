@@ -1,6 +1,8 @@
 import './styles.css';
 import DATA from './data/network.json';
 import RELATION_TYPES from './data/relation-types.json';
+import ENTITY_TYPES from './data/entity-types.json';
+import { formatNodeTypes } from './lib/entity-types.js';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
 import { focusedNodeIds, graphLabelScale, projectedEdgePoint, cameraTravelDirection, bounds3D, routeVisibility, relationshipLabelEdges } from './lib/scene.js';
@@ -12,7 +14,6 @@ import { searchNodes } from './lib/search.js';
 const N=DATA.nodes,E=DATA.edges,S=DATA.sources,by=Object.fromEntries(N.map(n=>[n.id,n]));
 const groupMeta={core:['PACT / OHJELMAPERHE','#466b8a'],season1:['PACTHOUSE 01','#89698b'],season2:['PACTHOUSE 02','#517ea1'],season3:['PACTHOUSE 03','#7466a7'],talks:['PACT TALKS','#2d9187'],rappio:['RAPPIOSTRIIMAUS','#b46b63'],events:['TAPAHTUMAT','#ba8747'],rap:['SLIKI / KETOLA','#a5784e'],stream:['KASINOKURKI','#4485b4'],media:['MEDIA / PALSTAT','#818c97'],poker:['JULKKISPELIT / POKERI','#748f62']};
 const levels={verified:{label:'Vahvistettu',color:'#16856c'},reported:{label:'Uutisoitu',color:'#356db4'},observed:{label:'Havaittu / päätelmä',color:'#a86b0a'},lead:{label:'Johtolanka / kiistetty',color:'#b04766'}};
-const catNames={person:'HENKILÖ',org:'YHTIÖ / BRÄNDI',event:'TAPAHTUMA',show:'OHJELMA',lead:'SELVITETTÄVÄ NIMI',media:'JULKAISU',platform:'ALUSTA',meme:'ILMIÖ'};
 const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d'),space=document.getElementById('space');
 let W=0,H=0,dpr=1,yaw=-.32,pitch=.20,dist=5700,target={x:-950,y:0,z:-100},selected='pact',sector='all',mode='focus',query='',hover=null,pathNodes=[],pathEdges=[],pointer=null,frame=0,visiblePoints=[],showLevels=new Set(['verified','reported','observed','lead']),focusIds=new Set();
 const pressedTravelKeys=new Set(),travelKeys=new Set(['w','a','s','d','q','e']);
@@ -298,7 +299,7 @@ function nodeDisplay(item){
   ctx.fillText(fit,tx,by+(withPic?19:16)*ls);
   ctx.font=Math.max(7,Math.round(9*ls))+'px IBM Plex Mono,monospace';
   ctx.fillStyle=tint(col,.88);
-  ctx.fillText(isHub?'● KESKUSSOLMU':(catNames[n.cat]||n.cat).slice(0,17),tx,by+(withPic?36:29)*ls,txtmax);
+  ctx.fillText(formatNodeTypes(n,ENTITY_TYPES).toUpperCase(),tx,by+(withPic?36:29)*ls,txtmax);
  }
  ctx.restore();
 }
@@ -429,7 +430,7 @@ function showDetails(id){
  selected=id;document.title=n.name+' — Rappiopedia';
  if(location.hash!=='#/node/'+id)history.replaceState({node:id},'','#/node/'+id);
  const related=relatedForNode(id);
- renderNodeArticle({node:n,related,nodes:by,sources:S,levels,group:groupMeta[n.group][0],category:catNames[n.cat]||n.cat});
+ renderNodeArticle({node:n,related,nodes:by,sources:S,levels,group:groupMeta[n.group][0],category:formatNodeTypes(n,ENTITY_TYPES)});
  document.getElementById('rightpanel').scrollTop=0;
  document.getElementById('wikiArticleTab').classList.add('active');
  document.getElementById('wikiSourcesTab').classList.remove('active');
@@ -455,7 +456,7 @@ function renderSearchSuggestions(){
  document.getElementById('searchhint').textContent=value?(searchMatches.length?`${searchMatches.length} hakuehdotusta.`:'Ei osumia'):'';
  if(!value){searchMenu.innerHTML='';closeSearchSuggestions();return}
  searchMenu.innerHTML=searchMatches.length?searchMatches.map((n,i)=>
-  `<button type="button" id="search-option-${i}" role="option" aria-selected="${i===0}" class="search-suggestion${i===0?' active':''}" data-search-id="${esc(n.id)}"><span class="search-name">${esc(n.name)}</span><span class="search-category">${esc(catNames[n.cat]||n.cat)}</span></button>`
+  `<button type="button" id="search-option-${i}" role="option" aria-selected="${i===0}" class="search-suggestion${i===0?' active':''}" data-search-id="${esc(n.id)}"><span class="search-name">${esc(n.name)}</span><span class="search-category">${esc(formatNodeTypes(n,ENTITY_TYPES))}</span></button>`
  ).join(''):'<div class="search-empty" role="status">Ei hakutuloksia</div>';
  searchMenu.hidden=false;
  searchInput.setAttribute('aria-expanded','true');
@@ -558,7 +559,7 @@ function updateTooltip(){
  if(!hover||!by[hover]){tooltip.style.display='none';return}
  const n=by[hover],excerpt=markdownExcerpt(articleMarkdown(n,relatedForNode(n.id)));
  tooltip.style.display='block';
- tooltip.innerHTML='<b>'+esc(n.name)+'</b><small>'+esc(groupMeta[n.group][0])+' / '+esc(catNames[n.cat]||n.cat)+'</small>'
+ tooltip.innerHTML='<b>'+esc(n.name)+'</b><small>'+esc(groupMeta[n.group][0])+' / '+esc(formatNodeTypes(n,ENTITY_TYPES))+'</small>'
   +(excerpt?'<p>'+esc(excerpt)+'</p>':'');
  const v=visiblePoints.find(p=>p.id===hover);
  if(v){

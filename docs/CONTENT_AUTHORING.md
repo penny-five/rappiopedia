@@ -10,12 +10,15 @@ Solmun kentät:
 - `id`: pysyvä, lyhyt tunniste, esimerkiksi `jethro`
 - `name`: sivulla näkyvä nimi
 - `group`: kartan aihealue, esimerkiksi `season3` tai `rappio`
-- `cat`: aihetyyppi, esimerkiksi `person`, `show` tai `event`
+- `cat`: yleinen sisältöluokka `src/data/entity-types.json`-rekisteristä, esimerkiksi `person`, `place`, `site` tai `event`
+- `types`: **lista** saman rekisterin tarkemmista tyyppi-ID:istä, esimerkiksi `["rappiostriimaaja"]` tai `["juontaja", "tosi-tv-osallistuja"]`
 - `note`: lyhyt kuvaus kokonaisilla suomenkielisillä virkkeillä
 - `pos3`: sijainti kartalla kolmena lukuna
 - `featured`: näytetäänkö kohteen nimi kartan perustilassa
 
 Esimerkiksi `note`-kentässä kannattaa kirjoittaa ”Jethro Rostedt voitti PactHouse 3:n ja on juontanut PactTalksia.”, ei ”PactHouse 3 -voittaja; PactTalks-juontaja”.
+
+`types` ei ole vapaata tekstiä: tarkista, että kaikki tyypit löytyvät `src/data/entity-types.json`-rekisterin `types`-osiosta ja että niiden `category` on sama kuin solmun `cat`. Lisää uusi tyyppi ensin rekisteriin; uutta pääluokkaa varten lisää myös `categories`-merkintä. Henkilö voi olla yhtä aikaa esimerkiksi juontaja ja tosi-tv-osallistuja. Jos roolia ei tiedetä, käytä tyyppiä `henkilo`. Erota verkkosivusto (`site`), lehti (`media`), striimikanava (`channel`) ja palvelualusta (`platform`) toisistaan. Rappioverse käyttää samaa tyyppitietoa eikä korvaa sitä keskussolmu-merkinnällä.
 
 Vanhojen solmujen tunnisteita ei kannata muuttaa, koska artikkeleiden sisäiset linkit ja sivuston osoitteet käyttävät niitä.
 

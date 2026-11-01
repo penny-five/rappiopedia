@@ -1,0 +1,253 @@
+{
+  "categories": {
+    "person": {
+      "label": "Henkilö"
+    },
+    "show": {
+      "label": "Ohjelma"
+    },
+    "event": {
+      "label": "Tapahtuma"
+    },
+    "org": {
+      "label": "Organisaatio / brändi"
+    },
+    "platform": {
+      "label": "Alusta"
+    },
+    "channel": {
+      "label": "Kanava"
+    },
+    "site": {
+      "label": "Verkkosivusto"
+    },
+    "media": {
+      "label": "Julkaisu"
+    },
+    "place": {
+      "label": "Paikka"
+    },
+    "film": {
+      "label": "Elokuva"
+    },
+    "project": {
+      "label": "Projekti"
+    },
+    "meme": {
+      "label": "Meemi"
+    },
+    "concept": {
+      "label": "Verkkoilmiö"
+    }
+  },
+  "types": {
+    "henkilo": {
+      "category": "person",
+      "label": "Henkilö"
+    },
+    "striimaaja": {
+      "category": "person",
+      "label": "Striimaaja"
+    },
+    "rappiostriimaaja": {
+      "category": "person",
+      "label": "Rappiostriimaaja"
+    },
+    "matkastriimaaja": {
+      "category": "person",
+      "label": "Matkastriimaaja"
+    },
+    "juontaja": {
+      "category": "person",
+      "label": "Juontaja"
+    },
+    "tosi-tv-osallistuja": {
+      "category": "person",
+      "label": "Tosi-tv-osallistuja"
+    },
+    "rap-artisti": {
+      "category": "person",
+      "label": "Rap-artisti"
+    },
+    "dokumentaristi": {
+      "category": "person",
+      "label": "Dokumentaristi"
+    },
+    "yrittaja": {
+      "category": "person",
+      "label": "Yrittäjä"
+    },
+    "somevaikuttaja": {
+      "category": "person",
+      "label": "Somevaikuttaja"
+    },
+    "nettiradiotekija": {
+      "category": "person",
+      "label": "Nettiradiotekijä"
+    },
+    "videontekija": {
+      "category": "person",
+      "label": "Videontekijä"
+    },
+    "mentalisti": {
+      "category": "person",
+      "label": "Mentalisti"
+    },
+    "ohjelma": {
+      "category": "show",
+      "label": "Ohjelma"
+    },
+    "ohjelmaperhe": {
+      "category": "show",
+      "label": "Ohjelmaperhe"
+    },
+    "tuotantokausi": {
+      "category": "show",
+      "label": "Tuotantokausi"
+    },
+    "keskusteluohjelma": {
+      "category": "show",
+      "label": "Keskusteluohjelma"
+    },
+    "dokumenttiohjelma": {
+      "category": "show",
+      "label": "Dokumenttiohjelma"
+    },
+    "nettiradio": {
+      "category": "show",
+      "label": "Nettiradio"
+    },
+    "ohjelmasarja": {
+      "category": "show",
+      "label": "Ohjelmasarja"
+    },
+    "striimikonsepti": {
+      "category": "show",
+      "label": "Striimikonsepti"
+    },
+    "tapahtuma": {
+      "category": "event",
+      "label": "Tapahtuma"
+    },
+    "tapahtumasarja": {
+      "category": "event",
+      "label": "Tapahtumasarja"
+    },
+    "risteily": {
+      "category": "event",
+      "label": "Risteily"
+    },
+    "keikka": {
+      "category": "event",
+      "label": "Keikka"
+    },
+    "kamppailutapahtuma": {
+      "category": "event",
+      "label": "Kamppailutapahtuma"
+    },
+    "pokeritapahtuma": {
+      "category": "event",
+      "label": "Pokeritapahtuma"
+    },
+    "striimausmatka": {
+      "category": "event",
+      "label": "Striimausmatka"
+    },
+    "striimilahetys": {
+      "category": "event",
+      "label": "Striimilähetys"
+    },
+    "oikeustapaus": {
+      "category": "event",
+      "label": "Oikeustapaus"
+    },
+    "tulipalo": {
+      "category": "event",
+      "label": "Tulipalo"
+    },
+    "yritys": {
+      "category": "org",
+      "label": "Yritys"
+    },
+    "brandi": {
+      "category": "org",
+      "label": "Brändi"
+    },
+    "suoratoistoalusta": {
+      "category": "platform",
+      "label": "Suoratoistoalusta"
+    },
+    "striimikanava": {
+      "category": "channel",
+      "label": "Striimikanava"
+    },
+    "verkkosivusto": {
+      "category": "site",
+      "label": "Verkkosivusto"
+    },
+    "uutissivusto": {
+      "category": "site",
+      "label": "Uutissivusto"
+    },
+    "keskustelupalsta": {
+      "category": "site",
+      "label": "Keskustelupalsta"
+    },
+    "julkaisu": {
+      "category": "media",
+      "label": "Julkaisu"
+    },
+    "viihdelehti": {
+      "category": "media",
+      "label": "Viihdelehti"
+    },
+    "sanomalehti": {
+      "category": "media",
+      "label": "Sanomalehti"
+    },
+    "paikka": {
+      "category": "place",
+      "label": "Paikka"
+    },
+    "kaupunki": {
+      "category": "place",
+      "label": "Kaupunki"
+    },
+    "tapahtumapaikka": {
+      "category": "place",
+      "label": "Tapahtumapaikka"
+    },
+    "elokuva": {
+      "category": "film",
+      "label": "Elokuva"
+    },
+    "dokumenttielokuva": {
+      "category": "film",
+      "label": "Dokumenttielokuva"
+    },
+    "projekti": {
+      "category": "project",
+      "label": "Projekti"
+    },
+    "someprojekti": {
+      "category": "project",
+      "label": "Someprojekti"
+    },
+    "meemi": {
+      "category": "meme",
+      "label": "Meemi"
+    },
+    "meemihahmo": {
+      "category": "meme",
+      "label": "Meemihahmo"
+    },
+    "verkkoilmio": {
+      "category": "concept",
+      "label": "Verkkoilmiö"
+    },
+    "striimikomento": {
+      "category": "concept",
+      "label": "Striimikomento"
+    }
+  }
+}

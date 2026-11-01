@@ -16,7 +16,10 @@
         80
       ],
       "featured": true,
-      "imageSource": "https://pacthouse3.net/pact-logo.jpg"
+      "imageSource": "https://pacthouse3.net/pact-logo.jpg",
+      "types": [
+        "ohjelmaperhe"
+      ]
     },
     {
       "id": "saini",
@@ -31,7 +34,10 @@
         -150,
         75
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "yrittaja"
+      ]
     },
     {
       "id": "kick",
@@ -46,7 +52,10 @@
         -130,
         -80
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "suoratoistoalusta"
+      ]
     },
     {
       "id": "s1",
@@ -61,7 +70,10 @@
         360,
         -725
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "tuotantokausi"
+      ]
     },
     {
       "id": "s2",
@@ -76,7 +88,10 @@
         -479,
         583
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "tuotantokausi"
+      ]
     },
     {
       "id": "s3",
@@ -91,7 +106,10 @@
         769,
         -886
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "tuotantokausi"
+      ]
     },
     {
       "id": "talks",
@@ -106,7 +124,10 @@
         341,
         -96
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "keskusteluohjelma"
+      ]
     },
     {
       "id": "jethro",
@@ -124,7 +145,11 @@
         -776
       ],
       "featured": true,
-      "imageSource": "https://image.seiska.fi/2141143.webp?compression=100&croph=57.33&cropw=80.13&height=630&imageId=2141143&width=1200&x=6.16&y=15.88"
+      "imageSource": "https://image.seiska.fi/2141143.webp?compression=100&croph=57.33&cropw=80.13&height=630&imageId=2141143&width=1200&x=6.16&y=15.88",
+      "types": [
+        "juontaja",
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "joachim",
@@ -139,7 +164,10 @@
         -329,
         443
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "sahamies",
@@ -157,7 +185,10 @@
       "featured": true,
       "imageSource": "https://gekkonen.net/wp-content/uploads/2025/12/sahamies.jpg",
       "imageCredit": "Gekkonen, Ilari Sahamies",
-      "image": "images/sahamies.webp"
+      "image": "images/sahamies.webp",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "lassi",
@@ -172,7 +203,11 @@
         666,
         -704
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "striimaaja",
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "ruusu",
@@ -190,7 +225,10 @@
       "featured": true,
       "imageSource": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/e3/5f/16/e35f163c-f9b3-94a8-dabe-50a7fc550327/mza_13265136684859044567.jpg/1200x1200bf.webp",
       "imageCredit": "Ruusutossu maanpaossa -podcast, Apple Podcasts -kansikuva",
-      "image": "images/ruusu.webp"
+      "image": "images/ruusu.webp",
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "iippa",
@@ -208,7 +246,10 @@
         749
       ],
       "featured": true,
-      "imageSource": "https://image.seiska.fi/1680693.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=1680693&width=576&x=0.00&y=0.00"
+      "imageSource": "https://image.seiska.fi/1680693.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=1680693&width=576&x=0.00&y=0.00",
+      "types": [
+        "rappiostriimaaja"
+      ]
     },
     {
       "id": "pottu",
@@ -226,7 +267,10 @@
         419
       ],
       "featured": true,
-      "imageSource": "https://image.seiska.fi/2184001.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=2184001&width=576&x=0.00&y=0.00"
+      "imageSource": "https://image.seiska.fi/2184001.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=2184001&width=576&x=0.00&y=0.00",
+      "types": [
+        "rappiostriimaaja"
+      ]
     },
     {
       "id": "sami",
@@ -243,7 +287,11 @@
         404
       ],
       "featured": true,
-      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sami_Kieksi_Kultainen_Venla_2020.jpg"
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sami_Kieksi_Kultainen_Venla_2020.jpg",
+      "types": [
+        "dokumentaristi",
+        "yrittaja"
+      ]
     },
     {
       "id": "revul",
@@ -258,7 +306,10 @@
         97,
         286
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "yritys"
+      ]
     },
     {
       "id": "kieksidoc",
@@ -273,7 +324,10 @@
         -130,
         529
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "dokumenttiohjelma"
+      ]
     },
     {
       "id": "upi",
@@ -288,7 +342,10 @@
         -130,
         875
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "rappiostriimaaja"
+      ]
     },
     {
       "id": "pirkkis",
@@ -306,7 +363,10 @@
       "featured": false,
       "image": "images/pirkkis.webp",
       "imageSource": "https://image.seiska.fi/1988825.webp?compression=100&croph=100&cropw=100&height=630&imageId=1988825&width=1200&x=0&y=0",
-      "imageCredit": "Seiska; Kari Liimatan kuva Jouko Kärkkäisen kotialbumista (kuvakooste), 10.11.2025"
+      "imageCredit": "Seiska; Kari Liimatan kuva Jouko Kärkkäisen kotialbumista (kuvakooste), 10.11.2025",
+      "types": [
+        "rappiostriimaaja"
+      ]
     },
     {
       "id": "bailu",
@@ -324,7 +384,10 @@
         -1145
       ],
       "featured": true,
-      "imageSource": "https://www.matkapojat.fi/images/imagemanager/thumbnails/MP_Bailupaatti_2026_Paakuva%2C%20p%C3%A4ivitetty.f5256ef39a95e9cb4b0a97be2f0240059485db75.jpg"
+      "imageSource": "https://www.matkapojat.fi/images/imagemanager/thumbnails/MP_Bailupaatti_2026_Paakuva%2C%20p%C3%A4ivitetty.f5256ef39a95e9cb4b0a97be2f0240059485db75.jpg",
+      "types": [
+        "risteily"
+      ]
     },
     {
       "id": "korelon",
@@ -342,7 +405,10 @@
         -1401
       ],
       "featured": true,
-      "imageSource": "https://cdn.s-cloud.fi/v1/w1024_q75/assets/dam-id/3f2bOjJQKr1B_8pGLdRUaj.webp?clientId=2085"
+      "imageSource": "https://cdn.s-cloud.fi/v1/w1024_q75/assets/dam-id/3f2bOjJQKr1B_8pGLdRUaj.webp?clientId=2085",
+      "types": [
+        "rap-artisti"
+      ]
     },
     {
       "id": "sliki",
@@ -359,7 +425,10 @@
         -1301
       ],
       "featured": true,
-      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg"
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg",
+      "types": [
+        "rap-artisti"
+      ]
     },
     {
       "id": "ossi",
@@ -377,7 +446,10 @@
         -1151
       ],
       "featured": true,
-      "imageSource": "https://visnyk.poker/storage/news/5586-a7583226ac34a01a1364ab8803f3d86c12cb8043.png.webp"
+      "imageSource": "https://visnyk.poker/storage/news/5586-a7583226ac34a01a1364ab8803f3d86c12cb8043.png.webp",
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "sastamala",
@@ -392,7 +464,10 @@
         -343,
         -1544
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "keikka"
+      ]
     },
     {
       "id": "freak",
@@ -407,7 +482,10 @@
         -570,
         -955
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "meemihahmo"
+      ]
     },
     {
       "id": "keikkah",
@@ -422,7 +500,10 @@
         -857,
         -1418
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tapahtumasarja"
+      ]
     },
     {
       "id": "ice",
@@ -437,7 +518,10 @@
         -333,
         -932
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "kamppailutapahtuma"
+      ]
     },
     {
       "id": "duel",
@@ -452,13 +536,16 @@
         -560,
         -1243
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "brandi"
+      ]
     },
     {
       "id": "kasinok",
       "name": "Kasinokurki",
       "group": "stream",
-      "cat": "media",
+      "cat": "concept",
       "note": "Kasinokurki on nettikasinoiden vertailu- ja kumppanuusmarkkinointipalvelu, jonka nimi näkyy muun muassa Pulliksen, SampeF2:n ja KP2Timesin Kick-lähetyksissä !kasinokurki-komentona.",
       "x": 4090,
       "y": 1510,
@@ -467,7 +554,10 @@
         625,
         575
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "striimikomento"
+      ]
     },
     {
       "id": "pullis",
@@ -485,7 +575,11 @@
       "featured": true,
       "imageSource": "https://image.seiska.fi/2027921.webp?compression=70&croph=38.99&cropw=100.00&format=webp&height=678&imageId=2027921&width=1200&x=0.00&y=7.49",
       "imageCredit": "Seiska, Pulliksen muotokuva",
-      "image": "images/pullis.webp"
+      "image": "images/pullis.webp",
+      "types": [
+        "striimaaja",
+        "somevaikuttaja"
+      ]
     },
     {
       "id": "sampe",
@@ -500,7 +594,11 @@
         775,
         600
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "striimaaja",
+        "matkastriimaaja"
+      ]
     },
     {
       "id": "kp",
@@ -515,7 +613,11 @@
         300,
         -625
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "striimaaja",
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "julwill",
@@ -530,7 +632,10 @@
         -847,
         -1294
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "heiskari",
@@ -548,7 +653,10 @@
       "featured": false,
       "image": "images/heiskari.webp",
       "imageSource": "https://image.seiska.fi/1271097.webp?compression=100&croph=37.45&cropw=100&height=630&imageId=1271097&width=1200&x=0&y=6.86",
-      "imageCredit": "Seiska, Kristian Heiskari; henkilöhaastattelu"
+      "imageCredit": "Seiska, Kristian Heiskari; henkilöhaastattelu",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "tegel",
@@ -566,13 +674,16 @@
       "featured": true,
       "image": "images/tegel.webp",
       "imageSource": "https://image.seiska.fi/2070578.webp?compression=100&croph=100&cropw=100&height=630&imageId=2070578&width=1200&x=0&y=0",
-      "imageCredit": "Seiska, Juhana Tegelberg; artikkeli 10.2.2026"
+      "imageCredit": "Seiska, Juhana Tegelberg; artikkeli 10.2.2026",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "gekkonen",
       "name": "Gekkonen",
       "group": "media",
-      "cat": "media",
+      "cat": "site",
       "note": "Gekkonen on suomalainen viihdeuutissivusto, joka on uutisoinut muun muassa PactHousesta ja rappiostriimaajista.",
       "x": 4447,
       "y": 1739,
@@ -581,13 +692,16 @@
         121,
         2225
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "uutissivusto"
+      ]
     },
     {
       "id": "uuno",
       "name": "Uuno.fi",
       "group": "media",
-      "cat": "media",
+      "cat": "site",
       "note": "Uuno.fi on suomalainen viihdeuutissivusto, joka on kirjoittanut muun muassa PactTalksista.",
       "x": 4883,
       "y": 1727,
@@ -596,7 +710,10 @@
         30,
         2563
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "uutissivusto"
+      ]
     },
     {
       "id": "seiska",
@@ -611,7 +728,10 @@
         -90,
         1862
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "viihdelehti"
+      ]
     },
     {
       "id": "hs",
@@ -626,13 +746,16 @@
         -219,
         2476
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "sanomalehti"
+      ]
     },
     {
       "id": "reddit",
       "name": "Reddit / snappijuorut",
       "group": "media",
-      "cat": "media",
+      "cat": "site",
       "note": "Redditin suomalaisissa keskusteluyhteisöissä käsitellään myös striimaajien tapahtumia, vierailuja ja yhteislähetyksiä.",
       "x": 4460,
       "y": 2033,
@@ -641,13 +764,16 @@
         -354,
         2314
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "keskustelupalsta"
+      ]
     },
     {
       "id": "ylilauta",
       "name": "Ylilauta",
       "group": "media",
-      "cat": "media",
+      "cat": "site",
       "note": "Ylilauta on suomalainen keskustelupalsta, jolla seurataan ja kommentoidaan muun muassa suomalaista striimauskulttuuria.",
       "x": 4877,
       "y": 2046,
@@ -656,13 +782,16 @@
         -162,
         2278
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "keskustelupalsta"
+      ]
     },
     {
       "id": "nettipokeri",
       "name": "Nettipokeri.com",
       "group": "media",
-      "cat": "media",
+      "cat": "site",
       "note": "Nettipokeri.com on julkaissut uutisia pokeritapahtumista sekä Sastamalan keikasta ja Ice Cagen brändinäkyvyydestä.",
       "x": 4433,
       "y": 2198,
@@ -671,13 +800,16 @@
         -520,
         2099
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "uutissivusto"
+      ]
     },
     {
       "id": "pactchannel",
       "name": "Kick /pact-kanava",
       "group": "talks",
-      "cat": "platform",
+      "cat": "channel",
       "note": "PACTin Kick-kanavalla on julkaistu PactHouse-kausia ja PactTalks-jaksoja.",
       "x": 3670,
       "y": 260,
@@ -686,7 +818,10 @@
         643,
         -140
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "striimikanava"
+      ]
     },
     {
       "id": "slay",
@@ -701,7 +836,10 @@
         630,
         -937
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "emsku",
@@ -716,7 +854,10 @@
         575,
         -353
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "ada",
@@ -731,7 +872,10 @@
         462,
         -952
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "krisse",
@@ -746,7 +890,10 @@
         398,
         -712
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "testo",
@@ -761,7 +908,10 @@
         317,
         -447
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "chiara",
@@ -776,7 +926,10 @@
         258,
         -1047
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "megis",
@@ -791,7 +944,10 @@
         168,
         -454
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "anton",
@@ -806,7 +962,10 @@
         59,
         -789
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "karva",
@@ -821,7 +980,10 @@
         54,
         -800
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "daniel",
@@ -836,7 +998,10 @@
         -170,
         712
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "ella",
@@ -851,7 +1016,10 @@
         -199,
         332
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "isabell",
@@ -866,7 +1034,10 @@
         -244,
         761
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "joni",
@@ -884,7 +1055,10 @@
       "featured": false,
       "imageSource": "https://image.seiska.fi/1384448.webp?compression=100&croph=35.98&cropw=96&height=630&imageId=1384448&width=1200&x=0&y=5.87",
       "imageCredit": "Seiska, Joni Hesselgren",
-      "image": "images/joni.webp"
+      "image": "images/joni.webp",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "kelly",
@@ -899,7 +1073,10 @@
         -409,
         271
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "liina",
@@ -914,7 +1091,10 @@
         -479,
         1009
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "maga",
@@ -929,7 +1109,10 @@
         -541,
         370
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "nilu",
@@ -947,7 +1130,10 @@
       "featured": false,
       "image": "images/nilu.webp",
       "imageSource": "https://image.seiska.fi/1994907.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=409&imageId=1994907&width=576&x=0.00&y=0.00",
-      "imageCredit": "Seiska, Nilufär Soleimani Immun Fight Night -tapahtuman yhteydessä (2025)"
+      "imageCredit": "Seiska, Nilufär Soleimani Immun Fight Night -tapahtuman yhteydessä (2025)",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "stagala",
@@ -962,7 +1148,10 @@
         -714,
         839
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "janely",
@@ -980,7 +1169,10 @@
       "featured": false,
       "image": "images/janely.webp",
       "imageSource": "https://image.seiska.fi/1540870.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=386&imageId=1540870&width=576&x=0.00&y=0.00",
-      "imageCredit": "Seiska, Jaanika Leino / Janely; henkilöhaastattelu"
+      "imageCredit": "Seiska, Jaanika Leino / Janely; henkilöhaastattelu",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "julle",
@@ -995,7 +1187,10 @@
         -829,
         705
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "sara",
@@ -1012,7 +1207,10 @@
       ],
       "featured": false,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/4/45/Sara_Chafak_2016.jpg",
-      "imageCredit": "Rob Watkins / Club Paf, Wikimedia Commons (CC BY 2.0)"
+      "imageCredit": "Rob Watkins / Club Paf, Wikimedia Commons (CC BY 2.0)",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "amanda",
@@ -1030,7 +1228,10 @@
       "featured": false,
       "imageSource": "https://image.seiska.fi/1930280.webp?croph=58.17&cropw=68.83&height=630&width=1200&x=19.63&y=4.02",
       "imageCredit": "Seiska, Amanda Harkimon muotokuva",
-      "image": "images/amanda.webp"
+      "image": "images/amanda.webp",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "henny",
@@ -1047,7 +1248,10 @@
       ],
       "featured": false,
       "imageSource": "https://www.epressi.com/media/userfiles/149329/1716977155/myyra_s4_hennyharjusola2.jpg",
-      "imageCredit": "Myyrä 4 -promokuva / ePressi"
+      "imageCredit": "Myyrä 4 -promokuva / ePressi",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "crista",
@@ -1065,7 +1269,10 @@
       "featured": false,
       "image": "images/crista.webp",
       "imageSource": "https://images.cdn.yle.fi/image/upload/c_crop%2Cx_0%2Cy_267%2Cw_4288%2Ch_2412/w_1200%2Car_1.91%2Cc_fill/q_auto%3Aeco%2Cf_auto%2Cfl_lossy/v1683615193/39-11105636459eda2a1698",
-      "imageCredit": "Svenska Yle, Crista Jaatisen henkilökuva"
+      "imageCredit": "Svenska Yle, Crista Jaatisen henkilökuva",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "alex",
@@ -1080,7 +1287,10 @@
         972,
         -851
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "minna",
@@ -1098,7 +1308,10 @@
       "featured": false,
       "image": "images/minna.webp",
       "imageSource": "https://pbs.twimg.com/media/DUJnnODW0AIekaY.jpg",
-      "imageCredit": "Minna Pajulahden X-profiili (@MinnaPajulahti), harjoittelukuva"
+      "imageCredit": "Minna Pajulahden X-profiili (@MinnaPajulahti), harjoittelukuva",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "aleksi",
@@ -1115,7 +1328,10 @@
       ],
       "featured": false,
       "imageSource": "https://www.mmaviking.com/wp-content/uploads/2015/03/Aleksi_578.jpg",
-      "imageCredit": "MMA Viking, Aleksi Nurmisen Cage 29 -haastattelu (2015)"
+      "imageCredit": "MMA Viking, Aleksi Nurmisen Cage 29 -haastattelu (2015)",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "jussi",
@@ -1132,7 +1348,10 @@
       ],
       "featured": false,
       "imageSource": "https://kokfights.com/storage-uploads-path/2025/02/03-1-JUSSI-PIRTTIKANGAS-scaled.webp",
-      "imageCredit": "KOK Fights, Jussi Pirttikankaan ottelijakuva"
+      "imageCredit": "KOK Fights, Jussi Pirttikankaan ottelijakuva",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "pok",
@@ -1147,7 +1366,10 @@
         814,
         -857
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "max",
@@ -1165,7 +1387,10 @@
       "featured": false,
       "image": "images/max.webp",
       "imageSource": "https://imageproxy.a2d.tv/?source=https%3A%2F%2Ftvmedia.image-service.eu-north-1-prod.vmnd.tv%2Fapi%2Fv2%2Fimg%2F66d837d8e4b02d1b74a507dc-1725446105300%3Flocation%3Dmain&width=1200",
-      "imageCredit": "MTV, Max Blomfeltin reality-haastattelu"
+      "imageCredit": "MTV, Max Blomfeltin reality-haastattelu",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "tuuli",
@@ -1183,7 +1408,10 @@
       "featured": false,
       "image": "images/tuuli.webp",
       "imageSource": "https://res.cloudinary.com/findance/image/fetch/f_auto/https%3A/www.findance.com/kuvat/cloudinary/tis6-tuuli-sxKZA.jpg",
-      "imageCredit": "Findance, Tuuli Lehtosen kuva"
+      "imageCredit": "Findance, Tuuli Lehtosen kuva",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "og",
@@ -1198,7 +1426,10 @@
         678,
         -536
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "erika",
@@ -1216,7 +1447,10 @@
       "featured": false,
       "image": "images/erika.webp",
       "imageSource": "https://im.mtvuutiset.fi/graphql/caas/v1/media/share/7914596/213ffe4a74b9310f98fe0516a9bb82ae/erika-helin-2.jpg",
-      "imageCredit": "MTV Uutiset, Erika Helinin henkilöhaastattelu"
+      "imageCredit": "MTV Uutiset, Erika Helinin henkilöhaastattelu",
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "aapo",
@@ -1231,7 +1465,10 @@
         607,
         -1053
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "elmer",
@@ -1246,7 +1483,10 @@
         543,
         -540
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "janina",
@@ -1261,7 +1501,10 @@
         554,
         -1128
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "harri",
@@ -1276,7 +1519,10 @@
         485,
         -781
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "renne",
@@ -1294,7 +1540,11 @@
       "featured": false,
       "image": "images/renne.webp",
       "imageSource": "https://api.mtvuutiset.fi/graphql/caas/v1/media/share/7462652/8a84260a5eb89dc1ac6f0062f8f58965/renne-korppila.jpg",
-      "imageCredit": "MTV Uutiset, Renne Korppilan henkilökuva"
+      "imageCredit": "MTV Uutiset, Renne Korppilan henkilökuva",
+      "types": [
+        "juontaja",
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "teemu",
@@ -1312,7 +1562,11 @@
       "featured": false,
       "image": "images/teemu.webp",
       "imageSource": "https://images.cdn.yle.fi/image/upload/f_auto%2Cc_limit%2Cw_3840%2Cq_auto/v1768229282/13-1-64204847-1699334582770",
-      "imageCredit": "Yle, Puoli seitsemän; Teemu Potapoff"
+      "imageCredit": "Yle, Puoli seitsemän; Teemu Potapoff",
+      "types": [
+        "juontaja",
+        "tosi-tv-osallistuja"
+      ]
     },
     {
       "id": "pyhimys",
@@ -1330,7 +1584,10 @@
       "featured": false,
       "imageSource": "https://assets.apu.fi/elvis/file/4seJJxIX4baAJ_4z7bBeCN/%2A/paajuttu_pyhimys_1770701301292_A9xlc.jpg",
       "imageCredit": "Apu, Pyhimyksen henkilökuva",
-      "image": "images/pyhimys.webp"
+      "image": "images/pyhimys.webp",
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "andypyro",
@@ -1345,13 +1602,16 @@
         532,
         -474
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "bamat",
       "name": "Bämät Matkoilla",
       "group": "talks",
-      "cat": "person",
+      "cat": "project",
       "note": "Bämät matkoilla on striimi- ja someprojekti, joka on esiintynyt PactTalksin lähetysotsikoissa syksyllä 2026.",
       "x": 4216,
       "y": 839,
@@ -1360,7 +1620,10 @@
         417,
         100
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "someprojekti"
+      ]
     },
     {
       "id": "juha",
@@ -1375,7 +1638,10 @@
         341,
         -54
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "cuck",
@@ -1390,7 +1656,10 @@
         245,
         -411
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "akam",
@@ -1405,7 +1674,10 @@
         190,
         209
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "kimrusi",
@@ -1420,7 +1692,10 @@
         84,
         -304
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "jasmilla",
@@ -1435,7 +1710,10 @@
         -41,
         -83
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "juontaja"
+      ]
     },
     {
       "id": "julkkis",
@@ -1448,7 +1726,10 @@
         -72,
         245
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "ohjelmasarja"
+      ]
     },
     {
       "id": "bratislava",
@@ -1461,7 +1742,10 @@
         -312,
         445
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "pokeritapahtuma"
+      ]
     },
     {
       "id": "tallinna_poker",
@@ -1474,7 +1758,10 @@
         98,
         435
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "pokeritapahtuma"
+      ]
     },
     {
       "id": "noorak",
@@ -1490,7 +1777,10 @@
       "featured": false,
       "image": "images/noorak.webp",
       "imageSource": "https://cdn.speakersforum.fi/media/speakersforum_fi/img/40_21/1200x630/noora_karma_5456.jpg",
-      "imageCredit": "Speakersforum, Noora Karman esiintyjäkuva"
+      "imageCredit": "Speakersforum, Noora Karman esiintyjäkuva",
+      "types": [
+        "mentalisti"
+      ]
     },
     {
       "id": "vp",
@@ -1503,7 +1793,10 @@
         178,
         475
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "tero",
@@ -1516,7 +1809,10 @@
         -387,
         655
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "hune",
@@ -1529,7 +1825,10 @@
         -192,
         605
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "pact_augtalk",
@@ -1542,7 +1841,10 @@
         171,
         -26
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "striimilahetys"
+      ]
     },
     {
       "id": "johanna",
@@ -1558,7 +1860,10 @@
       "featured": false,
       "image": "images/johanna.webp",
       "imageSource": "https://image.seiska.fi/1923297.webp?compression=70&format=webp&height=678&imageId=1923297&width=1200",
-      "imageCredit": "Seiska, Johanna Tukiaisen henkilökuva"
+      "imageCredit": "Seiska, Johanna Tukiaisen henkilökuva",
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "joonasm",
@@ -1571,7 +1876,10 @@
         571,
         -6
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "milla",
@@ -1584,7 +1892,10 @@
         111,
         214
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "henkilo"
+      ]
     },
     {
       "id": "spurgu",
@@ -1597,7 +1908,10 @@
         -270,
         499
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "striimikonsepti"
+      ]
     },
     {
       "id": "pact_pottu",
@@ -1610,7 +1924,10 @@
         611,
         -136
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "striimilahetys"
+      ]
     },
     {
       "id": "okkishow",
@@ -1623,7 +1940,10 @@
         761,
         -186
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "juontaja"
+      ]
     },
     {
       "id": "ateena25",
@@ -1636,7 +1956,10 @@
         -510,
         -1105
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "striimausmatka"
+      ]
     },
     {
       "id": "ams25",
@@ -1649,7 +1972,10 @@
         -710,
         -925
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "striimausmatka"
+      ]
     },
     {
       "id": "taiga",
@@ -1662,7 +1988,10 @@
         605,
         845
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "striimaaja"
+      ]
     },
     {
       "id": "pottu_marketing",
@@ -1675,7 +2004,10 @@
         145,
         455
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "oikeustapaus"
+      ]
     },
     {
       "id": "testotimo",
@@ -1691,7 +2023,10 @@
       "featured": true,
       "image": "images/testotimo.webp",
       "imageSource": "https://gekkonen.net/wp-content/uploads/2025/11/testotimo-696x497.jpg",
-      "imageCredit": "Gekkonen, Testotimo; loukkaantumisen jälkeinen päivitys"
+      "imageCredit": "Gekkonen, Testotimo; loukkaantumisen jälkeinen päivitys",
+      "types": [
+        "striimaaja"
+      ]
     },
     {
       "id": "viro_pottu_2025",
@@ -1704,7 +2039,10 @@
         -365,
         -545
       ],
-      "featured": true
+      "featured": true,
+      "types": [
+        "striimausmatka"
+      ]
     },
     {
       "id": "testotimo_sub",
@@ -1717,7 +2055,10 @@
         410,
         715
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "striimilahetys"
+      ]
     },
     {
       "id": "pasi",
@@ -1732,7 +2073,11 @@
       ],
       "featured": true,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Pasi_Viheraho.jpg",
-      "imageCredit": "Soppakanuuna / Wikimedia Commons (CC BY-SA 4.0)"
+      "imageCredit": "Soppakanuuna / Wikimedia Commons (CC BY-SA 4.0)",
+      "types": [
+        "nettiradiotekija",
+        "videontekija"
+      ]
     },
     {
       "id": "pasiradio",
@@ -1745,7 +2090,10 @@
         -52,
         1838
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "nettiradio"
+      ]
     },
     {
       "id": "talk_pasi",
@@ -1758,7 +2106,10 @@
         411,
         24
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "striimilahetys"
+      ]
     },
     {
       "id": "rauno77",
@@ -1771,7 +2122,10 @@
         -260,
         749
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "striimaaja"
+      ]
     },
     {
       "id": "alisa_bamat",
@@ -1784,7 +2138,10 @@
         306,
         -26
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "somevaikuttaja"
+      ]
     },
     {
       "id": "sampe_iippa_megis_2026",
@@ -1797,20 +2154,26 @@
         70,
         450
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "striimilahetys"
+      ]
     },
     {
       "id": "hard_to_break",
       "name": "Hard to Break (2024)",
       "group": "media",
-      "cat": "show",
+      "cat": "film",
       "note": "Hard to Break on Anna-Maija Heinosen ja Krista Moision ohjaama vuoden 2024 dokumenttielokuva, jossa seurataan Aten ja Jonsun elämää.",
       "pos3": [
         1920,
         700,
         1370
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "dokumenttielokuva"
+      ]
     },
     {
       "id": "fighting_1vs1_2025",
@@ -1823,7 +2186,10 @@
         60,
         1300
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "kamppailutapahtuma"
+      ]
     },
     {
       "id": "claudia_barsk",
@@ -1836,7 +2202,10 @@
         -30,
         1540
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "somevaikuttaja"
+      ]
     },
     {
       "id": "killinmaki_2026",
@@ -1849,7 +2218,10 @@
         -470,
         1170
       ],
-      "featured": false
+      "featured": false,
+      "types": [
+        "tulipalo"
+      ]
     }
   ],
   "edges": [

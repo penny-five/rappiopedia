@@ -58,12 +58,17 @@ Tutkimustiedosto ei käynnistä automaattista tutkimusta itsestään. Sitä käy
 
 `src/data/relation-types.json` sisältää uudelleenkäytettävät suhteiden tyypit. Kun lisäät yhteyden `network.json`-tiedostoon, valitse ensin sopiva `type`. Uutta suhdetta varten lisää uusi tyyppi rekisteriin ennen yhteyden lisäämistä. Suunnattuun tyyppiin kuuluvat `forward` ja `reverse`, esimerkiksi `on isä` ja `on poika`. Symmetriselle tyypille riittää `symmetric: true` ja `verb`, esimerkiksi `esiintyi yhdessä`. Älä kirjoita yksittäisille yhteyksille omaa `verb`-kenttää. `label` voi yhä kuvata nimenomaista tapahtumaa.
 
+## Solmujen tyypit
+
+`src/data/entity-types.json` on kaikkien solmutyyppien rekisteri. `network.json`-solmulla on `cat` (yleinen luokka) ja `types` (ei-tyhjä lista rekisteröityjä, tarkempia tyyppejä). Tyypin rekisterimerkintä sisältää `category`- ja `label`-kentät. Jokaisen `types`-arvon `category`-arvon on vastattava solmun `cat`-arvoa; älä kirjoita vapaamuotoisia tyyppejä. Henkilöllä voi olla monta samanaikaista roolia, esimerkiksi `"types": ["juontaja", "tosi-tv-osallistuja"]`. Uusi luokka tai tyyppi lisätään ensin rekisteriin. Jos tarkka rooli ei ole tiedossa, käytä `henkilo`-tyyppiä äläkä arvaa ammattia. Paikat (`place`), sivustot (`site`), tapahtumat (`event`), kanavat (`channel`) ja julkaisut (`media`) ovat erillisiä luokkia. Solmun kartallinen merkittävyys, ryhmä ja tutkimuksen tila eivät ole sisältötyyppejä. Rappioverse ja artikkelit lukevat tyypin samasta rekisteristä.
+
 ## Artikkelit ja tekniikka
 
 | Polku | Sisältö |
 | --- | --- |
 | `src/data/network.json` | Solmut, yhteydet ja lähteet |
 | `src/data/relation-types.json` | Suhteiden tyypit ja molempien suuntien verbimuodot |
+| `src/data/entity-types.json` | Solmuluokat sekä nimetyt, mahdollisesti moniarvoiset solmutyypit |
 | `research/leads.json` | Agenttien jatkotutkimukset; ei näytetä sivustolla |
 | `src/articles/<id>.md` | Varsinaiset artikkelitekstit |
 | `src/wiki.js` | Artikkelien näyttäminen ja automaattinen perusteksti |
