@@ -5117,7 +5117,8 @@
       "label": "Reddit-keskustelussa raportoitu yhteinen striimimatka",
       "level": "reported",
       "src": [
-        "P52"
+        "P52",
+        "P194"
       ],
       "date": "2025-04",
       "type": "reported-trip"
@@ -5128,7 +5129,8 @@
       "label": "Reddit-keskustelussa raportoitu yhteinen striimimatka",
       "level": "reported",
       "src": [
-        "P52"
+        "P52",
+        "P194"
       ],
       "date": "2025-04",
       "type": "reported-trip"
@@ -5139,7 +5141,8 @@
       "label": "Reddit-keskustelussa raportoitu yhteinen striimimatka",
       "level": "reported",
       "src": [
-        "P52"
+        "P52",
+        "P194"
       ],
       "date": "2025-04",
       "type": "reported-trip"
@@ -7671,6 +7674,11 @@
       "label": "Reddit 14.7.2026: Pirkkis Pottukoiran luona",
       "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1uwmkvy/pirkkis_vihdoin_p%C3%A4%C3%A4tynyt_pottukoiran_luokse/",
       "note": "Keskustelu Pirkkiksen vierailusta Pottukoiran luona heinäkuussa 2026."
+    },
+    "P194": {
+      "label": "Reddit 31.3.2025: Upin, Pirkkiksen ja Taigan matkan paluu",
+      "url": "https://www.reddit.com/r/snappisensuroimaton/comments/1jo5rxu",
+      "note": "Yksittäinen keskustelija väittää Pirkkiksen myöhästyneen paluulennoilta ja Upin jääneen seuraksi; ei vahvistettu tallenteesta."
     }
   },
   "date": "2026-11-01"
