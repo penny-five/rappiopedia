@@ -8,4 +8,3 @@ Opinnäytetyössä kuvataan, kuinka nelihenkinen kuvausryhmä kävi haastattelem
 
 Hattuniemen opinnäytetyön varsinainen aihe oli dokumenttielokuvan myyminen tuotantoyhtiölle. Vlogidokumentin avulla hän tarkasteli, millaiset mahdollisuudet aloittelevalla tekijällä on tarjota dokumenttia televisioon ja alan tapahtumiin. Tekijät suunnittelivat noin 20 minuutin mittaista ohjelmaa ja pohtivat sen tarjoamista Yleisradiolle tai Tampereen elokuvafestivaaleille. [@P227]
 
-Opinnäytetyö dokumentoi elokuvahankkeen ja haastattelujen tekemisen; siitä ei yksin käy ilmi, esitettiinkö lopullista elokuvaa julkisesti.
