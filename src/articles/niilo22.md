@@ -6,6 +6,12 @@ Ylen vuonna 2013 ensiesitetyssä [[tubettajat_2014|Tubettajat-dokumentissa]] Kos
 
 Kosolan videosisällöstä on muodostunut oma seuraajakulttuurinsa, jossa hänen sanontojaan ja arjen kuvauksiaan käsitellään myös koosteiden ja meemien muodossa. [@P140]
 
+## Varhainen Vlogidokumentti-hanke
+
+Niilo22 oli vuonna 2012 yksi Jens Hattuniemen ja Mikko Lambergin [[vlogidokumentti_2012|Vlogidokumentin]] kolmesta haastateltavasta. Muut päähenkilöt olivat [[pasi|Pasi Viheraho]] ja [[markorepairs|MarkoRepairs]]. Tekijät kuvasivat omien YouTube-videoiden rinnalle haastatteluja ja kirjoittivat hankkeen tuotannosta opinnäytetyössä. [@P227]
+
+Niilo22 on esiintynyt myöhemmin myös [[sillu10|Sillu100%:n]] kanssa ruokailuaiheisissa videoissa. Niilo22:n faniviki mainitsee Subway- ja Rax-tapaamiset vuosina 2022–2023. [@P233]
+
 ## Esiintyminen Simerockissa 2025
 
 Elokuussa 2025 Kosola esiintyi Rovaniemen Simerock-festivaalilla noin viiden minuutin ajan päälavalla. Ylen mukaan se oli hänen ensimmäinen festivaaliesiintymisensä, ja vastaanotto oli innostunut. [@P136]
