@@ -2,6 +2,14 @@
 
 Tämä opas kertoo, miten Rappiopediaan etsitään uusia henkilöitä, tapahtumia ja yhteyksiä. Varsinainen sisältö tallennetaan [verkostodataan](../src/data/network.json) ja [artikkeleihin](../src/articles/). Keskeneräiset selvitykset kirjataan [agenttien tutkimusjonoon](../research/leads.json). [Tutkimusloki](RESEARCH_LOG.md) säilyttää päivätyt havainnot tekstimuodossa.
 
+## Käynnistä tutkimusagentti
+
+Uusien aiheiden, suhteiden ja artikkelien löytämiseen tarkoitettu työnkulku on [Rappiopedian tutkimusskillissä](../.agents/skills/rappiopedia-research/SKILL.md). Se yhdistää tämän hakutapaoppaan, nykyisen verkostodatan, artikkelien kirjoittamisen ja avoimen tutkimusjonon käytännön tekemiseksi.
+
+Agentti voi saada **valmiin lähtöaiheen** (henkilö, nimimerkki, tapahtuma, nimipari tai teema) tai toimia **oma-aloitteisesti**. Jälkimmäisessä tapauksessa se lukee tutkimusjonon ja etsii artikkelien sekä yhteyksien puutteita. Komento `npm run research:candidates` auttaa ehdokkaiden löytämisessä, ja `npm run research:candidates -- --focus upi` näyttää tiettyyn verkostosolmuun liittyviä avoimia aiheita. Komento antaa ehdokkaita, ei korvaa ulkoisten lähteiden tutkimista.
+
+Jokaisen tutkimuskerran tarkoitus on viedä löydöt soveltuvin osin artikkeleihin, lähdeluetteloon ja verkostoyhteyksiin. Kirjaa keskeneräiset kysymykset erikseen tutkimusjonoon, jotta seuraava agentti voi jatkaa siitä.
+
 ## Mistä kannattaa aloittaa?
 
 Etsi aihe, josta verkostossa on vielä vähän tietoa. Hyviä lähtökohtia ovat esimerkiksi tietty PactTalks-jakso, esiintyjä vierailijana toisen striimaajan lähetyksessä tai tapahtuma, johon osallistui eri yhteisöjen ihmisiä.
