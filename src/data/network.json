@@ -275,7 +275,7 @@
       "name": "Upi / Arttu Pulkkinen",
       "group": "rappio",
       "cat": "person",
-      "note": "Upi eli Arttu Pulkkinen on suomalainen striimaaja, joka esiintyy Sami Kieksin rappiostriimausdokumentissa.",
+      "note": "Upi eli Arttu Pulkkinen on suomalainen rappiostriimaaja, joka on esiintynyt Ylen dokumentissa. Lokakuussa 2026 hän loukkaantui pudottuaan parvekkeelta kesken suoratoistolähetyksen.",
       "x": 450,
       "y": 2620,
       "pos3": [
@@ -4234,6 +4234,16 @@
       "label": "AeroKick: PACT-kanavan lähetysarkisto",
       "url": "https://aerokick.app/stats/channels/pact",
       "note": "Tukee KickTrackerin EP 97–98 -lähetyspäivien ja vierasnimien havaintoja."
+    },
+    "P68": {
+      "label": "Yle 13.10.2026: Parvekkeelta putoaminen kesken rappiostriimin",
+      "url": "https://yle.fi/a/74-20251273",
+      "note": "Ylen uutinen 5.10.2026 Kirkkonummella sattuneesta onnettomuudesta ja sen käsittelystä julkisuudessa."
+    },
+    "P69": {
+      "label": "Uuno 7.10.2026: Arttu ”Upi” Pulkkisen parvekeonnettomuus",
+      "url": "https://www.uuno.fi/kuvat-julki-talta-parvekkeelta-rappiostriimaaja-arttu-upi-pulkkinen-putosi-naapuri-kertoo-hurjista-hetkista/",
+      "note": "Nimeää Pulkkisen ja kertoo hänen pudonneen parvekkeelta sekä selvinneen onnettomuudesta."
     }
   },
   "date": "2026-11-01"
