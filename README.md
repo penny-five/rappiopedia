@@ -62,19 +62,6 @@ Yhteys tallennetaan `network.json`-tiedostoon kahden solmu-ID:n välisenä reuna
 
 Sisällön lisäämistä käsitellään tarkemmin [kirjoitusohjeessa](docs/CONTENT_AUTHORING.md). Tutkimuksen lähteet ja keskeneräiset selvitykset löytyvät [tutkimusmuistiinpanoista](docs/RESEARCH_LOG.md) ja [tiedonhankinnan ohjeesta](docs/RESEARCH_PLAYBOOK.md).
 
-## Kuvat ja kuvamankeli
-
-Rappioversen solmukuvat ovat projektin omassa [`public/images/`](public/images/)-kansiossa, eivät muiden sivujen hotlinkkeinä. Kuvat käsitellään WebP-muotoon enintään **720 pikselin** kokoisiksi ja **160 KiB:n** tiedostoiksi.
-
-Kuvamankelin voi ajaa omalla koneella (Python ja Pillow):
-
-```sh
-python -m pip install "Pillow>=11,<13"
-python scripts/process_images.py --download --update-data
-```
-
-Saman prosessin suorittaa GitHubissa [Optimize images](.github/workflows/images.yml), joka lataa ja muuntaa saatavilla olevat kuvat sekä tallentaa paikalliset polut verkostodataamme. Jos kuvan lataus epäonnistuu, sen alkuperäinen osoite jää `imageSource`-kenttään myöhempää yritystä varten. Tarkemmat ohjeet: [Kuvamankeli](docs/IMAGE_PROCESSING.md).
-
 ## Julkaisu
 
 `main`-haaran päivitykset testataan ja rakennetaan GitHub Actionsissa. Julkaisu tehdään GitHub Pagesiin osoitteeseen **https://penny-five.github.io/rappiopedia/**. Työnkulku on tiedostossa [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
