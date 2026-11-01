@@ -1688,7 +1688,10 @@
       "featured": false,
       "types": [
         "henkilo"
-      ]
+      ],
+      "image": "images/andypyro.webp",
+      "imageSource": "https://images.cdn.yle.fi/image/upload/ar_1.7777777777777777%2Cc_fill%2Cg_faces%2Ch_431%2Cw_767/dpr_2.0/q_auto%3Aeco/f_auto/fl_lossy/13-3-10861114",
+      "imageCredit": "Timo Sihvonen / Yle, Anssi ”AndyPyro” Huovisen haastattelukuva (5.7.2019)"
     },
     {
       "id": "bamat",
