@@ -7,3 +7,7 @@ Gekkonen uutisoi 15. huhtikuuta Iippadaan saapuneen Kärkkäisen luo Viroon edel
 Samassa uutisessa yhteissubathonin aloitukseksi ilmoitettiin perjantai 18. huhtikuuta 2025. Huhtikuun 29. päivänä katsojat seurasivat edelleen käynnissä olevaa maratonia ja kyselivät sen öisten lähetystaukojen syitä. [@P9] [@P190]
 
 Toukokuun 3. päivänä katsojat keskustelivat Pottukoiran liikuttumisesta ja pian päättyväksi odotetusta maratonista. [@P191]
+
+## Viimeisten tuntien riita 5. toukokuuta
+
+Toukokuun 5. päivän yhteislähetyksessä Kärkkäinen halusi käyttää maratonin viimeisen tunnin katsojien kanssa keskusteluun, kun taas [[iippa|Iippadaa]] soitti musiikkia. Kaksikko riiteli asiasta, ja lähetys keskeytyi hetkeksi. Lähetys jatkui myöhemmin, kun he olivat keskustelleet tilanteen läpi. [@P278]
