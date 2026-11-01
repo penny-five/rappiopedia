@@ -232,7 +232,7 @@ function drawCluster(c) {
   if (!bounds || isHierarchyRoot(g)) continue;
   const coords = centers[g], middle = pr(coords, c);
   if (!middle || middle.x < -950 || middle.x > W + 950 || middle.y < -950 || middle.y > H + 950) continue;
-  const col = groupMeta[g][1], active = sector === 'all' || sector === g;
+  const col = groupMeta[g][1], active = sectorMatches(g);
   drawTintedVolume(c, bounds, col, active ? .045 : .01);
   drawWireVolume(c, bounds, col, active ? .35 : .085, active ? 1.1 : .75);
   const title = pr([coords[0], bounds.max[1], coords[2]], c);
