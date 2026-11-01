@@ -218,5 +218,21 @@
   "sijoittui-toiseksi": {
     "forward": "sijoittui toiseksi",
     "reverse": "toiseksi sijoittui"
+  },
+  "ohjasi": {
+    "forward": "ohjasi",
+    "reverse": "ohjaajana oli"
+  },
+  "kohtasi": {
+    "symmetric": true,
+    "verb": "kohtasi"
+  },
+  "juontaa-podcastia": {
+    "forward": "juontaa",
+    "reverse": "juontajana on"
+  },
+  "oli-avausvieras": {
+    "forward": "oli avausvieraana",
+    "reverse": "avausvieras oli"
   }
 }

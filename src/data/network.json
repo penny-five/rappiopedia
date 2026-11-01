@@ -449,7 +449,7 @@
       "name": "Ossi ”Monarch” Ketola",
       "group": "rap",
       "cat": "person",
-      "note": "Ossi ”Monarch” Ketola on liitetty Sastamalan yllätyskeikan järjestämiseen. Hän on kiistänyt osallisuutensa myöhempiin keikkahäiriöihin.",
+      "note": "Ossi ”Monarch” Ketola on suomalainen rahapelialan yrittäjä ja korkean panoksen pokerinpelaaja, joka voitti Patrik Antoniuksen 20 miljoonan dollarin heads-upissa vuonna 2026.",
       "x": 3290,
       "y": 2180,
       "image": "images/ossi.webp",
@@ -524,7 +524,7 @@
       "name": "Ice Cage 8",
       "group": "events",
       "cat": "event",
-      "note": "Ice Cage 8 on syyskuussa 2026 järjestetty kamppailutapahtuma, jossa esiintyi muun muassa Aleksi Nurminen.",
+      "note": "Ice Cage 8 järjestettiin Turussa 19. syyskuuta 2026; Aleksi Nurminen tyrmäsi Matias Niemen ensimmäisessä erässä.",
       "x": 2390,
       "y": 2140,
       "pos3": [
@@ -1342,7 +1342,7 @@
       "name": "Aleksi Nurminen",
       "group": "season3",
       "cat": "person",
-      "note": "Aleksi Nurminen osallistui PactHouse 3:een vuonna 2026. Hän oli aiemmin mukana Pottukoiran Virossa järjestetyssä striimivierailussa.",
+      "note": "Aleksi Nurminen on striimaaja, kamppailu-urheilija ja Ice Cage -podcastin juontaja. Hän kilpaili PactHouse 3:ssa ja voitti Ice Cage 8:n ottelunsa.",
       "x": 2590,
       "y": 1235,
       "pos3": [
@@ -1354,6 +1354,8 @@
       "imageSource": "https://www.mmaviking.com/wp-content/uploads/2015/03/Aleksi_578.jpg",
       "imageCredit": "MMA Viking, Aleksi Nurmisen Cage 29 -haastattelu (2015)",
       "types": [
+        "striimaaja",
+        "juontaja",
         "tosi-tv-osallistuja"
       ]
     },
@@ -2179,7 +2181,7 @@
       "name": "Hard to Break (2024)",
       "group": "media",
       "cat": "film",
-      "note": "Hard to Break on Anna-Maija Heinosen ja Krista Moision ohjaama vuoden 2024 dokumenttielokuva, jossa seurataan Aten ja Jonsun elämää.",
+      "note": "Hard to Break on Anna-Maija Heinosen ja Krista Moision 2024 julkaistu dokumenttielokuva Attesta eli Pulliksesta ja Jonsusta.",
       "pos3": [
         -1480,
         680,
@@ -2416,6 +2418,150 @@
         1090,
         -40,
         200
+      ],
+      "featured": false
+    },
+    {
+      "id": "ice9",
+      "name": "Ice Cage 9 (19.12.2026)",
+      "group": "events",
+      "cat": "event",
+      "types": [
+        "kamppailutapahtuma"
+      ],
+      "note": "Ice Cage 9 on 19.12.2026 järjestettäväksi ilmoitettu kamppailutapahtuma. Aleksi Nurmisen ottelupariksi ilmoitettiin Matias Koistinen.",
+      "pos3": [
+        3040,
+        -110,
+        -760
+      ],
+      "featured": false
+    },
+    {
+      "id": "matias_niemi",
+      "name": "Matias Niemi",
+      "group": "events",
+      "cat": "person",
+      "types": [
+        "henkilo"
+      ],
+      "note": "Matias Niemi otteli Aleksi Nurmista vastaan syyskuun 2026 Ice Cage 8:ssa.",
+      "pos3": [
+        2790,
+        -620,
+        -1280
+      ],
+      "featured": false
+    },
+    {
+      "id": "matias_koistinen",
+      "name": "Matias Koistinen",
+      "group": "events",
+      "cat": "person",
+      "types": [
+        "henkilo"
+      ],
+      "note": "Matias Koistinen on nyrkkeilyvalmentaja ja Aleksi Nurmisen 19.12.2026 Ice Cage 9 -ottelupariksi ilmoitettu urheilija.",
+      "pos3": [
+        3160,
+        -330,
+        -1120
+      ],
+      "featured": false
+    },
+    {
+      "id": "max_hynninen",
+      "name": "Max Hynninen",
+      "group": "events",
+      "cat": "person",
+      "types": [
+        "henkilo"
+      ],
+      "note": "Max Hynninen on Ice Cagen promoottori ja Ice Cage -podcastin avausvieras.",
+      "pos3": [
+        3000,
+        110,
+        -1330
+      ],
+      "featured": false
+    },
+    {
+      "id": "ice_cage_podcast",
+      "name": "Ice Cage -podcast",
+      "group": "events",
+      "cat": "show",
+      "types": [
+        "keskusteluohjelma"
+      ],
+      "note": "Lokakuussa 2026 alkanut kamppailu-urheilupodcast, jonka juontaja on Aleksi Nurminen.",
+      "pos3": [
+        2640,
+        140,
+        -610
+      ],
+      "featured": false
+    },
+    {
+      "id": "patrik_antonius",
+      "name": "Patrik Antonius",
+      "group": "poker",
+      "cat": "person",
+      "types": [
+        "henkilo"
+      ],
+      "note": "Patrik Antonius on suomalainen pokeriammattilainen, joka kohtasi Ossi Ketolan Jejun 20 miljoonan dollarin heads-upissa syyskuussa 2026.",
+      "pos3": [
+        1800,
+        -140,
+        1130
+      ],
+      "featured": false
+    },
+    {
+      "id": "duel_jeju_2026",
+      "name": "Ketola–Antonius 20 M$ heads-up",
+      "group": "poker",
+      "cat": "event",
+      "types": [
+        "pokeritapahtuma"
+      ],
+      "note": "Ossi Ketola voitti Patrik Antoniuksen 20 miljoonan dollarin heads-upissa 11.9.2026 Etelä-Korean Jejussa.",
+      "pos3": [
+        2020,
+        210,
+        1200
+      ],
+      "featured": false
+    },
+    {
+      "id": "anna_maija_heinonen",
+      "name": "Anna-Maija Heinonen",
+      "group": "media",
+      "cat": "person",
+      "types": [
+        "dokumentaristi"
+      ],
+      "note": "Anna-Maija Heinonen ohjasi Krista Moision kanssa Hard to Break -dokumenttielokuvan.",
+      "pos3": [
+        2890,
+        200,
+        350
+      ],
+      "featured": false
+    },
+    {
+      "id": "krista_moisio",
+      "name": "Krista Moisio",
+      "group": "media",
+      "cat": "person",
+      "types": [
+        "dokumentaristi"
+      ],
+      "note": "Krista Moisio ohjasi Anna-Maija Heinosen kanssa Hard to Break -dokumenttielokuvan.",
+      "pos3": [
+        3100,
+        260,
+        430
       ],
       "featured": false
     }
@@ -3804,14 +3950,14 @@
     {
       "a": "aleksi",
       "b": "ice",
-      "label": "ottelija",
+      "label": "otteli Matias Niemeä vastaan ja tyrmäsi ensimmäisessä erässä",
       "src": [
-        "P17",
-        "P22"
+        "P121",
+        "P122"
       ],
       "level": "verified",
       "detail": "",
-      "date": "",
+      "date": "2026-09-19",
       "type": "otteli"
     },
     {
@@ -5195,6 +5341,167 @@
       "level": "observed",
       "date": "2026-10-15",
       "detail": ""
+    },
+    {
+      "a": "matias_niemi",
+      "b": "ice",
+      "type": "otteli",
+      "label": "otteli Aleksi Nurmista vastaan",
+      "src": [
+        "P121",
+        "P122"
+      ],
+      "level": "verified",
+      "date": "2026-09-19",
+      "detail": ""
+    },
+    {
+      "a": "aleksi",
+      "b": "matias_niemi",
+      "type": "kohtasi",
+      "label": "Ice Cage 8:n voittaja oli Nurminen",
+      "src": [
+        "P121",
+        "P122"
+      ],
+      "level": "reported",
+      "date": "2026-09-19",
+      "detail": ""
+    },
+    {
+      "a": "aleksi",
+      "b": "ice9",
+      "type": "listattiin",
+      "label": "julkistettu Matias Koistisen vastustajaksi",
+      "src": [
+        "P122"
+      ],
+      "level": "verified",
+      "date": "2026-12-19",
+      "detail": "Tuleva ottelu."
+    },
+    {
+      "a": "matias_koistinen",
+      "b": "ice9",
+      "type": "listattiin",
+      "label": "julkistettu Aleksi Nurmisen vastustajaksi",
+      "src": [
+        "P122"
+      ],
+      "level": "verified",
+      "date": "2026-12-19",
+      "detail": "Tuleva ottelu."
+    },
+    {
+      "a": "aleksi",
+      "b": "ice_cage_podcast",
+      "type": "juontaa-podcastia",
+      "label": "Ice Cagen lokakuussa 2026 aloittama podcast",
+      "src": [
+        "P123"
+      ],
+      "level": "verified",
+      "date": "2026-10",
+      "detail": ""
+    },
+    {
+      "a": "max_hynninen",
+      "b": "ice_cage_podcast",
+      "type": "oli-avausvieras",
+      "label": "podcastin ensimmäisen jakson haastateltava",
+      "src": [
+        "P123"
+      ],
+      "level": "verified",
+      "date": "2026-10",
+      "detail": ""
+    },
+    {
+      "a": "aleksi",
+      "b": "max_hynninen",
+      "type": "haastatteli",
+      "label": "Ice Cage -podcastin ensimmäisessä jaksossa",
+      "src": [
+        "P123"
+      ],
+      "level": "reported",
+      "date": "2026-10",
+      "detail": ""
+    },
+    {
+      "a": "ossi",
+      "b": "duel_jeju_2026",
+      "type": "voitti",
+      "label": "20 miljoonan dollarin heads-up-ottelun voittaja",
+      "src": [
+        "P124"
+      ],
+      "level": "reported",
+      "date": "2026-09-11",
+      "detail": ""
+    },
+    {
+      "a": "patrik_antonius",
+      "b": "duel_jeju_2026",
+      "type": "osallistui",
+      "label": "pokerin heads-up-ottelun toinen pelaaja",
+      "src": [
+        "P124"
+      ],
+      "level": "reported",
+      "date": "2026-09-11",
+      "detail": ""
+    },
+    {
+      "a": "ossi",
+      "b": "patrik_antonius",
+      "type": "kohtasi",
+      "label": "20 miljoonan dollarin heads-up-pokeri Triton Jejussa",
+      "src": [
+        "P124",
+        "P125"
+      ],
+      "level": "reported",
+      "date": "2026-09-11",
+      "detail": ""
+    },
+    {
+      "a": "duel",
+      "b": "duel_jeju_2026",
+      "type": "nakyi",
+      "label": "Triton Jejun sponsorina",
+      "src": [
+        "P126"
+      ],
+      "level": "reported",
+      "date": "2026-09-11",
+      "detail": ""
+    },
+    {
+      "a": "anna_maija_heinonen",
+      "b": "hard_to_break",
+      "type": "ohjasi",
+      "label": "Hard to Break -dokumenttielokuvan ohjaaja",
+      "src": [
+        "P84",
+        "P127"
+      ],
+      "level": "verified",
+      "date": "2024",
+      "detail": ""
+    },
+    {
+      "a": "krista_moisio",
+      "b": "hard_to_break",
+      "type": "ohjasi",
+      "label": "Hard to Break -dokumenttielokuvan ohjaaja",
+      "src": [
+        "P84",
+        "P127"
+      ],
+      "level": "verified",
+      "date": "2024",
+      "detail": ""
     }
   ],
   "sources": {
@@ -5311,7 +5618,7 @@
     "P22": {
       "label": "Ice Cage: Aleksi Nurminen",
       "url": "https://icecage.fi/ajankohtaista/aleksi-nurminen-vs-matias-koistinen/",
-      "note": "Ice Cagen oma Nurmis-artikkeli"
+      "note": "Ice Cagen 29.10.2026 julkaisu: Nurmisen Matias Koistinen -ottelu on suunnitteilla Ice Cage 9:ään 19.12.2026; Ice Cage 8:ssa otteli Matias Niemi."
     },
     "P23": {
       "label": "Gekkonen: Jethro voitti",
@@ -5802,6 +6109,41 @@
       "label": "Gekkonen 9.12.2025: PactHouse 2 -finaalin tulokset",
       "url": "https://gekkonen.net/stagalalla-ja-kelly-kalonjilla-sutinaa-pacthousessa/",
       "note": "Ilari Sahamies ensimmäinen, Isabell Jansson toinen, Joachim Okkishow Rostedt kolmas. Finaali sunnuntaina 7.12.2025."
+    },
+    "P121": {
+      "label": "Ice Cage 8: Aleksi Nurminen vs. Matias Niemi",
+      "url": "https://icecage.fi/ottelu/aleksi-nurminen-vs-matias-niemi/",
+      "note": "Virallinen Ice Cage 8 -ottelusivu 19.9.2026 Turussa."
+    },
+    "P122": {
+      "label": "Ice Cage 29.10.2026: Nurminen vastaan Koistinen",
+      "url": "https://icecage.fi/ajankohtaista/aleksi-nurminen-vs-matias-koistinen/",
+      "note": "19.12.2026 tuleva Ice Cage 9 sekä Nurmisen 19.9.2026 Matias Niemestä ottama tyrmäysvoitto."
+    },
+    "P123": {
+      "label": "Ice Cage 28.10.2026: Aleksi Nurminen juontaa podcastia",
+      "url": "https://icecage.fi/ajankohtaista/ice-cage-julkaisi-uuden-podcastin/",
+      "note": "Podcastin juontaja Nurminen, avausvieras Max Hynninen, aiempi Häkissä-podcast."
+    },
+    "P124": {
+      "label": "PokerNews 11.9.2026: Ketola voitti Antoniuksen 20 miljoonan heads-upissa",
+      "url": "https://www.pokernews.com/news/2026/09/monarch-patrik-antonius-poker-match-52368.htm",
+      "note": "Ketola voitti 20 M USD heads-upin 11.9.2026 Jejussa, 10 M USD per pelaaja."
+    },
+    "P125": {
+      "label": "PokerNews 11.9.2026: Ketolan aikaisemmat suurpelit",
+      "url": "https://www.pokernews.com/news/2026/09/patrik-antonius-ossi-ketola-20m-heads-up-match-triton-jeju-52363.htm",
+      "note": "Aiemmat pokerivastustajat ja Triton Jeju II -ottelujulkistus."
+    },
+    "P126": {
+      "label": "PokerOrg 11.9.2026: Duel sponsoroi Triton Jejua",
+      "url": "https://www.poker.org/latest-news/patrik-antonius-loses-10m-in-pokers-biggest-ever-heads-up-match-akDGN6R5aDPl/",
+      "note": "Duelin sponsorointi, Ketolan ja Antoniuksen ottelu."
+    },
+    "P127": {
+      "label": "IDFA 2024: Hard to Break -elokuvan esittely",
+      "url": "https://www.idfa.nl/en/film/64aadff8-0e08-4bde-b83b-4c89aa4ac490/hard-to-break/",
+      "note": "Ohjaajat Anna-Maija Heinonen ja Krista Moisio; Polygraf-tuotanto, 81 min, IDFA Youth Documentary -kilpasarja."
     }
   },
   "date": "2026-11-01"
