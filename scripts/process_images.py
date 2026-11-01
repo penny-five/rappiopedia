@@ -14,6 +14,7 @@ import json
 from pathlib import Path
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 
@@ -41,13 +42,20 @@ def fetch_image(url: str) -> bytes:
             "Accept": "image/avif,image/webp,image/png,image/jpeg,image/*",
         },
     )
-    with urllib.request.urlopen(req, timeout=20) as response:
-        if response.status != 200:
-            raise ValueError(f"HTTP {response.status}")
-        data = response.read(MAX_INPUT_BYTES + 1)
-        if len(data) > MAX_INPUT_BYTES:
-            raise ValueError("Source file exceeds 12 MiB")
-        return data
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=20) as response:
+                if response.status != 200:
+                    raise ValueError(f"HTTP {response.status}")
+                data = response.read(MAX_INPUT_BYTES + 1)
+                if len(data) > MAX_INPUT_BYTES:
+                    raise ValueError("Source file exceeds 12 MiB")
+                return data
+        except urllib.error.HTTPError as exc:
+            if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
+    raise RuntimeError("Image download failed")
 
 
 def optimize_image(raw: bytes, max_width=720, max_height=720, max_kb=160) -> bytes:
@@ -121,7 +129,12 @@ def run(args) -> int:
             success.append(f"{node_id} ({len(result)//1024} KiB)")
         except (OSError, ValueError, urllib.error.URLError, UnidentifiedImageError) as exc:
             errors.append(f"{node_id}: {type(exc).__name__}: {exc}")
-    if args.update_data and not args.dry_run and (success or cached):
+            # Do not leave a broken external hotlink in the published graph.
+            # Keep the original URL for a later retry.
+            if args.update_data and not args.dry_run and url.startswith(("https://", "http://")):
+                node["imageSource"] = url
+                node.pop("image", None)
+    if args.update_data and not args.dry_run:
         NETWORK.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n",
                            encoding="utf-8")
     for name in success:
