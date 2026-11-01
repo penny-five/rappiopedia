@@ -2239,7 +2239,10 @@
       "featured": false,
       "types": [
         "somevaikuttaja"
-      ]
+      ],
+      "image": "images/alisa_bamat.webp",
+      "imageSource": "https://starbuzz.fi/wp-content/uploads/2025/08/Alisa-Ainasoja.webp",
+      "imageCredit": "Starbuzz.fi, Alisa (nyk. Mea) Ainasojan henkilöartikkelin kuva (2025)"
     },
     {
       "id": "sampe_iippa_megis_2026",
