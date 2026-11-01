@@ -6,4 +6,4 @@ Gekkonen uutisoi 15. huhtikuuta Iippadaan saapuneen Kärkkäisen luo Viroon edel
 
 Samassa uutisessa yhteissubathonin aloitukseksi ilmoitettiin perjantai 18. huhtikuuta 2025. Huhtikuun 29. päivänä katsojat seurasivat edelleen käynnissä olevaa maratonia ja kyselivät sen öisten lähetystaukojen syitä. [@P9] [@P190]
 
-Toukokuun 3. päivän Reddit-ketjussa katsojat keskustelivat Pottukoiran liikuttumisesta ja lähetyksen lähestyvästä lopusta. Maratonin loppuvaiheesta keskusteltiin vielä 3. toukokuuta. [@P191]
+Toukokuun 3. päivänä katsojat keskustelivat Pottukoiran liikuttumisesta ja pian päättyväksi odotetusta maratonista. [@P191]
