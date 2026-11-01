@@ -3499,6 +3499,86 @@
         315,
         -160
       ]
+    },
+    {
+      "id": "tampereentero",
+      "name": "TampereenTero",
+      "group": "rappio",
+      "cat": "person",
+      "types": [
+        "rappiostriimaaja"
+      ],
+      "note": "TampereenTero on suomalainen YouTube-rappiostriimaaja, joka nousi tunnetuksi erityisesti Tampereen kaduilla vuonna 2019 kuvaamistaan suorista lähetyksistä. Hänen striimeistään, yhteislähetyksistään ja oikeustapauksestaan kirjoitettiin myös myöhemmin.",
+      "pos3": [
+        2740,
+        -245,
+        970
+      ],
+      "featured": true
+    },
+    {
+      "id": "tampereentero_hervanta_2019",
+      "name": "TampereenTeron Hervannan välikohtaus 19.10.2019",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "TampereenTeron YouTube-lähetyksessä 19. lokakuuta 2019 mies otti hänen puhelimensa ja vaati rahaa. eUrheilun mukaan Tero maksoi 60 euroa saadakseen puhelimensa takaisin.",
+      "pos3": [
+        2840,
+        -300,
+        1030
+      ],
+      "featured": false
+    },
+    {
+      "id": "tampereentero_subway",
+      "name": "TampereenTeron Subway-lähetyksen oikeustapaus",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "oikeustapaus"
+      ],
+      "note": "Tampereella Subway-ravintolassa kuvatusta lähetyksestä seurasi kunnianloukkaustuomio. Kaupunkikanavan mukaan samassa istunnossa annettiin tuomio myös perättömästä vaarailmoituksesta.",
+      "pos3": [
+        2770,
+        -400,
+        1080
+      ],
+      "featured": false
+    },
+    {
+      "id": "reinski",
+      "name": "Reinski",
+      "group": "rappio",
+      "cat": "person",
+      "types": [
+        "rappiostriimaaja"
+      ],
+      "note": "Reinski on suomalaisen rappiotuben striimaaja, jonka lähetyksiä tutkittiin Turun yliopiston vuoden 2022 pro gradu -tutkielmassa. Hän teki TampereenTeron kanssa yhteislähetyksen 26. heinäkuuta 2021.",
+      "pos3": [
+        2870,
+        -240,
+        875
+      ],
+      "featured": false
+    },
+    {
+      "id": "tero_reinski_2021",
+      "name": "TampereenTeron ja Reinskin yhteisstriimi 26.7.2021",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Reinski ja TampereenTero tekivät 26. heinäkuuta 2021 yhteisen suoratoistolähetyksen, jonka katsojamäärä nousi Turun yliopiston tutkijan oman havainnon mukaan yli 600:aan.",
+      "pos3": [
+        2800,
+        -175,
+        860
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -7648,6 +7728,60 @@
         "P19"
       ],
       "level": "reported"
+    },
+    {
+      "a": "tampereentero",
+      "b": "tampereentero_hervanta_2019",
+      "type": "oli-kohteena",
+      "label": "puhelin otettiin ja häneltä vaadittiin 60 euroa Hervannan striimissä",
+      "level": "reported",
+      "src": [
+        "P221"
+      ],
+      "date": "2019-10-19"
+    },
+    {
+      "a": "tampereentero",
+      "b": "tampereentero_subway",
+      "type": "tuomittiin",
+      "label": "tuomittiin Subway-lähetyksen kunnianloukkauksesta sekä perättömästä vaarailmoituksesta",
+      "level": "reported",
+      "src": [
+        "P222"
+      ]
+    },
+    {
+      "a": "tampereentero",
+      "b": "tero_reinski_2021",
+      "type": "osallistui",
+      "label": "striimasi Reinskin kanssa 26.7.2021",
+      "level": "verified",
+      "src": [
+        "P220"
+      ],
+      "date": "2021-07-26"
+    },
+    {
+      "a": "reinski",
+      "b": "tero_reinski_2021",
+      "type": "osallistui",
+      "label": "striimasi TampereenTeron kanssa 26.7.2021",
+      "level": "verified",
+      "src": [
+        "P220"
+      ],
+      "date": "2021-07-26"
+    },
+    {
+      "a": "tampereentero",
+      "b": "upi",
+      "type": "striimasi-yhdessa",
+      "label": "esiintyi Upin kanssa Paltamon-vierailujen videoklipeissä",
+      "level": "reported",
+      "src": [
+        "P223",
+        "P224"
+      ]
     }
   ],
   "sources": {
@@ -8750,6 +8884,36 @@
       "label": "Seiska 24.9.2026: Janelyn musiikkiura",
       "url": "https://www.seiska.fi/katso/laulaja-janely-saa-jatkuvasti-moitteita-yhdesta-asiasta/2266610",
       "note": "Janelyn New Yorkin esiintymiset ja tosi-tv."
+    },
+    "P220": {
+      "label": "Lauri Leppänen (Turun yliopisto, 2022): Ironisia supertähtiä ja autenttisia luusereita",
+      "url": "https://www.utupub.fi/bitstream/handle/10024/153216/Leppanen_Lauri_opinnayte.pdf?isAllowed=y&sequence=1",
+      "note": "Digitaalisen kulttuurin pro gradu, tammikuu 2022. Tutkija havainnoi TampereenTeroa, Upia ja Reinskiä heinäkuussa 2021 sekä Reinskin ja Teron yhteislähetystä 26.7.2021."
+    },
+    "P221": {
+      "label": "eUrheilu 20.10.2019: TampereenTero ryöstettiin live-lähetyksessä",
+      "url": "https://eurheilu.org/suomalainen-striimaaja-ryostettiin-live-lahetyksessa-kaivappa-nyt-sita-kuvetta/",
+      "note": "Topias Rouvisen juttu 19.10.2019 Hervannassa kuvatuista tapahtumista ja 60 euron maksusta puhelimen takaisin saamiseksi."
+    },
+    "P222": {
+      "label": "Kaupunkikanava 24.5.2022: Hyppy tyhjyyteen – sisällöntuotannon pimeä puoli",
+      "url": "https://kaupunkikanava.fi/hyppy-tyhjyyteen-sisallontuotannon-pimea-puoli/",
+      "note": "Joni Hakasalon artikkeli Teron suoratoistourasta, lahjoituksista sekä Subwayn kunnianloukkaus- ja perättömän vaarailmoituksen tuomioista."
+    },
+    "P223": {
+      "label": "Jatkoaika 14.8.2019: TampereenTeron ja Upin Paltamon-vierailun muistelua",
+      "url": "https://keskustelu.jatkoaika.com/threads/%E2%80%9Ddjpate246%E2%80%9D-ynn%C3%A4-muut-youtube-sankarit.58014/page-12",
+      "note": "Keskustelijan elokuussa 2019 kirjoittama kertomus Teron vierailusta Upin luona Paltamossa; Pirkkis mainitaan samassa kuvauksessa."
+    },
+    "P224": {
+      "label": "Murha.info 9.5.2022: Paltamon Alko -videoita koskeva keskustelu",
+      "url": "https://murha.info/rikosfoorumi/viewtopic.php?p=1302483",
+      "note": "Yksilöity keskusteluviesti linkittää kaksi YouTube-katkelmaa TampereenTeron ja Upin Paltamon-vierailusta. Videoiden sisältöä ei tarkistettu suoraan."
+    },
+    "P225": {
+      "label": "Suomi24 24.8.2019: Tampereen Tero -keskustelu",
+      "url": "https://keskustelu.suomi24.fi/t/15972920/tampereen-tero",
+      "note": "Aikalaisten keskustelu TampereenTeron YouTube-katulähetyksistä ja katsojalahjoituksista; mielipiteet eivät ole vahvistettuja henkilötietoja."
     }
   },
   "date": "2026-11-01"

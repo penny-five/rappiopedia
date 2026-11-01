@@ -1145,6 +1145,55 @@
         "Etsi alkuperäistallenne ja tarkenna päivä sekä osallistujat."
       ],
       "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "tampereentero-early-career",
+      "title": "TampereenTeron varhaiset lähetykset, Paltamon-vierailut ja oikeustapaus",
+      "status": "in-progress",
+      "priority": "high",
+      "nodeIds": [
+        "tampereentero",
+        "tampereentero_hervanta_2019",
+        "tampereentero_subway",
+        "upi",
+        "pirkkis",
+        "reinski",
+        "tero_reinski_2021"
+      ],
+      "sourceIds": [
+        "P220",
+        "P221",
+        "P222",
+        "P223",
+        "P224",
+        "P225"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=bf-nKm4VFME",
+        "https://youtu.be/QOp9KFjCeZQ",
+        "https://youtu.be/a1QU43FDDbQ",
+        "https://youtu.be/ugBEcMo943I"
+      ],
+      "notes": "1.11.2026: julkaistu TampereenTeron elämäkerta, 2019 Hervannan välikohtaus, Subwayn oikeustapaus, Reinskin henkilöartikkeli ja heidän 26.7.2021 yhteisstriiminsä. Akateeminen tutkielma sisältää tutkijan oman striimihavainnon; 2019 Paltamo-yhteys perustuu keskustelijan muisteloon ja 2022 lähde linkittää kaksi YouTube-klippiä. Kaupunkikanava kirjoittaa kahdesta tuomiosta, mutta tuomion numero, antopäivä ja rangaistus eivät selviä lähteestä. Yksityiselämää ja terveystietoja koskevia foorumiväitteitä ei ole julkaistu.",
+      "questions": [
+        "Mikä on Subway-lähetyksen tuomion antopäivä ja mahdollinen julkinen ratkaisu?",
+        "Näkyvätkö Paltamon vierailut alkuperäisissä kahdessa videossa ja minä vuosina ne on kuvattu?",
+        "Mikä on Teron oman kanavan ja yhteisstriimien myöhempi aikajana?",
+        "Löytyykö TampereenTeroon varmasti tunnistettu ja luvallisesti käytettävä henkilökuva?",
+        "Näkyikö Pirkkis itse samassa Paltamon lähetyksessä vai muistellaanko vain yhteisiä vierailuja?"
+      ],
+      "queries": [
+        "\"TampereenTero\" \"Subway\" \"2020\" tuomio",
+        "\"TampereenTero\" \"Upi\" \"Paltamo\" YouTube",
+        "\"TampereenTero\" \"Reinski\" 26.7.2021",
+        "\"Tero\" \"Aamulehti\" \"Livechatti yllyttää tekoihin\" 4.9.2019"
+      ],
+      "nextSteps": [
+        "Tarkista julkinen käräjäoikeuden ratkaisu tai Ilta-Sanomien 25.2.2020 artikkeli.",
+        "Katso Paltamon ja Subwayn alkuperäisklipit ja kirjaa tarkat lähetyspäivät.",
+        "Varmista Reinskin muut esiintymiset alkuperäisistä lähteistä ennen uusien henkilösuhteiden lisäämistä.",
+        "Etsi ja varmenna henkilökuva kuvankeruuohjeen mukaan."
+      ]
     }
   ]
 }
