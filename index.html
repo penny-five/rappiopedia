@@ -3,7 +3,7 @@
 <body><div class="app">
 <header class="top">
   <div class="mark"><div class="glyph" aria-hidden="true">R</div><div><h1>Rappiopedia</h1><div class="subhead">Vapaa yhteysensyklopedia</div></div></div>
-  <div class="topactions"><div class="topsearch"><span>⌕</span><input id="search" aria-label="Hae solmu" placeholder="Hae Rappiopediasta…" autocomplete="off"><kbd>Ctrl K</kbd></div><button id="leftmenu" class="flat mobile-toggle">Rajaukset</button><button id="rightmenu" class="flat mobile-toggle">Artikkeli</button><button id="reset" class="flat" title="Palauta kokonaisnäkymä">↺</button></div>
+  <div class="topactions"><div class="topsearch" role="search"><span aria-hidden="true">⌕</span><input id="search" role="combobox" aria-label="Hae Rappiopediasta" aria-autocomplete="list" aria-expanded="false" aria-controls="searchSuggestions" placeholder="Hae Rappiopediasta…" autocomplete="off"><kbd>Ctrl K</kbd><div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="Hakuehdotukset" hidden></div></div><button id="leftmenu" class="flat mobile-toggle">Rajaukset</button><button id="rightmenu" class="flat mobile-toggle">Artikkeli</button><button id="reset" class="flat" title="Palauta kokonaisnäkymä">↺</button></div>
 </header>
 <aside id="leftpanel" class="side left">
  <div class="section sidebarintro"><div class="eyebrow">TIETOJEN YHTEYDET</div><h2>Rappioverse</h2><p>Kolmiulotteinen kartta henkilöistä, tapahtumista, ohjelmista ja lähteistä.</p><div class="metricbox"><div class="metric"><b id="nodecount">–</b><span>Solmua</span></div><div class="metric"><b id="edgecount">–</b><span>Yhteyttä</span></div></div><div id="searchhint" class="hint"></div></div>
