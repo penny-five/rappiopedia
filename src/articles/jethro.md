@@ -16,6 +16,10 @@ Rostedt aloitti PACTin [[talks|PactTalks]]-keskusteluohjelman juontajana heinäk
 
 Lokakuussa 2026 Rostedt kertoi Seiskalle juontavansa Tallinnasta käsin kuutta suoraa PactTalks-lähetystä viikossa. Hänet nähtiin myös [[bamat_nizza_2026|Bämät matkoilla -projektin Nizzan-lähetyksissä]] syksyllä 2026. [@P115] [@P103]
 
+## Esko Eerikäisen kanssa syntynyt kiista
+
+PactHouse 3:n aikana Rostedt kommentoi [[esko_eerikainen|Esko Eerikäisen]] ulkonäköä halventavaan sävyyn. Eerikäinen kertoi myöhemmin pahastuneensa, mutta sanoi Rostedtin pyytäneen anteeksi. Seiska kertoi sovinnosta 21. toukokuuta 2026. Samaan aikaan molemmat oli ilmoitettu Tampere City Festivalin ja Tapiola Festivalin tulevan kesän juontajiksi. [@P246]
+
 ## PactTalksin elokuun 2026 välikohtaus
 
 Rostedt juonsi 11. elokuuta 2026 [[pact_augtalk|PactTalks-lähetyksen]], jossa [[johanna|Johanna Tukiainen]], [[joonasm|Joonas Mäkäräinen]] ja [[milla|Milla Säilynoja]] ottivat yhteen. Seiskan mukaan tilanne eteni fyysiseksi, ja Rostedt auttoi erottamaan riidan osapuolia. Rostedt kertoi, ettei hän ollut odottanut tällaista tilannetta ennen lähetystä. [@P41]
