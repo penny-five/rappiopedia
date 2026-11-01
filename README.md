@@ -63,6 +63,19 @@ Yhteys tallennetaan `network.json`-tiedostoon kahden solmu-ID:n välisenä reuna
 
 Sisällön lisäämistä käsitellään tarkemmin [kirjoitusohjeessa](docs/CONTENT_AUTHORING.md). Tutkimuksen lähteet ja keskeneräiset selvitykset löytyvät [tutkimusmuistiinpanoista](docs/RESEARCH_LOG.md) ja [tiedonhankinnan ohjeesta](docs/RESEARCH_PLAYBOOK.md).
 
+## Uuden tutkimusagentin käynnistäminen
+
+Repo sisältää [Rappiopedian tutkimusskillin](.agents/skills/rappiopedia-research/SKILL.md), jota Codex voi käyttää projektikohtaisena työnkulkuna. Myös uusi agentti, joka lukee `AGENTS.md`-tiedoston, ohjataan siihen. Skill neuvoo etsimään uusia lähteitä, täydentämään artikkeleita ja lisäämään verkostoon uusia solmuja sekä lähteistettyjä yhteyksiä.
+
+Tutkimuksella on kaksi aloitustapaa:
+
+- **Aihe annettu:** ”Tutki Ruusutossun historiaa ja hänen yhteyksiään muihin striimaajiin. Lisää löydöt Rappiopediaan.”
+- **Agentti valitsee:** ”Jatka Rappiopedian tutkimusta itsenäisesti. Valitse kiinnostava aihe, etsi uusia yhteyksiä ja kirjoita löydöksistä artikkeleita.”
+
+Agentin ei tarvitse pyytää lähtöaihetta jälkimmäisessä tapauksessa. Keskeneräiset selvitykset ovat [tutkimusjonossa](research/leads.json). Komento `npm run research:candidates` nostaa esiin avoimia tutkimusaiheita ja paljon yhteyksiä sisältäviä solmuja, joilta puuttuu käsin kirjoitettu artikkeli. Komento `npm run research:candidates -- --focus pottu` rajaa ehdotuksia olemassa olevaan aiheeseen ja sen naapureihin; muu käyttäjän antama lähtöaihe voidaan tutkia uutena solmuna.
+
+Skill ei käynnistä itsestään ajastettua tutkimusta, vaan ohjaa käynnistettyä agenttia viemään tutkimuksensa konkreettisiksi muutoksiksi. ChatGPT:ssä erikseen asennettavien skillien saatavuus riippuu työtilasta; repossa oleva `SKILL.md` ei yksin tarkoita, että se olisi asennettu ChatGPT-tilille.
+
 ## Julkaisu
 
 `main`-haaran päivitykset testataan ja rakennetaan GitHub Actionsissa. Julkaisu tehdään GitHub Pagesiin osoitteeseen **https://penny-five.github.io/rappiopedia/**. Työnkulku on tiedostossa [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
