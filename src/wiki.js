@@ -41,18 +41,19 @@ export function markdownToHtml(text,nodes,sources){
   flush();close();return output;
 }
 function fallbackArticle(node,related){
-  let text='## Yhteenveto\n'+(node.note||'Tiedossa ei ole vielä kuvaustekstiä.')+'\n\n## Suorat lähteistetyt yhteydet\n';
-  if(!related.length) return text+'Yhteyksiä ei ole vielä kirjattu.\n';
+  let text=(node.note||'')+'\n';
+  if(!related.length) return text;
+  text+='\n## Yhteydet\n';
   for(const edge of related.slice(0,9)){
     text+='- [['+edge.other.id+'|'+edge.other.name+']] — '+edge.label+(edge.src.length?' [@'+edge.src[0]+']':'')+'\n';
   }
-  return text+'\n> Tämä on verkostodatasta koottu alustava artikkeli. Käsin toimitettu artikkeli puuttuu vielä.\n';
+  return text;
 }
 export function renderNodeArticle({node,related,nodes,sources,levels,group,category}){
   const text=authored['./articles/'+node.id+'.md']||fallbackArticle(node,related);
   const sourceIds=[...new Set(related.flatMap(e=>e.src))].filter(id=>sources[id]);
   const name=escapeHtml(node.name);
-  document.getElementById('dochead').innerHTML='<div class="breadcrumbs">Rappiopedia <span>›</span> '+escapeHtml(category)+' <span>›</span> '+name+'</div><h2>'+name+'</h2><div class="article-kicker">Rappiopedia — julkisiin lähteisiin perustuva artikkeli</div>';
+  document.getElementById('dochead').innerHTML='<div class="breadcrumbs">Rappiopedia <span>›</span> '+escapeHtml(category)+' <span>›</span> '+name+'</div><h2>'+name+'</h2>';
   const initials=node.name.replace(/[^\p{L}\p{N} ]/gu,' ').trim().split(/\s+/).slice(0,2).map(x=>x[0]).join('');
   const picture=node.image?'<img loading="lazy" referrerpolicy="no-referrer" alt="'+name+'" src="'+escapeHtml(node.image)+'">':'';
   const box='<div class="infobox"><div class="infobox-head">'+name+'</div><div class="infobox-media"><span>'+escapeHtml(initials)+'</span>'+picture+'</div><dl>'+
@@ -72,7 +73,7 @@ export function renderNodeArticle({node,related,nodes,sources,levels,group,categ
 }
 export function renderSourceArchive(sources){
   document.getElementById('dochead').innerHTML='<div class="breadcrumbs">Rappiopedia <span>›</span> Arkisto</div><h2>Lähteet</h2><div class="article-kicker">Verkoston julkisten lähteiden arkisto</div>';
-  document.getElementById('articleBody').innerHTML='<p>Yksittäisen tapahtuman tai haastattelun dokumentointi ei tarkoita yleistä todistetta toimijoiden muista suhteista. Forumilähteet merkitään erikseen.</p>';
+  document.getElementById('articleBody').innerHTML='<p>Rappiopedian artikkeleissa ja verkostokartassa käytetyt lähteet.</p>';
   document.getElementById('relhead').textContent='';
   document.getElementById('relations').innerHTML='';
   document.getElementById('srcHead').textContent='Kaikki lähteet ('+Object.keys(sources).length+')';
