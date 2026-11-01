@@ -69,6 +69,7 @@ Tutkimustiedosto ei käynnistä automaattista tutkimusta itsestään. Sitä käy
 | `src/data/network.json` | Solmut, yhteydet ja lähteet |
 | `src/data/relation-types.json` | Suhteiden tyypit ja molempien suuntien verbimuodot |
 | `src/data/entity-types.json` | Solmuluokat sekä nimetyt, mahdollisesti moniarvoiset solmutyypit |
+| `src/data/skenes.json` | Skenet, niiden värit ja 3D-laatikoiden marginaalit |
 | `research/leads.json` | Agenttien jatkotutkimukset; ei näytetä sivustolla |
 | `src/articles/<id>.md` | Varsinaiset artikkelitekstit |
 | `src/wiki.js` | Artikkelien näyttäminen ja automaattinen perusteksti |
@@ -88,11 +89,22 @@ Automaattisesti tuotettu perusteksti ei korvaa toimitettua henkilöartikkelia. T
 
 Käyttöliittymä on suomenkielinen, vaalea ja tietosanakirjamainen. Säilytä 3D-kartan pyöritys, zoomaus, siirtäminen ja kohteiden avaaminen. PACTin ohjelmat kuuluvat samaan kartalla näytettävään ryhmään.
 
+## Skenet: ensisijainen ryhmä ja erillinen Kasinokurki
+
+Skenen tunnisteet, suomenkieliset nimet, värit ja mahdollinen poikkeava 3D-marginaali ovat tiedostossa `src/data/skenes.json`. Rappioverse lukee rekisterin suoraan; uuden skenen lisäys vaatii rekisterimerkinnän sekä jäsenille sopivat `group`- ja `pos3`-arvot. Jokaisen solmun `group` on sen **ensisijainen 3D-sijainti**, ei tyhjentävä luettelo kaikista yhteyksistä.
+
+- **`rappio` / Rappiostriimaus:** itsenäisesti tunnetut rappiostriimaajat ja heihin liittyvät lähetykset ja tapahtumat. Tähän kuuluvat myös heidän uransa yksittäiset tapahtumat, vaikka ne koskisivat rahapelaamista.
+- **`kasinokurki` / Kasinokurki:** Kasinokurki-palvelu ja streamaajat, joiden lähetyksistä on lähteistetty suora Kasinokurki-brändin näkyvyys (tällä hetkellä Pullis, SampeF2 ja KP2Times). Älä päättele pelkän komennon perusteella sopimuksen ehtoja tai omistajuutta. Pelkkä Kickissä toimiminen ei kuulu tähän skeneen.
+- **`documents`, `reality`, `combat`, `monarch`:** dokumenttien ja tuotannon, some-/matkarealityn, kamppailuviihteen sekä Monarch/Duel-high stakes -toiminnan omat skenet.
+- PACT-osallistumiset ja PactTalks-vierailut säilyvät yhteyksinä verkostossa. Yksi esiintyminen ei yksin määrää henkilön skeneä. Käytä ensisijaisena ryhmänä henkilön omaa pääasiallista toimintaa, jos se on tiedossa.
+
+`rappio`-skenellä on muita suurempi `padding: 160` (oletus 100), jotta sen 3D-laatikko on väljempi. **Kaikki** sijoittelutarkistukset tulee tehdä kunkin skenen rekisterissä määritetyllä marginaalilla, eivätkä PACTin yhteistilavuus (145) ja muut skenet saa leikata toisiaan.
+
 ## Rappioverse: 3D-skenet eivät saa leikata toisiaan
 
 **Tämä on toistuva regressio:** uusien solmujen lisääminen, niiden `pos3`-koordinaattien tai `group`-ryhmän muuttaminen sekä skenejen uudelleensijoittelu ovat aiemmin aiheuttaneet `tests/layout.test.mjs`-testien kaatumisen (esimerkiksi `rappio intersects PACT` ja `talks intersects rappio`).
 
-- **Säilytä 3D-tilavuuksien erillisyys joka kerta, kun muutat verkostodataa tai sijoittelua.** Rajat lasketaan kaikkien skenen solmujen `pos3`-koordinaateista, eivät vain keskussolmuista tai näkyvästä projektiosta. `src/lib/scene.js`-tiedoston `bounds3D` käyttää yksittäisille skeneille 100 yksikön marginaalia; `src/lib/hierarchy.js` määrittelee PACT-ohjelmaperheen, jonka koko jäsenistöstä laskettavalla ylätason rajalla on 145 yksikön marginaali.
+- **Säilytä 3D-tilavuuksien erillisyys joka kerta, kun muutat verkostodataa tai sijoittelua.** Rajat lasketaan kaikkien skenen solmujen `pos3`-koordinaateista, eivät vain keskussolmuista tai näkyvästä projektiosta. `src/lib/scene.js`-tiedoston `bounds3D` käyttää skenekohtaista `src/data/skenes.json`-rekisterin marginaalia (oletus 100 yksikköä, Rappiostriimauksella 160); `src/lib/hierarchy.js` määrittelee PACT-ohjelmaperheen, jonka koko jäsenistöstä laskettavalla ylätason rajalla on 145 yksikön marginaali.
 - **Tarkista kaksi ehtoa:** (1) minkään kahden yksittäisen skenen 3D-rajalaatikot eivät leikkaa toisiaan ja (2) yksikään PACT-perheeseen kuulumaton skene ei leikkaa PACTin yhteistä ylätason rajalaatikkoa. PACTin sisäisten skenejen kuuluminen ylätason tilavuuteen on tarkoituksellista.
 - **Aja vähintään `node --test tests/layout.test.mjs` heti jokaisen `pos3`-, `group`- tai sijoittelumuutoksen jälkeen** ja ennen commitia. Aja sen lisäksi `npm test` ja `npm run build` ennen kuin ilmoitat työn valmiiksi. Varmista myös, että koko testiajo onnistuu; osa testeistä voi mennä läpi, vaikka layout-testit kaatuvat.
 - **Korjaa ongelma koordinaateissa tai sijoittelussa, älä testejä heikentämällä.** Älä poista päällekkäisyystestejä, ohita skenejä, pienennä marginaaleja vain testin läpäisemiseksi tai piilota päällekkäisyyttä visuaalisesti. Siirrä tarvittaessa skenen solmuja yhtenä kokonaisuutena niin, että niiden keskinäinen sijoittelu ja yhteydet säilyvät.
