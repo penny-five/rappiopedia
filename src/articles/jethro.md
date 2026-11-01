@@ -12,7 +12,7 @@ Rostedtin poika [[joachim|Joachim ”Okkishow” Rostedt]] oli jo osallistunut [
 
 ## PactTalksin juontaminen
 
-Rostedt aloitti PACTin [[talks|PactTalks]]-keskusteluohjelman juontajana heinäkuussa 2026. Hän haastatteli esimerkiksi [[ruusu|Pinja Ruusutossua]], [[pasi|Pasi Viherahoa]], [[iippa|Iippadaata]] ja [[megis|Megarokkistaraa]]. Vuoden aikana ohjelmaa juonsivat myös Joachim Rostedt, [[jasmilla|Jasmilla Rostedt]] ja [[saini|Saini]] joissakin jaksoissa. [@P7] [@P19] [@P53]
+Rostedt aloitti PACTin [[talks|PactTalks]]-keskusteluohjelman juontajana heinäkuussa 2026. Hän haastatteli esimerkiksi [[ruusu|Pinja Ruusutossua]], [[pasi|Pasi Viherahoa]], [[iippa|Iippadaata]] ja [[megis|Megarokkistaraa]]. Iippadaa ja Megis vierailivat [[talk_iippa_megis_2026|jaksossa 87]] lokakuussa 2026. Vuoden aikana ohjelmaa juonsivat myös Joachim Rostedt, [[jasmilla|Jasmilla Rostedt]] ja [[saini|Saini]] joissakin jaksoissa. [@P7] [@P19] [@P53]
 
 Lokakuussa 2026 Rostedt kertoi Seiskalle juontavansa Tallinnasta käsin kuutta suoraa PactTalks-lähetystä viikossa. Hänet nähtiin myös [[bamat_nizza_2026|Bämät matkoilla -projektin Nizzan-lähetyksissä]] syksyllä 2026. [@P115] [@P103]
 

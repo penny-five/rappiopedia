@@ -10,7 +10,7 @@ Seiskan dokumenttia käsittelevän jutun mukaan eräässä Valikaisen lähetyska
 
 Megarokkistara on nimetty vuoden 2025 [[s1|PactHouse 1:n]] osallistujaksi julkisessa koonnissa. Osallistujaluettelon tiedot perustuvat tässä vaiheessa yhteen koontilähteeseen. [@P1]
 
-Vuonna 2026 Valikainen esiintyi [[talks|PactTalksin]] kahdessa lokakuun jaksossa: 11. lokakuuta jaksossa 80 [[pasi|Pasi Viherahon]] kanssa ja 20. lokakuuta jaksossa 87 [[iippa|Iippadaan]] kanssa. Nimet ja päivämäärät käyvät ilmi ohjelman julkisista lähetysotsikoista. [@P7] [@P19]
+Vuonna 2026 Valikainen esiintyi [[talks|PactTalksin]] kahdessa lokakuun jaksossa: 11. lokakuuta jaksossa 80 [[pasi|Pasi Viherahon]] kanssa ja 20. lokakuuta [[talk_iippa_megis_2026|jaksossa 87]] [[iippa|Iippadaan]] kanssa. Nimet ja päivämäärät käyvät ilmi ohjelman julkisista lähetysotsikoista. [@P7] [@P19]
 
 ## Julia, Pullis ja mökkistriimit
 
@@ -33,8 +33,6 @@ Syyskuussa Megis oli [[mallorca_livet_2026|Mallorcan yhteisstriimeissä]] Pullik
 [[sampe|SampeF2:n]] Kick-kanavan lähetysarkistossa mainittiin lokakuun 20.–21. päivän IRL-lähetyksissä sekä Iippadaa että Megis. Seuraavina päivinä kanavalla nähtiin Tornion-matkaan liittyviä otsikoita, joissa Valikainen mainittiin. Näitä lähetyksiä käsitellään myös [[sampe_iippa_megis_2026|SampeF2:n yhteislähetysten artikkelissa]]. [@P76] [@P77]
 
 Lokakuun 19. päivänä 2026 julkaistussa Reddit-videoketjussa Valikainen esiintyy [[iippa|Iippadaan]] kanssa suorassa lähetyksessä. Tätä [[iippa_megis_livet_2026|yhteislähetystä]] seurasi kaksikon esiintyminen PactTalksissa 20. lokakuuta. [@P204] [@P19]
-
-## Kohujulkkikset-dokumentti
 
 ## Kohujulkkikset-dokumentti
 

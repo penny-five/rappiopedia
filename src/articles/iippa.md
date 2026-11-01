@@ -34,8 +34,6 @@ Lokakuun 19. päivänä 2026 julkaistussa Reddit-ketjussa esitettiin katkelma, j
 
 ## Vuoden 2026 julkisuus ja PactTalks
 
-## Vuoden 2026 julkisuus ja PactTalks
-
 Heinäkuussa 2026 Seiska haastatteli Kurvista tämän taloudellisesta tilanteesta ja arjen uudelleenrakentamisesta. Kurvinen kertoi käyvänsä terapiassa ja pyrkivänsä vakaampaan elämäntilanteeseen. [@P169]
 
-Lokakuun 20. päivänä Iippadaa esiintyi [[megis|Megarokkistaran]] kanssa [[talks|PactTalksin]] jaksossa 87. Samassa kuussa hänen nimensä esiintyi [[sampe|SampeF2:n]] yhteisstriimien otsikoissa. Hänet nimettiin myös [[bailu|Bailupaatti 2026:n]] osallistujien joukkoon. [@P19] [@P76] [@P13]
+Lokakuun 20. päivänä Iippadaa esiintyi [[megis|Megarokkistaran]] kanssa [[talk_iippa_megis_2026|PactTalksin jaksossa 87]]. Samassa kuussa hänen nimensä esiintyi [[sampe|SampeF2:n]] yhteisstriimien otsikoissa. Hänet nimettiin myös [[bailu|Bailupaatti 2026:n]] osallistujien joukkoon. [@P19] [@P76] [@P13]

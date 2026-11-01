@@ -12,6 +12,4 @@ Syyskuun 9. päivän 2025 Kick-lähetysarkisto yksilöi matkan viidennen päivä
 
 ## Oma tapa tehdä suoratoistoja
 
-## Oma tapa tehdä suoratoistoja
-
 Ylen helmikuun 2026 haastattelussa MonniRS kertoi pyrkivänsä viihdyttämään katsojia ilman alkoholia ja näki haasteet vaihtoehtona päihtymiseen perustuvalle striimaukselle. Hän liittyy siksi ensisijaisesti IRL- ja matkastriimauksen kenttään eikä varsinaiseen rappiostriimaukseen. [@P197]
