@@ -219,7 +219,8 @@ function layoutRelationshipLabels(ps,nodeItems){
   const dx=q.x-p.x,dy=q.y-p.y,len=Math.hypot(dx,dy);
   if(len<55||W<100)continue;
   const verb=relationVerb(e,selected,RELATION_TYPES);
-  const text=e.a===selected?verb+' · '+by[e.b].name:by[e.a].name+' · '+verb;
+  const other=by[e.a===selected?e.b:e.a];
+  const text=by[selected].name+' '+verb+' '+other.name;
   const w=Math.min(Math.max(40,W-16),Math.max(68,Math.ceil(ctx.measureText(text).width)+25)),h=24;
   const nx=-dy/len,ny=dx/len;
   let box=null,depth=0;
