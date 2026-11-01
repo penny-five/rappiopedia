@@ -3825,6 +3825,38 @@
         -80
       ],
       "featured": false
+    },
+    {
+      "id": "pacttalks_4_2026",
+      "name": "PactTalks 4: BelleBarbie, Aapo ja CuckTommi 12.7.2026",
+      "group": "talks",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "PactTalksin 12. heinäkuuta 2026 julkaistun neljännen jakson lähetysotsikossa vieraina olivat BelleBarbie, Aapo Olervo ja CuckTommi sekä juontajana Jethro Rostedt.",
+      "pos3": [
+        630,
+        180,
+        -210
+      ],
+      "featured": false
+    },
+    {
+      "id": "pacttalks_86_2026",
+      "name": "PactTalks 86: Stagala vs Akam 18.10.2026",
+      "group": "talks",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "PactTalksin lokakuun 18. päivän 2026 jakso 86 oli Jethro Rostedtin juontama erikoislähetys nimeltä Stagala vs Akam. Lähetysotsikon mukaan molemmat olivat jakson keskiössä.",
+      "pos3": [
+        730,
+        250,
+        -120
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -8187,7 +8219,7 @@
       "src": [
         "P240"
       ],
-      "level": "verified",
+      "level": "observed",
       "date": "2014-01-19"
     },
     {
@@ -8198,7 +8230,7 @@
       "src": [
         "P240"
       ],
-      "level": "verified",
+      "level": "observed",
       "date": "2014-01-19"
     },
     {
@@ -8209,7 +8241,7 @@
       "src": [
         "P240"
       ],
-      "level": "verified",
+      "level": "observed",
       "date": "2014-01-19"
     },
     {
@@ -8220,7 +8252,7 @@
       "src": [
         "P243"
       ],
-      "level": "verified",
+      "level": "reported",
       "date": "2026-05"
     },
     {
@@ -8231,7 +8263,7 @@
       "src": [
         "P243"
       ],
-      "level": "verified",
+      "level": "reported",
       "date": "2026-05"
     },
     {
@@ -8242,7 +8274,7 @@
       "src": [
         "P7"
       ],
-      "level": "verified",
+      "level": "observed",
       "date": "2026-10-29"
     },
     {
@@ -8253,8 +8285,107 @@
       "src": [
         "P7"
       ],
-      "level": "verified",
+      "level": "observed",
       "date": "2026-10-29"
+    },
+    {
+      "a": "talks",
+      "b": "pacttalks_4_2026",
+      "type": "sisaltaa",
+      "label": "jakso 4, vieraina BelleBarbie, Aapo ja CuckTommi",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-07-12"
+    },
+    {
+      "a": "jethro",
+      "b": "pacttalks_4_2026",
+      "type": "juonsi",
+      "label": "juonsi PactTalksin neljännen jakson",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-07-12"
+    },
+    {
+      "a": "crista",
+      "b": "pacttalks_4_2026",
+      "type": "vieraili",
+      "label": "nimettiin jakson 4 vieraaksi BelleBarbie-nimellä",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-07-12"
+    },
+    {
+      "a": "aapo",
+      "b": "pacttalks_4_2026",
+      "type": "vieraili",
+      "label": "nimettiin jakson 4 vieraaksi",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-07-12"
+    },
+    {
+      "a": "cuck",
+      "b": "pacttalks_4_2026",
+      "type": "vieraili",
+      "label": "nimettiin jakson 4 vieraaksi",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-07-12"
+    },
+    {
+      "a": "talks",
+      "b": "pacttalks_86_2026",
+      "type": "sisaltaa",
+      "label": "jakso 86: Stagala vs Akam -erikoislähetys",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-10-18"
+    },
+    {
+      "a": "jethro",
+      "b": "pacttalks_86_2026",
+      "type": "juonsi",
+      "label": "juonsi Stagala vs Akam -erikoislähetyksen",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-10-18"
+    },
+    {
+      "a": "stagala",
+      "b": "pacttalks_86_2026",
+      "type": "vieraili",
+      "label": "nimettiin erikoislähetyksen toiseksi osapuoleksi",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-10-18"
+    },
+    {
+      "a": "akam",
+      "b": "pacttalks_86_2026",
+      "type": "vieraili",
+      "label": "nimettiin erikoislähetyksen toiseksi osapuoleksi",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-10-18"
     }
   ],
   "sources": {
