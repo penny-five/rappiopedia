@@ -4116,7 +4116,7 @@
         940
       ],
       "featured": false,
-      "note": "Atroksi kutsuttu Misantrooppi on suomalaisen rappiostriimauskulttuurin hahmo, joka tunnetaan erityisesti Upi Pulkkisen kanssa kuvatuista vanhoista videoista ja yhteisistä striimitilanteista. Nimimerkki mainitaan 2022–2026 keskusteluissa."
+      "note": "Atroksi kutsuttu Misantrooppi on suomalaisen rappiotuben hahmo, joka tunnetaan erityisesti Arttu ”Upi” Pulkkisen kanssa tehdyistä videoista. Kaksikko esiintyy vuoden 2025 videokoosteessa, ja Misantrooppi mainittiin Upin kaverina Redditissä jo tammikuussa 2023."
     },
     {
       "id": "ebinlauta",
@@ -9062,13 +9062,14 @@
       "a": "misantrooppi",
       "b": "upi",
       "type": "esiintyi-yhdessa",
-      "label": "esiintyivät yhdessä vanhoissa Upi-videoissa, joista julkaistiin yhteinen videokooste lokakuussa 2025",
+      "label": "esiintyi Upin kanssa vanhoilla videoilla, joista julkaistiin kooste 26.10.2025",
       "date": "2025-10-26",
       "level": "reported",
       "src": [
         "P286",
         "P287",
-        "P292"
+        "P292",
+        "P295"
       ]
     },
     {
@@ -10539,6 +10540,11 @@
       "label": "Ebinlauta: /upi/-alalauta ja Upin striimit 2024",
       "url": "https://ebinlauta.net/",
       "note": "Sivuston oma esittely kertoo Ebinlaudan perustetun 2024 ja /upi/-alaluokan avautuneen elokuussa 2024. Ylläpito kuvaa alalautaa Upin omaksi striimialustaksi, mutta nykyisessä valikossa ei näy tätä /upi/-luokkaa."
+    },
+    "P295": {
+      "label": "Reddit 2.1.2023: Misantrooppi kuvattiin Upin kaveriksi",
+      "url": "https://www.reddit.com/r/Suomi/comments/1019rkk/kuolinbingo_2023_ja_edellisvuoden_tulokset/",
+      "note": "Aikalaiskeskustelun yksittäisessä nimilistassa mainittiin erikseen Upi ja 'Misantrooppi (Upin kaveri)'. Todistaa nimen ja julkisen yhteyden, ei ketjun muiden väitteiden oikeellisuutta."
     }
   },
   "date": "2026-11-01"
