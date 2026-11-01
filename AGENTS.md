@@ -95,6 +95,7 @@ Skenen tunnisteet, suomenkieliset nimet, värit ja mahdollinen poikkeava 3D-marg
 
 - **`rappio` / Rappiostriimaus:** itsenäisesti tunnetut rappiostriimaajat ja heihin liittyvät lähetykset ja tapahtumat. Tähän kuuluvat myös heidän uransa yksittäiset tapahtumat, vaikka ne koskisivat rahapelaamista.
 - **`kasinokurki` / Kasinokurki:** Kasinokurki-palvelu ja streamaajat, joiden lähetyksistä on lähteistetty suora Kasinokurki-brändin näkyvyys (tällä hetkellä Pullis, SampeF2 ja KP2Times). Älä päättele pelkän komennon perusteella sopimuksen ehtoja tai omistajuutta. Pelkkä Kickissä toimiminen ei kuulu tähän skeneen.
+- **`television` / TV-ohjelmat / reality:** Big Brother Suomen ja Temptation Island Suomen kaltaiset tv-ohjelmasarjat. Kytke niiden vahvistetut osallistujat ohjelmasolmuihin suhteilla, älä siirrä henkilöä televisioskeneen vain osallistumisen vuoksi.
 - **`documents`, `reality`, `combat`, `monarch`:** dokumenttien ja tuotannon, some-/matkarealityn, kamppailuviihteen sekä Monarch/Duel-high stakes -toiminnan omat skenet.
 - **`old-school-tubetus` / Old School Tubetus:** varhaisen suomalaisen YouTuben arkivlogit ja persoonalliset videokanavat, kuten Niilo22, Iltapalamies, Markoboy87 ja Pasi Viheraho. Tämä skene ei tarkoita rappiostriimausta. Videoihin tai dokumentteihin liittyvät suhteet säilyvät verkostoyhteyksinä.
 - PACT-osallistumiset ja PactTalks-vierailut säilyvät yhteyksinä verkostossa. Yksi esiintyminen ei yksin määrää henkilön skeneä. Käytä ensisijaisena ryhmänä henkilön omaa pääasiallista toimintaa, jos se on tiedossa.

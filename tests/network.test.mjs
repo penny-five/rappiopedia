@@ -62,3 +62,18 @@ test('suhdetyypit toimivat molempiin suuntiin',()=>{
  assert.ok(shared);
  assert.equal(relationVerb(shared,shared.a,relationTypes),relationVerb(shared,shared.b,relationTypes));
 });
+
+test('TV reality show connections record independent programme participation', () => {
+ const expected = {
+  big_brother: ['julwill', 'heiskari', 'ella', 'amanda'],
+  temptation_island: ['elmer', 'tuuli', 'amanda']
+ };
+ for (const [show, people] of Object.entries(expected)) {
+  assert.equal(nodes.get(show)?.cat, 'show');
+  for (const person of people) {
+   const edge = data.edges.find(e => e.a === person && e.b === show);
+   assert.ok(edge, person + ' missing documented participation in ' + show);
+   assert.ok(edge.src.length && edge.src.every(id => data.sources[id]?.url), person + ' missing TV source');
+  }
+ }
+});

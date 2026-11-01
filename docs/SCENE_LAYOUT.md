@@ -10,6 +10,7 @@ Rappioverse on **yhteyskartta**, ei erillisten laatikoiden satunnainen kokoelma.
 - **Dokumentit** sijoitetaan PACTin ja Rappiostriimauksen välisen yhteysvyöhykkeen reunalle, erityisesti Kieksi-dokumentin rappiostriimaajayhteyksien takia.
 - **Old School Tubetus** sijoitetaan Dokumenttien viereen, sillä siihen liittyy useita dokumenttiyhteyksiä.
 - **Some- ja matkareality** sijoitetaan lähelle PACTia, erityisesti PactTalks- ja Jethro-yhteyksien vuoksi.
+- **TV-ohjelmat / reality** on PACTin lähellä sijaitseva oma skene Big Brother Suomelle ja Temptation Island Suomelle. Ihmiset liitetään tv-ohjelmiin lähteistetyillä osallistumissuhteilla, mutta heidän ensisijainen skenensä perustuu heidän omaan toimintaansa.
 - **Kasinokurki** sijoitetaan lähelle Rappiostriimausta, mutta se pysyy erillisenä kaupallisen näkyvyyden skenenä.
 - **Sliki / keikat, Monarch / high stakes ja Ice Cage / kamppailu** muodostavat kartalle läheisen ketjun. Niiden välissä näkyvät tapahtuma- ja brändiyhteydet.
 - **Bailupaatti / tapahtumat** on pienempi yhteysalue PACTin, Rappiostriimauksen ja Dokumenttien lähellä.

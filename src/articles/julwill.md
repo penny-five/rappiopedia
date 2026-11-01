@@ -1,8 +1,8 @@
-**Julia Willman**, tunnettu myös nimellä **BB-Julia** ja nimimerkillä **jjuliaelisa**, on suomalainen realitytelevisiosta tuttu striimaaja ja somepersoona. Hän tuli tunnetuksi vuoden 2020 *Big Brother Suomesta* ja alkoi myöhemmin julkaista suoria lähetyksiä TikTokissa sekä Kickissä.
+**Julia Willman**, tunnettu myös nimellä **BB-Julia** ja nimimerkillä **jjuliaelisa**, on suomalainen realitytelevisiosta tuttu striimaaja ja somepersoona. Hän tuli tunnetuksi vuoden 2020 [[big_brother|Big Brother Suomesta]] ja alkoi myöhemmin julkaista suoria lähetyksiä TikTokissa sekä Kickissä.
 
 ## Big Brother 2020
 
-Willman saapui Big Brother -taloon 18. lokakuuta 2020 kesken kauden. Hän pysyi mukana finaaliviikon alkuun asti ja poistui talosta 27. marraskuuta. Gekkosen 14. joulukuuta 2020 julkaisemassa haastattelussa hän kertoi palanneensa ohjelman jälkeen tavalliseen arkeen ja työhön Hyvinkäällä.
+Willman saapui Big Brother -taloon 18. lokakuuta 2020 kesken kauden. Hän pysyi mukana finaaliviikon alkuun asti ja poistui talosta 27. marraskuuta. [@P151] Gekkosen 14. joulukuuta 2020 julkaisemassa haastattelussa hän kertoi palanneensa ohjelman jälkeen tavalliseen arkeen ja työhön Hyvinkäällä.
 
 Big Brother toi Willmanille televisiojulkisuutta vuosia ennen Kick-lähetyksiä. Seiska haastatteli häntä vielä vuoden 2021 alussa ohjelman jälkeisestä elämästä.
 

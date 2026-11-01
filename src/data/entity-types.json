@@ -255,6 +255,14 @@
     "striimikomento": {
       "category": "concept",
       "label": "Striimikomento"
+    },
+    "pokeriammattilainen": {
+      "category": "person",
+      "label": "Pokeriammattilainen"
+    },
+    "tosi-tv-ohjelma": {
+      "category": "show",
+      "label": "Tosi-tv-ohjelma"
     }
   }
 }

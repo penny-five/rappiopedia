@@ -67,5 +67,9 @@
   "old-school-tubetus": {
     "label": "OLD SCHOOL TUBETUS",
     "color": "#7690aa"
+  },
+  "television": {
+    "label": "TV-OHJELMAT / REALITY",
+    "color": "#837ba0"
   }
 }

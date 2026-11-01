@@ -200,3 +200,12 @@ test('bounding boxes include all coordinates even when an extra node is added', 
  assert.deepEqual(box, { min: [-50, -70, -48], max: [550, 51, 850] });
  assert.equal(boxesOverlap3D({ min: [0, 0, 0], max: [1, 1, 1] }, { min: [1, 1, 1], max: [2, 2, 2] }), false);
 });
+
+test('approved scene placements reflect people’s own productions, not single appearances', () => {
+ const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
+ for (const id of ['julwill', 'chiara', 'lassi', 'tegel']) assert.equal(byId[id].group, 'rappio', id);
+ for (const id of ['jethro', 'joachim']) assert.equal(byId[id].group, 'talks', id);
+ assert.equal(byId.sahamies.group, 'poker');
+ for (const id of ['big_brother', 'temptation_island']) assert.equal(byId[id].group, 'television', id);
+ assert.equal(skenes.television.label, 'TV-OHJELMAT / REALITY');
+});
