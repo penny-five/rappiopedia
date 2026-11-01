@@ -1,4 +1,24 @@
 /** Camera-independent scene helpers for the Rappioverse canvas renderer. */
+/** World-space camera location for the existing target/distance representation. */
+export function cameraPositionFromTarget(target, yaw, pitch, distance) {
+  const cp = Math.cos(pitch);
+  return {
+    x: target.x + distance * Math.sin(yaw) * cp,
+    y: target.y + distance * Math.sin(pitch),
+    z: target.z + distance * Math.cos(yaw) * cp
+  };
+}
+
+/** Rotate the view without orbiting: change the look-at target, not the camera position. */
+export function cameraTargetFromPosition(position, yaw, pitch, distance) {
+  const cp = Math.cos(pitch);
+  return {
+    x: position.x - distance * Math.sin(yaw) * cp,
+    y: position.y - distance * Math.sin(pitch),
+    z: position.z - distance * Math.cos(yaw) * cp
+  };
+}
+
 /** In route mode, only the chosen path's nodes and edges are visible and interactive. */
 export function routeVisibility(pathNodes, pathEdges) {
   const active = pathNodes.length > 0;
