@@ -326,11 +326,11 @@ test('all-space navigation is styled separately and the sidebar remains wider wh
  assert.match(main,/aria-pressed="/);
  assert.match(css,/\.sector-overview\.active\{/);
  assert.match(css,/\.sector-overview \.overview-icon svg/);
- assert.match(css,/grid-template-columns:256px minmax\(0,1fr\) minmax\(365px/);
- assert.match(css,/grid-template-columns:225px minmax\(0,1fr\) minmax\(330px/);
- assert.match(css,/\.app\.article-collapsed\{grid-template-columns:256px/);
- assert.match(css,/\.app\.article-collapsed\{grid-template-columns:225px/);
- assert.match(css,/\.left\{position:absolute;top:72px;bottom:0;left:0;width:280px/);
+ assert.match(css,/grid-template-columns:276px minmax\(0,1fr\) minmax\(365px/);
+ assert.match(css,/grid-template-columns:245px minmax\(0,1fr\) minmax\(330px/);
+ assert.match(css,/\.app\.article-collapsed\{grid-template-columns:276px/);
+ assert.match(css,/\.app\.article-collapsed\{grid-template-columns:245px/);
+ assert.match(css,/\.left\{position:absolute;top:72px;bottom:0;left:0;width:300px/);
  assert.match(css,/\.hud strong\{[^}]*font:700 16px\/1\.35 'DM Sans'/);
  assert.doesNotMatch(css,/\.hud strong\{[^}]*Georgia/);
 });
