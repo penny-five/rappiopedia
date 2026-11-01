@@ -19,8 +19,13 @@ test('research leads use unique IDs and valid network references', () => {
     assert.ok(lead.title);
     assert.ok(['open', 'in-progress', 'blocked', 'done'].includes(lead.status));
     assert.ok(['high', 'medium', 'low'].includes(lead.priority));
-    assert.ok(lead.nodeIds.length > 0, lead.id);
-    assert.ok(lead.sourceIds.length > 0, lead.id);
+    assert.ok(Array.isArray(lead.nodeIds), `${lead.id}: nodeIds`);
+    assert.ok(Array.isArray(lead.sourceIds), `${lead.id}: sourceIds`);
+    // A lead may exist before its subject or source is added to the public graph.
+    if (lead.sourceUrls !== undefined) {
+      assert.ok(Array.isArray(lead.sourceUrls), `${lead.id}: sourceUrls`);
+      for (const url of lead.sourceUrls) assert.match(url, /^https?:\/\//);
+    }
     for (const id of lead.nodeIds) assert.ok(nodeIds.has(id), `Unknown node: ${id}`);
     for (const id of lead.sourceIds) assert.ok(sourceIds.has(id), `Unknown source: ${id}`);
     for (const field of ['questions', 'queries', 'nextSteps']) {
