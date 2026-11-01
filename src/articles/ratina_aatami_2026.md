@@ -4,4 +4,4 @@
 
 Rahapelisuomi julkaisi seuraavana päivänä uutisen, jossa pelisalin laitteiden rikkominen liitettiin [[aatami86|Aatami86-nimimerkillä]] tunnettuun striimaajaan. Sivuston mukaan mies kuvasi tilanteen omalle yleisölleen, ja tapahtumasta jaettiin myös videokatkelma sosiaalisessa mediassa. Rahapelisuomi kertoi hänen puhuneen videolla rahapelaamisen aiheuttamista vaikeuksista. [@P228]
 
-Poliisin tiedote vahvistaa tapahtuman paikan, päivämäärän ja rikosepäilyn, mutta ei yksilöi epäiltyä nimeltä. Nimimerkin yhdistäminen tapaukseen perustuu siis videota käsitelleeseen uutiseen, ei poliisin julkiseen henkilövahvistukseen. [@P229] [@P228]
+Rahapelisuomi nimesi tapaukseen liittyväksi henkilöksi Aatami86:n, mutta poliisi ei nimennyt epäiltyä 23. kesäkuuta julkaisemassaan tiedotteessa. [@P229] [@P228]
