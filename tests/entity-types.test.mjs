@@ -37,8 +37,8 @@ test('sites, publications, channels, events and other entities have distinct rea
   assert.equal(formatNodeTypes(byId.gekkonen, registry), 'Uutissivusto');
   assert.equal(byId.seiska.cat, 'media');
   assert.equal(byId.pactchannel.cat, 'channel');
-  assert.equal(byId.kasinok.cat, 'concept');
-  assert.equal(formatNodeTypes(byId.kasinok, registry), 'Striimikomento');
+  assert.equal(byId.kasinok.cat, 'service');
+  assert.equal(formatNodeTypes(byId.kasinok, registry), 'Kasinovertailupalvelu');
   assert.equal(byId.bailu.cat, 'event');
   assert.equal(formatNodeTypes(byId.bailu, registry), 'Risteily');
   assert.equal(byId.hard_to_break.cat, 'film');
