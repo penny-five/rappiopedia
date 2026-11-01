@@ -1,5 +1,6 @@
 import './styles.css';
 import DATA from './data/network.json';
+import SKENES from './data/skenes.json';
 import RELATION_TYPES from './data/relation-types.json';
 import ENTITY_TYPES from './data/entity-types.json';
 import { formatNodeTypes } from './lib/entity-types.js';
@@ -12,13 +13,13 @@ import { markdownExcerpt } from './lib/article-excerpt.js';
 import { searchNodes } from './lib/search.js';
 
 const N=DATA.nodes,E=DATA.edges,S=DATA.sources,by=Object.fromEntries(N.map(n=>[n.id,n]));
-const groupMeta={core:['PACT / OHJELMAPERHE','#466b8a'],season1:['PACTHOUSE 01','#89698b'],season2:['PACTHOUSE 02','#517ea1'],season3:['PACTHOUSE 03','#7466a7'],talks:['PACT TALKS','#2d9187'],rappio:['RAPPIOSTRIIMAUS','#b46b63'],events:['TAPAHTUMAT','#ba8747'],rap:['SLIKI / KETOLA','#a5784e'],stream:['KASINOKURKI','#4485b4'],media:['MEDIA / PALSTAT','#818c97'],poker:['JULKKISPELIT / POKERI','#748f62']};
+const groupMeta=Object.fromEntries(Object.entries(SKENES).map(([id,skene])=>[id,[skene.label,skene.color]]));
 const levels={verified:{label:'Vahvistettu',color:'#16856c'},reported:{label:'Uutisoitu',color:'#356db4'},observed:{label:'Havaittu / päätelmä',color:'#a86b0a'},lead:{label:'Johtolanka / kiistetty',color:'#b04766'}};
 const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d'),space=document.getElementById('space');
 let W=0,H=0,dpr=1,yaw=-.32,pitch=.20,dist=5700,target={x:-950,y:0,z:-100},selected='pact',sector='all',nameDensity='auto',query='',hover=null,pathNodes=[],pathEdges=[],pointer=null,frame=0,visiblePoints=[],showLevels=new Set(['verified','reported','observed','lead']),focusIds=new Set();
 const pressedTravelKeys=new Set(),travelKeys=new Set(['w','a','s','d','q','e']);
 let lastDrawTime=0,cameraNavigation=0;
-const centers={},groupBounds={};for(const g of Object.keys(groupMeta)){const box=bounds3D(N.filter(n=>n.group===g),100);groupBounds[g]=box;centers[g]=box.min.map((v,i)=>(v+box.max[i])/2)}
+const centers={},groupBounds={};for(const g of Object.keys(groupMeta)){const box=bounds3D(N.filter(n=>n.group===g),SKENES[g].padding??100);groupBounds[g]=box;centers[g]=box.min.map((v,i)=>(v+box.max[i])/2)}
 function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function image(n){return n.image||''}const photo={};for(const n of N){if(!n.image)continue;const im=new Image();im.referrerPolicy='no-referrer';im.onload=()=>{photo[n.id]=im};im.onerror=()=>{photo[n.id]=null};im.src=n.image;photo[n.id]=null}
 const rng=(seed)=>{let z=seed;return()=>{z=(z*1664525+1013904223)>>>0;return z/4294967296}};const R=rng(41),stars=Array.from({length:260},()=>({x:R(),y:R(),radius:R()*1.4+.25,alpha:R()*.42+.08}));
