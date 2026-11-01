@@ -1,0 +1,63 @@
+{
+  "core": {
+    "label": "PACT / OHJELMAPERHE",
+    "color": "#466b8a"
+  },
+  "season1": {
+    "label": "PACTHOUSE 01",
+    "color": "#89698b"
+  },
+  "season2": {
+    "label": "PACTHOUSE 02",
+    "color": "#517ea1"
+  },
+  "season3": {
+    "label": "PACTHOUSE 03",
+    "color": "#7466a7"
+  },
+  "talks": {
+    "label": "PACT TALKS",
+    "color": "#2d9187"
+  },
+  "rappio": {
+    "label": "RAPPIOSTRIIMAUS",
+    "color": "#b46b63",
+    "padding": 160
+  },
+  "kasinokurki": {
+    "label": "KASINOKURKI",
+    "color": "#4485b4"
+  },
+  "documents": {
+    "label": "DOKUMENTIT / TUOTANNOT",
+    "color": "#68778a"
+  },
+  "reality": {
+    "label": "SOME / MATKAREALITY",
+    "color": "#a477a0"
+  },
+  "combat": {
+    "label": "KAMPPAILU / ICE CAGE",
+    "color": "#8e756c"
+  },
+  "rap": {
+    "label": "SLIKI / KEIKAT",
+    "color": "#a5784e"
+  },
+  "monarch": {
+    "label": "MONARCH / HIGH STAKES",
+    "color": "#67908d"
+  },
+  "events": {
+    "label": "BAILUPAATTI / TAPAHTUMAT",
+    "color": "#ba8747"
+  },
+  "media": {
+    "label": "MEDIA / PALSTAT",
+    "color": "#818c97"
+  },
+  "poker": {
+    "label": "JULKKISPELIT / POKERI",
+    "color": "#748f62"
+  }
+}
