@@ -5,7 +5,7 @@
       "name": "PACT / PactHouse",
       "group": "core",
       "cat": "show",
-      "note": "Kickissä esitettävä suomalainen live-realityformaatti; erilliset kaudet ja PactTalks.",
+      "note": "PACT on suomalainen Kickissä esitettävä suoratoistoviihteen ohjelmakokonaisuus, johon kuuluvat PactHouse-kaudet ja PactTalks.",
       "x": 2080,
       "y": 170,
       "image": "images/pact.webp",
@@ -23,7 +23,7 @@
       "name": "Anthony ”Saini” Singh",
       "group": "core",
       "cat": "person",
-      "note": "PactHouse-perustajaksi uutisoitu.",
+      "note": "Anthony ”Saini” Singh on uutisoitu PactHousen perustajaksi.",
       "x": 1890,
       "y": 285,
       "pos3": [
@@ -38,7 +38,7 @@
       "name": "Kick",
       "group": "core",
       "cat": "platform",
-      "note": "Suoratoistopalvelu; yhteinen alusta ei tarkoita henkilöiden välistä sopimusta.",
+      "note": "Kick on suoratoistoalusta, jolla julkaistaan muun muassa PactHousea, PactTalksia ja suomalaisten striimaajien lähetyksiä.",
       "x": 2260,
       "y": 320,
       "pos3": [
@@ -53,7 +53,7 @@
       "name": "PactHouse 1",
       "group": "season1",
       "cat": "show",
-      "note": "Ensimmäinen kausi 2025; osallistujalähde osittain jälkikäteinen koonti.",
+      "note": "PactHouse 1 oli ohjelman ensimmäinen tuotantokausi vuonna 2025.",
       "x": 560,
       "y": 455,
       "pos3": [
@@ -68,7 +68,7 @@
       "name": "PactHouse 2",
       "group": "season2",
       "cat": "show",
-      "note": "Marbella 1.–7.12.2025; voittaja Ilari Sahamies.",
+      "note": "PactHouse 2 järjestettiin Marbellassa 1.–7. joulukuuta 2025. Kauden voitti Ilari Sahamies.",
       "x": 1500,
       "y": 520,
       "pos3": [
@@ -83,7 +83,7 @@
       "name": "PactHouse 3",
       "group": "season3",
       "cat": "show",
-      "note": "Kreikka 1.–10.5.2026; voittaja Jethro Rostedt.",
+      "note": "PactHouse 3 järjestettiin Kreikassa 1.–10. toukokuuta 2026. Kauden voitti Jethro Rostedt.",
       "x": 2590,
       "y": 455,
       "pos3": [
@@ -98,7 +98,7 @@
       "name": "PactTalks",
       "group": "talks",
       "cat": "show",
-      "note": "PACT-kanavan Kick-talkshow, syksyn 2026 vieraat ja juontajat dokumentoitu lähetysotsikoissa.",
+      "note": "PactTalks on PACTin Kick-kanavalla julkaistava keskusteluohjelma, jonka vieraana on käynyt suomalaisia netti- ja viihdealan henkilöitä.",
       "x": 3650,
       "y": 380,
       "pos3": [
@@ -113,7 +113,7 @@
       "name": "Jethro Rostedt",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n voittaja ja PactTalksin juontaja.",
+      "note": "Jethro Rostedt voitti PactHouse 3:n ja on juontanut PactTalksia.",
       "x": 2750,
       "y": 640,
       "image": "images/jethro.webp",
@@ -131,7 +131,7 @@
       "name": "Joachim Rostedt",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2 -osallistuja; Jethro Rostedtin poika.",
+      "note": "Joachim Rostedt osallistui PactHouse 2:een. Hän on Jethro Rostedtin poika.",
       "x": 1690,
       "y": 760,
       "pos3": [
@@ -146,7 +146,7 @@
       "name": "Ilari Sahamies",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n voittaja.",
+      "note": "Ilari Sahamies voitti joulukuussa 2025 järjestetyn PactHouse 2:n.",
       "x": 1330,
       "y": 715,
       "pos3": [
@@ -161,7 +161,7 @@
       "name": "Lassi Kuhlman",
       "group": "season1",
       "cat": "person",
-      "note": "PactHouse 1 -osallistujalistalla; myös omaa Kick-sisältöä.",
+      "note": "Lassi Kuhlman mainitaan PactHouse 1:n osallistujalistalla, ja hän on tehnyt myös omaa Kick-sisältöä.",
       "x": 430,
       "y": 680,
       "pos3": [
@@ -176,7 +176,7 @@
       "name": "Pinja Ruusutossu",
       "group": "talks",
       "cat": "person",
-      "note": "PactTalks-vieras 24.8. ja 26.10.2026; EI väitetty PactHouse-kausikilpailija.",
+      "note": "Pinja Ruusutossu on vieraillut PactTalksissa muun muassa elokuussa ja lokakuussa 2026.",
       "x": 3800,
       "y": 580,
       "pos3": [
@@ -191,7 +191,7 @@
       "name": "Iippadaa / Iida Kurvinen",
       "group": "rappio",
       "cat": "person",
-      "note": "Striimaaja; Kieksi-dokumentin kohde, PactTalks-vieras ja Bailupaatti-konteksti.",
+      "note": "Iippadaa eli Iida Kurvinen on suomalainen striimaaja. Hän esiintyy Sami Kieksin rappiostriimausta käsittelevässä dokumentissa ja on vieraillut PactTalksissa.",
       "x": 880,
       "y": 1820,
       "image": "images/iippa.webp",
@@ -209,7 +209,7 @@
       "name": "Pottukoira / Jouko Kärkkäinen",
       "group": "rappio",
       "cat": "person",
-      "note": "Striimaaja; Kieksi-dokumentin kohde, Bailupaatti-markkinointi; jäi pois risteilyltä 2026.",
+      "note": "Pottukoira eli Jouko Kärkkäinen on suomalainen striimaaja, joka esiintyi Kieksin dokumentissa ja oli mukana Bailupaatti-risteilyn markkinoinnissa.",
       "x": 650,
       "y": 2000,
       "image": "images/pottu.webp",
@@ -227,7 +227,7 @@
       "name": "Sami Kieksi",
       "group": "rappio",
       "cat": "person",
-      "note": "Dokumentaristi ja Revul Media Groupin perustaja / toimitusjohtaja.",
+      "note": "Sami Kieksi on dokumentaristi ja Revul Media Groupin perustaja ja toimitusjohtaja. Hän on tehnyt myös rappiostriimausta käsittelevää ohjelmaa.",
       "x": 830,
       "y": 2180,
       "image": "images/sami.webp",
@@ -245,7 +245,7 @@
       "name": "Revul Media Group Oy",
       "group": "rappio",
       "cat": "org",
-      "note": "Dokumentti- ja tapahtumatuotantoyhtiö, mm. Kieksi ja Bailupaatti.",
+      "note": "Revul Media Group Oy tuottaa dokumentteja ja tapahtumia. Yhtiön tuotantoihin kuuluu muun muassa Bailupaatti.",
       "x": 1090,
       "y": 2260,
       "pos3": [
@@ -260,7 +260,7 @@
       "name": "Kieksi: rappiostriimaus",
       "group": "rappio",
       "cat": "show",
-      "note": "Ylellä julkaistun 2026 jakson kohteita ovat Pottukoira, Iippadaa ja Upi.",
+      "note": "Ylen vuonna 2026 julkaisemassa Kieksi-dokumenttijaksossa käsitellään muun muassa Pottukoiraa, Iippadaata ja Upia.",
       "x": 670,
       "y": 2440,
       "pos3": [
@@ -275,7 +275,7 @@
       "name": "Upi / Arttu Pulkkinen",
       "group": "rappio",
       "cat": "person",
-      "note": "Kieksi-dokumentin henkilö.",
+      "note": "Upi eli Arttu Pulkkinen on suomalainen striimaaja, joka esiintyy Sami Kieksin rappiostriimausdokumentissa.",
       "x": 450,
       "y": 2620,
       "pos3": [
@@ -290,7 +290,7 @@
       "name": "Pirkka Ukko / Kari Liimatta",
       "group": "rappio",
       "cat": "person",
-      "note": "Kieksi-dokumentin henkilö.",
+      "note": "Pirkka-Ukko eli Pirkkis on striimaaja Kari Liimatta. Hän esiintyy Pottukoiran lähetyksissä ja Kieksin dokumentissa.",
       "x": 900,
       "y": 2610,
       "pos3": [
@@ -305,7 +305,7 @@
       "name": "Bailupaatti 2026",
       "group": "events",
       "cat": "event",
-      "note": "31.10.–2.11.2026 juhlaristeilyt; osallistumiset ja poisjäännit erotetaan.",
+      "note": "Bailupaatti 2026 on 31. lokakuuta – 2. marraskuuta järjestettävä juhlaristeily, johon liittyy useita suomalaisia striimaajia ja esiintyjiä.",
       "x": 1900,
       "y": 2000,
       "image": "images/bailu.webp",
@@ -323,7 +323,7 @@
       "name": "Korelon",
       "group": "rap",
       "cat": "person",
-      "note": "Slikin yhteistyöartisti; Sastamalan keikka ja Bailupaatin esiintyjälista.",
+      "note": "Korelon on suomalainen rap-artisti, joka esiintyi Slikin kanssa Sastamalassa ja nimettiin Bailupaatin esiintyjälistalle.",
       "x": 3250,
       "y": 1880,
       "image": "images/korelon.webp",
@@ -341,7 +341,7 @@
       "name": "Sliki / Slik",
       "group": "rap",
       "cat": "person",
-      "note": "Räppäri; Sastamalan tilaisuus ja sitä seuranneet Paavo Pesusieni -häiriöt.",
+      "note": "Sliki on rap-artisti, jonka syyskuun 2026 Sastamalan-keikka ja myöhemmät keikkahäiriöt nousivat julkisuuteen.",
       "x": 3430,
       "y": 2000,
       "imageCredit": "Wikimedia Commons, Slikin muotokuva",
@@ -358,7 +358,7 @@
       "name": "Ossi ”Monarch” Ketola",
       "group": "rap",
       "cat": "person",
-      "note": "Sastamalan tapahtuman järjestäjäksi uutisoitu; itse kiistänyt myöhemmät häiriökytkökset.",
+      "note": "Ossi ”Monarch” Ketola on liitetty Sastamalan yllätyskeikan järjestämiseen. Hän on kiistänyt osallisuutensa myöhempiin keikkahäiriöihin.",
       "x": 3290,
       "y": 2180,
       "image": "images/ossi.webp",
@@ -376,7 +376,7 @@
       "name": "Sastamalan yllätyskeikka",
       "group": "rap",
       "cat": "event",
-      "note": "Syyskuun 2026 tapahtuma, jossa esiintyivät Sliki ja Korelon.",
+      "note": "Sastamalassa järjestettiin syyskuussa 2026 yllätyskeikka, jolla esiintyivät Sliki ja Korelon.",
       "x": 3100,
       "y": 2320,
       "pos3": [
@@ -391,7 +391,7 @@
       "name": "Paavo Pesusieni / Freakbob",
       "group": "rap",
       "cat": "meme",
-      "note": "Asuun ja meemiin liittyviä keikkahäiriöitä; puku ei yksilöi henkilöä tai tilaajaa.",
+      "note": "Paavo Pesusieni eli Freakbob on keikkahäiriöissä nähty meemihahmo ja asu, jota ovat käyttäneet eri henkilöt.",
       "x": 3550,
       "y": 2350,
       "pos3": [
@@ -406,7 +406,7 @@
       "name": "Sliki-keikkojen häiriöt",
       "group": "rap",
       "cat": "event",
-      "note": "Syksy 2026 eri keikkapaikoissa. Tekijöiden henkilöllisyys ja mahdollinen toimeksianto eivät vahvistettuja.",
+      "note": "Syksyllä 2026 useilla Slikin keikoilla nähtiin Paavo Pesusieni -asuihin liittyviä häiriöitä. Tapausten tekijöitä ei ole kaikilta osin tunnistettu.",
       "x": 3740,
       "y": 2210,
       "pos3": [
@@ -421,7 +421,7 @@
       "name": "Ice Cage 8",
       "group": "events",
       "cat": "event",
-      "note": "Syyskuu 2026; näkyvyyttä Aleksi Nurmisen osallistumisen kautta.",
+      "note": "Ice Cage 8 on syyskuussa 2026 järjestetty kamppailutapahtuma, jossa esiintyi muun muassa Aleksi Nurminen.",
       "x": 2390,
       "y": 2140,
       "pos3": [
@@ -436,7 +436,7 @@
       "name": "Duel / Monarch Duel MMA",
       "group": "events",
       "cat": "org",
-      "note": "Ketolaan liitetty brändi ja Ice Cage -näkyvyys; sopimuksen sisältö ei selvä.",
+      "note": "Duel on Ossi Ketolaan liitetty rahapelibrändi, joka on näkynyt myös Ice Cageen liittyvässä julkisuudessa.",
       "x": 2600,
       "y": 2250,
       "pos3": [
@@ -451,7 +451,7 @@
       "name": "Kasinokurki",
       "group": "stream",
       "cat": "lead",
-      "note": "Nimi näkyy osan Kick-lähetysten komentoina; toimijan taustaa ei ole vahvistettu.",
+      "note": "Kasinokurki-nimi esiintyy joidenkin suomalaisten Kick-lähetysten komennoissa, esimerkiksi tunnisteena !kasinokurki.",
       "x": 4090,
       "y": 1510,
       "pos3": [
@@ -466,7 +466,7 @@
       "name": "Pullis",
       "group": "stream",
       "cat": "person",
-      "note": "Striimaaja; lähetysotsikoissa !kasinokurki. Epävarma väite PactHouse 2:n tuotantoroolista.",
+      "note": "Pullis on suomalainen striimaaja, jonka lähetysotsikoissa on esiintynyt !kasinokurki-komento.",
       "x": 3970,
       "y": 1680,
       "pos3": [
@@ -481,7 +481,7 @@
       "name": "SampeF2",
       "group": "stream",
       "cat": "person",
-      "note": "Striimaaja; lähetysotsikoissa !kasinokurki.",
+      "note": "SampeF2 on suomalainen striimaaja, jonka lähetysotsikoissa on esiintynyt !kasinokurki-komento.",
       "x": 4210,
       "y": 1670,
       "pos3": [
@@ -496,7 +496,7 @@
       "name": "KP2Times",
       "group": "season1",
       "cat": "person",
-      "note": "PactHouse 1 -listalla ja 2026 lähetysotsikossa !kasinokurki.",
+      "note": "KP2Times mainitaan PactHouse 1:n osallistujana. Hänen lähetysotsikoissaan on esiintynyt myös !kasinokurki.",
       "x": 980,
       "y": 660,
       "pos3": [
@@ -511,7 +511,7 @@
       "name": "Julia Willman",
       "group": "events",
       "cat": "person",
-      "note": "Bailupaatilla 2026 mukana Seiskan mukaan.",
+      "note": "Julia Willmanin osallistumisesta Bailupaatti 2026 -risteilyyn uutisoi Seiska.",
       "x": 2110,
       "y": 2110,
       "pos3": [
@@ -526,7 +526,7 @@
       "name": "Kristian Heiskari",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3 -osallistuja; mukana Bailupaatilla 2026.",
+      "note": "Kristian Heiskari osallistui PactHouse 3:een, ja hänen osallistumisestaan Bailupaattiin uutisoitiin vuonna 2026.",
       "x": 2570,
       "y": 920,
       "pos3": [
@@ -541,7 +541,7 @@
       "name": "Juhana Tegelberg",
       "group": "season1",
       "cat": "person",
-      "note": "Kausilla 1/2 listattu; Bailupaatille suunniteltu osallistuminen, mutta jäi pois.",
+      "note": "Juhana Tegelberg osallistui PactHouse 1:een ja PactHouse 2:een. Hänet mainittiin myös Bailupaatin suunnitelluissa osallistujissa, mutta jäi pois.",
       "x": 580,
       "y": 830,
       "pos3": [
@@ -556,7 +556,7 @@
       "name": "Gekkonen",
       "group": "media",
       "cat": "media",
-      "note": "Viihdejulkaisu, jossa PactHouseen ja rappiostriimaukseen liittyvää uutisointia.",
+      "note": "Gekkonen on suomalainen viihdeuutissivusto, joka on uutisoinut muun muassa PactHousesta ja rappiostriimaajista.",
       "x": 4447,
       "y": 1739,
       "pos3": [
@@ -571,7 +571,7 @@
       "name": "Uuno.fi",
       "group": "media",
       "cat": "media",
-      "note": "Viihdejulkaisu, jossa esimerkiksi PactTalksista kirjoitettu.",
+      "note": "Uuno.fi on suomalainen viihdeuutissivusto, joka on kirjoittanut muun muassa PactTalksista.",
       "x": 4883,
       "y": 1727,
       "pos3": [
@@ -586,7 +586,7 @@
       "name": "Seiska",
       "group": "media",
       "cat": "media",
-      "note": "Useita reportaaseja tapahtumista, PactHouse-kilpailuista ja Bailupaatista.",
+      "note": "Seiska on suomalainen viihdelehti, joka on uutisoinut PactHouse-kausista, striimaajista ja Bailupaatista.",
       "x": 4441,
       "y": 1894,
       "pos3": [
@@ -601,7 +601,7 @@
       "name": "Helsingin Sanomat",
       "group": "media",
       "cat": "media",
-      "note": "Käyttäjän alkuperäisen HS-linkin julkaisu.",
+      "note": "Helsingin Sanomat on suomalainen sanomalehti, jonka uutisointia käytetään yhtenä verkoston lähteenä.",
       "x": 4869,
       "y": 1897,
       "pos3": [
@@ -616,7 +616,7 @@
       "name": "Reddit / snappijuorut",
       "group": "media",
       "cat": "media",
-      "note": "Johtolankoja, julkisia keskusteluja; kommenttiväitteet eivät ole vahvistettuja faktoja.",
+      "note": "Redditin suomalaisissa keskusteluyhteisöissä käsitellään myös striimaajien tapahtumia, vierailuja ja yhteislähetyksiä.",
       "x": 4460,
       "y": 2033,
       "pos3": [
@@ -631,7 +631,7 @@
       "name": "Ylilauta",
       "group": "media",
       "cat": "media",
-      "note": "Johtolankoja, julkisia keskusteluja; toistaiseksi ei yksilöityä varmistettua henkilösuhdetta.",
+      "note": "Ylilauta on suomalainen keskustelupalsta, jolla seurataan ja kommentoidaan muun muassa suomalaista striimauskulttuuria.",
       "x": 4877,
       "y": 2046,
       "pos3": [
@@ -646,7 +646,7 @@
       "name": "Nettipokeri.com",
       "group": "media",
       "cat": "media",
-      "note": "Sastamalan ja Ice Cage -brändinäkyvyyden uutisointi.",
+      "note": "Nettipokeri.com on julkaissut uutisia pokeritapahtumista sekä Sastamalan keikasta ja Ice Cagen brändinäkyvyydestä.",
       "x": 4433,
       "y": 2198,
       "pos3": [
@@ -661,7 +661,7 @@
       "name": "Kick /pact-kanava",
       "group": "talks",
       "cat": "platform",
-      "note": "PactHouse ja PactTalks näkyvät samassa Kick-kanavassa.",
+      "note": "PACTin Kick-kanavalla on julkaistu PactHouse-kausia ja PactTalks-jaksoja.",
       "x": 3670,
       "y": 260,
       "pos3": [
@@ -676,7 +676,7 @@
       "name": "Slaybabyangel",
       "group": "season1",
       "cat": "person",
-      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "note": "Slaybabyangel on nimetty PactHouse 1:n osallistujaksi julkaistussa koonnissa.",
       "x": 98,
       "y": 999,
       "pos3": [
@@ -691,7 +691,7 @@
       "name": "Emsku",
       "group": "season1",
       "cat": "person",
-      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "note": "Emsku on nimetty PactHouse 1:n osallistujaksi julkaistussa koonnissa.",
       "x": 505,
       "y": 987,
       "pos3": [
@@ -706,7 +706,7 @@
       "name": "Ada",
       "group": "season1",
       "cat": "person",
-      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "note": "Ada on nimetty PactHouse 1:n osallistujaksi julkaistussa koonnissa.",
       "x": 869,
       "y": 1003,
       "pos3": [
@@ -721,7 +721,7 @@
       "name": "Krissefitnesse",
       "group": "season1",
       "cat": "person",
-      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "note": "Krissefitnesse on nimetty PactHouse 1:n osallistujaksi julkaistussa koonnissa.",
       "x": 1248,
       "y": 989,
       "pos3": [
@@ -736,7 +736,7 @@
       "name": "Testoosku",
       "group": "season1",
       "cat": "person",
-      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "note": "Testoosku on nimetty PactHouse 1:n osallistujaksi julkaistussa koonnissa.",
       "x": 96,
       "y": 1155,
       "pos3": [
@@ -751,7 +751,7 @@
       "name": "Chiara",
       "group": "season1",
       "cat": "person",
-      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "note": "Chiara on nimetty PactHouse 1:n osallistujaksi julkaistussa koonnissa.",
       "x": 500,
       "y": 1143,
       "pos3": [
@@ -766,7 +766,7 @@
       "name": "Megis / Megarokkistara",
       "group": "season1",
       "cat": "person",
-      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "note": "Megarokkistara on nimetty PactHouse 1:n osallistujaksi ja vieraillut myöhemmin PactTalksissa.",
       "x": 881,
       "y": 1155,
       "pos3": [
@@ -781,7 +781,7 @@
       "name": "Anton Koskela",
       "group": "season1",
       "cat": "person",
-      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "note": "Anton on nimetty PactHouse 1:n osallistujaksi julkaistussa koonnissa.",
       "x": 1257,
       "y": 1146,
       "pos3": [
@@ -796,7 +796,7 @@
       "name": "Karvalakkimies",
       "group": "season1",
       "cat": "person",
-      "note": "Ensimmäisen kauden koontilistan nimi; ei osoita muuta henkilökohtaista suhdetta.",
+      "note": "Karva on nimetty PactHouse 1:n osallistujaksi julkaistussa koonnissa.",
       "x": 99,
       "y": 1296,
       "pos3": [
@@ -811,7 +811,7 @@
       "name": "Daniel Hellman",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Daniel Hellman osallistui PactHouse 2:een joulukuussa 2025.",
       "x": 1276,
       "y": 982,
       "pos3": [
@@ -826,7 +826,7 @@
       "name": "Ella Toivainen",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Ella Toivainen osallistui PactHouse 2:een joulukuussa 2025.",
       "x": 1602,
       "y": 966,
       "pos3": [
@@ -841,7 +841,7 @@
       "name": "Isabell Jansson",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Isabell Jansson osallistui PactHouse 2:een joulukuussa 2025.",
       "x": 1918,
       "y": 966,
       "pos3": [
@@ -856,7 +856,7 @@
       "name": "Joni Hesselgren",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Joni Hesselgren osallistui PactHouse 2:een ja myös ohjelman kolmannelle kaudelle.",
       "x": 2255,
       "y": 959,
       "pos3": [
@@ -871,7 +871,7 @@
       "name": "Kelly Kalonji",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Kelly Kalonji osallistui PactHouse 2:een joulukuussa 2025.",
       "x": 1272,
       "y": 1126,
       "pos3": [
@@ -886,7 +886,7 @@
       "name": "Liina Simpson",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Liina Simpson osallistui PactHouse 2:een joulukuussa 2025.",
       "x": 1599,
       "y": 1114,
       "pos3": [
@@ -901,7 +901,7 @@
       "name": "Magamed ”Maga” Gadiev",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Magamed ”Maga” Gadiev osallistui PactHouse 2:een joulukuussa 2025.",
       "x": 1902,
       "y": 1129,
       "pos3": [
@@ -916,7 +916,7 @@
       "name": "Nilu Soleimani",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Nilu osallistui PactHouse 2:een joulukuussa 2025.",
       "x": 2226,
       "y": 1112,
       "pos3": [
@@ -931,7 +931,7 @@
       "name": "Stagala / Alexander Krigsman",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Stagala osallistui PactHouse 2:een ja vieraili myöhemmin PactTalksissa.",
       "x": 1283,
       "y": 1263,
       "pos3": [
@@ -946,7 +946,7 @@
       "name": "Janely / Jaanika Leino",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Janely osallistui PactHouse 2:een joulukuussa 2025.",
       "x": 1587,
       "y": 1271,
       "pos3": [
@@ -961,7 +961,7 @@
       "name": "Julle",
       "group": "season2",
       "cat": "person",
-      "note": "PactHouse 2:n osallistuja.",
+      "note": "Julle osallistui PactHouse 2:een joulukuussa 2025.",
       "x": 1915,
       "y": 1290,
       "pos3": [
@@ -976,7 +976,7 @@
       "name": "Sara Chafak",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Sara Chafak osallistui PactHouse 3:een keväällä 2026.",
       "x": 2296,
       "y": 1077,
       "pos3": [
@@ -991,7 +991,7 @@
       "name": "Amanda Harkimo",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Amanda Harkimo osallistui PactHouse 3:een ja on ollut mukana Julkkispelit-pokeritapahtumissa.",
       "x": 2588,
       "y": 1093,
       "pos3": [
@@ -1006,7 +1006,7 @@
       "name": "Henny Harjusola",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Henny Harjusola osallistui PactHouse 3:een keväällä 2026.",
       "x": 2853,
       "y": 1092,
       "pos3": [
@@ -1021,7 +1021,7 @@
       "name": "Crista Jaatinen / BelleBarbie",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Crista Jaatinen eli BelleBarbie osallistui PactHouse 3:een ja esiintyi myös PactTalksissa.",
       "x": 3142,
       "y": 1083,
       "pos3": [
@@ -1036,7 +1036,7 @@
       "name": "Alex Lindfors",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Alex Lindfors osallistui PactHouse 3:een ja vieraili myöhemmin PactTalksissa.",
       "x": 3445,
       "y": 1070,
       "pos3": [
@@ -1051,7 +1051,7 @@
       "name": "Minna Pajulahti",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Minna Pajulahti osallistui PactHouse 3:een keväällä 2026.",
       "x": 2278,
       "y": 1242,
       "pos3": [
@@ -1066,7 +1066,7 @@
       "name": "Aleksi Nurminen",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Aleksi Nurminen osallistui PactHouse 3:een vuonna 2026. Hän oli aiemmin mukana Pottukoiran Virossa järjestetyssä striimivierailussa.",
       "x": 2590,
       "y": 1235,
       "pos3": [
@@ -1081,7 +1081,7 @@
       "name": "Jussi Pirttikangas",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Jussi osallistui PactHouse 3:een keväällä 2026.",
       "x": 2859,
       "y": 1227,
       "pos3": [
@@ -1096,7 +1096,7 @@
       "name": "Pok Biil",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Pok osallistui PactHouse 3:een keväällä 2026.",
       "x": 3162,
       "y": 1238,
       "pos3": [
@@ -1111,7 +1111,7 @@
       "name": "Max Blomfelt",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Max osallistui PactHouse 3:een keväällä 2026.",
       "x": 3435,
       "y": 1234,
       "pos3": [
@@ -1126,7 +1126,7 @@
       "name": "Tuuli Lehtonen",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Tuuli osallistui PactHouse 3:een keväällä 2026.",
       "x": 2290,
       "y": 1389,
       "pos3": [
@@ -1141,7 +1141,7 @@
       "name": "OG Ulla-Maija",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "OG osallistui PactHouse 3:een keväällä 2026.",
       "x": 2576,
       "y": 1376,
       "pos3": [
@@ -1156,7 +1156,7 @@
       "name": "Erika Helin",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Erika osallistui PactHouse 3:een keväällä 2026.",
       "x": 2854,
       "y": 1399,
       "pos3": [
@@ -1171,7 +1171,7 @@
       "name": "Aapo Olervo",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Aapo osallistui PactHouse 3:een keväällä 2026.",
       "x": 3140,
       "y": 1381,
       "pos3": [
@@ -1186,7 +1186,7 @@
       "name": "Elmer Andberg",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Elmer osallistui PactHouse 3:een keväällä 2026.",
       "x": 3439,
       "y": 1376,
       "pos3": [
@@ -1201,7 +1201,7 @@
       "name": "Janina Lohilahti",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Janina osallistui PactHouse 3:een keväällä 2026.",
       "x": 2273,
       "y": 1532,
       "pos3": [
@@ -1216,7 +1216,7 @@
       "name": "Harri Eskola",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Harri osallistui PactHouse 3:een keväällä 2026.",
       "x": 2586,
       "y": 1530,
       "pos3": [
@@ -1231,7 +1231,7 @@
       "name": "Renne Korppila",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Renne Korppila juonsi PactHouse 3:a keväällä 2026.",
       "x": 2880,
       "y": 1545,
       "pos3": [
@@ -1246,7 +1246,7 @@
       "name": "Teemu Potapoff",
       "group": "season3",
       "cat": "person",
-      "note": "PactHouse 3:n julkinen osallistuja tai juontaja.",
+      "note": "Teemu Potapoff juonsi PactHouse 3:a keväällä 2026.",
       "x": 3140,
       "y": 1540,
       "pos3": [
@@ -1261,7 +1261,7 @@
       "name": "Pyhimys",
       "group": "talks",
       "cat": "person",
-      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "note": "Pyhimys vieraili PactTalksin jaksossa 92.",
       "x": 3522,
       "y": 846,
       "pos3": [
@@ -1276,7 +1276,7 @@
       "name": "AndyPyro",
       "group": "talks",
       "cat": "person",
-      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "note": "AndyPyro vieraili PactTalksin jaksossa 95.",
       "x": 3852,
       "y": 842,
       "pos3": [
@@ -1291,7 +1291,7 @@
       "name": "Bämät Matkoilla",
       "group": "talks",
       "cat": "person",
-      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "note": "Bämät matkoilla on striimi- ja someprojekti, joka on esiintynyt PactTalksin lähetysotsikoissa syksyllä 2026.",
       "x": 4216,
       "y": 839,
       "pos3": [
@@ -1306,7 +1306,7 @@
       "name": "Juha Korhonen",
       "group": "talks",
       "cat": "person",
-      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "note": "Juha Korhonen vieraili PactTalksin jaksossa 91.",
       "x": 4561,
       "y": 840,
       "pos3": [
@@ -1321,7 +1321,7 @@
       "name": "CuckTommi",
       "group": "talks",
       "cat": "person",
-      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "note": "CuckTommi vieraili PactTalksin jaksossa 94.",
       "x": 3521,
       "y": 992,
       "pos3": [
@@ -1336,7 +1336,7 @@
       "name": "Akam",
       "group": "talks",
       "cat": "person",
-      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "note": "Akam vieraili PactTalksin jaksossa 86.",
       "x": 3868,
       "y": 998,
       "pos3": [
@@ -1351,7 +1351,7 @@
       "name": "Kim Rusi",
       "group": "talks",
       "cat": "person",
-      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "note": "Kim Rusi vieraili PactTalksin jaksossa 85.",
       "x": 4198,
       "y": 987,
       "pos3": [
@@ -1366,7 +1366,7 @@
       "name": "Jasmilla Rostedt",
       "group": "talks",
       "cat": "person",
-      "note": "PactTalksin lähetysotsikossa mainittu vieras tai juontaja.",
+      "note": "Jasmilla juonsi PactTalksin jakson 84.",
       "x": 4572,
       "y": 991,
       "pos3": [
@@ -1381,7 +1381,7 @@
       "name": "Nettipokeri.com: Julkkispelit",
       "group": "poker",
       "cat": "show",
-      "note": "Pokeri- ja julkkislähetykset, joissa esiintyy useita PactHouse 2:n ja 3:n nimiä. Osallistuminen johonkin jaksoon ei tarkoita yhteistä yritystä.",
+      "note": "Julkkispelit on Nettipokeri.comiin liittyvä julkkisten pokerilähetys- ja tapahtumasarja, jossa on nähty myös PactHouse-osallistujia.",
       "pos3": [
         280,
         50,
@@ -1394,7 +1394,7 @@
       "name": "Julkkispelit / Bratislava 26.–27.5.2026",
       "group": "poker",
       "cat": "event",
-      "note": "Nettipokeri.comin ennakkoon julkaisema Bratislavan osallistujalista.",
+      "note": "Julkkispelit-tapahtumaan Bratislavassa toukokuussa 2026 julkaistiin ennakkoon osallistujalista Nettipokeri.comissa.",
       "pos3": [
         80,
         -190,
@@ -1407,7 +1407,7 @@
       "name": "Julkkispelit / Tallinna 25.–26.9.2026",
       "group": "poker",
       "cat": "event",
-      "note": "Nettipokeri.comin julkaiseman tapahtumaohjelman pelaajalista.",
+      "note": "Julkkispelien Tallinnan-tapahtuman 25.–26. syyskuuta 2026 pelaajalista julkaistiin Nettipokeri.comissa.",
       "pos3": [
         560,
         220,
@@ -1420,7 +1420,7 @@
       "name": "Noora Karma",
       "group": "poker",
       "cat": "person",
-      "note": "Mentalisti; nimetty Bratislavan Julkkispelien toukokuun 2026 osallistujaksi.",
+      "note": "Mentalisti Noora Karma nimettiin Bratislavan Julkkispelien osallistujaksi toukokuussa 2026.",
       "pos3": [
         280,
         310,
@@ -1433,7 +1433,7 @@
       "name": "VP Alakorva",
       "group": "poker",
       "cat": "person",
-      "note": "Tapahtuman pelaajaksi ilmoitettu molempina tarkastelluilla Julkkispelit-kerroilla.",
+      "note": "VP Alakorva oli mukana julkaistuilla Julkkispelit-osallistujalistoilla kahdessa vuoden 2026 tapahtumassa.",
       "pos3": [
         -40,
         300,
@@ -1446,7 +1446,7 @@
       "name": "Tero Lipponen",
       "group": "poker",
       "cat": "person",
-      "note": "Julkisen Julkkispelit-osallistujalistan striimaaja.",
+      "note": "Tero Lipponen nimettiin Julkkispelien osallistujaksi julkaistussa pelaajalistassa.",
       "pos3": [
         430,
         -265,
@@ -1459,7 +1459,7 @@
       "name": "Henri ”Hune” Hyttinen",
       "group": "poker",
       "cat": "person",
-      "note": "Julkisen Julkkispelit-osallistujalistan striimaaja.",
+      "note": "Henri ”Hune” Hyttinen nimettiin Julkkispelien osallistujaksi julkaistussa pelaajalistassa.",
       "pos3": [
         640,
         -70,
@@ -1472,7 +1472,7 @@
       "name": "PactTalks / 11.8.2026",
       "group": "talks",
       "cat": "event",
-      "note": "Yksittäinen Jethro Rostedtin juontama PactTalks-lähetys. Vieraslista uutisoitu, ei päätelmiä vieraiden muista suhteista.",
+      "note": "PactTalksin 11. elokuuta 2026 julkaistun lähetyksen juonsi Jethro Rostedt, ja mukana oli useita vieraita.",
       "pos3": [
         1020,
         320,
@@ -1485,7 +1485,7 @@
       "name": "Johanna Tukiainen",
       "group": "talks",
       "cat": "person",
-      "note": "Vieraana 11.8.2026 PactTalks-lähetyksessä.",
+      "note": "Johanna vieraili PactTalksissa 11. elokuuta 2026.",
       "pos3": [
         1180,
         480,
@@ -1498,7 +1498,7 @@
       "name": "Joonas Mäkäräinen",
       "group": "talks",
       "cat": "person",
-      "note": "Vieraana samassa 11.8.2026 PactTalks-lähetyksessä.",
+      "note": "Joonas M. vieraili PactTalksissa 11. elokuuta 2026.",
       "pos3": [
         1080,
         720,
@@ -1511,7 +1511,7 @@
       "name": "Milla Säilynoja",
       "group": "talks",
       "cat": "person",
-      "note": "Vieraana samassa 11.8.2026 PactTalks-lähetyksessä.",
+      "note": "Milla vieraili PactTalksissa 11. elokuuta 2026.",
       "pos3": [
         1150,
         260,
@@ -1524,7 +1524,7 @@
       "name": "Spurgu-TV",
       "group": "rappio",
       "cat": "show",
-      "note": "Pottukoiran Kick-lähetyskonsepti; Pirkkis esiintyi yhteislähetyksissä.",
+      "note": "Spurgu-TV on Pottukoiraan liittyvä Kick-lähetyskonsepti, jonka yhteislähetyksissä on esiintynyt Pirkkis.",
       "pos3": [
         1530,
         -400,
@@ -1537,7 +1537,7 @@
       "name": "PactTalks / Pottukoira-vierailu",
       "group": "talks",
       "cat": "event",
-      "note": "NOPEETNOUSUT-kanavan 19.7.2026 julkaisema PactTalks-tallenne: Pottukoira vieraana, Jethro Rostedt ja Okkishow juontajina.",
+      "note": "Pottukoira vieraili PactTalksin jaksossa, josta NOPEETNOUSUT-kanava julkaisi tallenteen 19. heinäkuuta 2026. Juontajina olivat Jethro Rostedt ja Okkishow.",
       "pos3": [
         1000,
         760,
@@ -1550,7 +1550,7 @@
       "name": "Okkishow",
       "group": "talks",
       "cat": "person",
-      "note": "PactTalksin Pottukoira-jakson juontajaksi nimetty henkilö tai esiintyjänimi.",
+      "note": "Okkishow esiintyi Jethro Rostedtin rinnalla PactTalksin Pottukoira-jakson juontajana.",
       "pos3": [
         1170,
         910,
@@ -1563,7 +1563,7 @@
       "name": "Pirkkis ja SampeF2 / Ateena 11.2025",
       "group": "events",
       "cat": "event",
-      "note": "Ateenan marraskuun 2025 striimausmatka, josta uutisoitiin Pirkkiksen ja SampeF2:n yhteydessä.",
+      "note": "Pirkkis ja SampeF2 olivat marraskuussa 2025 yhteisellä striimausmatkalla Ateenassa, Kreikassa.",
       "pos3": [
         1030,
         -650,
@@ -1576,7 +1576,7 @@
       "name": "Amsterdamin striimimatka / 4.2025",
       "group": "events",
       "cat": "event",
-      "note": "Reddit-keskustelussa raportoitu Upin, Pirkkiksen ja Taigan yhteinen striimimatka huhtikuussa 2025. Foorumi on tapahtuman lähde; muut yksityiskohdat on arvioitava erikseen.",
+      "note": "Redditissä keskusteltiin huhtikuussa 2025 Upin, Pirkkiksen ja Taigan yhteiseksi kuvaillusta striimausmatkasta Amsterdamiin.",
       "pos3": [
         890,
         -850,
@@ -1589,7 +1589,7 @@
       "name": "Taiga (striimaaja)",
       "group": "stream",
       "cat": "person",
-      "note": "Reddit-keskusteluissa Amsterdamin striimimatkaan ja Upi–Pirkkis-lähetyksiin liitetty toimija; henkilön taustaa tai sopimuksia ei vahvistettu.",
+      "note": "Taiga on striimaaja, joka on liitetty Reddit-keskusteluissa Upin ja Pirkkiksen kanssa tehtyyn Amsterdamin-matkaan.",
       "pos3": [
         1700,
         300,
@@ -1602,7 +1602,7 @@
       "name": "Pottukoiran rahapelimarkkinointia koskeva tuomio 2026",
       "group": "stream",
       "cat": "event",
-      "note": "Ylen uutisoima Pohjois-Savon käräjäoikeuden 18.6.2026 tuomio vuoden 2023–2024 ulkomaisten rahapelien markkinoinnista; ei lainvoimainen uutisointihetkellä.",
+      "note": "Pohjois-Savon käräjäoikeus tuomitsi Pottukoiran kesäkuussa 2026 rahapelirikoksesta, kertoi Yle. Tuomio ei ollut uutisointihetkellä lainvoimainen.",
       "pos3": [
         1740,
         -160,
@@ -1615,7 +1615,7 @@
       "name": "Testotimo / Timo Naapila",
       "group": "stream",
       "cat": "person",
-      "note": "Kick-striimaaja, jonka lokakuun 2025 subathonissa Aleksi Nurminen oli mukana; vieraili Pottukoiran lähetyksessä.",
+      "note": "Testotimo eli Timo Naapila on Kick-striimaaja, joka piti subathonin lokakuussa 2025 ja vieraili Pottukoiran luona Virossa.",
       "pos3": [
         1560,
         80,
@@ -1628,7 +1628,7 @@
       "name": "Pottukoira, Aleksi ja Testotimo / Viro 2025",
       "group": "events",
       "cat": "event",
-      "note": "Lokakuun 2025 yhteinen striimausvierailu Virossa, jonka uutisoinnissa mainittiin myös Pullis.",
+      "note": "Pottukoira sai lokakuussa 2025 Virossa striimivieraita, joihin kuuluivat Aleksi Nurminen ja Testotimo.",
       "pos3": [
         1070,
         -505,
@@ -1641,7 +1641,7 @@
       "name": "Testotimon subathon 10/2025",
       "group": "stream",
       "cat": "event",
-      "note": "Testotimon lokakuun 2025 Kick-maratonlähetys.",
+      "note": "Testotimo järjesti lokakuussa 2025 Kickissä maratonlähetyksen eli subathonin.",
       "pos3": [
         1730,
         105,
@@ -1654,7 +1654,7 @@
       "name": "Pasi Viheraho",
       "group": "talks",
       "cat": "person",
-      "note": "Suomalainen pitkän linjan nettiradio- ja YouTube-tekijä, PactTalksin vieras 11.10.2026.",
+      "note": "Pasi Viheraho on suomalainen nettiradio- ja videontekijä, joka vieraili PactTalksissa lokakuussa 2026.",
       "pos3": [
         960,
         700,
@@ -1667,7 +1667,7 @@
       "name": "Pasiradio",
       "group": "media",
       "cat": "show",
-      "note": "Pasi Viherahon vuonna 2007 aloittama nettiradio.",
+      "note": "Pasiradio on Pasi Viherahon vuonna 2007 aloittama suomalainen nettiradio.",
       "pos3": [
         -1250,
         -280,
@@ -1680,7 +1680,7 @@
       "name": "PactTalks / Pasi Viheraho 11.10.2026",
       "group": "talks",
       "cat": "event",
-      "note": "Jethro Rostedtin juontama PactTalks-lähetys, jossa vieraili Pasi Viheraho.",
+      "note": "Pasi Viheraho vieraili Jethro Rostedtin juontamassa PactTalks-lähetyksessä 11. lokakuuta 2026.",
       "pos3": [
         1030,
         560,
@@ -1693,7 +1693,7 @@
       "name": "Rauno77",
       "group": "rappio",
       "cat": "person",
-      "note": "Kick-striimaaja, joka teki Pottukoiran kanssa yhteisiä live-lähetyksiä loppuvuonna 2025.",
+      "note": "Rauno77 on Kick-striimaaja, joka teki Pottukoiran kanssa yhteislähetyksiä loppuvuonna 2025.",
       "pos3": [
         1390,
         -390,
@@ -1706,7 +1706,7 @@
       "name": "Alisa / Bämät matkoilla",
       "group": "talks",
       "cat": "person",
-      "note": "Redditin lokakuun 2026 keskusteluissa Ruusutossun kanssa Bämät matkoilla -striimireissuun liitetty julkinen somehahmo.",
+      "note": "Alisa on suomalainen somehahmo, jonka kerrottiin Reddit-keskusteluissa olleen Ruusutossun kanssa Bämät matkoilla -striimireissulla.",
       "pos3": [
         1230,
         455,
