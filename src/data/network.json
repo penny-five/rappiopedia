@@ -3903,7 +3903,10 @@
         930
       ],
       "featured": false,
-      "note": "Toni eli Jalluton_Pihtaaja on suomalainen Kick-striimaaja, joka oli mukana Pottukoiran Pattayan lähetyksissä helmikuussa 2026 ja teki myöhemmin omia IRL-, ruoka- ja yhteisstriimejä."
+      "note": "Toni eli Jalluton_Pihtaaja on suomalainen Kick-striimaaja, joka oli mukana Pottukoiran Pattayan lähetyksissä helmikuussa 2026 ja teki myöhemmin omia IRL-, ruoka- ja yhteisstriimejä.",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2026/01/toni-jalluton-pihtaaja.jpg",
+      "imageCredit": "Kick.com/Jalluton_Pihtaaja / Gekkonen, nimetty kuvakaappaus Tonista Pattayalla (21.1.2026)",
+      "image": "images/jalluton_pihtaaja.webp"
     },
     {
       "id": "pottu_testotimo_uhkaus_2025",
