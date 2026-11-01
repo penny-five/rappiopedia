@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { OVERVIEW_CAMERA, nodeIdFromHash } from '../src/lib/navigation.js';
 
 const nodes = { pact: { id: 'pact' }, joachim: { id: 'joachim' }, 'iippa': { id: 'iippa' } };
@@ -21,4 +22,9 @@ test('default camera is the full-network overview, not the PACT focus', () => {
   assert.equal(OVERVIEW_CAMERA.dist, 8800);
   assert.equal(OVERVIEW_CAMERA.yaw, -0.35);
   assert.equal(OVERVIEW_CAMERA.pitch, 0.22);
+});
+
+test('top navigation has no redundant reset button', () => {
+  const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  assert.doesNotMatch(html, /id=["']reset["']/);
 });
