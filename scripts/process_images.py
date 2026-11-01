@@ -127,7 +127,7 @@ def run(args) -> int:
                         node["imageSource"] = url
                     node["image"] = new_image
             success.append(f"{node_id} ({len(result)//1024} KiB)")
-        except (OSError, ValueError, urllib.error.URLError, UnidentifiedImageError) as exc:
+        except (OSError, ValueError, urllib.error.URLError, UnidentifiedImageError, Image.DecompressionBombError) as exc:
             errors.append(f"{node_id}: {type(exc).__name__}: {exc}")
             # Do not leave a broken external hotlink in the published graph.
             # Keep the original URL for a later retry.
