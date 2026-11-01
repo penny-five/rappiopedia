@@ -4,7 +4,7 @@ export function groupRelatedByType(related) {
   for (const edge of related) {
     // Group by the readable relation from this node's perspective.
     // Equivalent registry IDs can share the same displayed verb.
-    const label = edge.relationVerb;
+    const label = edge.relationHeading || edge.relationVerb;
     const key = label.toLocaleLowerCase('fi');
     if (!groups.has(key)) groups.set(key, {label, edges: []});
     groups.get(key).edges.push(edge);
@@ -22,4 +22,13 @@ export function relationVerb(edge, fromId, types) {
   if (!type) throw new Error('Unknown relation type: ' + edge.type);
   if (fromId !== edge.a && fromId !== edge.b) throw new Error('Node is not part of relation: ' + fromId);
   return type.symmetric ? type.verb : fromId === edge.a ? type.forward : type.reverse;
+}
+
+/** The article's noun-phrase heading is separate from the map's directional verb. */
+export function relationHeading(edge, fromId, types) {
+  const type = types[edge.type];
+  if (!type) throw new Error('Unknown relation type: ' + edge.type);
+  if (fromId !== edge.a && fromId !== edge.b) throw new Error('Node is not part of relation: ' + fromId);
+  if (type.symmetric) return type.heading || type.verb;
+  return fromId === edge.a ? (type.headingForward || type.forward) : (type.headingReverse || type.reverse);
 }
