@@ -119,6 +119,8 @@ python scripts/process_images.py --download --update-data
 
 Näin julkaistavaan sivustoon ei tarvitse lisätä suuria alkuperäiskuvia. Käsittelyn epäonnistuessa skripti ilmoittaa virheestä ja säilyttää verkko-osoitteen `imageSource`-kentässä myöhempää yritystä varten.
 
+Kuvien etsimiseen, henkilöllisyyden tarkistukseen ja virheellisten muotokuvien korjaamiseen on erillinen [kuvankeruuskilli](../.agents/skills/rappiopedia-images/SKILL.md). `npm run images:candidates` näyttää henkilöiden puuttuvat kuvalähteet ja paikalliset WebP:t. Kun `imageSource` on tallennettu verkostodataan, GitHub Pages -rakennus käsittelee kuvan automaattisesti. **Jos vanha paikallinen kuva on väärä**, poista kyseinen `public/images/<id>.webp`, sillä käsittelijä ohittaa muuten olemassa olevan tiedoston.
+
 ## 6. Tarkista muutos
 
 Suorita projektin juuressa:
