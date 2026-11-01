@@ -1,4 +1,26 @@
 /** Camera-independent scene helpers for the Rappioverse canvas renderer. */
+/** In route mode, only the chosen path's nodes and edges are visible and interactive. */
+export function routeVisibility(pathNodes, pathEdges) {
+  const active = pathNodes.length > 0;
+  const nodes = new Set(pathNodes);
+  const edges = new Set(pathEdges);
+  return {
+    active,
+    showsNode: id => !active || nodes.has(id),
+    showsEdge: index => !active || edges.has(index)
+  };
+}
+
+/** Route labels belong to each traversed edge, using the direction of travel. */
+export function relationshipLabelEdges(edges, selected, pathNodes, pathEdges) {
+  if (pathNodes.length) {
+    return pathEdges.map((index, step) => ({ edge: edges[index], from: pathNodes[step] }));
+  }
+  if (!selected) return [];
+  return edges.filter(edge => edge.a === selected || edge.b === selected)
+    .map(edge => ({ edge, from: selected }));
+}
+
 export function focusedNodeIds(selected, edges, enabledLevels) {
   const ids = new Set();
   if (!selected) return ids;
