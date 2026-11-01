@@ -4,6 +4,16 @@
 
 Yle haastatteli Kärkkäistä jo toukokuussa 2014. Hän oli aloittanut videoiden julkaisemisen vuotta aiemmin ja tehnyt arkisia tapahtumia ja mielipiteitä käsittelevää sisältöä. Myöhemmin hänen pääasialliseksi julkaisumuodokseen tuli suoratoisto. [@P58]
 
+## Spurgu-TV:n subathonit vuosina 2023–2025
+
+Kärkkäisen tunnetuimpia sisältöjä ovat subathonit eli lähetysmaratonit, joita katsojat voivat pidentää maksullisilla tilauksilla. Syksyllä 2023 hän piti [[pottu_sub_2023|42 päivää kestäneen subathonin]] ja kertoi ansainneensa siitä noin 25 000 euroa. [@P182]
+
+Alkuvuonna 2024 Kärkkäinen striimasi [[pottu_pattaya_2024|Pattayalta]] Ari-ystävänsä kanssa. Maaliskuussa seurasi [[pottu_phuket_2024|Phuketin Spurgu-TV:n kolmas kausi]], jonka vieraileviin esiintyjiin kuului Big Brotherista tunnettu Jerry. [@P183] [@P185]
+
+Muutettuaan Viroon Kärkkäinen aloitti 15. marraskuuta 2024 [[pottu_viro_sub_2024|yhteissubathonin Pirkkiksen kanssa]]. Kaksikko teki lähetyksiä muun muassa Tallinnan yöelämästä. He jatkoivat [[pottu_espanja_sub_2025|Gran Canarialla tammikuussa 2025]]. Espanjan lähetyksestä uutisoitiin myös vaaratilanteen vuoksi, jonka Kärkkäinen kertoi sattuneen Pirkkikselle kameran ollessa pois päältä. [@P187] [@P188] [@P189]
+
+Huhtikuussa 2025 [[iippa|Iippadaa]] saapui Kärkkäisen luo Viroon, ja kaksikko teki [[pottu_iippa_sub_2025|yhteisen subathonin]]. Paikalla oli myös Sami Kieksin kuvausryhmä Ylen dokumenttia varten. Huhti–toukokuun vaihteen Reddit-keskusteluista käy ilmi, että katsojat seurasivat lähetyksen taukoja ja lähestyvää loppua. [@P9] [@P190] [@P191]
+
 ## Spurgu-TV ja yhteiset lähetykset
 
 Pottukoira on tehnyt lähetyksiä myös nimellä [[spurgu|Spurgu-TV]]. Hänen kanssaan on striimannut esimerkiksi [[pirkkis|Pirkkis]] eli Kari Liimatta. Keväällä 2025 hän teki Virossa yhteisiä lähetyksiä [[iippa|Iippadaan]] kanssa. [@P48] [@P9] [@P56]
