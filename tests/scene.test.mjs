@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { focusedNodeIds, projectedEdgePoint, graphLabelScale, cameraTravelDirection } from '../src/lib/scene.js';
+import { focusedNodeIds, projectedEdgePoint, graphLabelScale, cameraTravelDirection, routeVisibility, relationshipLabelEdges } from '../src/lib/scene.js';
 
 test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
   const edges = [
@@ -11,6 +11,37 @@ test('focused neighborhood contains all enabled direct relations, including inco
   ];
   assert.deepEqual([...focusedNodeIds('jethro', edges, new Set(['reported', 'verified']))].sort(), ['jethro','pact','talks']);
   assert.deepEqual([...focusedNodeIds(null, edges, new Set(['reported']))], []);
+});
+
+test('route view shows only path nodes and edges and restores the full graph when cleared', () => {
+  const route = routeVisibility(['a', 'b', 'c'], [1, 3]);
+  assert.equal(route.active, true);
+  assert.equal(route.showsNode('b'), true);
+  assert.equal(route.showsNode('other'), false);
+  assert.equal(route.showsEdge(3), true);
+  assert.equal(route.showsEdge(2), false);
+
+  const normal = routeVisibility([], []);
+  assert.equal(normal.active, false);
+  assert.equal(normal.showsNode('other'), true);
+  assert.equal(normal.showsEdge(2), true);
+});
+
+test('route relationship labels use only traversed edges and correct direction', () => {
+  const edges = [
+    { a: 'a', b: 'b' },
+    { a: 'a', b: 'other' },
+    { a: 'c', b: 'b' },
+    { a: 'other', b: 'c' }
+  ];
+  assert.deepEqual(relationshipLabelEdges(edges, 'a', ['a', 'b', 'c'], [0, 2]), [
+    { edge: edges[0], from: 'a' },
+    { edge: edges[2], from: 'b' }
+  ]);
+  assert.deepEqual(relationshipLabelEdges(edges, 'a', [], []), [
+    { edge: edges[0], from: 'a' },
+    { edge: edges[1], from: 'a' }
+  ]);
 });
 
 test('focused labels have fixed size, ordinary labels shrink/grow with perspective', () => {
