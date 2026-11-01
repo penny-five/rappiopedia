@@ -69,6 +69,12 @@ Kirjoita tämän jälkeen omaa toimintaansa käsittelevistä aiheista: ura, kana
 
 Kirjoita proosaa, älä hakukoneelle tehtyä avainsanalistaa. Vältä fraaseja kuten ”dokumentoidut yhteydet”, ”verkostosilta”, ”konteksti”, ”tulkinnan rajat” ja samanlaista automaattista huomautusta jokaisen artikkelin lopussa. Jos jokin yksittäinen tieto on epävarma, kerro se kyseisen tiedon yhteydessä.
 
+**Älä metaraportoi tutkimusta julkaistussa artikkelissa.** Kerro suoraan henkilön toiminnasta, lähetyksen tapahtumista ja päivämääristä. Vältä virkkeitä kuten ”lähetysarkiston otsikot vahvistavat osallistujat”, ”tästä lähteestä ei voida päätellä, mitä muuta tapahtui”, ”tässä artikkelissa käsitellään vain…”, ”tapahtumasta on oma artikkelinsa” tai ”julkaisu osoittaa yhteyden”. Kirjoita mieluummin ”A ja B striimasivat yhdessä 9. syyskuuta” ja lisää lähdeviite. Jos ainoa tieto on lähetyksen otsikko, kirjoita esimerkiksi ”Lähetys oli nimeltään *X feat. B*” — älä päättele videon sisällöstä enempää.
+
+Tee ero **lukijalle tärkeän epävarmuuden** ja **kirjoittajan työmuistiinpanon** välille. Esimerkiksi ”Poliisi ei nimennyt epäiltyä, vaikka lehti yhdisti tapaukseen X:n” on tarpeellinen, tapahtumaan liittyvä täsmennys. Sen sijaan yleiset huomautukset puuttuvasta tallenteesta, lähteiden tarkastamisesta tai kirjoittamatta jätetyistä yksityiskohdista kuuluvat `research/leads.json`-tiedostoon. Älä lisää artikkelin loppuun lähteiden riittävyyttä arvioivaa yhteenvetokappaletta.
+
+**Yhteydet näkyvät aina erillisessä yhteysosiossa.** Artikkelin tehtävä on kertoa aiheesta proosana, ei luetella graafin relaatioita. Kun Markdown-artikkeli puuttuu, `src/lib/article-content.js` näyttää ainoastaan solmun `note`-kuvauksen. Älä palauta artikkelin varatekstiin automaattista `## Yhteydet` -luetteloa; tälle on regressiotesti.
+
 Esimerkki:
 
 ```md
