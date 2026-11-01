@@ -8,7 +8,7 @@ Yle haastatteli Kärkkäistä jo toukokuussa 2014. Hän oli aloittanut videoiden
 
 Kärkkäisen tunnetuimpia sisältöjä ovat subathonit eli lähetysmaratonit, joita katsojat voivat pidentää maksullisilla tilauksilla. Syksyllä 2023 hän piti [[pottu_sub_2023|42 päivää kestäneen subathonin]] ja kertoi ansainneensa siitä noin 25 000 euroa. [@P182]
 
-Alkuvuonna 2024 Kärkkäinen striimasi [[pottu_pattaya_2024|Pattayalta]] Ari-ystävänsä kanssa. Maaliskuussa seurasi [[pottu_phuket_2024|Phuketin Spurgu-TV:n kolmas kausi]], jonka vieraileviin esiintyjiin kuului Big Brotherista tunnettu Jerry. [@P183] [@P185]
+Alkuvuonna 2024 Kärkkäinen striimasi [[pottu_pattaya_2024|kuusi viikkoa Pattayalta]] [[fhat_ari|Fhat-Arin]] kanssa. Ari joutui matkan aikana sairaalaan ja alkoi helmikuussa sen jälkeen tehdä omia Kick-lähetyksiään. Kaksikon [[pottu_ari_valirikko_2024|välit katkesivat]] ennen maaliskuussa alkanutta [[pottu_phuket_2024|Phuketin kolmatta Spurgu-TV-kautta]], jolla vieraileviin esiintyjiin kuului Big Brotherista tunnettu Jerry. [@P184] [@P272] [@P273] [@P185]
 
 Muutettuaan Viroon Kärkkäinen aloitti 15. marraskuuta 2024 [[pottu_viro_sub_2024|yhteissubathonin Pirkkiksen kanssa]]. Kaksikko teki lähetyksiä muun muassa Tallinnan yöelämästä. He jatkoivat [[pottu_espanja_sub_2025|Gran Canarialla tammikuussa 2025]]. Espanjan lähetyksestä uutisoitiin myös vaaratilanteen vuoksi, jonka Kärkkäinen kertoi sattuneen Pirkkikselle kameran ollessa pois päältä. [@P187] [@P188] [@P189]
 
