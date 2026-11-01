@@ -1,6 +1,6 @@
 **DjPate246** on Tampereen seudulta tunnettu suomalainen YouTube-videobloggaaja, jonka arkea kuvaavat videot kuuluivat suomalaisen nettivideokulttuurin varhaisiin ilmiöihin. Hän julkaisi videoita jo 2010-luvun alussa, jolloin hänen kanavansa oli yksi harrastajien seuraamista omintakeisista arkikanavista. [@P235] [@P234]
 
-## Alkuperäistallenteet ja yhteisvideot
+## Yhteisvideot Viherahon ja Sillun kanssa
 
 DjPate246:n videoita on julkaistu Pasi Jaakkola -nimisellä YouTube-tilillä jo vuonna 2010. Marraskuun 14. päivänä 2010 ilmestyneen *Djpate246 sai yllätys vieraan..* -videon kuvauksessa mainitaan [[pasi|Pasi Viherahon]] näkökulma. Myöhemmin 19. tammikuuta 2014 samalla kanavalla julkaistiin [[djpate_sillu_pasi_2014|sunnuntain tapaamisvideo]], jonka nimessä mainitaan sekä Viheraho että [[sillu10|Sillu100%]]. [@P241] [@P240]
 
@@ -8,7 +8,7 @@ DjPaten Vimeo-tilillä on lisäksi 11. tammikuuta 2014 julkaistu *Viikonlopun me
 
 ## Arkivideoita YouTubeen
 
-Tammikuussa 2011 Offipalstan keskustelussa linkitettiin DjPate246:n YouTube-kanava samaan viestiin [[pasi|Pasi Viherahon]] ja [[markorepairs|MarkoRepairsin]] kanavien kanssa. Kyse oli harrastajien suosittelemista erillisistä videoista, ei yhteisestä tuotannosta. [@P235]
+Tammikuussa 2011 Offipalstan keskustelussa linkitettiin DjPate246:n YouTube-kanava samaan viestiin [[pasi|Pasi Viherahon]] ja [[markorepairs|MarkoRepairsin]] kanavien kanssa. Keskustelussa näitä kolmea tekijää suositeltiin kotimaisina arkivideokanavina. [@P235]
 
 Helmikuussa 2014 Jatkoajan keskustelupalstalla avattiin DjPate246:lle oma ketju. Aloitusviestin kirjoittaja kertoi videoiden sijoittuvan Tampereen Koivistonkylän ympäristöön ja linkitti esimerkkinä *Taisin olla kännissä* -nimisen videon. Keskusteluun koottiin myöhemmin muitakin kotimaisia videobloggaajia. [@P234]
 
