@@ -71,7 +71,7 @@ Erota myös tapahtuman suunnittelu ja toteutuminen. Esimerkiksi Bailupaatin enna
 
 ## Avoimet kysymykset ja huhujen jatkoselvitys
 
-Kaikki julkisesti keskustellut asiat eivät ole vielä tarkistettuja. Huhut, ristiriitaiset kertomukset ja henkilökohtaiset tapahtumat voivat olla merkittävä osa henkilön tai tapahtuman historiaa. Kerro artikkelissa, mitä lähteet sanovat; esimerkiksi ”Seiska kertoi” tai ”Reddit-ketjussa väitettiin”. Epävarmuutta ei tarvitse piilottaa eikä peittää yleisillä vastuuvapauslauseilla.
+Huhut, kiistat ja ristiriitaiset kertomukset voivat olla yhtä lailla osa tapahtuman julkista historiaa. Kerro, mitä niistä on uutisoitu tai keskusteltu ja mitä myöhemmin tapahtui. Lähdeviitteet kuuluvat itse tekstiin, eivät erilliseksi huomautusosioksi.
 
 Kun jokin asia jää avoimeksi, merkitse se [`research/leads.json`](../research/leads.json)-tiedostoon. Siellä on aiheen `nodeIds`- ja `sourceIds`-viitteet, etsittävät tiedot `questions`-kentässä, hakulausekkeet `queries`-kentässä ja seuraavat toimet `nextSteps`-kentässä. Tutkimusjono ei näy verkkosivustolla.
 
