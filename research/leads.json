@@ -532,6 +532,83 @@
         "Katso PACT- ja Sampe-tallenteet sekä kirjaa muut läsnäolijat."
       ],
       "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "julia-willman-kick-research",
+      "title": "Julia Willmanin Kick-ura, yhteistyölähetykset ja Big Brother -tausta",
+      "status": "open",
+      "priority": "high",
+      "nodeIds": [
+        "julwill",
+        "big_brother",
+        "heiskari",
+        "bailu"
+      ],
+      "sourceIds": [
+        "P151",
+        "P13"
+      ],
+      "sourceUrls": [
+        "https://streamscharts.com/channels/jjuliaelisa?platform=kick",
+        "https://gekkonen.net/tosi-tv-tahti-pukeutui-pottukoiraksi-katso-julkkisten-hurjat-ja-hulvattomat-halloween-asut/"
+      ],
+      "notes": "1.11.2026: Julia on jo siirretty Rappiostriimaukseen, ja Big Brother 2020 -yhteys on lisätty verkostoon. Kick-tilastossa noin 189 h lähetystä 30 päivässä lokakuussa 2026. Gekkosen 31.10. julkaisemassa jutussa näkyy Heiskarin ja Julian Halloween-yhteisstriimi, jossa he esiintyivät Pottukoiran ja Spuken asuissa. Näitä viimeksi mainittuja yhteyksiä ei vielä kirjattu verkostoon.",
+      "questions": [
+        "Mitkä vuoden 2026 Julia Willmanin Kick-lähetyksistä ovat merkittävimpiä?",
+        "Ketkä ovat toistuvia vieraita ja matka-/lähetyskumppaneita?",
+        "Mitä alkuperäiset Halloween- ja Bailupaatti-VODit osoittavat?"
+      ],
+      "queries": [
+        "\"Julia Willman\" \"jjuliaelisa\" 2026 kick",
+        "\"Julia Willman\" \"Kristian Heiskari\" Halloween 2026"
+      ],
+      "nextSteps": [
+        "Lue Kick-kanavan lähetysarkisto ja merkitse yksilöidyt vieraat.",
+        "Lisää Heiskarin Halloween-yhteislähetys lähteistettynä yhteytenä.",
+        "Täydennä 2020 Big Brother -kauden alkuperäiset ajankohdat."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "mea-ainasoja-tiktok-research",
+      "title": "Mea (ent. Alisa) Ainasojan TikTok-historia ja Bämät matkoilla",
+      "status": "open",
+      "priority": "high",
+      "nodeIds": [
+        "alisa_bamat",
+        "ruusu",
+        "bamat",
+        "bamat_nizza_2026",
+        "talks",
+        "jethro"
+      ],
+      "sourceIds": [
+        "P103",
+        "P106",
+        "P19"
+      ],
+      "sourceUrls": [
+        "https://www.reddit.com/r/snappisensuroimaton/comments/16qtmto",
+        "https://www.como.fi/uutiset/jethro-rostedt-umpihumalassa-suorassa-lahetyksessa-julkkisnainen-pakeni-paikalta-peppureikajuttujen-jalkeen/"
+      ],
+      "notes": "1.11.2026: Mea on jo oma solmu ja artikkeli reality-skenessä. 24.9.2023 Reddit-ketju kertoo Alisa Ainasojan TikTok-taukoilmoituksesta ja seuraavan päivän paluusta suoratoistoon. Lokakuun 2026 Nizza-jaksot sekä 31.10. kiista kuvattu Comossa; alkuperäisiä VOD:eja ei tarkistettu.",
+      "questions": [
+        "Milloin Ainasojan oma TikTok-liveura alkoi ja mitä vanhoista arkistoista voi varmentaa?",
+        "Mikä Mean nykyinen julkinen käyttäjänimi ja oma kanava ovat?",
+        "Mitä Bämät matkoilla -projektin alkuperäisissä tallenteissa tapahtui päivittäin?",
+        "Onko projektiin liittyviä muita osallistujia tai tuotantohenkilöitä?"
+      ],
+      "queries": [
+        "\"Alisa Ainasoja\" TikTok live 2023",
+        "\"Mea Ainasoja\" \"Bämät matkoilla\" 2026",
+        "\"Mea Ainasoja\" Pinja Ruusutossu Nizza"
+      ],
+      "nextSteps": [
+        "Etsi Mean 2023–2025 alkuperäiset TikTok-leikkeet.",
+        "Tarkista Bämät matkoilla -projektin VODit ja nimetyt esiintyjät.",
+        "Erottele Redditissä esitetyt kertomukset lähteistetystä tapahtumahistoriasta."
+      ],
+      "updatedAt": "2026-11-01"
     }
   ]
 }
