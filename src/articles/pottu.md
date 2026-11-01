@@ -12,7 +12,7 @@ Alkuvuonna 2024 Kärkkäinen striimasi [[pottu_pattaya_2024|kuusi viikkoa Pattay
 
 Muutettuaan Viroon Kärkkäinen aloitti 15. marraskuuta 2024 [[pottu_viro_sub_2024|yhteissubathonin Pirkkiksen kanssa]]. Kaksikko teki lähetyksiä muun muassa Tallinnan yöelämästä. He jatkoivat [[pottu_espanja_sub_2025|Gran Canarialla tammikuussa 2025]]. Espanjan lähetyksestä uutisoitiin myös vaaratilanteen vuoksi, jonka Kärkkäinen kertoi sattuneen Pirkkikselle kameran ollessa pois päältä. [@P187] [@P188] [@P189]
 
-Huhtikuussa 2025 [[iippa|Iippadaa]] saapui Kärkkäisen luo Viroon, ja kaksikko teki [[pottu_iippa_sub_2025|yhteisen subathonin]]. Paikalla oli myös Sami Kieksin kuvausryhmä Ylen dokumenttia varten. Huhti–toukokuun vaihteen Reddit-keskusteluista käy ilmi, että katsojat seurasivat lähetyksen taukoja ja lähestyvää loppua. [@P9] [@P190] [@P191]
+Huhtikuussa 2025 [[iippa|Iippadaa]] saapui Kärkkäisen luo Viroon, ja kaksikko aloitti [[pottu_iippa_sub_2025|yhteisen subathonin]] 18. huhtikuuta. Paikalla oli myös Sami Kieksin kuvausryhmä Ylen dokumenttia varten. Toukokuun 5. päivänä kaksikolle syntyi kiista musiikin soittamisesta lähetyksen loppuvaiheessa. Striimi oli hetken tauolla ennen kuin he jatkoivat sitä. [@P9] [@P190] [@P191] [@P278]
 
 ## Spurgu-TV ja yhteiset lähetykset
 
