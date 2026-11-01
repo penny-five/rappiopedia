@@ -47,7 +47,6 @@ Esimerkki:
 3. Useamman käyttäjän toisistaan riippumattomat yhtenevät kertomukset lisäävät näyttöä. Pelkkä kommenttien määrä tai huhun lainaaminen ei tuo riippumatonta vahvistusta.
 4. Tavallisen matkustamisen, ohjelmavierailun ja yhteislähetyksen voi merkitä `reported`-tasolle foorumin perusteella. Ilmaise lähde tekstissä, älä kirjoita varmentamatonta havaintoa absoluuttisena faktana.
 5. **Älä vaadi matkustusasiakirjoja** tai muita epärealistisia dokumentteja. Vakaviin rikos-, väkivalta-, hyväksikäyttö- tai petosväitteisiin tarvitaan huomattavasti vahvempi näyttö ja huolellinen attribuutio; pelkkä foorumihuhu ei riitä.
-6. Älä julkaise ei-julkisia henkilötietoja, tunnistamattomien ihmisten henkilöllisyysarvauksia tai yksityiselämän yksityiskohtia.
 
 Esimerkiksi **Upin, Pirkkiksen ja Taigan Amsterdamin-matkaa** koskevan ketjun voi merkitä tapahtuman lähteeksi ja tarvittaessa `reported`-tasolle, jos keskustelu sisältää tunnistettavia, ajankohtaisia ensi käden kertomuksia. Jos kyse on vain yhden kommentoijan arvauksesta, käytä `lead`-tasoa. Tapahtumaa ei tarvitse todistaa lentolipulla.
 
@@ -62,5 +61,4 @@ Laajemmat käytännöt ovat [Research Playbookissa](RESEARCH_PLAYBOOK.md). Uusi 
 - Yhteys ja lähde kuvaavat samaa tapahtumaa.
 - Sisälinkit ja lähdekoodit löytyvät datasta.
 - Epävarmat asiat on attribuoitu eikä ketään syyllistetä niiden perusteella.
-- Ei yksityisiä henkilötietoja.
 - `npm test`, `npm run build`, ja Actions-tarkistus onnistuvat ennen julkaisuilmoitusta.
