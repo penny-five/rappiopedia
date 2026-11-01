@@ -50,6 +50,18 @@ export function movementSpeedFill(speed) {
   return 100 * Math.log(clamped / MIN_MOVEMENT_SPEED) / Math.log(top / MIN_MOVEMENT_SPEED);
 }
 
+/** Do not let focus/depth dimming linger when nothing is selected. */
+export function nodeOpacity({
+  selected = false, routeActive = false, focused = false, onPath = false,
+  sectorDimmed = false, distanceFactor = 1
+} = {}) {
+  if (!selected && !routeActive && !sectorDimmed) return 1;
+  let opacity = sectorDimmed && !focused && !onPath ? .2 : 1;
+  if (selected && !focused && !onPath) opacity *= .24;
+  if (routeActive && !onPath) opacity *= .21;
+  return opacity * (focused ? 1 : Math.max(.3, Math.min(1, distanceFactor)));
+}
+
 /** In route mode, only the chosen path's nodes and edges are visible and interactive. */
 export function routeVisibility(pathNodes, pathEdges) {
   const active = pathNodes.length > 0;
