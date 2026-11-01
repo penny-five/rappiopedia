@@ -1135,7 +1135,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/maga.webp",
+      "imageSource": "https://media.content.livearena.io/icecage/magamed-gadiev-headshot-1-500x500.png",
+      "imageCredit": "Ice Cage Fighting, Magamed Gadievin virallinen ottelijakuva"
     },
     {
       "id": "nilu",
@@ -2472,7 +2475,10 @@
         350,
         -1730
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/matias_niemi.webp",
+      "imageSource": "https://media.content.livearena.io/icecage/oou-1-500x500.png",
+      "imageCredit": "Ice Cage Fighting, Matias Niemen virallinen ottelijakuva"
     },
     {
       "id": "matias_koistinen",
