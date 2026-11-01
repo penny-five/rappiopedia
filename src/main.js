@@ -637,7 +637,7 @@ function hit(x,y){
 space.addEventListener('pointerdown',e=>{
  if(e.target.closest('button')||(e.button!==0&&e.button!==1)||pointer)return;
  cameraNavigation++;
- pointer={id:e.pointerId,x:e.clientX,y:e.clientY,lastX:e.clientX,lastY:e.clientY,travel:0,target:{...target},moved:false,pan:e.shiftKey||e.button===1};
+ pointer={id:e.pointerId,x:e.clientX,y:e.clientY,lastX:e.clientX,lastY:e.clientY,travel:0,target:{...target},moved:false,pan:e.button===1};
  space.setPointerCapture(e.pointerId);
  space.classList.add('drag');
 });
