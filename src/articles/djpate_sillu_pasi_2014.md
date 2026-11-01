@@ -6,4 +6,4 @@ Video yhdisti kolme toisistaan riippumattomista verkkokanavista tunnettua tekij�
 
 ## Muut varhaiset kontaktit
 
-DjPaten kanavalla oli julkaistu jo 14. marraskuuta 2010 video *Djpate246 sai yllätys vieraan..*, jonka kuvauksessa mainitaan [[pasi|Viherahon]] näkökulma. Neljä vuotta myöhemmin DjPate tapasi Viherahon lisäksi myös Sillun yhteisessä sunnuntaivideossa. [@P240] [@P241] [@P240]
+DjPaten kanavalla oli julkaistu jo 14. marraskuuta 2010 video *Djpate246 sai yllätys vieraan..*, jonka kuvauksessa mainitaan [[pasi|Viherahon]] näkökulma. Neljä vuotta myöhemmin DjPate tapasi Viherahon lisäksi myös Sillun yhteisessä sunnuntaivideossa. [@P241] [@P240]
