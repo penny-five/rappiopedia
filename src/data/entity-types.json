@@ -21,6 +21,9 @@
     "site": {
       "label": "Verkkosivusto"
     },
+    "service": {
+      "label": "Palvelu"
+    },
     "media": {
       "label": "Julkaisu"
     },
@@ -184,6 +187,10 @@
     "verkkosivusto": {
       "category": "site",
       "label": "Verkkosivusto"
+    },
+    "kasinovertailupalvelu": {
+      "category": "service",
+      "label": "Kasinovertailupalvelu"
     },
     "uutissivusto": {
       "category": "site",
