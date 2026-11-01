@@ -1,4 +1,4 @@
-**Rauno77:n ja Jalluton_Pihtaajan yhteisstriimit 9. syyskuuta 2026** olivat kahden suomalaisen Kick-tekijän Jyväskylän seudulle sijoittuvia IRL-lähetyksiä. Molemmat esiintyivät toistensa samalle päivälle ajoitetuissa Kick-lähetyksissä. [@P258] [@P259]
+**Rauno77:n ja Jalluton_Pihtaajan yhteisstriimit 9. syyskuuta 2026** olivat kahden suomalaisen Kick-tekijän Jyväskylän seudulle sijoittuvia IRL-lähetyksiä. Molempien samalle päivälle ajoitettujen Kick-lähetysten otsikot mainitsivat toisen tekijän. [@P258] [@P259]
 
 ## Jyväskylän-lähetykset
 
