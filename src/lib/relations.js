@@ -1,7 +1,4 @@
-/**
- * Resolve a relation type from the selected node's point of view.
- * Symmetric types have one phrase; directional types have two.
- */
+/** Group outward-facing relation labels into readable article sections. */
 export function groupRelatedByType(related) {
   const groups = new Map();
   for (const edge of related) {
@@ -16,6 +13,10 @@ export function groupRelatedByType(related) {
     b.edges.length - a.edges.length || a.label.localeCompare(b.label, 'fi'));
 }
 
+/**
+ * Resolve a relation type from the selected node's point of view.
+ * Symmetric types have one phrase; directional types have two.
+ */
 export function relationVerb(edge, fromId, types) {
   const type = types[edge.type];
   if (!type) throw new Error('Unknown relation type: ' + edge.type);
