@@ -1,5 +1,5 @@
-## Yhteenveto
-**PactTalks 11.10.2026** on [[jethro|Jethro Rostedtin]] juontama jakso, jossa vieraili [[pasi|Pasi Viheraho]]. Vierailusta uutisoi Gekkonen 12.10.2026. [@P63]
+**PactTalksin 11. lokakuuta 2026 lähetetyssä jaksossa** vieraana oli nettiradio- ja videontekijä [[pasi|Pasi Viheraho]]. Lähetyksen juonsi [[jethro|Jethro Rostedt]]. Gekkonen uutisoi vierailusta seuraavana päivänä. [@P63]
 
-## Dokumentoitu yhteys
-Ohjelmayhteys liittää Viherahon pitkän nettiradiouran [[talks|PactTalksin]] ohjelmahistoriaan. [@P63]
+## Haastattelu
+
+Ohjelmassa keskusteltiin Viherahon interneturasta ja hänen aiemmista verkkovideoistaan. Gekkonen nosti uutisessaan esiin erityisesti paljon levinneen vesihanavideon. Viheraho tunnetaan myös vuonna 2007 alkaneesta [[pasiradio|Pasiradiosta]]. [@P63]

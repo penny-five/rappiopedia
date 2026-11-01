@@ -1,6 +1,9 @@
-**Testotimo**, eli Timo Naapila, on Kick-sisällöntuottaja, joka aloitti lokakuussa 2025 oman subathoninsa. Hän vieraili samassa kuussa [[pottu|Pottukoiran]] luona Virossa yhdessä [[aleksi|Aleksi Nurmisen]] kanssa. [@P60] [@P61]
+**Testotimo**, oikealta nimeltään **Timo Naapila**, on suomalainen Kick-striimaaja. Hän on tehnyt pitkiä suoratoistolähetyksiä, ja lokakuussa 2025 hän aloitti oman [[testotimo_sub|subathoninsa]]. Samassa kuussa hän vieraili [[pottu|Pottukoiran]] luona Virossa. [@P61] [@P60]
 
-## Dokumentoidut ohjelmayhteydet
-- [[testotimo_sub|Testotimon subathon]] — hänen oma maratonlähetyksensä. [@P61]
-- [[aleksi|Aleksi Nurminen]] — mukana subathonin taustalla ja samalla [[viro_pottu_2025|Viron-vierailulla]]. [@P60] [@P61]
-- [[pottu|Pottukoira]] ja [[pullis|Pullis]] — esiintyivät saman vierailukokonaisuuden uutisoinnissa. [@P60]
+## Subathon lokakuussa 2025
+
+Subathon on pitkä suoratoistolähetys, jonka jatkuminen voi riippua yleisön tilauksista. Gekkosen haastattelussa Testotimo kertoi omasta subathonistaan ja siitä, miten lähetys erosi Pottukoiran lähetyksistä. [[aleksi|Aleksi Nurminen]] oli mukana sen järjestelyissä. [@P61]
+
+## Vierailu Pottukoiran luona
+
+Lokakuussa 2025 Testotimo ja Aleksi Nurminen matkustivat Pottukoiran luo Viroon. Gekkosen mukaan samaan vierailuun liittyi myös [[pullis|Pullis]]. Tapahtumaa käsitellään erikseen [[viro_pottu_2025|Viron-vierailun artikkelissa]]. [@P60]

@@ -1,8 +1,7 @@
-## Yhteenveto
-Lokakuussa 2025 [[pottu|Pottukoiran]] luona Virossa vierailivat [[testotimo|Testotimo]] ja [[aleksi|Aleksi Nurminen]]. Gekkosen 28.10.2025 raportin mukaan he tekivät sisältöä yhdessä ja paikalla kävi myös [[pullis|Pullis]]. [@P60]
+**Pottukoiran Viron-yhteisstriimi lokakuussa 2025** oli vierailu, jonka aikana [[testotimo|Testotimo]] ja [[aleksi|Aleksi Nurminen]] tekivät sisältöä [[pottu|Pottukoiran]] kanssa. Gekkonen uutisoi vierailusta 28. lokakuuta 2025. [@P60]
 
-## Miksi tapahtuma on tärkeä?
-[[aleksi|Aleksi Nurminen]] oli myöhemmin [[s3|PactHouse 3:n]] osallistuja. Näin tämä tapahtuma muodostaa konkreettisen sillan Pottukoiran ja PACT-ohjelmaperheen välille. [@P60] [@P42]
+## Vierailijat ja lähetykset
 
-## Rajaus
-Viron vierailu on eri tapahtuma kuin PactHouse 3 eikä tarkoita, että vierailun kaikki osallistujat olisivat PactHouse-kilpailijoita.
+Testotimo ja Nurminen vierailivat Pottukoiran luona Virossa. Gekkosen jutussa mainittiin myös [[pullis|Pullis]] saman vierailukokonaisuuden yhteydessä. [@P60]
+
+Nurminen oli aiemmin auttanut [[testotimo_sub|Testotimon subathonin]] järjestelyissä. Vuonna 2026 hän osallistui lisäksi [[s3|PactHouse 3:een]]. [@P61] [@P42]
