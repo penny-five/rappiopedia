@@ -27,7 +27,7 @@ npm run build
 - `docs/CONTENT_AUTHORING.md` — toimituksellinen sisällöntuotanto-opas
 
 ## Julkaisu
-GitHub Actionsin `.github/workflows/deploy.yml` testaa ja rakentaa `main`-haaran muutokset sekä pyrkii julkaisemaan GitHub Pagesiin. Alkuasetuksena valitse repon **Settings → Pages → Source: GitHub Actions**. Julkaisuosoite, kun Pages on otettu käyttöön: https://penny-five.github.io/rappioverse/ .
+GitHub Actionsin `.github/workflows/deploy.yml` testaa ja rakentaa `main`-haaran muutokset sekä pyrkii julkaisemaan GitHub Pagesiin. Alkuasetuksena valitse repon **Settings → Pages → Source: GitHub Actions**. Julkaisuosoite, kun Pages on otettu käyttöön: https://penny-five.github.io/rappiopedia/ .
 
 ## Tutkimus- ja toimitusohjeet
 - [AGENTS.md](AGENTS.md) – agenttien kehitys- ja lähdeohjeet.
