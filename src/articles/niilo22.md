@@ -2,7 +2,7 @@
 
 ## Varhaiset videot ja Tubettajat-dokumentti
 
-Ylen vuoden 2014 [[tubettajat_2014|Tubettajat-dokumentissa]] Kosola oli yksi kolmesta päähenkilöstä. Tuolloin katsojat seurasivat hänen videoitaan tavallisista arkisista tilanteista, kuten ruoanlaitosta, kahvinkeittimen rikkoutumisesta ja juhlimisesta. Samassa dokumentissa esiintyivät [[pasi|Pasi Viheraho]] ja [[iltapalamies|Asko ”Iltapalamies” Huttunen]]. [@P134]
+Ylen vuonna 2013 ensiesitetyssä [[tubettajat_2014|Tubettajat-dokumentissa]] Kosola oli yksi kolmesta päähenkilöstä. Tuolloin katsojat seurasivat hänen videoitaan tavallisista arkisista tilanteista, kuten ruoanlaitosta, kahvinkeittimen rikkoutumisesta ja juhlimisesta. Samassa dokumentissa esiintyivät [[pasi|Pasi Viheraho]] ja [[iltapalamies|Asko ”Iltapalamies” Huttunen]]. Dokumentti esitettiin TV1:ssä 21. lokakuuta 2013 ja julkaistiin uudelleen Ylen verkkopalvelussa vuonna 2014. [@P134] [@P211]
 
 Kosolan videosisällöstä on muodostunut oma seuraajakulttuurinsa, jossa hänen sanontojaan ja arjen kuvauksiaan käsitellään myös koosteiden ja meemien muodossa. [@P140]
 
