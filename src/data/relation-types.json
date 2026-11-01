@@ -202,5 +202,9 @@
   "jakoi": {
     "forward": "jakoi",
     "reverse": "julkaisuja jakoi"
+  },
+  "epailtiin-teosta": {
+    "forward": "epäiltiin",
+    "reverse": "epäiltynä oli"
   }
 }

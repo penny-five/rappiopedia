@@ -109,27 +109,36 @@
     {
       "id": "upi-accident-2026",
       "title": "Upin lokakuun 2026 onnettomuutta koskevat lähteet",
-      "status": "open",
+      "status": "in-progress",
       "priority": "medium",
       "nodeIds": [
-        "upi"
+        "upi",
+        "killinmaki_2026"
       ],
       "sourceIds": [
         "P68",
-        "P69"
+        "P69",
+        "P90",
+        "P91",
+        "P92"
       ],
-      "notes": "Yle ja Uuno ovat uutisoineet Kirkkonummen onnettomuudesta. Tarkista mahdolliset täsmennykset aiemmin julkaistuihin tietoihin.",
+      "notes": "Yle ja Uuno ovat uutisoineet Kirkkonummen onnettomuudesta. Tarkista mahdolliset täsmennykset aiemmin julkaistuihin tietoihin. 1.11.2026: Uuno raportoi Killinmäen 21.9.2026 palosta ja vahingontekotutkinnasta. Gekkonen sai poliisilta 7.10. tiedon: 5.10. parveketilanteessa ei kuollut ketään eikä epäilty rikosta. Kyse eri tutkinta-asiasta.",
       "questions": [
         "Mitä tapahtuma-ajasta ja kulusta on vahvistettu?",
-        "Onko lehdissä myöhempiä korjauksia?"
+        "Onko lehdissä myöhempiä korjauksia?",
+        "Onko 21.9.2026 Killinmäen palon vahingontekotutkinta edennyt syyteharkintaan tai ratkaisuun?",
+        "Onko poliisi tai Pulkkinen vahvistanut 5.10. putoamisen tarkempaa kulkua myöhemmin?"
       ],
       "queries": [
         "\"Upi\" \"Arttu Pulkkinen\" Kirkkonummi lokakuu 2026"
       ],
       "nextSteps": [
         "Vertaa julkaistujen juttujen ajankohdat ja väitteet.",
-        "Päivitä artikkelin onnettomuusosiota, jos lähteet tarkentuvat."
-      ]
+        "Päivitä artikkelin onnettomuusosiota, jos lähteet tarkentuvat.",
+        "Etsi myöhemmät poliisin vahingontekotutkintaa koskevat tiedotteet ja mahdollinen päätös.",
+        "Selvitä, onko Kirkkonummen onnettomuudesta myöhempi ensikäden haastattelu."
+      ],
+      "updatedAt": "2026-11-01"
     },
     {
       "id": "sampe-oct2026-joint-streams",
@@ -147,9 +156,11 @@
       "sourceIds": [
         "P75",
         "P76",
-        "P77"
+        "P77",
+        "P83",
+        "P93"
       ],
-      "notes": "StreamRecorderin ja Streams Chartsin lähetysotsikoissa näkyvät Iippadaa ja Megis lokakuun 20.–22. päivän striimeissä. Eri seurantapalvelut merkitsevät joidenkin lähetysten päivät eri tavoin. Lisäksi syyskuun Tallinnan-otsikoissa mainitaan Anton Koskela ja Pullis sekä lokakuun Riian-otsikoissa Pullis ja Jenniveri. Varsinaista videosisältöä ei ole tarkistettu.",
+      "notes": "StreamRecorderin ja Streams Chartsin lähetysotsikoissa näkyvät Iippadaa ja Megis lokakuun 20.–22. päivän striimeissä. Eri seurantapalvelut merkitsevät joidenkin lähetysten päivät eri tavoin. Lisäksi syyskuun Tallinnan-otsikoissa mainitaan Anton Koskela ja Pullis sekä lokakuun Riian-otsikoissa Pullis ja Jenniveri. Varsinaista videosisältöä ei ole tarkistettu. 1.11.2026: StreamRecorderin arkistossa yksilöity 3.–5.10.2026 Riian-lähetysten otsikot 'w/ Pullis ja Jenniveri'; Pulliksen omassa Kick-VOD-otsikossa myös 'IIPPA JA MEGIS TALLINNAS'.",
       "questions": [
         "Ovatko Iippadaa ja Megis nähtävissä samassa alkuperäisessä tallenteessa ja missä kohdassa?",
         "Mitä Tallinnan ja Riian tallenteet osoittavat muista nimetyistä vieraista?",
@@ -163,7 +174,97 @@
       "nextSteps": [
         "Etsi lokakuun 20.–22.10.2026 alkuperäiset tallenteet ja kirjaa tarkat aikaleimat.",
         "Varmista erillisten seurantapalvelujen paikallisajat ennen päivätason väitteitä.",
-        "Laajenna artikkelia ja lisää Tallinnan/Riian tapahtumayhteydet vain videon tai riittävän yksilöidyn alkuperäislähteen perusteella."
+        "Laajenna artikkelia ja lisää Tallinnan/Riian tapahtumayhteydet vain videon tai riittävän yksilöidyn alkuperäislähteen perusteella.",
+        "Tarkista 3.–5.10.2026 Riian-lähetysten varsinaiset tallenteet ja P93:n Tallinna-VOD."
+      ]
+    },
+    {
+      "id": "kasinokurki-striimimarkkinointi-2026",
+      "title": "Kasinokurjen komennon kohde, taustayhtiö ja striimaajakytkökset",
+      "status": "in-progress",
+      "priority": "high",
+      "nodeIds": [
+        "kasinok",
+        "sampe",
+        "pullis",
+        "kp",
+        "saini",
+        "lassi"
+      ],
+      "sourceIds": [
+        "P18",
+        "P78",
+        "P79",
+        "P80",
+        "P81",
+        "P82",
+        "P83",
+        "P93"
+      ],
+      "sourceUrls": [
+        "https://kick.com/Kasinokurki",
+        "https://www.reddit.com/r/snappisensuroimat0n/comments/1wdsail/sampen_mielipide_lassin_tuomioon/",
+        "https://www.reddit.com/r/snappisensuroimat0n/comments/1wrdn9d/kasinokurjen_vastaus_pulliksen_k%C3%A4yt%C3%B6kseen/"
+      ],
+      "notes": "Kick-otsikoissa näkyy !kasinokurki useilla kanavilla, myös kanavien omilla VOD-sivuilla. Kasinokurki.fi ja Kasinokurki.com ovat kaksi samannimistä affiliate-sivustoa. Komennon target URL, sivustojen keskinäinen suhde ja omistaja eivät käy ilmi näistä lähteistä. Redditissä väitetään vaihtelevasti Sampen, Sainin tai muiden toimijoiden olevan taustalla, eikä niitä pidä merkitä vahvistetuiksi henkilöyhteyksiksi.",
+      "questions": [
+        "Mihin URL-osoitteeseen !kasinokurki-botin chat-vastaus johtaa Pulliksen, Sampen ja KP2Timesin kanavilla?",
+        "Onko .fi- ja .com-verkkotunnuksilla sama julkisesti ilmoitettu operaattori tai yhteystaho?",
+        "Löytyykö streamaajien omia julkisia mainosyhteistyöilmoituksia tai sopimuskumppanin julkaisuja?",
+        "Mitä 11.9.2026 Redditissä mainitut Lassin diilin päättymistä koskevat streamikatkelmat oikeasti osoittavat?"
+      ],
+      "queries": [
+        "\"kasinokurki\" \"Pullis\" \"sopimus\"",
+        "\"!kasinokurki\" \"linkki\" kick",
+        "\"kasinokurki\" \"SampeF2\" \"Saini\"",
+        "\"kasinokurki\" \"kp2times\""
+      ],
+      "nextSteps": [
+        "Katso Kickin chat-vastaukset yksilöidyistä VOD-tallenteista ja tallenna kohde-URL:t.",
+        "Etsi mahdollinen julkinen yhtiötunnus, sopimusilmoitus tai muu alkuperäinen toimijatieto.",
+        "Vertaa väitettyjä omistajia vasta saatuun ensikäden lähteeseen, älä käytä keskenään ristiriitaisia Reddit-arvauksia faktana."
+      ]
+    },
+    {
+      "id": "pullis-dokumentti-ottelut-ja-striimit",
+      "title": "Pulliksen Hard to Break -historia, oikeusjutut ja matkayhteydet",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "pullis",
+        "hard_to_break",
+        "fighting_1vs1_2025",
+        "claudia_barsk",
+        "sampe",
+        "tegel",
+        "lassi",
+        "pottu"
+      ],
+      "sourceIds": [
+        "P84",
+        "P85",
+        "P86",
+        "P87",
+        "P88",
+        "P89",
+        "P83",
+        "P93"
+      ],
+      "notes": "A-klinikkasäätiön alkuperäinen Hard to Break -esittely (2024), Seiskan oikeusasiakirjoihin perustuva juttu (2025) ja Pulliksen haastattelu (2026) täydentävät taustaa. SampeF2:n Riika-otsikot (3.–5.10.2026) ja Pulliksen Tallinna-VOD osoittavat kanavien yhteisiä striimiteemoja, eivät vielä videolla tarkistettuja kohtaamisia.",
+      "questions": [
+        "Mikä Hard to Break -elokuvan pitkä traileri tai koko elokuva vahvistaa Pulliksen taustasta?",
+        "Mitä Riian-matkan ja Tallinnan-lähetysten alkuperäisillä tallenteilla todella tapahtuu?",
+        "Toteutuuko 15.11.2026 ennakkoon ilmoitettu ottelu?"
+      ],
+      "queries": [
+        "\"Hard to Break\" \"Atte Karttunen\" 2024",
+        "\"Pullis\" \"SampeF2\" \"Riika\" 2026",
+        "\"Pullis\" \"Sigmaballs\" \"15.11.2026\""
+      ],
+      "nextSteps": [
+        "Etsi dokumentin ensisijainen katselulähde ja vertaa oman kertomuksen yksityiskohtia artikkeliin.",
+        "Tarkista Kick-VOD:t ja kirjaa selkeät esiintyjä- ja tapahtumahetket.",
+        "Päivitä 15.11.2026 ottelun toteutuminen vasta tapahtuman jälkeen."
       ]
     }
   ]

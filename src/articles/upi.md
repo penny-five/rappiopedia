@@ -1,15 +1,21 @@
-**Upi**, oikealta nimeltään **Arttu Pulkkinen**, on suomalainen rappiostriimaaja, jonka lähetykset ja esiintymiset ovat herättäneet keskustelua suomalaisessa verkkoviihteessä. Hän esiintyi [[sami|Sami Kieksin]] Ylelle tekemässä [[kieksidoc|rappiostriimausta käsittelevässä dokumenttijaksossa]] vuonna 2026. [@P45] [@P46]
+**Arttu ”Upi” Pulkkinen** on kainuulaissyntyinen suomalainen rappiostriimaaja. Hänet tunnetaan suoratoistolähetyksistään, ja hän esiintyi [[sami|Sami Kieksin]] Ylelle tekemän [[kieksidoc|Kieksi-dokumenttisarjan]] rappiostriimausta käsitelleessä jaksossa, joka julkaistiin 13. huhtikuuta 2026. [@P90] [@P45] [@P46]
 
-## Striimit ja yhteydet Pirkkikseen
+## Striimaus ja dokumenttijulkisuus
 
-[[pirkkis|Pirkkis]] on esiintynyt Upin kanssa samoissa lähetyksissä. Heidän aikaisemmista yhteisstriimeistään keskusteltiin Redditissä heinäkuussa 2026. Kieksi haastatteli molempia rappiostriimausta käsittelevää dokumenttia varten. [@P51] [@P46]
+Upin lähetykset ovat käsitelleet arkea ja striimaajan elämää, mutta myös herättäneet huomiota päihtymisen ja häiriöiden vuoksi. Kieksin dokumentissa tarkastellaan laajemmin rappiostriimausta, sen katsojia ja tekijöiden elämää. Kieksi kuvasi jaksoa varten sekä Pulkkista että [[pirkkis|Pirkkistä]]. [@P45] [@P46]
 
-## Amsterdamin-matka 2025
+Heinäkuun 2026 Reddit-keskustelussa kuvailtiin Upin ja Pirkkiksen aiempia yhteislähetyksiä. Huhtikuun 2025 keskusteluketjussa Upi, Pirkkis ja [[taiga|Taiga]] yhdistettiin [[ams25|Amsterdamin-matkaan]]. [@P51] [@P52]
 
-Huhtikuussa 2025 Redditissä keskusteltiin [[ams25|Amsterdamiin tehdystä striimimatkasta]], johon käyttäjät yhdistivät Upin, Pirkkiksen ja [[taiga|Taigan]]. [@P52]
+## Aiempi rikos- ja muu julkisuus
 
-## Parvekeonnettomuus lokakuussa 2026
+Uunon lokakuussa 2026 julkaiseman koosteen mukaan Pulkkinen sai vuonna 2021 viiden kuukauden ehdollisen vankeusrangaistuksen lapsen seksuaalisesta hyväksikäytöstä. Lehden mukaan hänen taustallaan oli myös pahoinpitely- ja rattijuopumustuomioita. Elokuussa 2025 Pulkkinen joutui lehden mukaan poistumaan Norjasta Bergenissä herättämänsä häiriön jälkeen. [@P90]
 
-Upi putosi parvekkeelta Kirkkonummella lokakuun 2026 alussa. Tapahtuma sattui suoratoistolähetyksen aikana ja nousi nopeasti uutisiin. Yle uutisoi onnettomuudesta 13. lokakuuta, ja Uuno julkaisi 7. lokakuuta jutun, jossa käsiteltiin putoamispaikkaa ja naapurin kertomusta. [@P68] [@P69]
+## Killinmäen laavupalo syyskuussa 2026
 
-Uunon mukaan Pulkkinen selvisi putoamisesta. Tapahtumasta levinneet videot ja uutisointi lisäsivät keskustelua rappiostriimaamisen tapahtumista ja niiden seuraamisesta. [@P69]
+Kirkkonummen [[killinmaki_2026|Killinmäen retkipaikalla]] paloi 21. syyskuuta 2026 pöytäryhmä ja roska-astioita. Uunon mukaan Pulkkinen kuvasi palavaa retkipaikkaa suorassa lähetyksessään ja poistui paikalta kuvaten myös hälytysajoneuvoja. Länsi-Uudenmaan poliisi tutki tapausta vahingontekona, ja Pulkkista epäiltiin palon sytyttämisestä. Uutisointi ei kertonut asiassa annetusta tuomiosta. [@P90] [@P69]
+
+## Parvekeonnettomuus 5. lokakuuta 2026
+
+Maanantaina 5. lokakuuta 2026 Upi loukkaantui pudottuaan kerrostalon parvekkeelta Kirkkonummella. Samana iltana alueelle hälytettiin poliisi- ja pelastushenkilöstöä sekä lääkärihelikopteri. Lähetyksestä levinneissä tallenteissa Pulkkinen poistui kameran kuvasta parvekkeen suuntaan, mutta varsinaista putoamista ei tallenteissa nähty. [@P68] [@P69] [@P92]
+
+Uuno kertoi 6. lokakuuta lähdetietojensa perusteella Pulkkisen selvinneen hengissä ja joutuneen sairaalahoitoon. Seuraavana päivänä Länsi-Uudenmaan poliisi vahvisti Gekkoselle, ettei 5. lokakuuta olleessa viranomaistehtävässä kuollut ketään eikä asiassa epäilty rikosta. Poliisi ei kertonut putoamisen tarkempaa kulkua. [@P92] [@P91]

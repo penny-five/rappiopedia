@@ -1,0 +1,3 @@
+**Killinmäen laavupalolla** tarkoitetaan Kirkkonummen Killinmäen retkipaikalla 21. syyskuuta 2026 sattunutta tulipaloa, jossa paloi muun muassa pöytäryhmä ja roska-astioita. Tapauksesta uutisoitiin osana [[upi|Arttu ”Upi” Pulkkisen]] suoratoistolähetyksiin liittynyttä tapahtumahistoriaa. [@P90]
+
+Uunon mukaan Pulkkinen kuvasi retkipaikan palamista suorassa lähetyksessä ja sen jälkeen paikalle saapuneita paloautoja. Samassa uutisessa kerrotaan, että retkipaikalta poistumisen yhteydessä lähetyksessä näkyi myös bussipysäkin lasiseinän rikkominen. Länsi-Uudenmaan poliisi tutki laavupaloa vahingontekona ja Pulkkista epäiltiin tapahtumasta. [@P90] [@P69]

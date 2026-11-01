@@ -281,7 +281,7 @@
       "name": "Upi / Arttu Pulkkinen",
       "group": "rappio",
       "cat": "person",
-      "note": "Upi eli Arttu Pulkkinen on suomalainen rappiostriimaaja, joka on esiintynyt Ylen dokumentissa. Lokakuussa 2026 hän loukkaantui pudottuaan parvekkeelta kesken suoratoistolähetyksen.",
+      "note": "Arttu ”Upi” Pulkkinen on suomalainen striimaaja ja Ylen Kieksi-dokumentin esiintyjä. Häntä epäiltiin syyskuussa 2026 Killinmäen laavupalosta, ja lokakuussa hän loukkaantui parvekeonnettomuudessa.",
       "x": 450,
       "y": 2620,
       "pos3": [
@@ -461,7 +461,7 @@
       "name": "Kasinokurki",
       "group": "stream",
       "cat": "lead",
-      "note": "Kasinokurki-nimi esiintyy joidenkin suomalaisten Kick-lähetysten komennoissa, esimerkiksi tunnisteena !kasinokurki.",
+      "note": "Kasinokurki-nimi esiintyy useiden suomalaisten Kick-striimaajien lähetysotsikoiden komentona. Samannimisiä rahapelivertailuja on verkossa, mutta komennon kohdetta ja toimijan omistajaa ei ole vahvistettu.",
       "x": 4090,
       "y": 1510,
       "pos3": [
@@ -473,10 +473,10 @@
     },
     {
       "id": "pullis",
-      "name": "Pullis",
+      "name": "Pullis / Atte Karttunen",
       "group": "stream",
       "cat": "person",
-      "note": "Pullis on suomalainen striimaaja, jonka lähetysotsikoissa on esiintynyt !kasinokurki-komento.",
+      "note": "Atte Karttunen eli Pullis on suomalainen Snapchatista ja Kick-lähetyksistä tunnettu striimaaja sekä Hard to Break -dokumentin päähenkilö. Hän voitti 1vs1 Fighting -ottelun joulukuussa 2025.",
       "x": 3970,
       "y": 1680,
       "pos3": [
@@ -1797,6 +1797,58 @@
         740,
         70,
         450
+      ],
+      "featured": false
+    },
+    {
+      "id": "hard_to_break",
+      "name": "Hard to Break (2024)",
+      "group": "media",
+      "cat": "show",
+      "note": "Hard to Break on Anna-Maija Heinosen ja Krista Moision ohjaama vuoden 2024 dokumenttielokuva, jossa seurataan Aten ja Jonsun elämää.",
+      "pos3": [
+        1920,
+        700,
+        1370
+      ],
+      "featured": false
+    },
+    {
+      "id": "fighting_1vs1_2025",
+      "name": "1vs1 Fighting / 20.12.2025",
+      "group": "events",
+      "cat": "event",
+      "note": "Pasilan liikuntahallissa järjestetyssä 1vs1 Fighting -illassa Pullis voitti Claudia Barskin nyrkkeilyottelussa.",
+      "pos3": [
+        2400,
+        60,
+        1300
+      ],
+      "featured": false
+    },
+    {
+      "id": "claudia_barsk",
+      "name": "Claudia Barsk",
+      "group": "events",
+      "cat": "person",
+      "note": "Claudia Barsk on somessa tunnettu henkilö, joka kohtasi Pulliksen 1vs1 Fighting -tapahtuman pääottelussa joulukuussa 2025.",
+      "pos3": [
+        2630,
+        -30,
+        1540
+      ],
+      "featured": false
+    },
+    {
+      "id": "killinmaki_2026",
+      "name": "Killinmäen laavupalo 21.9.2026",
+      "group": "events",
+      "cat": "event",
+      "note": "Kirkkonummen Killinmäen retkipaikalla syttyi 21.9.2026 tulipalo, jota poliisi tutki vahingontekona. Tapaus yhdistettiin Upi-striimaajaan uutisoinnissa.",
+      "pos3": [
+        2050,
+        -470,
+        1170
       ],
       "featured": false
     }
@@ -3210,37 +3262,41 @@
     {
       "a": "kasinok",
       "b": "kp",
-      "label": "!kasinokurki-kanavakomennon näkyvyys → vahva yhteistyöviite",
+      "label": "!kasinokurki-komento lähetysotsikoissa",
       "src": [
-        "P18"
+        "P18",
+        "P82"
       ],
       "level": "observed",
-      "detail": "Havainto: !kasinokurki-komento näkyy julkisessa lähetysotsikossa. Päättely: toistuva kaupallinen kanavaintegraatio tekee mainos- tai affiliate-yhteistyöstä todennäköisen. Maksaja, sopimus, korvaus tai omistaja eivät ole tarkistettuja.",
-      "date": "1.11.2026",
+      "detail": "KP2Timesin stream-arkisto näyttää toistuvaa !kasinokurki-komentoa. Komennon tarkkaa kohdetta, mahdollista kaupallista sopimusta tai osapuolia ei ole tarkistettu.",
+      "date": "2026-10",
       "type": "stream-tag"
     },
     {
       "a": "kasinok",
       "b": "pullis",
-      "label": "!kasinokurki-kanavakomennon näkyvyys → vahva yhteistyöviite",
+      "label": "!kasinokurki-komento lähetysotsikoissa",
       "src": [
-        "P18"
+        "P18",
+        "P81",
+        "P93"
       ],
       "level": "observed",
-      "detail": "Havainto: !kasinokurki-komento näkyy julkisessa lähetysotsikossa. Päättely: toistuva kaupallinen kanavaintegraatio tekee mainos- tai affiliate-yhteistyöstä todennäköisen. Maksaja, sopimus, korvaus tai omistaja eivät ole tarkistettuja.",
-      "date": "1.11.2026",
+      "detail": "Pulliksen Kickin omat VOD-otsikot näyttää toistuvaa !kasinokurki-komentoa. Komennon tarkkaa kohdetta, mahdollista kaupallista sopimusta tai osapuolia ei ole tarkistettu.",
+      "date": "2026-10",
       "type": "stream-tag"
     },
     {
       "a": "kasinok",
       "b": "sampe",
-      "label": "!kasinokurki-kanavakomennon näkyvyys → vahva yhteistyöviite",
+      "label": "!kasinokurki-komento lähetysotsikoissa",
       "src": [
-        "P18"
+        "P18",
+        "P83"
       ],
       "level": "observed",
-      "detail": "Havainto: !kasinokurki-komento näkyy julkisessa lähetysotsikossa. Päättely: toistuva kaupallinen kanavaintegraatio tekee mainos- tai affiliate-yhteistyöstä todennäköisen. Maksaja, sopimus, korvaus tai omistaja eivät ole tarkistettuja.",
-      "date": "1.11.2026",
+      "detail": "SampeF2:n lähetyshistoria näyttää toistuvaa !kasinokurki-komentoa. Komennon tarkkaa kohdetta, mahdollista kaupallista sopimusta tai osapuolia ei ole tarkistettu.",
+      "date": "2026-10",
       "type": "stream-tag"
     },
     {
@@ -4223,6 +4279,86 @@
       "date": "2026-10",
       "type": "nakyi",
       "detail": "Striimien otsikot mainitsevat Megiksen useampana päivänä lokakuussa 2026."
+    },
+    {
+      "a": "pullis",
+      "b": "hard_to_break",
+      "label": "dokumentin päähenkilö Atte",
+      "level": "verified",
+      "src": [
+        "P84"
+      ],
+      "type": "esiintyi",
+      "date": "2024"
+    },
+    {
+      "a": "pullis",
+      "b": "fighting_1vs1_2025",
+      "label": "voitti tapahtuman pääottelun",
+      "level": "reported",
+      "src": [
+        "P85",
+        "P86"
+      ],
+      "type": "otteli",
+      "date": "2025-12-20"
+    },
+    {
+      "a": "claudia_barsk",
+      "b": "fighting_1vs1_2025",
+      "label": "kohtasi Pulliksen ja luovutti toisessa erässä",
+      "level": "reported",
+      "src": [
+        "P85",
+        "P86"
+      ],
+      "type": "otteli",
+      "date": "2025-12-20"
+    },
+    {
+      "a": "pullis",
+      "b": "sampe",
+      "label": "Riian matkan yhteislähetysten otsikoissa lokakuussa 2026",
+      "level": "observed",
+      "src": [
+        "P83"
+      ],
+      "type": "striimasi-yhdessa",
+      "date": "2026-10-03",
+      "detail": "SampeF2:n 3.–5.10.2026 otsikoissa 'Riika w/ Pullis ja Jenniveri'."
+    },
+    {
+      "a": "pullis",
+      "b": "tegel",
+      "label": "Seiskan mukaan vieraili Pulliksen lähetyksissä",
+      "level": "reported",
+      "src": [
+        "P87"
+      ],
+      "type": "striimasi-yhdessa",
+      "date": "2026"
+    },
+    {
+      "a": "pullis",
+      "b": "lassi",
+      "label": "Seiskan mukaan vieraili Pulliksen lähetyksissä",
+      "level": "reported",
+      "src": [
+        "P87"
+      ],
+      "type": "striimasi-yhdessa",
+      "date": "2026"
+    },
+    {
+      "a": "upi",
+      "b": "killinmaki_2026",
+      "label": "epäiltiin laavun irtaimiston polttamisesta; tutkittiin vahingontekona",
+      "level": "reported",
+      "src": [
+        "P90"
+      ],
+      "type": "epailtiin-teosta",
+      "date": "2026-09-21"
     }
   ],
   "sources": {
@@ -4615,6 +4751,86 @@
       "label": "Streams Charts: SampeF2:n Kick-lähetysten otsikot lokakuussa 2026",
       "url": "https://streamscharts.com/channels/sampef2/streams?platform=kick",
       "note": "Vertailuarkisto listaa lokakuun 20.–22. päivän lähetyksiä, joissa esiintyvät nimet Iippadaa ja Megis; palveluiden alkuajat eivät kaikilta osin ole samoja."
+    },
+    "P78": {
+      "label": "Kasinokurki.fi: Tietoa meistä, 26.9.2026",
+      "url": "https://kasinokurki.fi/tietoa-meista/",
+      "note": "Kasinokurki.fi kuvaa itseään 23 nettikasinon kumppanuuslinkeillä rahoitettavaksi vertailuksi. Sivuston yhteyttä tiettyyn Kick-komentoon ei vahvistettu."
+    },
+    "P79": {
+      "label": "Kasinokurki.com: Tietoa Kasinokurjesta",
+      "url": "https://kasinokurki.com/tietoa-meista",
+      "note": "Toinen Kasinokurki-nimeä käyttävä sivusto kuvaa affiliate-rahoitustaan ja striimaus-/Discord-yhteisöä. Omistajuus ja yhteys .fi-sivustoon tai Kick-komentoihin selvittämättä."
+    },
+    "P80": {
+      "label": "Reddit 11.9.2026: Kuka on kasinokurki?",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1wdt1cr/eli_kuka_on_kasinokurki/",
+      "note": "Keskustelijat esittävät toisistaan poikkeavia arvauksia Kasinokurki-nimen taustasta, mm. Sampe/Saini; ei todennettua henkilöllisyyttä."
+    },
+    "P81": {
+      "label": "Pulliksen oma Kick-VOD 31.10.2026: Thaimaa, !kasinokurki",
+      "url": "https://kick.com/pullis/videos/01a191e2-d748-7417-b7f5-a0b07adb6afc",
+      "note": "Kickin oma VOD-sivu näyttää Pulliksen Thaimaa-lähetyksen otsikossa komennon !kasinokurki. Videon sisältöä ei tarkastettu."
+    },
+    "P82": {
+      "label": "StatsForKick: KP2Timesin lokakuun 2026 lähetysotsikot",
+      "url": "https://www.statsforkick.com/c/kp2times",
+      "note": "27.–31.10.2026 Thaimaa-aiheisissa Kick-lähetysotsikoissa !kasinokurki."
+    },
+    "P83": {
+      "label": "StreamRecorder: SampeF2:n 9–10/2026 lähetysotsikot",
+      "url": "https://streamrecorder.io/kick/sampef2",
+      "note": "Arkistossa toistuva !kasinokurki sekä 3.–5.10.2026 otsikko 'Riika w/ Pullis ja Jenniveri' ja 4.9.2026 'Tallinnassa vt Anton Koskela & Pullis'. Tallenteita ei katsottu."
+    },
+    "P84": {
+      "label": "A-klinikkasäätiö 8.4.2024: Hard to Break ja Atte",
+      "url": "https://a-klinikkasaatio.fi/ajankohtaista/hard-to-break-on-rehellinen-katsaus-nuorten-elamaan/",
+      "note": "Dokumentin yhteistyötaho kertoo elokuvan taustan, päähenkilö Aten sosiaalisen median historian ja ensi-illan 12.4.2024."
+    },
+    "P85": {
+      "label": "Seiska 30.12.2025: Pulliksen oikeustausta ja 1vs1-ottelu",
+      "url": "https://www.seiska.fi/rikos/rappiostriimajan-synkka-tausta-puukotti-miesta-rintaan-ja-kuvasi-pikkulasta-vessassa/2027916",
+      "note": "Käräjäoikeuden tuomiot salakatselusta ja kuvan levittämisestä sekä aiempi tapon yrityksestä saatu vankeusrangaistus; ottelu Claudia Barskin kanssa 20.12.2025."
+    },
+    "P86": {
+      "label": "Gekkonen 20.12.2025: Pullis voitti Claudia Barskin 1vs1 Fightingissa",
+      "url": "https://gekkonen.net/nain-kavi-1vs1-kohutapahtuman-paaottelussa-jossa-kohtasivat-mies-ja-nainen/",
+      "note": "Nyrkkeilyottelu päättyi Claudian luovutukseen toisessa erässä; tapahtuma Pasilassa."
+    },
+    "P87": {
+      "label": "Seiska 2.8.2026: Pulliksen haastattelu ja Aurajoki-huhut",
+      "url": "https://www.seiska.fi/kotimaa/netissa-alkoi-pyoria-hirveita-vaitteita-rappiostriimaajasta-osa-kuvittelee-minun/2224551",
+      "note": "Pullis kiistää heinäkuun 2026 Aurajoesta löytyneen vainajan yhteyden vuosia vanhaan kertomaansa tapahtumaan. Seiska nimeää Tallinnassa tehtyjen striimien vieraita."
+    },
+    "P88": {
+      "label": "Seiska 19.10.2025: Laitela92 ja Pottukoiran Viron vieraat",
+      "url": "https://www.seiska.fi/kotimaa/suomalainen-rappiostriimaaja-on-kuollut/1966750",
+      "note": "Ismo Tauriaisen kuolema, Pottukoiran luona samassa seurueessa käyneet Pullis, Pirkkis, Juhana Tegelberg; Pullis muisti kollegaansa omassa lähetyksessä."
+    },
+    "P89": {
+      "label": "Seiska 18.10.2026: 1vs1 Fightingin seuraavan illan otteluennakko",
+      "url": "https://www.seiska.fi/urheilu/onko-tama-jo-liikaa-pullis-sigmaballs-ja-erikoiset-otteluparit-kuohuttavat/2291606",
+      "note": "Ennakko ilmoittaa Pulliksen ja Sigmaballsin ottelun 15.11.2026 tapahtumaan. Tulevaa ottelua ei kirjata toteutuneeksi."
+    },
+    "P90": {
+      "label": "Uuno 6.10.2026: Upi ja Killinmäen laavupalo",
+      "url": "https://www.uuno.fi/parvekkeelta-pudonnut-rappiostriimaaja-arttu-upi-pulkkinen-epailtyna-tuoreesta-rikoksesta/",
+      "note": "Lehti kertoo 21.9.2026 laavupalon vahingontekotutkinnasta, Upin lähetysvideosta sekä taustasta; rikosepäily ei ole tuomio."
+    },
+    "P91": {
+      "label": "Gekkonen 7.10.2026: Poliisin lausunto Kirkkonummen tapauksesta",
+      "url": "https://gekkonen.net/taman-poliisi-suostui-kertomaan-gekkoselle-arttu-upi-pulkkiseen-liitetysta-tapauksesta/",
+      "note": "Länsi-Uudenmaan poliisi vahvistaa, ettei 5.10.2026 tilanteessa kuollut ketään eikä rikosta epäilty. Koskee parveketapahtumaa, ei 21.9. laavupaloa."
+    },
+    "P92": {
+      "label": "Uuno 6.10.2026: Upin putoamisen jälkeiset tiedot",
+      "url": "https://www.uuno.fi/uutta-tietoa-nain-parvekkeelta-pudonneelle-arttu-upi-pulkkiselle-kavi/",
+      "note": "Lehti raportoi nimettömien lähteiden perusteella loukkaantumisesta ja sairaalahoidosta 5.10. tapahtuneen putoamisen jälkeen."
+    },
+    "P93": {
+      "label": "Pulliksen oma Kick-VOD 10/2026: Iippa ja Megis Tallinnassa",
+      "url": "https://kick.com/pullis/videos/01a15992-0828-75b4-b8d4-571eb29872e3",
+      "note": "Pulliksen julkaistun VOD:n otsikko mainitsee Iippadaan ja Megiksen tapaamisen Tallinnassa sekä !kasinokurki-komennon; tarkkaa videon sisältöä ei tutkittu."
     }
   },
   "date": "2026-11-01"
