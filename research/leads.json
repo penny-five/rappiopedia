@@ -600,7 +600,8 @@
         "talks",
         "mokkistriimit_july_2026",
         "mallorca_livet_2026",
-        "julia_sampe_helsinki_2026"
+        "julia_sampe_helsinki_2026",
+        "mallorca_rantalaukut_2026"
       ],
       "sourceIds": [
         "P133",
@@ -611,9 +612,11 @@
         "P174",
         "P178",
         "P179",
-        "P180"
+        "P180",
+        "P264",
+        "P265"
       ],
-      "notes": "1.11.2026: MTV-dokumentti vahvisti oikean nimen Juulia Valikainen ja suhteen Chiara Eklundin sisältöpiiriin. PactHouse 1 -osallistuminen perustuu vielä vain koontiin. Lokakuun PactTalks- ja Sampe-lähetysotsikot tarkistettu, mutta täysiä VOD:eja ei ole katsottu.",
+      "notes": "1.11.2026: MTV-dokumentti vahvisti oikean nimen Juulia Valikainen ja suhteen Chiara Eklundin sisältöpiiriin. PactHouse 1 -osallistuminen perustuu vielä vain koontiin. Lokakuun PactTalks- ja Sampe-lähetysotsikot tarkistettu, mutta täysiä VOD:eja ei ole katsottu.\n1.11.2026: Mallorcan 22.9.2026 rannalla Sampen ja Pulliksen laukkujen katoamisen aikana myös Megis ja Chiara olivat matkaseurueessa (P178, P264, P265). Megis ei ole sama henkilö kuin mökkireissulla lisäksi mukana ollut Julia Willman.",
       "questions": [
         "Milloin Juulian omat TikTok- ja Kick-lähetykset alkoivat?",
         "Mikä on Megiksen tarkka PactHouse 1 -rooli alkuperäistallenteessa?",
@@ -642,7 +645,8 @@
         "bailu",
         "mokkistriimit_july_2026",
         "mallorca_livet_2026",
-        "julia_sampe_helsinki_2026"
+        "julia_sampe_helsinki_2026",
+        "heiskari_julia_spuke_2026"
       ],
       "sourceIds": [
         "P151",
@@ -650,13 +654,15 @@
         "P174",
         "P178",
         "P179",
-        "P180"
+        "P180",
+        "P266",
+        "P268"
       ],
       "sourceUrls": [
         "https://streamscharts.com/channels/jjuliaelisa?platform=kick",
         "https://gekkonen.net/tosi-tv-tahti-pukeutui-pottukoiraksi-katso-julkkisten-hurjat-ja-hulvattomat-halloween-asut/"
       ],
-      "notes": "1.11.2026: Julia on jo siirretty Rappiostriimaukseen, ja Big Brother 2020 -yhteys on lisätty verkostoon. Kick-tilastossa noin 189 h lähetystä 30 päivässä lokakuussa 2026. Gekkosen 31.10. julkaisemassa jutussa näkyy Heiskarin ja Julian Halloween-yhteisstriimi, jossa he esiintyivät Pottukoiran ja Spuken asuissa. Näitä viimeksi mainittuja yhteyksiä ei vielä kirjattu verkostoon.",
+      "notes": "1.11.2026: Julia on jo siirretty Rappiostriimaukseen, ja Big Brother 2020 -yhteys on lisätty verkostoon. Kick-tilastossa noin 189 h lähetystä 30 päivässä lokakuussa 2026. Gekkosen 31.10. julkaisemassa jutussa näkyy Heiskarin ja Julian Halloween-yhteisstriimi, jossa he esiintyivät Pottukoiran ja Spuken asuissa. Näitä viimeksi mainittuja yhteyksiä ei vielä kirjattu verkostoon.\n1.11.2026: Heiskarin Halloween-asuksi varmistui Pottukoira ja Julia Willmanin asuksi Spuke-koira Gekkosen striimikuvakaappauksesta (P266); uusi tapahtuma heiskari_julia_spuke_2026 ja Heiskarin itsenäinen elämäkerta. Lähde on myös Seiska 31.10. P13.",
       "questions": [
         "Mitkä vuoden 2026 Julia Willmanin Kick-lähetyksistä ovat merkittävimpiä?",
         "Ketkä ovat toistuvia vieraita ja matka-/lähetyskumppaneita?",
@@ -668,8 +674,8 @@
       ],
       "nextSteps": [
         "Lue Kick-kanavan lähetysarkisto ja merkitse yksilöidyt vieraat.",
-        "Lisää Heiskarin Halloween-yhteislähetys lähteistettynä yhteytenä.",
-        "Täydennä 2020 Big Brother -kauden alkuperäiset ajankohdat."
+        "Täydennä 2020 Big Brother -kauden alkuperäiset ajankohdat.",
+        "Varmista Heiskarin Halloween-lähetyksen tarkka päivä 30.–31.10.2026 alkuperäisestä Kick-VODista."
       ],
       "updatedAt": "2026-11-01"
     },
@@ -730,7 +736,10 @@
         "daniel",
         "mokkistriimit_july_2026",
         "mallorca_livet_2026",
-        "julia_sampe_helsinki_2026"
+        "julia_sampe_helsinki_2026",
+        "mallorca_rantalaukut_2026",
+        "heiskari_julia_spuke_2026",
+        "heiskari"
       ],
       "sourceIds": [
         "P174",
@@ -740,20 +749,29 @@
         "P178",
         "P179",
         "P180",
-        "P181"
+        "P181",
+        "P264",
+        "P265",
+        "P266",
+        "P267",
+        "P268",
+        "P269",
+        "P270"
       ],
       "sourceUrls": [
         "https://www.reddit.com/r/snappisensuroimat0n/comments/1v4hooe/c_ja_juulia_jo_mustasukkaisina_xd/",
         "https://streamrecorder.io/kick/jjuliaelisa",
         "https://streamrecorder.io/kick/sampef2"
       ],
-      "notes": "1.11.2026: 23.–26.7. mökkimatkasta aikalaisketjuja ja videoita, 22.9. Mallorca ja 29.10. Julian sekä Sampen yhteinen Helsinki-lähetys. Ei päätelmiä henkilökohtaisista suhteista, ja videoarkistoihin perustuvat vain niiden todelliset otsikot.",
+      "notes": "1.11.2026: 23.–26.7. mökkimatkasta aikalaisketjuja ja videoita, 22.9. Mallorca ja 29.10. Julian sekä Sampen yhteinen Helsinki-lähetys. Ei päätelmiä henkilökohtaisista suhteista, ja videoarkistoihin perustuvat vain niiden todelliset otsikot.\n1.11.2026 lisäselvitys: Redditissä on kolme 22.9.2026 julkaistua Mallorcan rantapäivää kuvaavaa videoketjua (P178, P264, P265), joissa seurattiin Sampen ja Pulliksen laukkukatoa. Tapahtuma erotettu omaksi solmukseen; osallisuuden lähteenä katsojaketjut, ei poliisin yksilöity rikosilmoitus. Gekkonen ja Seiska raportoivat 31.10. Heiskarin Kick-lähetyksestä, jossa Julia Willman esitti Pottukoiran Spuke-koiraa (P266, P13). Heiskarista luotiin oma ura-artikkeli Big Brother 2019-, Selviytyjät 2021-, radio- ja PactHouse 2026 -taustalla. Julia Willman ja Juulia Megarokkistara pidetty erillisinä henkilöinä.",
       "questions": [
         "Mikä oli mökkipaikkakunta ja viimeinen striimipäivä?",
         "Keitä muita mökkivieraita oli osassa lähetyksiä?",
         "Oliko Daniel Hellmanin keikka saman mökkimatkan yhteydessä vai erillinen tapahtuma?",
         "Mitä muita Mallorcan yhteisstriimejä on alkuperäisissä VOD:eissa?",
-        "Milloin Julia, Megis ja Pullis esiintyivät yhdessä heinäkuun jälkeen?"
+        "Milloin Julia, Megis ja Pullis esiintyivät yhdessä heinäkuun jälkeen?",
+        "Löytyykö Mallorcan 22.9.2026 laukkukadosta alkuperäinen Kick-VOD ja tuliko kadonneita tavaroita myöhemmin takaisin?",
+        "Oliko Heiskarin Pottukoira–Spuke-lähetys 30. vai 31.10.2026, ja löytyykö siitä alkuperäinen Kick-tallenne?"
       ],
       "queries": [
         "Pullis Julia Willman Megis 23.7.2026 mökki",
@@ -763,7 +781,9 @@
       "nextSteps": [
         "Käy alkuperäiset Kick-VOD:t läpi ja tarkenna yksittäiset vierailut.",
         "Vahvista tapahtuman paikka ja kesto ilman oletuksia.",
-        "Tarkista myöhemmät yhteisstriimit syksyltä 2026."
+        "Tarkista myöhemmät yhteisstriimit syksyltä 2026.",
+        "Tarkista 22.9. Mallorca-lähetyksistä koko tapahtumaketju ja mahdollinen paluureissu ilman että samaan ajankohtaan liittymättömiä kommentteja yhdistetään.",
+        "Tarkista Heiskarin heikrisse-kanavan Halloween-VODin päiväys ja lähetyksen alkuperäinen toteutus."
       ],
       "updatedAt": "2026-11-01"
     },
