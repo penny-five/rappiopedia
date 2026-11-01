@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-01",
+  "description": "Agents' research backlog. This file is not imported by the public application.",
+  "leads": [
+    {
+      "id": "pirkkis-athens-2025",
+      "title": "Pirkkiksen Ateenan-matka ja katoaminen",
+      "status": "open",
+      "priority": "high",
+      "nodeIds": [
+        "ateena25",
+        "pirkkis",
+        "sampe"
+      ],
+      "sourceIds": [
+        "P49",
+        "P50"
+      ],
+      "notes": "Seiskan 10.11.2025 jutut käsittelevät katoamista, Sampen etsintävideoita, passia koskevaa kertomusta sekä löytymistä. Vertaa uutisointia alkuperäisiin lähetyksiin.",
+      "questions": [
+        "Mitä alkuperäinen Iltalehden haastattelu kertoo tapahtumien aikajanasta?",
+        "Löytyvätkö Sampen Ateenan-lähetykset tai tallenteet?",
+        "Mitä matkan passitilanteesta näytetään alkuperäisellä videolla?"
+      ],
+      "queries": [
+        "\"Pirkkis\" \"SampeF2\" Ateena marraskuu 2025",
+        "\"Olli Sampela\" \"Kari Liimatta\" Ateena",
+        "\"Pirkka Ukko\" passi Ateena striimi"
+      ],
+      "nextSteps": [
+        "Tarkista Iltalehden alkuperäinen uutinen.",
+        "Etsi tallenteet ja kirjaa kunkin videon päivä ja olennainen aikaleima.",
+        "Päivitä artikkeli, jos löytyy uutta lähteistettyä tietoa."
+      ]
+    },
+    {
+      "id": "viro-guest-stream-2025",
+      "title": "Pottukoiran Viron-yhteisstriimin tallenteet",
+      "status": "open",
+      "priority": "medium",
+      "nodeIds": [
+        "viro_pottu_2025",
+        "pottu",
+        "aleksi",
+        "testotimo",
+        "testotimo_sub"
+      ],
+      "sourceIds": [
+        "P60",
+        "P61",
+        "P42"
+      ],
+      "notes": "Uutiset kertovat syksyn 2025 vierailusta ja Testotimon subathonista; alkuperäiset videot puuttuvat lähdeaineistosta.",
+      "questions": [
+        "Löytyykö lokakuun 2025 Viron-vierailun tallenne?",
+        "Mitä Testotimon oma lähetys kertoo Aleksin roolista?"
+      ],
+      "queries": [
+        "\"Pottukoira\" \"Aleksi Nurminen\" \"Testotimo\" Viro",
+        "\"Testotimo\" subathon lokakuu 2025"
+      ],
+      "nextSteps": [
+        "Etsi alkuperäiset videot ja päivämäärät.",
+        "Vertaa osallistujia jo kirjattuihin lähteisiin."
+      ]
+    },
+    {
+      "id": "bamat-pacttalks-2026",
+      "title": "Bämät matkoilla -projekti ja PactTalks",
+      "status": "open",
+      "priority": "medium",
+      "nodeIds": [
+        "bamat",
+        "talks",
+        "ruusu",
+        "alisa_bamat",
+        "saini"
+      ],
+      "sourceIds": [
+        "P64",
+        "P65",
+        "P66",
+        "P67"
+      ],
+      "notes": "Lähetysarkistoissa näkyvät PactTalksin jaksot 97–98. Redditissä keskustellaan Ranskan-matkasta ja projektin somesisällöstä.",
+      "questions": [
+        "Ketkä ovat mukana alkuperäisissä jaksoissa?",
+        "Mitä projektin omissa julkaisuissa kerrotaan matkasta?",
+        "Mihin Sainin somejulkaisuja koskeva keskustelu perustuu?"
+      ],
+      "queries": [
+        "\"Bämät matkoilla\" \"PactTalks\" 97 98",
+        "\"Bämät matkoilla\" Ruusutossu Alisa Ranska"
+      ],
+      "nextSteps": [
+        "Katso jaksojen tallenteet.",
+        "Etsi keskusteluissa mainittujen somesisältöjen alkuperäiset linkit."
+      ]
+    },
+    {
+      "id": "upi-accident-2026",
+      "title": "Upin lokakuun 2026 onnettomuutta koskevat lähteet",
+      "status": "open",
+      "priority": "medium",
+      "nodeIds": [
+        "upi"
+      ],
+      "sourceIds": [
+        "P68",
+        "P69"
+      ],
+      "notes": "Yle ja Uuno ovat uutisoineet Kirkkonummen onnettomuudesta. Tarkista mahdolliset täsmennykset aiemmin julkaistuihin tietoihin.",
+      "questions": [
+        "Mitä tapahtuma-ajasta ja kulusta on vahvistettu?",
+        "Onko lehdissä myöhempiä korjauksia?"
+      ],
+      "queries": [
+        "\"Upi\" \"Arttu Pulkkinen\" Kirkkonummi lokakuu 2026"
+      ],
+      "nextSteps": [
+        "Vertaa julkaistujen juttujen ajankohdat ja väitteet.",
+        "Päivitä artikkelin onnettomuusosiota, jos lähteet tarkentuvat."
+      ]
+    }
+  ]
+}
