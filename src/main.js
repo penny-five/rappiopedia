@@ -5,7 +5,8 @@ import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
 import { focusedNodeIds, graphLabelScale, projectedEdgePoint } from './lib/scene.js';
 import { hierarchyGroups } from './lib/hierarchy.js';
-import { renderNodeArticle, renderSourceArchive } from './wiki.js';
+import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
+import { markdownExcerpt } from './lib/article-excerpt.js';
 
 const N=DATA.nodes,E=DATA.edges,S=DATA.sources,by=Object.fromEntries(N.map(n=>[n.id,n]));
 const groupMeta={core:['PACT / OHJELMAPERHE','#466b8a'],season1:['PACTHOUSE 01','#89698b'],season2:['PACTHOUSE 02','#517ea1'],season3:['PACTHOUSE 03','#7466a7'],talks:['PACT TALKS','#2d9187'],rappio:['RAPPIOSTRIIMAUS','#b46b63'],events:['TAPAHTUMAT','#ba8747'],rap:['SLIKI / KETOLA','#a5784e'],stream:['KASINOKURKI','#4485b4'],media:['MEDIA / PALSTAT','#818c97'],poker:['JULKKISPELIT / POKERI','#748f62']};
@@ -316,12 +317,15 @@ function clearSelection(){
 function touchInfo(id){selected=id;pathNodes=[];pathEdges=[];showDetails(id);dirty=true;document.getElementById('rightpanel').classList.add('mobileopen')}
 function flyTo(id,zoom=true){const n=by[id];if(!n)return;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
 function reset(){sector='all';mode='focus';query='';document.getElementById('search').value='';pathNodes=[];pathEdges=[];selected='pact';target=vec(0,-70,0);dist=3650;yaw=-.35;pitch=.22;renderSectors();renderModes();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
+function relatedForNode(id){
+ return E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
+  .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
+}
 function showDetails(id){
  const n=by[id];if(!n)return;
  selected=id;document.title=n.name+' — Rappiopedia';
  if(location.hash!=='#/node/'+id)history.replaceState({node:id},'','#/node/'+id);
- const related=E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
-  .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
+ const related=relatedForNode(id);
  renderNodeArticle({node:n,related,nodes:by,sources:S,levels,group:groupMeta[n.group][0],category:catNames[n.cat]||n.cat});
  document.getElementById('rightpanel').scrollTop=0;
  document.getElementById('wikiArticleTab').classList.add('active');
@@ -352,7 +356,19 @@ document.getElementById('rightpanel').addEventListener('click',event=>{
  const el=event.target.closest('[data-focus]');
  if(el&&by[el.dataset.focus])flyTo(el.dataset.focus);
 });
-function updateTooltip(){let e=document.getElementById('tooltip');if(!hover){e.style.display='none';return}let n=by[hover];if(!n){e.style.display='none';return}e.style.display='block';e.innerHTML=`<b>${esc(n.name)}</b><small>${esc(groupMeta[n.group][0])} / ${esc(catNames[n.cat]||n.cat)}</small><p>${esc(n.note||'')}</p>`;let v=visiblePoints.find(p=>p.id===hover);if(v){e.style.left=Math.min(W-300,v.cx+17)+'px';e.style.top=Math.min(H-130,v.cy+15)+'px'}}
+function updateTooltip(){
+ const tooltip=document.getElementById('tooltip');
+ if(!hover||!by[hover]){tooltip.style.display='none';return}
+ const n=by[hover],excerpt=markdownExcerpt(articleMarkdown(n,relatedForNode(n.id)));
+ tooltip.style.display='block';
+ tooltip.innerHTML='<b>'+esc(n.name)+'</b><small>'+esc(groupMeta[n.group][0])+' / '+esc(catNames[n.cat]||n.cat)+'</small>'
+  +(excerpt?'<p>'+esc(excerpt)+'</p>':'');
+ const v=visiblePoints.find(p=>p.id===hover);
+ if(v){
+  tooltip.style.left=Math.max(8,Math.min(W-240,v.cx+17))+'px';
+  tooltip.style.top=Math.max(8,Math.min(H-130,v.cy+15))+'px';
+ }
+}
 function hit(x,y){let hit=null,d=Infinity;for(let p of visiblePoints){if(x>=p.x-3&&x<=p.x+p.w+3&&y>=p.y-3&&y<=p.y+p.h+3){if(p.depth<d){hit=p.id;d=p.depth}}else if(Math.hypot(x-p.cx,y-p.cy)<p.r&&p.depth<d){hit=p.id;d=p.depth}}return hit}
 space.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;if(e.button!==0&&e.button!==1)return;pointer={x:e.clientX,y:e.clientY,yaw,pitch,target:{...target},moved:false,pan:e.shiftKey||e.button===1};space.setPointerCapture(e.pointerId);space.classList.add('drag')});space.addEventListener('pointermove',e=>{let r=space.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(pointer){let dx=e.clientX-pointer.x,dy=e.clientY-pointer.y;if(Math.hypot(dx,dy)>3)pointer.moved=true;if(pointer.pan){let c=projection(),p=dist/Math.min(W,H)*1.05;target=vec(pointer.target.x-(c.right.x*dx-c.up.x*dy)*p,pointer.target.y-(c.right.y*dx-c.up.y*dy)*p,pointer.target.z-(c.right.z*dx-c.up.z*dy)*p)}else{yaw=pointer.yaw-dx*.005;pitch=Math.max(-1.35,Math.min(1.35,pointer.pitch+dy*.005))}}else{let h=hit(x,y);if(h!==hover){hover=h;dirty=true}space.style.cursor=h?'pointer':'grab'}});space.addEventListener('pointerup',e=>{let r=space.getBoundingClientRect();if(pointer&&!pointer.moved){let n=hit(e.clientX-r.left,e.clientY-r.top);if(n)flyTo(n);else clearSelection()}pointer=null;space.classList.remove('drag')});space.addEventListener('pointerleave',()=>{if(!pointer){hover=null;dirty=true}});space.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(450,Math.min(7600,dist*Math.exp(e.deltaY*.001)))},{passive:false});
 document.getElementById('zoomIn').onclick=()=>dist=Math.max(450,dist*.75);document.getElementById('zoomOut').onclick=()=>dist=Math.min(7600,dist*1.32);document.getElementById('home').onclick=reset;document.getElementById('reset').onclick=reset;document.getElementById('clearSelection').onclick=clearSelection;
