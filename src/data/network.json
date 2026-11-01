@@ -1034,7 +1034,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/daniel.webp",
+      "imageSource": "https://www.tiketti.fi/kuvat/EV115907_7_768x470.jpg",
+      "imageCredit": "Dex Viihde / Tiketti, Daniel Hellman (oikealla) ja Frank Leo, Citycowboys-promokuva (2026)"
     },
     {
       "id": "ella",
@@ -1591,7 +1594,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/harri.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2026/05/pacthouse-susannapenttila.jpg",
+      "imageCredit": "PactHouse / Gekkonen, Harri Eskola (oikealla) ja Susanna Penttilä, PactHouse 3 (8.5.2026)"
     },
     {
       "id": "renne",
@@ -1982,7 +1988,10 @@
       "featured": false,
       "types": [
         "henkilo"
-      ]
+      ],
+      "image": "images/milla.webp",
+      "imageSource": "https://image.seiska.fi/2172950.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=432&imageId=2172950&width=576&x=0.00&y=0.00",
+      "imageCredit": "Miikka Kaskinen / Seiska, Milla Säilynoja (oikealla) ja Joonas Mäkäräinen (5.6.2026)"
     },
     {
       "id": "spurgu",
@@ -2483,7 +2492,10 @@
         -40,
         200
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/jouni_honkanen.webp",
+      "imageSource": "https://www.uuno.fi/wp-content/uploads/2026/10/jonesi-ja-jere-1024x754.jpg",
+      "imageCredit": "PerkausPaikka / Uuno.fi, Jouni ”Jones” Honkanen (vasemmalla) ja Jere Karalahti (8.10.2026)"
     },
     {
       "id": "ice9",
