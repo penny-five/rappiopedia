@@ -1,33 +1,33 @@
 # Tutkimusloki
 
-Tässä kirjataan Rappiopediaan lisätyt uudet tutkimushaarat, niiden lähdetunnisteet ja avoimet tarkistukset. Lähdelinkit ovat varsinaisessa [network.json](../src/data/network.json)-arkistossa.
+Tähän tiedostoon merkitään keskeneräiset selvitykset ja jatkossa tarkistettavat lähteet. Jo julkaistut lähteet löytyvät [`src/data/network.json`](../src/data/network.json)-tiedostosta.
 
-## 1.11.2026 — Pottukoira, PactHouse ja yhteisstriimit
+## 1.11.2026 — Striimaajien vierailut ja PactTalks
 
-**Pottukoira → Testotimo / Aleksi Nurminen → PactHouse 3**
+### Pottukoira, Testotimo ja Aleksi Nurminen
 
-- Gekkosen artikkeli 28.10.2025 kertoo Testotimon ja Aleksi Nurmisen vierailusta Pottukoiran luona Virossa, sekä Pulliksen osallistumisesta saman vierailun yhteydessä. Lähde: \`P60\`.
-- Testotimon omaa subathonia käsittelevä haastattelu kuvaa Aleksi Nurmisen roolia lähetyksen taustalla. Lähde: \`P61\`.
-- Aleksi Nurmisen PactHouse 3 -osallistumista käsittelevä virallinen tiedote on lähde \`P42\`.
-- Graafisolmut: \`viro_pottu_2025\`, \`testotimo\`, \`testotimo_sub\`, \`aleksi\`, \`s3\`.
+Gekkonen uutisoi 28.10.2025 Testotimon ja Aleksi Nurmisen vierailusta Pottukoiran luona Virossa. Uutisessa mainittiin myös Pullis (`P60`). Testotimon subathonia käsittelevä haastattelu kertoo Aleksi Nurmisen osuudesta lähetyksen järjestelyissä (`P61`). Aleksi osallistui myöhemmin PactHouse 3:een (`P42`).
 
-**Pasi Viheraho → PactTalks → Pasiradio**
+Verkostossa aiheeseen liittyvät solmut `viro_pottu_2025`, `testotimo`, `testotimo_sub`, `aleksi` ja `s3`.
 
-- Viheraho vieraili Jethro Rostedtin juontamassa PactTalks-lähetyksessä lokakuussa 2026. Lähde \`P63\`.
-- Graafisolmut: \`pasi\`, \`talk_pasi\`, \`pasiradio\`.
+**Tarkistettavaa:** löytyykö vuoden 2025 vierailusta alkuperäinen Kick-tallenne tai klippejä?
 
-**Bämät matkoilla → PactTalks → Ruusutossu / Alisa**
+### Pasi Viheraho PactTalksissa
 
-- PactTalksin lähetyshistorian otsikoissa esiintyvät Bämät matkoilla -vierailut: \`P64\` ja \`P67\`.
-- Reddit-keskusteluissa Ruusutossu ja Alisa yhdistetään saman projektin matkasisältöön: \`P65\`. Sainin sosiaalisen median jakamiseen viitataan keskustelussa \`P66\`.
-- Graafissa erotellaan vierailut, matkakertomukset ja raportoitu someyhteys. Mahdolliset tuotanto- tai rahoitussopimukset ovat eri selvitettäviä asioita.
+Pasi Viheraho vieraili Jethro Rostedtin juontamassa PactTalksissa 11.10.2026 (`P63`). Hänen aiempi Pasiradio-tuotantonsa on mukana omana aiheenaan.
 
-## Seuraavaksi
+Verkoston solmut: `pasi`, `talk_pasi` ja `pasiradio`.
 
-1. Etsi alkuperäisiä Kick-VOD- tai klippitallenteita vuoden 2025 yhteisstriimeistä.
-2. Vertaa Bämät matkoilla -projektin omia julkaisuja PactTalksin jakso-otsikoihin ja keskusteluketjuihin.
-3. Tarkista muiden PactTalksin ohjelmavieraiden mahdolliset sillat muille verkoston sektoreille.
-4. Seuraa julkisesti nähtäviä sponsoritunnisteita ja erota tunnisteen havainto sopimuksen yksityiskohdista.
-5. Lisää kuvat \`scripts/process_images.py\`-mankelin kautta ja tarkista GitHub Actions -ajon lataustulokset.
+### Bämät matkoilla
 
-Työtavat, näyttöluokat ja tarkistuslista: [Research Playbook](RESEARCH_PLAYBOOK.md).
+PactTalksin lokakuun 2026 lähetysotsikoissa näkyvät Bämät matkoilla -jaksot (`P64`, `P67`). Redditissä on käsitelty Ruusutossun ja Alisan yhteistä Ranskan-striimimatkaa (`P65`). Erillisessä keskustelussa kerrotaan Sainin jakaneen hankkeen julkaisuja sosiaalisessa mediassa (`P66`).
+
+**Tarkistettavaa:** vertaa ohjelman tallenteita, projektin omia julkaisuja ja keskusteluketjuissa kuvattuja tapahtumia.
+
+## Muita selvityksiä
+
+- Etsi PactTalksin vieraille lisää esiintymisiä ja tapahtumia, jotka eivät vielä näy Rappiopediassa.
+- Tarkista alkuperäisistä lähetyksistä `!kasinokurki`- ja muiden tunnisteiden esiintyminen sekä niihin liittyvät ajankohdat.
+- Lisää puuttuvia henkilö- ja tapahtumakuvia, kun lähdekuvat löytyvät. Käytä käsittelyyn [`scripts/process_images.py`](../scripts/process_images.py)-skriptiä.
+
+Uuden merkinnän yhteyteen kannattaa kirjata päivämäärä, tutkittava asia, jo löytyneet lähteet ja se, mitä on vielä tarkistettava. Tiedonhankinnan käytännöt ovat [tutkimusoppaassa](RESEARCH_PLAYBOOK.md).
