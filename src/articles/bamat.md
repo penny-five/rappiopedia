@@ -1,10 +1,13 @@
-**Bämät matkoilla** on lokakuussa 2026 julkisuudessa ollut Kick-/someprojekti, joka esiintyy myös [[talks|PactTalksin]] lähetysotsikoissa. PactTalksin jaksoissa 97 ja 98 (30.–31.10.) vieraan nimeksi on merkitty Bämät matkoilla. [@P64] [@P67]
+**Bämät matkoilla** on suomalainen striimi- ja someprojekti, joka nousi esiin lokakuussa 2026. Hankkeeseen yhdistettiin julkisissa verkkokeskusteluissa [[ruusu|Pinja Ruusutossu]] ja [[alisa_bamat|Alisa]], ja projektin nimi esiintyi [[talks|PactTalksin]] lähetysotsikoissa. [@P65] [@P64]
 
-## Ohjelma- ja matkayhteydet
-- [[ruusu|Ruusutossu]] — Redditissä kuvailtu Ranskan striimimatkaan liittyvä esiintyjä. [@P65]
-- [[alisa_bamat|Alisa]] — samassa julkisessa ketjussa kuvailtu matkakumppani. [@P65]
-- [[jethro|Jethro Rostedt]] — PactTalksin Bämät-jaksojen juontajaksi merkitty. [@P64]
-- [[saini|Anthony ”Saini” Singh]] — Reddit-keskustelijat raportoivat hänen jakaneen Bämät-julkaisuja sosiaalisessa mediassa; varsinainen tuotantorooli on vielä avoin. [@P66]
+## Ranskan-striimimatka
 
-## Kytkentä kaupallisiin sisältöihin
-PactTalksin samojen jaksojen otsikoissa esiintyy `!stake`. Tämä on julkinen sponsorointi-/affiliate-näkyvyyteen viittaava tunniste, mutta pelkkä otsikko ei yksilöi Bämät-hankkeen omaa sopimusta, maksajaa tai ehtoja. [@P64]
+Lokakuun 2026 Reddit-keskusteluissa kerrottiin Ruusutossun ja Alisan yhteisestä Ranskan-matkasta ja projektin somekanavista. Keskusteluissa esitetyt kuvaukset koskivat matkasisältöä ja projektin julkaisuja. [@P65]
+
+## PactTalks-vierailut
+
+PACT-kanavan lokakuun 2026 lähetysarkistossa Bämät matkoilla mainitaan jaksoissa 90, 97 ja 98. Jaksoja juonsi [[jethro|Jethro Rostedt]]. Jaksojen 97 ja 98 otsikoissa esiintyi myös `!stake`-tunniste. [@P19] [@P64] [@P67]
+
+## Sainiin liittynyt keskustelu
+
+Erillisessä Reddit-ketjussa keskustelijat kertoivat [[saini|Anthony ”Saini” Singhin]] jakaneen projektiin liittyviä julkaisuja sosiaalisessa mediassa. Keskustelu koski Sainin mahdollista osuutta hankkeeseen, mutta hänen roolistaan esitettiin eri tulkintoja. [@P66]

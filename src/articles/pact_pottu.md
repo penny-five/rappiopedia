@@ -1,1 +1,5 @@
-**PactTalks / Pottukoira-vierailu** on 19.7.2026 julkaistun YouTube-tallenteen mukaan [[talks|PactTalksin]] keskustelulähetys, jossa vieraana oli [[pottu|Pottukoira]] ja juontajina [[jethro|Jethro Rostedt]] sekä [[okkishow|Okkishow]]. [@P53]
+**Pottukoiran PactTalks-vierailu** on [[talks|PactTalksin]] keskustelulähetys, josta NOPEETNOUSUT-kanava julkaisi tallenteen YouTubeen 19. heinäkuuta 2026. Jakson vieraana oli [[pottu|Pottukoira]] eli Jouko Kärkkäinen. [@P53]
+
+## Lähetys
+
+Tallenteessa ohjelmaa juontavat [[jethro|Jethro Rostedt]] ja [[okkishow|Okkishow]]. Pottukoira osallistui keskusteluun vieraana. Jakso oli osa PACT-ohjelmaperheen julkista suoratoistosisältöä. [@P53]
