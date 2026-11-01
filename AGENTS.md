@@ -20,8 +20,12 @@
 ## Editorial safety and sourcing
 1. Älä keksi lähteitä, tapahtumia, ajankohtia, henkilöllisyyksiä, valokuvien henkilötunnistuksia tai yhteyksiä.
 2. Jokainen olennainen graafin yhteys tarvitsee lähde-ID:n ja rajatun, testattavan väitteen. Merkitse väitteen ja tulkinnan ero.
-3. `verified` = alkuperäisnäyttö; `reported` = journalistinen uutisointi; `observed` = julkinen merkki / vahvasti perusteltu kaupallisen yhteistyön päätelmä; `lead` = avoin, kiistetty tai foorumin väite.
-4. Ylilauta ja Reddit antavat arvokkaita vihjeitä; arkistoi ketjun tarkka URL ja ajankohta. Samankaltaisten anonyymien väitteiden toistuminen ei yksin vahvista niiden paikkansapitävyyttä.
+3. Arvioi **todisteen luonne, ei sivuston mainetta**. `verified` = väitteen yksityiskohdan näyttävä alkuperäisaineisto (myös foorumilla julkaistu kuvallinen/ajallisesti tunnistettava primääriaineisto); `reported` = lähteessä kerrottu konkreettinen tapahtuma, mukaan lukien uskottava, yksilöity ensi käden foorumikertomus; `observed` = suora julkinen havainto tai perusteltu päätelmä (esimerkiksi toistuva sponsoritunniste); `lead` = spekulaatio, välillinen huhu tai liian epämääräinen väite.
+4. **Ylilauta, Reddit ja muut keskustelupalstat ovat hyväksyttäviä itsenäisiä lähteitä**, eivät vain tutkimusvihjeitä. Tavallisille, vähäriskisille skene- ja tapahtumayhteyksille (kuka striimasi kenen kanssa, kuka kävi reissulla, mitä videolla näkyi) tarkka julkinen foorumiviesti voi riittää graafin reunaan ja artikkeliin. Älä vaadi matkustusasiakirjoja, viranomaisrekistereitä tai valtamedian vahvistusta tällaisista arkisista tapahtumista.
+   - Kirjaa alkuperäinen ketju / kommentti, päivämäärä, käyttäjän väitteen tarkka sisältö sekä mahdolliset klipit ja linkit.
+   - Useampi **ajallisesti ja sisällöllisesti riippumaton** yhtäpitävä havainto kasvattaa luottamusta; samaa huhua kopioivat viestit eivät ole itsenäisiä lähteitä.
+   - Kuvaa itse tapahtuma tarvittaessa sanoin "keskusteluketjujen mukaan" tai "useiden käyttäjäkuvausten perusteella". Älä ylitulkkaa matkalla mukanaoloa rahoitus- tai rikosyhteydeksi.
+   - Kun mukana on merkittävä rikosväite, yksityisyyteen tunkeutuva väite tai muu vakava mainehaitta, edellytä tätä vahvempaa näyttöä tai jätä väite pois.
 5. `!kasinokurki`-tunnisteiden toistumista voi kuvata sponsorointi-/affiliate-yhteyteen vahvasti viittaavana havaintona, mutta sopimuksen osapuolet, euromäärät tai ehdot ovat avoimia.
 6. Ohjelman, risteilyn tai tapahtuman yhteinen esiintyminen ei sellaisenaan todista henkilön osallisuutta toisen tekoihin, yhteistä rahoitusta tai liikekumppanuutta.
 7. Älä julkaise yksityisosoitteita, ei-julkisia henkilötietoja tai tunnistamattomien henkilöiden identiteettiarvauksia. Vältä perusteettomia rikosväitteitä.
