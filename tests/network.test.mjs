@@ -24,7 +24,13 @@ test('kaikissa yhteyksissä validit solmut, tyypit ja lähteet',()=>{
 });
 test('ylätason ryhmä viittaa olemassa oleviin kausiin ja solmuihin',()=>{
  const groups=new Set(data.nodes.map(n=>n.group));
- for(const h of hierarchyGroups){for(const g of h.groups)assert.ok(groups.has(g),g);for(const id of h.hubs)assert.ok(nodes.has(id),id)}
+ for(const h of hierarchyGroups){
+  assert.ok(Array.isArray(h.groups)&&h.groups.length>0,h.id+' must have member groups');
+  assert.equal(new Set(h.groups).size,h.groups.length,h.id+' has duplicate groups');
+  for(const g of h.groups)assert.ok(groups.has(g),g);
+  // Hubs are optional: the visual family now encloses all member groups.
+  for(const id of h.hubs ?? [])assert.ok(nodes.has(id),id);
+ }
 });
 test('lyhimmän reitin algoritmi kunnioittaa näyttösuodattimia',()=>{
  const r=shortestPath('pact','jethro',data.edges,levels);
