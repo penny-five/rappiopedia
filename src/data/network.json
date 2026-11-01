@@ -616,7 +616,10 @@
       "types": [
         "striimaaja",
         "matkastriimaaja"
-      ]
+      ],
+      "imageSource": "https://uudetsanomat.fi/wp-content/uploads/2026/08/kick-sampef2.webp",
+      "imageCredit": "Uudet Sanomat, Olli ”SampeF2” Sampelan nimetty artikkelikuva (11.8.2026)",
+      "image": "images/sampe.webp"
     },
     {
       "id": "kp",
@@ -3201,7 +3204,10 @@
         820,
         -120
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://uudetsanomat.fi/wp-content/uploads/2026/07/monnirs-kick.webp",
+      "imageCredit": "Uudet Sanomat, Miika ”MonniRS” Sihvosen nimetty henkilökuva (31.7.2026)",
+      "image": "images/monnirs.webp"
     },
     {
       "id": "keppada",
@@ -3217,7 +3223,10 @@
         2105,
         900,
         -80
-      ]
+      ],
+      "imageSource": "https://files.kick.com/images/user/4085721/profile_image/cb1a730c-220e-4fdc-b060-7793720d1826",
+      "imageCredit": "Kick.com/Keppada, striimaajan oman kanavan profiilikuva",
+      "image": "images/keppada.webp"
     },
     {
       "id": "monni_keppada_africa_2025",
@@ -3338,7 +3347,10 @@
         2220,
         700,
         -160
-      ]
+      ],
+      "imageSource": "https://ugc.production.linktr.ee/88d77203-a116-48da-8a53-0d45a4860f21_IMG-0209.png?io=true&size=avatar-v3_0",
+      "imageCredit": "Linktree @lilbeliini, käyttäjän julkisen profiilin avatar",
+      "image": "images/lily.webp"
     },
     {
       "id": "lily_pullis_viro_2025",
