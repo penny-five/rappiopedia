@@ -12,9 +12,17 @@ Iippadaa teki vuosien ajan suoria lähetyksiä silloisen puolisonsa [[henrik_kur
 
 Huhtikuussa 2025 Kurvinen matkusti Viroon tekemään yhteisiä lähetyksiä [[pottu|Pottukoiran]] eli Jouko Kärkkäisen kanssa. Vierailun aikana paikalla kuvasi myös Sami Kieksi tuotantoryhmineen. Lähetyksiä seurattiin laajasti ja niiden aikana puhuttiin myös kahden striimaajan välisestä suhteesta. Yhteisjakso päättyi toukokuussa 2025. [@P9] [@P56] [@P168]
 
+## Varjofestivaalin välikohtaus kesäkuussa 2025
+
+Kurvinen kuvasi livelähetystä Oulun Varjofestivaalilla 14. kesäkuuta 2025. Seiskan mukaan hän ajautui häiriötilanteeseen ja joutui järjestyksenvalvojien kiinniottamaksi. Kurvinen kertoi viettäneensä yön poliisin säilössä ja piti voimankäyttöä ylimitoitettuna. Poliisi vahvisti Seiskalle kyseisenä iltana tapahtuneen kiinnioton mutta ei kertonut henkilön nimeä. Tapahtumasta on [[iippa_varjofest_2025|oma artikkelinsa]]. [@P195]
+
 ## Kesän 2025 virheellinen kuolemailmoitus
 
-Elokuussa 2025 Seiska uutisoi, että Iippadaan sosiaalisen median tileiltä oli julkaistu viestejä, joiden perusteella hänen väitettiin kuolleen. Huhu osoittautui vääräksi. Kurvinen kertoi Seiskalle itse osallistuneensa viestien julkaisemiseen päihtyneenä, korjanneensa tiedon muutamien tuntien kuluttua ja pyytäneensä toimintaansa anteeksi. Hän kertoi myös aikovansa pitää taukoa striimaamisesta. [@P167]
+Elokuussa 2025 Seiska uutisoi, että Iippadaan sosiaalisen median tileiltä oli julkaistu viestejä, joiden perusteella hänen väitettiin kuolleen. Huhu osoittautui vääräksi. Kurvinen kertoi Seiskalle itse osallistuneensa viestien julkaisemiseen päihtyneenä, korjanneensa tiedon muutamien tuntien kuluttua ja pyytäneensä toimintaansa anteeksi. Hän kertoi myös aikovansa pitää taukoa striimaamisesta. Tapaus tunnetaan [[iippa_kuolemailmoitus_2025|Iippadaan virheellisenä kuolemailmoituksena]]. [@P167]
+
+## Paluu Pottukoiran luo maaliskuussa 2026
+
+Iippadaa palasi [[pottu|Pottukoiran]] luo Viron Harjumaalle 10. maaliskuuta 2026. Gekkonen uutisoi kaksikon [[iippa_pottu_2026|yhteislähetyksessä]] syntyneestä riidasta, jonka takia striimi keskeytettiin. Uutisen mukaan molemmat palasivat myöhemmin samana iltana lähetykseen. Tämä oli eri matka kuin vuoden 2025 yhteislähetykset. [@P196]
 
 ## Kieksi-dokumentti huhtikuussa 2026
 

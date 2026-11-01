@@ -676,6 +676,98 @@
         "Tarkista myöhemmät yhteisstriimit syksyltä 2026."
       ],
       "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "iippa-2025-2026-events",
+      "title": "Iippadaan 2025–2026 tapahtumien alkuperäistallenteet",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "iippa",
+        "iippa_varjofest_2025",
+        "iippa_kuolemailmoitus_2025",
+        "iippa_pottu_2026",
+        "pottu"
+      ],
+      "sourceIds": [
+        "P167",
+        "P195",
+        "P196"
+      ],
+      "notes": "1.11.2026: Varjofest, kuolemailmoitus ja maaliskuun 2026 Viron lähetys lisätty lähteistettyinä tapahtumina. Varjofestin poliisivahvistus ei kerro henkilön nimeä.",
+      "questions": [
+        "Löytyvätkö alkuperäiset Varjofestin ja 10.3.2026 lähetykset?",
+        "Ovatko kuolemailmoituksen alkuperäiset viestit julkisia?"
+      ],
+      "queries": [
+        "\"iippadaa\" varjofest 14.6.2025 video",
+        "\"iippadaa\" \"pottukoira\" 10.3.2026 kick"
+      ],
+      "nextSteps": [
+        "Etsi alkuperäisvideot ja ajankohdat.",
+        "Tarkista uutisten yksityiskohdat tallenteita vasten."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "perjantai-rappiostriimaajat-2026",
+      "title": "Ylen Perjantai ja KenuKendallin yhteislähetykset",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "kenukendall",
+        "lassi",
+        "monnirs",
+        "perjantai_kannissa_2026",
+        "perjantai_lassi_2026"
+      ],
+      "sourceIds": [
+        "P197",
+        "P198"
+      ],
+      "notes": "1.11.2026: Ylen verkkoreportaasi ja erillinen Lassi-dokumentti eriytetty. Keinänen ja MonniRS haastateltiin reportaasiin; ei varmistusta heidän osallistumisestaan dokumenttiin.",
+      "questions": [
+        "Mistä löytyvät KenuKendallin omat lähetysarkistot?",
+        "Ketkä ovat esiintyneet hänen kanssaan dokumentoidusti?"
+      ],
+      "queries": [
+        "\"KenuKendall\" Kick yhteisstriimi",
+        "\"Laura Keinänen\" striimi tallenne"
+      ],
+      "nextSteps": [
+        "Etsi kanavahistoria ja alkuperäislähetykset.",
+        "Täydennä henkilöartikkeli uusilla luotettavilla lähteillä."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "monnirs-keppada-africa-2025",
+      "title": "MonniRS:n ja Keppadan Afrikka-liftauksen jatko",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "monnirs",
+        "keppada",
+        "monni_keppada_africa_2025"
+      ],
+      "sourceIds": [
+        "P197",
+        "P199"
+      ],
+      "notes": "1.11.2026: Julkaistu 5.9.2025 alkanut liftaus Jyväskylästä kohti Afrikkaa. Määränpäähän pääsyä ei ole vahvistettu.",
+      "questions": [
+        "Mihin asti matka eteni ja milloin se päättyi?",
+        "Löytyykö arkistoituja Kick-VOD-tallenteita?"
+      ],
+      "queries": [
+        "\"MonniRS\" \"Keppada\" Afrikka 2025",
+        "\"Keppada\" \"MonniRS\" Kick liftaten"
+      ],
+      "nextSteps": [
+        "Etsi aikaleimat ja arkistot.",
+        "Täydennä reitti vasta vahvistettujen lähteiden perusteella."
+      ],
+      "updatedAt": "2026-11-01"
     }
   ]
 }

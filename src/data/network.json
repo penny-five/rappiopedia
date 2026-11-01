@@ -3118,6 +3118,145 @@
         530
       ],
       "featured": false
+    },
+    {
+      "id": "iippa_varjofest_2025",
+      "name": "Iippadaan kiinniotto Varjofestissä 14.6.2025",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Iippadaa otettiin kiinni Oulun Varjofestivaalilla 14. kesäkuuta 2025 suoratoistoon liittyneen häiriötilanteen jälkeen.",
+      "pos3": [
+        2440,
+        -25,
+        660
+      ]
+    },
+    {
+      "id": "iippa_kuolemailmoitus_2025",
+      "name": "Iippadaan virheellinen kuolemailmoitus 2025",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Heinäkuun 2025 lopulla Iippadaan sosiaalisessa mediassa julkaistiin virheellinen kuolintieto. Hän kertoi myöhemmin osallistuneensa julkaisuihin.",
+      "pos3": [
+        2490,
+        100,
+        690
+      ]
+    },
+    {
+      "id": "iippa_pottu_2026",
+      "name": "Iippadaa Pottukoiran luona Virossa 10.3.2026",
+      "group": "pottu-streams",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Iippadaa vieraili Pottukoiran luona Harjumaalla maaliskuussa 2026. Yhteislähetys keskeytyi riitaan ja jatkui myöhemmin.",
+      "pos3": [
+        3370,
+        -240,
+        571
+      ]
+    },
+    {
+      "id": "kenukendall",
+      "name": "KenuKendall / Laura Keinänen",
+      "group": "rappio",
+      "cat": "person",
+      "types": [
+        "rappiostriimaaja"
+      ],
+      "note": "Laura ”KenuKendall” Keinänen on suomalainen rappiostriimaaja, josta Yle teki henkilöhaastattelun helmikuussa 2026.",
+      "pos3": [
+        2195,
+        -250,
+        1240
+      ],
+      "featured": true
+    },
+    {
+      "id": "monnirs",
+      "name": "MonniRS / Miika Sihvonen",
+      "group": "reality",
+      "cat": "person",
+      "types": [
+        "striimaaja",
+        "matkastriimaaja"
+      ],
+      "note": "Miika ”MonniRS” Sihvonen on IRL- ja haastesuoratoistaja, joka teki vuonna 2025 Keppadan kanssa liftausmatkaa kohti Afrikkaa.",
+      "pos3": [
+        1875,
+        820,
+        -120
+      ],
+      "featured": true
+    },
+    {
+      "id": "keppada",
+      "name": "Keppada / Ville",
+      "group": "reality",
+      "cat": "person",
+      "types": [
+        "striimaaja",
+        "matkastriimaaja"
+      ],
+      "note": "Keppada on Ville-etunimellä tunnettu IRL-striimaaja, joka lähti MonniRS:n kanssa liftaten kohti Afrikkaa vuonna 2025.",
+      "pos3": [
+        2105,
+        900,
+        -80
+      ]
+    },
+    {
+      "id": "monni_keppada_africa_2025",
+      "name": "MonniRS:n ja Keppadan liftausmatka 2025",
+      "group": "reality",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "note": "Kaksi IRL-striimaajaa aloitti 5.9.2025 Jyväskylästä liftausmatkan kohti Afrikkaa ja lähetti matkaansa Kickissä.",
+      "pos3": [
+        1995,
+        930,
+        -30
+      ]
+    },
+    {
+      "id": "perjantai_kannissa_2026",
+      "name": "Ylen Perjantai: Kännissä livessä (2026)",
+      "group": "documents",
+      "cat": "media",
+      "types": [
+        "julkaisu"
+      ],
+      "note": "Ylen 12. helmikuuta 2026 julkaistu rappiostriimausreportaasi haastatteli Laura Keinästä, Lassi Kuhlmania ja Miika Sihvosta.",
+      "pos3": [
+        1640,
+        -100,
+        1695
+      ]
+    },
+    {
+      "id": "perjantai_lassi_2026",
+      "name": "Perjantai-dokkari: Vittuilijat maksaa mun juomat",
+      "group": "documents",
+      "cat": "show",
+      "types": [
+        "dokumenttiohjelma"
+      ],
+      "note": "Ylen 6. helmikuuta 2026 julkaisema dokumentti seuraa Lassi Kuhlmanin elämää rappiostriimaajana.",
+      "pos3": [
+        1670,
+        -275,
+        1795
+      ]
     }
   ],
   "edges": [
@@ -6702,6 +6841,138 @@
       ],
       "level": "reported",
       "date": "2026-07-14"
+    },
+    {
+      "a": "iippa",
+      "b": "iippa_varjofest_2025",
+      "type": "osallistui",
+      "label": "kuvasi striimiä ja otettiin kiinni Varjofestillä",
+      "date": "14.6.2025",
+      "level": "reported",
+      "src": [
+        "P195"
+      ]
+    },
+    {
+      "a": "iippa",
+      "b": "iippa_kuolemailmoitus_2025",
+      "type": "julkaisi",
+      "label": "julkaisi tuttavansa kanssa virheelliset kuolintiedot",
+      "date": "2025-07",
+      "level": "reported",
+      "src": [
+        "P167"
+      ]
+    },
+    {
+      "a": "iippa",
+      "b": "iippa_pottu_2026",
+      "type": "osallistui",
+      "label": "vieraili Pottukoiran lähetyksessä Harjumaalla",
+      "date": "10.3.2026",
+      "level": "reported",
+      "src": [
+        "P196"
+      ]
+    },
+    {
+      "a": "pottu",
+      "b": "iippa_pottu_2026",
+      "type": "isannoi",
+      "label": "isännöi Iippadaan vierailua ja yhteistä Kick-lähetystä",
+      "date": "10.3.2026",
+      "level": "reported",
+      "src": [
+        "P196"
+      ]
+    },
+    {
+      "a": "iippa",
+      "b": "pottu",
+      "type": "striimasi-yhdessa",
+      "label": "lähettivät yhdessä Virossa maaliskuussa 2026",
+      "date": "10.3.2026",
+      "level": "reported",
+      "src": [
+        "P196"
+      ]
+    },
+    {
+      "a": "kenukendall",
+      "b": "perjantai_kannissa_2026",
+      "type": "oli-haastateltavana",
+      "label": "kertoi Ylelle rappiostriimausurastaan",
+      "date": "12.2.2026",
+      "level": "verified",
+      "src": [
+        "P197"
+      ]
+    },
+    {
+      "a": "lassi",
+      "b": "perjantai_kannissa_2026",
+      "type": "oli-haastateltavana",
+      "label": "kertoi Ylelle striimaamisesta ja kokemaansa väkivallasta",
+      "date": "12.2.2026",
+      "level": "verified",
+      "src": [
+        "P197"
+      ]
+    },
+    {
+      "a": "monnirs",
+      "b": "perjantai_kannissa_2026",
+      "type": "oli-haastateltavana",
+      "label": "kertoi Ylelle haaste- ja IRL-lähetyksistään",
+      "date": "12.2.2026",
+      "level": "verified",
+      "src": [
+        "P197"
+      ]
+    },
+    {
+      "a": "lassi",
+      "b": "perjantai_lassi_2026",
+      "type": "esiintyi",
+      "label": "oli Perjantai-dokumentin päähenkilö",
+      "date": "6.2.2026",
+      "level": "verified",
+      "src": [
+        "P198"
+      ]
+    },
+    {
+      "a": "monnirs",
+      "b": "monni_keppada_africa_2025",
+      "type": "matkusti",
+      "label": "lähti Keppadan kanssa liftaamaan kohti Afrikkaa",
+      "date": "5.9.2025",
+      "level": "reported",
+      "src": [
+        "P199"
+      ]
+    },
+    {
+      "a": "keppada",
+      "b": "monni_keppada_africa_2025",
+      "type": "matkusti",
+      "label": "lähti MonniRS:n kanssa liftaamaan kohti Afrikkaa",
+      "date": "5.9.2025",
+      "level": "reported",
+      "src": [
+        "P199"
+      ]
+    },
+    {
+      "a": "monnirs",
+      "b": "keppada",
+      "type": "travelled-together",
+      "label": "aloittivat liftausmatkan Jyväskylästä",
+      "date": "5.9.2025",
+      "level": "reported",
+      "src": [
+        "P199"
+      ]
     }
   ],
   "sources": {
@@ -7679,6 +7950,31 @@
       "label": "Reddit 31.3.2025: Upin, Pirkkiksen ja Taigan matkan paluu",
       "url": "https://www.reddit.com/r/snappisensuroimaton/comments/1jo5rxu",
       "note": "Yksittäinen keskustelija väittää Pirkkiksen myöhästyneen paluulennoilta ja Upin jääneen seuraksi; ei vahvistettu tallenteesta."
+    },
+    "P195": {
+      "label": "Seiska 17.6.2025: Iippadaan Varjofest-kiinniotto",
+      "url": "https://www.seiska.fi/vain-seiskassa/kuva-rappiostriimaaja-hammensi-festareilla-iskettiin-rautoihin-ja-heitettiin-putkaan/1838226",
+      "note": "14.6.2025 Oulun Varjofest, Kurvisen omat kommentit ja poliisin yleinen vahvistus kiinniotosta."
+    },
+    "P196": {
+      "label": "Gekkonen 10.3.2026: Iippadaa ja Pottukoira yhdessä Virossa",
+      "url": "https://gekkonen.net/pottukoira-ja-iippadaa-taas-yhdessa-ilta-eskaloitui-tappeluksi-video/",
+      "note": "Erillinen maaliskuun 2026 yhteislähetys, riita, keskeytys ja jatkuminen."
+    },
+    "P197": {
+      "label": "Yle Perjantai 12.2.2026: Kännissä livessä",
+      "url": "https://yle.fi/a/74-20209886",
+      "note": "Ylen henkilöhaastattelut Laura Keinäsen, Lassi Kuhlmanin ja Miika Sihvosen kanssa."
+    },
+    "P198": {
+      "label": "Yle Areena 6.2.2026: Vittuilijat maksaa mun juomat",
+      "url": "https://areena.yle.fi/1-76546844",
+      "note": "Perjantai-dokumentin julkaisutieto ja Lassi Kuhlmanin päähenkilörooli."
+    },
+    "P199": {
+      "label": "Mediamaailma 5.9.2025: Keppadan ja MonniRS:n liftausmatka",
+      "url": "https://mediamaailma.fi/keppada-ja-monnirs-liftaten-afrikkaan-henkan-ja-vesan-roadtrip-seka-muut-irl-striimit-viikonlopulle/",
+      "note": "Kaksikko lähti Jyväskylästä liftaten Afrikkaa kohti omissa Kick-lähetyksissään; pääsyä Afrikkaan ei vahvisteta."
     }
   },
   "date": "2026-11-01"

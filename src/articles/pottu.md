@@ -20,6 +20,10 @@ Pottukoira on tehnyt lähetyksiä myös nimellä [[spurgu|Spurgu-TV]]. Hänen ka
 
 Lokakuussa 2025 hänen luonaan Virossa vierailivat [[testotimo|Testotimo]] ja [[aleksi|Aleksi Nurminen]], ja Gekkonen mainitsi myös [[pullis|Pulliksen]] saman vierailukokonaisuuden yhteydessä. Loppuvuonna 2025 hän teki yhteisiä keittiöpöytälähetyksiä [[rauno77|Rauno77:n]] kanssa. Kaksikon välirikkoa käsiteltiin joulukuun uutisoinnissa. [@P60] [@P62]
 
+## Iippadaan uusi vierailu maaliskuussa 2026
+
+[[iippa|Iippadaa]] palasi Kärkkäisen luo Harjumaalle 10. maaliskuuta 2026. Kaksikko teki [[iippa_pottu_2026|yhteisen Kick-lähetyksen]], jossa syntyi Gekkosen mukaan riita ja lähetys keskeytettiin hetkeksi. Myöhemmin samana iltana striimaus jatkui. [@P196]
+
 ## Oikeusasiat vuosina 2024 ja 2026
 
 Pohjois-Savon käräjäoikeus tuomitsi Kärkkäisen lokakuussa 2024 kahdesta kunnianloukkauksesta, kahdesta laittomasta uhkauksesta ja lievästä vahingonteosta. Teot liittyivät Ylen mukaan syksyllä 2023 julkisissa lähetyksissä esitettyihin lausumiin ja tilanteisiin. Rangaistus oli 80 päiväsakkoa. [@P130]

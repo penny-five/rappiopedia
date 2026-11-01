@@ -1,10 +1,10 @@
-**Lassi Kuhlman**, joka tunnetaan myös nimellä **Katujen kuningas**, on tamperelainen TikTokista ja Kickin rappiostriimeistä tunnettu sisällöntuottaja. Hän tuli erityisen laajaan julkisuuteen Ylen helmikuussa 2026 julkaisemasta *Vittuilijat maksaa mun juomat* -dokumentista.
+**Lassi Kuhlman**, joka tunnetaan myös nimellä **Katujen kuningas**, on tamperelainen TikTokista ja Kickin rappiostriimeistä tunnettu sisällöntuottaja. Hän tuli erityisen laajaan julkisuuteen Ylen helmikuussa 2026 julkaisemasta [[perjantai_lassi_2026|*Vittuilijat maksaa mun juomat* -dokumentista]].
 
 ## Video- ja striimausura
 
 Ylen helmikuun 2026 henkilöhaastattelun mukaan Kuhlman aloitti TikTokissa tanssivideoilla ja siirtyi myöhemmin pitkiin suoratoistolähetyksiin. Katsojat saattoivat vaikuttaa hänen tekemiseensä rahalahjoituksilla. Hän kertoi myös haluavansa myöhemmin opiskella IT-alalle ja tehdä muuta työtä.
 
-Yle julkaisi 6. helmikuuta 2026 *Perjantai*-sarjaan kuuluvan noin kymmenminuuttisen dokumentin hänen striimielämästään. Yle jatkoi ilmiön käsittelyä 12. helmikuuta jutussa, jossa haastateltiin myös Laura ”KenuKendall” Keinästä.
+Yle julkaisi 6. helmikuuta 2026 *Perjantai*-sarjaan kuuluvan noin kymmenminuuttisen [[perjantai_lassi_2026|dokumentin]] hänen striimielämästään. Yle jatkoi ilmiön käsittelyä 12. helmikuuta [[perjantai_kannissa_2026|artikkelissa]], jossa haastateltiin myös [[kenukendall|Laura ”KenuKendall” Keinästä]] ja [[monnirs|Miika ”MonniRS” Sihvosta]]. [@P198] [@P197]
 
 ## Muut striimaajat
 
