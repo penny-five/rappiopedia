@@ -12,6 +12,8 @@ Sami Kieksi kuvasi Pirkkistä ja [[upi|Upia]] vuonna 2026 julkaistuun rappiostri
 
 Marraskuussa 2025 Pirkkis matkusti [[sampe|SampeF2:n]] kanssa Ateenaan. Häneen ei saatu yhteyttä 8. marraskuuta lähtien, ja Sampe julkaisi videoita etsinnöistä. Seiska kertoi 10. marraskuuta, että Pirkkis oli löytynyt; Sampen mukaan Kreikan poliisi oli ottanut hänet kiinni jo kaksi päivää aiemmin. Matkan aikana keskusteltiin myös Pirkkiksen passia koskeneesta väitteestä. Tapahtumista kerrotaan tarkemmin [[ateena25|Ateenan-matkan artikkelissa]]. [@P50] [@P49]
 
+Gekkosen 11. marraskuuta julkaisemassa jatkouutisessa kerrottiin, että Sampe nouti Pirkkiksen poliisin luota ja että tämä oli käynyt lyhyessä oikeudenkäynnissä. Pirkkis kertoi omassa striimissään kiinnioton liittyneen toisen henkilön puhelimesta syntyneeseen väärinkäsitykseen. [@P74]
+
 ## Amsterdamin-matka
 
 Huhtikuun 2025 Reddit-keskustelussa Pirkkis, Upi ja [[taiga|Taiga]] yhdistettiin [[ams25|yhteiseen Amsterdamin-striimimatkaan]]. [@P52]

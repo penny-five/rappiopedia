@@ -6,7 +6,7 @@
     {
       "id": "pirkkis-athens-2025",
       "title": "Pirkkiksen Ateenan-matka ja katoaminen",
-      "status": "open",
+      "status": "in-progress",
       "priority": "high",
       "nodeIds": [
         "ateena25",
@@ -15,23 +15,31 @@
       ],
       "sourceIds": [
         "P49",
-        "P50"
+        "P50",
+        "P73",
+        "P74"
       ],
-      "notes": "Seiskan 10.11.2025 jutut käsittelevät katoamista, Sampen etsintävideoita, passia koskevaa kertomusta sekä löytymistä. Vertaa uutisointia alkuperäisiin lähetyksiin.",
+      "notes": "Seiskan 10.11.2025 jutut käsittelevät katoamista, Sampen etsintävideoita, passia koskevaa kertomusta sekä löytymistä. Vertaa uutisointia alkuperäisiin lähetyksiin. Lisälähteet 1.11.2026: Gekkonen julkaisi 10.11.2025 tiedon Sampelan Discordissa mainitsemasta klo 9.05 poliisikontaktista; 11.11.2025 uutinen käsittelee noutamista, lyhyttä oikeusistuntoa ja Pirkkiksen omaa puhelinvarkauden väärinkäsitystä koskevaa kertomusta. Vauva.fi:n 10.11.2025 keskustelussa on yksilöity Kick-VOD-osoite, jonka sisältöä ei voitu vahvistaa selaimessa.",
       "questions": [
         "Mitä alkuperäinen Iltalehden haastattelu kertoo tapahtumien aikajanasta?",
         "Löytyvätkö Sampen Ateenan-lähetykset tai tallenteet?",
-        "Mitä matkan passitilanteesta näytetään alkuperäisellä videolla?"
+        "Mitä matkan passitilanteesta näytetään alkuperäisellä videolla?",
+        "Mitä 10.11.2025 keskustelussa linkitetyllä Kick-tallenteella näytetään ja onko se edelleen saatavilla?"
       ],
       "queries": [
         "\"Pirkkis\" \"SampeF2\" Ateena marraskuu 2025",
         "\"Olli Sampela\" \"Kari Liimatta\" Ateena",
-        "\"Pirkka Ukko\" passi Ateena striimi"
+        "\"Pirkka Ukko\" passi Ateena striimi",
+        "\"SampeF2\" \"Pirkkis\" \"8f6c8cdd-1fa6-426f-9767-fa905099ccd3\""
       ],
       "nextSteps": [
         "Tarkista Iltalehden alkuperäinen uutinen.",
         "Etsi tallenteet ja kirjaa kunkin videon päivä ja olennainen aikaleima.",
-        "Päivitä artikkeli, jos löytyy uutta lähteistettyä tietoa."
+        "Päivitä artikkeli, jos löytyy uutta lähteistettyä tietoa.",
+        "Tarkista 10.11.2025 jaettu SampeF2:n Kick-VOD ja mahdollinen 11.11.2025 Pirkkiksen oma selostustallenne. Vertaile niitä Gekkosen uutiseen."
+      ],
+      "sourceUrls": [
+        "https://kick.com/sampef2/videos/8f6c8cdd-1fa6-426f-9767-fa905099ccd3"
       ]
     },
     {
@@ -121,6 +129,41 @@
       "nextSteps": [
         "Vertaa julkaistujen juttujen ajankohdat ja väitteet.",
         "Päivitä artikkelin onnettomuusosiota, jos lähteet tarkentuvat."
+      ]
+    },
+    {
+      "id": "sampe-oct2026-joint-streams",
+      "title": "SampeF2:n lokakuun 2026 yhteislähetysten tallenteet",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "sampe",
+        "sampe_iippa_megis_2026",
+        "iippa",
+        "megis",
+        "pullis",
+        "anton"
+      ],
+      "sourceIds": [
+        "P75",
+        "P76",
+        "P77"
+      ],
+      "notes": "StreamRecorderin ja Streams Chartsin lähetysotsikoissa näkyvät Iippadaa ja Megis lokakuun 20.–22. päivän striimeissä. Eri seurantapalvelut merkitsevät joidenkin lähetysten päivät eri tavoin. Lisäksi syyskuun Tallinnan-otsikoissa mainitaan Anton Koskela ja Pullis sekä lokakuun Riian-otsikoissa Pullis ja Jenniveri. Varsinaista videosisältöä ei ole tarkistettu.",
+      "questions": [
+        "Ovatko Iippadaa ja Megis nähtävissä samassa alkuperäisessä tallenteessa ja missä kohdassa?",
+        "Mitä Tallinnan ja Riian tallenteet osoittavat muista nimetyistä vieraista?",
+        "Löytyvätkö tapahtumille vakaat alkuperäiset Kick-VOD-linkit?"
+      ],
+      "queries": [
+        "\"sampef2\" \"SETIT w/ iippadaa & megis\"",
+        "\"sampef2\" \"Riika\" \"Pullis\"",
+        "\"sampef2\" \"Anton Koskela\" \"Tallinnassa\""
+      ],
+      "nextSteps": [
+        "Etsi lokakuun 20.–22.10.2026 alkuperäiset tallenteet ja kirjaa tarkat aikaleimat.",
+        "Varmista erillisten seurantapalvelujen paikallisajat ennen päivätason väitteitä.",
+        "Laajenna artikkelia ja lisää Tallinnan/Riian tapahtumayhteydet vain videon tai riittävän yksilöidyn alkuperäislähteen perusteella."
       ]
     }
   ]

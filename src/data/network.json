@@ -481,7 +481,7 @@
       "name": "SampeF2",
       "group": "stream",
       "cat": "person",
-      "note": "SampeF2 on suomalainen striimaaja, jonka lähetysotsikoissa on esiintynyt !kasinokurki-komento.",
+      "note": "Olli ”SampeF2” Sampela on suomalainen Kick-striimaaja, joka tekee IRL- ja matkalähetyksiä. Hän striimasi Pirkkiksen kanssa Ateenassa vuonna 2025 ja teki vuonna 2026 lähetyksiä myös muiden suomalaisten striimaajien kanssa.",
       "x": 4210,
       "y": 1670,
       "pos3": [
@@ -1711,6 +1711,19 @@
         987,
         306,
         -26
+      ],
+      "featured": false
+    },
+    {
+      "id": "sampe_iippa_megis_2026",
+      "name": "SampeF2:n yhteislähetykset / 10.2026",
+      "group": "events",
+      "cat": "event",
+      "note": "SampeF2:n lokakuun 2026 Kick-lähetyshistoriassa esiintyvät Iippadaan ja Megiksen nimet samassa lähetysotsikossa. Megis mainitaan myös seuraavien päivien Tornion-lähetyksissä.",
+      "pos3": [
+        740,
+        70,
+        450
       ],
       "featured": false
     }
@@ -4088,6 +4101,55 @@
       ],
       "date": "2026-10-30",
       "type": "vieraili"
+    },
+    {
+      "a": "sampe",
+      "b": "kick",
+      "label": "striimaa omalla sampef2-kanavallaan Kickissä",
+      "level": "verified",
+      "src": [
+        "P75"
+      ],
+      "type": "kayttaa"
+    },
+    {
+      "a": "sampe",
+      "b": "sampe_iippa_megis_2026",
+      "label": "Kick-kanavan lähetykset lokakuussa 2026",
+      "level": "observed",
+      "src": [
+        "P76",
+        "P77"
+      ],
+      "date": "2026-10",
+      "type": "striimasi",
+      "detail": "SampeF2:n kanavan arkistoidut IRL-lähetysotsikot lokakuulta 2026."
+    },
+    {
+      "a": "iippa",
+      "b": "sampe_iippa_megis_2026",
+      "label": "nimi 'SETIT w/ iippadaa & megis' -lähetysotsikossa",
+      "level": "observed",
+      "src": [
+        "P76",
+        "P77"
+      ],
+      "date": "2026-10",
+      "type": "nakyi",
+      "detail": "Striimin otsikko mainitsee Iippadaan; alkuperäisen tallenteen sisältöä ei käyty läpi."
+    },
+    {
+      "a": "megis",
+      "b": "sampe_iippa_megis_2026",
+      "label": "nimetty SampeF2:n lokakuun yhteislähetysten otsikoissa",
+      "level": "observed",
+      "src": [
+        "P76",
+        "P77"
+      ],
+      "date": "2026-10",
+      "type": "nakyi",
+      "detail": "Striimien otsikot mainitsevat Megiksen useampana päivänä lokakuussa 2026."
     }
   ],
   "sources": {
@@ -4455,6 +4517,31 @@
       "label": "Uuno 25.8.2026: Pinja Ruusutossu PactTalksin vieraana",
       "url": "https://www.uuno.fi/pinja-ruusutossu-tunnusti-talkshowssa-oon-neitsyt-valehteli-sampo-kaulasesta/",
       "note": "Ruusutossun julkisuus, ohjelmavierailu ja hänen itsestään kertomansa asiat."
+    },
+    "P73": {
+      "label": "Gekkonen 10.11.2025: SampeF2:n Discord-päivitys Ateenasta",
+      "url": "https://gekkonen.net/helpottavia-uutisia-kreikassa-kadonneesta-rappiostriimaajasta/",
+      "note": "Gekkonen julkaisi 10.11. klo 18.28 Sampelan Discord-ilmoituksen: tieto Karin poliisikontaktista lauantaina klo 9.05; Pottukoiran vahvistus klo 19.15."
+    },
+    "P74": {
+      "label": "Gekkonen 11.11.2025: Pirkkiksen kertomus kiinniotosta Ateenassa",
+      "url": "https://gekkonen.net/tasta-syysta-pirkka-ukko-joutui-putkaan-kreikassa/",
+      "note": "Kertoo noutamisesta poliisilta, pikaisesta oikeudenkäynnistä ja Pirkkiksen kameralle antamasta selityksestä puhelinvarkauteen liittyneestä väärinkäsityksestä. Kyse on uutisen ja Pirkkiksen kertomuksista."
+    },
+    "P75": {
+      "label": "SampeF2:n oma Kick-kanava",
+      "url": "https://kick.com/sampef2",
+      "note": "Kanavan nimi ja julkinen IRL-lähetystoiminta; ei yksittäisen 2025-videon tallenne."
+    },
+    "P76": {
+      "label": "StreamRecorder: SampeF2:n Kick-lähetyshistoria 2026",
+      "url": "https://streamrecorder.io/kick/sampef2",
+      "note": "Lokakuun 2026 striimiotsikot mainitsevat Iippadaan ja Megiksen yhteisessä lähetysotsikossa sekä Tornion, Riian ja Tallinnan lähetyksiä. Arkiston metadata, ei tarkastettu video."
+    },
+    "P77": {
+      "label": "Streams Charts: SampeF2:n Kick-lähetysten otsikot lokakuussa 2026",
+      "url": "https://streamscharts.com/channels/sampef2/streams?platform=kick",
+      "note": "Vertailuarkisto listaa lokakuun 20.–22. päivän lähetyksiä, joissa esiintyvät nimet Iippadaa ja Megis; palveluiden alkuajat eivät kaikilta osin ole samoja."
     }
   },
   "date": "2026-11-01"
