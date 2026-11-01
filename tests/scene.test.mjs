@@ -300,3 +300,19 @@ test('on-screen arrow pad provides continuous movement with proper release handl
  assert.match(main,/if\(e\.defaultPrevented\|\|e\.ctrlKey/);
  assert.match(css,/\.movement-pad button\.active/);
 });
+
+test('movement arrows are identical vector icons and elevation buttons use Q/E', () => {
+ const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ const css=readFileSync(new URL('../src/styles.css',import.meta.url),'utf8');
+ const keys=['arrowup','arrowdown','arrowleft','arrowright','e','q'];
+ const icons=[...html.matchAll(/data-move-key="(arrow(?:up|down|left|right)|e|q)"[^>]*>(<svg[^>]*><path[^>]*\/><\/svg>)<\/button>/g)];
+ assert.equal(icons.length,6,'six SVG buttons, not font-glyph arrows');
+ assert.equal(new Set(icons.map(match=>match[2])).size,1,'every arrow has the same stroke width and path');
+ assert.match(icons[0][2],/stroke-width="2\.25"/);
+ assert.deepEqual(new Set(icons.map(match=>match[1])),new Set(keys));
+ assert.match(html,/class="movement-height" role="group" aria-label="Korkeus"/);
+ assert.match(html,/data-move-key="e" aria-label="Nouse"/);
+ assert.match(html,/data-move-key="q" aria-label="Laske"/);
+ assert.match(css,/\.movement-height \[data-move-key="q"\] svg\{transform:rotate\(180deg\)\}/);
+ assert.match(css,/\.movement-directions \[data-move-key="arrowleft"\] svg\{transform:rotate\(-90deg\)\}/);
+});
