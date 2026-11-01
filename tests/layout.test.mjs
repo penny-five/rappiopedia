@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { bounds3D, boxesOverlap3D } from '../src/lib/scene.js';
-import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierarchyRootForChild } from '../src/lib/hierarchy.js';
+import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierarchyRootForChild, hierarchyNavigationItems } from '../src/lib/hierarchy.js';
 
 const { nodes } = JSON.parse(readFileSync(new URL('../src/data/network.json', import.meta.url), 'utf8'));
 const skenes = JSON.parse(readFileSync(new URL('../src/data/skenes.json', import.meta.url), 'utf8'));
@@ -40,6 +40,42 @@ test('hierarchy definitions are reusable and have disjoint group membership', ()
   }
  }
  assert.equal(isHierarchyRoot('pottu-streams'), false);
+});
+
+test('PACT and Rappiostriimaus share the same selectable nested sidebar hierarchy', () => {
+ const items = hierarchyNavigationItems(skenes);
+ const ids = items.map(item => item.id);
+ const pactIndex = ids.indexOf('pact-universe');
+ const rappioIndex = ids.indexOf('rappio');
+ assert.deepEqual(ids.slice(pactIndex, pactIndex + 6), [
+  'pact-universe', 'core', 'season1', 'season2', 'season3', 'talks'
+ ]);
+ assert.deepEqual(ids.slice(rappioIndex, rappioIndex + 2), ['rappio', 'pottu-streams']);
+ assert.equal(items[pactIndex].label, 'PACT / OHJELMAPERHE');
+ assert.equal(items[pactIndex].child, false);
+ assert.equal(items[pactIndex + 1].label, 'PACT / TAUSTA JA ALUSTA');
+ for (const item of items.slice(pactIndex + 1, pactIndex + 6)) {
+  assert.equal(item.child, true, item.id + ' must be indented under PACT');
+ }
+ assert.equal(items[rappioIndex].child, false);
+ assert.equal(items[rappioIndex + 1].child, true);
+ assert.equal(ids.length, Object.keys(skenes).length + 1, 'one virtual parent only');
+ assert.equal(new Set(ids).size, ids.length, 'no duplicated sidebar groups');
+
+ const pact = hierarchyGroups.find(family => family.id === 'pact-universe');
+ assert.deepEqual(sectorGroups('pact-universe'), pact.groups);
+ assert.equal(sectorGroups('core').length, 1, 'core selector only focuses core');
+ assert.equal(hierarchyRootForChild('core'), 'pact-universe');
+ assert.equal(hierarchyRootForChild('season3'), 'pact-universe');
+ assert.equal(hierarchyRootForChild('pottu-streams'), 'rappio');
+ assert.equal(hierarchyRootForChild('rappio'), null);
+ assert.equal(isHierarchyRoot('core'), false);
+ assert.equal(isHierarchyRoot('rappio'), true);
+ assert.equal(
+  nodes.filter(node => sectorGroups('pact-universe').includes(node.group)).length,
+  pact.groups.reduce((total, group) => total + groupNodes(group).length, 0),
+  'the PACT parent must filter all five children'
+ );
 });
 
 test('every hierarchy encloses its member nodes and complete padded child volumes', () => {
