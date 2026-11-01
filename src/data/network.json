@@ -37,7 +37,10 @@
       "featured": true,
       "types": [
         "yrittaja"
-      ]
+      ],
+      "image": "images/saini.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2025/12/saini.webp",
+      "imageCredit": "Kick.com/pact, Anthony Singh kameran takana / Gekkonen (2.12.2025)"
     },
     {
       "id": "kick",
@@ -209,7 +212,10 @@
       "types": [
         "striimaaja",
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/lassi.webp",
+      "imageSource": "https://image.seiska.fi/2066778.webp?compression=70&croph=67.50&cropw=80.00&format=jpg&height=348&imageId=2066778&width=620&x=11.12&y=22.56",
+      "imageCredit": "Sara Vertanen / Yle, Lassi Kuhlman / Seiska (14.10.2026)"
     },
     {
       "id": "ruusu",
@@ -349,7 +355,10 @@
       "featured": false,
       "types": [
         "rappiostriimaaja"
-      ]
+      ],
+      "image": "images/upi.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2026/10/upi-arttu-pulkkinen-yle.jpg",
+      "imageCredit": "Theofanis Kavvadas / Revul Media Group, Arttu Pulkkinen / Gekkonen (6.10.2026)"
     },
     {
       "id": "pirkkis",
@@ -1042,7 +1051,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/isabell.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2025/12/isabell-jansson.webp",
+      "imageCredit": "Kick.com/pact, Isabell Jansson / Gekkonen (2.12.2025)"
     },
     {
       "id": "joni",
@@ -1099,7 +1111,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/liina.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2025/12/iina-simpson.webp",
+      "imageCredit": "Kick.com/pact, Liina Simpson / Gekkonen (2.12.2025)"
     },
     {
       "id": "maga",
@@ -1156,7 +1171,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/stagala.webp",
+      "imageSource": "https://image.seiska.fi/2031925.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=386&imageId=2031925&width=576&x=0.00&y=0.00",
+      "imageCredit": "Panu Hörkkö / Seiska, Alexander Krigsman eli Stagala (28.10.2026)"
     },
     {
       "id": "janely",
@@ -1435,7 +1453,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/og.webp",
+      "imageSource": "https://www.uuno.fi/wp-content/uploads/2026/10/og-thumb-1-860x484.jpg",
+      "imageCredit": "Tuomas Kujansuu / Uuno.fi, OG Ulla-Maija eli Tatu Varvikko (13.10.2026)"
     },
     {
       "id": "erika",
@@ -1474,7 +1495,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/aapo.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2026/02/aapo-olervo-696x428.jpg",
+      "imageCredit": "Aapo Olervon YouTube-video / Gekkonen (12.2.2026)"
     },
     {
       "id": "elmer",
@@ -2229,7 +2253,10 @@
         -420,
         1150
       ],
-      "featured": true
+      "featured": true,
+      "image": "images/iidasofya.webp",
+      "imageSource": "https://www.uuno.fi/wp-content/uploads/2026/10/PHOTO-2026-10-22-10-28-38-1023x1024.jpg",
+      "imageCredit": "Iida-Sofia Heimosen perheen Facebook-kuva / Uuno.fi (22.10.2026)"
     },
     {
       "id": "evesussu",
