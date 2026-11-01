@@ -8,7 +8,7 @@ Seiskan mukaan matkalta julkaistiin paljon arkista, juhlimista ja matkakokemuksi
 
 ## Striimaustulot Kärkkäisen oman arvion mukaan
 
-Gekkonen kertoi 3. helmikuuta tavoittaneensa Kärkkäisen ja kysyneensä hänen lähetyksissään esittämästään tuloväitteestä. Hän vahvisti lehden mukaan ansainneensa Pattayalla striimauksesta noin 9 000 euroa viikossa. Kärkkäinen kuvasi tulojen kertyvän Kickin maksuista, tilauksista ja katsojien lahjoituksista. Luku perustuu hänen omaan kertomukseensa, ei julkiseen tulotositteeseen. [@P255]
+Gekkonen kertoi 3. helmikuuta tavoittaneensa Kärkkäisen ja kysyneensä hänen lähetyksissään esittämästään tuloväitteestä. Hän vahvisti lehden mukaan ansainneensa Pattayalla striimauksesta noin 9 000 euroa viikossa. Kärkkäinen kuvasi tulojen kertyvän Kickin maksuista, tilauksista ja katsojien lahjoituksista. Kyse oli Kärkkäisen omasta arviosta. [@P255]
 
 ## Baarivälikohtaus helmikuun 6. päivän vastaisena yönä
 
@@ -16,4 +16,4 @@ Torstain ja perjantain välisenä yönä 5.–6. helmikuuta Pottukoiran ja Tonin
 
 ## Matkan päättyminen
 
-Seiskan 3. helmikuuta julkaistussa haastattelussa Kärkkäinen arvioi matkan jatkuvan 11. helmikuuta saakka. Helmikuun 16. päivän Seiska-jutussa hänet oli jo tavoitettu jälleen Viron Harjumaalta, joten kotiinpaluu oli toteutunut viimeistään tuolloin. Näissä lähteissä ei vahvisteta koko matkan olleen keskeytymätön subathon-lähetys. [@P254] [@P257]
+Seiskan 3. helmikuuta julkaistussa haastattelussa Kärkkäinen arvioi matkan jatkuvan 11. helmikuuta saakka. Helmikuun 16. päivän Seiska-jutussa hänet oli jo tavoitettu jälleen Viron Harjumaalta, joten kotiinpaluu oli toteutunut viimeistään tuolloin. Matkan varrelta julkaistiin useita erillisiä lähetyksiä. [@P254] [@P257]
