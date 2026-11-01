@@ -243,3 +243,12 @@ test('clearing a node selection returns every unfiltered node to full opacity', 
   assert.match(main, /ctx\.fillStyle=tint\(col,alpha\)/);
   assert.match(main, /selected=null;pathNodes=\[\];pathEdges=\[\]/);
 });
+
+test('Shift sprint combines with left-mouse look; middle drag alone pans', () => {
+  const main = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
+  const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  assert.match(main, /pan:e\.button===1/);
+  assert.ok(!main.includes('pan:e.shiftKey||e.button===1'));
+  assert.match(main, /if\(dt&&!pointer\?\.pan&&pressedTravelKeys\.size\)/);
+  assert.match(html, /Keskinappi\+vedä: siirrä/);
+});
