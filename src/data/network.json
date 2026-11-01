@@ -2480,7 +2480,10 @@
         310,
         -300
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/cruella_johansson.webp",
+      "imageSource": "https://image.seiska.fi/2293024.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=749&imageId=2293024&width=576&x=0.00&y=0.00",
+      "imageCredit": "Cruella Johanssonin kotialbumi / Seiska, kasvokuva (24.10.2026)"
     },
     {
       "id": "tuukka_kuru",
