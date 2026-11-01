@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, cameraPositionFromTarget, cameraTargetFromPosition, cameraLookDelta, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
+import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, cameraPositionFromTarget, cameraTargetFromPosition, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, nodeOpacity, MIN_MOVEMENT_SPEED, MAX_MOVEMENT_SPEED, DEFAULT_MOVEMENT_SPEED, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
 
 test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
   const edges = [
@@ -204,4 +204,42 @@ test('mouse-look pitch is clamped while moving the camera never changes its loca
   for (const axis of ['x', 'y', 'z']) {
     assert.ok(Math.abs(cameraPositionFromTarget(turn.target, turn.yaw, turn.pitch, distance)[axis] - initialCamera[axis]) < 1e-9);
   }
+});
+
+test('wheel changes flight speed instead of zoom and the HUD shows metres per second', () => {
+  assert.ok(adjustMovementSpeed(DEFAULT_MOVEMENT_SPEED, -100) > DEFAULT_MOVEMENT_SPEED);
+  assert.ok(adjustMovementSpeed(DEFAULT_MOVEMENT_SPEED, 100) < DEFAULT_MOVEMENT_SPEED);
+  assert.equal(adjustMovementSpeed(MIN_MOVEMENT_SPEED, 100000), MIN_MOVEMENT_SPEED);
+  assert.equal(adjustMovementSpeed(MAX_MOVEMENT_SPEED, -100000), MAX_MOVEMENT_SPEED);
+  assert.ok(adjustMovementSpeed(900, -3, 1) > 900, 'Wheel line deltas work');
+  assert.ok(adjustMovementSpeed(900, 1, 2) < 900, 'Wheel page deltas work');
+  assert.ok(movementSpeedFill(MAX_MOVEMENT_SPEED) > movementSpeedFill(DEFAULT_MOVEMENT_SPEED));
+  assert.ok(movementSpeedFill(DEFAULT_MOVEMENT_SPEED) > movementSpeedFill(MIN_MOVEMENT_SPEED));
+  const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  const main = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
+  const css = readFileSync(new URL('../src/styles.css', import.meta.url), 'utf8');
+  assert.match(html, /id="flightSpeed" role="meter"/);
+  assert.match(html, /id="speedValue"/);
+  assert.match(html, /id="speedFill"/);
+  assert.match(html, /Rulla: lentonopeus/);
+  assert.ok(!html.includes('id="zoomIn"') && !html.includes('id="zoomOut"'));
+  assert.match(main, /movementSpeed=adjustMovementSpeed\(movementSpeed,e\.deltaY,e\.deltaMode\)/);
+  assert.match(main, /const speed=movementSpeed\*\(pressedTravelKeys\.has\('shift'\)\?2\.5:1\)/);
+  assert.ok(!main.includes('dist*Math.exp(e.deltaY'));
+  assert.match(css, /\.flight-speed-track/);
+});
+
+test('clearing a node selection returns every unfiltered node to full opacity', () => {
+  for (const distanceFactor of [.12, .3, .5, 1, 4]) {
+    assert.equal(nodeOpacity({distanceFactor}), 1, 'Unselected nodes never retain depth/focus dimming');
+    assert.equal(nodeOpacity({selected:false,focused:false,onPath:false,routeActive:false,distanceFactor}), 1);
+  }
+  assert.ok(nodeOpacity({selected:true,distanceFactor:.8}) < 1, 'Selection still dims unrelated nodes');
+  assert.equal(nodeOpacity({selected:true,focused:true,distanceFactor:.2}), 1, 'Focused nodes remain prominent');
+  assert.ok(nodeOpacity({sectorDimmed:true,distanceFactor:.5}) < 1, 'Explicit skene filters still work');
+  const main = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
+  assert.match(main, /const alpha=nodeOpacity\(/);
+  assert.match(main, /ctx\.globalAlpha=alpha/);
+  assert.match(main, /ctx\.fillStyle=tint\(col,alpha\)/);
+  assert.match(main, /selected=null;pathNodes=\[\];pathEdges=\[\]/);
 });
