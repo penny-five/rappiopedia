@@ -48,13 +48,58 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/download-artifact@v4
+      - name: Check GitHub Pages configuration
+        id: pages
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          body=$(mktemp)
+          status=$(curl --silent --show-error --output "$body" --write-out '%{http_code}' \
+            --header "Authorization: Bearer $GH_TOKEN" \
+            --header 'Accept: application/vnd.github+json' \
+            --header 'X-GitHub-Api-Version: 2022-11-28' \
+            "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/pages")
+          if [[ "$status" == '200' ]]; then
+            source=$(jq -r '.build_type // empty' "$body")
+            if [[ "$source" == 'workflow' ]]; then
+              echo 'ready=true' >> "$GITHUB_OUTPUT"
+              echo '### GitHub Pages' >> "$GITHUB_STEP_SUMMARY"
+              echo 'Pages on käytössä: GitHub Actions. Tuotantoversio julkaistaan.' >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            echo "Pages source is '$source', expected 'workflow'."
+          elif [[ "$status" == '404' ]]; then
+            echo 'Pages has not been enabled for this repository.'
+          else
+            echo "GitHub Pages settings check returned HTTP $status" >&2
+            cat "$body" >&2
+            exit 1
+          fi
+          echo 'ready=false' >> "$GITHUB_OUTPUT"
+          {
+            echo '### GitHub Pages: kertaluonteinen asetus puuttuu'
+            echo ''
+            echo 'Testit ja tuotantobuildi valmistuivat, mutta Pages ei ole käytössä GitHub Actions -lähteellä.'
+            echo 'Avaa **Settings → Pages → Build and deployment → Source: GitHub Actions**.'
+            echo 'Sen jälkeen käynnistä tämä workflow uudelleen (Run workflow).'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Download production bundle
+        if: steps.pages.outputs.ready == 'true'
+        uses: actions/download-artifact@v4
         with:
           name: rappioverse-dist
           path: dist/
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v4
+      - name: Configure GitHub Pages
+        if: steps.pages.outputs.ready == 'true'
+        uses: actions/configure-pages@v5
+      - name: Upload GitHub Pages artifact
+        if: steps.pages.outputs.ready == 'true'
+        uses: actions/upload-pages-artifact@v4
         with:
           path: dist/
-      - id: deployment
+      - name: Deploy GitHub Pages
+        if: steps.pages.outputs.ready == 'true'
+        id: deployment
         uses: actions/deploy-pages@v4
