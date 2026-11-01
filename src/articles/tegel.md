@@ -12,7 +12,9 @@ Ohjelmassa hän ajautui [[janely_tegel_riita_2025|riitaan]] laulaja [[janely|Jaa
 
 ## Vierailu kolmannella kaudella
 
-Toukokuussa 2026 Tegelberg saapui [[s3|PactHouse 3:een]] kesken ohjelman. Hän ei kuulunut alkuperäisiin 20 kilpailijaan, ja vierailu jäi lyhyeksi. [@P34] [@P147]
+Toukokuussa 2026 Tegelberg saapui [[s3|PactHouse 3:een]] kesken ohjelman. Hän ei kuulunut alkuperäisiin 20 kilpailijaan, ja [[tegel_pact3_vierailu_2026|vierailu]] kesti 4.–6. toukokuuta. Tegelberg kertoi Seiskalle, että hänet oli kutsuttu Kreikkaan kiireellisellä aikataululla ja että hän odotti hotellissa ennen taloon pääsyä. [@P34] [@P243]
+
+Tegelberg epäili putoamisensa jälkeen äänestystuloksen olleen ennakkoon päätetty. PACTin tuotanto vastasi, että yleisö oli ensin äänestänyt hänet taloon ja sitten ulos, ja että häätöäänestys keräsi kauden siihenastisen suurimman äänimäärän. Tegelberg kertoi saaneensa 1 250 euroa voittorahoja sekä osallistumispalkkion. [@P243]
 
 ## Pottukoiran Viron-vierailu
 
