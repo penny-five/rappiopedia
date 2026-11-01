@@ -54,7 +54,7 @@ test('node name display has only automatic and all-names choices', () => {
   assert.deepEqual(graphNodePresentation({ nameDensity: 'auto', isHub: true }), { dot: false, showLabel: false });
   assert.deepEqual(graphNodePresentation({ nameDensity: 'auto', wholeSpace: false }), { dot: false, showLabel: false });
   const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
-  assert.ok(html.includes('SOLMUJEN NIMET'));
+  assert.ok(html.includes('NIMIEN NÄYTTÄMINEN'));
   assert.equal((html.match(/data-name-density=/g) || []).length, 2);
   assert.ok(html.includes('data-name-density="auto"') && html.includes('>Automaattinen</button>'));
   assert.ok(html.includes('data-name-density="all"') && html.includes('>Kaikki nimet</button>'));
