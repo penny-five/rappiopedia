@@ -2,4 +2,4 @@
 
 ## Matka ja siitä käyty keskustelu
 
-Huhtikuun alussa julkaistussa Reddit-ketjussa käsiteltiin striimaajien yhteistä oleskelua Amsterdamissa. Käyttäjät mainitsivat Upin, Pirkkiksen ja Taigan matkaseurueen yhteydessä. Tapahtumasta käytettävissä oleva lähde on julkinen keskustelu, joten osallistujia ja tapahtumien kulkua koskevat tiedot perustuvat siinä esitettyihin kertomuksiin. [@P52]
+Maaliskuun 31. päivän ja huhtikuun alun Reddit-ketjuissa käsiteltiin striimaajien yhteistä oleskelua Amsterdamissa. Käyttäjät mainitsivat Upin, Pirkkiksen ja Taigan matkaseurueen yhteydessä. Tapahtumasta käytettävissä oleva lähde on julkinen keskustelu, joten osallistujia ja tapahtumien kulkua koskevat tiedot perustuvat siinä esitettyihin kertomuksiin. Maaliskuun ketjussa kirjoittaja väitti Pirkkiksen myöhästyneen kahdelta kotiinpaluun lennolta ja Upin jääneen hänen seurakseen. Tätä yksityiskohtaa ei ole varmistettu tallenteesta. [@P52] [@P194]
