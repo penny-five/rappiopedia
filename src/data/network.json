@@ -429,7 +429,8 @@
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg",
       "types": [
         "rap-artisti"
-      ]
+      ],
+      "image": "images/sliki.webp"
     },
     {
       "id": "ossi",
@@ -2078,7 +2079,8 @@
       "types": [
         "nettiradiotekija",
         "videontekija"
-      ]
+      ],
+      "image": "images/pasi.webp"
     },
     {
       "id": "pasiradio",
