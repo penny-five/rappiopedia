@@ -3888,6 +3888,102 @@
         -1050
       ],
       "featured": false
+    },
+    {
+      "id": "jalluton_pihtaaja",
+      "name": "Jalluton_Pihtaaja / Toni",
+      "cat": "person",
+      "types": [
+        "striimaaja"
+      ],
+      "group": "rappio",
+      "pos3": [
+        2790,
+        -270,
+        930
+      ],
+      "featured": false,
+      "note": "Toni eli Jalluton_Pihtaaja on suomalainen Kick-striimaaja, joka oli mukana Pottukoiran Pattayan lähetyksissä helmikuussa 2026 ja teki myöhemmin omia IRL-, ruoka- ja yhteisstriimejä."
+    },
+    {
+      "id": "pottu_testotimo_uhkaus_2025",
+      "name": "Pottukoiran, Testotimon ja Aleksin riita 28.10.2025",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "group": "pottu-streams",
+      "pos3": [
+        3420,
+        -345,
+        550
+      ],
+      "featured": false,
+      "note": "Pottukoiran Virossa 28.10.2025 lähettämässä livestriimissä hän uhkasi vieraitaan Aleksi Nurmista ja Testotimoa veitsellä. Vieraat lähtivät, ja Pottukoira pyysi seuraavana päivänä julkisesti anteeksi."
+    },
+    {
+      "id": "pottu_pattaya_2026",
+      "name": "Pottukoiran Pattayan striimausmatka 1–2/2026",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "group": "pottu-streams",
+      "pos3": [
+        3120,
+        -320,
+        480
+      ],
+      "featured": false,
+      "note": "Pottukoira teki tammi–helmikuussa 2026 matkalähetyksiä Pattayalta Thaimaasta yhdessä Toni eli Jalluton_Pihtaajan kanssa. Hän palasi Viroon helmikuun puoliväliin mennessä."
+    },
+    {
+      "id": "pottu_pattaya_baari_2026",
+      "name": "Pottukoiran ja Tonin baarivälikohtaus Pattayalla 6.2.2026",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "group": "pottu-streams",
+      "pos3": [
+        3280,
+        -310,
+        390
+      ],
+      "featured": false,
+      "note": "Pottukoiran ja Jalluton_Pihtaajan Pattayan striimissä 5.–6.2.2026 syntyi baaririita, jossa ulkopuoliset asiakkaat kävivät heidän kimppuunsa. Gekkonen selosti videota ja haastatteli Pottukoiraa."
+    },
+    {
+      "id": "iippa_kick_paluu_2026",
+      "name": "Iippadaan Kick-porttikiellon päättyminen 19.1.2026",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "group": "rappio",
+      "pos3": [
+        2690,
+        -40,
+        740
+      ],
+      "featured": false,
+      "note": "Iippadaan Kick-tilin noin puoli vuotta kestänyt porttikielto päättyi 19.1.2026. Hän ilmoitti Gekkoselle suunnittelevansa uusia lähetyksiä samalla viikolla."
+    },
+    {
+      "id": "rauno_jalluton_syys2026",
+      "name": "Rauno77:n ja Jalluton_Pihtaajan Jyväskylän-striimit 9.9.2026",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "group": "pottu-streams",
+      "pos3": [
+        3400,
+        -400,
+        620
+      ],
+      "featured": false,
+      "note": "Rauno77:n ja Jalluton_Pihtaajan omien Kick-kanavien 9.9.2026 lähetysotsikot mainitsevat toisensa Jyväskylän-seudun IRL-lähetyksissä."
     }
   ],
   "edges": [
@@ -8439,6 +8535,141 @@
       ],
       "level": "reported",
       "date": "2025-09-06"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_testotimo_uhkaus_2025",
+      "type": "osallistui",
+      "label": "uhkasi Testotimoa ja Aleksi Nurmista striimissä, pyysi seuraavana päivänä anteeksi",
+      "date": "2025-10-28",
+      "src": [
+        "P252",
+        "P253"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "testotimo",
+      "b": "pottu_testotimo_uhkaus_2025",
+      "type": "osallistui",
+      "label": "poistui uhkaustilanteen jälkeen Pottukoiran vierailulta",
+      "date": "2025-10-28",
+      "src": [
+        "P252"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "aleksi",
+      "b": "pottu_testotimo_uhkaus_2025",
+      "type": "osallistui",
+      "label": "poistui Pottukoiran luota uhkaustilanteen jälkeen",
+      "date": "2025-10-28",
+      "src": [
+        "P252"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "viro_pottu_2025",
+      "b": "pottu_testotimo_uhkaus_2025",
+      "type": "sisaltaa",
+      "label": "vierailu päättyi veitsellä uhkaamiseen ja vieraiden lähtöön",
+      "date": "2025-10-28",
+      "src": [
+        "P252"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_pattaya_2026",
+      "type": "matkusti",
+      "label": "teki Pattayalla striimimatkan tammikuusta helmikuuhun 2026",
+      "date": "2026-01",
+      "src": [
+        "P254",
+        "P257"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "jalluton_pihtaaja",
+      "b": "pottu_pattaya_2026",
+      "type": "matkusti",
+      "label": "teki Pottukoiran kanssa Pattayan IRL-lähetyksiä",
+      "date": "2026-02",
+      "src": [
+        "P254",
+        "P256"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pottu_pattaya_2026",
+      "b": "pottu_pattaya_baari_2026",
+      "type": "sisaltaa",
+      "label": "helmikuun 6. päivän yön baarivälikohtaus",
+      "date": "2026-02-06",
+      "src": [
+        "P256"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_pattaya_baari_2026",
+      "type": "osallistui",
+      "label": "joutui Pattayan baarissa väkivaltatilanteeseen",
+      "date": "2026-02-06",
+      "src": [
+        "P256"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "jalluton_pihtaaja",
+      "b": "pottu_pattaya_baari_2026",
+      "type": "osallistui",
+      "label": "joutui Pattayan baarissa väkivaltatilanteeseen",
+      "date": "2026-02-06",
+      "src": [
+        "P256"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "iippa",
+      "b": "iippa_kick_paluu_2026",
+      "type": "oli-kohteena",
+      "label": "Kick-tilin noin puoli vuotta kestänyt bänni päättyi",
+      "date": "2026-01-19",
+      "src": [
+        "P260"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "rauno77",
+      "b": "rauno_jalluton_syys2026",
+      "type": "striimasi",
+      "label": "julkaisi Jyväskylän-striimin otsikolla 'feat @jalluton_pihtaaja'",
+      "date": "2026-09-09",
+      "src": [
+        "P259"
+      ],
+      "level": "observed"
+    },
+    {
+      "a": "jalluton_pihtaaja",
+      "b": "rauno_jalluton_syys2026",
+      "type": "striimasi",
+      "label": "julkaisi Jyväskylään suuntautuneen lähetyksen otsikolla 'feat @Rauno77'",
+      "date": "2026-09-09",
+      "src": [
+        "P258"
+      ],
+      "level": "observed"
     }
   ],
   "sources": {
@@ -9687,6 +9918,66 @@
       "label": "Suomen Asiakastieto: Bellebarbie Oy",
       "url": "https://www.asiakastieto.fi/yritykset/fi/bellebarbie-oy/32784065/paattajat",
       "note": "Yritysrekisterin mukaan Bellebarbie Oy:n hallituksessa on Crista Jaatinen ja vuoden 2024 liikevaihto oli 107 000 euroa."
+    },
+    "P252": {
+      "label": "Gekkonen 28.10.2025: Testotimon ja Aleksi Nurmisen vierailun uhkaustilanne",
+      "url": "https://gekkonen.net/mina-tapan-teidat-testotimon-ja-aleksi-nurmisen-viron-reissulle-karu-loppu-pottukoiran-luona/",
+      "note": "Uutistoimitus selosti tallennettua lähetysklippiä, jossa Pottukoira uhkasi vieraitaan veitsellä; molemmat vieraat poistuivat."
+    },
+    "P253": {
+      "label": "Gekkonen 29.10.2025: Pottukoiran julkinen anteeksipyyntö",
+      "url": "https://gekkonen.net/pottukoira-julkaisi-julkisen-anteeksipyynnon-ja-lupasi-lyoda-korkin-kiinni-pysyvasti/",
+      "note": "Pottukoira pyysi Testotimolta ja Aleksi Nurmiselta anteeksi Instagram-tarinassaan ja kertoi aikovansa lopettaa juomisen."
+    },
+    "P254": {
+      "label": "Seiska 3.2.2026: Pottukoira ja Toni Pattayan striimausmatkalla",
+      "url": "https://www.seiska.fi/kotimaa/ei-herkille-huh-mika-muodonmuutos-talta-nayttaa-kaksi-viikkoa-dokannut-pottukoira/2064006",
+      "note": "Pottukoiran kertomat Pattayan matkan yksityiskohdat; mukana Toni eli Jalluton pihtaaja, paluusuunnitelma 11.2.2026."
+    },
+    "P255": {
+      "label": "Gekkonen 3.2.2026: Pottukoiran ilmoittamat Pattayan striimitulot",
+      "url": "https://gekkonen.net/nain-paljon-pottukoira-tienaa-viikossa-sekoilemalla-thaimaassa/",
+      "note": "Kärkkäinen vahvisti lehdelle noin 9000 euron viikkotulot väitteenä omista tuloistaan. Ei virallinen kirjanpitotieto."
+    },
+    "P256": {
+      "label": "Gekkonen 6.2.2026: Pattayan baarin väkivaltatilanne Pottukoiran ja Tonin striimissä",
+      "url": "https://gekkonen.net/britit-hyokkasivat-pattayalla-pottukoira-juoksi-karkuun-ja-piiloutui-baarin-takaosaan-katso-videolta-mita-tapahtui-seuraavaksi/",
+      "note": "Videokatkelmiin ja Pottukoiran tuoreeseen kommenttiin perustuva kuvaus 5.–6.2.2026 baaririidasta, pahoinpitelystä ja Tonin villalta lähdöstä."
+    },
+    "P257": {
+      "label": "Seiska 16.2.2026: Pottukoira palasi Pattayan-matkalta Viroon",
+      "url": "https://www.seiska.fi/rikos/nyt-puhuu-rikoksesta-syytetty-pottukoira/2075605",
+      "note": "Seiskan haastattelussa Pottukoira oli jo palannut Harjumaalle Thaimaan-matkalta."
+    },
+    "P258": {
+      "label": "KickTracker: Jalluton_Pihtaajan omat Kick-lähetykset syyskuussa 2026",
+      "url": "https://kicktracker.net/jalluton_pihtaaja",
+      "note": "Kanavan lähetyshistoriassa 9.9.2026 'Jypin kylälle feat. @Rauno77' sekä syyskuun omia kokkaus-, matka- ja arkistriimejä."
+    },
+    "P259": {
+      "label": "StreamRecorder: Rauno77:n lähetykset syyskuussa 2026",
+      "url": "https://streamrecorder.io/kick/rauno77",
+      "note": "9.9.2026 'jyppilässä feat @jalluton_pihtaaja' ja 2.9.2026 'mökille feat @iippadaa'; jälkimmäisen otsikko ei yksin vahvista Iippadaan esiintymistä."
+    },
+    "P260": {
+      "label": "Gekkonen 19.1.2026: Iippadaan Kick-tilin porttikielto päättyi",
+      "url": "https://gekkonen.net/rappiostriimaaja-iippadaa-uskomaton-uutinen-vahvat-naiset-nousevat-paskasta/",
+      "note": "Iippadaa kertoi päättyneestä noin puolen vuoden Kick-tilin bännistä ja suunnitteli palaavansa lähetyksiin myöhemmin samalla viikolla."
+    },
+    "P261": {
+      "label": "Gekkonen 18.10.2025: Pottukoira ilmoitti kuukauden tauosta",
+      "url": "https://gekkonen.net/pottukoiralta-pysayttava-ilmoitus/",
+      "note": "Pottukoira kertoi perjantain lähetyksessään aikovansa kuukauden tauolle ja treenaamaan Juhana Tegelbergin ohjeilla; ilmoitus ei yksin vahvista tauon toteutuneen."
+    },
+    "P262": {
+      "label": "Gekkonen 17.11.2025: Pottukoiran Twitch-porttikielto",
+      "url": "https://gekkonen.net/pottukoira-naytti-pippeliaan-saunassa-sai-heti-bannit/",
+      "note": "Gekkosen mukaan Pottukoira sai marraskuussa 2025 Twitch-bännin saunaosuudesta, jossa oli mukana Rauno."
+    },
+    "P263": {
+      "label": "Seiska 28.6.2026: Pottukoiran työ ja elämä Virossa",
+      "url": "https://www.seiska.fi/vain-seiskassa/pottukoiran-erikoishaastattelu-avoin-tilitys-alkoholista-ja-haasteista/2181447",
+      "note": "Henkilöhaastattelu striimausurasta, aiemmista kalastusvideoista ja markkinointityöstä, muutosta Hüüruun 2024."
     }
   },
   "date": "2026-11-01"
