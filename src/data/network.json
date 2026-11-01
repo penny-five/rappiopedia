@@ -8,14 +8,15 @@
       "note": "Kickissä esitettävä suomalainen live-realityformaatti; erilliset kaudet ja PactTalks.",
       "x": 2080,
       "y": 170,
-      "image": "https://pacthouse3.net/pact-logo.jpg",
+      "image": "images/pact.webp",
       "imageCredit": "PactHouse, brändin logo",
       "pos3": [
         0,
         50,
         0
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://pacthouse3.net/pact-logo.jpg"
     },
     {
       "id": "saini",
@@ -115,14 +116,15 @@
       "note": "PactHouse 3:n voittaja ja PactTalksin juontaja.",
       "x": 2750,
       "y": 640,
-      "image": "https://image.seiska.fi/2141143.webp?compression=100&croph=57.33&cropw=80.13&height=630&imageId=2141143&width=1200&x=6.16&y=15.88",
+      "image": "images/jethro.webp",
       "imageCredit": "Seiska, PactHouse 3 -uutinen",
       "pos3": [
         -290,
         495,
         -780
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://image.seiska.fi/2141143.webp?compression=100&croph=57.33&cropw=80.13&height=630&imageId=2141143&width=1200&x=6.16&y=15.88"
     },
     {
       "id": "joachim",
@@ -192,14 +194,15 @@
       "note": "Striimaaja; Kieksi-dokumentin kohde, PactTalks-vieras ja Bailupaatti-konteksti.",
       "x": 880,
       "y": 1820,
-      "image": "https://image.seiska.fi/1680693.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=1680693&width=576&x=0.00&y=0.00",
+      "image": "images/iippa.webp",
       "imageCredit": "Seiska, Iippadaa ja Pottukoira yhteiskuvassa",
       "pos3": [
         1270,
         -100,
         830
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://image.seiska.fi/1680693.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=1680693&width=576&x=0.00&y=0.00"
     },
     {
       "id": "pottu",
@@ -209,14 +212,15 @@
       "note": "Striimaaja; Kieksi-dokumentin kohde, Bailupaatti-markkinointi; jäi pois risteilyltä 2026.",
       "x": 650,
       "y": 2000,
-      "image": "https://image.seiska.fi/2184001.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=2184001&width=576&x=0.00&y=0.00",
+      "image": "images/pottu.webp",
       "imageCredit": "Seiska, Pottukoira-haastattelu",
       "pos3": [
         1330,
         -300,
         500
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://image.seiska.fi/2184001.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=2184001&width=576&x=0.00&y=0.00"
     },
     {
       "id": "sami",
@@ -226,14 +230,15 @@
       "note": "Dokumentaristi ja Revul Media Groupin perustaja / toimitusjohtaja.",
       "x": 830,
       "y": 2180,
-      "image": "https://res.cloudinary.com/findance/image/fetch/ar_3%3A2%2Cw_640%2Cc_auto%2Cg_auto%2Cf_auto/https%3A/www.findance.com/kuvat/cloudinary/tapausaarnio-tv-qhmyD.jpg",
+      "image": "images/sami.webp",
       "imageCredit": "Findance, Sami Kieksi",
       "pos3": [
         975,
         -50,
         485
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://res.cloudinary.com/findance/image/fetch/ar_3%3A2%2Cw_640%2Cc_auto%2Cg_auto%2Cf_auto/https%3A/www.findance.com/kuvat/cloudinary/tapausaarnio-tv-qhmyD.jpg"
     },
     {
       "id": "revul",
@@ -303,14 +308,15 @@
       "note": "31.10.–2.11.2026 juhlaristeilyt; osallistumiset ja poisjäännit erotetaan.",
       "x": 1900,
       "y": 2000,
-      "image": "https://www.matkapojat.fi/images/imagemanager/thumbnails/MP_Bailupaatti_2026_Paakuva%2C%20p%C3%A4ivitetty.f5256ef39a95e9cb4b0a97be2f0240059485db75.jpg",
+      "image": "images/bailu.webp",
       "imageCredit": "Matkapojat, Bailupaatti 2026 -juliste",
       "pos3": [
         400,
         -700,
         -440
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://www.matkapojat.fi/images/imagemanager/thumbnails/MP_Bailupaatti_2026_Paakuva%2C%20p%C3%A4ivitetty.f5256ef39a95e9cb4b0a97be2f0240059485db75.jpg"
     },
     {
       "id": "korelon",
@@ -320,14 +326,15 @@
       "note": "Slikin yhteistyöartisti; Sastamalan keikka ja Bailupaatin esiintyjälista.",
       "x": 3250,
       "y": 1880,
-      "image": "https://cdn.s-cloud.fi/v1/w1024_q75/assets/dam-id/3f2bOjJQKr1B_8pGLdRUaj.webp?clientId=2085",
+      "image": "images/korelon.webp",
       "imageCredit": "KPO Festarit, Korelon",
       "pos3": [
         -270,
         -660,
         -560
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://cdn.s-cloud.fi/v1/w1024_q75/assets/dam-id/3f2bOjJQKr1B_8pGLdRUaj.webp?clientId=2085"
     },
     {
       "id": "sliki",
@@ -337,14 +344,14 @@
       "note": "Räppäri; Sastamalan tilaisuus ja sitä seuranneet Paavo Pesusieni -häiriöt.",
       "x": 3430,
       "y": 2000,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg",
       "imageCredit": "Wikimedia Commons, Slikin muotokuva",
       "pos3": [
         -380,
         -790,
         -460
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg"
     },
     {
       "id": "ossi",
@@ -354,14 +361,15 @@
       "note": "Sastamalan tapahtuman järjestäjäksi uutisoitu; itse kiistänyt myöhemmät häiriökytkökset.",
       "x": 3290,
       "y": 2180,
-      "image": "https://visnyk.poker/storage/news/5586-a7583226ac34a01a1364ab8803f3d86c12cb8043.png.webp",
+      "image": "images/ossi.webp",
       "imageCredit": "Visnyk Poker, Ossi Ketola",
       "pos3": [
         -580,
         -880,
         -310
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://visnyk.poker/storage/news/5586-a7583226ac34a01a1364ab8803f3d86c12cb8043.png.webp"
     },
     {
       "id": "sastamala",
