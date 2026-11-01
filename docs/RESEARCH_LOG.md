@@ -31,3 +31,9 @@ PactTalksin lokakuun 2026 lähetysotsikoissa näkyvät Bämät matkoilla -jaksot
 - Lisää puuttuvia henkilö- ja tapahtumakuvia, kun lähdekuvat löytyvät. Käytä käsittelyyn [`scripts/process_images.py`](../scripts/process_images.py)-skriptiä.
 
 Uuden merkinnän yhteyteen kannattaa kirjata päivämäärä, tutkittava asia, jo löytyneet lähteet ja se, mitä on vielä tarkistettava. Tiedonhankinnan käytännöt ovat [tutkimusoppaassa](RESEARCH_PLAYBOOK.md).
+
+## 1.11.2026 — TampereenTero ja rappiotuben varhaisvaihe
+
+TampereenTerolle avattiin oma henkilöartikkeli sekä erilliset artikkelit Hervannan 19.10.2019 lähetysvälikohtauksesta, Subwayn oikeustapauksesta ja 26.7.2021 yhteisstriimistä Reinskin kanssa. Vuonna 2022 julkaistu Lauri Leppäsen pro gradu sisältää tekijän itse havainnoiman Reinski–Tero-lähetyksen ja yleisömäärän (`P220`). eUrheilun aikalaisjuttu kertoo Hervannassa tapahtuneesta 60 euron rahavaatimuksesta (`P221`). Kaupunkikanava kuvaa Subwayn kunnianloukkaustuomiota ja samassa istunnossa annettua perättömän vaarailmoituksen tuomiota (`P222`).
+
+TampereenTeron ja Upin Paltamon-yhteys kirjattiin keskusteluissa yksilöityjen videoklippien perusteella raportoiduksi (`P223`, `P224`), ei tarkistetuksi alkuperäistallenteeksi. Eri vuosien Paltamon-käyntejä ei yhdistetty yhdeksi tapahtumasolmuksi. Tuomion tarkka päivä, alkuperäisten klippien tapahtumapäivät, mahdollinen Pirkkiksen mukanaolo ja varmennettu kasvokuva jäivät jatkotutkimukseen `tampereentero-early-career`.
