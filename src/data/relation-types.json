@@ -1,0 +1,206 @@
+{
+  "perusti": {
+    "forward": "perusti",
+    "reverse": "perustaja oli"
+  },
+  "sisaltaa": {
+    "forward": "sisältää",
+    "reverse": "kuuluu kokonaisuuteen"
+  },
+  "kayttaa": {
+    "forward": "käyttää",
+    "reverse": "alustalla toimii"
+  },
+  "yllapitaa": {
+    "forward": "ylläpitää",
+    "reverse": "kanavaa ylläpitää"
+  },
+  "julkaisee": {
+    "forward": "julkaisee",
+    "reverse": "julkaistaan kanavalla"
+  },
+  "lahettaa": {
+    "forward": "lähettää",
+    "reverse": "lähetetään kanavalla"
+  },
+  "osallistui": {
+    "forward": "osallistui",
+    "reverse": "osallistujana oli"
+  },
+  "juonsi": {
+    "forward": "juonsi",
+    "reverse": "juontajana oli"
+  },
+  "voitti": {
+    "forward": "voitti",
+    "reverse": "voittaja oli"
+  },
+  "father": {
+    "forward": "on isä",
+    "reverse": "on poika"
+  },
+  "esiintyi-yhdessa": {
+    "symmetric": true,
+    "verb": "esiintyi yhdessä"
+  },
+  "juontaa": {
+    "forward": "juontaa",
+    "reverse": "juontajana on"
+  },
+  "vieraili": {
+    "forward": "vieraili",
+    "reverse": "vieraana oli"
+  },
+  "oli-haastateltavana": {
+    "forward": "oli haastateltavana",
+    "reverse": "haastatteli"
+  },
+  "coappeared": {
+    "symmetric": true,
+    "verb": "esiintyi yhdessä"
+  },
+  "striimasi-yhdessa": {
+    "symmetric": true,
+    "verb": "striimasi yhdessä"
+  },
+  "kuvasi": {
+    "forward": "kuvasi",
+    "reverse": "kuvaajana oli"
+  },
+  "tuotti": {
+    "forward": "tuotti",
+    "reverse": "tuottajana oli"
+  },
+  "esiintyi": {
+    "forward": "esiintyi",
+    "reverse": "esiintyjänä oli"
+  },
+  "markkinoi": {
+    "forward": "markkinoi",
+    "reverse": "markkinoinnissa esiintyi"
+  },
+  "suunnitteli-osallistumista": {
+    "forward": "suunnitteli osallistumista",
+    "reverse": "osallistujaksi suunniteltiin"
+  },
+  "jarjesti": {
+    "forward": "järjesti",
+    "reverse": "järjestäjänä oli"
+  },
+  "associated-incidents": {
+    "symmetric": true,
+    "verb": "liitettiin samankaltaisiin häiriöihin"
+  },
+  "oli-kohteena": {
+    "forward": "oli kohteena",
+    "reverse": "kohdistui"
+  },
+  "hyodynsi": {
+    "forward": "hyödynsi",
+    "reverse": "julkisuudessa hyödyntänyt"
+  },
+  "alleged-organizer": {
+    "forward": "väitettiin järjestäneen",
+    "reverse": "väitetty järjestäjä oli"
+  },
+  "reported-association": {
+    "symmetric": true,
+    "verb": "yhdistettiin julkisuudessa"
+  },
+  "nakyi": {
+    "forward": "näkyi",
+    "reverse": "näkyi yhteydessä"
+  },
+  "otteli": {
+    "forward": "otteli",
+    "reverse": "ottelijana oli"
+  },
+  "stream-tag": {
+    "forward": "näkyi tunnisteena lähetyksessä",
+    "reverse": "lähetyksessä näkyi tunnisteena"
+  },
+  "rumoured-role": {
+    "forward": "yhdistettiin suunniteltuun rooliin",
+    "reverse": "suunniteltuun rooliin yhdistettiin"
+  },
+  "uutisoi": {
+    "forward": "uutisoi",
+    "reverse": "uutisoinut aiheesta"
+  },
+  "julkaisi": {
+    "forward": "julkaisi",
+    "reverse": "tietoja julkaisi"
+  },
+  "haastatteli": {
+    "forward": "haastatteli",
+    "reverse": "haastateltavana oli"
+  },
+  "discussed-online": {
+    "forward": "keskusteli aiheesta",
+    "reverse": "oli keskustelun aiheena"
+  },
+  "involved-in": {
+    "forward": "oli mukana toiminnassa",
+    "reverse": "toiminnassa mukana oli"
+  },
+  "sisalsi": {
+    "forward": "sisälsi",
+    "reverse": "kuuluu tapahtumasarjaan"
+  },
+  "listattiin": {
+    "forward": "listattiin",
+    "reverse": "osallistujalistalla oli"
+  },
+  "discussed-together": {
+    "symmetric": true,
+    "verb": "keskusteli yhdessä"
+  },
+  "ilmaisi-kiinnostuksensa": {
+    "forward": "ilmaisi kiinnostuksensa",
+    "reverse": "kiinnostusta ilmaisi"
+  },
+  "striimasi": {
+    "forward": "striimasi",
+    "reverse": "striimaajana oli"
+  },
+  "appeared-in-same-documentary": {
+    "symmetric": true,
+    "verb": "esiintyi samassa dokumentissa"
+  },
+  "kuuluu": {
+    "forward": "kuuluu",
+    "reverse": "sisältää"
+  },
+  "matkusti": {
+    "forward": "matkusti",
+    "reverse": "matkustajana oli"
+  },
+  "travelled-together": {
+    "symmetric": true,
+    "verb": "matkusti yhdessä"
+  },
+  "reported-trip": {
+    "symmetric": true,
+    "verb": "liitettiin samaan matkaan"
+  },
+  "reported-stream": {
+    "symmetric": true,
+    "verb": "keskustelussa väitettiin striimanneen yhdessä"
+  },
+  "tuomittiin": {
+    "forward": "tuomittiin",
+    "reverse": "asiassa tuomittiin"
+  },
+  "isannoi": {
+    "forward": "isännöi",
+    "reverse": "isäntänä oli"
+  },
+  "avusti": {
+    "forward": "avusti",
+    "reverse": "apuna oli"
+  },
+  "jakoi": {
+    "forward": "jakoi",
+    "reverse": "julkaisuja jakoi"
+  }
+}
