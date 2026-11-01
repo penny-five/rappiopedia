@@ -1710,7 +1710,10 @@
       "featured": false,
       "types": [
         "henkilo"
-      ]
+      ],
+      "image": "images/juha.webp",
+      "imageSource": "https://positv.fi/wp-content/uploads/2026/10/Screenshot-2026-10-24-at-21.39.41-1024x703.png",
+      "imageCredit": "PactTalks-kuvakaappaus / Posi TV, Juha Korhonen (24.10.2026)"
     },
     {
       "id": "cuck",
@@ -1767,7 +1770,10 @@
       "featured": false,
       "types": [
         "henkilo"
-      ]
+      ],
+      "image": "images/kimrusi.webp",
+      "imageSource": "https://image.seiska.fi/498918.webp?croph=100.00&cropw=100.00&format=jpg&height=399&imageId=498918&width=710&x=0.00&y=0.00",
+      "imageCredit": "Kari Pekonen / Seiska, Kim Rusin haastattelukuva (18.12.2018)"
     },
     {
       "id": "jasmilla",
