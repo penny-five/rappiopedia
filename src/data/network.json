@@ -1601,6 +1601,84 @@
         220
       ],
       "featured": false
+    },
+    {
+      "id": "testotimo",
+      "name": "Testotimo / Timo Naapila",
+      "group": "stream",
+      "cat": "person",
+      "note": "Kick-striimaaja, jonka lokakuun 2025 subathonissa Aleksi Nurminen oli mukana; vieraili Pottukoiran lähetyksessä.",
+      "pos3": [
+        1560,
+        80,
+        530
+      ],
+      "featured": true
+    },
+    {
+      "id": "viro_pottu_2025",
+      "name": "Pottukoira, Aleksi ja Testotimo / Viro 2025",
+      "group": "events",
+      "cat": "event",
+      "note": "Lokakuun 2025 yhteinen striimausvierailu Virossa, jonka uutisoinnissa mainittiin myös Pullis.",
+      "pos3": [
+        1070,
+        -505,
+        160
+      ],
+      "featured": true
+    },
+    {
+      "id": "testotimo_sub",
+      "name": "Testotimon subathon 10/2025",
+      "group": "stream",
+      "cat": "event",
+      "note": "Testotimon lokakuun 2025 Kick-maratonlähetys.",
+      "pos3": [
+        1730,
+        105,
+        480
+      ],
+      "featured": false
+    },
+    {
+      "id": "pasi",
+      "name": "Pasi Viheraho",
+      "group": "talks",
+      "cat": "person",
+      "note": "Suomalainen pitkän linjan nettiradio- ja YouTube-tekijä, PactTalksin vieras 11.10.2026.",
+      "pos3": [
+        960,
+        700,
+        75
+      ],
+      "featured": true
+    },
+    {
+      "id": "pasiradio",
+      "name": "Pasiradio",
+      "group": "media",
+      "cat": "show",
+      "note": "Pasi Viherahon vuonna 2007 aloittama nettiradio.",
+      "pos3": [
+        -1250,
+        -280,
+        -940
+      ],
+      "featured": false
+    },
+    {
+      "id": "talk_pasi",
+      "name": "PactTalks / Pasi Viheraho 11.10.2026",
+      "group": "talks",
+      "cat": "event",
+      "note": "Jethro Rostedtin juontama PactTalks-lähetys, jossa vieraili Pasi Viheraho.",
+      "pos3": [
+        1030,
+        560,
+        -90
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -3611,6 +3689,114 @@
       "src": [
         "P59"
       ]
+    },
+    {
+      "a": "pottu",
+      "b": "viro_pottu_2025",
+      "label": "yhteislähetyksen isäntä",
+      "level": "reported",
+      "src": [
+        "P60"
+      ]
+    },
+    {
+      "a": "testotimo",
+      "b": "viro_pottu_2025",
+      "label": "yhteisstriimivieras",
+      "level": "reported",
+      "src": [
+        "P60"
+      ]
+    },
+    {
+      "a": "aleksi",
+      "b": "viro_pottu_2025",
+      "label": "yhteisstriimivieras",
+      "level": "reported",
+      "src": [
+        "P60"
+      ]
+    },
+    {
+      "a": "pullis",
+      "b": "viro_pottu_2025",
+      "label": "vierailuseurueessa uutisen mukaan",
+      "level": "reported",
+      "src": [
+        "P60"
+      ]
+    },
+    {
+      "a": "pottu",
+      "b": "aleksi",
+      "label": "yhteisstriimivierailu lokakuussa 2025",
+      "level": "reported",
+      "src": [
+        "P60"
+      ]
+    },
+    {
+      "a": "pottu",
+      "b": "testotimo",
+      "label": "yhteisstriimivierailu lokakuussa 2025",
+      "level": "reported",
+      "src": [
+        "P60"
+      ]
+    },
+    {
+      "a": "testotimo",
+      "b": "testotimo_sub",
+      "label": "subathon-lähetyksen tekijä",
+      "level": "reported",
+      "src": [
+        "P61"
+      ]
+    },
+    {
+      "a": "aleksi",
+      "b": "testotimo_sub",
+      "label": "subathonin taustalla mukana",
+      "level": "reported",
+      "src": [
+        "P61"
+      ]
+    },
+    {
+      "a": "pasi",
+      "b": "talk_pasi",
+      "label": "ohjelmavieras",
+      "level": "reported",
+      "src": [
+        "P63"
+      ]
+    },
+    {
+      "a": "jethro",
+      "b": "talk_pasi",
+      "label": "ohjelman juontaja",
+      "level": "reported",
+      "src": [
+        "P63"
+      ]
+    },
+    {
+      "a": "talks",
+      "b": "talk_pasi",
+      "label": "ohjelmajakso",
+      "level": "reported",
+      "src": [
+        "P63"
+      ]
+    },
+    {
+      "a": "pasi",
+      "b": "pasiradio",
+      "label": "nettiradion perustaja",
+      "level": "reported",
+      "src": [
+        "P63"
+      ]
     }
   ],
   "sources": {
@@ -3913,6 +4099,21 @@
       "label": "Yle 18.6.2026: Pottukoiran rahapelimarkkinointituomio",
       "url": "https://yle.fi/a/74-20229893",
       "note": "Käräjäoikeus tuomitsi 80 päiväsakkoon rahapelirikoksesta, ei lainvoimainen Ylen uutisointihetkellä. Ei osoita suhdetta Kasinokurkeen."
+    },
+    "P60": {
+      "label": "Gekkonen 28.10.2025: Pottukoiran, Aleksin ja Testotimon Viron-yhteisstriimi",
+      "url": "https://gekkonen.net/oho-pottukoiralta-hurja-veto/",
+      "note": "Vierailijat Testotimo ja Aleksi Nurminen, mukana myös Pullis."
+    },
+    "P61": {
+      "label": "Gekkonen 23.10.2025: Testotimon subathon",
+      "url": "https://gekkonen.net/testotimo-aloitti-subathonin-nain-se-eroaa-pottukoiran-striimista/",
+      "note": "Testotimon haastattelun mukaan Aleksi Nurminen oli mukana lähetyksen taustalla."
+    },
+    "P63": {
+      "label": "Gekkonen 12.10.2026: Pasi Viheraho PactTalksissa",
+      "url": "https://gekkonen.net/pasi-viheraho-paljasti-pact-talksissa-totuuden-vesihanalegendasta-ihmiset-on-niin-dilleja/",
+      "note": "11.10.2026 lähetys, juontaja Jethro Rostedt, vieras Pasi Viheraho."
     }
   },
   "date": "2026-11-01"
