@@ -1837,7 +1837,7 @@
       "name": "Julkkispelit / Bratislava 26.–27.5.2026",
       "group": "poker",
       "cat": "event",
-      "note": "Julkkispelit-tapahtumaan Bratislavassa toukokuussa 2026 julkaistiin ennakkoon osallistujalista Nettipokeri.comissa.",
+      "note": "Nettipokeri.comin Julkkispelit by Jackburst pelattiin Bratislavan Banco Casinolla 26.–27.5.2026. Avauspäivän suurimmat voittajat olivat VP Alakorva ja Ilari Sahamies.",
       "pos3": [
         -1470,
         -312,
@@ -1853,7 +1853,7 @@
       "name": "Julkkispelit / Tallinna 25.–26.9.2026",
       "group": "poker",
       "cat": "event",
-      "note": "Julkkispelien Tallinnan-tapahtuman 25.–26. syyskuuta 2026 pelaajalista julkaistiin Nettipokeri.comissa.",
+      "note": "Nettipokeri.comin Julkkispelit järjestettiin Tallinnassa 25.–26.9.2026. Linda Lahdenpää voitti avausiltana eniten ja Teemu ”Tepitee” Turunen toisena iltana.",
       "pos3": [
         -990,
         98,
@@ -2901,6 +2901,38 @@
         1740
       ],
       "featured": true
+    },
+    {
+      "id": "linda_lahdenpaa",
+      "name": "Linda Lahdenpää",
+      "group": "poker",
+      "cat": "person",
+      "types": [
+        "pokeriammattilainen"
+      ],
+      "note": "Linda Lahdenpää on suomalainen pokerinpelaaja, joka arvioi voittaneensa 5 000–6 000 euroa Tallinnan Julkkispelien ensimmäisenä päivänä syyskuussa 2026.",
+      "pos3": [
+        -1230,
+        -310,
+        1840
+      ],
+      "featured": false
+    },
+    {
+      "id": "teemu_tepitee_turunen",
+      "name": "Teemu ”Tepitee” Turunen",
+      "group": "poker",
+      "cat": "person",
+      "types": [
+        "henkilo"
+      ],
+      "note": "Teemu ”Tepitee” Turunen pelasi Tallinnan Julkkispeleillä syyskuussa 2026; järjestäjän loppuraportissa hän oli toisen pelipäivän suurin voittaja 2 700 euron tuloksellaan.",
+      "pos3": [
+        -1110,
+        90,
+        1710
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -6118,6 +6150,31 @@
       "level": "reported",
       "date": "",
       "detail": ""
+    },
+    {
+      "a": "linda_lahdenpaa",
+      "b": "tallinna_poker",
+      "type": "osallistui",
+      "label": "avausillan suurin voittaja, oma arvio +5 000–6 000 euroa",
+      "src": [
+        "P161",
+        "P162"
+      ],
+      "level": "reported",
+      "date": "2026-09-25",
+      "detail": ""
+    },
+    {
+      "a": "teemu_tepitee_turunen",
+      "b": "tallinna_poker",
+      "type": "osallistui",
+      "label": "toisen päivän suurin voittaja, +2 700 euroa",
+      "src": [
+        "P162"
+      ],
+      "level": "reported",
+      "date": "2026-09-26",
+      "detail": ""
     }
   ],
   "sources": {
@@ -6915,6 +6972,36 @@
       "label": "Ruutu: Temptation Island Suomi",
       "url": "https://www.ruutu.fi/ohjelmat/temptation-island-suomi",
       "note": "Ohjelman virallinen Ruutu-esittely."
+    },
+    "P159": {
+      "label": "Nettipokeri.com 27.5.2026: Bratislavan avausillan tulokset",
+      "url": "https://nettipokeri.com/julkkispelit-jatkuvat-tanaan-bratislavassa-vp-alakorva-ja-ilari-sahamies-karjessa-avausillan-jalkeen/",
+      "note": "VP Alakorva ja Ilari Sahamies noin 1 200 € voitolla 26.5.2026; Amanda Harkimo myös voitolla, Tero Lipponen noin 1 000 € tappiolla."
+    },
+    "P160": {
+      "label": "Nettipokeri.com 25.9.2026: Tallinnan Julkkispelien pelaajat",
+      "url": "https://nettipokeri.com/julkkispelit-kaynnistyvat-tanaan-tuttuja-nimia-poytaan-tallinnassa/",
+      "note": "Kahden päivän osallistujalista, 25.–26.9.2026, Nettipokeri.comin Kick ja Julkkispelien YouTube."
+    },
+    "P161": {
+      "label": "Nettipokeri.com 26.9.2026: Linda Lahdenpää avausillan voittaja",
+      "url": "https://nettipokeri.com/linda-lahdenpaa-julkkispelien-avausillan-suurin-voittaja-poydassa-nahtiin-viisinumeroisia-potteja/",
+      "note": "Tallinnan 25.9.2026 perjantain suurin voittaja Linda Lahdenpää, itse arvioitu tulos +5 000–6 000 €."
+    },
+    "P162": {
+      "label": "Nettipokeri.com 27.9.2026: Tallinnan loppuraportti",
+      "url": "https://nettipokeri.com/julkkispelit-paketissa-kaksi-paivaa-taynna-toimintaa/",
+      "note": "Linda Lahdenpää pe +5k–6k, Teemu Tepitee Turunen la +2 700 €, 14 800 € VP–Linda-potti, muita tuloksia."
+    },
+    "P163": {
+      "label": "Kasinohai 4.6.2026: PactHouse-kausien koonti",
+      "url": "https://www.kasinohai.com/uutiset/pacthouse-rappiostriimisisaltoa-ja-laitonta-rahapelimarkkinointia",
+      "note": "PactHouse 1 vuonna 2025 Suomessa ja 12 nimen koonti; tarkkaa aloitus-/lopetuspäivää ja voittajaa ei vahvisteta."
+    },
+    "P164": {
+      "label": "Nettipokeri.com 25.5.2026: Bratislavan toukokuun ohjelma",
+      "url": "https://nettipokeri.com/nettipokeri-comin-julkkispelit-palaavat-huomenna-pokerilegenda-ilari-sahamiehen-johdolla/",
+      "note": "26.–27.5.2026 Banco Casino Bratislava, suoratoistot alkoivat klo 19 Suomen aikaa, ilmoitetut pelaajat."
     }
   },
   "date": "2026-11-01"
