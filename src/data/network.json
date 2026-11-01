@@ -154,7 +154,10 @@
         -449,
         818
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2025/12/sahamies.jpg",
+      "imageCredit": "Gekkonen, Ilari Sahamies",
+      "image": "images/sahamies.webp"
     },
     {
       "id": "lassi",
@@ -184,7 +187,10 @@
         241,
         104
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/e3/5f/16/e35f163c-f9b3-94a8-dabe-50a7fc550327/mza_13265136684859044567.jpg/1200x1200bf.webp",
+      "imageCredit": "Ruusutossu maanpaossa -podcast, Apple Podcasts -kansikuva",
+      "image": "images/ruusu.webp"
     },
     {
       "id": "iippa",
@@ -231,14 +237,14 @@
       "x": 830,
       "y": 2180,
       "image": "images/sami.webp",
-      "imageCredit": "Findance, Sami Kieksi",
+      "imageCredit": "Julius Konttinen / Televisioakatemia ry, Wikimedia Commons (CC BY-SA 4.0)",
       "pos3": [
         1499,
         80,
         404
       ],
       "featured": true,
-      "imageSource": "https://res.cloudinary.com/findance/image/fetch/ar_3%3A2%2Cw_640%2Cc_auto%2Cg_auto%2Cf_auto/https%3A/www.findance.com/kuvat/cloudinary/tapausaarnio-tv-qhmyD.jpg"
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sami_Kieksi_Kultainen_Venla_2020.jpg"
     },
     {
       "id": "revul",
@@ -351,7 +357,8 @@
         -1301
       ],
       "featured": true,
-      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg"
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg",
+      "image": "images/sliki.webp"
     },
     {
       "id": "ossi",
@@ -474,7 +481,10 @@
         485,
         675
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://image.seiska.fi/2027921.webp?compression=70&croph=38.99&cropw=100.00&format=webp&height=678&imageId=2027921&width=1200&x=0.00&y=7.49",
+      "imageCredit": "Seiska, Pulliksen muotokuva",
+      "image": "images/pullis.webp"
     },
     {
       "id": "sampe",
@@ -864,7 +874,10 @@
         -355,
         654
       ],
-      "featured": false
+      "featured": false,
+      "imageSource": "https://image.seiska.fi/1384448.webp?compression=100&croph=35.98&cropw=96&height=630&imageId=1384448&width=1200&x=0&y=5.87",
+      "imageCredit": "Seiska, Joni Hesselgren",
+      "image": "images/joni.webp"
     },
     {
       "id": "kelly",
@@ -984,7 +997,10 @@
         1091,
         -916
       ],
-      "featured": false
+      "featured": false,
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/4/45/Sara_Chafak_2016.jpg",
+      "imageCredit": "Rob Watkins / Club Paf, Wikimedia Commons (CC BY 2.0)",
+      "image": "images/sara.webp"
     },
     {
       "id": "amanda",
@@ -999,7 +1015,10 @@
         1093,
         -709
       ],
-      "featured": false
+      "featured": false,
+      "imageSource": "https://image.seiska.fi/1930280.webp?croph=58.17&cropw=68.83&height=630&width=1200&x=19.63&y=4.02",
+      "imageCredit": "Seiska, Amanda Harkimon muotokuva",
+      "image": "images/amanda.webp"
     },
     {
       "id": "henny",
@@ -1014,7 +1033,10 @@
         1086,
         -1171
       ],
-      "featured": false
+      "featured": false,
+      "imageSource": "https://www.epressi.com/media/userfiles/149329/1716977155/myyra_s4_hennyharjusola2.jpg",
+      "imageCredit": "Myyrä 4 -promokuva / ePressi",
+      "image": "images/henny.webp"
     },
     {
       "id": "crista",
@@ -1269,7 +1291,10 @@
         598,
         149
       ],
-      "featured": false
+      "featured": false,
+      "imageSource": "https://assets.apu.fi/elvis/file/4seJJxIX4baAJ_4z7bBeCN/%2A/paajuttu_pyhimys_1770701301292_A9xlc.jpg",
+      "imageCredit": "Apu, Pyhimyksen henkilökuva",
+      "image": "images/pyhimys.webp"
     },
     {
       "id": "andypyro",
@@ -1660,7 +1685,10 @@
         551,
         189
       ],
-      "featured": true
+      "featured": true,
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Pasi_Viheraho.jpg",
+      "imageCredit": "Soppakanuuna / Wikimedia Commons (CC BY-SA 4.0)",
+      "image": "images/pasi.webp"
     },
     {
       "id": "pasiradio",
