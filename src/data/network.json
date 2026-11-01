@@ -229,9 +229,9 @@
       "x": 3800,
       "y": 580,
       "pos3": [
-        2800,
-        1080,
-        1970
+        1750,
+        775,
+        -530
       ],
       "featured": true,
       "imageSource": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/e3/5f/16/e35f163c-f9b3-94a8-dabe-50a7fc550327/mza_13265136684859044567.jpg/1200x1200bf.webp",
@@ -253,9 +253,9 @@
       "image": "images/iippa.webp",
       "imageCredit": "Seiska, Iippadaa ja Pottukoira yhteiskuvassa",
       "pos3": [
-        2094,
+        2544,
         30,
-        749
+        750
       ],
       "featured": true,
       "imageSource": "https://image.seiska.fi/1680693.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=1680693&width=576&x=0.00&y=0.00",
@@ -274,9 +274,9 @@
       "image": "images/pottu.webp",
       "imageCredit": "Seiska, Pottukoira-haastattelu",
       "pos3": [
-        2730,
+        3180,
         -235,
-        445
+        446
       ],
       "featured": true,
       "imageSource": "https://image.seiska.fi/2184001.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=2184001&width=576&x=0.00&y=0.00",
@@ -294,9 +294,9 @@
       "y": 2180,
       "imageCredit": "Julius Konttinen / Televisioakatemia ry, Wikimedia Commons (CC BY-SA 4.0)",
       "pos3": [
-        -650,
-        -100,
-        2050
+        1290,
+        -25,
+        1525
       ],
       "featured": true,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sami_Kieksi_Kultainen_Venla_2020.jpg",
@@ -315,9 +315,9 @@
       "x": 1090,
       "y": 2260,
       "pos3": [
-        -400,
-        -50,
-        2150
+        1540,
+        25,
+        1625
       ],
       "featured": true,
       "types": [
@@ -333,9 +333,9 @@
       "x": 670,
       "y": 2440,
       "pos3": [
-        -650,
-        -300,
-        2250
+        1290,
+        -225,
+        1725
       ],
       "featured": true,
       "types": [
@@ -351,9 +351,9 @@
       "x": 450,
       "y": 2620,
       "pos3": [
-        2113,
+        2563,
         -130,
-        875
+        876
       ],
       "featured": false,
       "types": [
@@ -372,9 +372,9 @@
       "x": 900,
       "y": 2610,
       "pos3": [
-        1646,
+        2096,
         -417,
-        412
+        413
       ],
       "featured": false,
       "image": "images/pirkkis.webp",
@@ -395,9 +395,9 @@
       "image": "images/bailu.webp",
       "imageCredit": "Matkapojat, Bailupaatti 2026 -juliste",
       "pos3": [
-        2631,
-        -560,
-        -1145
+        1648,
+        -786,
+        725
       ],
       "featured": true,
       "imageSource": "https://www.matkapojat.fi/images/imagemanager/thumbnails/MP_Bailupaatti_2026_Paakuva%2C%20p%C3%A4ivitetty.f5256ef39a95e9cb4b0a97be2f0240059485db75.jpg",
@@ -416,9 +416,9 @@
       "image": "images/korelon.webp",
       "imageCredit": "KPO Festarit, Korelon",
       "pos3": [
-        2025,
-        -440,
-        -1401
+        2275,
+        -340,
+        -1951
       ],
       "featured": true,
       "imageSource": "https://cdn.s-cloud.fi/v1/w1024_q75/assets/dam-id/3f2bOjJQKr1B_8pGLdRUaj.webp?clientId=2085",
@@ -436,9 +436,9 @@
       "y": 2000,
       "imageCredit": "Wikimedia Commons, Slikin muotokuva",
       "pos3": [
-        1915,
-        -570,
-        -1301
+        2165,
+        -470,
+        -1851
       ],
       "featured": true,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg",
@@ -458,9 +458,9 @@
       "image": "images/ossi.webp",
       "imageCredit": "Visnyk Poker, Ossi Ketola",
       "pos3": [
-        3500,
-        -900,
-        -1350
+        2905,
+        -625,
+        -1965
       ],
       "featured": true,
       "imageSource": "https://visnyk.poker/storage/news/5586-a7583226ac34a01a1364ab8803f3d86c12cb8043.png.webp",
@@ -477,9 +477,9 @@
       "x": 3100,
       "y": 2320,
       "pos3": [
-        1987,
-        -343,
-        -1544
+        2237,
+        -243,
+        -2094
       ],
       "featured": false,
       "types": [
@@ -495,9 +495,9 @@
       "x": 3550,
       "y": 2350,
       "pos3": [
-        2084,
-        -570,
-        -955
+        2334,
+        -470,
+        -1505
       ],
       "featured": false,
       "types": [
@@ -513,9 +513,9 @@
       "x": 3740,
       "y": 2210,
       "pos3": [
-        1617,
-        -857,
-        -1418
+        1867,
+        -757,
+        -1968
       ],
       "featured": false,
       "types": [
@@ -531,9 +531,9 @@
       "x": 2390,
       "y": 2140,
       "pos3": [
-        3800,
-        570,
-        -1400
+        4045,
+        435,
+        -620
       ],
       "featured": true,
       "types": [
@@ -549,9 +549,9 @@
       "x": 2600,
       "y": 2250,
       "pos3": [
-        3700,
-        -820,
-        -1150
+        3105,
+        -545,
+        -1765
       ],
       "featured": true,
       "types": [
@@ -567,9 +567,9 @@
       "x": 4090,
       "y": 1510,
       "pos3": [
-        2810,
-        625,
-        575
+        2605,
+        1113,
+        733
       ],
       "featured": true,
       "types": [
@@ -585,9 +585,9 @@
       "x": 3970,
       "y": 1680,
       "pos3": [
-        2640,
-        485,
-        675
+        2435,
+        973,
+        833
       ],
       "featured": true,
       "imageSource": "https://image.seiska.fi/2027921.webp?compression=70&croph=38.99&cropw=100.00&format=webp&height=678&imageId=2027921&width=1200&x=0.00&y=7.49",
@@ -607,9 +607,9 @@
       "x": 4210,
       "y": 1670,
       "pos3": [
-        2970,
-        775,
-        600
+        2765,
+        1263,
+        758
       ],
       "featured": false,
       "types": [
@@ -626,9 +626,9 @@
       "x": 980,
       "y": 660,
       "pos3": [
-        2940,
-        450,
-        810
+        2735,
+        938,
+        968
       ],
       "featured": true,
       "types": [
@@ -648,9 +648,9 @@
       "x": 2110,
       "y": 2110,
       "pos3": [
-        2915,
-        -847,
-        -1294
+        1932,
+        -1073,
+        576
       ],
       "featured": false,
       "types": [
@@ -711,9 +711,9 @@
       "x": 4447,
       "y": 1739,
       "pos3": [
-        -1299,
+        901,
         121,
-        2225
+        -1975
       ],
       "featured": true,
       "types": [
@@ -729,9 +729,9 @@
       "x": 4883,
       "y": 1727,
       "pos3": [
-        -1652,
+        548,
         30,
-        2563
+        -1637
       ],
       "featured": true,
       "types": [
@@ -747,9 +747,9 @@
       "x": 4441,
       "y": 1894,
       "pos3": [
-        -1561,
+        639,
         -90,
-        1862
+        -2338
       ],
       "featured": false,
       "types": [
@@ -765,9 +765,9 @@
       "x": 4869,
       "y": 1897,
       "pos3": [
-        -1209,
+        991,
         -219,
-        2476
+        -1724
       ],
       "featured": false,
       "types": [
@@ -783,9 +783,9 @@
       "x": 4460,
       "y": 2033,
       "pos3": [
-        -1810,
+        390,
         -354,
-        2314
+        -1886
       ],
       "featured": false,
       "types": [
@@ -801,9 +801,9 @@
       "x": 4877,
       "y": 2046,
       "pos3": [
-        -1479,
+        721,
         -162,
-        2278
+        -1922
       ],
       "featured": true,
       "types": [
@@ -819,9 +819,9 @@
       "x": 4433,
       "y": 2198,
       "pos3": [
-        -1322,
+        878,
         -520,
-        2099
+        -2101
       ],
       "featured": false,
       "types": [
@@ -968,9 +968,9 @@
       "x": 881,
       "y": 1155,
       "pos3": [
-        1910,
+        2360,
         -210,
-        1110
+        1111
       ],
       "featured": true,
       "types": [
@@ -1372,9 +1372,9 @@
       "x": 2590,
       "y": 1235,
       "pos3": [
-        3500,
-        400,
-        -1650
+        3745,
+        265,
+        -870
       ],
       "featured": false,
       "imageSource": "https://media.content.livearena.io/icecage/aleksi-nurminen-headshot-1-500x500.png",
@@ -1685,9 +1685,9 @@
       "x": 4216,
       "y": 839,
       "pos3": [
-        3070,
-        1350,
-        2150
+        2020,
+        1045,
+        -350
       ],
       "featured": false,
       "types": [
@@ -1794,9 +1794,9 @@
       "cat": "show",
       "note": "Julkkispelit on Nettipokeri.comiin liittyvä julkkisten pokerilähetys- ja tapahtumasarja, jossa on nähty myös PactHouse-osallistujia.",
       "pos3": [
-        3880,
+        -1270,
         -72,
-        245
+        1445
       ],
       "featured": true,
       "types": [
@@ -1810,9 +1810,9 @@
       "cat": "event",
       "note": "Julkkispelit-tapahtumaan Bratislavassa toukokuussa 2026 julkaistiin ennakkoon osallistujalista Nettipokeri.comissa.",
       "pos3": [
-        3680,
+        -1470,
         -312,
-        445
+        1645
       ],
       "featured": false,
       "types": [
@@ -1826,9 +1826,9 @@
       "cat": "event",
       "note": "Julkkispelien Tallinnan-tapahtuman 25.–26. syyskuuta 2026 pelaajalista julkaistiin Nettipokeri.comissa.",
       "pos3": [
-        4160,
+        -990,
         98,
-        435
+        1635
       ],
       "featured": false,
       "types": [
@@ -1842,9 +1842,9 @@
       "cat": "person",
       "note": "Mentalisti Noora Karma nimettiin Bratislavan Julkkispelien osallistujaksi toukokuussa 2026.",
       "pos3": [
-        3880,
+        -1270,
         188,
-        525
+        1725
       ],
       "featured": false,
       "image": "images/noorak.webp",
@@ -1861,9 +1861,9 @@
       "cat": "person",
       "note": "VP Alakorva oli mukana julkaistuilla Julkkispelit-osallistujalistoilla kahdessa vuoden 2026 tapahtumassa.",
       "pos3": [
-        3560,
+        -1590,
         178,
-        475
+        1675
       ],
       "featured": false,
       "types": [
@@ -1880,9 +1880,9 @@
       "cat": "person",
       "note": "Tero Lipponen nimettiin Julkkispelien osallistujaksi julkaistussa pelaajalistassa.",
       "pos3": [
-        4030,
+        -1120,
         -387,
-        655
+        1855
       ],
       "featured": false,
       "types": [
@@ -1899,9 +1899,9 @@
       "cat": "person",
       "note": "Henri ”Hune” Hyttinen nimettiin Julkkispelien osallistujaksi julkaistussa pelaajalistassa.",
       "pos3": [
-        4240,
+        -910,
         -192,
-        605
+        1805
       ],
       "featured": false,
       "types": [
@@ -1985,9 +1985,9 @@
       "cat": "show",
       "note": "Spurgu-TV on Pottukoiraan liittyvä Kick-lähetyskonsepti, jonka yhteislähetyksissä on esiintynyt Pirkkis.",
       "pos3": [
-        2920,
+        3370,
         -320,
-        440
+        441
       ],
       "featured": true,
       "types": [
@@ -2017,9 +2017,9 @@
       "cat": "event",
       "note": "Pirkkis ja SampeF2 olivat marraskuussa 2025 yhteisellä striimausmatkalla Ateenassa, Kreikassa.",
       "pos3": [
-        1830,
+        2280,
         -430,
-        700
+        701
       ],
       "featured": true,
       "types": [
@@ -2033,9 +2033,9 @@
       "cat": "event",
       "note": "Redditissä keskusteltiin huhtikuussa 2025 Upin, Pirkkiksen ja Taigan yhteiseksi kuvaillusta striimausmatkasta Amsterdamiin.",
       "pos3": [
-        1860,
+        2310,
         -235,
-        915
+        916
       ],
       "featured": false,
       "types": [
@@ -2049,9 +2049,9 @@
       "cat": "person",
       "note": "Taiga on striimaaja, joka on liitetty Reddit-keskusteluissa Upin ja Pirkkiksen kanssa tehtyyn Amsterdamin-matkaan.",
       "pos3": [
-        1910,
+        2360,
         -145,
-        1020
+        1021
       ],
       "featured": false,
       "types": [
@@ -2065,9 +2065,9 @@
       "cat": "event",
       "note": "Pohjois-Savon käräjäoikeus tuomitsi Pottukoiran kesäkuussa 2026 rahapelirikoksesta, kertoi Yle. Tuomio ei ollut uutisointihetkellä lainvoimainen.",
       "pos3": [
-        2640,
+        3090,
         -500,
-        355
+        356
       ],
       "featured": false,
       "types": [
@@ -2081,9 +2081,9 @@
       "cat": "person",
       "note": "Testotimo eli Timo Naapila on Kick-striimaaja, joka piti subathonin lokakuussa 2025 ja vieraili Pottukoiran luona Virossa.",
       "pos3": [
-        2435,
+        2885,
         -325,
-        610
+        611
       ],
       "featured": true,
       "image": "images/testotimo.webp",
@@ -2100,9 +2100,9 @@
       "cat": "event",
       "note": "Pottukoira sai lokakuussa 2025 Virossa striimivieraita, joihin kuuluivat Aleksi Nurminen ja Testotimo.",
       "pos3": [
-        3070,
+        3520,
         -460,
-        500
+        501
       ],
       "featured": true,
       "types": [
@@ -2116,9 +2116,9 @@
       "cat": "event",
       "note": "Testotimo järjesti lokakuussa 2025 Kickissä maratonlähetyksen eli subathonin.",
       "pos3": [
-        2490,
+        2940,
         -160,
-        715
+        716
       ],
       "featured": false,
       "types": [
@@ -2132,9 +2132,9 @@
       "cat": "person",
       "note": "Pasi Viheraho on suomalainen varhaisen YouTube-julkisuuden videontekijä ja Pasiradion vuonna 2007 perustanut radiopersoona.",
       "pos3": [
-        -680,
-        -1170,
-        2180
+        1710,
+        285,
+        2390
       ],
       "featured": true,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Pasi_Viheraho.jpg",
@@ -2152,9 +2152,9 @@
       "cat": "show",
       "note": "Pasiradio on Pasi Viherahon vuonna 2007 käynnistämä harrastuspohjainen internet- ja FM-radio, jossa kuullaan keskusteluja, musiikkia ja kuulijapuheluita.",
       "pos3": [
-        -1189,
+        1011,
         -52,
-        1838
+        -2362
       ],
       "featured": false,
       "types": [
@@ -2184,9 +2184,9 @@
       "cat": "person",
       "note": "Rauno77 on Kick-striimaaja, joka teki Pottukoiran kanssa yhteislähetyksiä loppuvuonna 2025.",
       "pos3": [
-        2850,
+        3300,
         -500,
-        720
+        721
       ],
       "featured": false,
       "types": [
@@ -2200,9 +2200,9 @@
       "cat": "person",
       "note": "Mea Ainasoja, aiemmin Alisana tunnettu somepersoona, esiintyi Pinja Ruusutossun rinnalla Bämät matkoilla -striimiprojektin Nizzan-matkalla lokakuussa 2026.",
       "pos3": [
-        3350,
-        1120,
-        2160
+        2300,
+        815,
+        -340
       ],
       "featured": false,
       "types": [
@@ -2216,9 +2216,9 @@
       "cat": "event",
       "note": "SampeF2:n lokakuun 2026 Kick-lähetyshistoriassa esiintyvät Iippadaan ja Megiksen nimet samassa lähetysotsikossa. Megis mainitaan myös seuraavien päivien Tornion-lähetyksissä.",
       "pos3": [
-        2280,
+        2730,
         120,
-        885
+        886
       ],
       "featured": false,
       "types": [
@@ -2232,9 +2232,9 @@
       "cat": "film",
       "note": "Hard to Break on Anna-Maija Heinosen ja Krista Moision 2024 julkaistu dokumenttielokuva Attesta eli Pulliksesta ja Jonsusta.",
       "pos3": [
-        -350,
-        -300,
-        2400
+        1590,
+        -225,
+        1875
       ],
       "featured": false,
       "types": [
@@ -2248,9 +2248,9 @@
       "cat": "event",
       "note": "Pasilan liikuntahallissa järjestetyssä 1vs1 Fighting -illassa Pullis voitti Claudia Barskin nyrkkeilyottelussa.",
       "pos3": [
-        3750,
-        70,
-        -2070
+        3995,
+        -65,
+        -1290
       ],
       "featured": false,
       "types": [
@@ -2264,9 +2264,9 @@
       "cat": "person",
       "note": "Claudia Barsk on somessa tunnettu henkilö, joka kohtasi Pulliksen 1vs1 Fighting -tapahtuman pääottelussa joulukuussa 2025.",
       "pos3": [
-        4000,
-        120,
-        -2070
+        4245,
+        -15,
+        -1290
       ],
       "featured": false,
       "types": [
@@ -2283,9 +2283,9 @@
       "cat": "event",
       "note": "Kirkkonummen Killinmäen retkipaikalla syttyi 21.9.2026 tulipalo, jota poliisi tutki vahingontekona. Tapaus yhdistettiin Upi-striimaajaan uutisoinnissa.",
       "pos3": [
-        2240,
+        2690,
         -145,
-        1100
+        1101
       ],
       "featured": false,
       "types": [
@@ -2303,9 +2303,9 @@
       "group": "rappio",
       "note": "Iida-Sofia Heimonen (2003–2026), tunnettu nimellä Iidasofya, oli kotkalainen TikTok- ja Kick-striimaaja. Hän kuoli 23-vuotiaana 20. lokakuuta 2026.",
       "pos3": [
-        2030,
+        2480,
         -420,
-        1150
+        1151
       ],
       "featured": true,
       "image": "images/iidasofya.webp",
@@ -2323,9 +2323,9 @@
       "group": "rappio",
       "note": "Susanna Lehto eli Evesussu on suomalainen somepersoona, joka teki yhteisiä lähetyksiä Iidasofyan kanssa ja julkaisi hänestä muistovideon lokakuussa 2026.",
       "pos3": [
-        2250,
+        2700,
         -150,
-        1410
+        1411
       ],
       "featured": false
     },
@@ -2339,9 +2339,9 @@
       "group": "rappio",
       "note": "Iida-Sofia Heimonen kuoli 20. lokakuuta 2026 sairaalahoidossa viisi päivää Kotkassa sattuneen vakavan striimilähetyksen aikaisen hätätilanteen jälkeen.",
       "pos3": [
-        2200,
+        2650,
         -450,
-        1520
+        1521
       ],
       "featured": false
     },
@@ -2355,9 +2355,9 @@
       ],
       "note": "Pinja Ruusutossu otettiin Panamassa kiinni huhtikuussa 2026, oli säilössä yli kaksi kuukautta ja karkotettiin Suomeen 26. kesäkuuta.",
       "pos3": [
-        2750,
-        1380,
-        2450
+        1700,
+        1075,
+        -50
       ],
       "featured": false
     },
@@ -2371,9 +2371,9 @@
       ],
       "note": "Pinja Ruusutossu ja Mea Ainasoja tekivät Bämät matkoilla -projektiin kuuluvia Kick-lähetyksiä Nizzasta 2026 lokakuun lopulla. Jethro Rostedt osallistui matkan lähetyksiin.",
       "pos3": [
-        3190,
-        930,
-        2510
+        2140,
+        625,
+        10
       ],
       "featured": true
     },
@@ -2387,9 +2387,9 @@
       ],
       "note": "Nettikasinon somelähetyksessä Freakbob-asuun pukeutunut henkilö tarttui Pinja Ruusutossuun syyskuussa 2026. Ruusutossu kertoi tehneensä tapahtumasta rikosilmoituksen.",
       "pos3": [
-        3010,
-        1200,
-        2630
+        1960,
+        895,
+        130
       ],
       "featured": false
     },
@@ -2489,9 +2489,9 @@
       ],
       "note": "Ice Cage 9 on 19.12.2026 järjestettäväksi ilmoitettu kamppailutapahtuma. Aleksi Nurmisen ottelupariksi ilmoitettiin Matias Koistinen.",
       "pos3": [
-        4020,
-        400,
-        -1400
+        4265,
+        265,
+        -620
       ],
       "featured": false
     },
@@ -2505,9 +2505,9 @@
       ],
       "note": "Matias Niemi otteli Aleksi Nurmista vastaan syyskuun 2026 Ice Cage 8:ssa.",
       "pos3": [
-        3900,
-        350,
-        -1730
+        4145,
+        215,
+        -950
       ],
       "featured": false,
       "image": "images/matias_niemi.webp",
@@ -2524,9 +2524,9 @@
       ],
       "note": "Matias Koistinen on nyrkkeilyvalmentaja ja Aleksi Nurmisen 19.12.2026 Ice Cage 9 -ottelupariksi ilmoitettu urheilija.",
       "pos3": [
-        4110,
-        600,
-        -1570
+        4355,
+        465,
+        -790
       ],
       "featured": false,
       "image": "images/matias_koistinen.webp",
@@ -2543,9 +2543,9 @@
       ],
       "note": "Max Hynninen on Ice Cagen promoottori ja Ice Cage -podcastin avausvieras.",
       "pos3": [
-        3700,
-        840,
-        -1480
+        3945,
+        705,
+        -700
       ],
       "featured": false,
       "image": "images/max_hynninen.webp",
@@ -2562,9 +2562,9 @@
       ],
       "note": "Lokakuussa 2026 alkanut kamppailu-urheilupodcast, jonka juontaja on Aleksi Nurminen.",
       "pos3": [
-        3570,
-        710,
-        -1130
+        3815,
+        575,
+        -350
       ],
       "featured": false
     },
@@ -2578,9 +2578,9 @@
       ],
       "note": "Patrik Antonius on suomalainen pokeriammattilainen, joka kohtasi Ossi Ketolan Jejun 20 miljoonan dollarin heads-upissa syyskuussa 2026.",
       "pos3": [
-        3950,
-        -930,
-        -1370
+        3355,
+        -655,
+        -1985
       ],
       "featured": false,
       "imageSource": "https://nettipokeri.com/wp-content/uploads/2024/09/Patrik-Antonius-e1725710406361.webp",
@@ -2597,9 +2597,9 @@
       ],
       "note": "Ossi Ketola voitti Patrik Antoniuksen 20 miljoonan dollarin heads-upissa 11.9.2026 Etelä-Korean Jejussa.",
       "pos3": [
-        3850,
-        -1130,
-        -1520
+        3255,
+        -855,
+        -2135
       ],
       "featured": false
     },
@@ -2613,9 +2613,9 @@
       ],
       "note": "Anna-Maija Heinonen ohjasi Krista Moision kanssa Hard to Break -dokumenttielokuvan.",
       "pos3": [
-        -450,
-        -50,
-        2600
+        1490,
+        25,
+        2075
       ],
       "featured": false,
       "image": "images/anna_maija_heinonen.webp",
@@ -2632,9 +2632,9 @@
       ],
       "note": "Krista Moisio ohjasi Anna-Maija Heinosen kanssa Hard to Break -dokumenttielokuvan.",
       "pos3": [
-        -150,
-        -150,
-        2550
+        1790,
+        -75,
+        2025
       ],
       "featured": false,
       "image": "images/krista_moisio.webp",
@@ -2651,9 +2651,9 @@
       ],
       "note": "Joonas Jääskeläinen osallistui julkistettuun joulukuun 2025 1vs1 Fighting -ottelukorttiin.",
       "pos3": [
-        4100,
-        170,
-        -2220
+        4345,
+        35,
+        -1440
       ],
       "featured": false
     },
@@ -2667,9 +2667,9 @@
       ],
       "note": "Venni Kananen oli Joonas Jääskeläisen ottelupariksi ilmoitettu osallistuja 1vs1 Fightingissa joulukuussa 2025.",
       "pos3": [
-        3870,
-        -70,
-        -2330
+        4115,
+        -205,
+        -1550
       ],
       "featured": false
     },
@@ -2683,9 +2683,9 @@
       ],
       "note": "Sami Kieksin ohjaama neliosainen HBO Max -dokumenttisarja vuodelta 2025.",
       "pos3": [
-        -200,
-        -400,
-        2050
+        1740,
+        -325,
+        1525
       ],
       "featured": false
     },
@@ -2699,9 +2699,9 @@
       ],
       "note": "Mikael Kosola eli Niilo22 on vuodesta 2008 arjestaan videoita julkaissut suomalainen YouTube-pioneeri. Hän esiintyi Ylen Tubettajat-dokumentissa ja vuoden 2026 Niilo22 ja viimeinen megis -dokumentissa.",
       "pos3": [
-        -500,
-        -1120,
-        2380
+        1890,
+        335,
+        2590
       ],
       "featured": false,
       "image": "images/niilo22.webp",
@@ -2718,9 +2718,9 @@
       ],
       "note": "Markoboy87 on Porista lähtöisin oleva suomalainen YouTube-pioneeri, joka tunnetaan etenkin juomien avaamis- ja maisteluvideoistaan sekä värikkäistä reaktioistaan.",
       "pos3": [
-        -760,
-        -1390,
-        2460
+        1630,
+        65,
+        2670
       ],
       "featured": false,
       "image": "images/markoboy87.webp",
@@ -2737,9 +2737,9 @@
       ],
       "note": "Asko Huttunen eli Iltapalamies on suomalainen varhainen videobloggaaja, joka teki ruoka-arvioita ja pianolla säestettyjä cover-esityksiä. Hän esiintyi Ylen vuoden 2014 Tubettajat-dokumentissa.",
       "pos3": [
-        -480,
-        -1360,
-        2560
+        1910,
+        95,
+        2770
       ],
       "featured": false
     },
@@ -2753,9 +2753,9 @@
       ],
       "note": "Ismo Tauriainen (s. 1992, kuoli lokakuussa 2025) oli Laitela92-nimellä tunnettu TikTok- ja Kick-striimaaja, joka vieraili Pottukoiran luona Virossa.",
       "pos3": [
-        2070,
+        2520,
         -390,
-        1380
+        1381
       ],
       "featured": false,
       "image": "images/laitela92.webp",
@@ -2772,9 +2772,9 @@
       ],
       "note": "Ylen vuoden 2014 dokumentti kolmen suomalaisen varhaisen videobloggaajan, Pasi Viherahon, Niilo22:n ja Iltapalamiehen, elämästä ja julkaisuista.",
       "pos3": [
-        -380,
-        -250,
-        2250
+        1560,
+        -175,
+        1725
       ],
       "featured": false
     },
@@ -2788,9 +2788,9 @@
       ],
       "note": "Lokakuussa 2026 julkaistu MTV:n dokumentti seuraa Chiara Eklundin ja Juulia Valikaisen Kick-lähetyksiä sekä striimijulkisuuden ansaintaa.",
       "pos3": [
-        -410,
-        -300,
-        2470
+        1530,
+        -225,
+        1945
       ],
       "featured": false
     }
