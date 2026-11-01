@@ -179,7 +179,7 @@ function drawPactHierarchy(c) {
  if (!family || (sector !== 'all' && !family.groups.includes(sector))) return;
  const bounds = bounds3D(N.filter(n => family.groups.includes(n.group)), 145);
  if (!bounds) return;
- const alpha = sector === 'all' ? .33 : .56;
+ const alpha = sector === 'all' ? .37 : .61;
  drawWireVolume(c, bounds, '#25899d', alpha, 1.75, [11, 6]);
  const marker = pr([(bounds.min[0] + bounds.max[0]) / 2, bounds.max[1], bounds.min[2]], c);
  if (marker) {
@@ -217,7 +217,7 @@ function drawCluster(c) {
   if (!middle || middle.x < -950 || middle.x > W + 950 || middle.y < -950 || middle.y > H + 950) continue;
   const col = groupMeta[g][1], active = sector === 'all' || sector === g;
   drawTintedVolume(c, bounds, col, active ? .045 : .01);
-  drawWireVolume(c, bounds, col, active ? .29 : .065, active ? 1.1 : .75);
+  drawWireVolume(c, bounds, col, active ? .35 : .085, active ? 1.1 : .75);
   const title = pr([coords[0], bounds.max[1], coords[2]], c);
   if (title) {
    ctx.save();ctx.fillStyle = tint(col, active ? .93 : .27);
@@ -264,7 +264,7 @@ function nodeLayout(n,p){
  if(!dot&&needLabel&&(p.sc>.12||hot)){
   const withPic=!!n.image,enlarged=isSel||isHover||hot;
   const labelScale=graphLabelScale(p.sc,hot);
-  const w=(enlarged?158:136)*labelScale;
+  const w=(enlarged?186:158)*labelScale;
   const h=(withPic?(enlarged?68:52):(enlarged?52:38))*labelScale;
   let bx=p.x+10*scale,by=p.y-h/2-22*scale;
   if(bx+w>W-8)bx=p.x-w-10*scale;
@@ -277,12 +277,42 @@ function nodeLayout(n,p){
 }
 function nodeHitbox(item){
  const {n,p,r,label,dot}=item;
- if(label)return {id:n.id,x:label.bx,y:label.by,w:label.w,h:label.h,r:Math.max(12,r+4),cx:p.x,cy:p.y,depth:p.z};
+ if(label)return {id:n.id,isLabel:true,x:label.bx,y:label.by,w:label.w,h:label.h,r:Math.max(12,r+4),cx:p.x,cy:p.y,depth:p.z};
  const radius=dot?Math.max(7,2.5*p.sc):Math.max(9,r+4);
  return {id:n.id,x:p.x-radius,y:p.y-radius,w:radius*2,h:radius*2,r:radius,cx:p.x,cy:p.y,depth:p.z};
 }
+/** Render labels separately so the article-selected label can always be painted last. */
+function nodeLabelDisplay(item){
+ const {n,isSel,hot,label}=item;
+ if(!label)return;
+ const col=groupMeta[n.group][1],{bx,by,w,h,withPic,enlarged,labelScale:ls}=label;
+ ctx.save();
+ // Selected labels get a translucent outer ring and an emphasized inner border.
+ if(isSel){
+  RR(bx-2*ls,by-2*ls,w+4*ls,h+4*ls,6*ls);
+  ctx.strokeStyle=tint(col,.40);ctx.lineWidth=4*ls;ctx.stroke();
+ }
+ RR(bx,by,w,h,4*ls);
+ ctx.fillStyle=isSel?'#f0f8fb':hot?'#f7fbff':'#ffffffed';ctx.fill();
+ ctx.strokeStyle=isSel?'#284e68':tint(col,hot?.85:.27);
+ ctx.lineWidth=(isSel?2:hot?1.5:.8)*ls;ctx.stroke();
+ let tx=bx+9*ls,txtmax=w-18*ls;
+ if(withPic){
+  const sz=h-12*ls;
+  drawCirclePhoto(n,bx+8*ls+sz/2,by+h/2,sz/2);
+  tx=bx+sz+13*ls;txtmax=w-(tx-bx)-6*ls;
+ }
+ ctx.textAlign='left';ctx.textBaseline='middle';
+ ctx.font='700 '+Math.max(8,Math.round((enlarged?11:10)*ls))+'px Manrope,Arial';
+ ctx.fillStyle='#202020';
+ ctx.fillText(truncateLabel(n.name,txtmax,value=>ctx.measureText(value).width),tx,by+(withPic?19:16)*ls);
+ ctx.font=Math.max(7,Math.round(9*ls))+'px IBM Plex Mono,monospace';
+ ctx.fillStyle=tint(col,.88);
+ ctx.fillText(truncateLabel(formatNodeTypes(n,ENTITY_TYPES).toUpperCase(),txtmax,value=>ctx.measureText(value).width),tx,by+(withPic?36:29)*ls);
+ ctx.restore();
+}
 function nodeDisplay(item){
- const {n,p,isSel,isHover,hot,inPath,isHub,dot,scale,r,fade,label}=item;
+ const {n,p,isSel,isHover,hot,inPath,dot,r,fade,label}=item;
  const col=groupMeta[n.group][1];
  if(dot){
   ctx.fillStyle=tint(col,selected?.12:.36);
@@ -300,26 +330,7 @@ function nodeDisplay(item){
   ctx.strokeStyle=isSel?'#202d37':hot?col:'#808080';ctx.lineWidth=isSel?2.4:hot?2:1;
   ctx.beginPath();ctx.arc(p.x,p.y,r+6,0,Math.PI*2);ctx.stroke();
  }
- if(label){
-  const {bx,by,w,h,withPic,enlarged,labelScale:ls}=label;
-  // No label drop shadow; depth ordering is handled by the scene's painter queue.
-  RR(bx,by,w,h,4*ls);
-  ctx.fillStyle=isSel?'#f0f8fb':hot?'#f7fbff':'#ffffffed';ctx.fill();
-  ctx.strokeStyle=tint(col,isSel?.95:hot?.85:.27);ctx.lineWidth=(isSel?1.8:hot?1.5:.8)*ls;ctx.stroke();
-  let tx=bx+9*ls,txtmax=w-18*ls;
-  if(withPic){
-   const sz=h-12*ls;
-   drawCirclePhoto(n,bx+8*ls+sz/2,by+h/2,sz/2);
-   tx=bx+sz+13*ls;txtmax=w-(tx-bx)-6*ls;
-  }
-  ctx.textAlign='left';ctx.textBaseline='middle';
-  ctx.font='700 '+Math.max(8,Math.round((enlarged?11:10)*ls))+'px Manrope,Arial';
-  ctx.fillStyle='#202020';
-  ctx.fillText(truncateLabel(n.name,txtmax,value=>ctx.measureText(value).width),tx,by+(withPic?19:16)*ls);
-  ctx.font=Math.max(7,Math.round(9*ls))+'px IBM Plex Mono,monospace';
-  ctx.fillStyle=tint(col,.88);
-  ctx.fillText(truncateLabel(formatNodeTypes(n,ENTITY_TYPES).toUpperCase(),txtmax,value=>ctx.measureText(value).width),tx,by+(withPic?36:29)*ls);
- }
+ if(label&&!isSel)nodeLabelDisplay(item);
  ctx.restore();
 }
 function layoutRelationshipLabels(ps,nodeItems){
@@ -414,6 +425,9 @@ function draw(now){
  for(const label of layoutRelationshipLabels(ps,nodes))scene.push({z:label.z,order:3,draw:()=>drawRelationshipLabel(label)});
  scene.sort((a,b)=>b.z-a.z||a.order-b.order);
  for(const item of scene)item.draw();
+ // An article-selected label stays in front of every other 3D node and relation.
+ const selectedItem=nodes.find(item=>item.isSel&&item.label);
+ if(selectedItem)nodeLabelDisplay(selectedItem);
  document.getElementById('cameraInfo').textContent='AZ '+Math.round(yaw*180/Math.PI)+'° / EL '+Math.round(pitch*180/Math.PI)+'° / D '+Math.round(dist);
  if(dirty){updateTooltip();dirty=false}
  requestAnimationFrame(draw);
@@ -586,7 +600,17 @@ function updateTooltip(){
   tooltip.style.top=Math.max(8,Math.min(H-130,v.cy+15))+'px';
  }
 }
-function hit(x,y){let hit=null,d=Infinity;for(let p of visiblePoints){if(x>=p.x-3&&x<=p.x+p.w+3&&y>=p.y-3&&y<=p.y+p.h+3){if(p.depth<d){hit=p.id;d=p.depth}}else if(Math.hypot(x-p.cx,y-p.cy)<p.r&&p.depth<d){hit=p.id;d=p.depth}}return hit}
+function hit(x,y){
+ const active=visiblePoints.find(p=>p.id===selected&&p.isLabel);
+ if(active&&x>=active.x-3&&x<=active.x+active.w+3&&y>=active.y-3&&y<=active.y+active.h+3)return selected;
+ let result=null,d=Infinity;
+ for(const p of visiblePoints){
+  if((x>=p.x-3&&x<=p.x+p.w+3&&y>=p.y-3&&y<=p.y+p.h+3)||Math.hypot(x-p.cx,y-p.cy)<p.r){
+   if(p.depth<d){result=p.id;d=p.depth}
+  }
+ }
+ return result;
+}
 space.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;if(e.button!==0&&e.button!==1)return;cameraNavigation++;pointer={x:e.clientX,y:e.clientY,yaw,pitch,target:{...target},moved:false,pan:e.shiftKey||e.button===1};space.setPointerCapture(e.pointerId);space.classList.add('drag')});space.addEventListener('pointermove',e=>{let r=space.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(pointer){let dx=e.clientX-pointer.x,dy=e.clientY-pointer.y;if(Math.hypot(dx,dy)>3)pointer.moved=true;if(pointer.pan){let c=projection(),p=dist/Math.min(W,H)*1.05;target=vec(pointer.target.x-(c.right.x*dx-c.up.x*dy)*p,pointer.target.y-(c.right.y*dx-c.up.y*dy)*p,pointer.target.z-(c.right.z*dx-c.up.z*dy)*p)}else{yaw=pointer.yaw-dx*.005;pitch=Math.max(-1.35,Math.min(1.35,pointer.pitch+dy*.005))}}else{let h=hit(x,y);if(h!==hover){hover=h;dirty=true}space.style.cursor=h?'pointer':'grab'}});space.addEventListener('pointerup',e=>{let r=space.getBoundingClientRect();if(pointer&&!pointer.moved){let n=hit(e.clientX-r.left,e.clientY-r.top);if(n)flyTo(n);else clearSelection()}pointer=null;space.classList.remove('drag')});space.addEventListener('pointerleave',()=>{if(!pointer){hover=null;dirty=true}});space.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(450,Math.min(12000,dist*Math.exp(e.deltaY*.001)))},{passive:false});
 document.getElementById('zoomIn').onclick=()=>dist=Math.max(450,dist*.75);document.getElementById('zoomOut').onclick=()=>dist=Math.min(12000,dist*1.32);document.getElementById('home').onclick=reset;document.getElementById('reset').onclick=reset;document.getElementById('clearSelection').onclick=clearSelection;
 document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.toggle('mobileopen')};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderModes();
