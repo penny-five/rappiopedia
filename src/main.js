@@ -22,6 +22,86 @@ function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&l
 function image(n){return n.image||''}const photo={};for(const n of N){if(!n.image)continue;const im=new Image();im.referrerPolicy='no-referrer';im.onload=()=>{photo[n.id]=im};im.onerror=()=>{photo[n.id]=null};im.src=n.image;photo[n.id]=null}
 const rng=(seed)=>{let z=seed;return()=>{z=(z*1664525+1013904223)>>>0;return z/4294967296}};const R=rng(41),stars=Array.from({length:260},()=>({x:R(),y:R(),radius:R()*1.4+.25,alpha:R()*.42+.08}));
 function resize(){const r=space.getBoundingClientRect();dpr=Math.min(window.devicePixelRatio||1,2);W=Math.max(1,r.width);H=Math.max(1,r.height);canvas.width=Math.floor(W*dpr);canvas.height=Math.floor(H*dpr);ctx.setTransform(dpr,0,0,dpr,0,0)}window.addEventListener('resize',resize);resize();
+// A grid-column resize doesn't trigger window.resize, so observe the map itself.
+if (typeof ResizeObserver !== 'undefined') new ResizeObserver(resize).observe(space);
+
+const articleApp=document.querySelector('.app');
+const articlePanel=document.getElementById('rightpanel');
+const articleResizeHandle=document.getElementById('articleResizeHandle');
+const articleWidthStorageKey='rappiopedia.articleWidth';
+let preferredArticleWidth=null,activeArticleResize=null;
+try {
+  const stored=Number(localStorage.getItem(articleWidthStorageKey));
+  if(Number.isFinite(stored)&&stored>=320) preferredArticleWidth=stored;
+} catch { /* Storage can be unavailable; resizing still works. */ }
+
+function articleWidthLimits(){
+  const viewportWidth=window.innerWidth;
+  const minWidth=viewportWidth<=960?320:viewportWidth<=1230?330:365;
+  const leftWidth=viewportWidth<=960?0:document.getElementById('leftpanel').getBoundingClientRect().width;
+  return {minWidth,maxWidth:Math.max(minWidth,Math.floor(articleApp.clientWidth-leftWidth-240))};
+}
+function updateArticleResizeAria(width,minWidth,maxWidth){
+  articleResizeHandle.setAttribute('aria-valuenow',String(width));
+  articleResizeHandle.setAttribute('aria-valuemin',String(minWidth));
+  articleResizeHandle.setAttribute('aria-valuemax',String(maxWidth));
+  articleResizeHandle.setAttribute('aria-valuetext',width+' pikseliä');
+}
+function setArticleWidth(requestedWidth){
+  const {minWidth,maxWidth}=articleWidthLimits();
+  const width=Math.round(Math.max(minWidth,Math.min(maxWidth,requestedWidth)));
+  articleApp.style.setProperty('--article-width',width+'px');
+  updateArticleResizeAria(width,minWidth,maxWidth);
+}
+function persistArticleWidth(){
+  preferredArticleWidth=Math.round(articlePanel.getBoundingClientRect().width);
+  try { localStorage.setItem(articleWidthStorageKey,String(preferredArticleWidth)); } catch {}
+}
+function syncArticleWidth(){
+  if(window.innerWidth<=680)return; // Mobile article opens as an overlay.
+  if(preferredArticleWidth!==null) setArticleWidth(preferredArticleWidth);
+  else {
+    const {minWidth,maxWidth}=articleWidthLimits();
+    updateArticleResizeAria(Math.round(articlePanel.getBoundingClientRect().width),minWidth,maxWidth);
+  }
+}
+articleResizeHandle.addEventListener('pointerdown',event=>{
+  if(event.button!==0||window.innerWidth<=680)return;
+  event.preventDefault();
+  activeArticleResize={pointerId:event.pointerId,startX:event.clientX,startWidth:articlePanel.getBoundingClientRect().width};
+  articleResizeHandle.setPointerCapture(event.pointerId);
+  articleApp.classList.add('resizing-article');
+});
+articleResizeHandle.addEventListener('pointermove',event=>{
+  if(!activeArticleResize||event.pointerId!==activeArticleResize.pointerId)return;
+  setArticleWidth(activeArticleResize.startWidth+activeArticleResize.startX-event.clientX);
+});
+function finishArticleResize(){
+  if(!activeArticleResize)return;
+  activeArticleResize=null;
+  articleApp.classList.remove('resizing-article');
+  persistArticleWidth();
+}
+articleResizeHandle.addEventListener('pointerup',finishArticleResize);
+articleResizeHandle.addEventListener('pointercancel',finishArticleResize);
+articleResizeHandle.addEventListener('lostpointercapture',finishArticleResize);
+articleResizeHandle.addEventListener('keydown',event=>{
+  if(window.innerWidth<=680)return;
+  const {minWidth,maxWidth}=articleWidthLimits();
+  const width=articlePanel.getBoundingClientRect().width;
+  let next;
+  if(event.key==='ArrowLeft')next=width+(event.shiftKey?60:20);
+  else if(event.key==='ArrowRight')next=width-(event.shiftKey?60:20);
+  else if(event.key==='Home')next=minWidth;
+  else if(event.key==='End')next=maxWidth;
+  else return;
+  event.preventDefault();
+  setArticleWidth(next);
+  persistArticleWidth();
+});
+window.addEventListener('resize',syncArticleWidth);
+syncArticleWidth();
+
 function vec(x,y,z){return{x,y,z}}function sub(a,b){return vec(a.x-b.x,a.y-b.y,a.z-b.z)}function dot(a,b){return a.x*b.x+a.y*b.y+a.z*b.z}function cross(a,b){return vec(a.y*b.z-a.z*b.y,a.z*b.x-a.x*b.z,a.x*b.y-a.y*b.x)}function norm(a){let q=Math.hypot(a.x,a.y,a.z)||1;return vec(a.x/q,a.y/q,a.z/q)}function projection(){let cp=Math.cos(pitch),sp=Math.sin(pitch),sy=Math.sin(yaw),cy=Math.cos(yaw);let cam=vec(target.x+dist*sy*cp,target.y+dist*sp,target.z+dist*cy*cp);let forward=norm(sub(target,cam)),right=norm(cross(forward,vec(0,1,0))),up=cross(right,forward);let focal=Math.min(W*1.04,H*1.4);return {cam,forward,right,up,focal}}
 function pr(v,camera){let dif=sub(vec(v[0],v[1],v[2]),camera.cam),z=dot(dif,camera.forward);if(z<65)return null;let sc=camera.focal/z;return{x:W*.5+dot(dif,camera.right)*sc,y:H*.5-dot(dif,camera.up)*sc,z,sc}}
 function tint(c,a){const v=parseInt(c.replace('#',''),16);return `rgba(${(v>>16)&255},${(v>>8)&255},${v&255},${a})`}
