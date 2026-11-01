@@ -4,7 +4,11 @@ Rappiopedia on suomalaisen striimaus- ja nettiviihteen tietosanakirja. Sivusto k
 
 ## Kirjoittaminen
 
-- Kirjoita **hyvää, tavallista suomea**. Artikkelin ensimmäisen virkkeen pitää kertoa, kuka henkilö on tai mikä aihe on kyseessä.
+- Kirjoita **hyvää, tavallista suomea**. Oleta, ettei lukija tunne aihetta ennestään.
+- **Henkilöartikkelin ensimmäinen kappale on esittely, ei yhteysluettelo.** Kerro henkilön nimi ja tunnettu nimimerkki, mistä hänet tunnetaan, mitä hän tekee tai on tehnyt ja mikä hänen julkisen toimintansa tausta on. Esimerkiksi yksi vierailu PactTalksissa tai osallistuminen PactHouseen ei yksin ole riittävä henkilöesittely.
+- Selvitä henkilöstä mahdollisuuksien mukaan myös hänen toimintaansa **ennen verkostoon kirjattuja tapahtumia**: oma tuotanto, kanavat, ura, esiintymiset ja muu julkinen historia. Älä päättele puuttuvia elämäkertatietoja pelkistä graafin yhteyksistä.
+- **Merkittävät tapahtumat saavat omat alaotsikkonsa.** Kerro henkilöä koskevista tärkeistä tapahtumista, vaikka ne eivät yhdistäisi häntä muihin solmuihin. Esimerkiksi Upin vuonna 2026 sattunut parvekeonnettomuus kuuluu hänen artikkelissaan omaan, lähteistettyyn osioonsa. Kerro mitä tapahtui ja milloin; älä spekuloi tapahtuman syyllä tai seurauksilla.
+- Jäsennä artikkeli aiheen mukaan: esimerkiksi Tausta, Striimausura, Onnettomuus lokakuussa 2026 tai Muu julkisuus. Älä käytä otsikoita vain mallin täyttämiseksi.
 - Kerro tapahtumista, esiintymisistä, tuotannoista ja muista olennaisista asioista kokonaisin virkkein. Älä kirjoita muistiinpanotyylisiä luetteloita kuten ”Striimaaja; vieras; tapahtumakonteksti”.
 - Käytä otsikoita vain, kun niiden alla on oikeaa sisältöä. Älä pakota jokaiseen artikkeliin samaa ”Yhteenveto / Dokumentoidut yhteydet / Tulkinnan rajat” -rakennetta.
 - **Älä lisää artikkelien loppuun automaattisia varaumia** tyyliin ”yhteinen esiintyminen ei itsessään osoita taloudellista yhteistyötä”. Kerro epävarmuudesta siinä kohdassa, jossa se koskee käsiteltävää väitettä.
@@ -40,7 +44,11 @@ Tarkista ennen uuden solmun lisäämistä, löytyykö sama henkilö tai tapahtum
 
 Artikkelissa `[[jethro|Jethro Rostedt]]` avaa toisen artikkelin ja `[@P6]` linkittää lähteeseen. Markdown-tuki on rajattu: käytä otsikoita, kappaleita, luetteloita, lihavointia, kursivointia ja lainauksia. Raakaa HTML:ää ja tavallisia Markdown-URL-linkkejä ei renderöidä.
 
-`node.note` näkyy kartan kuvauksissa ja siitä voidaan muodostaa lyhyt artikkeliteksti. Kirjoita se aina kokonaisena, informatiivisena lauseena. Pidempiä aiheita varten tee erillinen Markdown-artikkeli.
+`node.note` näkyy kartan kuvauksissa ja siitä voidaan muodostaa lyhyt artikkeliteksti. Sen pitää kertoa, kuka tai mikä aihe on, ei vain listata verkostosuhteita. Kirjoita lyhyt esittely kokonaisin virkkein.
+
+Automaattisesti tuotettu perusteksti ei korvaa toimitettua henkilöartikkelia. Tärkeistä henkilöistä kirjoitetaan Markdown-artikkeli, jossa on myös tausta, ura ja merkittävät tapahtumat.
+
+**Ennen henkilöartikkelin hyväksymistä:** saako uusi lukija heti selville, kuka henkilö on? Käsitelläänkö hänen omaa toimintaansa ja elämäntapahtumiaan, vai onko sivu pelkkä luettelo suhteista muihin solmuihin?
 
 Käyttöliittymä on suomenkielinen, vaalea ja tietosanakirjamainen. Säilytä 3D-kartan pyöritys, zoomaus, siirtäminen ja kohteiden avaaminen. PACTin ohjelmat kuuluvat samaan kartalla näytettävään ryhmään.
 
