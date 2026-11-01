@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { focusedNodeIds, projectedEdgePoint, graphLabelScale } from '../src/lib/scene.js';
+
+test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
+  const edges = [
+    { a: 'jethro', b: 'talks', level: 'reported' },
+    { a: 'pact', b: 'jethro', level: 'verified' },
+    { a: 'jethro', b: 'other', level: 'lead' },
+    { a: 'pact', b: 'other', level: 'reported' }
+  ];
+  assert.deepEqual([...focusedNodeIds('jethro', edges, new Set(['reported', 'verified']))].sort(), ['jethro','pact','talks']);
+  assert.deepEqual([...focusedNodeIds(null, edges, new Set(['reported']))], []);
+});
+
+test('focused labels have fixed size, ordinary labels shrink/grow with perspective', () => {
+  assert.equal(graphLabelScale(.25, true), 1);
+  assert.equal(graphLabelScale(3, true), 1);
+  assert.ok(graphLabelScale(.3, false) < graphLabelScale(.6, false));
+  assert.equal(graphLabelScale(.01, false), .6);
+  assert.equal(graphLabelScale(3, false), 1.55);
+});
+
+test('projected edge points retain 3D depth ordering', () => {
+  const a = { x: 0, y: 10, z: 1000 }, b = { x: 300, y: 50, z: 2000 };
+  assert.deepEqual(projectedEdgePoint(a, b, 0), a);
+  assert.deepEqual(projectedEdgePoint(a, b, 1), b);
+  const p = projectedEdgePoint(a, b, .5);
+  assert.ok(p.z > a.z && p.z < b.z);
+  assert.ok(p.x > a.x && p.x < b.x);
+});
