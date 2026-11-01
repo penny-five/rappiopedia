@@ -40,6 +40,14 @@ Jos mahdollista, etsi myös itse tallenne tai klippi. Otsikko kertoo, mitä läh
 
 Esimerkki: lokakuun 2026 PACT-lähetysarkistoissa Bämät matkoilla näkyy jaksojen 97 ja 98 otsikoissa. Samoissa otsikoissa esiintyy myös `!stake`-tunniste. Nämä ovat erillisiä havaintoja, eikä tunniste yksin kerro vieraiden omista sopimuksista.
 
+### Etsi myös Gekkosesta, Uunosta ja Redditistä
+
+Suomalaisen rappiostriimauksen historiassa ajankohtaisia, päivämäärällä yksilöityjä tapahtumia löytyy usein myös Gekkosesta (`site:gekkonen.net`), Uunosta (`site:uuno.fi`), Seiskasta, Redditistä (`site:reddit.com/r/snappisensuroimaton` ja `site:reddit.com/r/snappisensuroimat0n`) sekä Ylilaudalta. Näistä voi löytää esimerkiksi lähetysten vieraita, ulkomaanmatkoja, subathonien kestoja, riitoja ja myöhempiä uutispäivityksiä. Hae nimellä, nimimerkillä, ajankohdalla ja paikalla; avaa yksittäinen uutinen tai keskusteluketju ja tallenna suora URL.
+
+Lähteitä ei tarvitse rajata vain suurten uutismedioiden aineistoon, mutta erottele uutisen tekijän näkemä tallenne, nimetty haastateltava, viranomaisen vahvistus, toimitukselle kerrottu tieto ja keskustelijan arvaus. Kirjoita varsinkin kiistanalaiset väitteet niiden esittäjän kertomuksena. Älä päättele rikostuomiota rikosepäilystä tai yhdistä eri tapahtumia pelkän yhteisen nimimerkin perusteella.
+
+**Subathonien kartoitus:** etsi jokaiselle lähetysmaratonille erikseen paikka, aloitus, tiedossa oleva päättyminen, formaatti, vieraat ja tallenne. Tulevasta maratonista kertova ennakko ei osoita toteutumista. Varmista myös hakutuloksen henkilö: KP2Timesin subathon ei ole Pottukoiran subathon.
+
 ### Käytä keskustelupalstojen aineistoa
 
 Redditin, Ylilaudan ja muiden julkisten keskustelujen viestit voivat auttaa selvittämään striimausvierailuja, matkaseurueita ja tapahtumia. Yksilöity viesti tai ketju voi olla myös artikkelin lähde.
