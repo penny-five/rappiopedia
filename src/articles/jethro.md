@@ -16,6 +16,10 @@ Rostedt aloitti PACTin [[talks|PactTalks]]-keskusteluohjelman juontajana heinäk
 
 Lokakuussa 2026 Rostedt kertoi Seiskalle juontavansa Tallinnasta käsin kuutta suoraa PactTalks-lähetystä viikossa. Hänet nähtiin myös [[bamat_nizza_2026|Bämät matkoilla -projektin Nizzan-lähetyksissä]] syksyllä 2026. [@P115] [@P103]
 
+## PactTalksin elokuun 2026 välikohtaus
+
+Rostedt juonsi 11. elokuuta 2026 [[pact_augtalk|PactTalks-lähetyksen]], jossa [[johanna|Johanna Tukiainen]], [[joonasm|Joonas Mäkäräinen]] ja [[milla|Milla Säilynoja]] ottivat yhteen. Seiskan mukaan tilanne eteni fyysiseksi, ja Rostedt auttoi erottamaan riidan osapuolia. Rostedt kertoi, ettei hän ollut odottanut tällaista tilannetta ennen lähetystä. [@P41]
+
 ## Veropetostuomio ja velat
 
 Varsinais-Suomen käräjäoikeus antoi Rostedtille syyskuussa 2025 tuomion veropetoksista. Turun hovioikeus vahvisti elokuussa 2026 rangaistuksen kolmesta törkeästä veropetoksesta ja yhdestä veropetoksesta: vuosi ja kahdeksan kuukautta ehdollista vankeutta sekä 90 tuntia yhdyskuntapalvelua. Lisäksi hänen maksettavakseen määrättiin noin 599 000 euroa korkoineen Verohallinnolle. Rostedt käsitteli tuomiota Seiskan lokakuun haastattelussa ja kertoi pitävänsä vuosia jatkunutta julkisuutta raskaana. [@P115]
