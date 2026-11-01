@@ -2,7 +2,7 @@
 
 ## Yhteislähetykset Pottukoiran kanssa
 
-Ari esiintyi Kärkkäisen Kick-lähetyksissä jo vuoden 2023 puolella. Tammikuun 3. päivänä 2024 kaksikko lähti Thaimaahan, ja [[pottu_pattaya_2024|Pattayan lähetysmaratonissa]] he kuvasivat hotellielämää, ravintolailtoja, arkista yhdessäoloa ja keskinäisiä erimielisyyksiään. Kuusi viikkoa jatkunut striimausmatka päättyi helmikuussa. [@P271] [@P277] [@P184]
+Ari esiintyi Kärkkäisen Kick-lähetyksissä jo ennen heidän yhteistä Thaimaan-matkaansa. Tammikuun 3. päivänä 2024 kaksikko lähti Thaimaahan, ja [[pottu_pattaya_2024|Pattayan lähetysmaratonissa]] he kuvasivat hotellielämää, ravintolailtoja, arkista yhdessäoloa ja keskinäisiä erimielisyyksiään. Kuusi viikkoa jatkunut striimausmatka päättyi helmikuussa. [@P271] [@P277] [@P184]
 
 Tammikuun 22. päivänä Seiska kertoi Arin joutuneen sairaalaan Pattayalla. Hän puhui sairaalakäynnistään myös omassa TikTok-lähetyksessään ja kertoi käyttävänsä väliaikaisesti pyörätuolia. Kärkkäinen jatkoi subathonin kuvaamista Arin ollessa hoidossa. [@P272]
 
