@@ -12,7 +12,7 @@ Lokakuun 19. päivänä 2019 TampereenTero oli suorassa YouTube-lähetyksessä k
 
 ## [[tampereentero_subway|Subway-lähetys ja oikeustuomio]]
 
-Teron suoratoistolähetyksessä Tampereen Subway-ravintolassa kuvattiin työntekijää, ja tapahtumasta seurasi oikeusasia. Kaupunkikanavan toukokuussa 2022 julkaiseman artikkelin mukaan Tero sai kunnianloukkaustuomion. Samassa oikeuden istunnossa hänet tuomittiin myös perättömästä vaarailmoituksesta. Artikkeli ei erittele tuomion tarkkaa antopäivää tai rangaistuksen määrää. [@P222]
+Teron suoratoistolähetyksessä Tampereen Subway-ravintolassa kuvattiin työntekijää, ja tapahtumasta seurasi oikeusasia. Kaupunkikanavan toukokuussa 2022 julkaiseman artikkelin mukaan Tero sai kunnianloukkaustuomion. Samassa oikeuden istunnossa hänet tuomittiin myös perättömästä vaarailmoituksesta. Tapausta käsiteltiin toukokuussa 2022 julkaistussa Kaupunkikanavan jutussa. [@P222]
 
 ## Yhteislähetykset ja rappiotuben tutkimus
 
