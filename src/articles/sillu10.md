@@ -4,11 +4,11 @@
 
 Vaasalaisia.info esitteli marraskuussa 2011 Sillu10:n kuvaaman videon, jossa arvioitiin Pizzeria Lindan tillimakaronia Vaasassa. Jutussa videoon liittyi ruoan maun arviointi ja tekijän omakohtainen kokemus ravintolasta. Ruokakokeilut ja arkiset havainnot olivat varhaisen suomalaisen videobloggaamisen tunnusomaisia aiheita. [@P230] [@P140]
 
-YouTube-kanavan tilastopalvelu SPEAKRJ kirjasi elokuussa 2022 Sillu10-kanavalle noin 3 100 tilaajaa, 986 videota ja 1,9 miljoonaa katselukertaa. Luvut kuvaavat tuolloista tilannetta, eivät myöhempiä kokonaislukuja. [@P231]
+Elokuussa 2022 Sillu10:n kanavalla oli SPEAKRJ-palvelun mukaan noin 3 100 tilaajaa, 986 videota ja yhteensä 1,9 miljoonaa katselukertaa. [@P231]
 
 ## Tammikuun 2014 yhteistapaaminen
 
-[[djpate246|DjPate246]] julkaisi 19. tammikuuta 2014 videon nimeltä *Viheraho,Sillu100% And Djpate246 Osa1/1*. Kuvauksen mukaan kyse oli sunnuntain tapaamisesta. [[djpate_sillu_pasi_2014|Videolla]] esiintyivät Sillu100%, [[pasi|Pasi Viheraho]] ja DjPate246, joten heidän kohtaamisestaan on säilynyt tekijän oma julkaisu. [@P240]
+[[djpate246|DjPate246]] julkaisi 19. tammikuuta 2014 videon nimeltä *Viheraho,Sillu100% And Djpate246 Osa1/1*. Kuvauksen mukaan kyse oli sunnuntain tapaamisesta. [[djpate_sillu_pasi_2014|Tapaamiseen]] osallistuivat Sillu100%, [[pasi|Pasi Viheraho]] ja DjPate246. [@P240]
 
 ## Niilo22:n tapaamiset
 
