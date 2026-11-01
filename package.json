@@ -12,7 +12,8 @@
     "check": "npm run test && npm run build",
     "images": "python scripts/process_images.py --download --update-data",
     "test:images": "python -m unittest discover -s tests -p 'test_images.py'",
-    "research:candidates": "node scripts/research-candidates.mjs"
+    "research:candidates": "node scripts/research-candidates.mjs",
+    "images:candidates": "node scripts/image-candidates.mjs"
   },
   "devDependencies": {
     "vite": "6.3.6"
