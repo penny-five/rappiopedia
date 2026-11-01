@@ -3,7 +3,7 @@ import DATA from './data/network.json';
 import RELATION_TYPES from './data/relation-types.json';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
-import { focusedNodeIds, graphLabelScale, projectedEdgePoint, cameraTravelDirection } from './lib/scene.js';
+import { focusedNodeIds, graphLabelScale, projectedEdgePoint, cameraTravelDirection, routeVisibility, relationshipLabelEdges } from './lib/scene.js';
 import { hierarchyGroups } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
@@ -213,16 +213,16 @@ function nodeDisplay(item){
  ctx.restore();
 }
 function layoutRelationshipLabels(ps,nodeItems){
- if(!selected)return [];
+ if(!selected&&!pathNodes.length)return [];
  const occupied=[],labels=[];
  const nodeBoxes=nodeItems.filter(item=>item.label).map(({label})=>({x:label.bx,y:label.by,w:label.w,h:label.h}));
  ctx.save();ctx.font='700 11px DM Sans,Arial';
- for(const e of E){
-  if(!showLevels.has(e.level)||(e.a!==selected&&e.b!==selected))continue;
+ for(const {edge:e,from} of relationshipLabelEdges(E,selected,pathNodes,pathEdges)){
+  if(!showLevels.has(e.level))continue;
   const p=ps[e.a],q=ps[e.b];if(!p||!q)continue;
   const dx=q.x-p.x,dy=q.y-p.y,len=Math.hypot(dx,dy);
   if(len<55||W<100)continue;
-  const text=relationVerb(e,selected,RELATION_TYPES);
+  const text=relationVerb(e,from,RELATION_TYPES);
   const w=Math.min(Math.max(40,W-16),Math.max(68,Math.ceil(ctx.measureText(text).width)+25)),h=24;
   const nx=-dy/len,ny=dx/len;
   let box=null,depth=0;
@@ -270,20 +270,21 @@ function draw(now){
  frame++;
  drawBackground();
  const c=projection(),ps={};for(const n of N)ps[n.id]=pr(n.pos3,c);
- focusIds=focusedNodeIds(selected,E,showLevels);
- drawWorldGrid(c);drawPactHierarchy(c);drawCluster(c);drawDepthGuides(c,ps);
- const nodes=N.map(n=>({n,p:ps[n.id]}))
+ const routeView=routeVisibility(pathNodes,pathEdges);
+ focusIds=routeView.active?new Set(pathNodes):focusedNodeIds(selected,E,showLevels);
+ drawWorldGrid(c);
+ if(!routeView.active){drawPactHierarchy(c);drawCluster(c);drawDepthGuides(c,ps)}
+ const nodes=N.filter(n=>routeView.showsNode(n.id)).map(n=>({n,p:ps[n.id]}))
   .filter(item=>item.p&&item.p.x>-190&&item.p.x<W+200&&item.p.y>-170&&item.p.y<H+200)
   .map(({n,p})=>nodeLayout(n,p));
  visiblePoints=nodes.map(nodeHitbox);
  const scene=[];
  E.forEach((e,i)=>{
-  if(!showLevels.has(e.level))return;
+  if(!routeView.showsEdge(i)||!showLevels.has(e.level))return;
   const a=ps[e.a],b=ps[e.b];if(!a||!b)return;
   if((a.x<-W&&b.x<-W)||(a.x>W*2&&b.x>W*2))return;
-  const hi=pathEdges.includes(i)||(!!selected&&(e.a===selected||e.b===selected));
+  const hi=routeView.active||!!selected&&(e.a===selected||e.b===selected);
   let dim=(!!selected&&!hi)||(sector!=='all'&&by[e.a].group!==sector&&by[e.b].group!==sector&&!hi);
-  if(pathNodes.length&&!pathEdges.includes(i))dim=true;
   // Subdivide edges in depth so a closer line can correctly occlude a distant label.
   const segments=Math.min(16,Math.max(1,Math.ceil(Math.abs(a.z-b.z)/240)));
   let dashPhase=0;
@@ -345,7 +346,7 @@ function showDetails(id){
 }
 function renderSectors(){let box=document.getElementById('sectors');box.innerHTML=`<button class="sector ${sector==='all'?'active':''}" data-sector="all"><span class="led" style="color:#444;background:#444"></span><span class="title">KOKO AVARUUS</span><span class="count">${N.length}</span></button>`+Object.entries(groupMeta).map(([id,[name,color]])=>`<button class="sector ${id===sector?'active':''}" data-sector="${id}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${N.filter(n=>n.group===id).length}</span></button>`).join('');box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{sector=b.dataset.sector;renderSectors();if(sector!=='all'){let p=centers[sector],n=N.find(n=>n.group===sector);let st={...target},ed=vec(...p),start=performance.now(),navigation=++cameraNavigation;let a=(time)=>{if(navigation!==cameraNavigation)return;let t=Math.min(1,(time-start)/620);t=1-(1-t)**3;target=vec(st.x+(ed.x-st.x)*t,st.y+(ed.y-st.y)*t,st.z+(ed.z-st.z)*t);dist=Math.max(1250,dist+(1450-dist)*.08);if(t<1)requestAnimationFrame(a)};requestAnimationFrame(a);if(n)showDetails(n.id)}else{cameraNavigation++;target=vec(0,0,0);dist=3650}})}
 function renderModes(){document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('on',b.dataset.mode===mode))}document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;renderModes()});
-document.querySelectorAll('[data-level]').forEach(b=>b.onclick=()=>{let k=b.dataset.level;if(showLevels.has(k))showLevels.delete(k);else showLevels.add(k);b.classList.toggle('on',showLevels.has(k));b.setAttribute('aria-pressed',String(showLevels.has(k)))});
+document.querySelectorAll('[data-level]').forEach(b=>b.onclick=()=>{let k=b.dataset.level;if(showLevels.has(k))showLevels.delete(k);else showLevels.add(k);b.classList.toggle('on',showLevels.has(k));b.setAttribute('aria-pressed',String(showLevels.has(k)));if(pathNodes.length)doRoute(pathNodes[0],pathNodes[pathNodes.length-1])});
 const searchInput=document.getElementById('search');
 const searchMenu=document.getElementById('searchSuggestions');
 const searchContainer=document.querySelector('.topsearch');
@@ -426,7 +427,25 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden)pressedTrav
 document.addEventListener('focusin',e=>{if(e.target.closest?.('input, textarea, select, [contenteditable="true"], [role="textbox"]'))pressedTravelKeys.clear()});
 function fillSelects(){let sorted=N.slice().sort((a,b)=>a.name.localeCompare(b.name,'fi'));for(let id of ['from','to'])document.getElementById(id).innerHTML=sorted.map(n=>`<option value="${esc(n.id)}">${esc(n.name)}</option>`).join('');document.getElementById('from').value='iippa';document.getElementById('to').value='sliki'}
 function route(from,to){return shortestPath(from,to,E,showLevels)}
-function doRoute(a,b){let r=route(a,b);if(!r){document.getElementById('pathresult').textContent='Polkua ei löydy näillä näytönsuodattimilla.';pathNodes=[];pathEdges=[];return}pathNodes=r.ns;pathEdges=r.es;let names=r.ns.map(id=>by[id].name);document.getElementById('pathresult').innerHTML=`<strong>${r.es.length} välivaihetta:</strong><br/>${names.map(esc).join(' → ')}<br/><span style="color:#777">Polku ei osoita sopimusta tai osallisuutta välikäsien tekoihin.</span>`;selected=a;showDetails(a);if(r.ns.length){cameraNavigation++;let pts=r.ns.map(id=>by[id].pos3),m=[0,1,2].map(i=>pts.reduce((s,p)=>s+p[i],0)/pts.length);target=vec(...m);dist=Math.max(1450,Math.min(3150,550+Math.max(...pts.map(p=>Math.hypot(p[0]-m[0],p[1]-m[1],p[2]-m[2])))*3.2))}}
+function doRoute(a,b){
+ const r=route(a,b);
+ hover=null;dirty=true;
+ if(!r){
+  document.getElementById('pathresult').textContent='Polkua ei löydy näillä näytönsuodattimilla.';
+  pathNodes=[];pathEdges=[];
+  return;
+ }
+ pathNodes=r.ns;pathEdges=r.es;
+ const names=r.ns.map(id=>by[id].name);
+ document.getElementById('pathresult').innerHTML=`<strong>${r.es.length} yhteyttä:</strong><br/>${names.map(esc).join(' → ')}`;
+ selected=a;showDetails(a);
+ if(r.ns.length){
+  cameraNavigation++;
+  const pts=r.ns.map(id=>by[id].pos3),m=[0,1,2].map(i=>pts.reduce((s,p)=>s+p[i],0)/pts.length);
+  target=vec(...m);
+  dist=Math.max(1450,Math.min(3150,550+Math.max(...pts.map(p=>Math.hypot(p[0]-m[0],p[1]-m[1],p[2]-m[2])))*3.2));
+ }
+}
 const tours={pact:['pact','s3','jethro','talks','ruusu'],bridge:['iippa','sami','bailu','korelon','sastamala','ossi'],casino:['kasinok','kp','s1','pact'],ylilauta:['sami','ylilauta']};document.querySelectorAll('[data-tour]').forEach(b=>b.onclick=()=>{let t=tours[b.dataset.tour];document.getElementById('from').value=t[0];document.getElementById('to').value=t[t.length-1];doRoute(t[0],t[t.length-1])});
 document.getElementById('pathbtn').onclick=()=>doRoute(document.getElementById('from').value,document.getElementById('to').value);document.getElementById('clearpath').onclick=()=>{pathNodes=[];pathEdges=[];document.getElementById('pathresult').textContent='Polku tyhjennetty.'};
 function openSources(){
