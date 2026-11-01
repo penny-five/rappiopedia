@@ -111,6 +111,17 @@ articleResizeHandle.addEventListener('keydown',event=>{
 window.addEventListener('resize',syncArticleWidth);
 syncArticleWidth();
 
+// Collapsing the article gives the 3D map the entire available width.
+function setArticleCollapsed(collapsed){
+ articleApp.classList.toggle('article-collapsed',collapsed);
+ if(collapsed)articlePanel.classList.remove('mobileopen');
+ document.getElementById('collapseArticle').setAttribute('aria-expanded',String(!collapsed));
+ document.getElementById('reopenArticle').setAttribute('aria-expanded',String(!collapsed));
+ if(!collapsed)syncArticleWidth();
+}
+document.getElementById('collapseArticle').onclick=()=>setArticleCollapsed(true);
+document.getElementById('reopenArticle').onclick=()=>setArticleCollapsed(false);
+
 function vec(x,y,z){return{x,y,z}}function sub(a,b){return vec(a.x-b.x,a.y-b.y,a.z-b.z)}function dot(a,b){return a.x*b.x+a.y*b.y+a.z*b.z}function cross(a,b){return vec(a.y*b.z-a.z*b.y,a.z*b.x-a.x*b.z,a.x*b.y-a.y*b.x)}function norm(a){let q=Math.hypot(a.x,a.y,a.z)||1;return vec(a.x/q,a.y/q,a.z/q)}function projection(){let cam=cameraPositionFromTarget(target,yaw,pitch,dist);let forward=norm(sub(target,cam)),right=norm(cross(forward,vec(0,1,0))),up=cross(right,forward);let focal=Math.min(W*1.04,H*1.4);return {cam,forward,right,up,focal}}
 function displayMovementSpeed(){
  const boost=pressedTravelKeys.has('shift')?2.5:1;
@@ -459,11 +470,10 @@ function draw(now){
 let dirty=false;requestAnimationFrame(draw);
 function showEmptyDetails(){
  document.title='Rappiopedia — Rappioverse';
- document.getElementById('dochead').innerHTML='<div class="breadcrumbs">Rappiopedia <span>›</span> Rappioverse</div><h2>Valitse solmu</h2>';
- document.getElementById('articleBody').innerHTML='<p>Valitse kartalta henkilö, ohjelma tai tapahtuma nähdäksesi sen artikkelin ja yhteydet.</p>';
- document.getElementById('relhead').textContent='Yhteydet';
+ articlePanel.classList.add('article-empty');
+ document.getElementById('dochead').innerHTML='';
+ document.getElementById('articleBody').innerHTML='<div class="article-empty-state"><span class="empty-article-icon" aria-hidden="true">⌖</span><h2>Ei avointa artikkelia</h2><p>Klikkaa kartalla kiinnostavaa solmua avataksesi sen artikkelin ja yhteydet.</p><p>Voit myös etsiä henkilöä tai ohjelmaa yläreunan haulla.</p></div>';
  document.getElementById('relations').innerHTML='';
- document.getElementById('srcHead').textContent='Lähteet';
  document.getElementById('sources').innerHTML='';
  document.getElementById('wikiArticleTab').classList.add('active');
  document.getElementById('wikiSourcesTab').classList.remove('active');
@@ -484,6 +494,10 @@ function relatedForNode(id){
 }
 function showDetails(id){
  const n=by[id];if(!n)return;
+ const wasCollapsed=articleApp.classList.contains('article-collapsed');
+ setArticleCollapsed(false);
+ if(wasCollapsed&&window.innerWidth<=680)articlePanel.classList.add('mobileopen');
+ articlePanel.classList.remove('article-empty');
  selected=id;document.title=n.name+' — Rappiopedia';
  if(location.hash!=='#/node/'+id)history.replaceState({node:id},'','#/node/'+id);
  const related=relatedForNode(id);
@@ -628,9 +642,10 @@ function doRoute(a,b){
   dist=Math.max(1450,Math.min(3150,550+Math.max(...pts.map(p=>Math.hypot(p[0]-m[0],p[1]-m[1],p[2]-m[2])))*3.2));
  }
 }
-const tours={pact:['pact','s3','jethro','talks','ruusu'],bridge:['iippa','sami','bailu','korelon','sastamala','ossi'],casino:['kasinok','kp','s1','pact'],ylilauta:['sami','ylilauta']};document.querySelectorAll('[data-tour]').forEach(b=>b.onclick=()=>{let t=tours[b.dataset.tour];document.getElementById('from').value=t[0];document.getElementById('to').value=t[t.length-1];doRoute(t[0],t[t.length-1])});
 document.getElementById('pathbtn').onclick=()=>doRoute(document.getElementById('from').value,document.getElementById('to').value);document.getElementById('clearpath').onclick=()=>{pathNodes=[];pathEdges=[];document.getElementById('pathresult').textContent='Polku tyhjennetty.'};
 function openSources(){
+ setArticleCollapsed(false);
+ articlePanel.classList.remove('article-empty');
  document.title='Lähteet — Rappiopedia';
  renderSourceArchive(S);
  document.getElementById('rightpanel').classList.add('mobileopen');
@@ -719,7 +734,11 @@ space.addEventListener('lostpointercapture',e=>{
 space.addEventListener('pointerleave',()=>{if(!pointer){hover=null;dirty=true}});
 space.addEventListener('wheel',e=>{e.preventDefault();movementSpeed=adjustMovementSpeed(movementSpeed,e.deltaY,e.deltaMode);displayMovementSpeed()},{passive:false});
 document.getElementById('home').onclick=reset;document.getElementById('reset').onclick=reset;document.getElementById('clearSelection').onclick=clearSelection;
-document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.toggle('mobileopen')};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderNameDensity();
+document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{
+ document.getElementById('leftpanel').classList.remove('mobileopen');
+ if(articlePanel.classList.contains('mobileopen'))setArticleCollapsed(true);
+ else {setArticleCollapsed(false);articlePanel.classList.add('mobileopen')}
+};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderNameDensity();
 function openUrlNode(){
  const originalId=decodeURIComponent(location.hash.replace(/^#\/node\//,''));
  const id=originalId==='okkishow'?'joachim':originalId;
