@@ -127,8 +127,8 @@ export function graphLabelScale(perspectiveScale, inFocus) {
 
 /** Camera-relative keyboard travel. Normalize combined motion for consistent speed. */
 export function cameraTravelDirection(keys, camera) {
-  const forward = Number(keys.has('w')) - Number(keys.has('s'));
-  const right = Number(keys.has('d')) - Number(keys.has('a'));
+  const forward = Number(keys.has('w') || keys.has('arrowup')) - Number(keys.has('s') || keys.has('arrowdown'));
+  const right = Number(keys.has('d') || keys.has('arrowright')) - Number(keys.has('a') || keys.has('arrowleft'));
   const vertical = Number(keys.has('e')) - Number(keys.has('q'));
   const x = camera.forward.x * forward + camera.right.x * right;
   const y = camera.forward.y * forward + camera.right.y * right + vertical;

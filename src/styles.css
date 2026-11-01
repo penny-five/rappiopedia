@@ -91,3 +91,14 @@
 @media(min-width:961px) and (max-width:1230px){.app.article-collapsed{grid-template-columns:205px minmax(0,1fr) 0px}}
 @media(min-width:681px) and (max-width:960px){.app.article-collapsed{grid-template-columns:minmax(0,1fr) 0px}}
 @media(max-width:680px){.app.article-collapsed{grid-template-columns:1fr}.right.article-empty{display:none}.right.article-empty.mobileopen{display:flex}.reopen-article,.app.article-collapsed .reopen-article{display:none}}
+
+/* Hold-to-fly direction pad: shares the camera-relative WASD controls. */
+.movement-pad{position:absolute;left:18px;bottom:47px;z-index:3;display:grid;grid-template-columns:repeat(3,36px);grid-template-rows:repeat(2,36px);gap:4px;pointer-events:auto}
+.movement-pad button{width:36px;height:36px;display:grid;place-items:center;padding:0;border:1px solid #cad5db;border-radius:6px;background:rgba(255,255,255,.92);color:#496574;box-shadow:0 2px 9px #263f4e18;font:600 19px/1 'DM Sans',Arial,sans-serif;touch-action:none;user-select:none;-webkit-user-select:none}
+.movement-pad button:hover{background:#f1f7fa;border-color:#91a9b6}
+.movement-pad button:active,.movement-pad button.active{background:#d7e9f1;border-color:#5c8da4;color:#204e65;box-shadow:inset 0 1px 4px #315a6b20}
+.movement-pad [data-move-key="arrowup"]{grid-column:2;grid-row:1}
+.movement-pad [data-move-key="arrowleft"]{grid-column:1;grid-row:2}
+.movement-pad [data-move-key="arrowdown"]{grid-column:2;grid-row:2}
+.movement-pad [data-move-key="arrowright"]{grid-column:3;grid-row:2}
+@media(max-width:680px){.movement-pad{left:10px;bottom:12px}.radar{display:none}}

@@ -19,8 +19,12 @@ const levels={verified:{label:'Vahvistettu',color:'#16856c'},reported:{label:'Uu
 const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d'),space=document.getElementById('space');
 let W=0,H=0,dpr=1,yaw=OVERVIEW_CAMERA.yaw,pitch=OVERVIEW_CAMERA.pitch,dist=OVERVIEW_CAMERA.dist,target={...OVERVIEW_CAMERA.target},selected=null,sector='all',nameDensity='auto',query='',hover=null,pathNodes=[],pathEdges=[],pointer=null,frame=0,visiblePoints=[],showLevels=new Set(['verified','reported','observed','lead']),focusIds=new Set();
 const labelAnchors=new Map();
-const pressedTravelKeys=new Set(),travelKeys=new Set(['w','a','s','d','q','e']);
+const pressedTravelKeys=new Set(),pressedPadKeys=new Set(),travelKeys=new Set(['w','a','s','d','q','e','arrowup','arrowdown','arrowleft','arrowright']);
 let lastDrawTime=0,cameraNavigation=0,movementSpeed=DEFAULT_MOVEMENT_SPEED;
+function clearTravelInput(){
+ pressedTravelKeys.clear();pressedPadKeys.clear();
+ document.querySelectorAll('#movementPad [data-move-key]').forEach(button=>button.classList.remove('active'));
+}
 const centers={},groupBounds={};
 for(const g of Object.keys(groupMeta)){
  const family=hierarchyGroups.find(h=>h.rootGroup===g);
@@ -414,8 +418,8 @@ function draw(now){
  if(!W||!H){requestAnimationFrame(draw);return}
  const dt=lastDrawTime?Math.min((now-lastDrawTime)/1000,.05):0;
  lastDrawTime=now;
- if(dt&&!pointer?.pan&&pressedTravelKeys.size){
-  const direction=cameraTravelDirection(pressedTravelKeys,projection());
+ if(dt&&!pointer?.pan&&(pressedTravelKeys.size||pressedPadKeys.size)){
+  const direction=cameraTravelDirection(new Set([...pressedTravelKeys,...pressedPadKeys]),projection());
   if(direction.x||direction.y||direction.z){
    const speed=movementSpeed*(pressedTravelKeys.has('shift')?2.5:1);
    target=vec(target.x+direction.x*speed*dt,target.y+direction.y*speed*dt,target.z+direction.z*speed*dt);
@@ -496,7 +500,7 @@ function clearSelection(){
 }
 function touchInfo(id){selected=id;pathNodes=[];pathEdges=[];showDetails(id);dirty=true;document.getElementById('rightpanel').classList.add('mobileopen')}
 function flyTo(id,zoom=true){const n=by[id];if(!n)return;const navigation=++cameraNavigation;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){if(navigation!==cameraNavigation)return;let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
-function reset(){cameraNavigation++;pressedTravelKeys.clear();sector='all';nameDensity='auto';query='';document.getElementById('search').value='';document.getElementById('searchhint').textContent='';closeSearchSuggestions();target={...OVERVIEW_CAMERA.target};dist=OVERVIEW_CAMERA.dist;yaw=OVERVIEW_CAMERA.yaw;pitch=OVERVIEW_CAMERA.pitch;movementSpeed=DEFAULT_MOVEMENT_SPEED;displayMovementSpeed();renderSectors();renderNameDensity();clearSelection();}
+function reset(){cameraNavigation++;clearTravelInput();sector='all';nameDensity='auto';query='';document.getElementById('search').value='';document.getElementById('searchhint').textContent='';closeSearchSuggestions();target={...OVERVIEW_CAMERA.target};dist=OVERVIEW_CAMERA.dist;yaw=OVERVIEW_CAMERA.yaw;pitch=OVERVIEW_CAMERA.pitch;movementSpeed=DEFAULT_MOVEMENT_SPEED;displayMovementSpeed();renderSectors();renderNameDensity();clearSelection();}
 function relatedForNode(id){
  return E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
   .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
@@ -622,15 +626,30 @@ document.addEventListener('pointerdown',e=>{
 });
 window.addEventListener('keydown',e=>{
  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();document.getElementById('search').focus();return}
- if(e.key==='Escape'){pressedTravelKeys.clear();clearSelection();document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.remove('mobileopen');return}
- if(e.ctrlKey||e.metaKey||e.altKey||e.target.closest?.('input, textarea, select, [contenteditable="true"], [role="textbox"]'))return;
+ if(e.key==='Escape'){clearTravelInput();clearSelection();document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.remove('mobileopen');return}
+ if(e.defaultPrevented||e.ctrlKey||e.metaKey||e.altKey||e.target.closest?.('input, textarea, select, [contenteditable="true"], [role="textbox"], [role="separator"]'))return;
  const key=e.key.toLowerCase();
  if(travelKeys.has(key)||key==='shift'){pressedTravelKeys.add(key);e.preventDefault()}
 });
 window.addEventListener('keyup',e=>pressedTravelKeys.delete(e.key.toLowerCase()));
-window.addEventListener('blur',()=>pressedTravelKeys.clear());
-document.addEventListener('visibilitychange',()=>{if(document.hidden)pressedTravelKeys.clear()});
-document.addEventListener('focusin',e=>{if(e.target.closest?.('input, textarea, select, [contenteditable="true"], [role="textbox"]'))pressedTravelKeys.clear()});
+window.addEventListener('blur',clearTravelInput);
+document.addEventListener('visibilitychange',()=>{if(document.hidden)clearTravelInput()});
+document.addEventListener('focusin',e=>{if(e.target.closest?.('input, textarea, select, [contenteditable="true"], [role="textbox"], [role="separator"]'))clearTravelInput()});
+for(const button of document.querySelectorAll('#movementPad [data-move-key]')){
+ const key=button.dataset.moveKey;
+ const press=()=>{pressedPadKeys.add(key);button.classList.add('active')};
+ const release=()=>{pressedPadKeys.delete(key);button.classList.remove('active')};
+ button.addEventListener('pointerdown',e=>{
+  if(e.button!==0)return;
+  e.preventDefault();
+  button.setPointerCapture(e.pointerId);
+  press();
+ });
+ for(const type of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(type,release);
+ button.addEventListener('keydown',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();press()}});
+ button.addEventListener('keyup',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();release()}});
+ button.addEventListener('blur',release);
+};
 function fillSelects(){let sorted=N.slice().sort((a,b)=>a.name.localeCompare(b.name,'fi'));for(let id of ['from','to'])document.getElementById(id).innerHTML=sorted.map(n=>`<option value="${esc(n.id)}">${esc(n.name)}</option>`).join('');document.getElementById('from').value='iippa';document.getElementById('to').value='sliki'}
 function route(from,to){return shortestPath(from,to,E,showLevels)}
 function doRoute(a,b){

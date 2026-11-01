@@ -94,6 +94,12 @@ test('camera travel follows view direction and strafes without changing speed di
   assert.deepEqual(cameraTravelDirection(new Set(['a']), camera), { x: -1, y: 0, z: 0 });
   assert.deepEqual(cameraTravelDirection(new Set(['q']), camera), { x: 0, y: -1, z: 0 });
   assert.deepEqual(cameraTravelDirection(new Set(['w', 's']), camera), { x: 0, y: 0, z: 0 });
+  for(const [arrow,wasd] of [['arrowup','w'],['arrowdown','s'],['arrowleft','a'],['arrowright','d']]){
+    assert.deepEqual(cameraTravelDirection(new Set([arrow]), camera),cameraTravelDirection(new Set([wasd]),camera),arrow);
+  }
+  assert.deepEqual(cameraTravelDirection(new Set(['w','arrowup']),camera),cameraTravelDirection(new Set(['w']),camera),'duplicate arrow and WASD do not double speed');
+  assert.deepEqual(cameraTravelDirection(new Set(['arrowup','arrowdown']),camera),{x:0,y:0,z:0});
+  assert.deepEqual(cameraTravelDirection(new Set(['arrowup','arrowright']),camera),cameraTravelDirection(new Set(['w','d']),camera),'arrow diagonals use normalized speed');
   const diagonal = cameraTravelDirection(new Set(['w', 'd']), camera);
   assert.ok(Math.abs(Math.hypot(diagonal.x, diagonal.y, diagonal.z) - 1) < 1e-12);
   assert.ok(diagonal.x > 0 && diagonal.z < 0);
@@ -252,7 +258,7 @@ test('Shift sprint combines with left-mouse look; middle drag alone pans', () =>
   const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
   assert.match(main, /pan:e\.button===1/);
   assert.ok(!main.includes('pan:e.shiftKey||e.button===1'));
-  assert.match(main, /if\(dt&&!pointer\?\.pan&&pressedTravelKeys\.size\)/);
+  assert.match(main, /if\(dt&&!pointer\?\.pan&&\(pressedTravelKeys\.size\|\|pressedPadKeys\.size\)\)/);
   assert.match(html, /Keskinappi\+vedä: siirrä/);
 });
 
@@ -279,4 +285,18 @@ test('small camera motion keeps the same label anchor', () => {
  const previous=new Map([['node','left']]);
  assert.equal(placeNodeLabels([make(200)],400,300,previous).get('node').anchor,'left');
  assert.equal(placeNodeLabels([make(201)],400,300,previous).get('node').anchor,'left');
+});
+
+test('on-screen arrow pad provides continuous movement with proper release handling', () => {
+ const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ const main=readFileSync(new URL('../src/main.js',import.meta.url),'utf8');
+ const css=readFileSync(new URL('../src/styles.css',import.meta.url),'utf8');
+ for(const arrow of ['arrowup','arrowdown','arrowleft','arrowright'])assert.match(html,new RegExp('data-move-key="'+arrow+'"'));
+ assert.match(main,/pressedPadKeys\.add\(key\)/);
+ assert.match(main,/pressedPadKeys\.delete\(key\)/);
+ assert.match(main,/button\.setPointerCapture\(e\.pointerId\)/);
+ assert.match(main,/pointerup','pointercancel','lostpointercapture/);
+ assert.match(main,/new Set\(\[\.\.\.pressedTravelKeys,\.\.\.pressedPadKeys\]\)/);
+ assert.match(main,/if\(e\.defaultPrevented\|\|e\.ctrlKey/);
+ assert.match(css,/\.movement-pad button\.active/);
 });
