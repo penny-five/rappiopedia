@@ -90,4 +90,4 @@
 @media(min-width:1231px){.app.article-collapsed{grid-template-columns:236px minmax(0,1fr) 0px}}
 @media(min-width:961px) and (max-width:1230px){.app.article-collapsed{grid-template-columns:205px minmax(0,1fr) 0px}}
 @media(min-width:681px) and (max-width:960px){.app.article-collapsed{grid-template-columns:minmax(0,1fr) 0px}}
-@media(max-width:680px){.app.article-collapsed{grid-template-columns:1fr}.reopen-article,.app.article-collapsed .reopen-article{display:none}}
+@media(max-width:680px){.app.article-collapsed{grid-template-columns:1fr}.right.article-empty{display:none}.right.article-empty.mobileopen{display:flex}.reopen-article,.app.article-collapsed .reopen-article{display:none}}
