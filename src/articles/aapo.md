@@ -6,6 +6,10 @@ Olervo on harrastanut skeittausta nuoruudesta alkaen. Yle haastatteli häntä He
 
 Olervo on tehnyt myös englanninkielisiä YouTube-videoita arjestaan, harjoittelusta ja matkailusta. Alkuvuonna 2026 hän lähti Thaimaahan, oleskeli Bangkokissa ja Pattayalla sekä jatkoi Vietnamiin.
 
+## PactTalksin neljäs jakso
+
+Olervo vieraili 12. heinäkuuta 2026 [[pacttalks_4_2026|PactTalksin neljännessä jaksossa]] yhdessä [[crista|BelleBarbien]] ja [[cuck|CuckTommin]] kanssa. Jakson juonsi [[jethro|Jethro Rostedt]], ja vieraiden nimet käyvät ilmi PACT-kanavan lähetysarkistosta. [@P7]
+
 ## PactHouse 3 ja uudet striimit
 
 Aapo osallistui Ateenassa järjestettyyn [[s3|PactHouse 3:een]] toukokuussa 2026 ja sijoittui viidenneksi. Kauden jälkeen hän kertoi kokemuksistaan ja [[tuuli|Tuuli Lehtosen]] kanssa vietetyistä hetkistä.
