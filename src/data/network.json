@@ -622,7 +622,7 @@
       "name": "KP2Times",
       "group": "kasinokurki",
       "cat": "person",
-      "note": "KP2Times mainitaan PactHouse 1:n osallistujana. Hänen lähetysotsikoissaan on esiintynyt myös !kasinokurki.",
+      "note": "KP2Times on suomalainen Kick-striimaaja, joka on julkaissut IRL-, kasinopeli- ja matkalähetyksiä Euroopasta ja Thaimaasta.",
       "x": 980,
       "y": 660,
       "pos3": [
@@ -633,6 +633,7 @@
       "featured": true,
       "types": [
         "striimaaja",
+        "matkastriimaaja",
         "tosi-tv-osallistuja"
       ],
       "imageSource": "https://files.kick.com/images/user/1937897/profile_image/conversion/79587852-22f2-45fa-864c-cff664e27e23-fullsize.webp",
@@ -686,7 +687,7 @@
       "name": "Juhana Tegelberg",
       "group": "season1",
       "cat": "person",
-      "note": "Juhana Tegelberg osallistui PactHouse 1:een ja PactHouse 2:een. Hänet mainittiin myös Bailupaatin suunnitelluissa osallistujissa, mutta jäi pois.",
+      "note": "Juhana Tegelberg on TikTok-livelähetyksistä, voimaharjoittelusta ja PactHousesta tunnettu somepersoona.",
       "x": 580,
       "y": 830,
       "pos3": [
@@ -699,6 +700,8 @@
       "imageSource": "https://image.seiska.fi/2070578.webp?compression=100&croph=100&cropw=100&height=630&imageId=2070578&width=1200&x=0&y=0",
       "imageCredit": "Seiska, Juhana Tegelberg; artikkeli 10.2.2026",
       "types": [
+        "somevaikuttaja",
+        "striimaaja",
         "tosi-tv-osallistuja"
       ]
     },
@@ -1523,7 +1526,7 @@
       "name": "Aapo Olervo",
       "group": "season3",
       "cat": "person",
-      "note": "Aapo osallistui PactHouse 3:een keväällä 2026.",
+      "note": "Aapo Olervo on skeittaaja, YouTube-vloggaaja ja PactHouse 3:ssa viidenneksi sijoittunut somepersoona.",
       "x": 3140,
       "y": 1381,
       "pos3": [
@@ -1533,6 +1536,8 @@
       ],
       "featured": false,
       "types": [
+        "videontekija",
+        "somevaikuttaja",
         "tosi-tv-osallistuja"
       ],
       "image": "images/aapo.webp",
@@ -2820,6 +2825,38 @@
         1945
       ],
       "featured": false
+    },
+    {
+      "id": "kp_eurotrip_2026",
+      "name": "KP2Timesin Euroopan-subathon 2026",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "pos3": [
+        2470,
+        -300,
+        560
+      ],
+      "featured": false,
+      "note": "KP2Timesin 8.–15.9.2026 Kick-subathon, jonka otsikoissa mainittiin Amsterdam ja Pariisi."
+    },
+    {
+      "id": "kp_thailand_2026",
+      "name": "KP2Timesin Thaimaan-lähetykset 2026",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "pos3": [
+        2840,
+        0,
+        980
+      ],
+      "featured": false,
+      "note": "KP2Timesin loppulokakuun 2026 Thaimaa-aiheiset Kick-lähetykset."
     }
   ],
   "edges": [
@@ -3483,11 +3520,12 @@
     {
       "a": "aapo",
       "b": "s3",
-      "label": "osallistuja",
+      "label": "kilpailija, viides sija",
       "src": [
         "P0",
         "P4",
-        "P42"
+        "P42",
+        "P150"
       ],
       "level": "verified",
       "detail": "",
@@ -4415,9 +4453,10 @@
     {
       "a": "tegel",
       "b": "s3",
-      "label": "vieraili kolmannella kaudella (ei kilpailija)",
+      "label": "kesken kauden tullut vierailija",
       "src": [
-        "P34"
+        "P34",
+        "P147"
       ],
       "level": "verified",
       "detail": "Juhana Tegelberg vieraili PactHouse 3 -talossa toukokuussa 2026. Tämä ei merkitse osallistujastatusta.",
@@ -5891,6 +5930,66 @@
       "level": "reported",
       "date": "2025-10",
       "detail": ""
+    },
+    {
+      "a": "kp",
+      "b": "kp_eurotrip_2026",
+      "type": "striimasi",
+      "label": "Euroopan-subathon",
+      "src": [
+        "P142"
+      ],
+      "level": "reported",
+      "date": "2026-09",
+      "detail": ""
+    },
+    {
+      "a": "kp",
+      "b": "kp_thailand_2026",
+      "type": "striimasi",
+      "label": "Thaimaan IRL-lähetykset",
+      "src": [
+        "P143"
+      ],
+      "level": "reported",
+      "date": "2026-10",
+      "detail": ""
+    },
+    {
+      "a": "tegel",
+      "b": "janely",
+      "type": "esiintyi-yhdessa",
+      "label": "riita PactHouse 2:n aikana",
+      "src": [
+        "P145"
+      ],
+      "level": "reported",
+      "date": "2025-12",
+      "detail": ""
+    },
+    {
+      "a": "aapo",
+      "b": "og",
+      "type": "striimasi-yhdessa",
+      "label": "OG Ulla-Maijan Kickissä vieraana",
+      "src": [
+        "P150"
+      ],
+      "level": "reported",
+      "date": "2026-05",
+      "detail": ""
+    },
+    {
+      "a": "aapo",
+      "b": "crista",
+      "type": "striimasi-yhdessa",
+      "label": "Crista Jaatisen Kickissä vieraana",
+      "src": [
+        "P150"
+      ],
+      "level": "reported",
+      "date": "2026-05",
+      "detail": ""
     }
   ],
   "sources": {
@@ -6603,6 +6702,51 @@
       "label": "Seiska 21.10.2025: Laitela92:n kuoleman jatkouutinen",
       "url": "https://www.seiska.fi/kotimaa/kuolleen-rappiostriimaajan-rakkaalta-sydantasarkeva-ulostulo/1968739",
       "note": "Vahvistaa Ismo Tauriaisen kuoleman ja lähipiirin julkisen reagoinnin; kuolinsyytä ei ole vahvistettu."
+    },
+    "P142": {
+      "label": "StreamRecorder: KP2Times Euroopan-subathon 9/2026",
+      "url": "https://streamrecorder.io/kick/kp2times",
+      "note": "8.–15.9.2026 Amsterdam–Pariisi–Suomi."
+    },
+    "P143": {
+      "label": "StatsForKick: KP2Timesin Thaimaa-IRL 10/2026",
+      "url": "https://www.statsforkick.com/c/kp2times",
+      "note": "27.–31.10.2026 Thaimaa-aiheiset lähetykset."
+    },
+    "P144": {
+      "label": "AeroKick: KP2Timesin Kick-kanava",
+      "url": "https://aerokick.app/stats/channels/kp2times",
+      "note": "1.11.2026 profiili ja otsikot."
+    },
+    "P145": {
+      "label": "Voice.fi 10.1.2026: Janely ja Tegelberg",
+      "url": "https://www.voice.fi/viihde/alatyylista-solvaamista-transfobiaa-ja-lentavia-juomia-somejulkkisten-realitykilpailusta-tuli-taistelutanner",
+      "note": "PactHouse 2:ssa sanallinen riita ja juoman kaataminen."
+    },
+    "P146": {
+      "label": "Seiska 10.2.2026: Tegelbergin tausta",
+      "url": "https://www.seiska.fi/vain-seiskassa/sovinismista-syytetty-sometahti-heratti-kummastusta-ravintolassa-salakuva/2070573",
+      "note": "TikTok-ura ja kauppatieteiden maisteri."
+    },
+    "P147": {
+      "label": "Seiska 8.5.2026: Tegelbergin PactHouse 3 -vierailu",
+      "url": "https://www.seiska.fi/kotimaa/heiluiko-peitto-realitysarjassa-matias-petaistoon-yhdistetty-tis-kaunotar-liekeissa/2146800",
+      "note": "Toukokuun 2026 lyhyt PactHouse-vierailu."
+    },
+    "P148": {
+      "label": "Yle 7.8.2024: Aapo Olervo skeittaajana",
+      "url": "https://yle.fi/a/74-20103574",
+      "note": "Olervon pitkä skeittausura."
+    },
+    "P149": {
+      "label": "Gekkonen 12.2.2026: Aapo Olervon Aasian-matka",
+      "url": "https://gekkonen.net/aapo-olervo-jatti-suomen-ja-otti-menolipun-aasiaan-pystyn-ostamaan-ruokaa-toisin-kuin-suomessa/",
+      "note": "Aapon englanninkieliset vlogit, Thaimaa ja Vietnam."
+    },
+    "P150": {
+      "label": "Gekkonen 16.5.2026: Aapo Olervo PactHouse 3:ssa",
+      "url": "https://gekkonen.net/aapo-olervo-avautui-pacthouse-kokemuksesta-ikavinta-on-aina-jos-jaa-yksin-ilman-naista/",
+      "note": "Viides sija, OG Ulla-Maijan ja Crista Jaatisen Kick-vierailut."
     }
   },
   "date": "2026-11-01"
