@@ -6,7 +6,7 @@ Vanhanen esitteli videoillaan vanhoja kodinkoneita, videonauhureita ja erilaisia
 
 Videoilla näkyi myös Vanhasen kiinnostus kauppojen pois heittämien tuotteiden hyödyntämiseen. Hän kertoi etsivänsä käyttökelpoista ruokaa ja tavaraa roskalavoilta sekä korjaavansa laitteita. Suolahteen vuonna 2013 muuttanut Vanhanen kunnosti myös vanhoja asuntoja ja puhui haastattelussa työttömyydestään. [@P226]
 
-## Videoita eri vuosikymmeniltä
+## Videot 2010-luvulla
 
 Vanhanen julkaisi vuosina 2010–2017 runsaasti videoita arjestaan ja tekniikkaharrastuksestaan. Kesäkuussa 2010 ilmestyi *Lisäakuilla ajelu johtaa katastrofiin*, heinäkuussa 2012 *DiscoScooter* ja helmikuussa 2016 *Phenom tietokoneen rakentelua*. Kansalliskirjaston Verkkoarkistoon on koottu hänen videoitaan yhteensä 52 kappaletta. [@P242]
 
