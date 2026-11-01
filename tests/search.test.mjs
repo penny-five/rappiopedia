@@ -19,6 +19,27 @@ test('search suggestions are case-insensitive, trimmed and support Finnish names
   assert.deepEqual(searchNodes([{ id: 'x', name: 'Väinö' }], ' VÄI ').map(n => n.id), ['x']);
 });
 
+test('search matches small spelling mistakes without outranking literal name matches', () => {
+ const people=[
+  {id:'julia',name:'Julia Willman'},
+  {id:'juulia',name:'Juulia'},
+  {id:'megis',name:'Megarokkistara / Juulia Valikainen'},
+  {id:'pasi',name:'Pasi Viheraho'}
+ ];
+ assert.deepEqual(searchNodes(people,'juulia').map(n=>n.id),['juulia','megis','julia']);
+ assert.deepEqual(searchNodes(people,'julia').map(n=>n.id),['julia','juulia','megis']);
+ assert.deepEqual(searchNodes(people,'juulia',2).map(n=>n.id),['juulia','megis']);
+ assert.deepEqual(searchNodes(people,'juila').map(n=>n.id),['julia','juulia']);
+ assert.deepEqual(searchNodes(people,'julia wilman').map(n=>n.id),['julia']);
+});
+
+test('fuzzy search avoids short-query noise and unrelated names', () => {
+ const names=[{id:'talo',name:'Talo'},{id:'jalo',name:'Jalo'},{id:'julia',name:'Julia Willman'}];
+ assert.deepEqual(searchNodes(names,'tal').map(n=>n.id),['talo']);
+ assert.deepEqual(searchNodes(names,'xyz').map(n=>n.id),[]);
+ assert.deepEqual(searchNodes(names,'juulia').map(n=>n.id),['julia']);
+});
+
 test('search suggestions are empty for blank or unmatched text and respect result limit', () => {
   assert.deepEqual(searchNodes(nodes, '   '), []);
   assert.deepEqual(searchNodes(nodes, 'xyz'), []);
