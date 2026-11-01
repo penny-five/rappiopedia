@@ -1274,11 +1274,12 @@
         -1171
       ],
       "featured": false,
-      "imageSource": "https://www.epressi.com/media/userfiles/149329/1716977155/myyra_s4_hennyharjusola2.jpg",
-      "imageCredit": "Myyrä 4 -promokuva / ePressi",
+      "imageSource": "https://image.seiska.fi/1473196.webp?compression=70&croph=35.98&cropw=96.00&format=jpg&height=348&imageId=1473196&width=620&x=0.00&y=10.62",
+      "imageCredit": "Timo Korhonen / Seiska, Henny Harjusola Farmi Suomi -lehdistötilaisuudessa (2024)",
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/henny.webp"
     },
     {
       "id": "crista",
@@ -1354,13 +1355,14 @@
         -1650
       ],
       "featured": false,
-      "imageSource": "https://www.mmaviking.com/wp-content/uploads/2015/03/Aleksi_578.jpg",
-      "imageCredit": "MMA Viking, Aleksi Nurmisen Cage 29 -haastattelu (2015)",
+      "imageSource": "https://media.content.livearena.io/icecage/aleksi-nurminen-headshot-1-500x500.png",
+      "imageCredit": "Ice Cage Fighting, Aleksi Nurmisen virallinen ottelijakuva",
       "types": [
         "striimaaja",
         "juontaja",
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/aleksi.webp"
     },
     {
       "id": "jussi",
@@ -1376,11 +1378,12 @@
         -1158
       ],
       "featured": false,
-      "imageSource": "https://kokfights.com/storage-uploads-path/2025/02/03-1-JUSSI-PIRTTIKANGAS-scaled.webp",
-      "imageCredit": "KOK Fights, Jussi Pirttikankaan ottelijakuva",
+      "imageSource": "https://media.content.livearena.io/icecage/jussi-pirttikangas-headshot-1-500x500.png",
+      "imageCredit": "Ice Cage Fighting, Jussi Pirttikankaan virallinen ottelijakuva",
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/jussi.webp"
     },
     {
       "id": "pok",
