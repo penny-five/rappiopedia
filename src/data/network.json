@@ -1588,6 +1588,19 @@
         610
       ],
       "featured": false
+    },
+    {
+      "id": "pottu_marketing",
+      "name": "Pottukoiran rahapelimarkkinointia koskeva tuomio 2026",
+      "group": "stream",
+      "cat": "event",
+      "note": "Ylen uutisoima Pohjois-Savon käräjäoikeuden 18.6.2026 tuomio vuoden 2023–2024 ulkomaisten rahapelien markkinoinnista; ei lainvoimainen uutisointihetkellä.",
+      "pos3": [
+        1740,
+        -160,
+        220
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -3441,7 +3454,7 @@
       "label": "yhteisiä live-esiintymisiä / vierailuja (uutisoitu)",
       "level": "reported",
       "src": [
-        "P49"
+        "P57"
       ]
     },
     {
@@ -3582,6 +3595,15 @@
       "level": "lead",
       "src": [
         "P51"
+      ]
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_marketing",
+      "label": "käräjäoikeuden rahapelirikostuomio 18.6.2026 (ei lainvoimainen uutisointihetkellä)",
+      "level": "reported",
+      "src": [
+        "P59"
       ]
     }
   ],
@@ -3870,6 +3892,21 @@
       "label": "Voice 2026: Kieksi seuraa Pottukoiraa, Iippadaata ja Upia",
       "url": "https://www.voice.fi/viihde/uusi-sarja-seuraa-rappiostriimaajien-elamaa-nain-paljon-iippadaa-tienaa-kuukaudessa-sekoilemalla",
       "note": "Dokumentin osallistujat, Iippadaan yhteisen striimausmatkan tausta."
+    },
+    "P57": {
+      "label": "Como.fi 11.11.2025: Pirkkis vieraili myös Iippadaan lähetyksissä",
+      "url": "https://www.como.fi/uutiset/kreikassa-kadonneen-suomalaisjulkkiksen-asiassa-tapahtui-kaanne/",
+      "note": "Uutinen kertoo Pirkkiksen vierailleen myös Iippadaan ja Pottukoiran striimeissä."
+    },
+    "P58": {
+      "label": "Yle 15.5.2014: Pottukoiran YouTube-uran alku",
+      "url": "https://yle.fi/a/3-7237725",
+      "note": "Ylen oma haastattelu Pottukoiran videobloggaamisesta ja vuoden 2013 aloituksesta."
+    },
+    "P59": {
+      "label": "Yle 18.6.2026: Pottukoiran rahapelimarkkinointituomio",
+      "url": "https://yle.fi/a/74-20229893",
+      "note": "Käräjäoikeus tuomitsi 80 päiväsakkoon rahapelirikoksesta, ei lainvoimainen Ylen uutisointihetkellä. Ei osoita suhdetta Kasinokurkeen."
     }
   },
   "date": "2026-11-01"
