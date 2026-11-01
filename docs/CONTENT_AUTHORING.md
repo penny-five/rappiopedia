@@ -36,7 +36,7 @@ Vanhojen solmujen tunnisteita ei kannata muuttaa, koska artikkeleiden sisäiset 
 
 Lähteen tiedot lisätään saman tiedoston `sources`-osioon, jossa ovat lähdetunnisteet, linkit ja selitteet. Yhteyttä ei lisätä ilman lähdettä.
 
-Suhdetyypin `forward` tarkoittaa suunnan `a → b` ilmaisua, `reverse` tarkoittaa suunnan `b → a` ilmaisua. Jos suhde on molempiin suuntiin sama, käytä `symmetric: true` ja `verb`. Esimerkiksi isä–poika-suhteen muoto on `on isä` / `on poika`, mutta yhteinen striimaaminen on `striimasi yhdessä` kummastakin suunnasta. Lisää uudenlainen suhde ensin tyyppirekisteriin, sitten käytä tyyppiä verkostodatassa.
+Suhdetyypin `forward` tarkoittaa suunnan `a → b` ilmaisua, `reverse` tarkoittaa suunnan `b → a` ilmaisua. Artikkelin yhteysryhmäotsikot määritellään erikseen `headingForward` ja `headingReverse` (symmetrisellä tyypillä `heading`) -kentillä. Käytä luettavissa otsikoissa substantiiveja, kuten ”Ohjelmavierailut” ja ”Ohjelmavieraat”, älä suoraan kartan verbejä. Jos suhde on molempiin suuntiin sama, käytä `symmetric: true` ja `verb`. Esimerkiksi isä–poika-suhteen muoto on `on isä` / `on poika`, mutta yhteinen striimaaminen on `striimasi yhdessä` kummastakin suunnasta. Lisää uudenlainen suhde ensin tyyppirekisteriin, sitten käytä tyyppiä verkostodatassa.
 
 Käytä tarkkoja suhdekuvauksia. ”Vieraili PactTalksissa 11.10.2026” kertoo enemmän kuin ”Pact-yhteys”. Jos kyse on suunnitellusta esiintymisestä, älä nimeä sitä toteutuneeksi osallistumiseksi.
 
@@ -152,3 +152,9 @@ Rappioverse näyttää suhteen valitun solmun näkökulmasta. Yhteyden `type` vi
 - `label` kertoo yksittäisen suhteen tarkemmasta tapahtumasta ja `src` sisältää sitä tukevat lähteet.
 
 Kun tarvitset uudenlaisen suhteen, lisää määritelmä ensin suhdetyyppirekisteriin ja viittaa sen tunnisteeseen `edges`-taulukossa.
+
+### Relaatioiden laadunvarmistus
+
+Pelkkä uutisartikkeli, foorumikeskustelu tai lähetysotsikon maininta ei automaattisesti muodosta henkilöiden välistä yhteistyö- tai sponsorointisuhdetta. Näytön varmuus kuuluu `level`-kenttään, ei omaan `reported-*`-relaatiotyyppiin. Ilmoitettu osallistuminen (`listattiin`) ei ole sama kuin toteutunut osallistuminen (`osallistui`). Ohjelmavieras (`vieraili`) on henkilö, projektin ohjelmavierailusta käytetään `projekti-ohjelmavieraana` ja henkilön luona vierailusta `vieraili-luona`. Älä merkitse haastattelevaa sivustoa tapahtuman haastattelijaksi tai samaan dokumenttiin päätyneitä henkilöitä automaattisesti yhteistyökumppaneiksi.
+
+Jokaiselle uudelle suhdetyypille vaaditaan `headingForward` ja `headingReverse` tai symmetriselle tyypille `heading`. Erilliset tapahtumat voivat olla erillisiä saman parin yhteyksiä, mutta saman faktan identtistä merkintää ei toisteta.
