@@ -248,7 +248,7 @@
       "name": "Iippadaa / Iida Kurvinen",
       "group": "rappio",
       "cat": "person",
-      "note": "Iippadaa eli Iida Kurvinen on suomalainen striimaaja. Hän esiintyy Sami Kieksin rappiostriimausta käsittelevässä dokumentissa ja on vieraillut PactTalksissa.",
+      "note": "Iida ”Iippadaa” Kurvinen on Oulun seudulta tunnettu rappiostriimaaja, jonka omaa elämää ja suoratoistouraa kuvattiin Ylen Kieksi-dokumentissa huhtikuussa 2026. Hän on tehnyt myös PactTalks- ja yhteissubathon-lähetyksiä.",
       "x": 880,
       "y": 1820,
       "image": "images/iippa.webp",
@@ -390,7 +390,7 @@
       "name": "Bailupaatti 2026",
       "group": "events",
       "cat": "event",
-      "note": "Bailupaatti 2026 on 31. lokakuuta – 2. marraskuuta järjestettävä juhlaristeily, johon liittyy useita suomalaisia striimaajia ja esiintyjiä.",
+      "note": "Revul Media Groupin Bailupaatti 2026 on 31.10.–2.11.2026 Baltic Princessillä järjestettävä juhlaristeily, jonka viralliset Halloween-etkot pidettiin Turussa 30.10. Striimaajia ja artisteja osallistui markkinointiin ja ohjelmaan.",
       "x": 1900,
       "y": 2000,
       "image": "images/bailu.webp",
@@ -2931,6 +2931,38 @@
         -1110,
         90,
         1710
+      ],
+      "featured": false
+    },
+    {
+      "id": "henrik_kurvinen",
+      "name": "Hemppu / Henrik Kurvinen",
+      "group": "rappio",
+      "cat": "person",
+      "types": [
+        "rappiostriimaaja"
+      ],
+      "note": "Henrik ”Hemppu” Kurvinen on suomalainen rappiostriimaaja, joka esiintyi pitkään yhteisissä suorissa lähetyksissä Iippadaan eli Iida Kurvisen kanssa. He erosivat ennen kevään 2026 haastatteluja.",
+      "pos3": [
+        2320,
+        -105,
+        985
+      ],
+      "featured": false
+    },
+    {
+      "id": "bailu_etkot_2026",
+      "name": "Bailupaatin Halloween-etkot 30.10.2026",
+      "group": "events",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Bailupaatin 10-vuotisjuhlaviikonlopun Halloween-etkot Turun Vegas & Marilynissä 30.10.2026; ohjelmassa Nikke Ankara ja suoria striimilähetyksiä.",
+      "pos3": [
+        1825,
+        -950,
+        590
       ],
       "featured": false
     }
@@ -6175,6 +6207,103 @@
       "level": "reported",
       "date": "2026-09-26",
       "detail": ""
+    },
+    {
+      "a": "iippa",
+      "b": "henrik_kurvinen",
+      "type": "oli-puoliso",
+      "label": "entinen aviopuoliso ja vuosien yhteislähetysten toinen osapuoli",
+      "src": [
+        "P166"
+      ],
+      "level": "reported",
+      "date": "2025",
+      "detail": ""
+    },
+    {
+      "a": "iippa",
+      "b": "henrik_kurvinen",
+      "type": "striimasi-yhdessa",
+      "label": "yhteiset IRL- ja arkilähetykset",
+      "src": [
+        "P166"
+      ],
+      "level": "reported",
+      "date": "",
+      "detail": ""
+    },
+    {
+      "a": "bailu",
+      "b": "bailu_etkot_2026",
+      "type": "sisaltaa",
+      "label": "Halloween-etkot ennen risteilyn lähtöä",
+      "src": [
+        "P170",
+        "P171"
+      ],
+      "level": "verified",
+      "date": "2026-10-30",
+      "detail": ""
+    },
+    {
+      "a": "julwill",
+      "b": "bailu_etkot_2026",
+      "type": "suunnitteli-osallistumista",
+      "label": "etkojen julkistettuun esiintyjäjoukkoon nimetty",
+      "src": [
+        "P170"
+      ],
+      "level": "reported",
+      "date": "2026-10-30",
+      "detail": ""
+    },
+    {
+      "a": "heiskari",
+      "b": "bailu_etkot_2026",
+      "type": "suunnitteli-osallistumista",
+      "label": "etkojen julkistettuun esiintyjäjoukkoon nimetty",
+      "src": [
+        "P170"
+      ],
+      "level": "reported",
+      "date": "2026-10-30",
+      "detail": ""
+    },
+    {
+      "a": "iippa",
+      "b": "bailu_etkot_2026",
+      "type": "suunnitteli-osallistumista",
+      "label": "etkojen julkistettuun esiintyjäjoukkoon nimetty",
+      "src": [
+        "P170"
+      ],
+      "level": "reported",
+      "date": "2026-10-30",
+      "detail": ""
+    },
+    {
+      "a": "rauno77",
+      "b": "bailu_etkot_2026",
+      "type": "suunnitteli-osallistumista",
+      "label": "etkojen julkistettuun esiintyjäjoukkoon nimetty",
+      "src": [
+        "P170"
+      ],
+      "level": "reported",
+      "date": "2026-10-30",
+      "detail": ""
+    },
+    {
+      "a": "tegel",
+      "b": "bailu_etkot_2026",
+      "type": "suunnitteli-osallistumista",
+      "label": "etkojen julkistettuun esiintyjäjoukkoon nimetty; ei varmennettua läsnäoloa",
+      "src": [
+        "P170"
+      ],
+      "level": "reported",
+      "date": "2026-10-30",
+      "detail": ""
     }
   ],
   "sources": {
@@ -7002,6 +7131,51 @@
       "label": "Nettipokeri.com 25.5.2026: Bratislavan toukokuun ohjelma",
       "url": "https://nettipokeri.com/nettipokeri-comin-julkkispelit-palaavat-huomenna-pokerilegenda-ilari-sahamiehen-johdolla/",
       "note": "26.–27.5.2026 Banco Casino Bratislava, suoratoistot alkoivat klo 19 Suomen aikaa, ilmoitetut pelaajat."
+    },
+    "P165": {
+      "label": "Seiska 13.4.2026: Iippadaa kertoo taustastaan Kieksi-dokumentissa",
+      "url": "https://www.seiska.fi/katso/rappiostriimaaja-iippadaa-paljastaa-perhetaustansa-tallaiset-ovat-vanhemmat/2124282",
+      "note": "Kieksi 2:n avausjaksossa Iida Kurvinen kertoo koulukotijaksosta ja alkoholiongelmasta; haastattelu Oulussa."
+    },
+    "P166": {
+      "label": "Gekkonen 11.4.2026: Iippadaa kertoi turvakotijaksostaan ja erosta",
+      "url": "https://gekkonen.net/turvakotiin-paennut-iippadaa-avautui-suhteensa-vakivallasta-ihmiset-tietaa-kylla/",
+      "note": "Iida Kurvisen oma kuvaus erosta, turvakotiin lähtemisestä ja Henrik Hemppu Kurvisen kanssa tehdystä yhteisstriimauksesta; tapahtumat hänen kertomansa mukaan."
+    },
+    "P167": {
+      "label": "Seiska 3.8.2025: Iippadaa selitti virheelliset kuolemailmoitukset",
+      "url": "https://www.seiska.fi/vain-seiskassa/suomalainen-kohustriimaaja-iippadaa-lavasti-kuolemansa-nyt-han-kertoo-miksi/1884150",
+      "note": "Kurvinen kertoo julkaisseensa tuttavan kanssa heinäkuun lopussa 2025 valheellisia kuolemailmoituksia ja korjanneensa ne saman yön aikana."
+    },
+    "P168": {
+      "label": "Voice.fi 13.4.2026: Kieksi seuraa Iippadaata, Upia ja Pottukoiraa",
+      "url": "https://www.voice.fi/viihde/uusi-sarja-seuraa-rappiostriimaajien-elamaa-nain-paljon-iippadaa-tienaa-kuukaudessa-sekoilemalla",
+      "note": "Dokumentin esittely, Iippadaan oma arvio striimituloista noin 1 000 euroa tai hieman enemmän kuukaudessa, laivamatka Pottukoiran luo."
+    },
+    "P169": {
+      "label": "Seiska 6.7.2026: Iippadaan haastattelu elämäntilanteesta",
+      "url": "https://www.seiska.fi/vain-seiskassa/rappiostriimaaja-iippadaa-karu-tilanne-paljastui/2194065",
+      "note": "Kurvinen kommentoi itse aiempaa ulosotto- ja elämänvaihettaan sekä arjen muuttamista; oikeustiedot perustuvat lehtiselvitykseen."
+    },
+    "P170": {
+      "label": "Cluby: Bailupaatti Halloween -etkot 30.10.2026",
+      "url": "https://cluby.com/vegas/events/early-bird-bailupaatti-x-vegas-marilyn-halloween-party/VENUE_EVENT_0lov3n0_4ez6d7o",
+      "note": "Järjestäjän etkojen ohjelma Turun Vegas & Marilynissä, Nikke Ankara, Oliver Paris, Antti Hynninen, ilmoitetut striimaajat, Kick-lähetys, risteily Baltic Princess 31.10.–2.11."
+    },
+    "P171": {
+      "label": "Bailupaatin julkaisut 30.–31.10.2026",
+      "url": "https://www.glartent.com/FI/Turku/175660019462891/Bailupaatti",
+      "note": "Tapahtuman omaa someviestintää jäljentävä sivu: etkojen alkamisesta, Nikke Ankaran esiintymisestä, lähtöpäivästä ja striimaajista."
+    },
+    "P172": {
+      "label": "Gekkonen 11.11.2025: Pirkkiksen oma Ateenan-kiinniottokertomus",
+      "url": "https://gekkonen.net/tasta-syysta-pirkka-ukko-joutui-putkaan-kreikassa/",
+      "note": "Pirkkis selitti videolla kiinniottoaan ja SampeF2 haki hänet Kreikan poliisilta; riitaisista tapahtumista vain osallistujan kertomus."
+    },
+    "P173": {
+      "label": "Gekkonen 20.5.2025: Pottukoiran ja Pirkkiksen lähetys",
+      "url": "https://gekkonen.net/pottukoiran-tuorein-tempaus-jattaa-sanattomaksi/",
+      "note": "Suoraan nimetty Pottukoira–Pirkkis-yhteislähetys ja Spurgu-TV-kanava."
     }
   },
   "date": "2026-11-01"
