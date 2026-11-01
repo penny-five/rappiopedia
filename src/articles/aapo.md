@@ -1,4 +1,4 @@
-**Aapo Olervo** on suomalainen skeittaaja, englanninkielisiä YouTube-vlogeja julkaiseva sisällöntuottaja ja Kick-lähetysten esiintyjä. Hän harrasti skeittausta jo vuosia ennen vuoden 2026 [[s3|PactHouse 3:a]], jossa hän sijoittui viidenneksi. [@P42]
+**Aapo Olervo** on suomalainen skeittaaja, englanninkielisiä YouTube-vlogeja julkaiseva sisällöntuottaja ja Kick-lähetysten esiintyjä. Hän harrasti skeittausta jo vuosia ennen vuoden 2026 [[s3|PactHouse 3:a]], jossa hän sijoittui viidenneksi. [@P42] [@P148] [@P150]
 
 ## Skeittaus ja omat videot
 
