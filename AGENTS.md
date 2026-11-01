@@ -1,46 +1,55 @@
-# AGENTS.md — Rappiopedia / Rappioverse
+# Ohjeet Rappiopedian kehittämiseen
 
-## Product
-- **Rappiopedia** = koko sivusto ja lähteistetty tietosanakirja.
-- **Rappioverse** = Rappiopedian interaktiivinen 3D-verkostonäkymä.
-- UI-kieli on suomi. Tyyli: valkoinen, musta ja harmaa, Wikipedia-henkinen toimituksellinen luettavuus.
-- Solmun klikkaaminen avaa oikealle artikkelin: ingressi, Markdown, infoboksi, linkit, lähteet.
-- PACT on visuaalinen yläryhmä PactHouse-kausille ja PactTalksille. Tämä EI väitä yhteistä omistusta tai sopimusta.
+Rappiopedia on suomalaisen striimaus- ja nettiviihteen tietosanakirja. Sivusto kertoo ihmisistä, ohjelmista ja tapahtumista sekä näyttää niiden yhteydet Rappioverse-nimisellä 3D-kartalla. Kävijän pitää pystyä lukemaan aiheesta kuin tietosanakirjasta ja siirtymään sen jälkeen kiinnostaviin yhteyksiin.
 
-## Repository map
-- `src/data/network.json`: solmut, reunat, lähderekisteri
-- `src/articles/<id>.md`: kirjoitetut solmuartikkelit
-- `src/wiki.js`: turvallinen Markdown-renderöinti, sisälinkitys ja automaattiset artikkelit
-- `src/main.js`: 3D-kartta, kamera, hiiri, haku, tilanmuutokset
-- `src/styles.css`, `index.html`: vaalea Wiki-layout
-- `src/lib/hierarchy.js`: visuaaliset yläryhmät
-- `tests/`: eheystarkistukset
-- `docs/CONTENT_AUTHORING.md`: sisällöntuotanto-ohje
+## Kirjoittaminen
 
-## Editorial safety and sourcing
-1. Älä keksi lähteitä, tapahtumia, ajankohtia, henkilöllisyyksiä, valokuvien henkilötunnistuksia tai yhteyksiä.
-2. Jokainen olennainen graafin yhteys tarvitsee lähde-ID:n ja rajatun, testattavan väitteen. Merkitse väitteen ja tulkinnan ero.
-3. Arvioi **todisteen luonne, ei sivuston mainetta**. `verified` = väitteen yksityiskohdan näyttävä alkuperäisaineisto (myös foorumilla julkaistu kuvallinen/ajallisesti tunnistettava primääriaineisto); `reported` = lähteessä kerrottu konkreettinen tapahtuma, mukaan lukien uskottava, yksilöity ensi käden foorumikertomus; `observed` = suora julkinen havainto tai perusteltu päätelmä (esimerkiksi toistuva sponsoritunniste); `lead` = spekulaatio, välillinen huhu tai liian epämääräinen väite.
-4. **Ylilauta, Reddit ja muut keskustelupalstat ovat hyväksyttäviä itsenäisiä lähteitä**, eivät vain tutkimusvihjeitä. Tavallisille, vähäriskisille skene- ja tapahtumayhteyksille (kuka striimasi kenen kanssa, kuka kävi reissulla, mitä videolla näkyi) tarkka julkinen foorumiviesti voi riittää graafin reunaan ja artikkeliin. Älä vaadi matkustusasiakirjoja, viranomaisrekistereitä tai valtamedian vahvistusta tällaisista arkisista tapahtumista.
-   - Kirjaa alkuperäinen ketju / kommentti, päivämäärä, käyttäjän väitteen tarkka sisältö sekä mahdolliset klipit ja linkit.
-   - Useampi **ajallisesti ja sisällöllisesti riippumaton** yhtäpitävä havainto kasvattaa luottamusta; samaa huhua kopioivat viestit eivät ole itsenäisiä lähteitä.
-   - Kuvaa itse tapahtuma tarvittaessa sanoin "keskusteluketjujen mukaan" tai "useiden käyttäjäkuvausten perusteella". Älä ylitulkkaa matkalla mukanaoloa rahoitus- tai rikosyhteydeksi.
-   - Kun mukana on merkittävä rikosväite, yksityisyyteen tunkeutuva väite tai muu vakava mainehaitta, edellytä tätä vahvempaa näyttöä tai jätä väite pois.
-5. `!kasinokurki`-tunnisteiden toistumista voi kuvata sponsorointi-/affiliate-yhteyteen vahvasti viittaavana havaintona, mutta sopimuksen osapuolet, euromäärät tai ehdot ovat avoimia.
-6. Ohjelman, risteilyn tai tapahtuman yhteinen esiintyminen ei sellaisenaan todista henkilön osallisuutta toisen tekoihin, yhteistä rahoitusta tai liikekumppanuutta.
-7. Tallenna kuvat projektin omiin assetteihin ja aja ne kuvien käsittelyskriptin läpi. Sovellus käyttää paikallisia optimoituja tiedostoja eikä hotlinkkaa kuvaa alkuperäiseltä sivustolta.
+- Kirjoita **hyvää, tavallista suomea**. Artikkelin ensimmäisen virkkeen pitää kertoa, kuka henkilö on tai mikä aihe on kyseessä.
+- Kerro tapahtumista, esiintymisistä, tuotannoista ja muista olennaisista asioista kokonaisin virkkein. Älä kirjoita muistiinpanotyylisiä luetteloita kuten ”Striimaaja; vieras; tapahtumakonteksti”.
+- Käytä otsikoita vain, kun niiden alla on oikeaa sisältöä. Älä pakota jokaiseen artikkeliin samaa ”Yhteenveto / Dokumentoidut yhteydet / Tulkinnan rajat” -rakennetta.
+- **Älä lisää artikkelien loppuun automaattisia varaumia** tyyliin ”yhteinen esiintyminen ei itsessään osoita taloudellista yhteistyötä”. Kerro epävarmuudesta siinä kohdassa, jossa se koskee käsiteltävää väitettä.
+- Älä kirjoita toimitusprosessista tai graafin rakenteesta osaksi henkilön elämäkertaa. Ilmaukset kuten ”tämä muodostaa verkostosillan” kuuluvat työmuistiinpanoihin, eivät artikkeliin.
+- Pidä henkilöiden, ohjelmien, tapahtumien ja julkaisujen nimet sekä ajankohdat tarkkoina. Älä täytä aukkoja arvauksilla.
 
-## Tutkimuksen käytännön työskentelytapa
-- Lue aina [docs/RESEARCH_PLAYBOOK.md](docs/RESEARCH_PLAYBOOK.md) ennen laajaa lähdekartoitusta. Se sisältää todellisessa työssä toimineet parihaku-, stream-arkisto-, foorumi- ja lähde-eheysmenetelmät.
-- Merkitse uusia löytöjä ja avoimia tarkistuksia [docs/RESEARCH_LOG.md](docs/RESEARCH_LOG.md) -lokiin.
-- Etsi kytkentöjä tapahtumasolmujen kautta: "X osallistui ohjelmaan" ja "X vieraili toisen lähetyksessä" ovat eri reunat.
-- Jokaiselle lähde-ID:lle on kirjattava URL ja tarkkaan rajattu väite. Älä muuta viite-ID:n merkitystä vanhoille artikkeleille.
+## Lähteet ja yhteydet
 
-## Implementation
-- Säilytä vakaat solmu-ID:t: artikkelilinkit ja URL-hashit käyttävät niitä.
-- Älä korvaa 3D-karttaa 2D-luettelolla. Orbit/pan/zoom ja visuaalinen hierarkia ovat tuotteen ydin.
-- Artikkelin sisäinen `[[id|Otsikko]]` avaa oikean solmun. `[@P0]` näyttää lähdeviitteen.
-- Markdownissa ei sallita raakaa HTML:ää; renderer escapeaa sen.
-- Päivitä data ja artikkeli yhdessä. Testaa: `npm test` ja `npm run build`.
-- GitHub Actions julkaisee vain onnistuneen buildin. Älä väitä julkaisun onnistuneen ilman tarkistusta.
-- Tutki koodin nykyinen toteutus ennen muutosta. Tee pienet, tarkistettavat commitit.
+`src/data/network.json` sisältää solmut (`nodes`), niiden väliset yhteydet (`edges`) ja lähteet (`sources`). Jokaisella yhteydellä on lähdeviite. Kirjoita yhteyden `label` niin, että lukija ymmärtää, mitä tapahtui: esimerkiksi ”vieraili lähetyksessä”, ”osallistui kilpailuun” tai ”järjesti tapahtuman”.
+
+Näyttötasot ovat:
+- `verified`: lähde näyttää tai vahvistaa kuvatun tapahtuman suoraan
+- `reported`: tapahtumasta kerrotaan uutisessa, haastattelussa tai yksilöidyssä silminnäkijäkuvauksessa
+- `observed`: lähteestä tehty havainto tai perusteltu tulkinta
+- `lead`: avoin tai ristiriitainen tieto, joka vaatii selvittämistä
+
+Käytä myös Ylilautaa, Redditiä ja muita julkisia keskusteluja lähteinä, kun niiden sisältö liittyy käsiteltävään asiaan. Merkitse lähteeksi yksittäinen ketju tai viesti, ei vain keskustelupalstan etusivua. Kerro suoraan, jos tieto perustuu keskustelussa esitettyyn kertomukseen. Älä esitä arvauksia varmoina tapahtumina tai keksi puuttuvia yksityiskohtia.
+
+Tarkista ennen uuden solmun lisäämistä, löytyykö sama henkilö tai tapahtuma jo toisella nimellä. Pidä solmujen tunnisteet vakaina: artikkeleiden linkit ja sivuston URL-osoitteet käyttävät niitä.
+
+## Artikkelit ja tekniikka
+
+| Polku | Sisältö |
+| --- | --- |
+| `src/data/network.json` | Solmut, yhteydet ja lähteet |
+| `src/articles/<id>.md` | Varsinaiset artikkelitekstit |
+| `src/wiki.js` | Artikkelien näyttäminen ja automaattinen perusteksti |
+| `src/main.js` | 3D-kartta, haku, suodattimet ja yhteyspolut |
+| `src/lib/graph.js` | Yhteyspolkujen haku |
+| `src/lib/hierarchy.js` | Kartan visuaalinen ryhmittely |
+| `index.html`, `src/styles.css` | Käyttöliittymä ja ulkoasu |
+| `scripts/process_images.py` | Kuvien pienentäminen WebP-muotoon |
+
+Artikkelissa `[[jethro|Jethro Rostedt]]` avaa toisen artikkelin ja `[@P6]` linkittää lähteeseen. Markdown-tuki on rajattu: käytä otsikoita, kappaleita, luetteloita, lihavointia, kursivointia ja lainauksia. Raakaa HTML:ää ja tavallisia Markdown-URL-linkkejä ei renderöidä.
+
+`node.note` näkyy kartan kuvauksissa ja siitä voidaan muodostaa lyhyt artikkeliteksti. Kirjoita se aina kokonaisena, informatiivisena lauseena. Pidempiä aiheita varten tee erillinen Markdown-artikkeli.
+
+Käyttöliittymä on suomenkielinen, vaalea ja tietosanakirjamainen. Säilytä 3D-kartan pyöritys, zoomaus, siirtäminen ja kohteiden avaaminen. PACTin ohjelmat kuuluvat samaan kartalla näytettävään ryhmään.
+
+## Muutosten tekeminen
+
+1. Tutki olemassa oleva data ja koodi ennen muutoksia. Korjaa lähteeseen, älä vain näkyvään tekstiin.
+2. Lisää uusi lähde `sources`-osioon ja kirjaa sitä vastaavat solmut tai yhteydet. Älä kierrätä vanhaa lähde-ID:tä eri tarkoitukseen.
+3. Kirjoita tai päivitä artikkeli. Tarkista viitteet, linkit, nimet ja päivämäärät.
+4. Jos lisäät kuvia, käytä `scripts/process_images.py`-skriptiä. Se tuottaa pienet WebP-kuvat `public/images/`-hakemistoon. Ohjeet ovat [sisällön lisäysoppaassa](docs/CONTENT_AUTHORING.md).
+5. Aja `npm test` ja `npm run build`. GitHub Actions huolehtii GitHub Pages -julkaisusta.
+
+Tutkimuksen hakutavat löytyvät [tutkimusoppaasta](docs/RESEARCH_PLAYBOOK.md). Avoimet havainnot kirjataan [tutkimuslokiin](docs/RESEARCH_LOG.md).
