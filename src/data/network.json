@@ -2976,7 +2976,6 @@
         "P21"
       ],
       "level": "reported",
-      "detail": "Julkaisu nimittää Singhiä perustajaksi.",
       "date": "",
       "type": "perusti"
     },
@@ -3099,7 +3098,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3111,7 +3109,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3123,7 +3120,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3135,7 +3131,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3147,7 +3142,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3159,7 +3153,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3171,7 +3164,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3183,7 +3175,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3195,7 +3186,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3207,7 +3197,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3219,7 +3208,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3231,7 +3219,6 @@
         "P1"
       ],
       "level": "reported",
-      "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
       "date": "",
       "type": "osallistui"
     },
@@ -3743,7 +3730,6 @@
         "P5"
       ],
       "level": "reported",
-      "detail": "Joachim on Jethron poika. Perhesuhde on julkisesti uutisoitu.",
       "date": "",
       "type": "father"
     },
@@ -3756,19 +3742,17 @@
         "P4"
       ],
       "level": "verified",
-      "detail": "Joni on 2. ja 3. kausien yhteinen osallistuja.",
       "date": "",
       "type": "osallistui"
     },
     {
       "a": "lassi",
       "b": "chiara",
-      "label": "yhteinen striimissä kuvattu tilanne",
+      "label": "Gekkosen mukaan samassa ravintolassa striimin aikana 17.3.2026",
       "src": [
         "P25"
       ],
       "level": "reported",
-      "detail": "Gekkosen 17.3.2026 jutussa he ovat samassa ravintolassa striimin aikana; ei päätelmää suhteesta.",
       "date": "",
       "type": "esiintyi-yhdessa"
     },
@@ -3781,7 +3765,6 @@
         "P2"
       ],
       "level": "reported",
-      "detail": "1. kauden osuus perustuu koontiin, 2. kausi tuotannon omaan listaan.",
       "date": "",
       "type": "osallistui"
     },
@@ -3794,7 +3777,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Syksyn 2026 toistuvat jaksot.",
       "date": "",
       "type": "juontaa"
     },
@@ -3806,7 +3788,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "26.10.2026",
       "type": "vieraili"
     },
@@ -3818,7 +3799,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "20.10.2026",
       "type": "vieraili"
     },
@@ -3830,7 +3810,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "20.10.2026",
       "type": "vieraili"
     },
@@ -3842,7 +3821,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "25.10.2026",
       "type": "vieraili"
     },
@@ -3854,7 +3832,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "28.10.2026",
       "type": "vieraili"
     },
@@ -3866,7 +3843,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "23.10.2026",
       "type": "vieraili"
     },
@@ -3878,7 +3854,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "22.10.2026",
       "type": "vieraili"
     },
@@ -3890,7 +3865,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "24.10.2026",
       "type": "vieraili"
     },
@@ -3902,7 +3876,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "27.10.2026",
       "type": "vieraili"
     },
@@ -3914,7 +3887,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "27.10.2026",
       "type": "vieraili"
     },
@@ -3926,7 +3898,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "18.10.2026",
       "type": "vieraili"
     },
@@ -3938,7 +3909,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "18.10.2026",
       "type": "vieraili"
     },
@@ -3950,7 +3920,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
       "date": "17.10.2026",
       "type": "vieraili"
     },
@@ -3962,7 +3931,7 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Jakson vieraana oli Jethro.",
+      "detail": "Jakson 84 vieraana oli Jethro Rostedt.",
       "date": "16.10.2026",
       "type": "juonsi"
     },
@@ -3975,19 +3944,17 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Vahvistettu ainakin 24.8.2026 ja 26.10.2026.",
       "date": "",
       "type": "oli-haastateltavana"
     },
     {
       "a": "iippa",
       "b": "jethro",
-      "label": "PactTalks-vierailu",
+      "label": "PactTalks-vierailu Megarokkistaran kanssa",
       "src": [
         "P19"
       ],
       "level": "verified",
-      "detail": "Vierailu myös Megarokkistaran kanssa, ei päätelmää yksityissuhteista.",
       "date": "20.10.2026",
       "type": "vieraili"
     },
@@ -3999,7 +3966,6 @@
         "P19"
       ],
       "level": "verified",
-      "detail": "Vierailivat yhdessä PactTalksissa.",
       "date": "20.10.2026",
       "type": "coappeared"
     },
@@ -4012,7 +3978,7 @@
         "P10"
       ],
       "level": "verified",
-      "detail": "Vuonna 2025 Iippadaa matkusti Pottukoiran luo Viroon; yhteistä striimiä kuvattiin.",
+      "detail": "Iippadaa matkusti Pottukoiran luo Viroon vuonna 2025.",
       "date": "",
       "type": "striimasi-yhdessa"
     },
@@ -4025,7 +3991,7 @@
         "P10"
       ],
       "level": "verified",
-      "detail": "Sami Kieksin kuvausryhmä seurasi Pottukoiran ja Iippadaan yhteistä striimausta.",
+      "detail": "Kieksin kuvausryhmä seurasi Pottukoiran ja Iippadaan yhteistä striimausta.",
       "date": "",
       "type": "kuvasi"
     },
@@ -4138,7 +4104,6 @@
         "P13"
       ],
       "level": "verified",
-      "detail": "Tämä ei tarkoita henkilökohtaista suhdetta jokaiseen esiintyjään.",
       "date": "",
       "type": "tuotti"
     },
@@ -4150,7 +4115,6 @@
         "P13"
       ],
       "level": "reported",
-      "detail": "Seiska kertoo osallistumisesta 31.10.2026.",
       "date": "",
       "type": "osallistui"
     },
@@ -4198,7 +4162,7 @@
         "P13"
       ],
       "level": "reported",
-      "detail": "Seiskan mukaan jäi satamassa matkasta.",
+      "detail": "Seiskan mukaan Tegelberg jäi satamassa matkasta.",
       "date": "",
       "type": "suunnitteli-osallistumista"
     },
@@ -4210,7 +4174,6 @@
         "P14"
       ],
       "level": "verified",
-      "detail": "Esiintyjä tapahtuman virallisessa ohjelmassa.",
       "date": "",
       "type": "esiintyi"
     },
@@ -4261,7 +4224,6 @@
         "P26"
       ],
       "level": "verified",
-      "detail": "Musiikillista yhteistyötä ja Sastamalan tapahtuma.",
       "date": "",
       "type": "coappeared"
     },
@@ -4273,19 +4235,18 @@
         "P16"
       ],
       "level": "reported",
-      "detail": "Asuun pukeutuneen henkilöllisyys ei ole vahvistettu.",
+      "detail": "Asuun pukeutuneen henkilöllisyyttä ei ole vahvistettu.",
       "date": "",
       "type": "esiintyi"
     },
     {
       "a": "freak",
       "b": "keikkah",
-      "label": "samankaltaiset häirintäasuja käyttäneet",
+      "label": "samantyyppisiä häirintäasuja eri keikoilla",
       "src": [
         "P16"
       ],
       "level": "reported",
-      "detail": "Ei osoita samaa tekijää eri keikoilla.",
       "date": "",
       "type": "associated-incidents"
     },
@@ -4321,7 +4282,7 @@
         "P17"
       ],
       "level": "lead",
-      "detail": "Ketola on kiistänyt tapahtumien järjestämisen. Tekijöitä tai toimeksiantoa ei vahvistettu.",
+      "detail": "Ketola on kiistänyt järjestäneensä häiriöitä.",
       "date": "",
       "type": "alleged-organizer"
     },
@@ -4345,7 +4306,7 @@
         "P17"
       ],
       "level": "reported",
-      "detail": "Monarch Duel MMA / Freakbob Fighting -merkinnät, sopimusmuoto ei tiedossa.",
+      "detail": "Grafiikassa näkyivät Monarch Duel MMA- ja Freakbob Fighting -merkinnät.",
       "date": "",
       "type": "nakyi"
     },
@@ -4370,7 +4331,6 @@
         "P17"
       ],
       "level": "reported",
-      "detail": "Ei osoita sopimuksen osapuolia tai korvausta.",
       "date": "",
       "type": "reported-association"
     },
@@ -4383,7 +4343,6 @@
         "P82"
       ],
       "level": "observed",
-      "detail": "KP2Timesin stream-arkisto näyttää toistuvaa !kasinokurki-komentoa. Komennon tarkkaa kohdetta, mahdollista kaupallista sopimusta tai osapuolia ei ole tarkistettu.",
       "date": "2026-10",
       "type": "stream-tag"
     },
@@ -4397,7 +4356,6 @@
         "P93"
       ],
       "level": "observed",
-      "detail": "Pulliksen Kickin omat VOD-otsikot näyttää toistuvaa !kasinokurki-komentoa. Komennon tarkkaa kohdetta, mahdollista kaupallista sopimusta tai osapuolia ei ole tarkistettu.",
       "date": "2026-10",
       "type": "stream-tag"
     },
@@ -4410,19 +4368,17 @@
         "P83"
       ],
       "level": "observed",
-      "detail": "SampeF2:n lähetyshistoria näyttää toistuvaa !kasinokurki-komentoa. Komennon tarkkaa kohdetta, mahdollista kaupallista sopimusta tai osapuolia ei ole tarkistettu.",
       "date": "2026-10",
       "type": "stream-tag"
     },
     {
       "a": "pullis",
       "b": "s2",
-      "label": "väitetty suunniteltu tuotantorooli",
+      "label": "viihdeblogissa väitetty suunniteltu tuotantorooli",
       "src": [
         "P27"
       ],
       "level": "lead",
-      "detail": "Yksittäinen viihdeblogi kirjoittaa suunnitellusta roolista ja poisjäännistä; vahvistava tuotantolähde puuttuu.",
       "date": "",
       "type": "rumoured-role"
     },
@@ -4506,7 +4462,6 @@
         "P28"
       ],
       "level": "verified",
-      "detail": "Artikkelia ei saatu kokonaisuudessaan avattua; ensisijaiset yksityiskohdat tarkistettiin muualta.",
       "date": "",
       "type": "uutisoi"
     },
@@ -4542,19 +4497,17 @@
         "P20"
       ],
       "level": "lead",
-      "detail": "Keskustelukommentit dokumentoivat väitteiden olemassaolon, eivät todenna sisältöä.",
       "date": "",
       "type": "discussed-online"
     },
     {
       "a": "sami",
       "b": "ylilauta",
-      "label": "mukana Ylilaudan toiminnassa (Yle 2020)",
+      "label": "Ylen 2020 haastattelussa kuvattu mukanaolo Ylilaudan toiminnassa",
       "src": [
         "P33"
       ],
       "level": "verified",
-      "detail": "Ylen 2020 henkilöhaastattelussa sanotaan Kieksin olleen mukana Ylilauta-viestipalvelun toiminnassa. Se ei yksilöi omistus- tai nykyroolia.",
       "date": "2020",
       "type": "involved-in"
     },
@@ -4567,19 +4520,17 @@
         "P147"
       ],
       "level": "verified",
-      "detail": "Juhana Tegelberg vieraili PactHouse 3 -talossa toukokuussa 2026. Tämä ei merkitse osallistujastatusta.",
       "date": "5.5.2026",
       "type": "vieraili"
     },
     {
       "a": "aleksi",
       "b": "jethro",
-      "label": "yhteinen kameratilanne PactHouse 3:ssa",
+      "label": "Gekkosen mukaan Nurminen auttoi Rostedtia PactHouse 3 -lähetyksessä",
       "src": [
         "P36"
       ],
       "level": "reported",
-      "detail": "Gekkosen mukaan Nurminen auttoi Rostedtia eräässä suorassa lähetyksessä. Ei osoita muuta henkilökohtaista tai kaupallista suhdetta.",
       "date": "7.5.2026",
       "type": "esiintyi-yhdessa"
     },
@@ -4591,7 +4542,6 @@
         "P38"
       ],
       "level": "verified",
-      "detail": "Nettipokeri.comin julkaisema tapahtumaohjelma.",
       "date": "26.–27.5.2026",
       "type": "sisalsi"
     },
@@ -4603,7 +4553,6 @@
         "P39"
       ],
       "level": "verified",
-      "detail": "Nettipokeri.comin 25.9. julkaisema pelaajalista.",
       "date": "25.–26.9.2026",
       "type": "sisalsi"
     },
@@ -4615,7 +4564,6 @@
         "P38"
       ],
       "level": "reported",
-      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
       "date": "26.–27.5.2026",
       "type": "listattiin"
     },
@@ -4627,7 +4575,6 @@
         "P38"
       ],
       "level": "reported",
-      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
       "date": "26.–27.5.2026",
       "type": "listattiin"
     },
@@ -4639,7 +4586,6 @@
         "P38"
       ],
       "level": "reported",
-      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
       "date": "26.–27.5.2026",
       "type": "listattiin"
     },
@@ -4651,7 +4597,6 @@
         "P38"
       ],
       "level": "reported",
-      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
       "date": "26.–27.5.2026",
       "type": "listattiin"
     },
@@ -4663,7 +4608,6 @@
         "P38"
       ],
       "level": "reported",
-      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
       "date": "26.–27.5.2026",
       "type": "listattiin"
     },
@@ -4675,7 +4619,6 @@
         "P38"
       ],
       "level": "reported",
-      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
       "date": "26.–27.5.2026",
       "type": "listattiin"
     },
@@ -4687,7 +4630,6 @@
         "P38"
       ],
       "level": "reported",
-      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
       "date": "26.–27.5.2026",
       "type": "listattiin"
     },
@@ -4699,7 +4641,6 @@
         "P38"
       ],
       "level": "reported",
-      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
       "date": "26.–27.5.2026",
       "type": "listattiin"
     },
@@ -4711,7 +4652,6 @@
         "P38"
       ],
       "level": "reported",
-      "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
       "date": "26.–27.5.2026",
       "type": "listattiin"
     },
@@ -4723,7 +4663,6 @@
         "P39"
       ],
       "level": "reported",
-      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
       "date": "25.–26.9.2026",
       "type": "listattiin"
     },
@@ -4735,7 +4674,6 @@
         "P39"
       ],
       "level": "reported",
-      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
       "date": "25.–26.9.2026",
       "type": "listattiin"
     },
@@ -4747,7 +4685,6 @@
         "P39"
       ],
       "level": "reported",
-      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
       "date": "25.–26.9.2026",
       "type": "listattiin"
     },
@@ -4759,7 +4696,6 @@
         "P39"
       ],
       "level": "reported",
-      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
       "date": "25.–26.9.2026",
       "type": "listattiin"
     },
@@ -4771,7 +4707,6 @@
         "P39"
       ],
       "level": "reported",
-      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
       "date": "25.–26.9.2026",
       "type": "listattiin"
     },
@@ -4783,7 +4718,6 @@
         "P39"
       ],
       "level": "reported",
-      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
       "date": "25.–26.9.2026",
       "type": "listattiin"
     },
@@ -4795,19 +4729,17 @@
         "P39"
       ],
       "level": "reported",
-      "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
       "date": "25.–26.9.2026",
       "type": "listattiin"
     },
     {
       "a": "sara",
       "b": "julkkis",
-      "label": "aiempi Julkkispelit-kasvo",
+      "label": "Nettipokeri.comin mukaan aiemmin mukana Julkkispeleissä",
       "src": [
         "P37"
       ],
       "level": "reported",
-      "detail": "Nettipokeri.com listaa Sara Chafakin Julkkispeleistä tutuksi. Ei tästä lähteestä tarkkaa jaksoa.",
       "date": "2026",
       "type": "esiintyi"
     },
@@ -4821,7 +4753,6 @@
         "P39"
       ],
       "level": "verified",
-      "detail": "Useita yksilöityjä lähetyskokoonpanoja.",
       "date": "2026",
       "type": "esiintyi"
     },
@@ -4835,7 +4766,6 @@
         "P39"
       ],
       "level": "verified",
-      "detail": "Useita yksilöityjä lähetyskokoonpanoja.",
       "date": "2026",
       "type": "esiintyi"
     },
@@ -4849,7 +4779,6 @@
         "P39"
       ],
       "level": "verified",
-      "detail": "Ilari Sahamies liittää PactHouse 2:n Julkkispelit-pokerituotantoihin.",
       "date": "2026",
       "type": "esiintyi"
     },
@@ -4861,7 +4790,6 @@
         "P40"
       ],
       "level": "verified",
-      "detail": "Julkisesti kuvattu yhteinen ohjelmatilanne; ei yksin muuta liikesuhdetta.",
       "date": "6.5.2026",
       "type": "discussed-together"
     },
@@ -4873,7 +4801,6 @@
         "P40"
       ],
       "level": "reported",
-      "detail": "Kiinnostus tapahtumaan on raportoitu, mutta osallistumista ei ole tällä perusteella vahvistettu.",
       "date": "6.5.2026",
       "type": "ilmaisi-kiinnostuksensa"
     },
@@ -4885,7 +4812,6 @@
         "P41"
       ],
       "level": "verified",
-      "detail": "Seiska raportoi ohjelman 11.8.2026 jaksosta.",
       "date": "11.8.2026",
       "type": "sisaltaa"
     },
@@ -4897,7 +4823,6 @@
         "P41"
       ],
       "level": "verified",
-      "detail": "Jethro Rostedt juonsi lähetyksen.",
       "date": "11.8.2026",
       "type": "juonsi"
     },
@@ -4909,7 +4834,6 @@
         "P41"
       ],
       "level": "verified",
-      "detail": "Uutisoitu yhteisesiintyminen PactTalksin ohjelmajaksossa, ei todistus laajemmasta yhteistyöstä.",
       "date": "11.8.2026",
       "type": "vieraili"
     },
@@ -4921,7 +4845,6 @@
         "P41"
       ],
       "level": "verified",
-      "detail": "Uutisoitu yhteisesiintyminen PactTalksin ohjelmajaksossa, ei todistus laajemmasta yhteistyöstä.",
       "date": "11.8.2026",
       "type": "vieraili"
     },
@@ -4933,7 +4856,6 @@
         "P41"
       ],
       "level": "verified",
-      "detail": "Uutisoitu yhteisesiintyminen PactTalksin ohjelmajaksossa, ei todistus laajemmasta yhteistyöstä.",
       "date": "11.8.2026",
       "type": "vieraili"
     },
@@ -5112,7 +5034,6 @@
       "src": [
         "P52"
       ],
-      "detail": "Keskustelupalstan tapahtumakuvaus riittää tämän arkisen matkaseurueyhteyden raportoimiseksi. Alkuperäinen ketju: P52. Ei väitettä sopimuksista tai muista teoista.",
       "date": "2025-04",
       "type": "reported-trip"
     },
@@ -5124,7 +5045,6 @@
       "src": [
         "P52"
       ],
-      "detail": "Keskustelupalstan tapahtumakuvaus riittää tämän arkisen matkaseurueyhteyden raportoimiseksi. Alkuperäinen ketju: P52. Ei väitettä sopimuksista tai muista teoista.",
       "date": "2025-04",
       "type": "reported-trip"
     },
@@ -5136,7 +5056,6 @@
       "src": [
         "P52"
       ],
-      "detail": "Keskustelupalstan tapahtumakuvaus riittää tämän arkisen matkaseurueyhteyden raportoimiseksi. Alkuperäinen ketju: P52. Ei väitettä sopimuksista tai muista teoista.",
       "date": "2025-04",
       "type": "reported-trip"
     },
@@ -5367,8 +5286,7 @@
         "P77"
       ],
       "date": "2026-10",
-      "type": "striimasi",
-      "detail": "SampeF2:n kanavan arkistoidut IRL-lähetysotsikot lokakuulta 2026."
+      "type": "striimasi"
     },
     {
       "a": "iippa",
@@ -5380,8 +5298,7 @@
         "P77"
       ],
       "date": "2026-10",
-      "type": "nakyi",
-      "detail": "Striimin otsikko mainitsee Iippadaan; alkuperäisen tallenteen sisältöä ei käyty läpi."
+      "type": "nakyi"
     },
     {
       "a": "megis",
@@ -5393,8 +5310,7 @@
         "P77"
       ],
       "date": "2026-10",
-      "type": "nakyi",
-      "detail": "Striimien otsikot mainitsevat Megiksen useampana päivänä lokakuussa 2026."
+      "type": "nakyi"
     },
     {
       "a": "pullis",
@@ -5434,14 +5350,13 @@
     {
       "a": "pullis",
       "b": "sampe",
-      "label": "Riian matkan yhteislähetysten otsikoissa lokakuussa 2026",
+      "label": "”Riika w/ Pullis ja Jenniveri” -lähetysotsikoissa 3.–5.10.2026",
       "level": "observed",
       "src": [
         "P83"
       ],
       "type": "striimasi-yhdessa",
-      "date": "2026-10-03",
-      "detail": "SampeF2:n 3.–5.10.2026 otsikoissa 'Riika w/ Pullis ja Jenniveri'."
+      "date": "2026-10-03"
     },
     {
       "a": "pullis",
@@ -5610,7 +5525,7 @@
       ],
       "level": "reported",
       "date": "2026-05-04",
-      "detail": "Tuotanto ilmoitti sääntörikkomuksesta mutta ei julkistanut poistamisen tarkkaa syytä."
+      "detail": "Tuotanto kertoi Elmerin rikkoneen sääntöjä, mutta ei täsmentänyt rikkomusta."
     },
     {
       "a": "harri",
@@ -5780,8 +5695,7 @@
         "P122"
       ],
       "level": "verified",
-      "date": "2026-12-19",
-      "detail": "Tuleva ottelu."
+      "date": "2026-12-19"
     },
     {
       "a": "matias_koistinen",
@@ -5792,8 +5706,7 @@
         "P122"
       ],
       "level": "verified",
-      "date": "2026-12-19",
-      "detail": "Tuleva ottelu."
+      "date": "2026-12-19"
     },
     {
       "a": "aleksi",
@@ -5915,8 +5828,7 @@
       "src": [
         "P128"
       ],
-      "date": "2025-12-20",
-      "detail": "Ennakkolistalla; lähde ei kerro ottelun tulosta."
+      "date": "2025-12-20"
     },
     {
       "a": "venni_kananen",
@@ -5927,8 +5839,7 @@
       "src": [
         "P128"
       ],
-      "date": "2025-12-20",
-      "detail": "Ennakkolistalla; lähde ei kerro ottelun tulosta."
+      "date": "2025-12-20"
     },
     {
       "a": "sami",
@@ -5940,7 +5851,7 @@
         "P131"
       ],
       "date": "2025",
-      "detail": "Aller Studiosin tuottama dokumenttisarja."
+      "detail": "Sarjan tuotti Aller Studios."
     },
     {
       "a": "megis",
