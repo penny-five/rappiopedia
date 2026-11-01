@@ -6,11 +6,15 @@ KickTrackerin lähetysarkiston mukaan ensimmäinen PactTalks-jakso lähetettiin 
 
 Myös [[jasmilla|Jasmilla Rostedt]] nähtiin juontajana: 16. lokakuuta lähetetyssä jaksossa 84 hän haastatteli Jethro Rostedtia. Lokakuussa Jethro kertoi Seiskan haastattelussa juontavansa Tallinnasta käsin kuutta PactTalks-lähetystä viikossa. [@P19] [@P115]
 
+## Elokuun 2026 välikohtaus
+
+Elokuun 11. päivän [[pact_augtalk|lähetyksessä]] vierailivat [[johanna|Johanna Tukiainen]], [[joonasm|Joonas Mäkäräinen]] ja [[milla|Milla Säilynoja]]. Seiskan mukaan keskustelu johti riitaan, jossa Tukiainen repi Säilynojaa hiuksista. Juontaja [[jethro|Jethro Rostedt]] ja Mäkäräinen yrittivät erottaa osapuolet toisistaan. Rostedt kertoi jälkikäteen, ettei hän ollut odottanut fyysistä yhteenottoa. [@P41]
+
 ## Vieraat ja jaksot syksyllä 2026
 
 Syys- ja lokakuun arkistossa näkyvät monet eri viihdepiirejä yhdistävät esiintymiset. Lokakuun 11. päivän jaksossa 80 vierailivat yhdessä [[pasi|Pasi Viheraho]] ja [[megis|Megarokkistara]]. Lokakuun 20. päivän [[talk_iippa_megis_2026|jaksoon 87]] oli merkitty vieraiksi [[iippa|Iippadaa]] ja Megarokkistara. [@P7] [@P63]
 
-Lokakuussa ohjelmassa vierailivat myös [[cruella_johansson|Cruella Johansson]] (jakso 81), [[tuukka_kuru|Tuukka Kuru]] (82), [[jouni_honkanen|Jouni ”Jones” Honkanen]] (83), [[alex|Alex Lindfors]] (89), [[pyhimys|Pyhimys]] (92), [[ruusu|Pinja Ruusutossu]] (93) ja [[andypyro|AndyPyro]] (95). Jaksossa 94 esiintyivät [[crista|BelleBarbie]] ja [[cuck|CuckTommi]]. Tiedot perustuvat julkisiin lähetysotsikoihin. [@P7] [@P19]
+Lokakuussa ohjelmassa vierailivat myös [[cruella_johansson|Cruella Johansson]] (jakso 81), [[tuukka_kuru|Tuukka Kuru]] (82), [[jouni_honkanen|Jouni ”Jones” Honkanen]] (83), [[alex|Alex Lindfors]] (89), [[pyhimys|Pyhimys]] (92), [[ruusu|Pinja Ruusutossu]] (93) ja [[andypyro|AndyPyro]] (95). Jaksossa 94 esiintyivät [[crista|BelleBarbie]] ja [[cuck|CuckTommi]]. Tiedot perustuvat julkisiin lähetysotsikoihin. Pyhimys kertoi 25. lokakuuta lähetetyssä haastattelussa omasta päihteidenkäytöstään ja hoitoon hakeutumisestaan; Uuno uutisoi keskustelusta 28. lokakuuta. [@P7] [@P19] [@P218]
 
 Ruusutossu oli vieraana myös elokuussa. Elokuun 11. päivän erillisessä lähetyksessä esiintyivät [[johanna|Johanna Tukiainen]], [[joonasm|Joonas Mäkäräinen]] ja [[milla|Milla Säilynoja]]. [@P72] [@P41]
 
