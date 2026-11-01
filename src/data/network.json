@@ -266,7 +266,7 @@
     {
       "id": "pottu",
       "name": "Pottukoira / Jouko Kärkkäinen",
-      "group": "rappio",
+      "group": "pottu-streams",
       "cat": "person",
       "note": "Pottukoira eli Jouko Kärkkäinen on suomalainen striimaaja, joka esiintyi Kieksin dokumentissa ja oli mukana Bailupaatti-risteilyn markkinoinnissa.",
       "x": 650,
@@ -274,9 +274,9 @@
       "image": "images/pottu.webp",
       "imageCredit": "Seiska, Pottukoira-haastattelu",
       "pos3": [
-        2154,
-        -170,
-        419
+        2730,
+        -235,
+        445
       ],
       "featured": true,
       "imageSource": "https://image.seiska.fi/2184001.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=2184001&width=576&x=0.00&y=0.00",
@@ -1974,13 +1974,13 @@
     {
       "id": "spurgu",
       "name": "Spurgu-TV",
-      "group": "rappio",
+      "group": "pottu-streams",
       "cat": "show",
       "note": "Spurgu-TV on Pottukoiraan liittyvä Kick-lähetyskonsepti, jonka yhteislähetyksissä on esiintynyt Pirkkis.",
       "pos3": [
-        2354,
-        -270,
-        499
+        2920,
+        -320,
+        440
       ],
       "featured": true,
       "types": [
@@ -2054,13 +2054,13 @@
     {
       "id": "pottu_marketing",
       "name": "Pottukoiran rahapelimarkkinointia koskeva tuomio 2026",
-      "group": "rappio",
+      "group": "pottu-streams",
       "cat": "event",
       "note": "Pohjois-Savon käräjäoikeus tuomitsi Pottukoiran kesäkuussa 2026 rahapelirikoksesta, kertoi Yle. Tuomio ei ollut uutisointihetkellä lainvoimainen.",
       "pos3": [
-        2030,
-        -345,
-        290
+        2640,
+        -500,
+        355
       ],
       "featured": false,
       "types": [
@@ -2089,13 +2089,13 @@
     {
       "id": "viro_pottu_2025",
       "name": "Pottukoira, Aleksi ja Testotimo / Viro 2025",
-      "group": "rappio",
+      "group": "pottu-streams",
       "cat": "event",
       "note": "Pottukoira sai lokakuussa 2025 Virossa striimivieraita, joihin kuuluivat Aleksi Nurminen ja Testotimo.",
       "pos3": [
-        2475,
-        -420,
-        355
+        3070,
+        -460,
+        500
       ],
       "featured": true,
       "types": [
@@ -2173,13 +2173,13 @@
     {
       "id": "rauno77",
       "name": "Rauno77",
-      "group": "rappio",
+      "group": "pottu-streams",
       "cat": "person",
       "note": "Rauno77 on Kick-striimaaja, joka teki Pottukoiran kanssa yhteislähetyksiä loppuvuonna 2025.",
       "pos3": [
-        2214,
-        -260,
-        749
+        2850,
+        -500,
+        720
       ],
       "featured": false,
       "types": [
