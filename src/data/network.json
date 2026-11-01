@@ -1568,7 +1568,7 @@
       "name": "Amsterdamin striimimatka / 4.2025",
       "group": "events",
       "cat": "event",
-      "note": "Reddit-keskusteluissa kuvattu Upin, Pirkkiksen ja Taigan yhteinen matka; tapahtuman yksityiskohdat vaativat alkuperäistallenteita.",
+      "note": "Reddit-keskustelussa raportoitu Upin, Pirkkiksen ja Taigan yhteinen striimimatka huhtikuussa 2025. Foorumi on tapahtuman lähde; muut yksityiskohdat on arvioitava erikseen.",
       "pos3": [
         890,
         -850,
@@ -3564,29 +3564,35 @@
     {
       "a": "upi",
       "b": "ams25",
-      "label": "Reddit-käyttäjät kuvaavat matkalle osallistumista",
-      "level": "lead",
+      "label": "Reddit-keskustelussa raportoitu yhteinen striimimatka",
+      "level": "reported",
       "src": [
         "P52"
-      ]
+      ],
+      "detail": "Keskustelupalstan tapahtumakuvaus riittää tämän arkisen matkaseurueyhteyden raportoimiseksi. Alkuperäinen ketju: P52. Ei väitettä sopimuksista tai muista teoista.",
+      "date": "2025-04"
     },
     {
       "a": "pirkkis",
       "b": "ams25",
-      "label": "Reddit-käyttäjät kuvaavat matkalle osallistumista",
-      "level": "lead",
+      "label": "Reddit-keskustelussa raportoitu yhteinen striimimatka",
+      "level": "reported",
       "src": [
         "P52"
-      ]
+      ],
+      "detail": "Keskustelupalstan tapahtumakuvaus riittää tämän arkisen matkaseurueyhteyden raportoimiseksi. Alkuperäinen ketju: P52. Ei väitettä sopimuksista tai muista teoista.",
+      "date": "2025-04"
     },
     {
       "a": "taiga",
       "b": "ams25",
-      "label": "Reddit-käyttäjien mainitsema matkakumppani",
-      "level": "lead",
+      "label": "Reddit-keskustelussa raportoitu yhteinen striimimatka",
+      "level": "reported",
       "src": [
         "P52"
-      ]
+      ],
+      "detail": "Keskustelupalstan tapahtumakuvaus riittää tämän arkisen matkaseurueyhteyden raportoimiseksi. Alkuperäinen ketju: P52. Ei väitettä sopimuksista tai muista teoista.",
+      "date": "2025-04"
     },
     {
       "a": "upi",
