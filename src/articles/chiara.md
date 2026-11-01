@@ -8,7 +8,7 @@ Seiskan lokakuussa 2026 julkaisemassa jutussa Eklund kertoi saaneensa Kickiltä 
 
 ## Mökkistriimit ja Mallorca
 
-Heinäkuussa Chiara esiintyi [[mokkistriimit_july_2026|mökkireissulla]] yhdessä [[megis|Megiksen]], [[julwill|Julia Willmanin]], [[pullis|Pulliksen]], [[sampe|Sampen]], [[pirkkis|Pirkkiksen]] ja [[isabell|Isabell Janssonin]] kanssa. Syyskuun [[mallorca_livet_2026|Mallorcan-matkalla]] hän oli Sampen, Pulliksen ja Megiksen seurueessa. [@P174] [@P178]
+Heinäkuussa Chiara esiintyi [[mokkistriimit_july_2026|mökkireissulla]] yhdessä [[megis|Megiksen]], [[julwill|Julia Willmanin]], [[pullis|Pulliksen]], [[sampe|Sampen]], [[pirkkis|Pirkkiksen]] ja [[isabell|Isabell Janssonin]] kanssa. Syyskuun [[mallorca_livet_2026|Mallorcan-matkalla]] hän oli Sampen, Pulliksen ja Megiksen seurueessa. Syyskuun 22. päivän rantapäivänä Chiara kävi uimassa Sampen ja Pulliksen kanssa. Miesten [[mallorca_rantalaukut_2026|laukut katosivat]] heidän ollessaan vedessä, ja tilannetta selvitettiin suoratoistolähetyksissä. [@P174] [@P178] [@P265]
 
 ## Ideaparkin lähetys Lassi Kuhlmanin kanssa
 
