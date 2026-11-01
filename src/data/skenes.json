@@ -24,6 +24,10 @@
     "color": "#b46b63",
     "padding": 160
   },
+  "pottu-streams": {
+    "label": "POTTUKOIRAN LÄHETYKSET",
+    "color": "#c1846f"
+  },
   "kasinokurki": {
     "label": "KASINOKURKI",
     "color": "#4485b4"
@@ -59,9 +63,5 @@
   "poker": {
     "label": "JULKKISPELIT / POKERI",
     "color": "#748f62"
-  },
-  "pottu-streams": {
-    "label": "POTTUKOIRAN LÄHETYKSET",
-    "color": "#c1846f"
   }
 }
