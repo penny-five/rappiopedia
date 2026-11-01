@@ -34,6 +34,10 @@ Read `AGENTS.md`, `docs/RESEARCH_PLAYBOOK.md`, `docs/CONTENT_AUTHORING.md`, and 
 
 `research/leads.json` is the agent's working backlog. Update matching leads instead of creating duplicates. Link known `nodeIds`, `sourceIds` and new `sourceUrls`. Record specific `questions`, `queries`, `notes` and executable `nextSteps`. Use `open` / `in-progress` / `blocked` / `done` according to progress; publishing a partial article doesn't automatically close a lead. Update `updatedAt` when edited. Use `docs/RESEARCH_LOG.md` for substantial dated findings when helpful. Keep research TODOs out of articles.
 
+## 3D skene placement: recurring layout-test regression
+
+When adding a node or changing `pos3`, `group`, or scene placement, ensure that the **full padded 3D volumes of every two skenes remain disjoint**, and that **no skene outside the PACT programme family intersects its parent volume**. The layout tests use `bounds3D` with 100 units of per-skene padding and 145 units for the PACT parent; see `tests/layout.test.mjs` and the detailed instructions in `AGENTS.md`. This has repeatedly failed with errors like `rappio intersects PACT` and `talks intersects rappio`. Run `node --test tests/layout.test.mjs` before committing changes affecting positions, and run the complete `npm test` and `npm run build` checks. Fix coordinates instead of weakening the tests. If testing is unavailable, check the geometric constraints programmatically and report that the full tests were not run.
+
 ## Finish the batch
 
 Make concrete edits in the current run when repository access permits. If one topic is unproductive, try another relevant line and leave useful leads. Test with `npm test` and `npm run build` where possible, or check JSON, source IDs, article links and relation types with available tools. Review diffs to prevent loss of previously researched material. Commit/push when permitted.
