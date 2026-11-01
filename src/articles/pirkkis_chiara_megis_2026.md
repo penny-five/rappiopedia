@@ -1,3 +1,3 @@
 **Pirkkiksen, Chiaran ja Megiksen yhteisstriimi** oli 5. heinäkuuta 2026 Redditiin jaetulla videolla nähty kohtaaminen. Siinä [[pirkkis|Kari ”Pirkkis” Liimatta]] esiintyi [[chiara|Chiara Eklundin]] ja [[megis|Juulia ”Megarokkistara” Valikaisen]] kanssa samassa suorassa lähetyksessä. [@P203]
 
-Videon ympärillä käydyssä keskustelussa pohdittiin, oliko kolmikko tavannut aiemmin. Kommentoijat olivat asiasta eri mieltä, joten tapahtumaa ei voi nimetä varmuudella ensitapaamiseksi. Yhteisstriimi sijoittui ennen saman kuun 23. päivänä alkaneita [[mokkistriimit_july_2026|mökkistriimejä]]. [@P203] [@P174]
+Redditissä osa katsojista kuvasi tätä kolmikon ensitapaamiseksi, kun taas toiset muistelivat aikaisempia kohtaamisia. Kolmikko esiintyi yhdessä vielä myöhemmin heinäkuussa [[mokkistriimit_july_2026|mökkistriimeissä]], jotka alkoivat 23. päivänä. [@P203] [@P174]
