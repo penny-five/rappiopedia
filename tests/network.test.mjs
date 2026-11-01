@@ -110,8 +110,7 @@ test('TV reality show connections record independent programme participation', (
 });
 
 test('relation corrections are deterministic and preserve sourced nodes',()=>{
- assert.equal(baseData.edges.length,342);
- assert.equal(data.edges.length,337);
+ assert.equal(data.edges.length,baseData.edges.length-corrections.remove.length);
  assert.equal(corrections.edits.length,45);
  assert.equal(corrections.remove.length,5);
  assert.equal(data.nodes,baseData.nodes);
