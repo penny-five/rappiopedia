@@ -220,15 +220,15 @@
     {
       "id": "ruusu",
       "name": "Pinja ”Ruusutossu” Rajakari",
-      "group": "talks",
+      "group": "reality",
       "cat": "person",
       "note": "Pinja Ruusutossu eli Pinja Rajakari on suomalainen somepersoona ja striimaaja, jonka vuoden 2026 julkisuuteen kuuluivat Panaman-matka, PactTalks-vierailut ja Bämät matkoilla -reality.",
       "x": 3800,
       "y": 580,
       "pos3": [
-        817,
-        241,
-        104
+        2800,
+        1080,
+        1970
       ],
       "featured": true,
       "imageSource": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/e3/5f/16/e35f163c-f9b3-94a8-dabe-50a7fc550327/mza_13265136684859044567.jpg/1200x1200bf.webp",
@@ -284,16 +284,16 @@
     {
       "id": "sami",
       "name": "Sami Kieksi",
-      "group": "rappio",
+      "group": "documents",
       "cat": "person",
       "note": "Sami Kieksi on dokumenttiohjaaja, joka tunnetaan Some Deep Storysta, Logged Inistä, Kieksi-sarjasta ja Most Wanted: Julius Kivimäki -dokumentista.",
       "x": 830,
       "y": 2180,
       "imageCredit": "Julius Konttinen / Televisioakatemia ry, Wikimedia Commons (CC BY-SA 4.0)",
       "pos3": [
-        1799,
-        80,
-        404
+        -650,
+        -100,
+        2050
       ],
       "featured": true,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sami_Kieksi_Kultainen_Venla_2020.jpg",
@@ -306,15 +306,15 @@
     {
       "id": "revul",
       "name": "Revul Media Group Oy",
-      "group": "rappio",
+      "group": "documents",
       "cat": "org",
       "note": "Revul Media Group Oy tuottaa dokumentteja ja tapahtumia. Yhtiön tuotantoihin kuuluu muun muassa Bailupaatti.",
       "x": 1090,
       "y": 2260,
       "pos3": [
-        2016,
-        97,
-        286
+        -400,
+        -50,
+        2150
       ],
       "featured": true,
       "types": [
@@ -324,15 +324,15 @@
     {
       "id": "kieksidoc",
       "name": "Kieksi: rappiostriimaus",
-      "group": "rappio",
+      "group": "documents",
       "cat": "show",
       "note": "Ylen vuonna 2026 julkaisemassa Kieksi-dokumenttijaksossa käsitellään muun muassa Pottukoiraa, Iippadaata ja Upia.",
       "x": 670,
       "y": 2440,
       "pos3": [
-        1944,
-        -130,
-        529
+        -650,
+        -300,
+        2250
       ],
       "featured": true,
       "types": [
@@ -447,7 +447,7 @@
     {
       "id": "ossi",
       "name": "Ossi ”Monarch” Ketola",
-      "group": "rap",
+      "group": "monarch",
       "cat": "person",
       "note": "Ossi ”Monarch” Ketola on suomalainen rahapelialan yrittäjä ja korkean panoksen pokerinpelaaja, joka voitti Patrik Antoniuksen 20 miljoonan dollarin heads-upissa vuonna 2026.",
       "x": 3290,
@@ -455,9 +455,9 @@
       "image": "images/ossi.webp",
       "imageCredit": "Visnyk Poker, Ossi Ketola",
       "pos3": [
-        1715,
-        -660,
-        -1151
+        3500,
+        -900,
+        -1350
       ],
       "featured": true,
       "imageSource": "https://visnyk.poker/storage/news/5586-a7583226ac34a01a1364ab8803f3d86c12cb8043.png.webp",
@@ -522,15 +522,15 @@
     {
       "id": "ice",
       "name": "Ice Cage 8",
-      "group": "events",
+      "group": "combat",
       "cat": "event",
       "note": "Ice Cage 8 järjestettiin Turussa 19. syyskuuta 2026; Aleksi Nurminen tyrmäsi Matias Niemen ensimmäisessä erässä.",
       "x": 2390,
       "y": 2140,
       "pos3": [
-        2768,
-        -333,
-        -932
+        3800,
+        570,
+        -1400
       ],
       "featured": true,
       "types": [
@@ -540,15 +540,15 @@
     {
       "id": "duel",
       "name": "Duel / Monarch Duel MMA",
-      "group": "events",
+      "group": "monarch",
       "cat": "org",
       "note": "Duel on Ossi Ketolaan liitetty rahapelibrändi, joka on näkynyt myös Ice Cageen liittyvässä julkisuudessa.",
       "x": 2600,
       "y": 2250,
       "pos3": [
-        2339,
-        -560,
-        -1243
+        3700,
+        -820,
+        -1150
       ],
       "featured": true,
       "types": [
@@ -558,7 +558,7 @@
     {
       "id": "kasinok",
       "name": "Kasinokurki",
-      "group": "stream",
+      "group": "kasinokurki",
       "cat": "service",
       "note": "Kasinokurki on nettikasinoiden vertailu- ja kumppanuusmarkkinointipalvelu, jonka nimi näkyy muun muassa Pulliksen, SampeF2:n ja KP2Timesin Kick-lähetyksissä !kasinokurki-komentona.",
       "x": 4090,
@@ -576,7 +576,7 @@
     {
       "id": "pullis",
       "name": "Pullis / Atte Karttunen",
-      "group": "stream",
+      "group": "kasinokurki",
       "cat": "person",
       "note": "Atte Karttunen eli Pullis on suomalainen Snapchatista ja Kick-lähetyksistä tunnettu striimaaja sekä Hard to Break -dokumentin päähenkilö. Hän voitti 1vs1 Fighting -ottelun joulukuussa 2025.",
       "x": 3970,
@@ -598,7 +598,7 @@
     {
       "id": "sampe",
       "name": "SampeF2",
-      "group": "stream",
+      "group": "kasinokurki",
       "cat": "person",
       "note": "Olli ”SampeF2” Sampela on suomalainen Kick-striimaaja, joka tekee IRL- ja matkalähetyksiä. Hän striimasi Pirkkiksen kanssa Ateenassa vuonna 2025 ja teki vuonna 2026 lähetyksiä myös muiden suomalaisten striimaajien kanssa.",
       "x": 4210,
@@ -617,15 +617,15 @@
     {
       "id": "kp",
       "name": "KP2Times",
-      "group": "season1",
+      "group": "kasinokurki",
       "cat": "person",
       "note": "KP2Times mainitaan PactHouse 1:n osallistujana. Hänen lähetysotsikoissaan on esiintynyt myös !kasinokurki.",
       "x": 980,
       "y": 660,
       "pos3": [
-        -2039,
-        300,
-        -625
+        2940,
+        450,
+        810
       ],
       "featured": true,
       "types": [
@@ -1340,15 +1340,15 @@
     {
       "id": "aleksi",
       "name": "Aleksi Nurminen",
-      "group": "season3",
+      "group": "combat",
       "cat": "person",
       "note": "Aleksi Nurminen on striimaaja, kamppailu-urheilija ja Ice Cage -podcastin juontaja. Hän kilpaili PactHouse 3:ssa ja voitti Ice Cage 8:n ottelunsa.",
       "x": 2590,
       "y": 1235,
       "pos3": [
-        -944,
-        876,
-        -563
+        3500,
+        400,
+        -1650
       ],
       "featured": false,
       "imageSource": "https://www.mmaviking.com/wp-content/uploads/2015/03/Aleksi_578.jpg",
@@ -1642,15 +1642,15 @@
     {
       "id": "bamat",
       "name": "Bämät Matkoilla",
-      "group": "talks",
+      "group": "reality",
       "cat": "project",
       "note": "Bämät matkoilla on Pinja Ruusutossun ja Mea Ainasojan Kick-realityprojekti, jossa kaksikko matkusti kuvausryhmän kanssa Ranskan Nizzaan lokakuussa 2026.",
       "x": 4216,
       "y": 839,
       "pos3": [
-        824,
-        417,
-        100
+        3070,
+        1350,
+        2150
       ],
       "featured": false,
       "types": [
@@ -1964,13 +1964,13 @@
     {
       "id": "ateena25",
       "name": "Pirkkis ja SampeF2 / Ateena 11.2025",
-      "group": "events",
+      "group": "rappio",
       "cat": "event",
       "note": "Pirkkis ja SampeF2 olivat marraskuussa 2025 yhteisellä striimausmatkalla Ateenassa, Kreikassa.",
       "pos3": [
-        3261,
-        -510,
-        -1105
+        1830,
+        -430,
+        700
       ],
       "featured": true,
       "types": [
@@ -1980,13 +1980,13 @@
     {
       "id": "ams25",
       "name": "Amsterdamin striimimatka / 4.2025",
-      "group": "events",
+      "group": "rappio",
       "cat": "event",
       "note": "Redditissä keskusteltiin huhtikuussa 2025 Upin, Pirkkiksen ja Taigan yhteiseksi kuvaillusta striimausmatkasta Amsterdamiin.",
       "pos3": [
-        3121,
-        -710,
-        -925
+        1860,
+        -235,
+        915
       ],
       "featured": false,
       "types": [
@@ -1996,13 +1996,13 @@
     {
       "id": "taiga",
       "name": "Taiga (striimaaja)",
-      "group": "stream",
+      "group": "rappio",
       "cat": "person",
       "note": "Taiga on striimaaja, joka on liitetty Reddit-keskusteluissa Upin ja Pirkkiksen kanssa tehtyyn Amsterdamin-matkaan.",
       "pos3": [
-        2960,
-        605,
-        845
+        1910,
+        -145,
+        1020
       ],
       "featured": false,
       "types": [
@@ -2012,13 +2012,13 @@
     {
       "id": "pottu_marketing",
       "name": "Pottukoiran rahapelimarkkinointia koskeva tuomio 2026",
-      "group": "stream",
+      "group": "rappio",
       "cat": "event",
       "note": "Pohjois-Savon käräjäoikeus tuomitsi Pottukoiran kesäkuussa 2026 rahapelirikoksesta, kertoi Yle. Tuomio ei ollut uutisointihetkellä lainvoimainen.",
       "pos3": [
-        3000,
-        145,
-        455
+        2030,
+        -345,
+        290
       ],
       "featured": false,
       "types": [
@@ -2028,13 +2028,13 @@
     {
       "id": "testotimo",
       "name": "Testotimo / Timo Naapila",
-      "group": "stream",
+      "group": "rappio",
       "cat": "person",
       "note": "Testotimo eli Timo Naapila on Kick-striimaaja, joka piti subathonin lokakuussa 2025 ja vieraili Pottukoiran luona Virossa.",
       "pos3": [
-        2820,
-        385,
-        765
+        2435,
+        -325,
+        610
       ],
       "featured": true,
       "image": "images/testotimo.webp",
@@ -2047,13 +2047,13 @@
     {
       "id": "viro_pottu_2025",
       "name": "Pottukoira, Aleksi ja Testotimo / Viro 2025",
-      "group": "events",
+      "group": "rappio",
       "cat": "event",
       "note": "Pottukoira sai lokakuussa 2025 Virossa striimivieraita, joihin kuuluivat Aleksi Nurminen ja Testotimo.",
       "pos3": [
-        3301,
-        -365,
-        -545
+        2475,
+        -420,
+        355
       ],
       "featured": true,
       "types": [
@@ -2063,12 +2063,12 @@
     {
       "id": "testotimo_sub",
       "name": "Testotimon subathon 10/2025",
-      "group": "stream",
+      "group": "rappio",
       "cat": "event",
       "note": "Testotimo järjesti lokakuussa 2025 Kickissä maratonlähetyksen eli subathonin.",
       "pos3": [
-        2990,
-        410,
+        2490,
+        -160,
         715
       ],
       "featured": false,
@@ -2079,13 +2079,13 @@
     {
       "id": "pasi",
       "name": "Pasi Viheraho",
-      "group": "talks",
+      "group": "media",
       "cat": "person",
       "note": "Pasi Viheraho on suomalainen varhaisen YouTube-julkisuuden videontekijä ja Pasiradion vuonna 2007 perustanut radiopersoona.",
       "pos3": [
-        717,
-        551,
-        189
+        -1360,
+        520,
+        1990
       ],
       "featured": true,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Pasi_Viheraho.jpg",
@@ -2147,13 +2147,13 @@
     {
       "id": "alisa_bamat",
       "name": "Mea (ent. Alisa) Ainasoja",
-      "group": "talks",
+      "group": "reality",
       "cat": "person",
       "note": "Mea Ainasoja, aiemmin Alisana tunnettu somepersoona, esiintyi Pinja Ruusutossun rinnalla Bämät matkoilla -striimiprojektin Nizzan-matkalla lokakuussa 2026.",
       "pos3": [
-        987,
-        306,
-        -26
+        3350,
+        1120,
+        2160
       ],
       "featured": false,
       "types": [
@@ -2163,13 +2163,13 @@
     {
       "id": "sampe_iippa_megis_2026",
       "name": "SampeF2:n yhteislähetykset / 10.2026",
-      "group": "events",
+      "group": "rappio",
       "cat": "event",
       "note": "SampeF2:n lokakuun 2026 Kick-lähetyshistoriassa esiintyvät Iippadaan ja Megiksen nimet samassa lähetysotsikossa. Megis mainitaan myös seuraavien päivien Tornion-lähetyksissä.",
       "pos3": [
-        2910,
-        -190,
-        -650
+        2280,
+        120,
+        885
       ],
       "featured": false,
       "types": [
@@ -2179,13 +2179,13 @@
     {
       "id": "hard_to_break",
       "name": "Hard to Break (2024)",
-      "group": "media",
+      "group": "documents",
       "cat": "film",
       "note": "Hard to Break on Anna-Maija Heinosen ja Krista Moision 2024 julkaistu dokumenttielokuva Attesta eli Pulliksesta ja Jonsusta.",
       "pos3": [
-        -1480,
-        680,
-        2280
+        -350,
+        -300,
+        2400
       ],
       "featured": false,
       "types": [
@@ -2195,13 +2195,13 @@
     {
       "id": "fighting_1vs1_2025",
       "name": "1vs1 Fighting / 20.12.2025",
-      "group": "events",
+      "group": "combat",
       "cat": "event",
       "note": "Pasilan liikuntahallissa järjestetyssä 1vs1 Fighting -illassa Pullis voitti Claudia Barskin nyrkkeilyottelussa.",
       "pos3": [
-        2420,
-        -180,
-        -720
+        3750,
+        70,
+        -2070
       ],
       "featured": false,
       "types": [
@@ -2211,13 +2211,13 @@
     {
       "id": "claudia_barsk",
       "name": "Claudia Barsk",
-      "group": "events",
+      "group": "combat",
       "cat": "person",
       "note": "Claudia Barsk on somessa tunnettu henkilö, joka kohtasi Pulliksen 1vs1 Fighting -tapahtuman pääottelussa joulukuussa 2025.",
       "pos3": [
-        2620,
-        -60,
-        -550
+        4000,
+        120,
+        -2070
       ],
       "featured": false,
       "types": [
@@ -2227,13 +2227,13 @@
     {
       "id": "killinmaki_2026",
       "name": "Killinmäen laavupalo 21.9.2026",
-      "group": "events",
+      "group": "rappio",
       "cat": "event",
       "note": "Kirkkonummen Killinmäen retkipaikalla syttyi 21.9.2026 tulipalo, jota poliisi tutki vahingontekona. Tapaus yhdistettiin Upi-striimaajaan uutisoinnissa.",
       "pos3": [
-        3030,
-        -440,
-        -1420
+        2240,
+        -145,
+        1100
       ],
       "featured": false,
       "types": [
@@ -2284,60 +2284,60 @@
       "types": [
         "tapahtuma"
       ],
-      "group": "events",
+      "group": "rappio",
       "note": "Iida-Sofia Heimonen kuoli 20. lokakuuta 2026 sairaalahoidossa viisi päivää Kotkassa sattuneen vakavan striimilähetyksen aikaisen hätätilanteen jälkeen.",
       "pos3": [
-        2680,
-        -790,
-        -650
+        2200,
+        -450,
+        1520
       ],
       "featured": false
     },
     {
       "id": "ruusu_panama_2026",
       "name": "Ruusutossun Panaman-kiinniotto ja karkotus 2026",
-      "group": "events",
+      "group": "reality",
       "cat": "event",
       "types": [
         "tapahtuma"
       ],
       "note": "Pinja Ruusutossu otettiin Panamassa kiinni huhtikuussa 2026, oli säilössä yli kaksi kuukautta ja karkotettiin Suomeen 26. kesäkuuta.",
       "pos3": [
-        3010,
-        -100,
-        -1160
+        2750,
+        1380,
+        2450
       ],
       "featured": false
     },
     {
       "id": "bamat_nizza_2026",
       "name": "Bämät matkoilla / Nizza 10–11.2026",
-      "group": "events",
+      "group": "reality",
       "cat": "event",
       "types": [
         "striimausmatka"
       ],
       "note": "Pinja Ruusutossu ja Mea Ainasoja tekivät Bämät matkoilla -projektiin kuuluvia Kick-lähetyksiä Nizzasta 2026 lokakuun lopulla. Jethro Rostedt osallistui matkan lähetyksiin.",
       "pos3": [
-        3260,
-        -80,
-        -1380
+        3190,
+        930,
+        2510
       ],
       "featured": true
     },
     {
       "id": "ruusu_freak_2026",
       "name": "Freakbob-välikohtaus kasinolähetyksessä 9.2026",
-      "group": "events",
+      "group": "reality",
       "cat": "event",
       "types": [
         "tapahtuma"
       ],
       "note": "Nettikasinon somelähetyksessä Freakbob-asuun pukeutunut henkilö tarttui Pinja Ruusutossuun syyskuussa 2026. Ruusutossu kertoi tehneensä tapahtumasta rikosilmoituksen.",
       "pos3": [
-        2460,
-        -320,
-        -1530
+        3010,
+        1200,
+        2630
       ],
       "featured": false
     },
@@ -2424,192 +2424,192 @@
     {
       "id": "ice9",
       "name": "Ice Cage 9 (19.12.2026)",
-      "group": "events",
+      "group": "combat",
       "cat": "event",
       "types": [
         "kamppailutapahtuma"
       ],
       "note": "Ice Cage 9 on 19.12.2026 järjestettäväksi ilmoitettu kamppailutapahtuma. Aleksi Nurmisen ottelupariksi ilmoitettiin Matias Koistinen.",
       "pos3": [
-        3040,
-        -110,
-        -760
+        4020,
+        400,
+        -1400
       ],
       "featured": false
     },
     {
       "id": "matias_niemi",
       "name": "Matias Niemi",
-      "group": "events",
+      "group": "combat",
       "cat": "person",
       "types": [
         "henkilo"
       ],
       "note": "Matias Niemi otteli Aleksi Nurmista vastaan syyskuun 2026 Ice Cage 8:ssa.",
       "pos3": [
-        2790,
-        -620,
-        -1280
+        3900,
+        350,
+        -1730
       ],
       "featured": false
     },
     {
       "id": "matias_koistinen",
       "name": "Matias Koistinen",
-      "group": "events",
+      "group": "combat",
       "cat": "person",
       "types": [
         "henkilo"
       ],
       "note": "Matias Koistinen on nyrkkeilyvalmentaja ja Aleksi Nurmisen 19.12.2026 Ice Cage 9 -ottelupariksi ilmoitettu urheilija.",
       "pos3": [
-        3160,
-        -330,
-        -1120
+        4110,
+        600,
+        -1570
       ],
       "featured": false
     },
     {
       "id": "max_hynninen",
       "name": "Max Hynninen",
-      "group": "events",
+      "group": "combat",
       "cat": "person",
       "types": [
         "henkilo"
       ],
       "note": "Max Hynninen on Ice Cagen promoottori ja Ice Cage -podcastin avausvieras.",
       "pos3": [
-        3000,
-        110,
-        -1330
+        3700,
+        840,
+        -1480
       ],
       "featured": false
     },
     {
       "id": "ice_cage_podcast",
       "name": "Ice Cage -podcast",
-      "group": "events",
+      "group": "combat",
       "cat": "show",
       "types": [
         "keskusteluohjelma"
       ],
       "note": "Lokakuussa 2026 alkanut kamppailu-urheilupodcast, jonka juontaja on Aleksi Nurminen.",
       "pos3": [
-        2640,
-        140,
-        -610
+        3570,
+        710,
+        -1130
       ],
       "featured": false
     },
     {
       "id": "patrik_antonius",
       "name": "Patrik Antonius",
-      "group": "poker",
+      "group": "monarch",
       "cat": "person",
       "types": [
         "henkilo"
       ],
       "note": "Patrik Antonius on suomalainen pokeriammattilainen, joka kohtasi Ossi Ketolan Jejun 20 miljoonan dollarin heads-upissa syyskuussa 2026.",
       "pos3": [
-        3910,
-        160,
-        900
+        3950,
+        -930,
+        -1370
       ],
       "featured": false
     },
     {
       "id": "duel_jeju_2026",
       "name": "Ketola–Antonius 20 M$ heads-up",
-      "group": "poker",
+      "group": "monarch",
       "cat": "event",
       "types": [
         "pokeritapahtuma"
       ],
       "note": "Ossi Ketola voitti Patrik Antoniuksen 20 miljoonan dollarin heads-upissa 11.9.2026 Etelä-Korean Jejussa.",
       "pos3": [
-        4140,
-        -140,
-        820
+        3850,
+        -1130,
+        -1520
       ],
       "featured": false
     },
     {
       "id": "anna_maija_heinonen",
       "name": "Anna-Maija Heinonen",
-      "group": "media",
+      "group": "documents",
       "cat": "person",
       "types": [
         "dokumentaristi"
       ],
       "note": "Anna-Maija Heinonen ohjasi Krista Moision kanssa Hard to Break -dokumenttielokuvan.",
       "pos3": [
-        -1680,
-        430,
-        2360
+        -450,
+        -50,
+        2600
       ],
       "featured": false
     },
     {
       "id": "krista_moisio",
       "name": "Krista Moisio",
-      "group": "media",
+      "group": "documents",
       "cat": "person",
       "types": [
         "dokumentaristi"
       ],
       "note": "Krista Moisio ohjasi Anna-Maija Heinosen kanssa Hard to Break -dokumenttielokuvan.",
       "pos3": [
-        -1450,
-        440,
-        2570
+        -150,
+        -150,
+        2550
       ],
       "featured": false
     },
     {
       "id": "joonas_jaaskelainen",
       "name": "Joonas Jääskeläinen",
-      "group": "events",
+      "group": "combat",
       "cat": "person",
       "types": [
         "henkilo"
       ],
       "note": "Joonas Jääskeläinen osallistui julkistettuun joulukuun 2025 1vs1 Fighting -ottelukorttiin.",
       "pos3": [
-        3340,
-        -400,
-        -750
+        4100,
+        170,
+        -2220
       ],
       "featured": false
     },
     {
       "id": "venni_kananen",
       "name": "Venni Kananen",
-      "group": "events",
+      "group": "combat",
       "cat": "person",
       "types": [
         "henkilo"
       ],
       "note": "Venni Kananen oli Joonas Jääskeläisen ottelupariksi ilmoitettu osallistuja 1vs1 Fightingissa joulukuussa 2025.",
       "pos3": [
-        3280,
-        -450,
-        -1030
+        3870,
+        -70,
+        -2330
       ],
       "featured": false
     },
     {
       "id": "most_wanted_kivimaki",
       "name": "Most Wanted: Julius Kivimäki (2025)",
-      "group": "media",
+      "group": "documents",
       "cat": "show",
       "types": [
         "dokumenttiohjelma"
       ],
       "note": "Sami Kieksin ohjaama neliosainen HBO Max -dokumenttisarja vuodelta 2025.",
       "pos3": [
-        -1270,
-        220,
-        2140
+        -200,
+        -400,
+        2050
       ],
       "featured": false
     }
