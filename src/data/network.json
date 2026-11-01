@@ -953,7 +953,10 @@
         "rappiostriimaaja",
         "somevaikuttaja",
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/chiara.webp",
+      "imageSource": "https://files.kick.com/images/user/63255626/profile_image/conversion/f3a16d2f-cc75-43d2-836e-6f361861e6eb-fullsize.webp",
+      "imageCredit": "Kick / bundachiara, Chiara Eklundin oma profiilikuva (2026)"
     },
     {
       "id": "megis",
@@ -973,7 +976,10 @@
         "rappiostriimaaja",
         "somevaikuttaja",
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/megis.webp",
+      "imageSource": "https://files.kick.com/images/user/40300310/profile_image/conversion/b1172275-ce78-47d8-a385-20416fa9161c-fullsize.webp",
+      "imageCredit": "Kick / thisgirlispower (@megarokkistara), Megarokkistaran oma profiilikuva (2026)"
     },
     {
       "id": "anton",
@@ -1736,7 +1742,10 @@
       "featured": false,
       "types": [
         "henkilo"
-      ]
+      ],
+      "image": "images/akam.webp",
+      "imageSource": "https://files.kick.com/images/user/33973751/profile_image/conversion/a4c26260-5b74-4a75-a24c-bfc333d0e3d8-fullsize.webp",
+      "imageCredit": "Kick / akamkick (@akam.g), Akamin kanavaprofiilin muotokuva"
     },
     {
       "id": "kimrusi",
