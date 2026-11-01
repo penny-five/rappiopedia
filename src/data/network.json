@@ -2703,7 +2703,10 @@
         -230,
         1230
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/niilo22.webp",
+      "imageSource": "https://images.cdn.yle.fi/image/upload/f_jpg%2Cc_fill%2Cw_1920%2Ch_1080%2Cq_auto/v1753927618/13-1-50006402-1535020070292.jpg",
+      "imageCredit": "Yle Areena / Perjantai, Tubettajat spesiaali: Niilo22 (Mikael Kosola)"
     },
     {
       "id": "markoboy87",
@@ -2751,7 +2754,10 @@
         -390,
         1380
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/laitela92.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2025/10/laitela92-kick.webp",
+      "imageCredit": "Kick.com/Laitela92 / Gekkonen, Ismo Tauriainen (12.11.2025)"
     },
     {
       "id": "tubettajat_2014",
