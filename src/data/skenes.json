@@ -59,5 +59,9 @@
   "poker": {
     "label": "JULKKISPELIT / POKERI",
     "color": "#748f62"
+  },
+  "pottu-streams": {
+    "label": "POTTUKOIRAN LÄHETYKSET",
+    "color": "#c1846f"
   }
 }
