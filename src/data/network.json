@@ -1197,7 +1197,7 @@
       "name": "Stagala / Alexander Krigsman",
       "group": "season2",
       "cat": "person",
-      "note": "Stagala osallistui PactHouse 2:een ja vieraili myöhemmin PactTalksissa.",
+      "note": "Stagala eli Alexander Krigsman (aiemmin Joni Takala) on provosoivista somevideoistaan ja Ice Cage -otteluistaan tunnettu suomalainen somepersoona. Hän esiintyi PactHouse 2:ssa ja PactTalksin Stagala vs Akam -jaksossa.",
       "x": 1283,
       "y": 1263,
       "pos3": [
@@ -1207,6 +1207,7 @@
       ],
       "featured": false,
       "types": [
+        "somevaikuttaja",
         "tosi-tv-osallistuja"
       ],
       "image": "images/stagala.webp",
@@ -1321,7 +1322,7 @@
       "name": "Crista Jaatinen / BelleBarbie",
       "group": "season3",
       "cat": "person",
-      "note": "Crista Jaatinen eli BelleBarbie osallistui PactHouse 3:een ja esiintyi myös PactTalksissa.",
+      "note": "Crista Jaatinen eli BelleBarbie on somevaikuttaja, aikuisviihdesisällön tuottaja ja yrittäjä. Hän on kertonut julkisuudessa esteettisiin leikkauksiin liittyneistä komplikaatioistaan sekä esiintynyt PactHouse 3:ssa ja PactTalksissa.",
       "x": 3142,
       "y": 1083,
       "pos3": [
@@ -1334,6 +1335,8 @@
       "imageSource": "https://images.cdn.yle.fi/image/upload/c_crop%2Cx_0%2Cy_267%2Cw_4288%2Ch_2412/w_1200%2Car_1.91%2Cc_fill/q_auto%3Aeco%2Cf_auto%2Cfl_lossy/v1683615193/39-11105636459eda2a1698",
       "imageCredit": "Svenska Yle, Crista Jaatisen henkilökuva",
       "types": [
+        "somevaikuttaja",
+        "yrittaja",
         "tosi-tv-osallistuja"
       ]
     },
@@ -1756,10 +1759,10 @@
     },
     {
       "id": "akam",
-      "name": "Akam",
+      "name": "Akam / Henrik Hopea",
       "group": "talks",
       "cat": "person",
-      "note": "Akam vieraili PactTalksin jaksossa 86.",
+      "note": "Henrik 'Akam' Hopea on suomalainen TikTok-somepersoona, joka otteli syyskuussa 2025 Stagalaa vastaan Ice Cage 5:ssä ja esiintyi hänen kanssaan PactTalksin erikoisjaksossa 86 lokakuussa 2026.",
       "x": 3868,
       "y": 998,
       "pos3": [
@@ -1769,7 +1772,7 @@
       ],
       "featured": false,
       "types": [
-        "henkilo"
+        "somevaikuttaja"
       ],
       "image": "images/akam.webp",
       "imageSource": "https://files.kick.com/images/user/33973751/profile_image/conversion/a4c26260-5b74-4a75-a24c-bfc333d0e3d8-fullsize.webp",
@@ -3855,6 +3858,22 @@
         730,
         250,
         -120
+      ],
+      "featured": false
+    },
+    {
+      "id": "ice_cage_5_stagala_akam_2025",
+      "name": "Ice Cage 5: Stagala vs Akam 6.9.2025",
+      "group": "combat",
+      "cat": "event",
+      "types": [
+        "kamppailutapahtuma"
+      ],
+      "note": "Stagala voitti Henrik 'Akam' Hopean nyrkkeilyottelussa tuomaripisteillä Turun Ice Cage 5 -tapahtumassa 6. syyskuuta 2025. Yle kertoi tuloksesta tapahtumapäivänä.",
+      "pos3": [
+        3980,
+        200,
+        -1050
       ],
       "featured": false
     }
@@ -8386,6 +8405,28 @@
       ],
       "level": "observed",
       "date": "2026-10-18"
+    },
+    {
+      "a": "stagala",
+      "b": "ice_cage_5_stagala_akam_2025",
+      "type": "otteli",
+      "label": "voitti Henrik Hopean tuomaripisteillä Ice Cage 5:ssä",
+      "src": [
+        "P247"
+      ],
+      "level": "reported",
+      "date": "2025-09-06"
+    },
+    {
+      "a": "akam",
+      "b": "ice_cage_5_stagala_akam_2025",
+      "type": "otteli",
+      "label": "otteli Stagalaa vastaan Ice Cage 5:ssä",
+      "src": [
+        "P247"
+      ],
+      "level": "reported",
+      "date": "2025-09-06"
     }
   ],
   "sources": {
@@ -9609,6 +9650,31 @@
       "label": "Seiska 21.5.2026: Jethro ja Esko sopivat kiistan, yhteisiä festivaalijuontoja",
       "url": "https://www.seiska.fi/kotimaa/jethro-rostedt-ja-esko-eerikainen-jattiyllatys/2158437",
       "note": "Jethro Rostedtin PactHouse-kommentit Esko Eerikäisestä ja hänen anteeksipyyntönsä, jota Esko kommentoi somessa. Tampere City Festivalin ja Tapiola Festivalin toukokuun juontoilmoitukset."
+    },
+    "P247": {
+      "label": "Yle 6.9.2025: Ice Cage 5 Stagala–Akam tulos",
+      "url": "https://yle.fi/a/74-20179946",
+      "note": "Yle raportoi Turkuhallin Ice Cage 5 -illasta: Henrik 'Akam' Hopea hävisi Stagalalle tuomaripisteillä, ottelu käytiin ilman tyrmäystä."
+    },
+    "P248": {
+      "label": "Como 23.8.2026: Stagalan sometausta ja otteluhistoria",
+      "url": "https://www.como.fi/uutiset/stagalalta-jatti-ilmoitus-syksylla-suomen-suurimmalla/",
+      "note": "Sometausta syksystä 2024, Ice Cage 4/5/7 -ottelut ja Stagalan oma ilmoitus tulevasta tv-projektista."
+    },
+    "P249": {
+      "label": "Seiska 25.10.2026: Stagalan haastattelu",
+      "url": "https://www.seiska.fi/vain-seiskassa/stagala-etsii-rakkautta-yksi-vaatimus-tulevalle-naisystavalle-saattaa-yllattaa/2290678",
+      "note": "Stagalan julkaistu haastattelu, otteluhistoria ja lyhyt New Yorkin striimaus Nilun kanssa."
+    },
+    "P250": {
+      "label": "Seiska 10.1.2023: Crista Jaatinen ja kauneusleikkausten seuraukset",
+      "url": "https://www.seiska.fi/kotimaa/tassa-on-erotiikkataiteilija-crista-jaatisen-luonnollinen-peppu/156574",
+      "note": "Crista Jaatinen eli BelleBarbie kertoo sosiaalisen median, mallikilpailujen ja esteettisten leikkausten julkisuudesta, komplikaatioista ja poistoleikkauksesta."
+    },
+    "P251": {
+      "label": "Suomen Asiakastieto: Bellebarbie Oy",
+      "url": "https://www.asiakastieto.fi/yritykset/fi/bellebarbie-oy/32784065/paattajat",
+      "note": "Yritysrekisterin mukaan Bellebarbie Oy:n hallituksessa on Crista Jaatinen ja vuoden 2024 liikevaihto oli 107 000 euroa."
     }
   },
   "date": "2026-11-01"
