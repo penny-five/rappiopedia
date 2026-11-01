@@ -672,7 +672,7 @@
       "name": "Kristian Heiskari",
       "group": "season3",
       "cat": "person",
-      "note": "Kristian ”Krisu” Heiskari voitti Big Brother Suomen vuonna 2019 ja Selviytyjät Suomen vuonna 2021 sekä osallistui PactHouse 3:een vuonna 2026.",
+      "note": "Kristian ”Krisu” Heiskari on suomalainen realityesiintyjä, joka voitti Big Brotherin 2019 ja Selviytyjät Suomen 2021. Hän on työskennellyt myös yrittäjänä ja radiojuontajana sekä esiintynyt PactHouse 3:ssa ja Kick-lähetyksissä vuonna 2026.",
       "x": 2570,
       "y": 920,
       "pos3": [
@@ -685,7 +685,9 @@
       "imageSource": "https://image.seiska.fi/1271097.webp?compression=100&croph=37.45&cropw=100&height=630&imageId=1271097&width=1200&x=0&y=6.86",
       "imageCredit": "Seiska, Kristian Heiskari; henkilöhaastattelu",
       "types": [
-        "tosi-tv-osallistuja"
+        "tosi-tv-osallistuja",
+        "striimaaja",
+        "juontaja"
       ]
     },
     {
@@ -10110,6 +10112,26 @@
       "label": "Gekkonen 31.10.2026: Kristian Heiskarin ja Julia Willmanin Halloween-asut",
       "url": "https://gekkonen.net/tosi-tv-tahti-pukeutui-pottukoiraksi-katso-julkkisten-hurjat-ja-hulvattomat-halloween-asut/",
       "note": "Kick-lähetyksestä otetussa kuvassa Heiskari Pottukoira-asussa ja Julia Spuke-koiraksi pukeutuneena; lähteenä myös Seiska 31.10.2026."
+    },
+    "P267": {
+      "label": "Gekkonen 6.6.2021: Kristian Heiskari voitti Selviytyjät Suomen",
+      "url": "https://gekkonen.net/kristian-heiskari-5621/",
+      "note": "Vuoden 2021 Selviytyjät Pohjolan finaali, Marianne Kiukkonen toiseksi, 5–3-neuvostoäänestys ja 30 000 euron palkinto."
+    },
+    "P268": {
+      "label": "Seiska 21.4.2026: Kristian Heiskarin realityura ja PactHouse-paluu",
+      "url": "https://www.seiska.fi/kotimaa/kristian-heiskari-tekee-paluun-talta-han-nayttaa-nyt/2133460",
+      "note": "Big Brother 2019 ja Selviytyjät 2021 -voitot, podcast-projektit sekä paluu PactHouse 3 -realityyn 2026."
+    },
+    "P269": {
+      "label": "Voice.fi 2022: Kristian Heiskari Basso-radion kesäjuontajana",
+      "url": "https://www.voice.fi/viihde/a-217238",
+      "note": "Heiskarin ja Salla Seppälän kesäjuonto sekä lähetyksessä käydyn leikkimielisen kilpailun häviö."
+    },
+    "P270": {
+      "label": "Gekkonen 25.4.2026: Heiskarin PactHouse 3 -julkistus",
+      "url": "https://gekkonen.net/kaksi-vuotta-metsassa-elanyt-kristian-heiskari-palasi-julkisuuteen-talta-han-nayttaa-nyt/",
+      "note": "PactHouse-kampanjavideo, jossa Anthony Singh soitti Heiskarille ja kutsui hänet Ateenan 1.–10.5.2026 realityyn."
     }
   },
   "date": "2026-11-01"
