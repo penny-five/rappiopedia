@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, cameraPositionFromTarget, cameraTargetFromPosition, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, nodeOpacity, MIN_MOVEMENT_SPEED, MAX_MOVEMENT_SPEED, DEFAULT_MOVEMENT_SPEED, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
+import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, cameraPositionFromTarget, cameraTargetFromPosition, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, nodeOpacity, MIN_MOVEMENT_SPEED, MAX_MOVEMENT_SPEED, DEFAULT_MOVEMENT_SPEED, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from '../src/lib/scene.js';
 
 test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
   const edges = [
@@ -208,7 +208,8 @@ test('mouse-look pitch is clamped while moving the camera never changes its loca
 
 test('wheel changes flight speed instead of zoom and the HUD shows metres per second', () => {
   assert.equal(MIN_MOVEMENT_SPEED, 300);
-  assert.equal(adjustMovementSpeed(900, 100000), 300);
+  // Each wheel event is capped for smooth navigation, even with a huge delta.
+  assert.equal(adjustMovementSpeed(900, 100000), adjustMovementSpeed(900, 240));
   assert.ok(adjustMovementSpeed(DEFAULT_MOVEMENT_SPEED, -100) > DEFAULT_MOVEMENT_SPEED);
   assert.ok(adjustMovementSpeed(DEFAULT_MOVEMENT_SPEED, 100) < DEFAULT_MOVEMENT_SPEED);
   assert.equal(adjustMovementSpeed(MIN_MOVEMENT_SPEED, 100000), MIN_MOVEMENT_SPEED);
@@ -253,4 +254,29 @@ test('Shift sprint combines with left-mouse look; middle drag alone pans', () =>
   assert.ok(!main.includes('pan:e.shiftKey||e.button===1'));
   assert.match(main, /if\(dt&&!pointer\?\.pan&&pressedTravelKeys\.size\)/);
   assert.match(html, /Keskinappi\+vedä: siirrä/);
+});
+
+test('labels use either side of a node near screen edges', () => {
+ const make=(id,x)=>({n:{id},p:{x,y:130,z:100},r:10,label:{w:120,h:40}});
+ const a=placeNodeLabels([make('a',20)],600,320).get('a');
+ const b=placeNodeLabels([make('b',580)],600,320).get('b');
+ assert.ok(a.bx>20 && a.bx+120<=592);
+ assert.ok(b.bx+120<580 && b.bx>=8);
+});
+
+test('selected labels get first choice of space and other labels avoid covering them', () => {
+ const make=(id,x,isSel=false)=>({n:{id},p:{x,y:150,z:100},r:10,isSel,label:{w:120,h:40}});
+ const placed=placeNodeLabels([make('selected',285,true),make('neighbor',315),make('other',245)],650,320);
+ const boxes=[...placed.values()];
+ for(let i=0;i<boxes.length;i++)for(let j=i+1;j<boxes.length;j++){
+  const a=boxes[i],b=boxes[j];
+  assert.ok(a.bx+120<=b.bx||b.bx+120<=a.bx||a.by+40<=b.by||b.by+40<=a.by);
+ }
+});
+
+test('small camera motion keeps the same label anchor', () => {
+ const make=x=>({n:{id:'node'},p:{x,y:150,z:100},r:10,label:{w:120,h:40}});
+ const previous=new Map([['node','left']]);
+ assert.equal(placeNodeLabels([make(200)],400,300,previous).get('node').anchor,'left');
+ assert.equal(placeNodeLabels([make(201)],400,300,previous).get('node').anchor,'left');
 });

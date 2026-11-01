@@ -6,7 +6,7 @@ import ENTITY_TYPES from './data/entity-types.json';
 import { formatNodeTypes } from './lib/entity-types.js';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
-import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel } from './lib/scene.js';
+import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
 import { hierarchyGroups } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
@@ -17,6 +17,7 @@ const groupMeta=Object.fromEntries(Object.entries(SKENES).map(([id,skene])=>[id,
 const levels={verified:{label:'Vahvistettu',color:'#16856c'},reported:{label:'Uutisoitu',color:'#356db4'},observed:{label:'Havaittu / päätelmä',color:'#a86b0a'},lead:{label:'Johtolanka / kiistetty',color:'#b04766'}};
 const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d'),space=document.getElementById('space');
 let W=0,H=0,dpr=1,yaw=-.32,pitch=.20,dist=5700,target={x:-950,y:0,z:-100},selected='pact',sector='all',nameDensity='auto',query='',hover=null,pathNodes=[],pathEdges=[],pointer=null,frame=0,visiblePoints=[],showLevels=new Set(['verified','reported','observed','lead']),focusIds=new Set();
+const labelAnchors=new Map();
 const pressedTravelKeys=new Set(),travelKeys=new Set(['w','a','s','d','q','e']);
 let lastDrawTime=0,cameraNavigation=0,movementSpeed=DEFAULT_MOVEMENT_SPEED;
 const centers={},groupBounds={};for(const g of Object.keys(groupMeta)){const box=bounds3D(N.filter(n=>n.group===g),SKENES[g].padding??100);groupBounds[g]=box;centers[g]=box.min.map((v,i)=>(v+box.max[i])/2)}
@@ -277,12 +278,7 @@ function nodeLayout(n,p){
   const labelScale=graphLabelScale(p.sc,hot);
   const w=(enlarged?186:158)*labelScale;
   const h=(withPic?(enlarged?68:52):(enlarged?52:38))*labelScale;
-  let bx=p.x+10*scale,by=p.y-h/2-22*scale;
-  if(bx+w>W-8)bx=p.x-w-10*scale;
-  bx=Math.max(8,Math.min(W-w-8,bx));
-  if(by<15)by=p.y+20;
-  by=Math.max(8,Math.min(H-h-8,by));
-  label={bx,by,w,h,withPic,enlarged,labelScale};
+  label={bx:0,by:0,w,h,withPic,enlarged,labelScale};
  }
  return {n,p,isSel,isHover,hot,inPath,isHub,dot,scale,r,alpha,label};
 }
@@ -411,6 +407,12 @@ function draw(now){
  const nodes=N.filter(n=>routeView.showsNode(n.id)).map(n=>({n,p:ps[n.id]}))
   .filter(item=>item.p&&item.p.x>-190&&item.p.x<W+200&&item.p.y>-170&&item.p.y<H+200)
   .map(({n,p})=>nodeLayout(n,p));
+ const labelPositions=placeNodeLabels(nodes,W,H,labelAnchors);
+ for(const item of nodes){
+  if(!item.label)continue;
+  const position=labelPositions.get(item.n.id);
+  if(position){item.label.bx=position.bx;item.label.by=position.by}
+ }
  visiblePoints=nodes.map(nodeHitbox);
  const scene=[];
  E.forEach((e,i)=>{
