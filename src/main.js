@@ -7,6 +7,7 @@ import { focusedNodeIds, graphLabelScale, projectedEdgePoint, cameraTravelDirect
 import { hierarchyGroups } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
+import { searchNodes } from './lib/search.js';
 
 const N=DATA.nodes,E=DATA.edges,S=DATA.sources,by=Object.fromEntries(N.map(n=>[n.id,n]));
 const groupMeta={core:['PACT / OHJELMAPERHE','#466b8a'],season1:['PACTHOUSE 01','#89698b'],season2:['PACTHOUSE 02','#517ea1'],season3:['PACTHOUSE 03','#7466a7'],talks:['PACT TALKS','#2d9187'],rappio:['RAPPIOSTRIIMAUS','#b46b63'],events:['TAPAHTUMAT','#ba8747'],rap:['SLIKI / KETOLA','#a5784e'],stream:['KASINOKURKI','#4485b4'],media:['MEDIA / PALSTAT','#818c97'],poker:['JULKKISPELIT / POKERI','#748f62']};
@@ -327,7 +328,7 @@ function clearSelection(){
 }
 function touchInfo(id){selected=id;pathNodes=[];pathEdges=[];showDetails(id);dirty=true;document.getElementById('rightpanel').classList.add('mobileopen')}
 function flyTo(id,zoom=true){const n=by[id];if(!n)return;const navigation=++cameraNavigation;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){if(navigation!==cameraNavigation)return;let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
-function reset(){cameraNavigation++;pressedTravelKeys.clear();sector='all';mode='focus';query='';document.getElementById('search').value='';pathNodes=[];pathEdges=[];selected='pact';target=vec(0,-70,0);dist=3650;yaw=-.35;pitch=.22;renderSectors();renderModes();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
+function reset(){cameraNavigation++;pressedTravelKeys.clear();sector='all';mode='focus';query='';document.getElementById('search').value='';document.getElementById('searchhint').textContent='';closeSearchSuggestions();pathNodes=[];pathEdges=[];selected='pact';target=vec(0,-70,0);dist=3650;yaw=-.35;pitch=.22;renderSectors();renderModes();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
 function relatedForNode(id){
  return E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
   .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
@@ -345,8 +346,74 @@ function showDetails(id){
 function renderSectors(){let box=document.getElementById('sectors');box.innerHTML=`<button class="sector ${sector==='all'?'active':''}" data-sector="all"><span class="led" style="color:#444;background:#444"></span><span class="title">KOKO AVARUUS</span><span class="count">${N.length}</span></button>`+Object.entries(groupMeta).map(([id,[name,color]])=>`<button class="sector ${id===sector?'active':''}" data-sector="${id}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${N.filter(n=>n.group===id).length}</span></button>`).join('');box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{sector=b.dataset.sector;renderSectors();if(sector!=='all'){let p=centers[sector],n=N.find(n=>n.group===sector);let st={...target},ed=vec(...p),start=performance.now(),navigation=++cameraNavigation;let a=(time)=>{if(navigation!==cameraNavigation)return;let t=Math.min(1,(time-start)/620);t=1-(1-t)**3;target=vec(st.x+(ed.x-st.x)*t,st.y+(ed.y-st.y)*t,st.z+(ed.z-st.z)*t);dist=Math.max(1250,dist+(1450-dist)*.08);if(t<1)requestAnimationFrame(a)};requestAnimationFrame(a);if(n)showDetails(n.id)}else{cameraNavigation++;target=vec(0,0,0);dist=3650}})}
 function renderModes(){document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('on',b.dataset.mode===mode))}document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;renderModes()});
 document.querySelectorAll('[data-level]').forEach(b=>b.onclick=()=>{let k=b.dataset.level;if(showLevels.has(k))showLevels.delete(k);else showLevels.add(k);b.classList.toggle('on',showLevels.has(k));b.setAttribute('aria-pressed',String(showLevels.has(k)))});
-function jumpSearch(){let q=document.getElementById('search').value.trim().toLowerCase();query=q;if(!q)return;let matches=N.filter(n=>n.name.toLocaleLowerCase('fi').includes(q));document.getElementById('searchhint').textContent=matches.length?`${matches.length} osumaa. Enter → lähimpään osumaan.`:'Ei osumia';if(matches.length===1)flyTo(matches[0].id)}
-document.getElementById('search').addEventListener('input',jumpSearch);document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter'){let q=e.target.value.trim().toLocaleLowerCase('fi');let n=N.find(n=>n.name.toLocaleLowerCase('fi').includes(q));if(n)flyTo(n.id)}});window.addEventListener('keydown',e=>{
+const searchInput=document.getElementById('search');
+const searchMenu=document.getElementById('searchSuggestions');
+const searchContainer=document.querySelector('.topsearch');
+let searchMatches=[],activeSearchIndex=0;
+
+function closeSearchSuggestions(){
+ searchMenu.hidden=true;
+ searchInput.setAttribute('aria-expanded','false');
+ searchInput.removeAttribute('aria-activedescendant');
+}
+function renderSearchSuggestions(){
+ const value=searchInput.value.trim();
+ query=value.toLocaleLowerCase('fi');
+ searchMatches=searchNodes(N,value);
+ activeSearchIndex=0;
+ document.getElementById('searchhint').textContent=value?(searchMatches.length?`${searchMatches.length} hakuehdotusta.`:'Ei osumia'):'';
+ if(!value){searchMenu.innerHTML='';closeSearchSuggestions();return}
+ searchMenu.innerHTML=searchMatches.length?searchMatches.map((n,i)=>
+  `<button type="button" id="search-option-${i}" role="option" aria-selected="${i===0}" class="search-suggestion${i===0?' active':''}" data-search-id="${esc(n.id)}"><span class="search-name">${esc(n.name)}</span><span class="search-category">${esc(catNames[n.cat]||n.cat)}</span></button>`
+ ).join(''):'<div class="search-empty" role="status">Ei hakutuloksia</div>';
+ searchMenu.hidden=false;
+ searchInput.setAttribute('aria-expanded','true');
+ if(searchMatches.length)searchInput.setAttribute('aria-activedescendant','search-option-0');
+ else searchInput.removeAttribute('aria-activedescendant');
+}
+function setActiveSearchSuggestion(index){
+ activeSearchIndex=index;
+ for(const [i,button] of [...searchMenu.querySelectorAll('[data-search-id]')].entries()){
+  button.classList.toggle('active',i===index);
+  button.setAttribute('aria-selected',String(i===index));
+ }
+ searchInput.setAttribute('aria-activedescendant','search-option-'+index);
+ searchMenu.querySelector('#search-option-'+index)?.scrollIntoView({block:'nearest'});
+}
+function chooseSearchSuggestion(id){
+ const node=by[id];if(!node)return;
+ searchInput.value=node.name;
+ query=node.name.toLocaleLowerCase('fi');
+ document.getElementById('searchhint').textContent='';
+ closeSearchSuggestions();
+ searchInput.blur();
+ flyTo(id);
+}
+searchInput.addEventListener('input',renderSearchSuggestions);
+searchInput.addEventListener('focus',renderSearchSuggestions);
+searchInput.addEventListener('keydown',e=>{
+ if(e.key==='Enter'&&searchMatches.length&&searchInput.value.trim()){
+  e.preventDefault();
+  chooseSearchSuggestion(searchMatches[activeSearchIndex].id);
+ }else if((e.key==='ArrowDown'||e.key==='ArrowUp')&&searchMatches.length){
+  e.preventDefault();
+  if(searchMenu.hidden)renderSearchSuggestions();
+  setActiveSearchSuggestion((activeSearchIndex+(e.key==='ArrowDown'?1:-1)+searchMatches.length)%searchMatches.length);
+ }else if(e.key==='Escape'&&!searchMenu.hidden){
+  e.preventDefault();e.stopPropagation();closeSearchSuggestions();
+ }
+});
+searchMenu.addEventListener('click',e=>{
+ const option=e.target.closest('[data-search-id]');
+ if(option)chooseSearchSuggestion(option.dataset.searchId);
+});
+searchContainer.addEventListener('focusout',e=>{
+ if(!e.relatedTarget||!searchContainer.contains(e.relatedTarget))closeSearchSuggestions();
+});
+document.addEventListener('pointerdown',e=>{
+ if(!searchContainer.contains(e.target))closeSearchSuggestions();
+});
+window.addEventListener('keydown',e=>{
  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();document.getElementById('search').focus();return}
  if(e.key==='Escape'){pressedTravelKeys.clear();clearSelection();document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.remove('mobileopen');return}
  if(e.ctrlKey||e.metaKey||e.altKey||e.target.closest?.('input, textarea, select, [contenteditable="true"], [role="textbox"]'))return;
