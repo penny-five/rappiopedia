@@ -167,3 +167,75 @@ export function truncateLabel(value, maxWidth, measure) {
   }
   return chars.slice(0, low).join('') + suffix;
 }
+/** Choose stable, collision-aware screen-space positions for visible node labels. */
+export function placeNodeLabels(items, width, height, previousAnchors = new Map()) {
+  const placements = new Map(), occupied = [];
+  if (width <= 0 || height <= 0) return placements;
+  const margin = 8;
+  const points = items.map(item => ({
+    id: item.n.id, x: item.p.x, y: item.p.y, r: Math.max(6, item.r) + 5
+  }));
+  const anchors = [
+    ['right', 1, 0], ['left', -1, 0],
+    ['above', 0, -1], ['below', 0, 1],
+    ['upper-right', 1, -1], ['upper-left', -1, -1],
+    ['lower-right', 1, 1], ['lower-left', -1, 1]
+  ];
+  const priority = item => item.isSel ? 0 : item.isHover ? 1
+    : (item.hot || item.inPath) ? 2 : item.n.featured ? 3 : 4;
+  const ordered = items.filter(item => item.label).sort((a, b) =>
+    priority(a) - priority(b) || a.p.z - b.p.z || a.n.id.localeCompare(b.n.id));
+  const overlapArea = (x, y, w, h, rect) =>
+    Math.max(0, Math.min(x + w, rect.x + rect.w) - Math.max(x, rect.x)) *
+    Math.max(0, Math.min(y + h, rect.y + rect.h) - Math.max(y, rect.y));
+
+  for (const item of ordered) {
+    const {n, p, r, label} = item;
+    const {w, h} = label, gap = Math.max(13, r + 9);
+    let openX = 0, openY = 0;
+    for (const other of points) {
+      if (other.id === n.id) continue;
+      const dx = p.x - other.x, dy = p.y - other.y, distance = Math.hypot(dx, dy);
+      if (distance >= 250) continue;
+      const weight = (1 - distance / 250) / (distance + 35);
+      openX += dx * weight;
+      openY += dy * weight;
+    }
+    const remembered = previousAnchors.get(n.id);
+    let best = null, bestScore = Infinity;
+    for (const [anchor, dirX, dirY] of anchors) {
+      const rawX = dirX > 0 ? p.x + gap : dirX < 0 ? p.x - gap - w : p.x - w / 2;
+      const rawY = dirY > 0 ? p.y + gap : dirY < 0 ? p.y - gap - h : p.y - h / 2;
+      const bx = Math.max(margin, Math.min(Math.max(margin, width - w - margin), rawX));
+      const by = Math.max(margin, Math.min(Math.max(margin, height - h - margin), rawY));
+      let score = (Math.abs(bx - rawX) + Math.abs(by - rawY)) * 1.35;
+      // Prefer short side labels, but use clear vertical and diagonal positions when needed.
+      score += dirX && dirY ? 9 : dirX === 0 ? 7 : 0;
+      score += dirX ? 14 * (dirX > 0 ? p.x / width : 1 - p.x / width) : 4;
+      score -= 12 * (openX * dirX + openY * dirY) / Math.hypot(dirX, dirY);
+      // Prevent flicker during minor camera motions.
+      if (remembered && remembered !== anchor) score += 16;
+      for (const point of points) {
+        const size = point.r * 2;
+        const area = overlapArea(bx, by, w, h, {
+          x: point.x - point.r, y: point.y - point.r, w: size, h: size
+        });
+        if (area) score += (point.id === n.id ? 360 : 140) * area / (size * size);
+      }
+      for (const box of occupied) {
+        const area = overlapArea(bx, by, w, h, {
+          x: box.x - 4, y: box.y - 4, w: box.w + 8, h: box.h + 8
+        });
+        if (area) score += 85 + 520 * area / Math.min(w * h, box.w * box.h);
+      }
+      if (score < bestScore) {
+        bestScore = score;
+        best = {bx, by, anchor};
+      }
+    }
+    placements.set(n.id, best);
+    previousAnchors.set(n.id, best.anchor);
+    occupied.push({x: best.bx, y: best.by, w, h});
+  }
+  return placements;
+}
