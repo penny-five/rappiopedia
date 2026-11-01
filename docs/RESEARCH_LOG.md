@@ -1,6 +1,6 @@
 # Tutkimusloki
 
-Tähän tiedostoon merkitään keskeneräiset selvitykset ja jatkossa tarkistettavat lähteet. Jo julkaistut lähteet löytyvät [`src/data/network.json`](../src/data/network.json)-tiedostosta.
+Tähän kirjataan päivätyt löydöt. Avoimet tehtävät ovat tiedostossa [research/leads.json](../research/leads.json). Jo julkaistut lähteet löytyvät [`src/data/network.json`](../src/data/network.json)-tiedostosta.
 
 ## 1.11.2026 — Striimaajien vierailut ja PactTalks
 
