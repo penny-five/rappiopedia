@@ -355,5 +355,17 @@
     "reverse": "loukkaantunut henkilö oli",
     "headingForward": "Onnettomuudet",
     "headingReverse": "Loukkaantuneet"
+  },
+  "kasitteli-aihetta": {
+    "forward": "käsitteli",
+    "reverse": "aiheesta keskusteltiin",
+    "headingForward": "Käsitellyt aiheet",
+    "headingReverse": "Aihetta käsitelleet yhteisöt"
+  },
+  "jatkoi-yhteisoa": {
+    "forward": "jatkoi",
+    "reverse": "jatkajana oli",
+    "headingForward": "Edeltänyt yhteisö",
+    "headingReverse": "Toimintaa jatkanut yhteisö"
   }
 }
