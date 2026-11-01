@@ -1,4 +1,3 @@
-## Yhteenveto
 **Aleksi Nurminen** on kamppailu-urheiluun ja suoratoistoviihteeseen liittyvä julkinen toimija, joka osallistui [[s3|PactHouse 3:een]] vuonna 2026. [@P42]
 
 ## Ennen PactHousea: lokakuu 2025
@@ -9,6 +8,3 @@ Aleksi oli myös mukana [[testotimo_sub|Testotimon subathonin]] taustalla tämä
 ## PactHouse ja muu julkisuus
 - [[s3|PactHouse 3]] — kilpailuosallistuminen. [@P42]
 - [[ice|Ice Cage 8]] — otteluyhteys. [@P22]
-
-## Lähdekritiikki
-Vuoden 2025 yhteisstriimi ja vuoden 2026 PactHouse-osallistuminen muodostavat konkreettisen verkostosillan. Ne eivät tarkoita, että Pottukoira olisi itse osallistunut PactHouse 3:een tai että kaikkien henkilöiden taustalla olisi sama rahoittaja.
