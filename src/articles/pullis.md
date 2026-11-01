@@ -1,5 +1,9 @@
 **Atte Karttunen**, joka tunnetaan nimellä **Pullis**, on suomalainen somevaikuttaja ja striimaaja. Hän nousi julkisuuteen Snapchat-julkaisuillaan ja jatkoi myöhemmin suoratoistolähetyksiä erityisesti Kickissä. Hänen sisältöihinsä kuuluu arkielämän, matkojen, juhlimisen ja kokkaamisen kuvaamista. Karttunen on myös vuonna 2024 ensi-iltansa saaneen [[hard_to_break|Hard to Break]] -dokumenttielokuvan päähenkilö. [@P84] [@P87] [@P85]
 
+## Yhteisstriimit Lilyn kanssa
+
+Helmikuussa 2025 [[lily|Lilbeliini]] eli Lily oli Pulliksen kanssa [[lily_pullis_viro_2025|Virossa kuvatussa yhteislähetyksessä]]. Redditiin 14. helmikuuta julkaistussa klipissä kaksikko keskusteli suorassa lähetyksessä. Lily esiintyi myös marraskuussa 2024 Pulliksen Kick-lähetyksessä, jossa olivat mukana [[chiara|Chiara Eklund]] ja [[megis|Megarokkistara]]. [@P207] [@P208]
+
 ## Snapchat ja Hard to Break
 
 Anna-Maija Heinosen ja Krista Moision ohjaama *Hard to Break* seurasi Aten ja Jonsun elämää kolmen vuoden ajan. Ohjaajat löysivät Aten Jodelin kautta vuonna 2020. A-klinikkasäätiön dokumentista julkaisemassa haastattelussa kerrotaan, että Atte oli kerännyt kymmeniä tuhansia Snapchat-seuraajia kuvaamalla elämäänsä ja päihtyneenä tekemiään tempauksia. Elokuvassa käsitellään myös sosiaalisen median vaikutusta hänen elämänvalintoihinsa ja hänen kokemuksiaan vaikeuksista irtautumisesta. Elokuva sai ensi-iltansa 12. huhtikuuta 2024. [@P84]

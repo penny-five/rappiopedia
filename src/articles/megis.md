@@ -20,6 +20,10 @@ Heinäkuun alussa 2026 Megis oli samassa suorassa lähetyksessä [[pullis|Pullik
 
 Valikainen esiintyi [[pirkkis_chiara_megis_2026|5. heinäkuuta 2026 julkaistussa yhteislähetyskatkelmassa]] [[pirkkis|Pirkkiksen]] ja [[chiara|Chiaran]] kanssa. Tilanne oli ennen saman kuun loppupuolen mökkistriimejä. [@P203]
 
+## Marraskuun 2024 Kick-yhteislähetys
+
+Marraskuun 16. päivän 2024 Reddit-ketjussa seurattiin [[pullis|Pulliksen]] Kick-lähetystä, jossa olivat mukana [[lily|Lily]], [[chiara|Chiara]] ja Megarokkistara. Yhteinen lähetys ajoittui kauan ennen heidän vuoden 2026 mökkistriimejään. [@P208]
+
 ## Mallorca syyskuussa
 
 Syyskuussa Megis oli [[mallorca_livet_2026|Mallorcan yhteisstriimeissä]] Pulliksen, Sampen ja Chiaran seurueessa. [@P178]

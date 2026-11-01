@@ -983,6 +983,71 @@
         "Älä kirjaa katsojakommenttien henkilöllisiä väitteitä varmoina."
       ],
       "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "lily-pullis-viro-2025",
+      "title": "Lilyn ja Pulliksen Viron-striimin alkuperäinen tallenne ja kanavahistoria",
+      "status": "in-progress",
+      "priority": "high",
+      "nodeIds": [
+        "lily",
+        "pullis",
+        "lily_pullis_viro_2025",
+        "chiara",
+        "megis"
+      ],
+      "sourceIds": [
+        "P205",
+        "P206",
+        "P207",
+        "P208",
+        "P209"
+      ],
+      "notes": "1.11.2026: Lilbeliinin oma Linktree, Kick-arkisto sekä 2024–2025 Reddit-videoketjut vahvistavat someidentiteetin ja esiintymiset. 14.2.2025 ketjun klipin kerrottiin olevan edellispäivältä. Lilyn koko henkilönimeä ei ole varmistettu laadukkaasta alkuperäislähteestä; älä lisää sitä perusteettomasti.",
+      "questions": [
+        "Mitä alkuperäisissä Pulliksen Kick-VOD-tallenteissa 2024–2025 näytetään?",
+        "Milloin Lilbeliinin oma TikTok- ja Kick-ura alkoi?",
+        "Mikä oli Viron-striimimatkan tarkka ajanjakso ja seurue?"
+      ],
+      "queries": [
+        "\"Lily\" \"Pullis\" Viro helmikuu 2025",
+        "\"Lilbeliini\" Kick 2025 stream",
+        "\"Lily\" \"Chiara\" \"Megis\" Pullis marraskuu 2024"
+      ],
+      "nextSteps": [
+        "Etsi alkuperäiset videot ja aikaleimat.",
+        "Selvitä itsenäinen urahistoria haastatteluista, kanavista ja julkaisuista.",
+        "Älä perusta henkilöllisiä tietoja satunnaisiin hakukonehakemistoihin."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "rivetti-katja-livet-2026",
+      "title": "Rivetti, Katja Huttunen ja Valvoja TikTok-lähetyksissä 2026",
+      "status": "open",
+      "priority": "medium",
+      "nodeIds": [],
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://www.reddit.com/r/snappisensuroimat0n/comments/1vk6b2d/alkaa_menee_jo_sairaaks_t%C3%A4%C3%A4_live_ku_l%C3%A4hes_20h/",
+        "https://www.reddit.com/r/snappisensuroimat0n/comments/1v07oh0/heikki_ly%C3%B6nyt_rivetti%C3%A4_heikki_haluaa_rivetin_pois/"
+      ],
+      "notes": "1.11.2026: Redditin 18.7. ja 10.8.2026 keskusteluissa esiintyvät Rivetti, Katja Huttunen sekä Valvoja-niminen TikTok-livekäyttäjä. Varsinaiset henkilöesittelyt ja alkuperäiset tallenteet puuttuvat. Nimimerkkiä Rivetti ei saa sekoittaa samannimisiin ulkomaisiin henkilöihin. Vakavia henkilöväitteitä ei tule kirjata faktaksi kommenttien perusteella.",
+      "questions": [
+        "Mikä on Rivetin julkinen oma kanava ja toiminnan historia?",
+        "Kuka on Katja Huttunen kyseisessä livekontekstissa ja mitä alkuperäisvideot näyttävät?",
+        "Onko Valvoja oma striimaaja vai vain yksittäisen lähetyksen käyttäjätunnus?"
+      ],
+      "queries": [
+        "\"Rivetti\" \"Valvoja\" TikTok 2026",
+        "\"Rivetti\" \"Katja Huttunen\" elokuu 2026"
+      ],
+      "nextSteps": [
+        "Etsi alkuperäiset TikTok-videot ja vahvista nimimerkit.",
+        "Etsi luotettavat taustalähteet ennen solmujen lisäämistä.",
+        "Käsittele henkilöitä koskevat väitteet attribuoituina ja ilman diagnoosiarvauksia."
+      ],
+      "updatedAt": "2026-11-01"
     }
   ]
 }

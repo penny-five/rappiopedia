@@ -14,6 +14,10 @@ Heinäkuussa Chiara esiintyi [[mokkistriimit_july_2026|mökkireissulla]] yhdess�
 
 Heinäkuun 5. päivänä 2026 Eklund esiintyi [[pirkkis_chiara_megis_2026|yhteislähetyksessä]] [[pirkkis|Pirkkiksen]] ja [[megis|Megarokkistaran]] kanssa. Redditissä jaettiin tilanteesta videokatkelma. Kohtaaminen oli erillinen saman kuun lopulla alkaneesta mökkireissusta. [@P203]
 
+## Yhteislähetykset Lilyn kanssa
+
+Chiara esiintyi [[lily|Lilyn]] kanssa samassa Pulliksen Kick-lähetyksessä marraskuussa 2024. Lisäksi Redditissä julkaistiin 19. lokakuuta 2025 klippi, jossa Lily liittyi Chiaran ja SB-nimisen henkilön yhteiseen liveen. [@P208] [@P209]
+
 ## Televisio ja PactHouse
 
 Eklund ja Megarokkistara olivat MTV Katsomossa 18. lokakuuta 2026 julkaistun *Asian ytimessä.doc: Kohujulkkikset* -ohjelman haastateltavina. Dokumentin toimittaja Iriz Silander seurasi heidän Kick-toimintaansa. [@P133]

@@ -3317,6 +3317,37 @@
         -15,
         985
       ]
+    },
+    {
+      "id": "lily",
+      "name": "Lily / Lilbeliini",
+      "group": "reality",
+      "cat": "person",
+      "types": [
+        "somevaikuttaja",
+        "striimaaja"
+      ],
+      "note": "Lily, joka tunnetaan nimellä Lilbeliini, on suomalainen somevaikuttaja ja Kick-striimaaja. Häntä on nähty samassa lähetyksessä muun muassa Pulliksen, Chiaran ja Megarokkistaran kanssa.",
+      "pos3": [
+        2220,
+        700,
+        -160
+      ]
+    },
+    {
+      "id": "lily_pullis_viro_2025",
+      "name": "Lilyn ja Pulliksen Viron-yhteisstriimi 2/2025",
+      "group": "reality",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "note": "Lily ja Pullis esiintyivät helmikuussa 2025 Virossa tehdyssä yhteisstriimissä, josta julkaistiin katkelma Redditissä.",
+      "pos3": [
+        2100,
+        1000,
+        40
+      ]
     }
   ],
   "edges": [
@@ -7132,6 +7163,83 @@
         "P204"
       ],
       "level": "reported"
+    },
+    {
+      "a": "lily",
+      "b": "kick",
+      "type": "kayttaa",
+      "label": "tekee suoria lähetyksiä Lilbeliini-nimisellä Kick-kanavalla",
+      "src": [
+        "P205",
+        "P206"
+      ],
+      "level": "verified"
+    },
+    {
+      "a": "lily",
+      "b": "lily_pullis_viro_2025",
+      "type": "matkusti",
+      "label": "esiintyi Pulliksen kanssa Virossa kuvatussa yhteislähetyksessä",
+      "src": [
+        "P207"
+      ],
+      "level": "reported",
+      "date": "2025-02"
+    },
+    {
+      "a": "pullis",
+      "b": "lily_pullis_viro_2025",
+      "type": "matkusti",
+      "label": "esiintyi Lilyn kanssa Virossa kuvatussa yhteislähetyksessä",
+      "src": [
+        "P207"
+      ],
+      "level": "reported",
+      "date": "2025-02"
+    },
+    {
+      "a": "lily",
+      "b": "pullis",
+      "type": "striimasi-yhdessa",
+      "label": "yhteinen Viron-lähetys helmikuussa 2025",
+      "src": [
+        "P207"
+      ],
+      "level": "reported",
+      "date": "2025-02"
+    },
+    {
+      "a": "lily",
+      "b": "chiara",
+      "type": "esiintyi-yhdessa",
+      "label": "sama Pulliksen Kick-lähetys marraskuussa 2024",
+      "src": [
+        "P208"
+      ],
+      "level": "reported",
+      "date": "2024-11-16"
+    },
+    {
+      "a": "lily",
+      "b": "megis",
+      "type": "esiintyi-yhdessa",
+      "label": "sama Pulliksen Kick-lähetys marraskuussa 2024",
+      "src": [
+        "P208"
+      ],
+      "level": "reported",
+      "date": "2024-11-16"
+    },
+    {
+      "a": "lily",
+      "b": "chiara",
+      "type": "esiintyi-yhdessa",
+      "label": "Lily liittyi Chiaran liveen lokakuussa 2025",
+      "src": [
+        "P209"
+      ],
+      "level": "reported",
+      "date": "2025-10-19"
     }
   ],
   "sources": {
@@ -8159,6 +8267,31 @@
       "label": "Reddit 19.10.2026: Megiksen ja Iippadaan yhteinen suora lähetys",
       "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1xa5ld2/megis_ja_iippa_nuoleskelee/",
       "note": "Päivätty ketju kuvaa Iippadaan ja Megiksen yhteistä 19.10.2026 liveä. Yksityisten tekojen kommentteja ei käsitellä vahvistettuina."
+    },
+    "P205": {
+      "label": "Lilbeliinin oma Linktree: somekanavat ja Kick",
+      "url": "https://linktr.ee/lilbeliini",
+      "note": "Lilyn julkinen @lilbeliini-profiili linkittää TikTokin, Kickin ja Instagramin sekä muita omia kanavia."
+    },
+    "P206": {
+      "label": "StreamRecorder: Lilbeliinin Kick-lähetysarkisto lokakuulta 2026",
+      "url": "https://streamrecorder.io/kick/lilbeliini",
+      "note": "Palvelu kirjasi viisi lähetystä ajalla 14.–17.10.2026; havaintojakso ei tarkoita tilin koko lähetyshistoriaa."
+    },
+    "P207": {
+      "label": "Reddit 14.2.2025: Lily ja Pullis Viron-yhteisstriimissä",
+      "url": "https://www.reddit.com/r/snappisensuroimaton/comments/1ip57tv",
+      "note": "Redditissä jaettu edellispäivän Pulliksen ja Lilyn Virossa kuvattu yhteislähetyskatkelma, ei kattava matkatallenne."
+    },
+    "P208": {
+      "label": "Reddit 16.11.2024: Lily, Chiara, Juulia ja Pullis samalla Kick-livellä",
+      "url": "https://www.reddit.com/r/snappisensuroimaton/comments/1gsujc2",
+      "note": "Päivätyssä keskustelussa kerrotaan ja jaetaan tilannetta Pulliksen Kick-lähetyksestä, jossa Lily, Chiara ja Juulia esiintyivät."
+    },
+    "P209": {
+      "label": "Reddit 19.10.2025: Lily liittyi Chiaran ja SB:n liveen",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1oapohv/lily_liittyy_chiaran_ja_t%C3%A4n_sbn_liveen_ja_tilanne/",
+      "note": "Redditin päivätty klippiketju kertoo Lilyn liittymisestä Chiaran ja SB:n suoratoistoon lokakuussa 2025."
     }
   },
   "date": "2026-11-01"
