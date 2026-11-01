@@ -1,8 +1,9 @@
-**Ruusutossu** on esiintynyt [[talks|PactTalks]]-ohjelman haastatteluvieraana vuonna 2026. [@P8] [@P19]
+**Pinja Ruusutossu** on suomalainen somepersoona, joka on esiintynyt suoratoistoviihteessä ja tullut tunnetuksi myös poikkeuksellisista matkakertomuksistaan. Vuonna 2026 hän vieraili [[talks|PactTalksissa]] ja esiintyi [[bamat|Bämät matkoilla]] -projektiin liittyvissä keskusteluissa. [@P72] [@P65]
 
-## Yhteydet
-- [[jethro|Jethro Rostedt]] — juonsi ohjelman, jossa Ruusutossu vieraili. [@P19]
-- [[talks|PactTalks]] — ohjelmavierailu, muun muassa 26.10.2026. [@P19]
+## Julkisuus ja PactTalks
+
+Ruusutossu oli [[jethro|Jethro Rostedtin]] haastateltavana PactTalksissa 24. elokuuta 2026. Hän kertoi lähetyksessä muun muassa matkustelustaan, asumisestaan ja omasta elämäntavastaan. Uuno käsitteli haastattelua 25. elokuuta. Ruusutossu vieraili ohjelmassa myös lokakuussa. [@P72] [@P19]
 
 ## Bämät matkoilla
-Lokakuun 2026 Reddit-keskusteluissa [[ruusu|Ruusutossu]] ja [[alisa_bamat|Alisa]] liitetään yhteiseen [[bamat|Bämät matkoilla]] -Ranskan-striimireissuun. PactTalksin lähetyshistoriassa Bämät matkoilla on vieras jaksoissa 97–98. [@P65] [@P64]
+
+Lokakuussa 2026 Redditissä keskusteltiin Ruusutossun ja [[alisa_bamat|Alisan]] yhteisestä Ranskan-striimimatkasta. Bämät matkoilla -nimi näkyi myös PactTalksin lokakuun jaksojen lähetysotsikoissa. [@P65] [@P64]

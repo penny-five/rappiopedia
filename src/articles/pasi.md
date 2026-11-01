@@ -1,8 +1,9 @@
-## Yhteenveto
-**Pasi Viheraho** on pitkän linjan suomalainen video- ja nettiradiotekijä, joka vieraili [[talks|PactTalksissa]] 11.10.2026. Ohjelman juonsi [[jethro|Jethro Rostedt]]. [@P63]
+**Pasi Viheraho** on suomalainen nettiradion ja internetvideoiden tekijä, joka tunnetaan erityisesti vuonna 2007 aloittamastaan [[pasiradio|Pasiradiosta]]. Hänen suorapuheiset lähetyksensä ja internetissä levinneet videonsa ovat osa suomalaisen verkkoviihteen varhaista historiaa. [@P63]
 
-## Aiempi tuotanto
-Viheraho aloitti [[pasiradio|Pasiradion]] vuonna 2007. PactTalks-vierailu tuo verkostoon yhteyden uudemmasta striimausformaatista suomalaisen nettiradion varhaiseen historiaan. [@P63]
+## Pasiradio
 
-## Lähetys
-- [[talk_pasi|PactTalks 11.10.2026]] — vieraana; keskustelussa käsiteltiin muun muassa hänen aiemmin netissä levinnyttä vesihanameemiään. [@P63]
+Viheraho käynnisti Pasiradion vuonna 2007. Lähetyksissä keskusteltiin kuulijoiden kanssa, ja toimintaa tehtiin myös FM-radiossa. [@P63]
+
+## PactTalks 2026
+
+Viheraho vieraili [[talk_pasi|PactTalksissa 11. lokakuuta 2026]]. Jakson juonsi [[jethro|Jethro Rostedt]], ja keskustelussa palattiin muun muassa Viherahon tunnettuun vesihanavideoon. [@P63]

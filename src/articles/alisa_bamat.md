@@ -1,9 +1,7 @@
-## Yhteenveto
-**Alisa** on julkisissa Reddit-keskusteluissa [[bamat|Bämät matkoilla]] -striimihankkeeseen ja [[ruusu|Ruusutossun]] kanssa suunniteltuun Ranskan-matkaan yhdistetty somehenkilö. Keskusteluissa viitataan hankkeen Kick- ja TikTok-kanaviin. [@P65]
+**Alisa** on [[bamat|Bämät matkoilla]] -nimiseen striimi- ja someprojektiin liitetty suomalainen somehenkilö. Hänestä ja [[ruusu|Pinja Ruusutossusta]] keskusteltiin lokakuussa 2026 Redditin snäppijuoruyhteisössä. [@P65]
 
-## Dokumentoidut keskusteluyhteydet
-- [[ruusu|Ruusutossu]] — Reddit-ketjussa raportoitu matkakumppani. [@P65]
-- [[bamat|Bämät matkoilla]] — projektin yhteydessä mainittu osallistuja. [@P65]
+## Bämät matkoilla ja Ranskan-matka
 
-## Lähteen rajaus
-Foorumiketju on kelvollinen lähde julkiselle matka- ja ohjelmayhteydelle. Tiedot yksityiselämästä, terveydestä tai oletetuista sopimusehdoista eivät kuulu tähän artikkeliin.
+Reddit-keskustelussa käyttäjät kuvailivat Alisan ja Ruusutossun yhteistä Ranskan-matkaa ja mainitsivat projektin Kick- ja TikTok-sisältöjä. Kertomukset julkaistiin osana projektia koskevaa keskustelua. [@P65]
+
+Projektin nimi esiintyi myös [[talks|PactTalksin]] lokakuun 2026 jaksojen otsikoissa. [@P64] [@P67]

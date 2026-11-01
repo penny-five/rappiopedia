@@ -1,5 +1,5 @@
-## Yhteenveto
-**Okkishow** on julkisessa [[pact_pottu|PactTalks / Pottukoira -tallenteessa]] juontajaksi nimetty esiintyjänimi [[jethro|Jethro Rostedtin]] rinnalla. [@P53]
+**Okkishow** on suoratoistoviihteessä käytetty esiintyjänimi. Hänet on nimetty [[talks|PactTalksin]] [[pact_pottu|Pottukoira-jakson]] juontajaksi [[jethro|Jethro Rostedtin]] rinnalle. [@P53]
 
-## Avoimet tiedot
-Tässä tutkimuksessa ei ole varmistettu erillistä yritys- tai sponsorointiroolia. Tallenne osoittaa ohjelmayhteyden. [@P53]
+## PactTalksin Pottukoira-jakso
+
+NOPEETNOUSUT-kanavan 19. heinäkuuta 2026 julkaisemassa tallenteessa [[pottu|Pottukoira]] on ohjelman vieraana. Tallenteen tietojen mukaan jaksoa juonsivat Okkishow ja Jethro Rostedt. [@P53]
