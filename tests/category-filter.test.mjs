@@ -8,6 +8,7 @@ const by=Object.fromEntries(nodes.map(n=>[n.id,n]));
 
 test('primary categories and miscellaneous category group all registered and future types',()=>{
  assert.deepEqual(NODE_CATEGORY_FILTERS.map(({id})=>id),['person','event','show','other']);
+ assert.equal(NODE_CATEGORY_FILTERS.find(({id})=>id==='other').label,'Muut kohteet');
  assert.deepEqual(nodes.map(n=>categoryFilterId(n.cat)),['person','event','show','other','other']);
  assert.deepEqual(categoryCounts(nodes),{person:1,event:1,show:1,other:2});
 });
