@@ -6,6 +6,10 @@ KickTrackerin lähetysarkiston mukaan ensimmäinen PactTalks-jakso lähetettiin 
 
 Myös [[jasmilla|Jasmilla Rostedt]] nähtiin juontajana: 16. lokakuuta lähetetyssä jaksossa 84 hän haastatteli Jethro Rostedtia. Lokakuussa Jethro kertoi Seiskan haastattelussa juontavansa Tallinnasta käsin kuutta PactTalks-lähetystä viikossa. [@P19] [@P115]
 
+## Varhaiset vierasjaksot
+
+Heinäkuun 12. päivän [[pacttalks_4_2026|neljännessä jaksossa]] vierailivat [[crista|BelleBarbie]], [[aapo|Aapo Olervo]] ja [[cuck|CuckTommi]]. Se oli yksi PactTalksin ensimmäisen lähetysviikon ohjelmista. [@P7]
+
 ## Elokuun 2026 välikohtaus
 
 Elokuun 11. päivän [[pact_augtalk|lähetyksessä]] vierailivat [[johanna|Johanna Tukiainen]], [[joonasm|Joonas Mäkäräinen]] ja [[milla|Milla Säilynoja]]. Seiskan mukaan keskustelu johti riitaan, jossa Tukiainen repi Säilynojaa hiuksista. Juontaja [[jethro|Jethro Rostedt]] ja Mäkäräinen yrittivät erottaa osapuolet toisistaan. Rostedt kertoi jälkikäteen, ettei hän ollut odottanut fyysistä yhteenottoa. [@P41]
