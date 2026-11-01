@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { focusedNodeIds, projectedEdgePoint, graphLabelScale, cameraTravelDirection, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
 
 test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
@@ -89,4 +90,28 @@ test('canvas labels truncate long types without distorting text size', () => {
   assert.equal(truncateLabel('PALVELU', 110, measure), 'PALVELU');
   assert.equal(truncateLabel('ABC', 10, measure), '…');
   assert.equal(truncateLabel('ABC', 5, measure), '');
+});
+
+test('selected label is painted last and receives hit-testing priority', () => {
+  const source = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
+  const painter = source.indexOf('for(const item of scene)item.draw();');
+  const overlay = source.indexOf('if(selectedItem)nodeLabelDisplay(selectedItem);');
+  assert.ok(painter >= 0 && overlay > painter);
+  assert.match(source, /if\(label&&!isSel\)nodeLabelDisplay\(item\)/);
+  assert.match(source, /if\(active&&x>=active\.x-3/);
+});
+
+test('node labels are wider and the selected label has a dedicated halo', () => {
+  const source = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
+  assert.match(source, /const w=\(enlarged\?186:158\)\*labelScale/);
+  assert.match(source, /RR\(bx-2\*ls,by-2\*ls,w\+4\*ls,h\+4\*ls,6\*ls\)/);
+});
+
+test('skene wireframes are clearer and the movement crosshair does not intercept clicks', () => {
+  const source = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
+  const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  const css = readFileSync(new URL('../src/styles.css', import.meta.url), 'utf8');
+  assert.match(source, /drawWireVolume\(c, bounds, col, active \? \.35 : \.085/);
+  assert.match(html, /class="crosshair" aria-hidden="true"/);
+  assert.match(css, /\.crosshair\{[^}]*pointer-events:none/);
 });
