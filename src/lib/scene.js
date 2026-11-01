@@ -19,6 +19,18 @@ export function cameraTargetFromPosition(position, yaw, pitch, distance) {
   };
 }
 
+/** Apply a mouse-look delta to the live camera state, keeping the eye fixed in world space. */
+export function cameraLookDelta(target, yaw, pitch, distance, deltaX, deltaY) {
+  const position = cameraPositionFromTarget(target, yaw, pitch, distance);
+  const nextYaw = yaw - deltaX * .005;
+  const nextPitch = Math.max(-1.35, Math.min(1.35, pitch + deltaY * .005));
+  return {
+    yaw: nextYaw,
+    pitch: nextPitch,
+    target: cameraTargetFromPosition(position, nextYaw, nextPitch, distance)
+  };
+}
+
 /** In route mode, only the chosen path's nodes and edges are visible and interactive. */
 export function routeVisibility(pathNodes, pathEdges) {
   const active = pathNodes.length > 0;
