@@ -29,7 +29,13 @@ npm run build
 ## Julkaisu
 GitHub Actionsin `.github/workflows/deploy.yml` testaa ja rakentaa `main`-haaran muutokset sekä pyrkii julkaisemaan GitHub Pagesiin. Alkuasetuksena valitse repon **Settings → Pages → Source: GitHub Actions**. Julkaisuosoite, kun Pages on otettu käyttöön: https://penny-five.github.io/rappioverse/ .
 
+## Tutkimus- ja toimitusohjeet
+- [AGENTS.md](AGENTS.md) – agenttien kehitys- ja lähdeohjeet.
+- [Content Authoring Guide](docs/CONTENT_AUTHORING.md) – solmut, artikkelit, kuvien oikeudet ja näyttöluokat.
+- [Research Playbook](docs/RESEARCH_PLAYBOOK.md) – tutkimuksessa toimineet kyselyt, alkuperäisarkistot, foorumikäytännöt ja graafipolut.
+- [Research Log](docs/RESEARCH_LOG.md) – ajoitetut löydökset ja jatkotutkimuksen johtolangat.
+
 ## Lähde- ja turvallisuusperiaate
-Yhteinen ohjelma tai tapahtuma osoittaa kontaktin, ei omistusta, rahoitusta tai osallistumista muiden tekoihin. Dokumentoitu tieto, uutisoitu väite, julkiseen tunnisteeseen perustuva päätelmä ja foorumijohtolanka näkyvät erillisinä. Foorumiväitteitä ei nosteta faktoiksi ilman riippumatonta näyttöä.
+Yhteinen ohjelma tai tapahtuma osoittaa kontaktin, ei omistusta, rahoitusta tai osallistumista muiden tekoihin. Dokumentoitu tieto, uutisoitu väite, julkiseen tunnisteeseen perustuva päätelmä ja foorumijohtolanka näkyvät erillisinä. Yksilöity foorumikertomus riittää tavallisen julkisen matkustus-, vierailu- tai yhteisstriimiyhteyden raportoimiseen. Sen sijaan vakavat syytökset tai henkilökohtaiset sopimusväitteet edellyttävät vahvempaa näyttöä.
 
 Ulkoiset kuvalinkit voivat rajoittaa hotlinkkausta. Kuvia ei kopioida repoon ilman käyttöoikeuksia.
