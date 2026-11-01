@@ -91,6 +91,8 @@ function flyTo(id,zoom=true){const n=by[id];if(!n)return;if(location.hash!=='#/n
 function reset(){sector='all';mode='focus';query='';document.getElementById('search').value='';pathNodes=[];pathEdges=[];selected='pact';target=vec(0,-70,0);dist=3650;yaw=-.35;pitch=.22;renderSectors();renderModes();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
 function showDetails(id){
  const n=by[id];if(!n)return;
+ selected=id;document.title=n.name+' — Rappiopedia';
+ if(location.hash!=='#/node/'+id)history.replaceState({node:id},'','#/node/'+id);
  const related=E.filter(e=>e.a===id||e.b===id).map(e=>({...e,other:by[e.a===id?e.b:e.a]}))
   .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
  renderNodeArticle({node:n,related,nodes:by,sources:S,levels,group:groupMeta[n.group][0],category:catNames[n.cat]||n.cat});
@@ -112,6 +114,7 @@ function doRoute(a,b){let r=route(a,b);if(!r){document.getElementById('pathresul
 const tours={pact:['pact','s3','jethro','talks','ruusu'],bridge:['iippa','sami','bailu','korelon','sastamala','ossi'],casino:['kasinok','kp','s1','pact'],ylilauta:['sami','ylilauta']};document.querySelectorAll('[data-tour]').forEach(b=>b.onclick=()=>{let t=tours[b.dataset.tour];document.getElementById('from').value=t[0];document.getElementById('to').value=t[t.length-1];doRoute(t[0],t[t.length-1])});
 document.getElementById('pathbtn').onclick=()=>doRoute(document.getElementById('from').value,document.getElementById('to').value);document.getElementById('clearpath').onclick=()=>{pathNodes=[];pathEdges=[];document.getElementById('pathresult').textContent='Polku tyhjennetty.'};
 function openSources(){
+ document.title='Lähteet — Rappiopedia';
  renderSourceArchive(S);
  document.getElementById('rightpanel').classList.add('mobileopen');
  document.getElementById('rightpanel').scrollTop=0;
