@@ -1918,7 +1918,10 @@
       "featured": false,
       "types": [
         "henkilo"
-      ]
+      ],
+      "image": "images/hune.webp",
+      "imageSource": "https://nettipokeri.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-26-at-17.56.04-e1790435658636.jpeg",
+      "imageCredit": "Nettipokeri.com / Riitta Sahala, Henri ”Huneasd” Hyttinen Julkkispeleillä (26.9.2026)"
     },
     {
       "id": "pact_augtalk",
