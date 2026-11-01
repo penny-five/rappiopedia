@@ -22,6 +22,10 @@ Lokakuussa ohjelmassa vierailivat myös [[cruella_johansson|Cruella Johansson]] 
 
 Ruusutossu oli vieraana myös elokuussa. Elokuun 11. päivän erillisessä lähetyksessä esiintyivät [[johanna|Johanna Tukiainen]], [[joonasm|Joonas Mäkäräinen]] ja [[milla|Milla Säilynoja]]. [@P72] [@P41]
 
+## Stagala ja Akam lokakuussa
+
+Lokakuun 18. päivän [[pacttalks_86_2026|erikoisjakso 86]] esitettiin otsikolla *Stagala vs Akam*. [[stagala|Stagala]] ja [[akam|Henrik Hopea]] olivat kohdanneet edellisenä vuonna [[ice_cage_5_stagala_akam_2025|Ice Cage 5 -nyrkkeilyottelussa]], jonka Stagala voitti tuomaripisteillä. PactTalksin lähetysotsikko nimesi molemmat keskusteluohjelman erikoisjakson osapuoliksi. [@P7] [@P247]
+
 ## Jakso 96: Jethro ja Aure
 
 Lokakuun 29. päivänä julkaistun [[pacttalks_96_2026|jakson 96]] otsikkona oli *Katsojien nolot paljastukset*. KickTrackerin lähetysarkisto nimesi juontajiksi [[jethro|Jethro Rostedtin]] ja Auren. Jakso poikkesi syksyn henkilöhaastatteluista yleisön kertomuksiin perustuvalla aiheellaan. Arkiston mukaan lähetys alkoi kello 17.55. [@P7]
