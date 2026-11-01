@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { focusedNodeIds, projectedEdgePoint, graphLabelScale, cameraTravelDirection, routeVisibility, relationshipLabelEdges } from '../src/lib/scene.js';
+import { focusedNodeIds, projectedEdgePoint, graphLabelScale, cameraTravelDirection, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
 
 test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
   const edges = [
@@ -81,4 +81,12 @@ test('camera travel follows view direction and strafes without changing speed di
 test('forward travel respects camera pitch', () => {
   const camera = { forward: { x: 0, y: -.6, z: -.8 }, right: { x: 1, y: 0, z: 0 } };
   assert.deepEqual(cameraTravelDirection(new Set(['w']), camera), { x: 0, y: -.6, z: -.8 });
+});
+
+test('canvas labels truncate long types without distorting text size', () => {
+  const measure = value => Array.from(value).length * 10;
+  assert.equal(truncateLabel('STRIIMAAJA · SOMEVAIKUTTAJA', 110, measure), 'STRIIMAAJA…');
+  assert.equal(truncateLabel('PALVELU', 110, measure), 'PALVELU');
+  assert.equal(truncateLabel('ABC', 10, measure), '…');
+  assert.equal(truncateLabel('ABC', 5, measure), '');
 });
