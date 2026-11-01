@@ -3,7 +3,7 @@ export const NODE_CATEGORY_FILTERS = Object.freeze([
   { id: 'person', label: 'Henkilöt' },
   { id: 'event', label: 'Tapahtumat' },
   { id: 'show', label: 'Ohjelmat' },
-  { id: 'other', label: 'Muut' }
+  { id: 'other', label: 'Muut kohteet' }
 ]);
 const PRIMARY_CATEGORIES=new Set(['person','event','show']);
 
