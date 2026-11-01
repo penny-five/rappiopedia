@@ -76,6 +76,12 @@ Agentin ei tarvitse pyytää lähtöaihetta jälkimmäisessä tapauksessa. Keske
 
 Skill ei käynnistä itsestään ajastettua tutkimusta, vaan ohjaa käynnistettyä agenttia viemään tutkimuksensa konkreettisiksi muutoksiksi. ChatGPT:ssä erikseen asennettavien skillien saatavuus riippuu työtilasta; repossa oleva `SKILL.md` ei yksin tarkoita, että se olisi asennettu ChatGPT-tilille.
 
+## Henkilökuvien täydentäminen
+
+Repo sisältää [henkilökuvien keruuskillin](.agents/skills/rappiopedia-images/SKILL.md). Se auttaa löytämään kuvattomat henkilöt, tarkistamaan kuvat alkuperäisistä julkaisuista ja liittämään `imageSource`- sekä `imageCredit`-tiedot solmuihin. `npm run images:candidates` listaa puuttuvat kuvalähteet ja paikallista WebP-käsittelyä odottavat kuvat (lisävalitsimet `-- --all` ja `-- --json`).
+
+`npm run images` hakee ja optimoi lähteiden kuvat `public/images/`-kansioon. GitHub Pagesin julkaisu tekee saman käsittelyn automaattisesti ennen tuotantobuildia; uutta kuvaa varten ei tarvitse käsin lisätä raskasta alkuperäistiedostoa. Jos korjaat väärän kuvan, poista sen vanha `public/images/<id>.webp`, jotta optimointi ei käytä vanhaa versiota välimuistista.
+
 ## Julkaisu
 
 `main`-haaran päivitykset testataan ja rakennetaan GitHub Actionsissa. Julkaisu tehdään GitHub Pagesiin osoitteeseen **https://penny-five.github.io/rappiopedia/**. Työnkulku on tiedostossa [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
