@@ -2916,7 +2916,10 @@
         -310,
         1840
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/linda_lahdenpaa.webp",
+      "imageSource": "https://images.squarespace-cdn.com/content/v1/5ea29da0ea70981e611dd91f/8e2d00c8-0776-4738-8dec-3db4b07a53cd/1BF0F7E9-D274-43A1-A26D-3162AEB10621.jpeg",
+      "imageCredit": "Emmi Juutilainen / Mimmit sijoittaa, Linda Lahdenpää -henkilöhaastattelu"
     },
     {
       "id": "teemu_tepitee_turunen",
@@ -2948,7 +2951,10 @@
         -105,
         985
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/henrik_kurvinen.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2025/10/hemppu.webp",
+      "imageCredit": "Kick-kuvakaappaus / Gekkonen, Henrik ”Hemppu” Kurvinen (8.10.2025)"
     },
     {
       "id": "bailu_etkot_2026",
