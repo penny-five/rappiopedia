@@ -1218,7 +1218,7 @@
       "name": "Janely / Jaanika Leino",
       "group": "season2",
       "cat": "person",
-      "note": "Janely osallistui PactHouse 2:een joulukuussa 2025.",
+      "note": "Janely eli Jaanika Leino on suomalainen poplaulaja ja lauluntekijä, joka rakentaa musiikkiuraa myös New Yorkissa ja osallistui PactHouse 2 -ohjelmaan vuonna 2025.",
       "x": 1587,
       "y": 1271,
       "pos3": [
@@ -1231,6 +1231,7 @@
       "imageSource": "https://image.seiska.fi/1540870.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=386&imageId=1540870&width=576&x=0.00&y=0.00",
       "imageCredit": "Seiska, Jaanika Leino / Janely; henkilöhaastattelu",
       "types": [
+        "laulaja",
         "tosi-tv-osallistuja"
       ]
     },
@@ -1659,7 +1660,7 @@
       "name": "Pyhimys",
       "group": "talks",
       "cat": "person",
-      "note": "Pyhimys vieraili PactTalksin jaksossa 92.",
+      "note": "Pyhimys eli Mikko Kuoppala on suomalainen rap-artisti, joka tunnetaan Tapa poika -albumista sekä Teflon Brothers- ja Ruger Hauer -yhtyeistä. Hän vieraili PactTalksissa lokakuussa 2026.",
       "x": 3522,
       "y": 846,
       "pos3": [
@@ -1672,7 +1673,7 @@
       "imageCredit": "Apu, Pyhimyksen henkilökuva",
       "image": "images/pyhimys.webp",
       "types": [
-        "henkilo"
+        "rap-artisti"
       ]
     },
     {
@@ -1945,7 +1946,7 @@
       "name": "PactTalks / 11.8.2026",
       "group": "talks",
       "cat": "event",
-      "note": "PactTalksin 11. elokuuta 2026 julkaistun lähetyksen juonsi Jethro Rostedt, ja mukana oli useita vieraita.",
+      "note": "PactTalksin 11.8.2026 lähetyksessä Johanna Tukiainen riiteli Joonas Mäkäräisen ja Milla Säilynojan kanssa. Tilanne kärjistyi fyysiseksi, ja juontaja Jethro Rostedt puuttui siihen.",
       "pos3": [
         777,
         171,
@@ -2811,13 +2812,13 @@
     },
     {
       "id": "tubettajat_2014",
-      "name": "Tubettajat (Yle 2014)",
+      "name": "Tubettajat (Yle 2013)",
       "group": "documents",
       "cat": "show",
       "types": [
         "dokumenttiohjelma"
       ],
-      "note": "Ylen vuoden 2014 dokumentti kolmen suomalaisen varhaisen videobloggaajan, Pasi Viherahon, Niilo22:n ja Iltapalamiehen, elämästä ja julkaisuista.",
+      "note": "Sanna-Sisko Tohkan ohjaama Tubettajat esitettiin Yle TV1:ssä 21.10.2013. Dokumentin päähenkilöitä olivat Pasi Viheraho, Niilo22 ja Iltapalamies. Dokumentti julkaistiin uudelleen Areenassa 2014.",
       "pos3": [
         1560,
         -175,
@@ -6280,34 +6281,37 @@
       "a": "niilo22",
       "b": "tubettajat_2014",
       "type": "esiintyi",
-      "label": "Ylen dokumentin päähenkilö",
+      "label": "esiintyi Tubettajat-dokumentissa",
       "src": [
-        "P134"
+        "P134",
+        "P211"
       ],
       "level": "verified",
-      "date": "2014"
+      "date": "2013-10-21"
     },
     {
       "a": "pasi",
       "b": "tubettajat_2014",
       "type": "esiintyi",
-      "label": "Ylen dokumentin päähenkilö",
+      "label": "esiintyi Tubettajat-dokumentissa",
       "src": [
-        "P134"
+        "P134",
+        "P211"
       ],
       "level": "verified",
-      "date": "2014"
+      "date": "2013-10-21"
     },
     {
       "a": "iltapalamies",
       "b": "tubettajat_2014",
       "type": "esiintyi",
-      "label": "Ylen dokumentin päähenkilö",
+      "label": "esiintyi Tubettajat-dokumentissa",
       "src": [
-        "P134"
+        "P134",
+        "P211"
       ],
       "level": "verified",
-      "date": "2014"
+      "date": "2013-10-21"
     },
     {
       "a": "laitela92",
@@ -7469,9 +7473,11 @@
       "label": "kaatoi juomaa Tegelbergin päälle riidan aikana",
       "date": "2025-12",
       "src": [
-        "P145"
+        "P145",
+        "P215"
       ],
-      "level": "reported"
+      "level": "reported",
+      "detail": "PactHouse-tuotanto antoi Janelylle virallisen varoituksen juoman heittämisestä."
     },
     {
       "a": "tegel",
@@ -7480,7 +7486,8 @@
       "label": "riiteli Janelyn kanssa PactHouse 2:ssa",
       "date": "2025-12",
       "src": [
-        "P145"
+        "P145",
+        "P215"
       ],
       "level": "reported"
     },
@@ -7491,7 +7498,8 @@
       "label": "kauden aikana syntynyt riitatilanne",
       "date": "2025-12",
       "src": [
-        "P145"
+        "P145",
+        "P215"
       ],
       "level": "reported"
     },
@@ -8316,7 +8324,7 @@
     "P134": {
       "label": "Ylen Elävä arkisto 28.5.2014: Tubettajat-dokumentti",
       "url": "https://yle.fi/a/20-119084",
-      "note": "2014 dokumentin kolme päähenkilöä: Pasi Viheraho, Niilo22 eli Mikael Kosola, Iltapalamies eli Asko Huttunen."
+      "note": "Ylen 28.5.2014 Elävän arkiston artikkeli vuoden 2013 dokumentista."
     },
     "P135": {
       "label": "Yle 2026: Niilo22 ja energiajuomista irtautuminen",
@@ -8697,6 +8705,51 @@
       "label": "Gekkonen 10.12.2025: Pottukoira kommentoi Rauno77-kohua",
       "url": "https://gekkonen.net/vakavien-syytosten-keskella-oleva-pottukoira-mita-se-kenellekaan-kuuluu/",
       "note": "Pottukoira kieltäytyi kommentoimasta lähetysten ulkopuolista tilannetta ja Rauno77 ei kommentoinut lehdelle."
+    },
+    "P211": {
+      "label": "Yle TV1 17.10.2013: Tubettajat",
+      "url": "https://vintti.yle.fi/yle.fi/tv1/juttuarkisto/dokumentit/dokumenttiprojekti-tubettajat.html",
+      "note": "Ensiesitys TV1:ssä 21.10.2013, ohjaaja Sanna-Sisko Tohka."
+    },
+    "P212": {
+      "label": "YleX 23.10.2014: Markoboy87",
+      "url": "https://yle.fi/aihe/a/20-215275",
+      "note": "Markoboy87:n varhainen juomatestiura ja suosikkivideo."
+    },
+    "P213": {
+      "label": "MTV Uutiset 26.10.2024: Janely",
+      "url": "https://www.mtvuutiset.fi/artikkeli/suomalainen-artisti-janely-on-laittanut-amerikkalaisen-unelman-rakentamiseen-kymmenia-tuhansia-sinne-ei-voi-menna-pyytelemaan-anteeksi/9035468",
+      "note": "Janelyn Yhdysvaltain musiikkiuraa käsittelevä haastattelu."
+    },
+    "P214": {
+      "label": "Janely: artistin oma esittely",
+      "url": "https://janelymusic.com/bio",
+      "note": "Artistin oma kuvaus tuotannosta ja esiintymisistä."
+    },
+    "P215": {
+      "label": "Gekkonen 4.12.2025: Janelyn ja Tegelbergin riita",
+      "url": "https://gekkonen.net/pacthouse-janely-menetti-malttinsa-laulupalautteesta-ja-paiskasi-juoman-juhana-tegelbergin-kasvoille/",
+      "note": "Talon tapahtumat ja tuotannon antama varoitus."
+    },
+    "P216": {
+      "label": "Yle 23.8.2018: Pyhimyksen ura",
+      "url": "https://yle.fi/a/3-10367202",
+      "note": "Pyhimyksen albumit, yhtyeet ja Vain elämää."
+    },
+    "P217": {
+      "label": "Yle 15.10.2026: Pyhimys ja SK-haastattelu",
+      "url": "https://yle.fi/a/74-20251551",
+      "note": "Mikko Kuoppalan julkinen kommentti pitkäaikaisesta faniviestittelystä."
+    },
+    "P218": {
+      "label": "Uuno 28.10.2026: Pyhimys PactTalksissa",
+      "url": "https://www.uuno.fi/pyhimys-avautui-jethrolle-huumehelvetistaan-kolme-ainetta-nousi-puheissa-esiin/",
+      "note": "Pyhimyksen PactTalks-haastattelun selostus."
+    },
+    "P219": {
+      "label": "Seiska 24.9.2026: Janelyn musiikkiura",
+      "url": "https://www.seiska.fi/katso/laulaja-janely-saa-jatkuvasti-moitteita-yhdesta-asiasta/2266610",
+      "note": "Janelyn New Yorkin esiintymiset ja tosi-tv."
     }
   },
   "date": "2026-11-01"
