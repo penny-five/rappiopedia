@@ -691,18 +691,96 @@ for(const button of document.querySelectorAll('#movementPad [data-move-key]')){
  button.addEventListener('keyup',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();release()}});
  button.addEventListener('blur',release);
 };
-const routeTargets=new Map();
+const routeTargets=new Map(),routeSearchNodes=[];
 function fillPathCandidates(){
  routeTargets.clear();
- const candidates=routeCandidateEntries(N);
- document.getElementById('routeCandidates').innerHTML=candidates.map(candidate=>{
+ routeSearchNodes.length=0;
+ for(const candidate of routeCandidateEntries(N)){
   routeTargets.set(candidate.displayName.trim().toLocaleLowerCase('fi'),candidate.id);
-  return `<option value="${esc(candidate.displayName)}" label="${esc(formatNodeTypes(by[candidate.id],ENTITY_TYPES))}"></option>`;
- }).join('');
+  routeSearchNodes.push({...by[candidate.id],name:candidate.displayName});
+ }
  document.getElementById('pathresult').textContent='Valitse kaksi kohdetta ja näytä niiden yhteys.';
 }
 function selectedRouteTarget(field){
  return resolveRouteTarget(document.getElementById(field).value,routeTargets);
+}
+/** Both route fields reuse the navbar's ranked search and image-rich suggestion cards. */
+function setupRouteSearch(field){
+ const input=document.getElementById(field);
+ const container=input.closest('.route-search');
+ const menu=document.getElementById(field+'Suggestions');
+ let matches=[],activeIndex=0;
+ const optionPrefix=field+'-option';
+ function close(){
+  menu.hidden=true;
+  input.setAttribute('aria-expanded','false');
+  input.removeAttribute('aria-activedescendant');
+ }
+ function render(){
+  const value=input.value.trim();
+  matches=searchNodes(routeSearchNodes,value);
+  activeIndex=0;
+  if(!value){menu.innerHTML='';close();return}
+  menu.innerHTML=matches.length?matches.map((n,i)=>
+   searchSuggestionMarkup(n,i,i===0,formatNodeTypes(by[n.id],ENTITY_TYPES),optionPrefix)
+  ).join(''):'<div class="search-empty" role="status">Ei hakutuloksia</div>';
+  menu.hidden=false;
+  input.setAttribute('aria-expanded','true');
+  if(matches.length)input.setAttribute('aria-activedescendant',optionPrefix+'-0');
+  else input.removeAttribute('aria-activedescendant');
+ }
+ function setActive(index){
+  activeIndex=index;
+  for(const [i,button] of [...menu.querySelectorAll('[data-search-id]')].entries()){
+   button.classList.toggle('active',i===index);
+   button.setAttribute('aria-selected',String(i===index));
+  }
+  input.setAttribute('aria-activedescendant',optionPrefix+'-'+index);
+  menu.querySelector('#'+optionPrefix+'-'+index)?.scrollIntoView({block:'nearest'});
+ }
+ function choose(id){
+  const node=routeSearchNodes.find(n=>n.id===id);
+  if(!node)return;
+  input.value=node.name;
+  close();
+  input.blur();
+  document.getElementById('pathresult').textContent='';
+ }
+ input.addEventListener('input',()=>{
+  if(pathNodes.length){
+   pathNodes=[];pathEdges=[];hover=null;dirty=true;
+   renderCategoryFilters();
+  }
+  render();
+ });
+ input.addEventListener('focus',render);
+ input.addEventListener('keydown',e=>{
+  if(e.key==='Enter'&&!menu.hidden&&matches.length){
+   e.preventDefault();
+   choose(matches[activeIndex].id);
+  }else if((e.key==='ArrowDown'||e.key==='ArrowUp')&&matches.length){
+   e.preventDefault();
+   if(menu.hidden)render();
+   setActive((activeIndex+(e.key==='ArrowDown'?1:-1)+matches.length)%matches.length);
+  }else if(e.key==='Escape'&&!menu.hidden){
+   e.preventDefault();e.stopPropagation();close();
+  }else if(e.key==='Enter'&&selectedRouteTarget('from')&&selectedRouteTarget('to')){
+   e.preventDefault();findRouteFromInputs();
+  }
+ });
+ menu.addEventListener('click',e=>{
+  const option=e.target.closest('[data-search-id]');
+  if(option)choose(option.dataset.searchId);
+ });
+ menu.addEventListener('error',e=>{
+  if(e.target instanceof HTMLImageElement&&e.target.classList.contains('search-avatar-image'))e.target.remove();
+ },true);
+ container.addEventListener('focusout',e=>{
+  if(!e.relatedTarget||!container.contains(e.relatedTarget))close();
+ });
+ document.addEventListener('pointerdown',e=>{
+  if(!container.contains(e.target))close();
+ });
 }
 function findRouteFromInputs(){
  const from=selectedRouteTarget('from'),to=selectedRouteTarget('to');
@@ -842,7 +920,7 @@ document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightp
  document.getElementById('leftpanel').classList.remove('mobileopen');
  if(articlePanel.classList.contains('mobileopen'))setArticleCollapsed(true);
  else {setArticleCollapsed(false);articlePanel.classList.add('mobileopen')}
-};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillPathCandidates();renderSectors();renderCategoryFilters();renderNameDensity();
+};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillPathCandidates();setupRouteSearch('from');setupRouteSearch('to');renderSectors();renderCategoryFilters();renderNameDensity();
 function openUrlNode(){
  const id=nodeIdFromHash(location.hash,by);
  if(id){selected=id;target=vec(...by[id].pos3);dist=1550;showDetails(id)}
