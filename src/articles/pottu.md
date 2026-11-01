@@ -13,3 +13,8 @@ Pottukoira oli vieraana [[pact_pottu|PactTalksin julkisessa videotallenteessa]].
 Ylen 18.6.2026 uutisen mukaan käräjäoikeus tuomitsi Pottukoiran 80 päiväsakkoon rahapelirikoksesta. Pottukoira kiisti tahallisuuden, eikä tuomio ollut uutisointihetkellä lainvoimainen. [@P59]
 
 > Kyseinen oikeusasia ei yksin osoita mitään sopimussuhdetta [[kasinok|Kasinokurkeen]] tai [[pact|PACTiin]].
+
+## Uusi tutkintasilta: PactHouse 3:n osallistuja
+Lokakuussa 2025 [[aleksi|Aleksi Nurminen]] ja [[testotimo|Testotimo]] vierailivat Pottukoiran luona Virossa. [[pullis|Pullis]] oli mukana samassa uutisoidussa vierailukokonaisuudessa. Aleksi osallistui sittemmin [[s3|PactHouse 3:een]], joten yhteys kulkee saman henkilön kahden eri tuotannon kautta. [@P60] [@P42]
+
+Loppuvuonna 2025 myös [[rauno77|Rauno77]] teki Pottukoiran kanssa yhteislähetyksiä. [@P62]
