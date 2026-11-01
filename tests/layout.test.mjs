@@ -128,6 +128,37 @@ test('Old School Tubetus separates classic video creators without dropping their
  }
 });
 
+function boundingBoxGap(a, b) {
+ return Math.hypot(...a.min.map((_, axis) =>
+  Math.max(0, a.min[axis] - b.max[axis], b.min[axis] - a.max[axis])
+ ));
+}
+
+test('related skenes remain close enough to read as connected districts', () => {
+ const familyOrScene = key => {
+  if (key === 'PACT') return familyBounds['pact-universe'];
+  if (key === 'RAPPIO') return familyBounds['rappio-universe'];
+  return skeneBoxes[key];
+ };
+ // These are broad adjacency constraints, not exact authored coordinates.
+ // All volumes still have to pass the non-intersection tests above.
+ for (const [left, right, maxGap] of [
+  ['PACT', 'poker', 650],
+  ['PACT', 'reality', 650],
+  ['PACT', 'media', 550],
+  ['RAPPIO', 'documents', 350],
+  ['RAPPIO', 'kasinokurki', 850],
+  ['documents', 'old-school-tubetus', 350],
+  ['documents', 'events', 1000],
+  ['rap', 'monarch', 700],
+  ['rap', 'media', 1000],
+  ['monarch', 'combat', 700]
+ ]) {
+  const gap = boundingBoxGap(familyOrScene(left), familyOrScene(right));
+  assert.ok(gap <= maxGap, left + ' / ' + right + ' drifted apart: ' + Math.round(gap));
+ }
+});
+
 test('bounding boxes include all coordinates even when an extra node is added', () => {
  const box = bounds3D([{ pos3: [0, 1, 2] }, { pos3: [500, -20, 800] }], 50);
  assert.deepEqual(box, { min: [-50, -70, -48], max: [550, 51, 850] });
