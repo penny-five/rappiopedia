@@ -18,6 +18,10 @@ Lokakuussa ohjelmassa vierailivat myös [[cruella_johansson|Cruella Johansson]] 
 
 Ruusutossu oli vieraana myös elokuussa. Elokuun 11. päivän erillisessä lähetyksessä esiintyivät [[johanna|Johanna Tukiainen]], [[joonasm|Joonas Mäkäräinen]] ja [[milla|Milla Säilynoja]]. [@P72] [@P41]
 
+## Jakso 96: Jethro ja Aure
+
+Lokakuun 29. päivänä julkaistun [[pacttalks_96_2026|jakson 96]] otsikkona oli *Katsojien nolot paljastukset*. KickTrackerin lähetysarkisto nimesi juontajiksi [[jethro|Jethro Rostedtin]] ja Auren. Jakso poikkesi syksyn henkilöhaastatteluista yleisön kertomuksiin perustuvalla aiheellaan. Arkiston mukaan lähetys alkoi kello 17.55. [@P7]
+
 ## Bämät matkoilla
 
 Lokakuun 23. päivän jaksossa 90 sekä 30.–31. päivän jaksoissa 97 ja 98 vierailuaiheena oli [[bamat|Bämät matkoilla]] -projekti. Ohjelman päähenkilöt [[ruusu|Pinja Ruusutossu]] ja [[alisa_bamat|Mea Ainasoja]] tekivät samana ajanjaksona [[bamat_nizza_2026|realitylähetyksiä Nizzasta]]. [@P19] [@P64] [@P67] [@P103]
