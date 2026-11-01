@@ -57,3 +57,12 @@
 /* Screen-centered, pointer-transparent reference for WASD travel. */
 .crosshair{position:absolute;left:50%;top:50%;width:28px;height:28px;transform:translate(-50%,-50%);pointer-events:none;opacity:.48;background:linear-gradient(#536c7a,#536c7a) center top/1px 10px no-repeat,linear-gradient(#536c7a,#536c7a) center bottom/1px 10px no-repeat,linear-gradient(#536c7a,#536c7a) left center/10px 1px no-repeat,linear-gradient(#536c7a,#536c7a) right center/10px 1px no-repeat}
 .crosshair::after{content:'';position:absolute;left:50%;top:50%;width:3px;height:3px;border:1px solid #536c7a;border-radius:50%;transform:translate(-50%,-50%)}
+
+/* Compact Godot-style flight speed readout; wheel changes speed, not zoom. */
+.flight-speed{position:absolute;right:15px;bottom:60px;width:168px;box-sizing:border-box;padding:10px 12px 9px;background:rgba(255,255,255,.94);border:1px solid #d7e0e5;border-radius:7px;box-shadow:0 3px 16px #233f4e12;pointer-events:none;color:#344c5a}
+.flight-speed-reading{display:flex;align-items:center;justify-content:space-between;gap:10px;height:19px}
+.flight-speed-reading svg{width:19px;height:19px;flex:none;color:#59808d}
+.flight-speed-reading output{font:600 12px/1.2 'DM Sans',Arial,sans-serif;white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:.1px}
+.flight-speed-track{height:4px;margin-top:9px;border-radius:5px;overflow:hidden;background:#dfe6ea}
+.flight-speed-fill{height:100%;border-radius:5px;background:linear-gradient(90deg,#83a9b4,#416e80);transition:width .09s ease}
+@media(max-width:680px){.flight-speed{right:10px;bottom:61px;width:152px}.quickbar{bottom:126px}}
