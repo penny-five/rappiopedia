@@ -354,7 +354,7 @@ test('removed bottom-right actions; keyboard hints are centered and movement con
  const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  const main=readFileSync(new URL('../src/main.js',import.meta.url),'utf8');
  const css=readFileSync(new URL('../src/styles.css',import.meta.url),'utf8');
- for (const id of ['home','clearSelection']) {
+ for (const id of ['home','clearSelection','reset']) {
   assert.ok(!html.includes('id="'+id+'"'));
   assert.ok(!main.includes("getElementById('"+id+"')"));
  }
