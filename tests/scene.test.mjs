@@ -207,6 +207,8 @@ test('mouse-look pitch is clamped while moving the camera never changes its loca
 });
 
 test('wheel changes flight speed instead of zoom and the HUD shows metres per second', () => {
+  assert.equal(MIN_MOVEMENT_SPEED, 300);
+  assert.equal(adjustMovementSpeed(900, 100000), 300);
   assert.ok(adjustMovementSpeed(DEFAULT_MOVEMENT_SPEED, -100) > DEFAULT_MOVEMENT_SPEED);
   assert.ok(adjustMovementSpeed(DEFAULT_MOVEMENT_SPEED, 100) < DEFAULT_MOVEMENT_SPEED);
   assert.equal(adjustMovementSpeed(MIN_MOVEMENT_SPEED, 100000), MIN_MOVEMENT_SPEED);
