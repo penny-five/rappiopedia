@@ -29,15 +29,27 @@ Esimerkki:
 > Ohjelmayhteys ei osoita yhteistä omistusta.
 ```
 
-## Evidenssiluokat
-| Luokka | Merkitys | Kirjoitustapa |
-|---|---|---|
-| `verified` | Ensisijainen julkaisu, alkuperäinen striimi, virallinen lista | "esiintyi", "julkaisi" |
-| `reported` | Journalistisesti uutisoitu tai attribuoitu väite | "X:n mukaan" |
-| `observed` | Näkyvä tunniste tai promo; vahvasti perusteltu yhteistyöpäätelmä | "viittaa yhteistyöhön; sopimusta ei nähty" |
-| `lead` | Ylilauta/Reddit-väite, kiistetty tai todentamaton | "keskustelussa väitettiin; ei vahvistettu" |
+## Evidenssiluokat: lähde voi olla myös foorumi
 
-Toistuvat foorumiväitteet ovat hyvä tutkimuksen priorisointiperuste, eivät ilman riippumatonta näyttöä vahvistettu fakta. Säästä alkuperäiset ketjulinkit ja julkaisupäivät.
+**Ylilauta, Reddit ja muut julkiset foorumit hyväksytään itsenäisiksi lähteiksi.** Rappiopedia kartoittaa muun muassa striimejä, matkaseurueita, esiintymisiä ja skenen sisäisiä tapahtumia. Niistä ei yleensä ole matkustusasiakirjoja, rekisterimerkintöjä eikä journalistisia uutisia, eikä niitä tarvitse vaatia. Merkitse kuitenkin selvästi, *mitä lähde kertoo*.
+
+| Luokka | Todistusaineiston laatu | Esimerkki |
+|---|---|---|
+| `verified` | Alkuperäinen tarkistettava kuva, video, striimitallenne, virallinen julkaisu tai muu väitteen suoraan näyttävä aineisto — myös foorumilla julkaistuna | "Videolla X ja Y esiintyvät yhdessä." |
+| `reported` | Yksilöity ensi käden kuvaus, uskottava silminnäkijäraportti tai useita aidosti riippumattomia yhtäpitäviä kuvauksia; myös foorumilta | "Ylilaudan ketjun mukaan X ja Y olivat samalla reissulla." |
+| `observed` | Julkisesta sisällöstä nähty signaali ja siitä tehty perusteltu päätelmä, esim. usean striimin sponsori-/affiliate-tunniste | "Toistuva !kasinokurki viittaa vahvasti kaupalliseen yhteistyöhön." |
+| `lead` | Yksittäinen epämääräinen huhu, nimettömän kirjoittajan spekulaatio, kiistetty tai keskenään ristiriitainen tieto | "Yksittäinen kommentoija arveli X:n järjestäneen matkan." |
+
+### Foorumilähteen arviointi käytännössä
+
+1. Linkitä **yksilöity ketju tai kommentti** lähdearkistoon, kirjaa päiväys ja väitteen sisältö. Alkuperäinen kuva tai klippi kannattaa linkittää rinnalle, jos se on saatavilla.
+2. Arvioi, kirjoittaako käyttäjä **omista havainnoistaan vai toistaako hän kuulemaansa**. Ajankohtainen, yksityiskohtainen ja helposti tarkistettava havainto voi riittää vähäriskisen suhteen merkitsemiseen.
+3. Useamman käyttäjän toisistaan riippumattomat yhtenevät kertomukset lisäävät näyttöä. Pelkkä kommenttien määrä tai huhun lainaaminen ei tuo riippumatonta vahvistusta.
+4. Tavallisen matkustamisen, ohjelmavierailun ja yhteislähetyksen voi merkitä `reported`-tasolle foorumin perusteella. Ilmaise lähde tekstissä, älä kirjoita varmentamatonta havaintoa absoluuttisena faktana.
+5. **Älä vaadi matkustusasiakirjoja** tai muita epärealistisia dokumentteja. Vakaviin rikos-, väkivalta-, hyväksikäyttö- tai petosväitteisiin tarvitaan huomattavasti vahvempi näyttö ja huolellinen attribuutio; pelkkä foorumihuhu ei riitä.
+6. Älä julkaise ei-julkisia henkilötietoja, tunnistamattomien ihmisten henkilöllisyysarvauksia tai yksityiselämän yksityiskohtia.
+
+Esimerkiksi **Upin, Pirkkiksen ja Taigan Amsterdamin-matkaa** koskevan ketjun voi merkitä tapahtuman lähteeksi ja tarvittaessa `reported`-tasolle, jos keskustelu sisältää tunnistettavia, ajankohtaisia ensi käden kertomuksia. Jos kyse on vain yhden kommentoijan arvauksesta, käytä `lead`-tasoa. Tapahtumaa ei tarvitse todistaa lentolipulla.
 
 ## Kuvien käyttö
 `node.image`: tunnistettu, käyttökelpoinen kuva-URL; `node.imageCredit`: attribuutio. Älä julkaise luvattomia mediakuvia repoon tai esitä generoitua kasvokuvaa oikeana henkilönä. Jos kuva ei lataudu, käyttöliittymä näyttää nimikirjaimet.
