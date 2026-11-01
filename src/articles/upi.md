@@ -6,6 +6,12 @@ Upin lähetykset ovat käsitelleet arkea ja striimaajan elämää, mutta myös h
 
 Heinäkuun 2026 Reddit-keskustelussa kuvailtiin Upin ja Pirkkiksen aiempia yhteislähetyksiä. Huhtikuun 2025 keskusteluketjussa Upi, Pirkkis ja [[taiga|Taiga]] yhdistettiin [[ams25|Amsterdamin-matkaan]]. [@P51] [@P52]
 
+## Yhteislähetykset ja Kieksin kohtaaminen
+
+Upin ja [[pirkkis|Pirkkiksen]] aiempia yhteislähetyksiä muisteltiin heinäkuussa 2026 Redditin Pirkkis-keskustelussa. Huhti–kesän 2025 keskustelut liittivät heidät myös [[taiga|Taigan]] kanssa [[ams25|Amsterdamin striimimatkaan]]. Matkan tarkat tapahtumat ovat toistaiseksi keskustelijoiden kertomusten varassa. [@P51] [@P52]
+
+Sami Kieksi kertoi dokumenttia koskevassa haastattelussa matkustaneensa Kajaaniin tapaamaan Upia ja Pirkkistä. Hän tapasi kuvattavat ensin ilman kameroita, ennen varsinaisia kuvauksia. Kieksin kuvauksen mukaan tällä pyrittiin helpottamaan seuraavan päivän kuvaustilanteita. [@P46]
+
 ## Aiempi rikos- ja muu julkisuus
 
 Uunon lokakuussa 2026 julkaiseman koosteen mukaan Pulkkinen sai vuonna 2021 viiden kuukauden ehdollisen vankeusrangaistuksen lapsen seksuaalisesta hyväksikäytöstä. Lehden mukaan hänen taustallaan oli myös pahoinpitely- ja rattijuopumustuomioita. Elokuussa 2025 Pulkkinen joutui lehden mukaan poistumaan Norjasta Bergenissä herättämänsä häiriön jälkeen. [@P90]
