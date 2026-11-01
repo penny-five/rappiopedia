@@ -1808,7 +1808,10 @@
       "featured": false,
       "types": [
         "juontaja"
-      ]
+      ],
+      "image": "images/jasmilla.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2026/03/jethro-rostedt-jasmilla.webp",
+      "imageCredit": "Twitch / Jetistriimaa, Gekkonen (14.3.2026): Jasmilla Rostedt vasemmalla, Jethro Rostedt oikealla (lähetyskuva)"
     },
     {
       "id": "julkkis",
