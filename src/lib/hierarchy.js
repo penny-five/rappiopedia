@@ -31,9 +31,9 @@ export function hierarchyBounds(nodes, hierarchy) {
   return bounds3D(nodes.filter(node => hierarchy.groups.includes(node.group)), hierarchy.padding ?? 145);
 }
 
-/** Selecting a root scene includes all of its child groups. */
+/** A root group or a virtual parent selector filters all its child groups. */
 export function sectorGroups(group) {
-  return hierarchyGroups.find(family => family.rootGroup === group)?.groups ?? [group];
+  return hierarchyGroups.find(family => family.rootGroup === group || family.id === group)?.groups ?? [group];
 }
 
 /** A root scene has a parent volume, rather than its own overlapping child box. */
@@ -41,7 +41,31 @@ export function isHierarchyRoot(group) {
   return hierarchyGroups.some(family => family.rootGroup === group);
 }
 
-/** Children can be indented in the scene selector without ad-hoc IDs in the UI. */
+/** Identify the sidebar parent of a child, whether the parent is a root scene or virtual. */
 export function hierarchyRootForChild(group) {
-  return hierarchyGroups.find(family => family.rootGroup && family.rootGroup !== group && family.groups.includes(group))?.rootGroup ?? null;
+  const family = hierarchyGroups.find(family => family.rootGroup !== group && family.groups.includes(group));
+  return family ? (family.rootGroup ?? family.id) : null;
+}
+
+/** One selectable parent per family, followed by indented children in family order. */
+export function hierarchyNavigationItems(skenes) {
+  const items = [], seen = new Set();
+  for (const [group, skene] of Object.entries(skenes)) {
+    if (seen.has(group)) continue;
+    const family = hierarchyGroups.find(family => family.groups.includes(group));
+    if (!family) {
+      items.push({id: group, label: skene.label, color: skene.color, child: false});
+      seen.add(group);
+      continue;
+    }
+    const parentId = family.rootGroup ?? family.id;
+    items.push({id: parentId, label: family.title, color: family.color, child: false});
+    for (const member of family.groups) {
+      seen.add(member);
+      if (member === family.rootGroup) continue;
+      const child = skenes[member];
+      if (child) items.push({id: member, label: child.label, color: child.color, child: true});
+    }
+  }
+  return items;
 }
