@@ -70,3 +70,16 @@ test('search thumbnails fall back to initials and search markup is safely escape
  assert.match(main,/searchSuggestionMarkup\(n,i,i===0,formatNodeTypes\(n,ENTITY_TYPES\)\)/);
  assert.match(main,/searchMenu\.addEventListener\('error'/);
 });
+
+test('search result option IDs can be scoped to each connection field without changing navbar IDs', () => {
+ const node={id:'p',name:'Pottukoira',image:'images/p.webp'};
+ const navbar=searchSuggestionMarkup(node,2,false,'Striimaaja');
+ const from=searchSuggestionMarkup(node,2,false,'Striimaaja','from-option');
+ const to=searchSuggestionMarkup(node,2,true,'Striimaaja','to-option');
+ assert.match(navbar,/id="search-option-2"/);
+ assert.match(from,/id="from-option-2"/);
+ assert.match(to,/id="to-option-2"/);
+ assert.match(from,/data-search-id="p"/);
+ assert.match(from,/class="search-avatar-image"/);
+ assert.match(to,/aria-selected="true"/);
+});
