@@ -2,3 +2,7 @@ node_modules/
 dist/
 .DS_Store
 *.log
+
+# Keep downloaded large originals out of Git
+assets/source-images/*
+!assets/source-images/.gitkeep
