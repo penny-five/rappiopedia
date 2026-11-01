@@ -115,6 +115,19 @@ test('only Pottukoira-centered material moves to the new child', () => {
  }
 });
 
+test('Old School Tubetus separates classic video creators without dropping their relationships', () => {
+ const byId = Object.fromEntries(nodes.map(node => [node.id, node]));
+ assert.equal(skenes['old-school-tubetus'].label, 'OLD SCHOOL TUBETUS');
+ for (const id of ['niilo22', 'iltapalamies', 'markoboy87', 'pasi']) {
+  assert.equal(byId[id]?.group, 'old-school-tubetus', id + ' primary skene');
+ }
+ assert.equal(byId.megis?.group, 'rappio');
+ const oldSchool = paddedBounds('old-school-tubetus');
+ for (const group of groups.filter(g => g !== 'old-school-tubetus' && !isHierarchyRoot(g))) {
+  assert.equal(boxesOverlap3D(oldSchool, skeneBoxes[group]), false, 'Old School Tubetus intersects ' + group);
+ }
+});
+
 test('bounding boxes include all coordinates even when an extra node is added', () => {
  const box = bounds3D([{ pos3: [0, 1, 2] }, { pos3: [500, -20, 800] }], 50);
  assert.deepEqual(box, { min: [-50, -70, -48], max: [550, 51, 850] });

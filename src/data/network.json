@@ -2128,13 +2128,13 @@
     {
       "id": "pasi",
       "name": "Pasi Viheraho",
-      "group": "media",
+      "group": "old-school-tubetus",
       "cat": "person",
       "note": "Pasi Viheraho on suomalainen varhaisen YouTube-julkisuuden videontekijä ja Pasiradion vuonna 2007 perustanut radiopersoona.",
       "pos3": [
-        -1360,
-        520,
-        1990
+        -680,
+        -1170,
+        2180
       ],
       "featured": true,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Pasi_Viheraho.jpg",
@@ -2692,16 +2692,16 @@
     {
       "id": "niilo22",
       "name": "Niilo22 / Mikael Kosola",
-      "group": "rappio",
+      "group": "old-school-tubetus",
       "cat": "person",
       "types": [
         "videontekija"
       ],
       "note": "Mikael Kosola eli Niilo22 on vuodesta 2008 arjestaan videoita julkaissut suomalainen YouTube-pioneeri. Hän esiintyi Ylen Tubettajat-dokumentissa ja vuoden 2026 Niilo22 ja viimeinen megis -dokumentissa.",
       "pos3": [
-        1760,
-        -230,
-        1230
+        -500,
+        -1120,
+        2380
       ],
       "featured": false,
       "image": "images/niilo22.webp",
@@ -2711,16 +2711,16 @@
     {
       "id": "markoboy87",
       "name": "Markoboy87",
-      "group": "rappio",
+      "group": "old-school-tubetus",
       "cat": "person",
       "types": [
         "videontekija"
       ],
       "note": "Markoboy87 on Porista lähtöisin oleva suomalainen YouTube-pioneeri, joka tunnetaan etenkin juomien avaamis- ja maisteluvideoistaan sekä värikkäistä reaktioistaan.",
       "pos3": [
-        1840,
-        -350,
-        940
+        -760,
+        -1390,
+        2460
       ],
       "featured": false,
       "image": "images/markoboy87.webp",
@@ -2730,16 +2730,16 @@
     {
       "id": "iltapalamies",
       "name": "Iltapalamies / Asko Huttunen",
-      "group": "rappio",
+      "group": "old-school-tubetus",
       "cat": "person",
       "types": [
         "videontekija"
       ],
       "note": "Asko Huttunen eli Iltapalamies on suomalainen varhainen videobloggaaja, joka teki ruoka-arvioita ja pianolla säestettyjä cover-esityksiä. Hän esiintyi Ylen vuoden 2014 Tubettajat-dokumentissa.",
       "pos3": [
-        2300,
-        -320,
-        1300
+        -480,
+        -1360,
+        2560
       ],
       "featured": false
     },

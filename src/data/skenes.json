@@ -63,5 +63,9 @@
   "poker": {
     "label": "JULKKISPELIT / POKERI",
     "color": "#748f62"
+  },
+  "old-school-tubetus": {
+    "label": "OLD SCHOOL TUBETUS",
+    "color": "#7690aa"
   }
 }
