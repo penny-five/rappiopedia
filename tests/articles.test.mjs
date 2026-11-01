@@ -32,10 +32,10 @@ test('optimized image paths point to local WebP files',()=>{
 test('articles begin with the subject, not a template heading or research note',()=>{
  for(const file of articles){
   const body=readFileSync(new URL(file,dir),'utf8').trim();
-  assert.ok(!/^##\\s+(?:Yhteenveto|Dokumentoidut yhteydet|Lähteen rajaus)\\b/m.test(body),file+' contains generic template sections');
+  assert.ok(!/^##\s+(?:Yhteenveto|Dokumentoidut yhteydet|Lähteen rajaus)\b/m.test(body),file+' contains generic template sections');
   assert.ok(!/^(?:Tässä artikkelissa|Tässä tutkimuksessa|Verkostossa).*$/im.test(body),file+' contains editorial process prose');
-  assert.ok(!/##\\s+(?:Tulkinnan rajat|Näytön rajat|Tutkimuksen rajaus|Lähderajaus)\\b/i.test(body),file+' contains boilerplate caution heading');
-  const opening=body.split(/\\n\\n|\\n##\\s/)[0];
+  assert.ok(!/##\s+(?:Tulkinnan rajat|Näytön rajat|Tutkimuksen rajaus|Lähderajaus)\b/i.test(body),file+' contains boilerplate caution heading');
+  const opening=body.split(/\n\n|\n##\s/)[0];
   assert.ok(opening.length>=45,file+' has an inadequate introduction');
   assert.ok(!opening.startsWith('## '),file+' starts with a heading instead of an introduction');
  }
