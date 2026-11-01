@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, cameraPositionFromTarget, cameraTargetFromPosition, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, nodeOpacity, MIN_MOVEMENT_SPEED, MAX_MOVEMENT_SPEED, DEFAULT_MOVEMENT_SPEED, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from '../src/lib/scene.js';
+import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, cameraPositionFromTarget, cameraTargetFromPosition, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, storedMovementSpeed, nodeOpacity, MIN_MOVEMENT_SPEED, MAX_MOVEMENT_SPEED, DEFAULT_MOVEMENT_SPEED, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from '../src/lib/scene.js';
 
 test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
   const edges = [
@@ -333,4 +333,35 @@ test('all-space navigation is styled separately and the sidebar remains wider wh
  assert.match(css,/\.left\{position:absolute;top:72px;bottom:0;left:0;width:280px/);
  assert.match(css,/\.hud strong\{[^}]*font:700 16px\/1\.35 'DM Sans'/);
  assert.doesNotMatch(css,/\.hud strong\{[^}]*Georgia/);
+});
+
+test('base flight speed survives reloads and resetting the camera', () => {
+ for (const speed of [MIN_MOVEMENT_SPEED, DEFAULT_MOVEMENT_SPEED, 875.25, MAX_MOVEMENT_SPEED]) {
+  assert.equal(storedMovementSpeed(String(speed)),speed);
+ }
+ for (const invalid of [null,undefined,'',' ','NaN','Infinity','-1','299','6001','invalid']) {
+  assert.equal(storedMovementSpeed(invalid),DEFAULT_MOVEMENT_SPEED);
+ }
+ const main=readFileSync(new URL('../src/main.js',import.meta.url),'utf8');
+ assert.match(main,/movementSpeed=storedMovementSpeed\(localStorage\.getItem\(movementSpeedStorageKey\)\)/);
+ assert.match(main,/localStorage\.setItem\(movementSpeedStorageKey,String\(movementSpeed\)\)/);
+ assert.match(main,/movementSpeed=adjustMovementSpeed\(movementSpeed,e\.deltaY,e\.deltaMode\);persistMovementSpeed\(\)/);
+ const reset=main.slice(main.indexOf('function reset(){'),main.indexOf('function relatedForNode('));
+ assert.doesNotMatch(reset,/movementSpeed=DEFAULT_MOVEMENT_SPEED/);
+});
+
+test('removed bottom-right actions; keyboard hints are centered and movement controls lowered', () => {
+ const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ const main=readFileSync(new URL('../src/main.js',import.meta.url),'utf8');
+ const css=readFileSync(new URL('../src/styles.css',import.meta.url),'utf8');
+ for (const id of ['home','clearSelection']) {
+  assert.ok(!html.includes('id="'+id+'"'));
+  assert.ok(!main.includes("getElementById('"+id+"')"));
+ }
+ assert.doesNotMatch(css,/\.floats(?:\{| button)/);
+ assert.match(html,/<button id="reset"/);
+ assert.match(main,/getElementById\('reset'\)\.onclick=reset/);
+ assert.match(css,/\.radar\{position:absolute;left:50%;bottom:104px;transform:translateX\(-50%\)/);
+ assert.match(css,/\.movement-pad\{position:absolute;left:18px;bottom:15px;/);
+ assert.match(css,/\.flight-speed\{position:absolute;right:15px;bottom:15px;/);
 });

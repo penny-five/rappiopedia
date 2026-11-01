@@ -6,7 +6,7 @@ import ENTITY_TYPES from './data/entity-types.json';
 import { formatNodeTypes } from './lib/entity-types.js';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
-import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
+import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, storedMovementSpeed, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
 import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierarchyNavigationItems } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
@@ -20,7 +20,12 @@ const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d'),space
 let W=0,H=0,dpr=1,yaw=OVERVIEW_CAMERA.yaw,pitch=OVERVIEW_CAMERA.pitch,dist=OVERVIEW_CAMERA.dist,target={...OVERVIEW_CAMERA.target},selected=null,sector='all',nameDensity='auto',query='',hover=null,pathNodes=[],pathEdges=[],pointer=null,frame=0,visiblePoints=[],showLevels=new Set(['verified','reported','observed','lead']),focusIds=new Set();
 const labelAnchors=new Map();
 const pressedTravelKeys=new Set(),pressedPadKeys=new Set(),travelKeys=new Set(['w','a','s','d','q','e','arrowup','arrowdown','arrowleft','arrowright']);
+const movementSpeedStorageKey='rappiopedia.movementSpeed';
 let lastDrawTime=0,cameraNavigation=0,movementSpeed=DEFAULT_MOVEMENT_SPEED;
+try { movementSpeed=storedMovementSpeed(localStorage.getItem(movementSpeedStorageKey)); } catch { /* Private browsing may disable storage. */ }
+function persistMovementSpeed(){
+ try { localStorage.setItem(movementSpeedStorageKey,String(movementSpeed)); } catch { /* Flying still works without storage. */ }
+}
 function clearTravelInput(){
  pressedTravelKeys.clear();pressedPadKeys.clear();
  document.querySelectorAll('#movementPad [data-move-key]').forEach(button=>button.classList.remove('active'));
@@ -500,7 +505,7 @@ function clearSelection(){
 }
 function touchInfo(id){selected=id;pathNodes=[];pathEdges=[];showDetails(id);dirty=true;document.getElementById('rightpanel').classList.add('mobileopen')}
 function flyTo(id,zoom=true){const n=by[id];if(!n)return;const navigation=++cameraNavigation;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){if(navigation!==cameraNavigation)return;let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
-function reset(){cameraNavigation++;clearTravelInput();sector='all';nameDensity='auto';query='';document.getElementById('search').value='';document.getElementById('searchhint').textContent='';closeSearchSuggestions();target={...OVERVIEW_CAMERA.target};dist=OVERVIEW_CAMERA.dist;yaw=OVERVIEW_CAMERA.yaw;pitch=OVERVIEW_CAMERA.pitch;movementSpeed=DEFAULT_MOVEMENT_SPEED;displayMovementSpeed();renderSectors();renderNameDensity();clearSelection();}
+function reset(){cameraNavigation++;clearTravelInput();sector='all';nameDensity='auto';query='';document.getElementById('search').value='';document.getElementById('searchhint').textContent='';closeSearchSuggestions();target={...OVERVIEW_CAMERA.target};dist=OVERVIEW_CAMERA.dist;yaw=OVERVIEW_CAMERA.yaw;pitch=OVERVIEW_CAMERA.pitch;displayMovementSpeed();renderSectors();renderNameDensity();clearSelection();}
 function relatedForNode(id){
  return E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
   .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
@@ -763,8 +768,8 @@ space.addEventListener('lostpointercapture',e=>{
  pointer=null;space.classList.remove('drag');
 });
 space.addEventListener('pointerleave',()=>{if(!pointer){hover=null;dirty=true}});
-space.addEventListener('wheel',e=>{e.preventDefault();movementSpeed=adjustMovementSpeed(movementSpeed,e.deltaY,e.deltaMode);displayMovementSpeed()},{passive:false});
-document.getElementById('home').onclick=reset;document.getElementById('reset').onclick=reset;document.getElementById('clearSelection').onclick=clearSelection;
+space.addEventListener('wheel',e=>{e.preventDefault();movementSpeed=adjustMovementSpeed(movementSpeed,e.deltaY,e.deltaMode);persistMovementSpeed();displayMovementSpeed()},{passive:false});
+document.getElementById('reset').onclick=reset;
 document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{
  document.getElementById('leftpanel').classList.remove('mobileopen');
  if(articlePanel.classList.contains('mobileopen'))setArticleCollapsed(true);

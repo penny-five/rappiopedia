@@ -36,6 +36,14 @@ export const MIN_MOVEMENT_SPEED = 300;
 export const MAX_MOVEMENT_SPEED = 6000;
 export const DEFAULT_MOVEMENT_SPEED = 900;
 
+/** Validate stored base speed before using it across sessions. */
+export function storedMovementSpeed(value) {
+  if (typeof value !== 'string' || !value.trim()) return DEFAULT_MOVEMENT_SPEED;
+  const speed = Number(value);
+  return Number.isFinite(speed) && speed >= MIN_MOVEMENT_SPEED && speed <= MAX_MOVEMENT_SPEED
+    ? speed : DEFAULT_MOVEMENT_SPEED;
+}
+
 /** Wheel adjusts flight speed, with trackpad and line/page-wheel normalization. */
 export function adjustMovementSpeed(speed, deltaY, deltaMode = 0) {
   const pixels = deltaY * (deltaMode === 1 ? 18 : deltaMode === 2 ? 360 : 1);
