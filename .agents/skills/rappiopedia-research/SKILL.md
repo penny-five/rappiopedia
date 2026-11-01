@@ -22,6 +22,16 @@ Read `AGENTS.md`, `docs/RESEARCH_PLAYBOOK.md`, `docs/CONTENT_AUTHORING.md`, and 
 3. Cover relevant public rumours, competing stories, disputes and personal events naturally, with sources attributed near the relevant claims. Do not convert rumours to facts, but don't sanitise away those topics or append robotic caveat sections.
 4. Look for new connections through shared broadcasts, trips, productions and events. Record the concrete documented occurrence rather than inventing a more personal relationship.
 
+## Source discovery: community archives and Finnish entertainment reporting
+
+For Finnish rappiostriimaus, proactively search **Reddit** (especially `r/snappisensuroimaton` and `r/snappisensuroimat0n`), **Ylilauta**, **Gekkonen** (`site:gekkonen.net`), **Uuno** (`site:uuno.fi`), Seiska, Yle, and original Kick/YouTube streams. These can contain dated reports of broadcasts, trips, live incidents, participants and follow-ups unavailable in general searches. Use alternative spellings, aliases, place names, month/year and pairs of people; search specific pages rather than domain homepages.
+
+- **Reddit and Ylilauta are useful event leads and can be cited as discussions**: capture a permalink and post date, distinguish eyewitness descriptions from hearsay, check linked clips, and attribute unverified content to commenters. Votes or repeated speculation do not establish a fact. Treat anonymous diagnoses, identity guesses, and severe accusations with additional care.
+- **Gekkonen and Uuno are useful contemporaneous reporting sources**: follow the original article and publication date, check who is quoted, distinguish reporter-observed video from third-party claims, and look for police statements, first-person interviews, original video, Yle/Seiska coverage or corrections. A headline alone isn't evidence.
+- **When researching subathons, build a chronology first**: distinguish each dated run by start/end, country/city, stream name or season, and confirmed participants. An announcement verifies plans, not completion; a later viewer thread can independently establish that a run was live at a later date. Do not infer 24/7 uptime from the word 'subathon'. Avoid joining separate editions into one event.
+- **Disambiguate near-matching nicknames**: `KP2Times` (`kp`) is not `Pottukoira` (`pottu`). Generic searches for 'kp subathon' often return the former. Verify the article's subject before using it as a source.
+- Before creating a new event, check for existing nodes/articles with an alternate name or date. Prefer a source-rich specific event article and concrete, sourced participant links over generic biographies or repeated edges.
+
 ## Publish together: sources, nodes, edges, articles
 
 - `src/data/network.json` owns `nodes`, `edges`, `sources`. Reuse existing node/source IDs; don't duplicate identities. Each edge uses valid `a`/`b`, reusable `type`, event-specific `label`, `level` (`verified`/`reported`/`observed`/`lead`), and nonempty `src` source IDs. Add `date` and `detail` when useful.
