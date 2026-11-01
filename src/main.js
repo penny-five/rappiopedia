@@ -5,7 +5,7 @@ import ENTITY_TYPES from './data/entity-types.json';
 import { formatNodeTypes } from './lib/entity-types.js';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
-import { focusedNodeIds, graphLabelScale, projectedEdgePoint, cameraTravelDirection, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel } from './lib/scene.js';
+import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel } from './lib/scene.js';
 import { hierarchyGroups } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
@@ -15,7 +15,7 @@ const N=DATA.nodes,E=DATA.edges,S=DATA.sources,by=Object.fromEntries(N.map(n=>[n
 const groupMeta={core:['PACT / OHJELMAPERHE','#466b8a'],season1:['PACTHOUSE 01','#89698b'],season2:['PACTHOUSE 02','#517ea1'],season3:['PACTHOUSE 03','#7466a7'],talks:['PACT TALKS','#2d9187'],rappio:['RAPPIOSTRIIMAUS','#b46b63'],events:['TAPAHTUMAT','#ba8747'],rap:['SLIKI / KETOLA','#a5784e'],stream:['KASINOKURKI','#4485b4'],media:['MEDIA / PALSTAT','#818c97'],poker:['JULKKISPELIT / POKERI','#748f62']};
 const levels={verified:{label:'Vahvistettu',color:'#16856c'},reported:{label:'Uutisoitu',color:'#356db4'},observed:{label:'Havaittu / päätelmä',color:'#a86b0a'},lead:{label:'Johtolanka / kiistetty',color:'#b04766'}};
 const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d'),space=document.getElementById('space');
-let W=0,H=0,dpr=1,yaw=-.32,pitch=.20,dist=5700,target={x:-950,y:0,z:-100},selected='pact',sector='all',mode='focus',query='',hover=null,pathNodes=[],pathEdges=[],pointer=null,frame=0,visiblePoints=[],showLevels=new Set(['verified','reported','observed','lead']),focusIds=new Set();
+let W=0,H=0,dpr=1,yaw=-.32,pitch=.20,dist=5700,target={x:-950,y:0,z:-100},selected='pact',sector='all',nameDensity='auto',query='',hover=null,pathNodes=[],pathEdges=[],pointer=null,frame=0,visiblePoints=[],showLevels=new Set(['verified','reported','observed','lead']),focusIds=new Set();
 const pressedTravelKeys=new Set(),travelKeys=new Set(['w','a','s','d','q','e']);
 let lastDrawTime=0,cameraNavigation=0;
 const centers={},groupBounds={};for(const g of Object.keys(groupMeta)){const box=bounds3D(N.filter(n=>n.group===g),100);groupBounds[g]=box;centers[g]=box.min.map((v,i)=>(v+box.max[i])/2)}
@@ -110,7 +110,6 @@ function RR(x,y,w,h,r){ctx.beginPath();ctx.roundRect(x,y,w,h,r)}
 function hasFocus(n){return focusIds.has(n.id)}
 function inSector(n){return sector==='all'||n.group===sector||n.id===selected}
 function onPath(id){return pathNodes.includes(id)}
-function isImportant(n){return n.featured||n.id===selected||n.group===sector&&sector!=='all'}
 const groundY=-1240;
 function drawBackground(){
  ctx.fillStyle='#f6f9fc';ctx.fillRect(0,0,W,H);
@@ -252,16 +251,18 @@ function drawCirclePhoto(n,x,y,r){ctx.save();ctx.beginPath();ctx.arc(x,y,r,0,Mat
 function nodeLayout(n,p){
  const isSel=n.id===selected,isHover=n.id===hover,hot=hasFocus(n),inPath=onPath(n.id),notDim=inSector(n);
  const isHub=['pact','s1','s2','s3','talks','kieksidoc','bailu','sliki','kasinok','ylilauta'].includes(n.id);
- const visible=mode==='full'||mode==='links'||isImportant(n)||hot||inPath;
- const dot=!visible&&sector==='all'&&!isHub;
+ const {dot,showLabel}=graphNodePresentation({
+  nameDensity,selected:isSel,hovered:isHover,focused:hot,onPath:inPath,
+  featured:!!n.featured,inSelectedSector:sector!=='all'&&sector===n.group,
+  isHub,wholeSpace:sector==='all'
+ });
  const scale=Math.max(.43,Math.min(1.48,p.sc*2.75));
  const r=(isSel?12:hot?9:isHub?8:5)*scale;
  let fade=sector!=='all'&&!notDim&&!hot&&!inPath?.2:1;
  if(selected&&!hot&&!inPath)fade*=.24;
  if(pathNodes.length&&!inPath)fade*=.21;
  let label=null;
- const needLabel=isSel||isHover||hot||inPath||n.featured||mode==='full'||sector===n.group&&sector!=='all';
- if(!dot&&needLabel&&(p.sc>.12||hot)){
+ if(showLabel&&(nameDensity==='all'||p.sc>.12||hot)){
   const withPic=!!n.image,enlarged=isSel||isHover||hot;
   const labelScale=graphLabelScale(p.sc,hot);
   const w=(enlarged?186:158)*labelScale;
@@ -453,7 +454,7 @@ function clearSelection(){
 }
 function touchInfo(id){selected=id;pathNodes=[];pathEdges=[];showDetails(id);dirty=true;document.getElementById('rightpanel').classList.add('mobileopen')}
 function flyTo(id,zoom=true){const n=by[id];if(!n)return;const navigation=++cameraNavigation;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){if(navigation!==cameraNavigation)return;let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
-function reset(){cameraNavigation++;pressedTravelKeys.clear();sector='all';mode='focus';query='';document.getElementById('search').value='';document.getElementById('searchhint').textContent='';closeSearchSuggestions();pathNodes=[];pathEdges=[];selected='pact';target=vec(-950,0,-100);dist=5700;yaw=-.35;pitch=.22;renderSectors();renderModes();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
+function reset(){cameraNavigation++;pressedTravelKeys.clear();sector='all';nameDensity='auto';query='';document.getElementById('search').value='';document.getElementById('searchhint').textContent='';closeSearchSuggestions();pathNodes=[];pathEdges=[];selected='pact';target=vec(-950,0,-100);dist=5700;yaw=-.35;pitch=.22;renderSectors();renderNameDensity();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
 function relatedForNode(id){
  return E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
   .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
@@ -469,7 +470,17 @@ function showDetails(id){
  document.getElementById('wikiSourcesTab').classList.remove('active');
 }
 function renderSectors(){let box=document.getElementById('sectors');box.innerHTML=`<button class="sector ${sector==='all'?'active':''}" data-sector="all"><span class="led" style="color:#444;background:#444"></span><span class="title">KOKO AVARUUS</span><span class="count">${N.length}</span></button>`+Object.entries(groupMeta).map(([id,[name,color]])=>`<button class="sector ${id===sector?'active':''}" data-sector="${id}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${N.filter(n=>n.group===id).length}</span></button>`).join('');box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{sector=b.dataset.sector;renderSectors();if(sector!=='all'){let p=centers[sector],n=N.find(n=>n.group===sector);let st={...target},ed=vec(...p),stDist=dist,desiredDist=Math.max(1600,Math.max(...groupBounds[sector].max.map((v,i)=>v-groupBounds[sector].min[i]))*2.4),start=performance.now(),navigation=++cameraNavigation;let a=(time)=>{if(navigation!==cameraNavigation)return;let t=Math.min(1,(time-start)/620);t=1-(1-t)**3;target=vec(st.x+(ed.x-st.x)*t,st.y+(ed.y-st.y)*t,st.z+(ed.z-st.z)*t);dist=stDist+(desiredDist-stDist)*t;if(t<1)requestAnimationFrame(a)};requestAnimationFrame(a);if(n)showDetails(n.id)}else{cameraNavigation++;target=vec(800,0,350);dist=8800}})}
-function renderModes(){document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('on',b.dataset.mode===mode))}document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;renderModes()});
+function renderNameDensity(){
+ document.querySelectorAll('[data-name-density]').forEach(button=>{
+  const active=button.dataset.nameDensity===nameDensity;
+  button.classList.toggle('on',active);
+  button.setAttribute('aria-pressed',String(active));
+ });
+}
+document.querySelectorAll('[data-name-density]').forEach(button=>button.onclick=()=>{
+ nameDensity=button.dataset.nameDensity;
+ renderNameDensity();
+});
 document.querySelectorAll('[data-level]').forEach(b=>b.onclick=()=>{let k=b.dataset.level;if(showLevels.has(k))showLevels.delete(k);else showLevels.add(k);b.classList.toggle('on',showLevels.has(k));b.setAttribute('aria-pressed',String(showLevels.has(k)));if(pathNodes.length)doRoute(pathNodes[0],pathNodes[pathNodes.length-1])});
 const searchInput=document.getElementById('search');
 const searchMenu=document.getElementById('searchSuggestions');
@@ -613,7 +624,7 @@ function hit(x,y){
 }
 space.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;if(e.button!==0&&e.button!==1)return;cameraNavigation++;pointer={x:e.clientX,y:e.clientY,yaw,pitch,target:{...target},moved:false,pan:e.shiftKey||e.button===1};space.setPointerCapture(e.pointerId);space.classList.add('drag')});space.addEventListener('pointermove',e=>{let r=space.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(pointer){let dx=e.clientX-pointer.x,dy=e.clientY-pointer.y;if(Math.hypot(dx,dy)>3)pointer.moved=true;if(pointer.pan){let c=projection(),p=dist/Math.min(W,H)*1.05;target=vec(pointer.target.x-(c.right.x*dx-c.up.x*dy)*p,pointer.target.y-(c.right.y*dx-c.up.y*dy)*p,pointer.target.z-(c.right.z*dx-c.up.z*dy)*p)}else{yaw=pointer.yaw-dx*.005;pitch=Math.max(-1.35,Math.min(1.35,pointer.pitch+dy*.005))}}else{let h=hit(x,y);if(h!==hover){hover=h;dirty=true}space.style.cursor=h?'pointer':'grab'}});space.addEventListener('pointerup',e=>{let r=space.getBoundingClientRect();if(pointer&&!pointer.moved){let n=hit(e.clientX-r.left,e.clientY-r.top);if(n)flyTo(n);else clearSelection()}pointer=null;space.classList.remove('drag')});space.addEventListener('pointerleave',()=>{if(!pointer){hover=null;dirty=true}});space.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(450,Math.min(12000,dist*Math.exp(e.deltaY*.001)))},{passive:false});
 document.getElementById('zoomIn').onclick=()=>dist=Math.max(450,dist*.75);document.getElementById('zoomOut').onclick=()=>dist=Math.min(12000,dist*1.32);document.getElementById('home').onclick=reset;document.getElementById('reset').onclick=reset;document.getElementById('clearSelection').onclick=clearSelection;
-document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.toggle('mobileopen')};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderModes();
+document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.toggle('mobileopen')};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderNameDensity();
 function openUrlNode(){
  const originalId=decodeURIComponent(location.hash.replace(/^#\/node\//,''));
  const id=originalId==='okkishow'?'joachim':originalId;

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { focusedNodeIds, projectedEdgePoint, graphLabelScale, cameraTravelDirection, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
+import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
 
 test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
   const edges = [
@@ -43,6 +43,26 @@ test('route relationship labels use only traversed edges and correct direction',
     { edge: edges[0], from: 'a' },
     { edge: edges[1], from: 'a' }
   ]);
+});
+
+test('node name display has only automatic and all-names choices', () => {
+  assert.deepEqual(graphNodePresentation({ nameDensity: 'auto' }), { dot: true, showLabel: false });
+  assert.deepEqual(graphNodePresentation({ nameDensity: 'all' }), { dot: false, showLabel: true });
+  for (const property of ['selected', 'hovered', 'focused', 'onPath', 'featured', 'inSelectedSector']) {
+    assert.deepEqual(graphNodePresentation({ nameDensity: 'auto', [property]: true }), { dot: false, showLabel: true }, property);
+  }
+  assert.deepEqual(graphNodePresentation({ nameDensity: 'auto', isHub: true }), { dot: false, showLabel: false });
+  assert.deepEqual(graphNodePresentation({ nameDensity: 'auto', wholeSpace: false }), { dot: false, showLabel: false });
+  const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  assert.ok(html.includes('SOLMUJEN NIMET'));
+  assert.equal((html.match(/data-name-density=/g) || []).length, 2);
+  assert.ok(html.includes('data-name-density="auto"') && html.includes('>Automaattinen</button>'));
+  assert.ok(html.includes('data-name-density="all"') && html.includes('>Kaikki nimet</button>'));
+  assert.ok(!html.includes('data-mode="links"'));
+  const main = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
+  assert.ok(main.includes("nameDensity='auto'"));
+  assert.ok(main.includes("nameDensity==='all'||p.sc>"));
+  assert.ok(!main.includes("mode==='links'"));
 });
 
 test('focused labels have fixed size, ordinary labels shrink/grow with perspective', () => {

@@ -21,6 +21,19 @@ export function relationshipLabelEdges(edges, selected, pathNodes, pathEdges) {
     .map(edge => ({ edge, from: selected }));
 }
 
+/** Label density changes presentation, never which relationships exist. */
+export function graphNodePresentation({
+  nameDensity = 'auto', selected = false, hovered = false, focused = false,
+  onPath = false, featured = false, inSelectedSector = false,
+  isHub = false, wholeSpace = true
+} = {}) {
+  const emphasized = selected || hovered || focused || onPath || featured || inSelectedSector;
+  return {
+    dot: nameDensity !== 'all' && !emphasized && wholeSpace && !isHub,
+    showLabel: nameDensity === 'all' || emphasized
+  };
+}
+
 export function focusedNodeIds(selected, edges, enabledLevels) {
   const ids = new Set();
   if (!selected) return ids;
