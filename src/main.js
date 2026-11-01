@@ -6,7 +6,7 @@ import ENTITY_TYPES from './data/entity-types.json';
 import { formatNodeTypes } from './lib/entity-types.js';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
-import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel } from './lib/scene.js';
+import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel } from './lib/scene.js';
 import { hierarchyGroups } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
@@ -18,7 +18,7 @@ const levels={verified:{label:'Vahvistettu',color:'#16856c'},reported:{label:'Uu
 const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d'),space=document.getElementById('space');
 let W=0,H=0,dpr=1,yaw=-.32,pitch=.20,dist=5700,target={x:-950,y:0,z:-100},selected='pact',sector='all',nameDensity='auto',query='',hover=null,pathNodes=[],pathEdges=[],pointer=null,frame=0,visiblePoints=[],showLevels=new Set(['verified','reported','observed','lead']),focusIds=new Set();
 const pressedTravelKeys=new Set(),travelKeys=new Set(['w','a','s','d','q','e']);
-let lastDrawTime=0,cameraNavigation=0;
+let lastDrawTime=0,cameraNavigation=0,movementSpeed=DEFAULT_MOVEMENT_SPEED;
 const centers={},groupBounds={};for(const g of Object.keys(groupMeta)){const box=bounds3D(N.filter(n=>n.group===g),SKENES[g].padding??100);groupBounds[g]=box;centers[g]=box.min.map((v,i)=>(v+box.max[i])/2)}
 function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function image(n){return n.image||''}const photo={};for(const n of N){if(!n.image)continue;const im=new Image();im.referrerPolicy='no-referrer';im.onload=()=>{photo[n.id]=im};im.onerror=()=>{photo[n.id]=null};im.src=n.image;photo[n.id]=null}
@@ -105,6 +105,13 @@ window.addEventListener('resize',syncArticleWidth);
 syncArticleWidth();
 
 function vec(x,y,z){return{x,y,z}}function sub(a,b){return vec(a.x-b.x,a.y-b.y,a.z-b.z)}function dot(a,b){return a.x*b.x+a.y*b.y+a.z*b.z}function cross(a,b){return vec(a.y*b.z-a.z*b.y,a.z*b.x-a.x*b.z,a.x*b.y-a.y*b.x)}function norm(a){let q=Math.hypot(a.x,a.y,a.z)||1;return vec(a.x/q,a.y/q,a.z/q)}function projection(){let cam=cameraPositionFromTarget(target,yaw,pitch,dist);let forward=norm(sub(target,cam)),right=norm(cross(forward,vec(0,1,0))),up=cross(right,forward);let focal=Math.min(W*1.04,H*1.4);return {cam,forward,right,up,focal}}
+function displayMovementSpeed(){
+ const boost=pressedTravelKeys.has('shift')?2.5:1;
+ const current=movementSpeed*boost;
+ document.getElementById('speedValue').textContent=Math.round(current).toLocaleString('fi-FI')+' m/s';
+ document.getElementById('speedFill').style.width=movementSpeedFill(current)+'%';
+ document.getElementById('flightSpeed').setAttribute('aria-valuenow',String(Math.round(current)));
+}
 function pr(v,camera){let dif=sub(vec(v[0],v[1],v[2]),camera.cam),z=dot(dif,camera.forward);if(z<65)return null;let sc=camera.focal/z;return{x:W*.5+dot(dif,camera.right)*sc,y:H*.5-dot(dif,camera.up)*sc,z,sc}}
 function tint(c,a){const v=parseInt(c.replace('#',''),16);return `rgba(${(v>>16)&255},${(v>>8)&255},${v&255},${a})`}
 function RR(x,y,w,h,r){ctx.beginPath();ctx.roundRect(x,y,w,h,r)}
@@ -385,12 +392,13 @@ function draw(now){
  if(dt&&!pointer?.pan&&pressedTravelKeys.size){
   const direction=cameraTravelDirection(pressedTravelKeys,projection());
   if(direction.x||direction.y||direction.z){
-   const speed=Math.max(280,Math.min(1450,dist*.7))*(pressedTravelKeys.has('shift')?2.5:1);
+   const speed=movementSpeed*(pressedTravelKeys.has('shift')?2.5:1);
    target=vec(target.x+direction.x*speed*dt,target.y+direction.y*speed*dt,target.z+direction.z*speed*dt);
    if(pointer)pointer.moved=true; // Keyboard travel during drag must not click a node on release.
    cameraNavigation++;hover=null;dirty=true;
   }
  }
+ displayMovementSpeed();
  frame++;
  drawBackground();
  const c=projection(),ps={};for(const n of N)ps[n.id]=pr(n.pos3,c);
@@ -431,7 +439,7 @@ function draw(now){
  // An article-selected label stays in front of every other 3D node and relation.
  const selectedItem=nodes.find(item=>item.isSel&&item.label);
  if(selectedItem)nodeLabelDisplay(selectedItem);
- document.getElementById('cameraInfo').textContent='AZ '+Math.round(yaw*180/Math.PI)+'° / EL '+Math.round(pitch*180/Math.PI)+'° / D '+Math.round(dist);
+ document.getElementById('cameraInfo').textContent='AZ '+Math.round(yaw*180/Math.PI)+'° / EL '+Math.round(pitch*180/Math.PI)+'°';
  if(dirty){updateTooltip();dirty=false}
  requestAnimationFrame(draw);
 }
@@ -456,7 +464,7 @@ function clearSelection(){
 }
 function touchInfo(id){selected=id;pathNodes=[];pathEdges=[];showDetails(id);dirty=true;document.getElementById('rightpanel').classList.add('mobileopen')}
 function flyTo(id,zoom=true){const n=by[id];if(!n)return;const navigation=++cameraNavigation;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){if(navigation!==cameraNavigation)return;let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
-function reset(){cameraNavigation++;pressedTravelKeys.clear();sector='all';nameDensity='auto';query='';document.getElementById('search').value='';document.getElementById('searchhint').textContent='';closeSearchSuggestions();pathNodes=[];pathEdges=[];selected='pact';target=vec(-950,0,-100);dist=5700;yaw=-.35;pitch=.22;renderSectors();renderNameDensity();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
+function reset(){cameraNavigation++;pressedTravelKeys.clear();sector='all';nameDensity='auto';query='';document.getElementById('search').value='';document.getElementById('searchhint').textContent='';closeSearchSuggestions();pathNodes=[];pathEdges=[];selected='pact';target=vec(-950,0,-100);dist=5700;yaw=-.35;pitch=.22;movementSpeed=DEFAULT_MOVEMENT_SPEED;displayMovementSpeed();renderSectors();renderNameDensity();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
 function relatedForNode(id){
  return E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
   .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
@@ -672,8 +680,8 @@ space.addEventListener('lostpointercapture',e=>{
  pointer=null;space.classList.remove('drag');
 });
 space.addEventListener('pointerleave',()=>{if(!pointer){hover=null;dirty=true}});
-space.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(450,Math.min(12000,dist*Math.exp(e.deltaY*.001)))},{passive:false});
-document.getElementById('zoomIn').onclick=()=>dist=Math.max(450,dist*.75);document.getElementById('zoomOut').onclick=()=>dist=Math.min(12000,dist*1.32);document.getElementById('home').onclick=reset;document.getElementById('reset').onclick=reset;document.getElementById('clearSelection').onclick=clearSelection;
+space.addEventListener('wheel',e=>{e.preventDefault();movementSpeed=adjustMovementSpeed(movementSpeed,e.deltaY,e.deltaMode);displayMovementSpeed()},{passive:false});
+document.getElementById('home').onclick=reset;document.getElementById('reset').onclick=reset;document.getElementById('clearSelection').onclick=clearSelection;
 document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.toggle('mobileopen')};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderNameDensity();
 function openUrlNode(){
  const originalId=decodeURIComponent(location.hash.replace(/^#\/node\//,''));
