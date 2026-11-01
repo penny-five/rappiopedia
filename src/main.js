@@ -87,7 +87,7 @@ N.map(n=>({n,p:ps[n.id]})).filter(x=>x.p&&x.p.x>-190&&x.p.x<W+200&&x.p.y>-170&&x
 document.getElementById('cameraInfo').textContent=`AZ ${Math.round(yaw*180/Math.PI)}° / EL ${Math.round(pitch*180/Math.PI)}° / D ${Math.round(dist)}`;
 if(dirty){updateTooltip();dirty=false}requestAnimationFrame(draw)}let dirty=false;requestAnimationFrame(draw);
 function touchInfo(id){selected=id;pathNodes=[];pathEdges=[];showDetails(id);dirty=true;document.getElementById('rightpanel').classList.add('mobileopen')}
-function flyTo(id,zoom=true){const n=by[id];if(!n)return;touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
+function flyTo(id,zoom=true){const n=by[id];if(!n)return;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
 function reset(){sector='all';mode='focus';query='';document.getElementById('search').value='';pathNodes=[];pathEdges=[];selected='pact';target=vec(0,-70,0);dist=3650;yaw=-.35;pitch=.22;renderSectors();renderModes();showDetails('pact');document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.'}
 function showDetails(id){
  const n=by[id];if(!n)return;
@@ -98,6 +98,7 @@ function showDetails(id){
  document.getElementById('wikiArticleTab').classList.add('active');
  document.getElementById('wikiSourcesTab').classList.remove('active');
  document.getElementById('articleTab').classList.add('active');
+ document.getElementById('graphTab').classList.remove('active');
  document.getElementById('sourceTab').classList.remove('active');
 }
 function renderSectors(){let box=document.getElementById('sectors');box.innerHTML=`<button class="sector ${sector==='all'?'active':''}" data-sector="all"><span class="led" style="color:#444;background:#444"></span><span class="title">KOKO AVARUUS</span><span class="count">${N.length}</span></button>`+Object.entries(groupMeta).map(([id,[name,color]])=>`<button class="sector ${id===sector?'active':''}" data-sector="${id}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${N.filter(n=>n.group===id).length}</span></button>`).join('');box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{sector=b.dataset.sector;renderSectors();if(sector!=='all'){let p=centers[sector],n=N.find(n=>n.group===sector);let st={...target},ed=vec(...p),start=performance.now();let a=(time)=>{let t=Math.min(1,(time-start)/620);t=1-(1-t)**3;target=vec(st.x+(ed.x-st.x)*t,st.y+(ed.y-st.y)*t,st.z+(ed.z-st.z)*t);dist=Math.max(1250,dist+(1450-dist)*.08);if(t<1)requestAnimationFrame(a)};requestAnimationFrame(a);if(n)showDetails(n.id)}else{target=vec(0,0,0);dist=3650}})}
@@ -117,6 +118,7 @@ function openSources(){
  document.getElementById('wikiSourcesTab').classList.add('active');
  document.getElementById('wikiArticleTab').classList.remove('active');
  document.getElementById('sourceTab').classList.add('active');
+ document.getElementById('graphTab').classList.remove('active');
  document.getElementById('articleTab').classList.remove('active');
 }
 document.getElementById('allSources').onclick=openSources;
@@ -124,7 +126,7 @@ document.getElementById('sourceTab').onclick=openSources;
 document.getElementById('wikiSourcesTab').onclick=openSources;
 document.getElementById('articleTab').onclick=()=>showDetails(selected);
 document.getElementById('wikiArticleTab').onclick=()=>showDetails(selected);
-document.getElementById('graphTab').onclick=()=>{document.getElementById('leftpanel').classList.toggle('mobileopen')};
+document.getElementById('graphTab').onclick=()=>{document.getElementById('graphTab').classList.add('active');document.getElementById('articleTab').classList.remove('active');document.getElementById('sourceTab').classList.remove('active');document.getElementById('leftpanel').classList.toggle('mobileopen')};
 document.getElementById('rightpanel').addEventListener('click',event=>{
  const el=event.target.closest('[data-focus]');
  if(el&&by[el.dataset.focus])flyTo(el.dataset.focus);
@@ -133,4 +135,11 @@ function updateTooltip(){let e=document.getElementById('tooltip');if(!hover){e.s
 function hit(x,y){let hit=null,d=Infinity;for(let p of visiblePoints){if(x>=p.x-3&&x<=p.x+p.w+3&&y>=p.y-3&&y<=p.y+p.h+3){if(p.depth<d){hit=p.id;d=p.depth}}else if(Math.hypot(x-p.cx,y-p.cy)<p.r&&p.depth<d){hit=p.id;d=p.depth}}return hit}
 space.addEventListener('pointerdown',e=>{if(e.button!==0&&e.button!==1)return;pointer={x:e.clientX,y:e.clientY,yaw,pitch,target:{...target},moved:false,pan:e.shiftKey||e.button===1};space.setPointerCapture(e.pointerId);space.classList.add('drag')});space.addEventListener('pointermove',e=>{let r=space.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(pointer){let dx=e.clientX-pointer.x,dy=e.clientY-pointer.y;if(Math.hypot(dx,dy)>3)pointer.moved=true;if(pointer.pan){let c=projection(),p=dist/Math.min(W,H)*1.05;target=vec(pointer.target.x-(c.right.x*dx-c.up.x*dy)*p,pointer.target.y-(c.right.y*dx-c.up.y*dy)*p,pointer.target.z-(c.right.z*dx-c.up.z*dy)*p)}else{yaw=pointer.yaw-dx*.005;pitch=Math.max(-1.35,Math.min(1.35,pointer.pitch+dy*.005))}}else{let h=hit(x,y);if(h!==hover){hover=h;dirty=true}space.style.cursor=h?'pointer':'grab'}});space.addEventListener('pointerup',e=>{let r=space.getBoundingClientRect();if(pointer&&!pointer.moved){let n=hit(e.clientX-r.left,e.clientY-r.top);if(n)flyTo(n)}pointer=null;space.classList.remove('drag')});space.addEventListener('pointerleave',()=>{if(!pointer){hover=null;dirty=true}});space.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(450,Math.min(7600,dist*Math.exp(e.deltaY*.001)))},{passive:false});
 document.getElementById('zoomIn').onclick=()=>dist=Math.max(450,dist*.75);document.getElementById('zoomOut').onclick=()=>dist=Math.min(7600,dist*1.32);document.getElementById('home').onclick=reset;document.getElementById('reset').onclick=reset;
-document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.toggle('mobileopen')};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderModes();showDetails('pact');
+document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.toggle('mobileopen')};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderModes();
+function openUrlNode(){
+ const id=decodeURIComponent(location.hash.replace(/^#\/node\//,''));
+ if(by[id]){selected=id;target=vec(...by[id].pos3);dist=1550;showDetails(id)}else{showDetails('pact')}
+}
+window.addEventListener('popstate',openUrlNode);
+window.addEventListener('hashchange',openUrlNode);
+openUrlNode();
