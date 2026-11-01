@@ -35,7 +35,7 @@ Tarkista ennen uuden solmun lisäämistä, löytyykö sama henkilö tai tapahtum
 Avoimet tutkimusaiheet pidetään tiedostossa [`research/leads.json`](research/leads.json). Se on agenttien työjono, ei osa sivuston julkaistavaa sisältöä.
 
 - Lue tutkimusjono ennen uutta lähdekartoitusta. Valitse tärkeä avoin kysymys tai lisää uusi, jos aihe puuttuu.
-- Yhdistä tutkimus nykyisiin `nodeIds`- ja `sourceIds`-tunnisteisiin. Merkitse `questions`-kenttään selvitettävät asiat, `queries`-kenttään käyttökelpoiset haut ja `nextSteps`-kenttään seuraavat tarkistukset.
+- Yhdistä tutkimus nykyisiin `nodeIds`- ja `sourceIds`-tunnisteisiin, jos sellaiset jo ovat olemassa. Uudesta aiheesta voi tehdä tutkimusmerkinnän ennen julkisen solmun tai lähteen lisäämistä. Alkuperäiset, vielä rekisteröimättömät lähdelinkit voi kirjata `sourceUrls`-kenttään. Merkitse `questions`-kenttään selvitettävät asiat, `queries`-kenttään käyttökelpoiset haut ja `nextSteps`-kenttään seuraavat tarkistukset.
 - Kirjaa ristiriitaiset väitteet ja keskeneräiset havainnot `notes`-kenttään lähteineen. Julkiseen artikkeliin kuuluu se, mistä voidaan kirjoittaa lähteiden perusteella; työnkulun ohjeet, avoimet hakulistat ja agentin omat muistiinpanot jäävät tutkimustiedostoon.
 - Kun selvitys etenee, täydennä lähteet ja artikkeli tarvittaessa. Päivitä samalla tutkimusaiheen tila (`open`, `in-progress`, `blocked` tai `done`). Älä merkitse aihetta ratkaistuksi, jos kysymyksiä jäi.
 - `docs/RESEARCH_LOG.md` on päivättyjen havaintojen tekstimuotoinen loki; `research/leads.json` on koneellisesti luettava lista jatkotyöstä.
