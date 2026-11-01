@@ -286,7 +286,7 @@
       "name": "Sami Kieksi",
       "group": "rappio",
       "cat": "person",
-      "note": "Sami Kieksi on dokumentaristi ja Revul Media Groupin perustaja ja toimitusjohtaja. Hän on tehnyt myös rappiostriimausta käsittelevää ohjelmaa.",
+      "note": "Sami Kieksi on dokumenttiohjaaja, joka tunnetaan Some Deep Storysta, Logged Inistä, Kieksi-sarjasta ja Most Wanted: Julius Kivimäki -dokumentista.",
       "x": 830,
       "y": 2180,
       "imageCredit": "Julius Konttinen / Televisioakatemia ry, Wikimedia Commons (CC BY-SA 4.0)",
@@ -2562,6 +2562,54 @@
         3100,
         260,
         430
+      ],
+      "featured": false
+    },
+    {
+      "id": "joonas_jaaskelainen",
+      "name": "Joonas Jääskeläinen",
+      "group": "events",
+      "cat": "person",
+      "types": [
+        "henkilo"
+      ],
+      "note": "Joonas Jääskeläinen osallistui julkistettuun joulukuun 2025 1vs1 Fighting -ottelukorttiin.",
+      "pos3": [
+        3340,
+        -400,
+        -750
+      ],
+      "featured": false
+    },
+    {
+      "id": "venni_kananen",
+      "name": "Venni Kananen",
+      "group": "events",
+      "cat": "person",
+      "types": [
+        "henkilo"
+      ],
+      "note": "Venni Kananen oli Joonas Jääskeläisen ottelupariksi ilmoitettu osallistuja 1vs1 Fightingissa joulukuussa 2025.",
+      "pos3": [
+        3280,
+        -450,
+        -1030
+      ],
+      "featured": false
+    },
+    {
+      "id": "most_wanted_kivimaki",
+      "name": "Most Wanted: Julius Kivimäki (2025)",
+      "group": "media",
+      "cat": "show",
+      "types": [
+        "dokumenttiohjelma"
+      ],
+      "note": "Sami Kieksin ohjaama neliosainen HBO Max -dokumenttisarja vuodelta 2025.",
+      "pos3": [
+        3370,
+        80,
+        500
       ],
       "featured": false
     }
@@ -5502,6 +5550,42 @@
       "level": "verified",
       "date": "2024",
       "detail": ""
+    },
+    {
+      "a": "joonas_jaaskelainen",
+      "b": "fighting_1vs1_2025",
+      "type": "listattiin",
+      "label": "ilmoitettiin ottelukortille",
+      "level": "reported",
+      "src": [
+        "P128"
+      ],
+      "date": "2025-12-20",
+      "detail": "Ennakkolistalla; lähde ei kerro ottelun tulosta."
+    },
+    {
+      "a": "venni_kananen",
+      "b": "fighting_1vs1_2025",
+      "type": "listattiin",
+      "label": "ilmoitettiin ottelukortille",
+      "level": "reported",
+      "src": [
+        "P128"
+      ],
+      "date": "2025-12-20",
+      "detail": "Ennakkolistalla; lähde ei kerro ottelun tulosta."
+    },
+    {
+      "a": "sami",
+      "b": "most_wanted_kivimaki",
+      "type": "ohjasi",
+      "label": "ohjasi neliosaisen HBO Max -sarjan",
+      "level": "reported",
+      "src": [
+        "P131"
+      ],
+      "date": "2025",
+      "detail": "Aller Studiosin tuottama dokumenttisarja."
     }
   ],
   "sources": {
@@ -6144,6 +6228,31 @@
       "label": "IDFA 2024: Hard to Break -elokuvan esittely",
       "url": "https://www.idfa.nl/en/film/64aadff8-0e08-4bde-b83b-4c89aa4ac490/hard-to-break/",
       "note": "Ohjaajat Anna-Maija Heinonen ja Krista Moisio; Polygraf-tuotanto, 81 min, IDFA Youth Documentary -kilpasarja."
+    },
+    "P128": {
+      "label": "Finnfighting 9.12.2025: 1vs1 Fightingin ottelukortti ja lähetys",
+      "url": "https://finnfighting.com/1vs1-fighting-live-stream-liput/",
+      "note": "Joonas Jääskeläinen–Venni Kananen ja Satusetä–Big; Pasilan urheilutalo, Solidsport-lähetys 20.12.2025."
+    },
+    "P129": {
+      "label": "Finnfighting 20.12.2025: Claudia Barskin painoraja ja erikoissääntö",
+      "url": "https://finnfighting.com/claudia-ei-paassyt-painoihin/",
+      "note": "700 gramman painorajan ylitys ja avauskierroksen yhden pisteen vähennys, Pullis hyväksyi ottelun."
+    },
+    "P130": {
+      "label": "Yle 2.10.2024: Pottukoiran kunnianloukkaus- ja uhkaustuomio",
+      "url": "https://yle.fi/a/74-20115468",
+      "note": "Pohjois-Savon käräjäoikeus tuomitsi kahdesta kunnianloukkauksesta, kahdesta laittomasta uhkauksesta ja lievästä vahingonteosta 80 päiväsakkoon."
+    },
+    "P131": {
+      "label": "Journalisti 12.9.2025: Sami Kieksin dokumenttiura",
+      "url": "https://journalisti.fi/artikkelit/2025/09/d0kumentit/",
+      "note": "Some Deep Story, Logged In, Kieksi, Most Wanted: Julius Kivimäki, palkinnot sekä ohjaajan työskentely ja tuotannot."
+    },
+    "P132": {
+      "label": "Yle 18.6.2026: Pottukoiran rahapelimarkkinoinnin oikeusasia",
+      "url": "https://yle.fi/a/74-20229893",
+      "note": "80 päiväsakon käräjäoikeustuomio, ei lainvoimainen uutisointihetkellä; sama uutinen on myös lähteessä P59."
     }
   },
   "date": "2026-11-01"

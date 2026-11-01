@@ -1,15 +1,21 @@
-**Sami Kieksi** on suomalainen dokumenttiohjaaja, tuottaja ja yrittäjä. Hänet tunnetaan muun muassa Ylen sarjoista *Some Deep Story*, *Logged In* ja *Kieksi*. Hän on myös [[revul|Revul Media Group Oy:n]] perustaja. [@P71] [@P12]
+**Sami Kieksi** on suomalainen dokumenttiohjaaja, tuottaja ja yrittäjä. Hänet tunnetaan muun muassa Ylen *Some Deep Story*-, *Logged In*- ja *Kieksi*-sarjoista sekä HBO Maxin *[[most_wanted_kivimaki|Most Wanted: Julius Kivimäki]]* -dokumenttisarjasta. Kieksi on [[revul|Revul Media Group Oy:n]] perustaja. [@P71] [@P131] [@P12]
 
-## Nettihankkeet ja Ylilauta
+## Internetyhteisöt ennen dokumenttiuraa
 
-Kieksi toimi suomalaisissa verkkoyhteisöissä jo ennen televisiouraansa. Yle käsitteli vuonna 2020 hänen toimintaansa [[ylilauta|Ylilaudan]] parissa sekä Kolmelta aamuyöstä (3AM) -nimistä Facebook-yhteisöä, jonka hän perusti. [@P33]
+Kieksi perusti Kolmelta aamuyöstä eli 3AM -Facebook-yhteisön ja vaikutti vuonna 2015 myös [[ylilauta|Ylilaudan]] toiminnassa. Journalistin vuoden 2025 haastattelussa hän kertoi pyrkineensä muuttamaan keskustelupalstan suuntaa, mutta joutuneensa erimielisyyksiin sen omistajan kanssa. [@P33] [@P131]
 
-## Dokumenttiura
+## Some Deep Story ja Logged In
 
-Kieksi ohjasi Ylelle nuorten elämää käsittelevän *Some Deep Story* -sarjan, joka alkoi vuonna 2016. Vuonna 2020 ilmestyi *Logged In*, ja vuonna 2025 alkoi hänen nimeään kantava *Kieksi*-sarja. Tuotannoissa on käsitelty muun muassa syrjäytymistä, päihteitä ja rikollisuutta. [@P71]
+Kieksi aloitti Ylen *Some Deep Story* -dokumenttisarjan vuonna 2016. Sarja jatkui vuoteen 2022 ja käsitteli nuorten kokemuksia, syrjäytymistä ja vaikeita elämäntilanteita. Vuonna 2020 julkaistu *Logged In* käsitteli nuorten pelaamista ja arkielämää. Kieksin töitä on palkittu muun muassa Kultaisilla Venloilla sekä valtion tiedonjulkistamispalkinnolla. [@P71] [@P131]
 
-Vuonna 2026 julkaistu [[kieksidoc|rappiostriimausta käsittelevä jakso]] seurasi esimerkiksi [[pottu|Pottukoiraa]], [[iippa|Iippadaata]], [[upi|Upia]] ja [[pirkkis|Pirkkistä]]. [@P45] [@P46]
+## Muut tuotannot ja HBO Max
 
-## Revul Media Group ja Bailupaatti
+Kieksi on ohjannut myös sarjoja *Tapaus Aarnio* (2022), *Tsunami – Paluu paratiisiin* (2024) ja *Most Wanted: Julius Kivimäki* (2025). Viimeksi mainittu on Aller Studiosin tuottama neliosainen, kansainväliselle yleisölle suunnattu HBO Max -dokumenttisarja. [@P131]
 
-Kieksi on Revul Media Groupin perustaja ja toimitusjohtaja. Yhtiö tekee dokumenttituotantoja ja tapahtumia, joihin kuuluu [[bailu|Bailupaatti]]. [@P11] [@P12]
+## Kieksi-sarja ja rappiostriimaus
+
+Hänen nimeään kantavan Ylen *Kieksi*-dokumenttisarjan ensimmäinen kausi ilmestyi 2025. Toinen kausi käsitteli myös rappiostriimausta. Huhtikuussa 2026 julkaistu [[kieksidoc|rappiostriimausjakso]] seurasi muun muassa [[pottu|Pottukoiraa]], [[iippa|Iippadaata]], [[upi|Upia]] ja [[pirkkis|Pirkkistä]]. [@P45] [@P46]
+
+## Revul Media Group ja tapahtumat
+
+Kieksi on Revul Media Groupin perustaja ja toimitusjohtaja. Yhtiö tuottaa dokumentteja sekä tapahtumia, joihin kuuluu [[bailu|Bailupaatti]]. [@P11] [@P12]

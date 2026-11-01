@@ -393,6 +393,64 @@
         "Katso PactTalksin yksittäiset VOD:t ja lisää asiallisia sisältöyhteyksiä, jos aihetta."
       ],
       "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "ice-cage-9-nurminen-koistinen",
+      "title": "Ice Cage 9:n Nurminen–Koistinen-ottelu",
+      "status": "open",
+      "priority": "medium",
+      "nodeIds": [
+        "aleksi",
+        "ice9",
+        "matias_koistinen",
+        "matias_niemi",
+        "max_hynninen"
+      ],
+      "sourceIds": [
+        "P121",
+        "P122",
+        "P123"
+      ],
+      "notes": "1.11.2026: Ice Cage 8 oli Nurminen–Niemi; Koistinen ilmoitettu 19.12.2026 otteluun Ice Cage 9:ssa.",
+      "questions": [
+        "Toteutuuko ottelu ja miten se päättyy?"
+      ],
+      "queries": [
+        "\"Aleksi Nurminen\" \"Matias Koistinen\" Ice Cage 9"
+      ],
+      "nextSteps": [
+        "Tarkista ottelun toteutuminen 19.12.2026 jälkeen."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "ketola-triton-2026",
+      "title": "Ossi Ketolan aiemmat korkean panoksen pokeriottelut",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "ossi",
+        "patrik_antonius",
+        "duel_jeju_2026",
+        "duel"
+      ],
+      "sourceIds": [
+        "P124",
+        "P125",
+        "P126"
+      ],
+      "notes": "1.11.2026: 11.9.2026 Jejun 20 M USD ottelu lisätty; Triton ja Duel sponsorointi. Aiempien ottelujen tulokset vielä selvitettävä alkuperäislähetyksistä.",
+      "questions": [
+        "Mitä aiemmissa Ketolan ja Foxenin, Mokrín ja Catesin otteluissa tapahtui?",
+        "Mitä muita Tritonin tapahtumia Ketola rahoitti tai sponsoroi?"
+      ],
+      "queries": [
+        "\"Monarch\" \"Triton\" \"Alex Foxen\" \"Kayhan Mokri\" 2025"
+      ],
+      "nextSteps": [
+        "Etsi alkuperäiset Tritonin videot, kirjaa panokset ja tulokset."
+      ],
+      "updatedAt": "2026-11-01"
     }
   ]
 }
