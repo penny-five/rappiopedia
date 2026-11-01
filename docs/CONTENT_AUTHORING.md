@@ -6,7 +6,7 @@ Rappiopedian sisältö koostuu artikkeleista ja niiden taustalla olevasta verkos
 
 Avaa [`src/data/network.json`](../src/data/network.json). Sen `nodes`-taulukossa ovat sivuston aiheet. Tarkista ensin, onko aihe jo mukana toisella nimellä.
 
-Skenet (nimet, värit ja 3D-marginaalit) määritellään tiedostossa [`src/data/skenes.json`](../src/data/skenes.json). `rappio` sisältää ensisijaisesti itsenäisen rappiostriimauksen, `kasinokurki` lähteistetysti Kasinokurki-nimeä lähetyksissään käyttävät tekijät. PACT-vierailu voi pysyä yhteytenä ilman että henkilö sijoitetaan PACT-skeneen. Rappiostriimauksen marginaali on 160 yksikköä, muiden oletus on 100; skenejä ei saa sijoittaa lomittain.
+Skenet (nimet, värit ja 3D-marginaalit) määritellään tiedostossa [`src/data/skenes.json`](../src/data/skenes.json). `rappio` sisältää ensisijaisesti itsenäisen rappiostriimauksen, `kasinokurki` lähteistetysti Kasinokurki-nimeä lähetyksissään käyttävät tekijät. PACT-vierailu voi pysyä yhteytenä ilman että henkilö sijoitetaan PACT-skeneen. Rappiostriimauksen **ylälaatikon** marginaali on 160 yksikköä, PACTin 145 ja alalaatikoiden oletus 100. Hierarkiat määritellään tiedostossa [`src/lib/hierarchy.js`](../src/lib/hierarchy.js), jossa `rootGroup` tarkoittaa ylätason omia solmuja ilman erillistä sisälaatikkoa. `rappio` sisältää yleiset rappiostriimaajat ja `pottu-streams` Pottukoiran omaan lähetyskokonaisuuteen liittyvän sisällön. Älä päättele vierailijan kuuluvan toisen tekijän alaskeneen vain yhteislähetyksen perusteella. Hierarkiaa laajennettaessa varmista koko 3D-perheen ja alaryhmien rajalaatikot `tests/layout.test.mjs`-testillä.
 
 Solmun kentät:
 - `id`: pysyvä, lyhyt tunniste, esimerkiksi `jethro`
