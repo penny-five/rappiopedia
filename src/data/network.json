@@ -690,7 +690,7 @@
       "name": "Juhana Tegelberg",
       "group": "rappio",
       "cat": "person",
-      "note": "Juhana Tegelberg on TikTok-livelähetyksistä, voimaharjoittelusta ja PactHousesta tunnettu somepersoona.",
+      "note": "Juhana Tegelberg tunnetaan TikTok-livelähetyksistään ja PactHouse-kausista. Hänen toukokuun 2026 lyhyt PactHouse 3 -vierailunsa sekä sen äänestyksistä syntynyt kiista nousivat uutisiin.",
       "x": 580,
       "y": 830,
       "pos3": [
@@ -3627,7 +3627,7 @@
         160,
         2620
       ],
-      "note": "DjPate246 tunnetaan 2010-luvun alun tamperelaisista arkivideoista, muun muassa kauppakassien ja arjen tapahtumien kuvaamisesta.",
+      "note": "DjPate246 on 2010-luvun alusta lähtien videoita julkaissut suomalainen videobloggaaja. Hänen Pasi Jaakkola -nimiseltä YouTube-kanavaltaan löytyy myös yhteinen sunnuntaitapaaminen Pasi Viherahon ja Sillu100%:n kanssa 19.1.2014.",
       "featured": false
     },
     {
@@ -3765,6 +3765,54 @@
       "image": "images/susanna_penttila.webp",
       "imageSource": "https://image.seiska.fi/1063848.webp?compression=70&format=webp&height=678&imageId=1063848&width=1200",
       "imageCredit": "Tomi Natri / Seiska, Susanna Penttilä Férrer-liikkeessään (24.6.2023)"
+    },
+    {
+      "id": "djpate_sillu_pasi_2014",
+      "name": "DjPate246:n, Sillun ja Viherahon videotapaaminen 19.1.2014",
+      "group": "old-school-tubetus",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "DjPate246 julkaisi 19.1.2014 yhteistapaamisvideon, jonka nimessä ovat Pasi Viheraho, Sillu100% ja DjPate246. Videon kuvaus kutsuu kohtaamista sunnuntain miitiksi.",
+      "pos3": [
+        1750,
+        180,
+        2630
+      ],
+      "featured": false
+    },
+    {
+      "id": "tegel_pact3_vierailu_2026",
+      "name": "Juhana Tegelbergin PactHouse 3 -vierailu 4.–6.5.2026",
+      "group": "season3",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Juhana Tegelberg tuli PactHouse 3:een yleisöäänestyksellä 4.5.2026 ja poistui 6.5. Tegelberg arvosteli äänestyksiä jälkikäteen, mutta tuotanto kertoi yleisön äänestäneen myös hänen poistumisestaan.",
+      "pos3": [
+        -1070,
+        770,
+        -970
+      ],
+      "featured": false
+    },
+    {
+      "id": "pacttalks_96_2026",
+      "name": "PactTalks 96: Jethro ja Aure 29.10.2026",
+      "group": "talks",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "PactTalksin 29.10.2026 lähetys (jakso 96) käsitteli katsojien noloja paljastuksia. Lähetysotsikon mukaan juontajina olivat Jethro Rostedt ja Aure.",
+      "pos3": [
+        610,
+        340,
+        -80
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -5203,13 +5251,14 @@
     {
       "a": "tegel",
       "b": "s3",
-      "label": "kesken kauden tullut vierailija",
+      "label": "saapui vieraaksi 4.5. ja poistui 6.5.2026",
       "src": [
         "P34",
-        "P147"
+        "P147",
+        "P243"
       ],
-      "level": "verified",
-      "date": "5.5.2026",
+      "level": "reported",
+      "date": "2026-05-04",
       "type": "vieraili"
     },
     {
@@ -8117,6 +8166,83 @@
       ],
       "level": "reported",
       "date": "2026-03"
+    },
+    {
+      "a": "pasi",
+      "b": "djpate_sillu_pasi_2014",
+      "type": "esiintyi",
+      "label": "oli mukana DjPate246:n julkaisemassa sunnuntain tapaamisvideossa",
+      "src": [
+        "P240"
+      ],
+      "level": "verified",
+      "date": "2014-01-19"
+    },
+    {
+      "a": "sillu10",
+      "b": "djpate_sillu_pasi_2014",
+      "type": "esiintyi",
+      "label": "oli mukana DjPate246:n julkaisemassa sunnuntain tapaamisvideossa",
+      "src": [
+        "P240"
+      ],
+      "level": "verified",
+      "date": "2014-01-19"
+    },
+    {
+      "a": "djpate246",
+      "b": "djpate_sillu_pasi_2014",
+      "type": "esiintyi",
+      "label": "julkaisi ja esiintyi sunnuntain tapaamisvideossa",
+      "src": [
+        "P240"
+      ],
+      "level": "verified",
+      "date": "2014-01-19"
+    },
+    {
+      "a": "s3",
+      "b": "tegel_pact3_vierailu_2026",
+      "type": "sisaltaa",
+      "label": "Tegelberg saapui taloon 4.5. ja poistui 6.5. yleisöäänestyksillä",
+      "src": [
+        "P243"
+      ],
+      "level": "verified",
+      "date": "2026-05"
+    },
+    {
+      "a": "tegel",
+      "b": "tegel_pact3_vierailu_2026",
+      "type": "osallistui",
+      "label": "oli lyhyellä vierailulla ja arvosteli jälkikäteen äänestystä",
+      "src": [
+        "P243"
+      ],
+      "level": "verified",
+      "date": "2026-05"
+    },
+    {
+      "a": "talks",
+      "b": "pacttalks_96_2026",
+      "type": "sisaltaa",
+      "label": "jakso 96 käsitteli katsojien noloja paljastuksia",
+      "src": [
+        "P7"
+      ],
+      "level": "verified",
+      "date": "2026-10-29"
+    },
+    {
+      "a": "jethro",
+      "b": "pacttalks_96_2026",
+      "type": "juonsi",
+      "label": "juonsi jakson 96 Auren rinnalla",
+      "src": [
+        "P7"
+      ],
+      "level": "verified",
+      "date": "2026-10-29"
     }
   ],
   "sources": {
@@ -9305,6 +9431,36 @@
     "P239": {
       "label": "V2.fi 28.1.2026: Esko Eerikäinen Radio Novalla",
       "url": "https://www.v2.fi/uutiset/viihde/55669/Esko-Eerikainen-kommentoi-juontajaparinsa-vaihtumista-Tehtiin-Suomen-parasta-radiota-heittamalla/"
+    },
+    "P240": {
+      "label": "DjPate246 19.1.2014: Viheraho, Sillu100% ja DjPate246",
+      "url": "https://www.youtube.com/watch?v=0GxogGQ7AgI",
+      "note": "DjPate246:n oman kanavan 19.1.2014 julkaisema sunnuntain yhteistapaamista esittelevä video; otsikossa kolme tekijää."
+    },
+    "P241": {
+      "label": "DjPate246 14.11.2010: sai yllätysvieraan",
+      "url": "https://www.youtube.com/watch?v=fgsVLRiuK80",
+      "note": "DjPaten itse julkaisema video; kuvauksessa todetaan videon kuvaavan tilannetta Viherahon näkökulmasta."
+    },
+    "P242": {
+      "label": "Kansalliskirjaston Verkkoarkisto: MarkoRepairsin videot 2010–2017",
+      "url": "https://verkkoarkisto.kansalliskirjasto.fi/va/index.php/search?hashtag=markorepairs&material_type=video&view=video",
+      "note": "Hakutuloksissa 52 Marko Vanhasen videota alkuperäisine julkaisuajankohtineen. Sisällön katselu edellyttää vapaakappaletyöasemaa."
+    },
+    "P243": {
+      "label": "Seiska 16.5.2026: Juhana Tegelbergin PactHouse 3 -vierailu ja äänestyskiista",
+      "url": "https://www.seiska.fi/kotimaa/kilpailijalta-syytoksia-pacthouse-ohjelmasta-nain-tuotanto-vastaa/2147024",
+      "note": "Tegelberg kertoi kutsusta, hotelliodotuksesta, 4.–6.5.2026 vierailusta ja epäilyistään; tuotanto vastasi äänestysten perusteella tehdystä sisäänotosta ja poistosta."
+    },
+    "P244": {
+      "label": "DjPate246 11.1.2014: Viikonlopun meiningit (Vimeo)",
+      "url": "https://vimeo.com/83975369",
+      "note": "DjPate246:n Vimeo-tilillä julkaistu video 11.1.2014, kuvauksessa 'hyvy-tero' ja kamerassa Pate."
+    },
+    "P245": {
+      "label": "Huttunen & Kilpiö 2012: Omalla naamalla -opinnäytetyö",
+      "url": "https://www.theseus.fi/bitstream/handle/10024/43172/Huttunen_Jenny.pdf?sequence=2",
+      "note": "Seinäjoen ammattikorkeakoulun työn johdanto ja videobloggausluku: nostaa MarkoRepairsin, Pasi Viherahon ja DjPate246:n aikansa tunnettujen suomalaisvloggaajien joukkoon."
     }
   },
   "date": "2026-11-01"
