@@ -8,6 +8,6 @@ Helmikuun 5. ja 6. päivän välisenä yönä kaksikko kuvasi Pattayan baarissa 
 
 ## Omat Kick-lähetykset vuonna 2026
 
-Jalluton_Pihtaaja jatkoi striimaamista myös Thaimaan-matkan jälkeen. Hänen KickTracker-lähetysarkistossaan näkyy syyskuulta 2026 esimerkiksi ruoanlaittoa, ravintolavierailuja ja matkalähetyksiä. Syyskuun 10. päivän lähetys oli otsikoitu *Mummon tulinen burgeri testaamaan*, ja 11. syyskuuta hän striimasi Kolin-matkaltaan ja kyläbaarista. [@P258]
+Jalluton_Pihtaaja jatkoi striimaamista myös Thaimaan-matkan jälkeen. Syyskuussa 2026 hän striimasi ruoanlaittoa, ravintolavierailuja ja matkojaan. Syyskuun 10. päivän lähetys oli otsikoitu *Mummon tulinen burgeri testaamaan*, ja 11. syyskuuta hän striimasi Kolin-matkaltaan ja kyläbaarista. [@P258]
 
-Syyskuun 9. päivänä hänen oman kanavansa lähetysotsikossa mainittiin [[rauno77|Rauno77]]: *Jypin kylälle feat. @Rauno77*. Raunon arkistossa on samalta päivältä [[rauno_jalluton_syys2026|vastavuoroinen lähetysotsikko]], jossa mainitaan Jalluton_Pihtaaja. Kaksikko teki siten yhteistä IRL-sisältöä myös Pottukoirasta erillään. [@P258] [@P259]
+Syyskuun 9. päivänä Toni teki [[rauno_jalluton_syys2026|Jyväskylän-seudun lähetyksiä]] [[rauno77|Rauno77:n]] kanssa. Tonin striimi oli nimeltään *Jypin kylälle feat. @Rauno77*, ja Raunon samanaikaisessa lähetyksessä vierailija mainittiin nimellä *Jalluton_Pihtaaja*. Kaksikon yhteistyö jatkui siis erillään Pottukoiran Pattayan-matkasta. [@P258] [@P259]
