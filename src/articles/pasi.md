@@ -6,6 +6,10 @@ Seiska kuvasi Viherahoa heinäkuussa 2017 yhdeksi Suomen varhaisista YouTube-jul
 
 Viherahon kiinnostus tekniikkaan näkyi myös hänen kotistudiossaan, radio- ja puhelinlaitteissaan sekä itse rakentamissaan järjestelmissä. Seiskan haastattelussa hän kertoi saaneensa katsojilta lahjoituksina muun muassa elektroniikkaa ja muuta välineistöä. [@P114]
 
+## Tubettajat-dokumentti vuonna 2013
+
+Viheraho oli yksi Sanna-Sisko Tohkan ohjaaman [[tubettajat_2014|Tubettajat-dokumentin]] kolmesta päähenkilöstä. Yle TV1 esitti elokuvan ensimmäisen kerran 21. lokakuuta 2013. Se kuvasi Viherahon arkea, ruoanlaittoa muun muassa dyykatusta ruoasta ja hänen tapaansa julkaista elämäänsä koskevaa videomateriaalia suoraan yleisölleen. Samassa dokumentissa esiintyivät [[niilo22|Niilo22]] ja [[iltapalamies|Iltapalamies]]. [@P211] [@P134]
+
 ## Pasiradio ja oma mediatoiminta
 
 Viheraho käynnisti [[pasiradio|Pasiradion]] vuonna 2007. Omien verkkosivujensa mukaan radio toimii harrastuspohjalta ja lahjoittajien tuella. Se tarjoaa musiikkia, puheluita, ajankohtaisten asioiden kommentointia ja mahdollisuuden myös muiden tekijöiden ohjelmille. Internetjakelun rinnalla Pasiradio on lähettänyt ohjelmaa ULA- eli FM-taajuuksilla useilla paikkakunnilla. [@P118]
