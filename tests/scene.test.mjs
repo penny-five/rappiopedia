@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
+import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, cameraPositionFromTarget, cameraTargetFromPosition, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
 
 test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
   const edges = [
@@ -134,4 +134,23 @@ test('skene wireframes are clearer and the movement crosshair does not intercept
   assert.match(source, /drawWireVolume\(c, bounds, col, active \? \.35 : \.085/);
   assert.match(html, /class="crosshair" aria-hidden="true"/);
   assert.match(css, /\.crosshair\{[^}]*pointer-events:none/);
+});
+
+test('left-drag mouse look turns the camera in place instead of orbiting the target', () => {
+  const originalTarget = { x: -320, y: 150, z: 860 };
+  const initialYaw = -.35, initialPitch = .22, distance = 2300;
+  const camera = cameraPositionFromTarget(originalTarget, initialYaw, initialPitch, distance);
+  // Moving through the world changes the target and camera together; rotation still must not move us.
+  for (const [yaw, pitch] of [[-.8, .4], [1.2, -.65], [0, 0], [2.4, 1.35]]) {
+    const newTarget = cameraTargetFromPosition(camera, yaw, pitch, distance);
+    const rotatedCamera = cameraPositionFromTarget(newTarget, yaw, pitch, distance);
+    for (const axis of ['x', 'y', 'z']) {
+      assert.ok(Math.abs(rotatedCamera[axis] - camera[axis]) < 1e-9, axis);
+    }
+    assert.notDeepEqual(newTarget, originalTarget);
+  }
+
+  const source = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
+  assert.match(source, /cam:projection\(\)\.cam/);
+  assert.match(source, /target=cameraTargetFromPosition\(pointer\.cam,yaw,pitch,dist\)/);
 });
