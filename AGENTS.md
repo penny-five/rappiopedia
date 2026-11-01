@@ -26,6 +26,7 @@ Kun tehtävänä on etsiä puuttuvia henkilökuvia, korjata väärä kuva tai t�
 - **Älä lisää artikkelien loppuun automaattisia varaumia** tyyliin ”yhteinen esiintyminen ei itsessään osoita taloudellista yhteistyötä”. Kerro epävarmuudesta siinä kohdassa, jossa se koskee käsiteltävää väitettä.
 - Kirjoita myös julkisuutta saaneista huhuista, ristiriitaisista kertomuksista, kiistoista ja henkilökohtaisista tapahtumista silloin, kun ne ovat aiheen kannalta olennaisia. Esittele kertomukset luontevasti osana tapahtumahistoriaa ja viittaa niiden lähteisiin. Älä korvaa aihetta varauksilla tai poissulkemisella.
 - Älä kirjoita toimitusprosessista tai graafin rakenteesta osaksi henkilön elämäkertaa. Ilmaukset kuten ”tämä muodostaa verkostosillan” kuuluvat työmuistiinpanoihin, eivät artikkeliin.
+- **Älä myöskään selosta lähteiden tarkastamista artikkelissa.** Kirjoita tapahtuma ja sen ajankohta: ”A ja B striimasivat yhdessä” tai, jos tiedossa on vain otsikko, ”Lähetyksen nimi oli *X feat. B*”. Älä lisää kappaleita tyyliin ”lähetysarkisto vahvistaa osallistujat”, ”otsikko ei kerro, mitä muuta tapahtui” tai ”tämä artikkeli käsittelee vain...”. Siirrä keskeneräiset tutkimuskysymykset tutkimusjonoon. Aidosti kiistetty tapahtumatieto käsitellään silti siinä kohdassa, johon se kuuluu.
 - Pidä henkilöiden, ohjelmien, tapahtumien ja julkaisujen nimet sekä ajankohdat tarkkoina. Älä täytä aukkoja arvauksilla.
 
 ## Lähteet ja yhteydet
