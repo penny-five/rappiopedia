@@ -269,7 +269,7 @@
       "name": "Pottukoira / Jouko Kärkkäinen",
       "group": "pottu-streams",
       "cat": "person",
-      "note": "Pottukoira eli Jouko Kärkkäinen on suomalainen striimaaja, joka esiintyi Kieksin dokumentissa ja oli mukana Bailupaatti-risteilyn markkinoinnissa.",
+      "note": "Jouko ”Pottukoira” Kärkkäinen aloitti YouTubessa vuonna 2013 ja tuli tunnetuksi pitkistä Spurgu-TV-subathoneista sekä muiden striimaajien kanssa tehdyistä lähetyksistä.",
       "x": 650,
       "y": 2000,
       "image": "images/pottu.webp",
@@ -369,7 +369,7 @@
       "name": "Pirkka Ukko / Kari Liimatta",
       "group": "rappio",
       "cat": "person",
-      "note": "Pirkka-Ukko eli Pirkkis on striimaaja Kari Liimatta. Hän esiintyy Pottukoiran lähetyksissä ja Kieksin dokumentissa.",
+      "note": "Kari ”Pirkkis” Liimatta eli Pirkka-Ukko on suomalainen rappiostriimaaja, joka tunnetaan muun muassa Pottukoiran, Upin ja SampeF2:n kanssa tehdyistä lähetyksistä.",
       "x": 900,
       "y": 2610,
       "pos3": [
@@ -3020,6 +3020,102 @@
         2660,
         -290,
         1240
+      ],
+      "featured": false
+    },
+    {
+      "id": "pottu_sub_2023",
+      "name": "Pottukoiran 42 päivän subathon 2023",
+      "group": "pottu-streams",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Pottukoiran syksyllä 2023 päättynyt 42 päivää kestänyt Kick-maraton; hän kertoi ansainneensa sillä noin 25 000 euroa.",
+      "pos3": [
+        3105,
+        -270,
+        620
+      ],
+      "featured": false
+    },
+    {
+      "id": "pottu_pattaya_2024",
+      "name": "Pottukoiran Pattayan subathon 2024",
+      "group": "pottu-streams",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Alkuvuonna 2024 Pattayalla Thaimaassa lähetetty Spurgu-TV-subathon, jossa mukana oli Kärkkäisen Ari-ystävä.",
+      "pos3": [
+        3220,
+        -380,
+        640
+      ],
+      "featured": false
+    },
+    {
+      "id": "pottu_phuket_2024",
+      "name": "Pottukoiran Phuketin subathon 2024",
+      "group": "pottu-streams",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Pottukoiran 26. maaliskuuta 2024 alkanut Spurgu-TV:n kolmannen kauden maraton Thaimaan Phuketissa.",
+      "pos3": [
+        3435,
+        -265,
+        580
+      ],
+      "featured": false
+    },
+    {
+      "id": "pottu_viro_sub_2024",
+      "name": "Pottukoiran Viron subathon 11/2024",
+      "group": "pottu-streams",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Pottukoiran ja Pirkkiksen Virossa 15.11.2024 aloittama marraskuun Spurgu-TV-maraton.",
+      "pos3": [
+        3385,
+        -430,
+        670
+      ],
+      "featured": false
+    },
+    {
+      "id": "pottu_espanja_sub_2025",
+      "name": "Pottukoiran ja Pirkkiksen Espanjan subathon 1/2025",
+      "group": "pottu-streams",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Tammikuun 10. päivänä 2025 alkanut Gran Canarian Playa del Inglésin yhteissubathon.",
+      "pos3": [
+        3470,
+        -265,
+        375
+      ],
+      "featured": false
+    },
+    {
+      "id": "pottu_iippa_sub_2025",
+      "name": "Pottukoiran ja Iippadaan Viron subathon 4/2025",
+      "group": "pottu-streams",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Huhtikuussa 2025 alkanut Pottukoiran ja Iippadaan yhteissubathon Virossa.",
+      "pos3": [
+        3120,
+        -415,
+        530
       ],
       "featured": false
     }
@@ -6414,6 +6510,195 @@
       ],
       "level": "reported",
       "date": "2026-07-25"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_sub_2023",
+      "type": "jarjesti",
+      "label": "järjesti 42 päivän subathonin",
+      "src": [
+        "P182"
+      ],
+      "level": "reported",
+      "date": "2023-10"
+    },
+    {
+      "a": "spurgu",
+      "b": "pottu_sub_2023",
+      "type": "sisaltaa",
+      "label": "Spurgu-TV:n subathon-lähetys",
+      "src": [
+        "P182"
+      ],
+      "level": "reported",
+      "date": "2023-10"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_pattaya_2024",
+      "type": "jarjesti",
+      "label": "järjesti Pattayan subathonin",
+      "src": [
+        "P183",
+        "P184"
+      ],
+      "level": "reported",
+      "date": "2024-01"
+    },
+    {
+      "a": "spurgu",
+      "b": "pottu_pattaya_2024",
+      "type": "sisaltaa",
+      "label": "Spurgu-TV:n subathon-lähetys",
+      "src": [
+        "P183",
+        "P184"
+      ],
+      "level": "reported",
+      "date": "2024-01"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_phuket_2024",
+      "type": "jarjesti",
+      "label": "järjesti Phuketin subathonin",
+      "src": [
+        "P185"
+      ],
+      "level": "reported",
+      "date": "2024-03-26"
+    },
+    {
+      "a": "spurgu",
+      "b": "pottu_phuket_2024",
+      "type": "sisaltaa",
+      "label": "Spurgu-TV:n subathon-lähetys",
+      "src": [
+        "P185"
+      ],
+      "level": "reported",
+      "date": "2024-03-26"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_viro_sub_2024",
+      "type": "jarjesti",
+      "label": "järjesti Viron marraskuun subathonin",
+      "src": [
+        "P186",
+        "P187",
+        "P188"
+      ],
+      "level": "reported",
+      "date": "2024-11-15"
+    },
+    {
+      "a": "spurgu",
+      "b": "pottu_viro_sub_2024",
+      "type": "sisaltaa",
+      "label": "Spurgu-TV:n subathon-lähetys",
+      "src": [
+        "P186",
+        "P187",
+        "P188"
+      ],
+      "level": "reported",
+      "date": "2024-11-15"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_espanja_sub_2025",
+      "type": "jarjesti",
+      "label": "järjesti Gran Canarian subathonin",
+      "src": [
+        "P189"
+      ],
+      "level": "reported",
+      "date": "2025-01-10"
+    },
+    {
+      "a": "spurgu",
+      "b": "pottu_espanja_sub_2025",
+      "type": "sisaltaa",
+      "label": "Spurgu-TV:n subathon-lähetys",
+      "src": [
+        "P189"
+      ],
+      "level": "reported",
+      "date": "2025-01-10"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_iippa_sub_2025",
+      "type": "jarjesti",
+      "label": "järjesti Iippadaan kanssa Viron subathonin",
+      "src": [
+        "P9",
+        "P190",
+        "P191"
+      ],
+      "level": "reported",
+      "date": "2025-04-18"
+    },
+    {
+      "a": "spurgu",
+      "b": "pottu_iippa_sub_2025",
+      "type": "sisaltaa",
+      "label": "Spurgu-TV:n subathon-lähetys",
+      "src": [
+        "P9",
+        "P190",
+        "P191"
+      ],
+      "level": "reported",
+      "date": "2025-04-18"
+    },
+    {
+      "a": "pirkkis",
+      "b": "pottu_viro_sub_2024",
+      "type": "esiintyi",
+      "label": "oli Pottukoiran yhteissubathonissa",
+      "src": [
+        "P187",
+        "P188"
+      ],
+      "level": "reported",
+      "date": "2024-11-15"
+    },
+    {
+      "a": "pirkkis",
+      "b": "pottu_espanja_sub_2025",
+      "type": "esiintyi",
+      "label": "oli Pottukoiran yhteissubathonissa",
+      "src": [
+        "P189"
+      ],
+      "level": "reported",
+      "date": "2025-01-10"
+    },
+    {
+      "a": "iippa",
+      "b": "pottu_iippa_sub_2025",
+      "type": "esiintyi",
+      "label": "striimasi Pottukoiran kanssa Virossa",
+      "src": [
+        "P9",
+        "P190",
+        "P191"
+      ],
+      "level": "reported",
+      "date": "2025-04"
+    },
+    {
+      "a": "pirkkis",
+      "b": "pottu",
+      "type": "striimasi-yhdessa",
+      "label": "vieraili Pottukoiran luona heinäkuussa 2026",
+      "src": [
+        "P193"
+      ],
+      "level": "reported",
+      "date": "2026-07-14"
     }
   ],
   "sources": {
@@ -7326,6 +7611,66 @@
       "label": "Reddit 6.7.2026: Pullis ja Megis yhteislähetyksessä",
       "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1uowwpl/pullis_ja_megis_cuddlailee/",
       "note": "6.7. saman suoratoiston osallistujia käsittelevä videoketju."
+    },
+    "P182": {
+      "label": "Gekkonen 29.10.2023: Pottukoiran 42 päivän subathon",
+      "url": "https://gekkonen.net/suomalaistubettaja-ryyppasi-42-paivaa-putkeen-nain-paljon-han-tienasi-tempauksellaan-rahaa/",
+      "note": "42 päivän maraton syksyllä 2023; noin 25 000 euron tulot Kärkkäisen oman kertomuksen mukaan."
+    },
+    "P183": {
+      "label": "Gekkonen 7.1.2024: Pottukoiran Pattayan subathon",
+      "url": "https://gekkonen.net/pottukoira-lataa-suorat-sanat-thaimaalaiset-ladyboyt-ovat-paremman-nakoisia-kuin-suomalaiset-naiset/",
+      "note": "Pattayalla käynnissä ollut Spurgu-TV ja Ari-ystävän osallistuminen."
+    },
+    "P184": {
+      "label": "Seiska 2024: Pottukoiran Thaimaan subathon",
+      "url": "https://www.seiska.fi/kotimaa/seiska-selvitti-suosikkistriimaaja-pottukoiralla-minitulot-salattu-ulosottovelka-paljastui/1295277",
+      "note": "Kärkkäisen haastattelussa alkuvuoden 2024 Thaimaan noin kuuden viikon lähetysmaraton."
+    },
+    "P185": {
+      "label": "Gekkonen 28.3.2024: Phuketin Spurgu-TV",
+      "url": "https://gekkonen.net/pottukoiran-kohustriimilla-hurja-suosio-mukana-myos-bb-tahti/",
+      "note": "Kolmannen kauden Phuket-lähetys 26.3.2024 alkaen, mukana Big Brotherista tuttu Jerry."
+    },
+    "P186": {
+      "label": "Gekkonen 15.11.2024: Viron mini-subathon",
+      "url": "https://gekkonen.net/pottukoira-aloitti-taas-ryyppyputken-talta-han-nayttaa-nykyaan/",
+      "note": "Viron subathonin aloitus 15.11.2024."
+    },
+    "P187": {
+      "label": "Gekkonen 30.11.2024: Viron subathon päättymässä",
+      "url": "https://gekkonen.net/pottukoira-syotti-koiralleen-100-euroa-ja-otti-ison-mustan-tatskan-paahansa/",
+      "note": "Viron marraskuun subathon ja Pirkkiksen osallisuus, päättymiseksi ilmoitettiin 1.12."
+    },
+    "P188": {
+      "label": "Gekkonen 22.11.2024: Pottu ja Pirkkis Virossa",
+      "url": "https://gekkonen.net/oho-nain-paljon-pottukoira-on-tienannut-parhaimmillaan-kuukaudessa/",
+      "note": "Tallinnan baarit, maailmanpyörä ja puhelinpilat subathonin aikana."
+    },
+    "P189": {
+      "label": "Gekkonen 13.1.2025: Gran Canarian yhteissubathon",
+      "url": "https://gekkonen.net/pottukoira-sankarina-pelasti-kaverinsa-hengen-espanjassa/",
+      "note": "Pottukoiran ja Pirkkiksen Playa del Inglésin subathon ja Pottukoiran kertoma yöllinen vaaratilanne."
+    },
+    "P190": {
+      "label": "Reddit 29.4.2025: Viron subathonin lähetyskatkot",
+      "url": "https://www.reddit.com/r/snappisensuroimaton/comments/1kas8tr",
+      "note": "Katsojien kertomuksia Pottukoiran huhtikuun lähetyksen katkeamisesta öisin; syistä esitetyt arvaukset erillisiä."
+    },
+    "P191": {
+      "label": "Reddit 3.5.2025: Pottukoiran ja Iippadaan subathon",
+      "url": "https://www.reddit.com/r/snappisensuroimaton/comments/1ke24js",
+      "note": "Katsojakeskustelu toukokuun alun maratonista, loppumista ennakoitiin."
+    },
+    "P192": {
+      "label": "Gekkonen 22.5.2026: Pirkkistä lyötiin Kickissä",
+      "url": "https://gekkonen.net/suomalainen-rappiostriimaja-pahoinpideltiin-suorassa-lahetyksessa-kuva-ei-herkille/",
+      "note": "Pirkkistä lyötiin uutisen mukaan suorassa lähetyksessä kasvoihin ja hän sai silmäkulmaansa haavan."
+    },
+    "P193": {
+      "label": "Reddit 14.7.2026: Pirkkis Pottukoiran luona",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1uwmkvy/pirkkis_vihdoin_p%C3%A4%C3%A4tynyt_pottukoiran_luokse/",
+      "note": "Keskustelu Pirkkiksen vierailusta Pottukoiran luona heinäkuussa 2026."
     }
   },
   "date": "2026-11-01"
