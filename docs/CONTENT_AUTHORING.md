@@ -50,8 +50,8 @@ Esimerkki:
 
 Esimerkiksi **Upin, Pirkkiksen ja Taigan Amsterdamin-matkaa** koskevan ketjun voi merkitä tapahtuman lähteeksi ja tarvittaessa `reported`-tasolle, jos keskustelu sisältää tunnistettavia, ajankohtaisia ensi käden kertomuksia. Jos kyse on vain yhden kommentoijan arvauksesta, käytä `lead`-tasoa. Tapahtumaa ei tarvitse todistaa lentolipulla.
 
-## Kuvien käyttö
-`node.image`: tunnistettu, käyttökelpoinen kuva-URL; `node.imageCredit`: attribuutio. Älä julkaise luvattomia mediakuvia repoon tai esitä generoitua kasvokuvaa oikeana henkilönä. Jos kuva ei lataudu, käyttöliittymä näyttää nimikirjaimet.
+## Kuvien käsittely
+Kuvat kuuluvat Rappiopedian omaan tiedostorakenteeseen, eivät suoraan ulkoisten palvelimien URL-osoitteisiin. Hae kuvat ensin paikalliseen lähdekuvakansioon, aja projektin kuvamankeli ja käytä graafissa tuloksena syntyviä optimoituja kuvia. `node.image` osoittaa paikalliseen assettiin, esimerkiksi `/images/pottu.webp`. Kokoa henkilöt, tapahtumat ja ohjelmat samaan käsittelyputkeen; kuvaa ei tarvitse käsitellä käsin jokaisella lisäyskerralla.
 
 ## Tiedonhankinnan toistettava työprosessi
 Laajemmat käytännöt ovat [Research Playbookissa](RESEARCH_PLAYBOOK.md). Uusi tutkimushaara aloitetaan nimeämällä **kaksi tutkittavaa sektoria**, etsimällä niiden väliin sopivaa tapahtumaa tai henkilöä ja kirjaamalla haussa käytetyt nimialiakset. Lähetysmetadatasta tarkistetaan vieraat ja päivät. Foorumien ajankohtaisista kommenteista saadaan osallistujien kertomukset; kummallakaan lähdetyypillä ei yksin päätellä yksityisiä sopimuksia. Kirjaa myös mikä ei auennut tai mitä ei löytynyt.
