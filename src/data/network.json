@@ -533,7 +533,7 @@
       "x": 2600,
       "y": 2250,
       "pos3": [
-        2259,
+        2339,
         -560,
         -1243
       ],
@@ -2151,9 +2151,9 @@
       "cat": "event",
       "note": "SampeF2:n lokakuun 2026 Kick-lähetyshistoriassa esiintyvät Iippadaan ja Megiksen nimet samassa lähetysotsikossa. Megis mainitaan myös seuraavien päivien Tornion-lähetyksissä.",
       "pos3": [
-        740,
-        70,
-        450
+        2910,
+        -190,
+        -650
       ],
       "featured": false,
       "types": [
@@ -2167,9 +2167,9 @@
       "cat": "film",
       "note": "Hard to Break on Anna-Maija Heinosen ja Krista Moision ohjaama vuoden 2024 dokumenttielokuva, jossa seurataan Aten ja Jonsun elämää.",
       "pos3": [
-        1920,
-        700,
-        1370
+        -1480,
+        680,
+        2280
       ],
       "featured": false,
       "types": [
@@ -2183,9 +2183,9 @@
       "cat": "event",
       "note": "Pasilan liikuntahallissa järjestetyssä 1vs1 Fighting -illassa Pullis voitti Claudia Barskin nyrkkeilyottelussa.",
       "pos3": [
-        2400,
-        60,
-        1300
+        2420,
+        -180,
+        -720
       ],
       "featured": false,
       "types": [
@@ -2199,9 +2199,9 @@
       "cat": "person",
       "note": "Claudia Barsk on somessa tunnettu henkilö, joka kohtasi Pulliksen 1vs1 Fighting -tapahtuman pääottelussa joulukuussa 2025.",
       "pos3": [
-        2630,
-        -30,
-        1540
+        2620,
+        -60,
+        -550
       ],
       "featured": false,
       "types": [
@@ -2215,9 +2215,9 @@
       "cat": "event",
       "note": "Kirkkonummen Killinmäen retkipaikalla syttyi 21.9.2026 tulipalo, jota poliisi tutki vahingontekona. Tapaus yhdistettiin Upi-striimaajaan uutisoinnissa.",
       "pos3": [
-        2050,
-        -470,
-        1170
+        3030,
+        -440,
+        -1420
       ],
       "featured": false,
       "types": [
@@ -2268,9 +2268,9 @@
       "group": "events",
       "note": "Iida-Sofia Heimonen kuoli 20. lokakuuta 2026 sairaalahoidossa viisi päivää Kotkassa sattuneen vakavan striimilähetyksen aikaisen hätätilanteen jälkeen.",
       "pos3": [
-        1880,
-        -760,
-        1330
+        2680,
+        -790,
+        -650
       ],
       "featured": false
     },
@@ -2284,9 +2284,9 @@
       ],
       "note": "Pinja Ruusutossu otettiin Panamassa kiinni huhtikuussa 2026, oli säilössä yli kaksi kuukautta ja karkotettiin Suomeen 26. kesäkuuta.",
       "pos3": [
-        1100,
-        -410,
-        350
+        3010,
+        -100,
+        -1160
       ],
       "featured": false
     },
@@ -2300,9 +2300,9 @@
       ],
       "note": "Pinja Ruusutossu ja Mea Ainasoja tekivät Bämät matkoilla -projektiin kuuluvia Kick-lähetyksiä Nizzasta 2026 lokakuun lopulla. Jethro Rostedt osallistui matkan lähetyksiin.",
       "pos3": [
-        1060,
-        420,
-        330
+        3260,
+        -80,
+        -1380
       ],
       "featured": true
     },
@@ -2316,9 +2316,9 @@
       ],
       "note": "Nettikasinon somelähetyksessä Freakbob-asuun pukeutunut henkilö tarttui Pinja Ruusutossuun syyskuussa 2026. Ruusutossu kertoi tehneensä tapahtumasta rikosilmoituksen.",
       "pos3": [
-        1720,
-        -280,
-        -750
+        2460,
+        -320,
+        -1530
       ],
       "featured": false
     }
