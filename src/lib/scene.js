@@ -117,6 +117,15 @@ export function focusedNodeIds(selected, edges, enabledLevels) {
   return ids;
 }
 
+/** Highlighted relations widen gradually away from the selected node.
+ * Links not attached to the selection retain their existing stroke widths. */
+export function connectionStrokeWidth(edge, selected, t, highlight) {
+  if (!highlight) return 1;
+  if (edge.a !== selected && edge.b !== selected) return 2.2;
+  const distanceFromSelected = edge.a === selected ? t : 1 - t;
+  return 1.1 + 1.7 * Math.max(0, Math.min(1, distanceFromSelected));
+}
+
 /** Interpolate perspective-correct screen position along a projected 3D edge. */
 export function projectedEdgePoint(a, b, t) {
   const inverseDepth = (1 - t) / a.z + t / b.z;
