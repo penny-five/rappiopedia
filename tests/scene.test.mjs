@@ -365,3 +365,12 @@ test('removed bottom-right actions; keyboard hints are centered and movement con
  assert.match(css,/\.movement-pad\{position:absolute;left:18px;bottom:15px;/);
  assert.match(css,/\.flight-speed\{position:absolute;right:15px;bottom:15px;/);
 });
+
+test('map help aligns to bottom with a narrow-column layout fallback', () => {
+ const css=readFileSync(new URL('../src/styles.css',import.meta.url),'utf8');
+ assert.match(css,/\.space\{[^}]*container-type:inline-size/);
+ assert.match(css,/\.radar\{position:absolute;left:50%;bottom:15px;transform:translateX\(-50%\)/);
+ assert.match(css,/@container \(max-width:650px\)\{\.radar\{bottom:106px;/);
+ assert.match(css,/\.movement-pad\{position:absolute;left:18px;bottom:15px/);
+ assert.match(css,/\.flight-speed\{position:absolute;right:15px;bottom:15px/);
+});

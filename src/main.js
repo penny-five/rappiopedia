@@ -10,7 +10,7 @@ import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePo
 import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierarchyNavigationItems } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
-import { searchNodes } from './lib/search.js';
+import { searchNodes, searchSuggestionMarkup } from './lib/search.js';
 import { OVERVIEW_CAMERA, nodeIdFromHash } from './lib/navigation.js';
 
 const N=DATA.nodes,E=DATA.edges,S=DATA.sources,by=Object.fromEntries(N.map(n=>[n.id,n]));
@@ -581,7 +581,7 @@ function renderSearchSuggestions(){
  document.getElementById('searchhint').textContent=value?(searchMatches.length?`${searchMatches.length} hakuehdotusta.`:'Ei osumia'):'';
  if(!value){searchMenu.innerHTML='';closeSearchSuggestions();return}
  searchMenu.innerHTML=searchMatches.length?searchMatches.map((n,i)=>
-  `<button type="button" id="search-option-${i}" role="option" aria-selected="${i===0}" class="search-suggestion${i===0?' active':''}" data-search-id="${esc(n.id)}"><span class="search-name">${esc(n.name)}</span><span class="search-category">${esc(formatNodeTypes(n,ENTITY_TYPES))}</span></button>`
+  searchSuggestionMarkup(n,i,i===0,formatNodeTypes(n,ENTITY_TYPES))
  ).join(''):'<div class="search-empty" role="status">Ei hakutuloksia</div>';
  searchMenu.hidden=false;
  searchInput.setAttribute('aria-expanded','true');
@@ -624,6 +624,10 @@ searchMenu.addEventListener('click',e=>{
  const option=e.target.closest('[data-search-id]');
  if(option)chooseSearchSuggestion(option.dataset.searchId);
 });
+// Restore initials if a thumbnail file is unavailable.
+searchMenu.addEventListener('error',e=>{
+ if(e.target instanceof HTMLImageElement&&e.target.classList.contains('search-avatar-image'))e.target.remove();
+},true);
 searchContainer.addEventListener('focusout',e=>{
  if(!e.relatedTarget||!searchContainer.contains(e.relatedTarget))closeSearchSuggestions();
 });
