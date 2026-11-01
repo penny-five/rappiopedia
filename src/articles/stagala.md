@@ -12,6 +12,6 @@ Stagala siirtyi somevideoiden rinnalla julkkisnyrkkeilyyn. Hän osallistui vuosi
 
 Stagala osallistui joulukuussa 2025 Espanjassa järjestettyyn [[s2|PactHouse 2:een]]. Hän oli yksi kauden somejulkisuudesta tunnetuista kilpailijoista. [@P2] [@P3]
 
-Lokakuun 18. päivänä 2026 hän oli [[jethro|Jethro Rostedtin]] juontaman [[pacttalks_86_2026|PactTalksin jakson 86]] nimivieraana yhdessä Akamin kanssa. Jakson otsikko *Stagala vs Akam* viittasi heidän aiempaan vastakkainasetteluunsa. Lähetysarkiston mukaan kyse oli PactTalks-jaksosta, ei uudesta nyrkkeilyottelusta. [@P7] [@P247]
+Lokakuun 18. päivänä 2026 hän oli [[jethro|Jethro Rostedtin]] juontaman [[pacttalks_86_2026|PactTalksin jakson 86]] nimivieraana yhdessä Akamin kanssa. Jakson otsikko *Stagala vs Akam* viittasi heidän aiempaan vastakkainasetteluunsa. Tällä kertaa he kohtasivat nyrkkeilykehän sijasta keskusteluohjelmassa. [@P7] [@P247]
 
 Seiska haastatteli Stagalaa vielä lokakuun lopulla 2026 hänen ihmissuhteistaan ja elämästään julkisuuden keskellä. [@P249]
