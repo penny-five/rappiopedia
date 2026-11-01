@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, cameraPositionFromTarget, cameraTargetFromPosition, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
+import { focusedNodeIds, projectedEdgePoint, graphLabelScale, graphNodePresentation, cameraTravelDirection, cameraPositionFromTarget, cameraTargetFromPosition, cameraLookDelta, routeVisibility, relationshipLabelEdges, truncateLabel } from '../src/lib/scene.js';
 
 test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
   const edges = [
@@ -151,6 +151,57 @@ test('left-drag mouse look turns the camera in place instead of orbiting the tar
   }
 
   const source = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
-  assert.match(source, /let cam=projection\(\)\.cam;yaw=pointer\.yaw/);
-  assert.match(source, /target=cameraTargetFromPosition\(cam,yaw,pitch,dist\)/);
+  assert.match(source, /const dx=e\.clientX-pointer\.lastX,dy=e\.clientY-pointer\.lastY/);
+  assert.match(source, /const turn=cameraLookDelta\(target,yaw,pitch,dist,dx,dy\)/);
+  assert.match(source, /if\(pointer\)pointer\.moved=true/);
+});
+
+test('WASD movement interleaved with mouse-look never teleports or resets the viewing angle', () => {
+  const distance = 2300;
+  let target = { x: -320, y: 150, z: 860 };
+  let yaw = -.35, pitch = .22;
+  let expectedCamera = cameraPositionFromTarget(target, yaw, pitch, distance);
+  let expectedYaw = yaw, expectedPitch = pitch;
+  const movements = [
+    { mouse: [24, -12], travel: [0, 0, -95] },
+    { mouse: [0, 0], travel: [75, 0, -45] },
+    { mouse: [-10, 18], travel: [16, 12, -68] },
+    { mouse: [8, -4], travel: [-25, 9, 0] },
+    { mouse: [-13, 20], travel: [0, 0, 0] },
+    { mouse: [0, 0], travel: [0, 0, -80] }
+  ];
+  for (const { mouse: [dx, dy], travel: [mx, my, mz] } of movements) {
+    const turned = cameraLookDelta(target, yaw, pitch, distance, dx, dy);
+    target = turned.target;
+    yaw = turned.yaw;
+    pitch = turned.pitch;
+    expectedYaw -= dx * .005;
+    expectedPitch = Math.max(-1.35, Math.min(1.35, expectedPitch + dy * .005));
+    assert.ok(Math.abs(yaw - expectedYaw) < 1e-12, 'Mouse turn is incremental');
+    assert.ok(Math.abs(pitch - expectedPitch) < 1e-12, 'Pitch is incremental');
+    for (const axis of ['x', 'y', 'z']) {
+      assert.ok(Math.abs(cameraPositionFromTarget(target, yaw, pitch, distance)[axis] - expectedCamera[axis]) < 1e-9, 'Mouse turn must not move the camera');
+    }
+    // WASD adds a world-space displacement without affecting the live look angles.
+    target = { x: target.x + mx, y: target.y + my, z: target.z + mz };
+    expectedCamera = { x: expectedCamera.x + mx, y: expectedCamera.y + my, z: expectedCamera.z + mz };
+    for (const axis of ['x', 'y', 'z']) {
+      assert.ok(Math.abs(cameraPositionFromTarget(target, yaw, pitch, distance)[axis] - expectedCamera[axis]) < 1e-9, 'Keyboard movement must be preserved after turning');
+    }
+  }
+
+  const source = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
+  assert.match(source, /pointer\.travel\+=Math\.hypot\(dx,dy\)/);
+  assert.match(source, /space\.addEventListener\('pointercancel'/);
+  assert.match(source, /space\.addEventListener\('lostpointercapture'/);
+});
+
+test('mouse-look pitch is clamped while moving the camera never changes its location', () => {
+  const target = { x: 40, y: -300, z: 930 }, distance = 750;
+  const initialCamera = cameraPositionFromTarget(target, 2.4, .3, distance);
+  const turn = cameraLookDelta(target, 2.4, .3, distance, -60, 1000);
+  assert.equal(turn.pitch, 1.35);
+  for (const axis of ['x', 'y', 'z']) {
+    assert.ok(Math.abs(cameraPositionFromTarget(turn.target, turn.yaw, turn.pitch, distance)[axis] - initialCamera[axis]) < 1e-9);
+  }
 });
