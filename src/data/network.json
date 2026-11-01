@@ -654,7 +654,10 @@
       "featured": false,
       "types": [
         "henkilo"
-      ]
+      ],
+      "image": "images/julwill.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2020/12/bbjulia-instagram141220-2-696x362.png",
+      "imageCredit": "Julia Willmanin Instagram (@jjuliaelisa), julkaistu Gekkosen BB-Julia-jutussa (2021)"
     },
     {
       "id": "heiskari",
@@ -2252,7 +2255,10 @@
       "featured": false,
       "types": [
         "somevaikuttaja"
-      ]
+      ],
+      "image": "images/claudia_barsk.webp",
+      "imageSource": "https://image.seiska.fi/2050289.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=386&imageId=2050289&width=576&x=0.00&y=0.00",
+      "imageCredit": "Panu Hörkkö / Seiska, Claudia Barskin henkilökuva (19.1.2026)"
     },
     {
       "id": "killinmaki_2026",
