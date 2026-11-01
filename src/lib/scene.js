@@ -32,7 +32,7 @@ export function cameraLookDelta(target, yaw, pitch, distance, deltaX, deltaY) {
 }
 
 /** Distances in the scene use world units, displayed as metres while flying. */
-export const MIN_MOVEMENT_SPEED = 40;
+export const MIN_MOVEMENT_SPEED = 300;
 export const MAX_MOVEMENT_SPEED = 6000;
 export const DEFAULT_MOVEMENT_SPEED = 900;
 
