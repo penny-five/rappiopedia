@@ -7,3 +7,6 @@
 
 ## Rajaus
 Ohjelmavierailu ei tarkoita PactHouse-kilpailijana osallistumista tai sopimussuhdetta.
+
+## Bämät matkoilla
+Lokakuun 2026 Reddit-keskusteluissa [[ruusu|Ruusutossu]] ja [[alisa_bamat|Alisa]] liitetään yhteiseen [[bamat|Bämät matkoilla]] -Ranskan-striimireissuun. PactTalksin lähetyshistoriassa Bämät matkoilla on vieras jaksoissa 97–98. [@P65] [@P64]
