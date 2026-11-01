@@ -6,6 +6,10 @@ Ylen vuoden 2018 mukaan Markoboy87 oli julkaissut vuosien varrella yli sata vide
 
 Haastattelussa Markoboy87 kertoi videoissa esiintyvän kuumakallen olevan pitkälti roolihahmo. Hän myös kuvasi, ettei hänen jokapäiväinen elämänsä vastannut kaikkia katsojien hänestä saamia vaikutelmia. [@P137]
 
+## Kultakuume-haastattelu vuonna 2014
+
+YleX haastatteli Markoboy87:ää jo lokakuussa 2014, jolloin tämä kertoi ladanneensa videoita YouTubeen noin kolmen vuoden ajan. Ensimmäiset juomatestivideot hän oli julkaissut noin vuonna 2012. Hän kertoi Yle Radio 1:n *Kultakuume*-ohjelmassa aloittaneensa maisteluvideot hetken mielijohteesta. Omista videoistaan suosikikseen hän nimesi Moët-samppanjan maistelun, koska juoma kuohui voimakkaasti. [@P212]
+
 ## Fanit ja Tubecon
 
 Vuoteen 2018 mennessä kanavalle oli kertynyt yli 30 000 tilaajaa. Hänet valittiin muutamaa vuotta aiemmin Tubeconissa suosituimmaksi suomalaiseksi tubettajaksi. [[ylilauta|Ylilaudan]] käyttäjät järjestivät sen jälkeen keräyksen, jolla hankittiin Markoboy87:lle uusi televisio ja pelikonsoli. [@P137]
