@@ -43,6 +43,8 @@ Käytä tarkkoja suhdekuvauksia. ”Vieraili PactTalksissa 11.10.2026” kertoo 
 
 Myös Reddit- ja Ylilauta-ketjut voivat olla lähteitä. Linkitä täsmällinen keskustelu ja kuvaa, mitä siinä kerrotaan. Esimerkiksi käyttäjien kuvaama yhteinen matka voidaan kirjata raportoituna tapahtumana ilman virallisia matkustusasiakirjoja. Jos ketjussa vain arvaillaan, merkitse tieto sen mukaisesti.
 
+**Huhut, spekulaatio, henkilökohtaiset tapahtumat ja julkiset kiistat eivät ole automaattisesti artikkelin ulkopuolella.** Jos aihe on saanut julkista huomiota, kirjoita myös siitä. Kerro lukijalle, mitä todella tapahtui, mitä eri osapuolet ovat kertoneet, mistä epävarmat väitteet lähtivät ja mitä niistä myöhemmin selvisi. Yksittäinen julkinen väite tai keskustelu ei muutu vahvistetuksi tosiasiaksi pelkän julkaisemisen perusteella.
+
 ## 3. Kirjoita artikkeli
 
 Artikkeli tallennetaan tiedostoon `src/articles/<id>.md`. Tiedostonimen pitää vastata solmun tunnistetta.
@@ -78,7 +80,23 @@ Tavallisia Markdown-linkkejä ja HTML-koodia ei voi käyttää artikkelisisäll�
 
 Artikkelittomille solmuille näytetään `note`-tekstin ja yhteystietojen pohjalta koottu perusteksti. Siksi myös lyhyen kuvauksen pitää alkaa henkilön tai aiheen tunnistamisesta. Jos henkilöstä on saatavilla kunnollista elämäkertatietoa tai hänen elämäänsä liittyy merkittävä julkinen tapahtuma, kirjoita oma artikkelitiedosto automaattisen tekstin sijaan.
 
-## 4. Kuvat
+## 4. Agenttien tutkimusjono
+
+Kun aihetta ei ehditä selvittää loppuun, kirjaa jatkotutkimus tiedostoon [`research/leads.json`](../research/leads.json). Tämä JSON-tiedosto on agenttien työmuistia, eikä sivusto lue tai julkaise sen sisältöä.
+
+Yhden tutkimusaiheen kentät ovat:
+- `id` ja `title`: tunniste ja ymmärrettävä nimi
+- `status`: `open`, `in-progress`, `blocked` tai `done`
+- `priority`: `high`, `medium` tai `low`
+- `nodeIds` ja `sourceIds`: olemassa oleviin verkostosolmuihin ja lähteisiin viittaavat tunnisteet
+- `notes`: mitä on jo löytynyt, mistä lähteestä ja missä tiedot ovat epäselviä
+- `questions`: kysymykset, joihin tarvitaan vastaus
+- `queries`: seuraaviin hakuihin soveltuvat hakulausekkeet
+- `nextSteps`: konkreettiset toimet, esimerkiksi alkuperäisen lähetyksen etsiminen tai uutisten ristiriidan tarkistaminen
+
+Tutkimusjonossa saa pitää keskeneräisiä huhuja ja vihjeitä erillään valmiista tekstistä. Kun tieto tarkentuu, muokkaa artikkelia sen mukaan ja päivitä tutkimusaiheen tila. Älä kopioi työmuistiinpanoja suoraan artikkelin loppuun. Ateenan-matkan tutkimusaihe `pirkkis-athens-2025` näyttää, miten avoimet kysymykset ja alkuperäisten striimien etsintä kirjataan.
+
+## 5. Kuvat
 
 Kuvia voi käsitellä skriptillä `scripts/process_images.py`. Se muuntaa lähdekuvat pieniksi WebP-tiedostoiksi `public/images/`-hakemistoon ja voi päivittää kuvatiedoston polun verkostodataan.
 
@@ -97,7 +115,7 @@ python scripts/process_images.py --download --update-data
 
 Näin julkaistavaan sivustoon ei tarvitse lisätä suuria alkuperäiskuvia. Käsittelyn epäonnistuessa skripti ilmoittaa virheestä ja säilyttää verkko-osoitteen `imageSource`-kentässä myöhempää yritystä varten.
 
-## 5. Tarkista muutos
+## 6. Tarkista muutos
 
 Suorita projektin juuressa:
 
