@@ -267,6 +267,43 @@
         "Tarkista Kick-VOD:t ja kirjaa selkeät esiintyjä- ja tapahtumahetket.",
         "Päivitä 15.11.2026 ottelun toteutuminen vasta tapahtuman jälkeen."
       ]
+    },
+    {
+      "id": "iidasofya-2026-history",
+      "title": "Iidasofyan ura, lokakuun 2026 kuolema ja aiemmat lähetykset",
+      "status": "in-progress",
+      "priority": "high",
+      "nodeIds": [
+        "iidasofya",
+        "evesussu",
+        "iidasofya_2026",
+        "johanna"
+      ],
+      "sourceIds": [
+        "P94",
+        "P95",
+        "P96",
+        "P97",
+        "P98",
+        "P99"
+      ],
+      "notes": "Yle vahvisti kuolinpäivän DVV:stä 21.10., Gekkonen ja Uuno nimesivät Iida-Sofia Heimosen. Evesussun kanssa yhteiset striimit ja Johanna Tukiaisen yhteisvideot raportoitu. Isän ja Evesussun näkemykset julkisesta riidasta ovat ristiriitaiset. Ei näyttöä riidan syy-yhteydestä kuolemaan. Julkaisematon ensikäden VOD tai striimiarkisto puuttuu.",
+      "questions": [
+        "Mistä löytyy Iidasofyan omia varhaisempia TikTok- tai Kick-lähetyksiä ja aloitusajankohta?",
+        "Miten Johanna Tukiaisen ja Evesussun yhteisvideot ajoittuvat?",
+        "Mitkä muut julkiset striimaajat esiintyivät Iidasofyan kanssa ennen lokakuuta 2026?",
+        "Löytyykö aiemmista oikeusasioista täsmälliset, avoimesti saatavilla olevat alkuperäiset asiakirjat?"
+      ],
+      "queries": [
+        "\"Iidasofya\" \"Evesussu\" yhteislive",
+        "\"Iidasofya\" \"Tukiainen\" live",
+        "\"Iida-Sofia Heimonen\" TikTok Kick vanhat videot"
+      ],
+      "nextSteps": [
+        "Etsi yksilöityjä livejulkaisujen arkistolinkkejä ja tarkista osallistujat.",
+        "Tarkista haastatteluihin perustuvien ajankohtien tarkkuus ja mahdolliset riippumattomat lähteet.",
+        "Selvitä erillisiä tapahtumia ja lisää Rappiopediaan vain niitä tukevat lähteistetyt yhteydet."
+      ]
     }
   ]
 }

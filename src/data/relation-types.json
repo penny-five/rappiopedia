@@ -206,5 +206,9 @@
   "epailtiin-teosta": {
     "forward": "epäiltiin",
     "reverse": "epäiltynä oli"
+  },
+  "menehtyi": {
+    "forward": "menehtyi",
+    "reverse": "menehtynyt henkilö"
   }
 }

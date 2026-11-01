@@ -2222,6 +2222,56 @@
       "types": [
         "tulipalo"
       ]
+    },
+    {
+      "id": "iidasofya",
+      "name": "Iidasofya / Iida-Sofia Heimonen",
+      "cat": "person",
+      "types": [
+        "rappiostriimaaja",
+        "somevaikuttaja"
+      ],
+      "group": "rappio",
+      "note": "Iida-Sofia Heimonen (2003–2026), tunnettu nimellä Iidasofya, oli kotkalainen TikTok- ja Kick-striimaaja. Hän kuoli 23-vuotiaana 20. lokakuuta 2026.",
+      "pos3": [
+        1730,
+        -420,
+        1150
+      ],
+      "featured": true
+    },
+    {
+      "id": "evesussu",
+      "name": "Evesussu / Susanna Lehto",
+      "cat": "person",
+      "types": [
+        "striimaaja",
+        "somevaikuttaja"
+      ],
+      "group": "rappio",
+      "note": "Susanna Lehto eli Evesussu on suomalainen somepersoona, joka teki yhteisiä lähetyksiä Iidasofyan kanssa ja julkaisi hänestä muistovideon lokakuussa 2026.",
+      "pos3": [
+        1950,
+        -150,
+        1410
+      ],
+      "featured": false
+    },
+    {
+      "id": "iidasofya_2026",
+      "name": "Iidasofyan kuolema 20.10.2026",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "group": "events",
+      "note": "Iida-Sofia Heimonen kuoli 20. lokakuuta 2026 sairaalahoidossa viisi päivää Kotkassa sattuneen vakavan striimilähetyksen aikaisen hätätilanteen jälkeen.",
+      "pos3": [
+        1880,
+        -760,
+        1330
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -4730,6 +4780,51 @@
       ],
       "type": "epailtiin-teosta",
       "date": "2026-09-21"
+    },
+    {
+      "a": "iidasofya",
+      "b": "kick",
+      "type": "kayttaa",
+      "label": "piti suoria lähetyksiä Kickissä",
+      "level": "reported",
+      "src": [
+        "P95",
+        "P98"
+      ]
+    },
+    {
+      "a": "iidasofya",
+      "b": "johanna",
+      "type": "esiintyi-yhdessa",
+      "label": "esiintyivät somevideoissa ja suorissa lähetyksissä",
+      "level": "reported",
+      "src": [
+        "P95",
+        "P96"
+      ]
+    },
+    {
+      "a": "iidasofya",
+      "b": "evesussu",
+      "type": "striimasi-yhdessa",
+      "label": "tekivät yhteisiä striimejä ja somevideoita",
+      "level": "reported",
+      "src": [
+        "P97",
+        "P98"
+      ]
+    },
+    {
+      "a": "iidasofya",
+      "b": "iidasofya_2026",
+      "type": "menehtyi",
+      "label": "kuoli 20.10.2026 sairaalahoitoon johtaneen tapahtuman jälkeen",
+      "level": "reported",
+      "src": [
+        "P94",
+        "P95"
+      ],
+      "date": "2026-10-20"
     }
   ],
   "sources": {
@@ -5202,6 +5297,36 @@
       "label": "Pulliksen oma Kick-VOD 10/2026: Iippa ja Megis Tallinnassa",
       "url": "https://kick.com/pullis/videos/01a15992-0828-75b4-b8d4-571eb29872e3",
       "note": "Pulliksen julkaistun VOD:n otsikko mainitsee Iippadaan ja Megiksen tapaamisen Tallinnassa sekä !kasinokurki-komennon; tarkkaa videon sisältöä ei tutkittu."
+    },
+    "P94": {
+      "label": "Yle 21.10.2026: Rappiostriimaaja kuoli Kotkassa",
+      "url": "https://yle.fi/a/74-20252547",
+      "note": "Yle vahvisti 20.10.2026 kuoleman DVV:stä. Ei nimeä striimaajaa; tieto yhdistetään nimeävään uutiseen P95."
+    },
+    "P95": {
+      "label": "Gekkonen 21.10.2026: Iida-Sofia Heimonen 23 on kuollut",
+      "url": "https://gekkonen.net/rappiostriimaaja-iida-sofia-heimonen-23-on-kuollut/",
+      "note": "Nimeää Iida-Sofia Heimosen ja raportoi TikTok- ja Kick-lähetyksistä, 15.10.2026 hätätilanteesta ja 20.10. kuolemasta."
+    },
+    "P96": {
+      "label": "Uuno 21.10.2026: Johanna Tukiainen suree Iidasofyaa",
+      "url": "https://www.uuno.fi/johanna-tukiainen-suree-kotkassa-menehtynytta-rappiostriimaajaa/",
+      "note": "Tukiainen kertoo Iidasofyan tuntemisesta ja yhteisistä sisällöistä; siteeraa poliisin kuvausta 15.10. viranomaistehtävästä."
+    },
+    "P97": {
+      "label": "Uuno 22.10.2026: Heimosen isän ja Evesussun eriävät haastattelut",
+      "url": "https://www.uuno.fi/nyt-puhuu-rappiostriimaaja-iida-sofian-kuolemaa-sureva-tommi-isa-vakavia-syytoksia-tyttaren-ystavasta/",
+      "note": "Heimosen isä syyttää Evesussua kiusaamisesta, Evesussu kiistää väitteen. Molempien kertomukset ovat asianosaisten lausumia; ei vahvistettua syy-yhteyttä kuolemaan."
+    },
+    "P98": {
+      "label": "People 22.10.2026: Iidasofya ja Susanna Lehdon muistovideo",
+      "url": "https://people.com/influencer-iidasofya-dead-suicide-attempt-livestream-12188265",
+      "note": "Evesussu (Susanna Lehto) julkaisi yhteisvideon Iidasofyan muistoksi 20.10.; kuvaa somekanavia ja 2026 uutisointia."
+    },
+    "P99": {
+      "label": "Yle 22.10.2026: Rappiostriimin katsojien toimintavelvollisuus",
+      "url": "https://yle.fi/a/74-20252789",
+      "note": "Haastattelu poliisin kanssa auttamisvelvollisuudesta ja 20.10. kuolemasta; poliisi ei tiedota Kotkan tapauksesta enempää."
     }
   },
   "date": "2026-11-01"
