@@ -5,7 +5,7 @@ import ENTITY_TYPES from './data/entity-types.json';
 import { formatNodeTypes } from './lib/entity-types.js';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
-import { focusedNodeIds, graphLabelScale, projectedEdgePoint, cameraTravelDirection, bounds3D, routeVisibility, relationshipLabelEdges } from './lib/scene.js';
+import { focusedNodeIds, graphLabelScale, projectedEdgePoint, cameraTravelDirection, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel } from './lib/scene.js';
 import { hierarchyGroups } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
@@ -188,13 +188,35 @@ function drawPactHierarchy(c) {
   ctx.fillText('◈ PACT / OHJELMAPERHE', marker.x, marker.y - 12);ctx.restore();
  }
 }
-/** Each sector occupies a fully enclosed, spatially separate 3D region. */
+/** A barely tinted volume makes each skene legible without hiding its links. */
+function drawTintedVolume(c, bounds, color, alpha) {
+ const corners = Array.from({length: 8}, (_, mask) => [
+  (mask & 1) ? bounds.max[0] : bounds.min[0],
+  (mask & 2) ? bounds.max[1] : bounds.min[1],
+  (mask & 4) ? bounds.max[2] : bounds.min[2]
+ ]);
+ const points = corners.map(pos => pr(pos, c));
+ const faces = [[0,2,6,4],[1,3,7,5],[0,1,5,4],[2,3,7,6],[0,1,3,2],[4,5,7,6]]
+  .map(ids => ids.map(i => points[i]))
+  .filter(face => face.every(Boolean))
+  .sort((a,b) => b.reduce((sum,p) => sum+p.z,0)-a.reduce((sum,p) => sum+p.z,0));
+ ctx.save();
+ ctx.fillStyle = tint(color, alpha);
+ for (const face of faces) {
+  ctx.beginPath();ctx.moveTo(face[0].x,face[0].y);
+  for (const p of face.slice(1)) ctx.lineTo(p.x,p.y);
+  ctx.closePath();ctx.fill();
+ }
+ ctx.restore();
+}
+/** Each skene occupies a fully enclosed, spatially separate 3D region. */
 function drawCluster(c) {
  for (const [g, bounds] of Object.entries(groupBounds)) {
   if (!bounds) continue;
   const coords = centers[g], middle = pr(coords, c);
   if (!middle || middle.x < -950 || middle.x > W + 950 || middle.y < -950 || middle.y > H + 950) continue;
   const col = groupMeta[g][1], active = sector === 'all' || sector === g;
+  drawTintedVolume(c, bounds, col, active ? .045 : .01);
   drawWireVolume(c, bounds, col, active ? .29 : .065, active ? 1.1 : .75);
   const title = pr([coords[0], bounds.max[1], coords[2]], c);
   if (title) {
@@ -293,13 +315,10 @@ function nodeDisplay(item){
   ctx.textAlign='left';ctx.textBaseline='middle';
   ctx.font='700 '+Math.max(8,Math.round((enlarged?11:10)*ls))+'px Manrope,Arial';
   ctx.fillStyle='#202020';
-  const name=n.name;let fit=name;
-  while(fit.length>3&&ctx.measureText(fit).width>txtmax)fit=fit.slice(0,-2);
-  if(fit!==name)fit+='…';
-  ctx.fillText(fit,tx,by+(withPic?19:16)*ls);
+  ctx.fillText(truncateLabel(n.name,txtmax,value=>ctx.measureText(value).width),tx,by+(withPic?19:16)*ls);
   ctx.font=Math.max(7,Math.round(9*ls))+'px IBM Plex Mono,monospace';
   ctx.fillStyle=tint(col,.88);
-  ctx.fillText(formatNodeTypes(n,ENTITY_TYPES).toUpperCase(),tx,by+(withPic?36:29)*ls,txtmax);
+  ctx.fillText(truncateLabel(formatNodeTypes(n,ENTITY_TYPES).toUpperCase(),txtmax,value=>ctx.measureText(value).width),tx,by+(withPic?36:29)*ls);
  }
  ctx.restore();
 }
