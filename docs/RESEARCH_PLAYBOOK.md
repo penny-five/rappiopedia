@@ -1,6 +1,6 @@
 # Lähteiden etsiminen ja yhteyksien selvittäminen
 
-Tämä opas kertoo, miten Rappiopediaan etsitään uusia henkilöitä, tapahtumia ja yhteyksiä. Varsinainen sisältö tallennetaan [verkostodataan](../src/data/network.json) ja [artikkeleihin](../src/articles/). Keskeneräiset selvitykset voi merkitä [tutkimuslokiin](RESEARCH_LOG.md).
+Tämä opas kertoo, miten Rappiopediaan etsitään uusia henkilöitä, tapahtumia ja yhteyksiä. Varsinainen sisältö tallennetaan [verkostodataan](../src/data/network.json) ja [artikkeleihin](../src/articles/). Keskeneräiset selvitykset kirjataan [agenttien tutkimusjonoon](../research/leads.json). [Tutkimusloki](RESEARCH_LOG.md) säilyttää päivätyt havainnot tekstimuodossa.
 
 ## Mistä kannattaa aloittaa?
 
@@ -69,12 +69,22 @@ Erota myös tapahtuman suunnittelu ja toteutuminen. Esimerkiksi Bailupaatin enna
 
 **Bämät matkoilla.** PactTalksin lähetysarkistossa on Bämät matkoilla -jaksoja, ja lokakuun 2026 [Reddit-keskustelussa](https://www.reddit.com/r/snappijuorut/comments/1xddl2r/joko_on_t%C3%A4%C3%A4ll%C3%A4_postaus_t%C3%A4st%C3%A4/) kuvaillaan Ruusutossun ja Alisan yhteistä Ranskan-matkaa. Lähetysarkisto ja keskustelu ovat kaksi eri lähdettä, joilla on omat tietonsa.
 
+## Avoimet kysymykset ja huhujen jatkoselvitys
+
+Kaikki julkisesti keskustellut asiat eivät ole vielä tarkistettuja. Huhut, ristiriitaiset kertomukset ja henkilökohtaiset tapahtumat voivat olla merkittävä osa henkilön tai tapahtuman historiaa. Kerro artikkelissa, mitä lähteet sanovat; esimerkiksi ”Seiska kertoi” tai ”Reddit-ketjussa väitettiin”. Epävarmuutta ei tarvitse piilottaa eikä peittää yleisillä vastuuvapauslauseilla.
+
+Kun jokin asia jää avoimeksi, merkitse se [`research/leads.json`](../research/leads.json)-tiedostoon. Siellä on aiheen `nodeIds`- ja `sourceIds`-viitteet, etsittävät tiedot `questions`-kentässä, hakulausekkeet `queries`-kentässä ja seuraavat toimet `nextSteps`-kentässä. Tutkimusjono ei näy verkkosivustolla.
+
+Esimerkiksi Ateenan-matkan artikkelissa voi kertoa Seiskan uutisoimasta Pirkkiksen katoamisesta ja löytymisestä, mutta tallenteiden jäljittäminen ja uutisten yksityiskohtien vertailu ovat agentille tutkimustehtäviä. Näitä varten on tutkimusaihe `pirkkis-athens-2025`.
+
+Kun löydät uusia lähteitä, päivitä ne verkostodataan ja artikkeliin. Merkitse tutkimusjonoon, mikä selvisi ja mitä vielä puuttuu.
+
 ## Kun löydät uutta tietoa
 
 1. Varmista, että nimiä, tapahtumia ja lähteitä vastaavat solmut löytyvät datasta, tai lisää ne.
 2. Lisää lähde `sources`-osioon ja anna sille uusi tunniste. Kirjaa sen tukema yhteys `edges`-taulukkoon.
 3. Päivitä aiheeseen liittyvä Markdown-artikkeli. Kerro asiasta tavallisena, luettavana tekstinä ja liitä lähdeviite.
 4. Aja `npm test` ja `npm run build`.
-5. Kirjaa vielä selvittämättömät asiat [tutkimuslokiin](RESEARCH_LOG.md).
+5. Kirjaa jatkotutkimukset [agenttien tutkimusjonoon](../research/leads.json) ja päivätyt havainnot tarvittaessa [tutkimuslokiin](RESEARCH_LOG.md).
 
 Datan kentät, artikkelien linkkimuoto ja kuvien käsittely on kuvattu [sisällön lisäysoppaassa](CONTENT_AUTHORING.md).
