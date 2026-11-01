@@ -946,7 +946,10 @@
         -619,
         565
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/nilu.webp",
+      "imageSource": "https://image.seiska.fi/1994907.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=409&imageId=1994907&width=576&x=0.00&y=0.00",
+      "imageCredit": "Seiska, Nilufär Soleimani Immun Fight Night -tapahtuman yhteydessä (2025)"
     },
     {
       "id": "stagala",
@@ -1114,7 +1117,10 @@
         876,
         -563
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/aleksi.webp",
+      "imageSource": "https://www.mmaviking.com/wp-content/uploads/2015/03/Aleksi_578.jpg",
+      "imageCredit": "MMA Viking, Aleksi Nurmisen Cage 29 -haastattelu (2015)"
     },
     {
       "id": "jussi",
