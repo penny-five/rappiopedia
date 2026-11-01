@@ -166,7 +166,7 @@ function nodeHitbox(item){
  return {id:n.id,x:p.x-radius,y:p.y-radius,w:radius*2,h:radius*2,r:radius,cx:p.x,cy:p.y,depth:p.z};
 }
 function nodeDisplay(item){
- const {n,p,isSel,isHover,hot,inPath,dot,scale,r,fade,label}=item;
+ const {n,p,isSel,isHover,hot,inPath,isHub,dot,scale,r,fade,label}=item;
  const col=groupMeta[n.group][1];
  if(dot){
   ctx.fillStyle=tint(col,selected?.12:.36);
