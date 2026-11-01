@@ -7,7 +7,7 @@ import { formatNodeTypes } from './lib/entity-types.js';
 import { NODE_CATEGORY_FILTERS, categoryFilterId, categoryCounts, categoryEnabled, edgeMatchesCategories } from './lib/category-filter.js';
 import { relationVerb, relationHeading } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
-import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, connectionStrokeWidth, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, storedMovementSpeed, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
+import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, connectionStrokeWidth, placeRelationshipLabels, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, storedMovementSpeed, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
 import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierarchyNavigationItems } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
@@ -382,34 +382,18 @@ function nodeDisplay(item){
 }
 function layoutRelationshipLabels(ps,nodeItems){
  if(!selected&&!pathNodes.length)return [];
- const occupied=[],labels=[];
  const nodeBoxes=nodeItems.filter(item=>item.label).map(({label})=>({x:label.bx,y:label.by,w:label.w,h:label.h}));
+ const links=[];
  ctx.save();ctx.font='700 11px DM Sans,Arial';
  for(const {edge:e,from} of relationshipLabelEdges(E,selected,pathNodes,pathEdges)){
   if(!showLevels.has(e.level)||(!pathNodes.length&&!edgeMatchesCategories(e,by,enabledCategories)))continue;
   const p=ps[e.a],q=ps[e.b];if(!p||!q)continue;
-  const dx=q.x-p.x,dy=q.y-p.y,len=Math.hypot(dx,dy);
-  if(len<55||W<100)continue;
   const text=relationVerb(e,from,RELATION_TYPES);
   const w=Math.min(Math.max(40,W-16),Math.max(68,Math.ceil(ctx.measureText(text).width)+25)),h=24;
-  const nx=-dy/len,ny=dx/len;
-  let box=null,depth=0;
-  for(const t of [.5,.36,.66,.25,.78]){
-   for(const offset of [0,17,-17,34,-34,52,-52]){
-    const x=Math.max(8,Math.min(W-w-8,p.x+dx*t+nx*offset-w/2));
-    const y=Math.max(8,Math.min(H-h-8,p.y+dy*t+ny*offset-h/2));
-    const overlaps=occupied.some(r=>x<r.x+r.w+5&&x+w+5>r.x&&y<r.y+r.h+4&&y+h+4>r.y);
-    const nodeCover=nodeBoxes.some(r=>x<r.x+r.w+3&&x+w+3>r.x&&y<r.y+r.h+3&&y+h+3>r.y);
-    if(!overlaps&&!nodeCover){box={x,y,w,h};depth=1/((1-t)/p.z+t/q.z);break}
-   }
-   if(box)break;
-  }
-  if(!box)continue;
-  occupied.push(box);
-  labels.push({...box,z:depth,text,color:levels[e.level].color});
+  links.push({p,q,w,h,text,color:levels[e.level].color});
  }
  ctx.restore();
- return labels;
+ return placeRelationshipLabels(links,nodeBoxes,W,H);
 }
 function drawRelationshipLabel(label){
  const {x,y,w,h,color}=label;
@@ -482,9 +466,11 @@ function draw(now){
   }
  });
  for(const item of nodes)scene.push({z:item.p.z,order:2,draw:()=>nodeDisplay(item)});
- for(const label of layoutRelationshipLabels(ps,nodes))scene.push({z:label.z,order:3,draw:()=>drawRelationshipLabel(label)});
  scene.sort((a,b)=>b.z-a.z||a.order-b.order);
  for(const item of scene)item.draw();
+ // Verb labels are a screen-space overlay. Depth sorting them with 3D nodes
+ // previously let nearby spheres hide them at certain camera angles.
+ for(const label of layoutRelationshipLabels(ps,nodes))drawRelationshipLabel(label);
  // An article-selected label stays in front of every other 3D node and relation.
  const selectedItem=nodes.find(item=>item.isSel&&item.label);
  if(selectedItem)nodeLabelDisplay(selectedItem);
