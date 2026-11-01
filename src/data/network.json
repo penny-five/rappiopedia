@@ -236,7 +236,6 @@
       "note": "Sami Kieksi on dokumentaristi ja Revul Media Groupin perustaja ja toimitusjohtaja. Hän on tehnyt myös rappiostriimausta käsittelevää ohjelmaa.",
       "x": 830,
       "y": 2180,
-      "image": "images/sami.webp",
       "imageCredit": "Julius Konttinen / Televisioakatemia ry, Wikimedia Commons (CC BY-SA 4.0)",
       "pos3": [
         1499,
@@ -360,8 +359,7 @@
         -1301
       ],
       "featured": true,
-      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg",
-      "image": "images/sliki.webp"
+      "imageSource": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg"
     },
     {
       "id": "ossi",
@@ -1014,8 +1012,7 @@
       ],
       "featured": false,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/4/45/Sara_Chafak_2016.jpg",
-      "imageCredit": "Rob Watkins / Club Paf, Wikimedia Commons (CC BY 2.0)",
-      "image": "images/sara.webp"
+      "imageCredit": "Rob Watkins / Club Paf, Wikimedia Commons (CC BY 2.0)"
     },
     {
       "id": "amanda",
@@ -1050,8 +1047,7 @@
       ],
       "featured": false,
       "imageSource": "https://www.epressi.com/media/userfiles/149329/1716977155/myyra_s4_hennyharjusola2.jpg",
-      "imageCredit": "Myyrä 4 -promokuva / ePressi",
-      "image": "images/henny.webp"
+      "imageCredit": "Myyrä 4 -promokuva / ePressi"
     },
     {
       "id": "crista",
@@ -1118,7 +1114,6 @@
         -563
       ],
       "featured": false,
-      "image": "images/aleksi.webp",
       "imageSource": "https://www.mmaviking.com/wp-content/uploads/2015/03/Aleksi_578.jpg",
       "imageCredit": "MMA Viking, Aleksi Nurmisen Cage 29 -haastattelu (2015)"
     },
@@ -1136,7 +1131,6 @@
         -1158
       ],
       "featured": false,
-      "image": "images/jussi.webp",
       "imageSource": "https://kokfights.com/storage-uploads-path/2025/02/03-1-JUSSI-PIRTTIKANGAS-scaled.webp",
       "imageCredit": "KOK Fights, Jussi Pirttikankaan ottelijakuva"
     },
@@ -1738,8 +1732,7 @@
       ],
       "featured": true,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Pasi_Viheraho.jpg",
-      "imageCredit": "Soppakanuuna / Wikimedia Commons (CC BY-SA 4.0)",
-      "image": "images/pasi.webp"
+      "imageCredit": "Soppakanuuna / Wikimedia Commons (CC BY-SA 4.0)"
     },
     {
       "id": "pasiradio",
