@@ -1048,6 +1048,85 @@
         "Käsittele henkilöitä koskevat väitteet attribuoituina ja ilman diagnoosiarvauksia."
       ],
       "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "rauno77-pottu-dec2025-vod",
+      "title": "Pottukoiran ja Rauno77:n joulukuun 2025 välirikon jatkotiedot",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "pottu",
+        "rauno77",
+        "pottu_rauno_riita_2025"
+      ],
+      "sourceIds": [
+        "P62",
+        "P210"
+      ],
+      "notes": "Artikkeli ja tapahtumarelaatiot lisätty 1.11.2026; alkuperäiset VOD-tallenteet ovat vielä tarkistamatta.",
+      "questions": [
+        "Onko tapauksesta myöhempiä viranomaistietoja?"
+      ],
+      "queries": [
+        "Pottukoiran ja Rauno77:n joulukuun 2025 välirikon jatkotiedot"
+      ],
+      "nextSteps": [
+        "Etsi alkuperäistallenne ja tarkenna päivä sekä osallistujat."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "sampe-riika-2026-vods",
+      "title": "Sampen, Pulliksen ja Jenniverin Riian VODit lokakuulta 2026",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "sampe",
+        "pullis",
+        "sampe_pullis_riika_2026"
+      ],
+      "sourceIds": [
+        "P76",
+        "P83"
+      ],
+      "notes": "Artikkeli ja tapahtumarelaatiot lisätty 1.11.2026; alkuperäiset VOD-tallenteet ovat vielä tarkistamatta.",
+      "questions": [
+        "Ketkä todella esiintyivät lähetyksissä?"
+      ],
+      "queries": [
+        "Sampen, Pulliksen ja Jenniverin Riian VODit lokakuulta 2026"
+      ],
+      "nextSteps": [
+        "Etsi alkuperäistallenne ja tarkenna päivä sekä osallistujat."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "pullis-lily-chiara-megis-nov2024",
+      "title": "Neljän tekijän marraskuun 2024 striimin alkuperäistallenne",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "pullis",
+        "lily",
+        "chiara",
+        "megis",
+        "pullis_lily_chiara_megis_2024"
+      ],
+      "sourceIds": [
+        "P208"
+      ],
+      "notes": "Artikkeli ja tapahtumarelaatiot lisätty 1.11.2026; alkuperäiset VOD-tallenteet ovat vielä tarkistamatta.",
+      "questions": [
+        "Milloin alkuperäinen lähetys pidettiin?"
+      ],
+      "queries": [
+        "Neljän tekijän marraskuun 2024 striimin alkuperäistallenne"
+      ],
+      "nextSteps": [
+        "Etsi alkuperäistallenne ja tarkenna päivä sekä osallistujat."
+      ],
+      "updatedAt": "2026-11-01"
     }
   ]
 }

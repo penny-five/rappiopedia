@@ -8,7 +8,7 @@ Myös [[jasmilla|Jasmilla Rostedt]] nähtiin juontajana: 16. lokakuuta lähetety
 
 ## Vieraat ja jaksot syksyllä 2026
 
-Syys- ja lokakuun arkistossa näkyvät monet eri viihdepiirejä yhdistävät esiintymiset. Lokakuun 11. päivän jaksossa 80 vierailivat yhdessä [[pasi|Pasi Viheraho]] ja [[megis|Megarokkistara]]. Lokakuun 20. päivän jaksoon 87 oli merkitty vieraiksi [[iippa|Iippadaa]] ja Megarokkistara. [@P7] [@P63]
+Syys- ja lokakuun arkistossa näkyvät monet eri viihdepiirejä yhdistävät esiintymiset. Lokakuun 11. päivän jaksossa 80 vierailivat yhdessä [[pasi|Pasi Viheraho]] ja [[megis|Megarokkistara]]. Lokakuun 20. päivän [[talk_iippa_megis_2026|jaksoon 87]] oli merkitty vieraiksi [[iippa|Iippadaa]] ja Megarokkistara. [@P7] [@P63]
 
 Lokakuussa ohjelmassa vierailivat myös [[cruella_johansson|Cruella Johansson]] (jakso 81), [[tuukka_kuru|Tuukka Kuru]] (82), [[jouni_honkanen|Jouni ”Jones” Honkanen]] (83), [[alex|Alex Lindfors]] (89), [[pyhimys|Pyhimys]] (92), [[ruusu|Pinja Ruusutossu]] (93) ja [[andypyro|AndyPyro]] (95). Jaksossa 94 esiintyivät [[crista|BelleBarbie]] ja [[cuck|CuckTommi]]. Tiedot perustuvat julkisiin lähetysotsikoihin. [@P7] [@P19]
 

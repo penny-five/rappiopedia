@@ -2,7 +2,7 @@
 
 ## Matkalähetykset ja yhteisstriimit
 
-Vuoden 2026 lähetysarkistossa näkyy matkalähetyksiä muun muassa Tallinnasta, Riiasta, Mallorcalta ja eri puolilta Suomea. Syyskuun Tallinnan-lähetysten otsikoissa mainittiin [[anton|Anton Koskela]] ja [[pullis|Pullis]], ja lokakuun alun Riian-lähetykset oli otsikoitu Pulliksen ja Jenniverin kanssa tehdyiksi. Nämä nimet esiintyvät kanavan julkisissa lähetysotsikoissa. [@P76]
+Vuoden 2026 lähetysarkistossa näkyy matkalähetyksiä muun muassa Tallinnasta, Riiasta, Mallorcalta ja eri puolilta Suomea. Syyskuun Tallinnan-lähetysten otsikoissa mainittiin [[anton|Anton Koskela]] ja [[pullis|Pullis]], ja lokakuun alun [[sampe_pullis_riika_2026|Riian-lähetykset]] oli otsikoitu Pulliksen ja Jenniverin kanssa tehdyiksi. Nämä nimet esiintyvät kanavan julkisissa lähetysotsikoissa. [@P76]
 
 Lokakuun loppupuolella SampeF2:n lähetyksissä nimettiin myös [[iippa|Iippadaa]] ja [[megis|Megis]]. Molempien nimet esiintyvät samassa IRL-lähetyksen otsikossa, ja Megis mainitaan lisäksi seuraavien päivien Tornion-lähetyksissä. Tapahtumia käsittelee tarkemmin [[sampe_iippa_megis_2026|lokakuun yhteislähetyksistä kertova artikkeli]]. [@P76] [@P77]
 

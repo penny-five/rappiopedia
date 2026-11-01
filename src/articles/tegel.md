@@ -8,7 +8,7 @@ Tegelberg on tehnyt livelähetyksiä ja puhunut muun muassa voimaharjoittelusta,
 
 Tegelberg on listattu vuoden 2025 [[s1|PactHouse 1:n]] osallistujaksi myöhemmässä koonnissa. Joulukuussa 2025 hän oli mukana [[s2|PactHouse 2:ssa]] Marbellassa. [@P1] [@P2]
 
-Ohjelmassa hän ajautui riitaan laulaja [[janely|Jaanika ”Janely” Leinon]] kanssa. Voice.fi:n mukaan Janely arvosteli Tegelbergin loukkaavia kommentteja ja kaatoi juomaa hänen päälleen. Janely kertoi myöhemmin katuvansa omaa tekoaan. [@P145]
+Ohjelmassa hän ajautui [[janely_tegel_riita_2025|riitaan]] laulaja [[janely|Jaanika ”Janely” Leinon]] kanssa. Voice.fi:n mukaan Janely arvosteli Tegelbergin loukkaavia kommentteja ja kaatoi juomaa hänen päälleen. Janely kertoi myöhemmin katuvansa omaa tekoaan. [@P145]
 
 ## Vierailu kolmannella kaudella
 

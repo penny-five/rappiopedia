@@ -2,7 +2,7 @@
 
 ## Yhteisstriimit 2024 ja 2025
 
-Marraskuussa 2024 Lily esiintyi [[pullis|Pulliksen]] Kick-lähetyksessä yhdessä [[chiara|Chiara Eklundin]] ja [[megis|Juulia ”Megarokkistara” Valikaisen]] kanssa. Helmikuussa 2025 Lily ja Pullis tekivät [[lily_pullis_viro_2025|Viron-vierailun aikana yhteistä suoratoistoa]], josta julkaistiin videokatkelma Redditissä 14. helmikuuta. [@P208] [@P207]
+Marraskuussa 2024 Lily esiintyi [[pullis_lily_chiara_megis_2024|Pulliksen Kick-lähetyksessä]] yhdessä [[chiara|Chiara Eklundin]] ja [[megis|Juulia ”Megarokkistara” Valikaisen]] kanssa. Helmikuussa 2025 Lily ja Pullis tekivät [[lily_pullis_viro_2025|Viron-vierailun aikana yhteistä suoratoistoa]], josta julkaistiin videokatkelma Redditissä 14. helmikuuta. [@P208] [@P207]
 
 Lokakuussa 2025 Lily liittyi myös Chiaran ja SB-nimisen osallistujan yhteiseen liveen. Tilanteesta julkaistiin katkelma Redditissä. [@P209]
 

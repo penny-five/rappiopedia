@@ -20,7 +20,7 @@ Heinäkuun 5. päivänä 2026 Eklund esiintyi [[pirkkis_chiara_megis_2026|yhteis
 
 ## Yhteislähetykset Lilyn kanssa
 
-Chiara esiintyi [[lily|Lilyn]] kanssa samassa Pulliksen Kick-lähetyksessä marraskuussa 2024. Lisäksi Redditissä julkaistiin 19. lokakuuta 2025 klippi, jossa Lily liittyi Chiaran ja SB-nimisen henkilön yhteiseen liveen. [@P208] [@P209]
+Chiara esiintyi [[lily|Lilyn]] kanssa [[pullis_lily_chiara_megis_2024|Pulliksen Kick-lähetyksessä]] marraskuussa 2024, jossa oli myös Megarokkistara. Lisäksi Redditissä julkaistiin 19. lokakuuta 2025 klippi, jossa Lily liittyi Chiaran ja SB-nimisen henkilön yhteiseen liveen. [@P208] [@P209]
 
 ## Televisio ja PactHouse
 

@@ -2,7 +2,7 @@
 
 ## Yhteisstriimit Lilyn kanssa
 
-Helmikuussa 2025 [[lily|Lilbeliini]] eli Lily oli Pulliksen kanssa [[lily_pullis_viro_2025|Virossa kuvatussa yhteislähetyksessä]]. Redditiin 14. helmikuuta julkaistussa klipissä kaksikko keskusteli suorassa lähetyksessä. Lily esiintyi myös marraskuussa 2024 Pulliksen Kick-lähetyksessä, jossa olivat mukana [[chiara|Chiara Eklund]] ja [[megis|Megarokkistara]]. [@P207] [@P208]
+Helmikuussa 2025 [[lily|Lilbeliini]] eli Lily oli Pulliksen kanssa [[lily_pullis_viro_2025|Virossa kuvatussa yhteislähetyksessä]]. Redditiin 14. helmikuuta julkaistussa klipissä kaksikko keskusteli suorassa lähetyksessä. Lily esiintyi myös marraskuussa 2024 [[pullis_lily_chiara_megis_2024|Pulliksen Kick-lähetyksessä]], jossa olivat mukana [[chiara|Chiara Eklund]] ja [[megis|Megarokkistara]]. [@P207] [@P208]
 
 ## Snapchat ja Hard to Break
 
@@ -22,7 +22,7 @@ Lokakuussa 2025 Pullis oli mukana [[laitela_viro_2025|Pottukoiran Harjumaan vier
 
 Karttunen on lähettänyt Kickissä sisältöä muun muassa Tallinnasta ja yhteisiltä matkoilta. Seiskan elokuun 2026 haastattelussa hänen lähetyksissään vierailleiksi nimetään [[pottu|Pottukoira]], [[tegel|Juhana Tegelberg]] ja [[lassi|Lassi Kuhlman]]. Lokakuussa 2025 hänet mainittiin myös Pottukoiran Viron-vierasjoukossa yhdessä [[pirkkis|Pirkkiksen]] ja muiden striimaajien kanssa. [@P87] [@P88]
 
-[[sampe|SampeF2:n]] lähetysarkiston mukaan lokakuun 3.–5. päivänä 2026 striimattiin Riian-matkalta otsikolla, jossa olivat Pullis ja Jenniveri. Samassa arkistossa näkyy aiempi syyskuun Tallinnan-lähetys, jonka otsikossa mainittiin Pullis ja [[anton|Anton Koskela]]. Pulliksen omalla Kick-kanavalla julkaistiin myöhemmin Iippadaa ja Megistä koskeva Tallinnan-lähetys sekä Thaimaa-matkan IRL-lähetyksiä. [@P83] [@P93] [@P81]
+[[sampe|SampeF2:n]] lähetysarkiston mukaan lokakuun 3.–5. päivänä 2026 striimattiin [[sampe_pullis_riika_2026|Riian-matkalta]] otsikolla, jossa olivat Pullis ja Jenniveri. Samassa arkistossa näkyy aiempi syyskuun Tallinnan-lähetys, jonka otsikossa mainittiin Pullis ja [[anton|Anton Koskela]]. Pulliksen omalla Kick-kanavalla julkaistiin myöhemmin Iippadaa ja Megistä koskeva Tallinnan-lähetys sekä Thaimaa-matkan IRL-lähetyksiä. [@P83] [@P93] [@P81]
 
 Useiden vuoden 2026 lähetysten otsikoissa esiintyy myös nettikasinoita vertailevan [[kasinok|Kasinokurjen]] !kasinokurki-komento. Samaa bränditunnistetta käyttävät myös muut striimaajat. [@P81] [@P83] [@P78] [@P81] [@P83]
 

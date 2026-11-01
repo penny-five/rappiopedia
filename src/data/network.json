@@ -3423,6 +3423,81 @@
         885,
         -790
       ]
+    },
+    {
+      "id": "janely_tegel_riita_2025",
+      "name": "Janelyn ja Juhana Tegelbergin riita PactHouse 2:ssa",
+      "group": "season2",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "PactHouse 2:ssa joulukuussa 2025 syntynyt riita, jonka aikana Janely kaatoi juomaa Juhana Tegelbergin päälle.",
+      "pos3": [
+        -2420,
+        -680,
+        465
+      ]
+    },
+    {
+      "id": "pottu_rauno_riita_2025",
+      "name": "Pottukoiran ja Rauno77:n välirikko joulukuussa 2025",
+      "group": "pottu-streams",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Pottukoiran ja Rauno77:n yhteisstriimien päättymiseen liittynyt joulukuun 2025 riita, josta Gekkonen uutisoi.",
+      "pos3": [
+        3430,
+        -390,
+        660
+      ]
+    },
+    {
+      "id": "pullis_lily_chiara_megis_2024",
+      "name": "Pulliksen, Lilyn, Chiaran ja Megiksen yhteislähetys 11/2024",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Pulliksen Kick-lähetys, jossa esiintyivät myös Lily, Chiara Eklund ja Megarokkistara marraskuussa 2024.",
+      "pos3": [
+        2225,
+        -135,
+        1030
+      ]
+    },
+    {
+      "id": "sampe_pullis_riika_2026",
+      "name": "SampeF2:n Riian-lähetykset Pulliksen ja Jenniverin kanssa 10/2026",
+      "group": "kasinokurki",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "note": "SampeF2:n Kick-arkistossa 3.–5. lokakuuta 2026 näkyneet Riian-matkalähetykset, joiden otsikoissa olivat Pullis ja Jenniveri.",
+      "pos3": [
+        2580,
+        1135,
+        785
+      ]
+    },
+    {
+      "id": "talk_iippa_megis_2026",
+      "name": "PactTalks 87: Iippadaa ja Megarokkistara 20.10.2026",
+      "group": "talks",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Jethro Rostedtin juontama PactTalks-jakso 87, jonka vieraat olivat Iippadaa ja Megarokkistara.",
+      "pos3": [
+        985,
+        315,
+        -160
+      ]
     }
   ],
   "edges": [
@@ -7442,6 +7517,185 @@
         "P113"
       ],
       "level": "reported"
+    },
+    {
+      "a": "janely",
+      "b": "janely_tegel_riita_2025",
+      "type": "osallistui",
+      "label": "kaatoi juomaa Tegelbergin päälle riidan aikana",
+      "date": "2025-12",
+      "src": [
+        "P145"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "tegel",
+      "b": "janely_tegel_riita_2025",
+      "type": "osallistui",
+      "label": "riiteli Janelyn kanssa PactHouse 2:ssa",
+      "date": "2025-12",
+      "src": [
+        "P145"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "s2",
+      "b": "janely_tegel_riita_2025",
+      "type": "sisaltaa",
+      "label": "kauden aikana syntynyt riitatilanne",
+      "date": "2025-12",
+      "src": [
+        "P145"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_rauno_riita_2025",
+      "type": "osallistui",
+      "label": "oli osapuolena Rauno77:n kanssa uutisoidussa välirikossa",
+      "date": "2025-12",
+      "src": [
+        "P62",
+        "P210"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "rauno77",
+      "b": "pottu_rauno_riita_2025",
+      "type": "osallistui",
+      "label": "oli osapuolena Pottukoiran kanssa uutisoidussa välirikossa",
+      "date": "2025-12",
+      "src": [
+        "P62",
+        "P210"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pullis",
+      "b": "pullis_lily_chiara_megis_2024",
+      "type": "striimasi",
+      "label": "Kick-lähetys, jossa esiintyi kolme muuta somepersoonaa",
+      "date": "2024-11-16",
+      "src": [
+        "P208"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "lily",
+      "b": "pullis_lily_chiara_megis_2024",
+      "type": "esiintyi",
+      "label": "nähtiin Pulliksen marraskuun Kick-lähetyksessä",
+      "date": "2024-11-16",
+      "src": [
+        "P208"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "chiara",
+      "b": "pullis_lily_chiara_megis_2024",
+      "type": "esiintyi",
+      "label": "nähtiin Pulliksen marraskuun Kick-lähetyksessä",
+      "date": "2024-11-16",
+      "src": [
+        "P208"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "megis",
+      "b": "pullis_lily_chiara_megis_2024",
+      "type": "esiintyi",
+      "label": "nähtiin Pulliksen marraskuun Kick-lähetyksessä",
+      "date": "2024-11-16",
+      "src": [
+        "P208"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "sampe",
+      "b": "sampe_pullis_riika_2026",
+      "type": "striimasi",
+      "label": "Riian lähetykset 3.–5. lokakuuta",
+      "date": "2026-10-03",
+      "src": [
+        "P76",
+        "P83"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pullis",
+      "b": "sampe_pullis_riika_2026",
+      "type": "osallistui",
+      "label": "nimetty Riian-matkan lähetysotsikoissa",
+      "date": "2026-10-03",
+      "src": [
+        "P83"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "jethro",
+      "b": "talk_iippa_megis_2026",
+      "type": "juonsi",
+      "label": "PactTalksin jakson 87 juontaja",
+      "date": "2026-10-20",
+      "src": [
+        "P19"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "iippa",
+      "b": "talk_iippa_megis_2026",
+      "type": "vieraili",
+      "label": "PactTalksin jakson 87 vieras",
+      "date": "2026-10-20",
+      "src": [
+        "P19"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "megis",
+      "b": "talk_iippa_megis_2026",
+      "type": "vieraili",
+      "label": "PactTalksin jakson 87 toinen vieras",
+      "date": "2026-10-20",
+      "src": [
+        "P19"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "talks",
+      "b": "talk_iippa_megis_2026",
+      "type": "sisaltaa",
+      "label": "PactTalksin jakso 87",
+      "date": "2026-10-20",
+      "src": [
+        "P19"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pactchannel",
+      "b": "talk_iippa_megis_2026",
+      "type": "lahettaa",
+      "label": "PactTalksin jakson 87 lähetyskanava",
+      "date": "2026-10-20",
+      "src": [
+        "P19"
+      ],
+      "level": "reported"
     }
   ],
   "sources": {
@@ -8494,6 +8748,11 @@
       "label": "Reddit 19.10.2025: Lily liittyi Chiaran ja SB:n liveen",
       "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1oapohv/lily_liittyy_chiaran_ja_t%C3%A4n_sbn_liveen_ja_tilanne/",
       "note": "Redditin päivätty klippiketju kertoo Lilyn liittymisestä Chiaran ja SB:n suoratoistoon lokakuussa 2025."
+    },
+    "P210": {
+      "label": "Gekkonen 10.12.2025: Pottukoira kommentoi Rauno77-kohua",
+      "url": "https://gekkonen.net/vakavien-syytosten-keskella-oleva-pottukoira-mita-se-kenellekaan-kuuluu/",
+      "note": "Pottukoira kieltäytyi kommentoimasta lähetysten ulkopuolista tilannetta ja Rauno77 ei kommentoinut lehdelle."
     }
   },
   "date": "2026-11-01"

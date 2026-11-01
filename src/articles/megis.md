@@ -22,7 +22,7 @@ Valikainen esiintyi [[pirkkis_chiara_megis_2026|5. heinäkuuta 2026 julkaistussa
 
 ## Marraskuun 2024 Kick-yhteislähetys
 
-Marraskuun 16. päivän 2024 Reddit-ketjussa seurattiin [[pullis|Pulliksen]] Kick-lähetystä, jossa olivat mukana [[lily|Lily]], [[chiara|Chiara]] ja Megarokkistara. Yhteinen lähetys ajoittui kauan ennen heidän vuoden 2026 mökkistriimejään. [@P208]
+Marraskuun 16. päivän 2024 Reddit-ketjussa seurattiin [[pullis|Pulliksen]] [[pullis_lily_chiara_megis_2024|Kick-lähetystä]], jossa olivat mukana [[lily|Lily]], [[chiara|Chiara]] ja Megarokkistara. Yhteinen lähetys ajoittui kauan ennen heidän vuoden 2026 mökkistriimejään. [@P208]
 
 ## Mallorca syyskuussa
 
