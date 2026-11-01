@@ -14,6 +14,10 @@ Ohjelmassa hän ajautui riitaan laulaja [[janely|Jaanika ”Janely” Leinon]] k
 
 Toukokuussa 2026 Tegelberg saapui [[s3|PactHouse 3:een]] kesken ohjelman. Hän ei kuulunut alkuperäisiin 20 kilpailijaan, ja vierailu jäi lyhyeksi. [@P34] [@P147]
 
+## Pottukoiran Viron-vierailu
+
+Tegelberg oli lokakuussa 2025 [[laitela_viro_2025|Pottukoiran Harjumaan talon]] vierailijoiden joukossa samaan aikaan Laitela92:n, Pulliksen ja Pirkkiksen kanssa. [@P138]
+
 ## Muut striimit ja Bailupaatti
 
 [[pullis|Pullis]] nimesi Tegelbergin omissa Kick-lähetyksissään vierailleiden joukkoon. [[bailu|Bailupaatti 2026]] oli tarkoitettu myös Tegelbergille, mutta Seiskan mukaan hän jäi satamassa pois risteilyltä. [@P87] [@P13]

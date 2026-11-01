@@ -14,6 +14,10 @@ Pullis on puhunut julkisuudessa rikostaustastaan. Seiskan joulukuussa 2025 julka
 
 Elokuussa 2026 Pullis joutui uuden huhun kohteeksi, kun hänen aiemmin kertomansa vuosia vanha Aurajoki-tapaus yhdistettiin sosiaalisessa mediassa saman kesän kuolemantapaukseen. Pullis kiisti Seiskan haastattelussa asioiden liittyvän toisiinsa ja kertoi, että vanhassa tapahtumassa veteen työnnetty mies oli hänen mukaansa noussut joesta. [@P87]
 
+## Laitela92:n vierailu Virossa
+
+Lokakuussa 2025 Pullis oli mukana [[laitela_viro_2025|Pottukoiran Harjumaan vierailuviikonlopussa]]. Hän kertoi [[laitela92|Laitela92:n]] käyneen myös hänen luonaan. [@P138]
+
 ## Kick-lähetykset ja matkaseurueet
 
 Karttunen on lähettänyt Kickissä sisältöä muun muassa Tallinnasta ja yhteisiltä matkoilta. Seiskan elokuun 2026 haastattelussa hänen lähetyksissään vierailleiksi nimetään [[pottu|Pottukoira]], [[tegel|Juhana Tegelberg]] ja [[lassi|Lassi Kuhlman]]. Lokakuussa 2025 hänet mainittiin myös Pottukoiran Viron-vierasjoukossa yhdessä [[pirkkis|Pirkkiksen]] ja muiden striimaajien kanssa. [@P87] [@P88]

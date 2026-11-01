@@ -349,5 +349,11 @@
     "reverse": "kiinniotettuna oli",
     "headingForward": "Kiinniotot",
     "headingReverse": "Kiinniotetut"
+  },
+  "loukkaantui-tapahtumassa": {
+    "forward": "loukkaantui tapahtumassa",
+    "reverse": "loukkaantunut henkilö oli",
+    "headingForward": "Onnettomuudet",
+    "headingReverse": "Loukkaantuneet"
   }
 }

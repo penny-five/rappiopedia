@@ -18,6 +18,8 @@ Huhtikuussa 2025 [[iippa|Iippadaa]] saapui Kärkkäisen luo Viroon, ja kaksikko 
 
 Pottukoira on tehnyt lähetyksiä myös nimellä [[spurgu|Spurgu-TV]]. Hänen kanssaan on striimannut esimerkiksi [[pirkkis|Pirkkis]] eli Kari Liimatta. Keväällä 2025 hän teki Virossa yhteisiä lähetyksiä [[iippa|Iippadaan]] kanssa. [@P48] [@P9] [@P56]
 
+Lokakuussa 2025 Pottukoiran luona vieraili myös [[laitela92|Laitela92]]. [[laitela_viro_2025|Samaan viikonloppuun]] liittyivät Pullis, Pirkkis ja Juhana Tegelberg. [@P138]
+
 Lokakuussa 2025 hänen luonaan Virossa vierailivat [[testotimo|Testotimo]] ja [[aleksi|Aleksi Nurminen]], ja Gekkonen mainitsi myös [[pullis|Pulliksen]] saman vierailukokonaisuuden yhteydessä. Loppuvuonna 2025 hän teki yhteisiä keittiöpöytälähetyksiä [[rauno77|Rauno77:n]] kanssa. Kaksikon välirikkoa käsiteltiin joulukuun uutisoinnissa. [@P60] [@P62]
 
 ## Iippadaan uusi vierailu maaliskuussa 2026

@@ -3348,6 +3348,81 @@
         1000,
         40
       ]
+    },
+    {
+      "id": "upi_parveke_2026",
+      "name": "Upin parvekeonnettomuus 5.10.2026",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Upi loukkaantui parvekkeelta putoamisessa Kirkkonummella 5. lokakuuta 2026 kesken suoran lähetyksen.",
+      "pos3": [
+        2610,
+        -40,
+        865
+      ]
+    },
+    {
+      "id": "lassi_ideapark_2026",
+      "name": "Lassi Kuhlmanin pahoinpitely Ideaparkissa 17.3.2026",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Lassi Kuhlmanin kimppuun käytiin Ideaparkin Rax-ravintolassa suorassa Kick-lähetyksessä, jossa oli mukana Chiara Eklund.",
+      "pos3": [
+        2750,
+        -55,
+        1395
+      ]
+    },
+    {
+      "id": "laitela_kuolema_2025",
+      "name": "Laitela92:n kuolema lokakuussa 2025",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Ismo ”Laitela92” Tauriaisen kuolemasta uutisoitiin 19. lokakuuta 2025. Kuolinpäivää ei vahvistettu julkisesti.",
+      "pos3": [
+        2595,
+        -345,
+        1290
+      ]
+    },
+    {
+      "id": "laitela_viro_2025",
+      "name": "Laitela92:n Viron-vierailu lokakuussa 2025",
+      "group": "pottu-streams",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "note": "Laitela92 vieraili Pottukoiran Harjumaan kodissa. Samana viikonloppuna siellä olivat myös Pullis, Pirkkis ja Juhana Tegelberg.",
+      "pos3": [
+        3400,
+        -365,
+        485
+      ]
+    },
+    {
+      "id": "elmer_poistaminen_2026",
+      "name": "Elmer Andbergin poistaminen PactHouse 3:sta 4.5.2026",
+      "group": "season3",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "PactHouse 3:n tuotanto poisti Elmer Andbergin kilpailusta 4. toukokuuta 2026 ilmoittamansa sääntörikkomuksen vuoksi.",
+      "pos3": [
+        -1015,
+        885,
+        -790
+      ]
     }
   ],
   "edges": [
@@ -7240,6 +7315,133 @@
       ],
       "level": "reported",
       "date": "2025-10-19"
+    },
+    {
+      "a": "upi",
+      "b": "upi_parveke_2026",
+      "type": "loukkaantui-tapahtumassa",
+      "label": "loukkaantui pudottuaan parvekkeelta Kirkkonummella",
+      "date": "2026-10-05",
+      "src": [
+        "P68",
+        "P69",
+        "P91",
+        "P92"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "lassi",
+      "b": "lassi_ideapark_2026",
+      "type": "oli-kohteena",
+      "label": "joutui pahoinpitelyn kohteeksi Ideaparkin ravintolassa",
+      "date": "2026-03-17",
+      "src": [
+        "P25"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "chiara",
+      "b": "lassi_ideapark_2026",
+      "type": "osallistui",
+      "label": "oli paikalla ja yritti puuttua hyökkäykseen",
+      "date": "2026-03-17",
+      "src": [
+        "P25"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "laitela92",
+      "b": "laitela_kuolema_2025",
+      "type": "menehtyi",
+      "label": "kuolemasta uutisoitiin lokakuussa; tarkkaa päivää ei kerrottu",
+      "date": "2025-10",
+      "src": [
+        "P138",
+        "P139"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "laitela92",
+      "b": "laitela_viro_2025",
+      "type": "vieraili",
+      "label": "vieraili Pottukoiran luona Harjumaalla",
+      "date": "2025-10",
+      "src": [
+        "P138"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pottu",
+      "b": "laitela_viro_2025",
+      "type": "isannoi",
+      "label": "otti Laitela92:n vieraakseen Harjumaan kotiinsa",
+      "date": "2025-10",
+      "src": [
+        "P138"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pullis",
+      "b": "laitela_viro_2025",
+      "type": "vieraili",
+      "label": "oli samana viikonloppuna Harjumaalla; Laitela92 kävi myös hänen luonaan",
+      "date": "2025-10",
+      "src": [
+        "P138"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pirkkis",
+      "b": "laitela_viro_2025",
+      "type": "vieraili",
+      "label": "oli Pottukoiran vieraana samana viikonloppuna",
+      "date": "2025-10",
+      "src": [
+        "P138"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "tegel",
+      "b": "laitela_viro_2025",
+      "type": "vieraili",
+      "label": "oli Pottukoiran vieraana samana viikonloppuna",
+      "date": "2025-10",
+      "src": [
+        "P138"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "elmer",
+      "b": "elmer_poistaminen_2026",
+      "type": "poistettiin-tuotannosta",
+      "label": "poistettiin PactHouse 3:sta tuotannon päätöksellä",
+      "date": "2026-05-04",
+      "src": [
+        "P108",
+        "P113"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "s3",
+      "b": "elmer_poistaminen_2026",
+      "type": "sisaltaa",
+      "label": "kauden aikana tehty poistamispäätös",
+      "date": "2026-05-04",
+      "src": [
+        "P108",
+        "P113"
+      ],
+      "level": "reported"
     }
   ],
   "sources": {

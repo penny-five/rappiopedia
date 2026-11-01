@@ -10,6 +10,10 @@ Seiskan lokakuussa 2026 julkaisemassa jutussa Eklund kertoi saaneensa Kickiltä 
 
 Heinäkuussa Chiara esiintyi [[mokkistriimit_july_2026|mökkireissulla]] yhdessä [[megis|Megiksen]], [[julwill|Julia Willmanin]], [[pullis|Pulliksen]], [[sampe|Sampen]], [[pirkkis|Pirkkiksen]] ja [[isabell|Isabell Janssonin]] kanssa. Syyskuun [[mallorca_livet_2026|Mallorcan-matkalla]] hän oli Sampen, Pulliksen ja Megiksen seurueessa. [@P174] [@P178]
 
+## Ideaparkin lähetys Lassi Kuhlmanin kanssa
+
+Maaliskuussa 2026 Eklund oli [[lassi|Lassi Kuhlmanin]] seurassa Ideaparkin ravintolassa, jossa tämä joutui [[lassi_ideapark_2026|pahoinpitelyn kohteeksi]] suorassa lähetyksessä. Eklund yritti puuttua tilanteeseen. [@P25]
+
 ## Pirkkiksen tapaaminen heinäkuun alussa
 
 Heinäkuun 5. päivänä 2026 Eklund esiintyi [[pirkkis_chiara_megis_2026|yhteislähetyksessä]] [[pirkkis|Pirkkiksen]] ja [[megis|Megarokkistaran]] kanssa. Redditissä jaettiin tilanteesta videokatkelma. Kohtaaminen oli erillinen saman kuun lopulla alkaneesta mökkireissusta. [@P203]

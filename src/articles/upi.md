@@ -20,7 +20,7 @@ Uunon lokakuussa 2026 julkaiseman koosteen mukaan Pulkkinen sai vuonna 2021 viid
 
 Kirkkonummen [[killinmaki_2026|Killinmäen retkipaikalla]] paloi 21. syyskuuta 2026 pöytäryhmä ja roska-astioita. Uunon mukaan Pulkkinen kuvasi palavaa retkipaikkaa suorassa lähetyksessään ja poistui paikalta kuvaten myös hälytysajoneuvoja. Länsi-Uudenmaan poliisi tutki tapausta vahingontekona, ja Pulkkista epäiltiin palon sytyttämisestä. Uutisointi ei kertonut asiassa annetusta tuomiosta. [@P90] [@P69]
 
-## Parvekeonnettomuus 5. lokakuuta 2026
+## [[upi_parveke_2026|Parvekeonnettomuus 5. lokakuuta 2026]]
 
 Maanantaina 5. lokakuuta 2026 Upi loukkaantui pudottuaan kerrostalon parvekkeelta Kirkkonummella. Samana iltana alueelle hälytettiin poliisi- ja pelastushenkilöstöä sekä lääkärihelikopteri. Lähetyksestä levinneissä tallenteissa Pulkkinen poistui kameran kuvasta parvekkeen suuntaan, mutta varsinaista putoamista ei tallenteissa nähty. [@P68] [@P69] [@P92]
 

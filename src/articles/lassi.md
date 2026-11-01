@@ -8,7 +8,7 @@ Yle julkaisi 6. helmikuuta 2026 *Perjantai*-sarjaan kuuluvan noin kymmenminuutti
 
 ## Muut striimaajat
 
-Kuhlman on nimetty vuoden 2025 [[s1|PactHouse 1:n]] osallistujaluettelossa. Maaliskuussa 2026 hän esiintyi samassa ravintolalähetyksessä [[chiara|Chiara Eklundin]] kanssa. [[pullis|Pullis]] kertoi Seiskalle Kuhlmanin vierailleen hänen Kick-striimeissään. [@P1] [@P25] [@P87]
+Kuhlman on nimetty vuoden 2025 [[s1|PactHouse 1:n]] osallistujaluettelossa. Maaliskuussa 2026 [[lassi_ideapark_2026|Ideaparkin ravintolalähetyksessä]] hänen kimppuunsa käytiin. Mukana ollut [[chiara|Chiara Eklund]] yritti puuttua pahoinpitelyyn. [@P25] [[pullis|Pullis]] kertoi Seiskalle Kuhlmanin vierailleen hänen Kick-striimeissään. [@P1] [@P25] [@P87]
 
 ## Käräjäoikeustuomio 2026
 

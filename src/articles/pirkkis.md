@@ -12,6 +12,8 @@ Marraskuussa 2024 kaksikko piti [[pottu_viro_sub_2024|Viron subathonin]], jonka 
 
 Heinäkuussa 2026 Reddit-ketjussa jaettiin tieto Pirkkiksen uudesta vierailusta Pottukoiran luona. Kyseessä oli uusi vierailu, ei sama tapahtuma kuin vuosien 2024 ja 2025 subathonit. [@P193]
 
+Lokakuussa 2025 Pirkkis oli yksi [[laitela_viro_2025|Pottukoiran Harjumaan vierailuviikonlopun]] osallistujista yhdessä Laitela92:n, Pulliksen ja Juhana Tegelbergin kanssa. [@P138]
+
 ## Striimit eri tekijöiden kanssa
 
 Liimatta ei ole esiintynyt ainoastaan Pottukoiran kanssa. Marraskuun 2025 uutisissa häntä kuvattiin myös [[iippa|Iippadaan]] lähetyksissä vierailleeksi. Hän on siten liikkunut useiden rappiostriimaajien suoratoistoyhteisöissä ilman, että kaikki lähetykset olisivat samaa ohjelmasarjaa. [@P57]
