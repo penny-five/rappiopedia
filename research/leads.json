@@ -507,14 +507,21 @@
         "chiara",
         "kohujulkkikset_2026",
         "sampe_iippa_megis_2026",
-        "talks"
+        "talks",
+        "mokkistriimit_july_2026",
+        "mallorca_livet_2026",
+        "julia_sampe_helsinki_2026"
       ],
       "sourceIds": [
         "P133",
         "P76",
         "P77",
         "P7",
-        "P19"
+        "P19",
+        "P174",
+        "P178",
+        "P179",
+        "P180"
       ],
       "notes": "1.11.2026: MTV-dokumentti vahvisti oikean nimen Juulia Valikainen ja suhteen Chiara Eklundin sisältöpiiriin. PactHouse 1 -osallistuminen perustuu vielä vain koontiin. Lokakuun PactTalks- ja Sampe-lähetysotsikot tarkistettu, mutta täysiä VOD:eja ei ole katsottu.",
       "questions": [
@@ -542,11 +549,18 @@
         "julwill",
         "big_brother",
         "heiskari",
-        "bailu"
+        "bailu",
+        "mokkistriimit_july_2026",
+        "mallorca_livet_2026",
+        "julia_sampe_helsinki_2026"
       ],
       "sourceIds": [
         "P151",
-        "P13"
+        "P13",
+        "P174",
+        "P178",
+        "P179",
+        "P180"
       ],
       "sourceUrls": [
         "https://streamscharts.com/channels/jjuliaelisa?platform=kick",
@@ -607,6 +621,59 @@
         "Etsi Mean 2023–2025 alkuperäiset TikTok-leikkeet.",
         "Tarkista Bämät matkoilla -projektin VODit ja nimetyt esiintyjät.",
         "Erottele Redditissä esitetyt kertomukset lähteistetystä tapahtumahistoriasta."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "julia-megis-pullis-2026-joint-streams",
+      "title": "Julia Willmanin, Megiksen ja Pulliksen yhteisstriimit 2026",
+      "status": "in-progress",
+      "priority": "high",
+      "nodeIds": [
+        "julwill",
+        "megis",
+        "pullis",
+        "sampe",
+        "chiara",
+        "pirkkis",
+        "isabell",
+        "daniel",
+        "mokkistriimit_july_2026",
+        "mallorca_livet_2026",
+        "julia_sampe_helsinki_2026"
+      ],
+      "sourceIds": [
+        "P174",
+        "P175",
+        "P176",
+        "P177",
+        "P178",
+        "P179",
+        "P180",
+        "P181"
+      ],
+      "sourceUrls": [
+        "https://www.reddit.com/r/snappisensuroimat0n/comments/1v4hooe/c_ja_juulia_jo_mustasukkaisina_xd/",
+        "https://streamrecorder.io/kick/jjuliaelisa",
+        "https://streamrecorder.io/kick/sampef2"
+      ],
+      "notes": "1.11.2026: 23.–26.7. mökkimatkasta aikalaisketjuja ja videoita, 22.9. Mallorca ja 29.10. Julian sekä Sampen yhteinen Helsinki-lähetys. Ei päätelmiä henkilökohtaisista suhteista, ja videoarkistoihin perustuvat vain niiden todelliset otsikot.",
+      "questions": [
+        "Mikä oli mökkipaikkakunta ja viimeinen striimipäivä?",
+        "Keitä muita mökkivieraita oli osassa lähetyksiä?",
+        "Oliko Daniel Hellmanin keikka saman mökkimatkan yhteydessä vai erillinen tapahtuma?",
+        "Mitä muita Mallorcan yhteisstriimejä on alkuperäisissä VOD:eissa?",
+        "Milloin Julia, Megis ja Pullis esiintyivät yhdessä heinäkuun jälkeen?"
+      ],
+      "queries": [
+        "Pullis Julia Willman Megis 23.7.2026 mökki",
+        "SampeF2 jjuliaelisa 29 October 2026",
+        "Megis Pullis Mallorca September 2026"
+      ],
+      "nextSteps": [
+        "Käy alkuperäiset Kick-VOD:t läpi ja tarkenna yksittäiset vierailut.",
+        "Vahvista tapahtuman paikka ja kesto ilman oletuksia.",
+        "Tarkista myöhemmät yhteisstriimit syksyltä 2026."
       ],
       "updatedAt": "2026-11-01"
     }

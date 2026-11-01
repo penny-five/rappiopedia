@@ -6,6 +6,10 @@ Eklund on kertonut tekevänsä suoria lähetyksiä, joissa keskustellaan yleisö
 
 Seiskan lokakuussa 2026 julkaisemassa jutussa Eklund kertoi saaneensa Kickiltä viikoittaisen maksun, jonka viimeisimmäksi määräksi hän arvioi noin 1 250 euroa. Hän kertoi myös hävenneensä joitakin aiempien lähetystensä katkelmia. Nämä ovat hänen omia kuvauksiaan tulonmuodostuksesta ja julkisuudesta. [@P133]
 
+## Mökkistriimit ja Mallorca
+
+Heinäkuussa Chiara esiintyi [[mokkistriimit_july_2026|mökkireissulla]] yhdessä [[megis|Megiksen]], [[julwill|Julia Willmanin]], [[pullis|Pulliksen]], [[sampe|Sampen]], [[pirkkis|Pirkkiksen]] ja [[isabell|Isabell Janssonin]] kanssa. Syyskuun [[mallorca_livet_2026|Mallorcan-matkalla]] hän oli Sampen, Pulliksen ja Megiksen seurueessa. [@P174] [@P178]
+
 ## Televisio ja PactHouse
 
 Eklund ja Megarokkistara olivat MTV Katsomossa 18. lokakuuta 2026 julkaistun *Asian ytimessä.doc: Kohujulkkikset* -ohjelman haastateltavina. Dokumentin toimittaja Iriz Silander seurasi heidän Kick-toimintaansa. [@P133]

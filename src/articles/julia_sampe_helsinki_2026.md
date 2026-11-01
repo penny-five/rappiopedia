@@ -1,0 +1,3 @@
+**Julia Willmanin ja SampeF2:n Helsingin-yhteislähetys** nähtiin 29. lokakuuta 2026. [[julwill|Julian]] lähetyksen otsikko oli *sampen kans stadin yössä* ja [[sampe|Sampen]] vastaavan lähetyksen *Hki w/ @jjuliaelisa*. [@P179] [@P180]
+
+Julia oli jo 27. lokakuuta kertonut otsikossaan matkustavansa Helsinkiin tapaamaan Sampea. Molempien kanavien 29. lokakuuta julkaistut otsikot tukevat yhteistä striimaamista. Kaksikko oli mukana myös [[mokkistriimit_july_2026|heinäkuun mökkistriimeissä]]. [@P179] [@P174]

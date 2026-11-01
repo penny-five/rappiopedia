@@ -2965,6 +2965,54 @@
         590
       ],
       "featured": false
+    },
+    {
+      "id": "mokkistriimit_july_2026",
+      "name": "Heinäkuun 2026 mökkistriimit",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "group": "rappio",
+      "note": "23.7.2026 alkanut heinäkuun mökkireissu, jossa oli mukana Julia Willman, Megis, Pullis, SampeF2, Chiara, Pirkkis ja Isabell Jansson.",
+      "pos3": [
+        2510,
+        -290,
+        1090
+      ],
+      "featured": false
+    },
+    {
+      "id": "mallorca_livet_2026",
+      "name": "Mallorcan yhteisstriimit 9/2026",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "group": "rappio",
+      "note": "Syyskuun 2026 Mallorcan yhteislähetyksiä, joissa mukana SampeF2, Pullis, Megis ja Chiara.",
+      "pos3": [
+        2650,
+        -230,
+        1010
+      ],
+      "featured": false
+    },
+    {
+      "id": "julia_sampe_helsinki_2026",
+      "name": "Julia ja Sampe / Helsinki 29.10.2026",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "group": "rappio",
+      "note": "Julia Willmanin ja SampeF2:n Helsingin yhteisstriimit 29.10.2026.",
+      "pos3": [
+        2660,
+        -290,
+        1240
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -6095,6 +6143,290 @@
       ],
       "level": "reported",
       "date": "2026-10-30"
+    },
+    {
+      "a": "julwill",
+      "b": "mokkistriimit_july_2026",
+      "type": "osallistui",
+      "label": "nähtiin heinäkuun mökkistriimeissä",
+      "src": [
+        "P174",
+        "P175"
+      ],
+      "level": "reported",
+      "date": "2026-07-23",
+      "detail": ""
+    },
+    {
+      "a": "megis",
+      "b": "mokkistriimit_july_2026",
+      "type": "osallistui",
+      "label": "nähtiin heinäkuun mökkistriimeissä",
+      "src": [
+        "P174",
+        "P175"
+      ],
+      "level": "reported",
+      "date": "2026-07-23",
+      "detail": ""
+    },
+    {
+      "a": "pullis",
+      "b": "mokkistriimit_july_2026",
+      "type": "osallistui",
+      "label": "nähtiin heinäkuun mökkistriimeissä",
+      "src": [
+        "P174",
+        "P175"
+      ],
+      "level": "reported",
+      "date": "2026-07-23",
+      "detail": ""
+    },
+    {
+      "a": "sampe",
+      "b": "mokkistriimit_july_2026",
+      "type": "osallistui",
+      "label": "nähtiin heinäkuun mökkistriimeissä",
+      "src": [
+        "P174",
+        "P175"
+      ],
+      "level": "reported",
+      "date": "2026-07-23",
+      "detail": ""
+    },
+    {
+      "a": "chiara",
+      "b": "mokkistriimit_july_2026",
+      "type": "osallistui",
+      "label": "nähtiin heinäkuun mökkistriimeissä",
+      "src": [
+        "P174",
+        "P175"
+      ],
+      "level": "reported",
+      "date": "2026-07-23",
+      "detail": ""
+    },
+    {
+      "a": "pirkkis",
+      "b": "mokkistriimit_july_2026",
+      "type": "osallistui",
+      "label": "nähtiin heinäkuun mökkistriimeissä",
+      "src": [
+        "P174",
+        "P175"
+      ],
+      "level": "reported",
+      "date": "2026-07-23",
+      "detail": ""
+    },
+    {
+      "a": "isabell",
+      "b": "mokkistriimit_july_2026",
+      "type": "osallistui",
+      "label": "nähtiin heinäkuun mökkistriimeissä",
+      "src": [
+        "P174",
+        "P175"
+      ],
+      "level": "reported",
+      "date": "2026-07-23",
+      "detail": ""
+    },
+    {
+      "a": "daniel",
+      "b": "mokkistriimit_july_2026",
+      "type": "osallistui",
+      "label": "nähtiin heinäkuun mökkistriimeissä",
+      "src": [
+        "P174",
+        "P175"
+      ],
+      "level": "reported",
+      "date": "2026-07-23",
+      "detail": ""
+    },
+    {
+      "a": "megis",
+      "b": "mallorca_livet_2026",
+      "type": "osallistui",
+      "label": "mukana Mallorcan yhteisstriimeissä",
+      "src": [
+        "P178"
+      ],
+      "level": "reported",
+      "date": "2026-09-22",
+      "detail": ""
+    },
+    {
+      "a": "pullis",
+      "b": "mallorca_livet_2026",
+      "type": "osallistui",
+      "label": "mukana Mallorcan yhteisstriimeissä",
+      "src": [
+        "P178"
+      ],
+      "level": "reported",
+      "date": "2026-09-22",
+      "detail": ""
+    },
+    {
+      "a": "sampe",
+      "b": "mallorca_livet_2026",
+      "type": "osallistui",
+      "label": "mukana Mallorcan yhteisstriimeissä",
+      "src": [
+        "P178"
+      ],
+      "level": "reported",
+      "date": "2026-09-22",
+      "detail": ""
+    },
+    {
+      "a": "chiara",
+      "b": "mallorca_livet_2026",
+      "type": "osallistui",
+      "label": "mukana Mallorcan yhteisstriimeissä",
+      "src": [
+        "P178"
+      ],
+      "level": "reported",
+      "date": "2026-09-22",
+      "detail": ""
+    },
+    {
+      "a": "julwill",
+      "b": "julia_sampe_helsinki_2026",
+      "type": "striimasi",
+      "label": "Helsingin yhteislähetys 29.10.",
+      "src": [
+        "P179",
+        "P180"
+      ],
+      "level": "observed",
+      "date": "2026-10-29",
+      "detail": ""
+    },
+    {
+      "a": "sampe",
+      "b": "julia_sampe_helsinki_2026",
+      "type": "striimasi",
+      "label": "Helsingin yhteislähetys 29.10.",
+      "src": [
+        "P179",
+        "P180"
+      ],
+      "level": "observed",
+      "date": "2026-10-29",
+      "detail": ""
+    },
+    {
+      "a": "julwill",
+      "b": "megis",
+      "type": "striimasi-yhdessa",
+      "label": "heinäkuun mökkistriimit",
+      "src": [
+        "P174",
+        "P175"
+      ],
+      "level": "reported",
+      "date": "2026-07",
+      "detail": ""
+    },
+    {
+      "a": "julwill",
+      "b": "pullis",
+      "type": "striimasi-yhdessa",
+      "label": "mökkistriimit ja Hellmanin keikka",
+      "src": [
+        "P174",
+        "P176"
+      ],
+      "level": "reported",
+      "date": "2026-07",
+      "detail": ""
+    },
+    {
+      "a": "megis",
+      "b": "pullis",
+      "type": "striimasi-yhdessa",
+      "label": "heinäkuun ja syyskuun yhteisstriimit",
+      "src": [
+        "P181",
+        "P174",
+        "P178"
+      ],
+      "level": "reported",
+      "date": "2026",
+      "detail": ""
+    },
+    {
+      "a": "julwill",
+      "b": "sampe",
+      "type": "striimasi-yhdessa",
+      "label": "Helsinki 29.10.2026",
+      "src": [
+        "P179",
+        "P180"
+      ],
+      "level": "observed",
+      "date": "2026-10-29",
+      "detail": ""
+    },
+    {
+      "a": "megis",
+      "b": "sampe",
+      "type": "striimasi-yhdessa",
+      "label": "heinäkuun mökki, Mallorca ja lokakuun lähetykset",
+      "src": [
+        "P174",
+        "P178",
+        "P76",
+        "P77"
+      ],
+      "level": "reported",
+      "date": "2026",
+      "detail": ""
+    },
+    {
+      "a": "julwill",
+      "b": "daniel",
+      "type": "esiintyi-yhdessa",
+      "label": "keikka ja suppailu 25.–26.7.",
+      "src": [
+        "P176",
+        "P177"
+      ],
+      "level": "reported",
+      "date": "2026-07",
+      "detail": ""
+    },
+    {
+      "a": "pullis",
+      "b": "daniel",
+      "type": "esiintyi-yhdessa",
+      "label": "keikka ja suppailu 25.–26.7.",
+      "src": [
+        "P176",
+        "P177"
+      ],
+      "level": "reported",
+      "date": "2026-07",
+      "detail": ""
+    },
+    {
+      "a": "megis",
+      "b": "daniel",
+      "type": "esiintyi-yhdessa",
+      "label": "Hellmanin keikka 25.7.",
+      "src": [
+        "P176"
+      ],
+      "level": "reported",
+      "date": "2026-07-25",
+      "detail": ""
     }
   ],
   "sources": {
@@ -6967,6 +7299,46 @@
       "label": "Gekkonen 20.5.2025: Pottukoiran ja Pirkkiksen lähetys",
       "url": "https://gekkonen.net/pottukoiran-tuorein-tempaus-jattaa-sanattomaksi/",
       "note": "Suoraan nimetty Pottukoira–Pirkkis-yhteislähetys ja Spurgu-TV-kanava."
+    },
+    "P174": {
+      "label": "Reddit 23.7.2026: heinäkuun mökkiporukka",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1v4hooe/c_ja_juulia_jo_mustasukkaisina_xd/",
+      "note": "Samanaikaisten lähetysten katsojat nimeävät Julian, Megiksen, Pulliksen, Sampen, Chiaran, Pirkkiksen ja Isben; Daniel liittyi seurueeseen."
+    },
+    "P175": {
+      "label": "Reddit 23.7.2026: mökkimatkan livet",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1v4kw1u/nyt_alkaa_tunnelma_rakoilee/",
+      "note": "Heinäkuun mökkimatkan striimejä seuranneiden kuvaukset ryhmän tapahtumista."
+    },
+    "P176": {
+      "label": "Reddit 25.7.2026: Daniel Hellmanin keikka",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1v62yfe/hellmanin_ja_megiksen_keikka/",
+      "note": "Videokatkelma Daniel Hellmanin ja Megiksen esiintymisestä; katsojien mukaan Julia ja Pullis olivat lavalla."
+    },
+    "P177": {
+      "label": "Reddit 26.7.2026: Pullis, Julia ja Daniel suppailemassa",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1v79z0g/pullis_julle_ja_daniel_suppailemassa/",
+      "note": "Julkaistu video samoista kolmesta suppailemassa."
+    },
+    "P178": {
+      "label": "Reddit 22.9.2026: Mallorcan yhteinen rantapäivä",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1wnaiq8/pahat_tilanteet_mallorcalla_sampen_ja_pulliksen/",
+      "note": "Sampe, Pullis ja Chiara uimassa, Megis ja Jennifer rannalla; katsojien kertomus."
+    },
+    "P179": {
+      "label": "StreamRecorder: jjuliaelisa lokakuussa 2026",
+      "url": "https://streamrecorder.io/kick/jjuliaelisa",
+      "note": "Julian 27.10. otsikko Sampen tapaamisesta ja 29.10. 'sampen kans stadin yössä'."
+    },
+    "P180": {
+      "label": "StreamRecorder: sampef2 lokakuussa 2026",
+      "url": "https://streamrecorder.io/kick/sampef2",
+      "note": "29.10.2026 Sampen Kick-otsikko 'Hki w/ @jjuliaelisa'."
+    },
+    "P181": {
+      "label": "Reddit 6.7.2026: Pullis ja Megis yhteislähetyksessä",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1uowwpl/pullis_ja_megis_cuddlailee/",
+      "note": "6.7. saman suoratoiston osallistujia käsittelevä videoketju."
     }
   },
   "date": "2026-11-01"

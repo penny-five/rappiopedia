@@ -8,6 +8,12 @@ Lokakuun loppupuolella SampeF2:n lähetyksissä nimettiin myös [[iippa|Iippadaa
 
 SampeF2:n striimiotsikoissa on esiintynyt kasinovertailupalvelu [[kasinok|Kasinokurjen]] !kasinokurki-komento muiden tunnisteiden rinnalla. [@P76] [@P78]
 
+## Mökkireissu, Mallorca ja Julia Willman
+
+Heinäkuun 2026 [[mokkistriimit_july_2026|mökkistriimeissä]] Sampe esiintyi [[julwill|Julia Willmanin]], [[megis|Megiksen]], [[pullis|Pulliksen]], [[chiara|Chiaran]], [[pirkkis|Pirkkiksen]] ja [[isabell|Isabell Janssonin]] kanssa. Syyskuussa hän teki [[mallorca_livet_2026|Mallorcan yhteisstriimejä]] Pulliksen ja Megiksen seurueessa. [@P174] [@P178]
+
+Lokakuun 29. päivänä Sampe teki [[julia_sampe_helsinki_2026|yhteislähetyksen Julian kanssa]]. Molempien Kick-kanavien arkistoissa on samana päivänä toisen tekijän mainitseva lähetysotsikko. [@P179] [@P180]
+
 ## Pirkkiksen Ateenan-matka ja etsinnät 2025
 
 Marraskuussa 2025 Sampe striimasi Kreikan Ateenassa yhdessä [[pirkkis|Pirkka-Ukon eli Pirkkiksen]] kanssa. Kun Pirkkikseen ei 8. marraskuuta jälkeen saatu yhteyttä, Sampe kuvasi lähetyksiä, joissa etsi matkaseuralaistaan. Kadonneesta uutisoitiin laajalti. [@P50] [@P49]

@@ -18,6 +18,12 @@ Karttunen on lähettänyt Kickissä sisältöä muun muassa Tallinnasta ja yhtei
 
 Useiden vuoden 2026 lähetysten otsikoissa esiintyy myös nettikasinoita vertailevan [[kasinok|Kasinokurjen]] !kasinokurki-komento. Samaa bränditunnistetta käyttävät myös muut striimaajat. [@P81] [@P83] [@P78] [@P81] [@P83]
 
+## Yhteisstriimit Julian ja Megiksen kanssa
+
+Heinäkuun 2026 alussa Pullis esiintyi samassa livessä [[megis|Megiksen]] kanssa. Myöhemmin [[mokkistriimit_july_2026|mökkireissulla]] olivat mukana muun muassa [[julwill|Julia Willman]], [[sampe|SampeF2]], [[chiara|Chiara]], [[pirkkis|Pirkkis]] ja [[isabell|Isabell Jansson]]. Heinäkuun 25.–26. päiviltä on katsojien jakamia videoita [[daniel|Daniel Hellmanin]] keikasta sekä Julian, Pulliksen ja Danielin suppailusta. [@P181] [@P174] [@P176] [@P177]
+
+Syyskuun [[mallorca_livet_2026|Mallorcan yhteisstriimeissä]] Pullis oli Sampen, Megiksen ja Chiaran seurueessa. [@P178]
+
 ## 1vs1 Fighting
 
 Pullis osallistui 20. joulukuuta 2025 Pasilan liikuntahallissa järjestetyn [[fighting_1vs1_2025|1vs1 Fighting -illan]] pääotteluun. Vastustaja oli [[claudia_barsk|Claudia Barsk]]. Pullis voitti ottelun Claudian luovutettua toisessa erässä. [@P86] [@P85]

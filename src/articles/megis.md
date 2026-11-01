@@ -12,6 +12,14 @@ Megarokkistara on nimetty vuoden 2025 [[s1|PactHouse 1:n]] osallistujaksi julkis
 
 Vuonna 2026 Valikainen esiintyi [[talks|PactTalksin]] kahdessa lokakuun jaksossa: 11. lokakuuta jaksossa 80 [[pasi|Pasi Viherahon]] kanssa ja 20. lokakuuta jaksossa 87 [[iippa|Iippadaan]] kanssa. Nimet ja päivämäärät käyvät ilmi ohjelman julkisista lähetysotsikoista. [@P7] [@P19]
 
+## Julia, Pullis ja mökkistriimit
+
+Heinäkuun alussa 2026 Megis oli samassa suorassa lähetyksessä [[pullis|Pulliksen]] kanssa. Myöhemmin [[mokkistriimit_july_2026|mökkireissulla]] olivat mukana myös [[julwill|Julia Willman]], [[sampe|SampeF2]], [[chiara|Chiara]], [[pirkkis|Pirkkis]] ja [[isabell|Isabell Jansson]]. Heinäkuun 25. päivän videokatkelmassa Megis esiintyi [[daniel|Daniel Hellmanin]] kanssa. [@P181] [@P174] [@P176]
+
+## Mallorca syyskuussa
+
+Syyskuussa Megis oli [[mallorca_livet_2026|Mallorcan yhteisstriimeissä]] Pulliksen, Sampen ja Chiaran seurueessa. [@P178]
+
 ## Yhteislähetykset lokakuussa 2026
 
 [[sampe|SampeF2:n]] Kick-kanavan lähetysarkistossa mainittiin lokakuun 20.–21. päivän IRL-lähetyksissä sekä Iippadaa että Megis. Seuraavina päivinä kanavalla nähtiin Tornion-matkaan liittyviä otsikoita, joissa Valikainen mainittiin. Näitä lähetyksiä käsitellään myös [[sampe_iippa_megis_2026|SampeF2:n yhteislähetysten artikkelissa]]. [@P76] [@P77]

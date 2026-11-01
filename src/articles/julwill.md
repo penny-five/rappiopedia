@@ -10,6 +10,14 @@ Big Brother toi Willmanille televisiojulkisuutta vuosia ennen Kick-lähetyksiä.
 
 Willmanin Kick-kanava tunnetaan nimellä *jjuliaelisa*, ja hänen TikTok-tunnuksensa on *jjuliaelisaa*. StreamRecorderin julkisessa lähetysarkistossa näkyy syys–lokakuun 2026 videoita arkisista tilanteista, matkustamisesta ja muiden somepersoonien seurasta.
 
+## Mökkistriimit Pulliksen ja Megiksen kanssa
+
+Heinäkuun 2026 [[mokkistriimit_july_2026|mökkireissulla]] Julia esiintyi [[megis|Megarokkistaran]], [[pullis|Pulliksen]], [[sampe|SampeF2:n]], [[chiara|Chiaran]], [[pirkkis|Pirkkiksen]] ja [[isabell|Isabell Janssonin]] kanssa. Myöhemmin julkaistiin keikkakatkelma, jossa myös Julian kerrottiin olleen [[daniel|Daniel Hellmanin]] lavalla, ja video Julian, Pulliksen sekä Danielin suppailusta. [@P174] [@P176] [@P177]
+
+## Helsingin-lähetys Sampen kanssa
+
+Lokakuun 29. päivän Julian striimi *sampen kans stadin yössä* ja Sampen *Hki w/ @jjuliaelisa* dokumentoivat [[julia_sampe_helsinki_2026|yhteisen Helsingin-lähetyksen]]. [@P179] [@P180]
+
 ## Kristian Heiskarin yhteislähetys
 
 Halloweenina 2026 Julia esiintyi [[heiskari|Kristian Heiskarin]] Kick-lähetyksessä. Gekkosen julkaisemien kuvien mukaan Heiskari pukeutui [[pottu|Pottukoiraksi]] ja Julia puolestaan Pottukoiran koiraa, Spukea, esittäväksi hahmoksi. Heiskari ja Julia tunnettiin entuudestaan eri Big Brother -kausista.
