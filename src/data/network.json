@@ -932,10 +932,10 @@
     },
     {
       "id": "chiara",
-      "name": "Chiara",
+      "name": "Chiara Eklund",
       "group": "season1",
       "cat": "person",
-      "note": "Chiara on nimetty PactHouse 1:n osallistujaksi julkaistussa koonnissa.",
+      "note": "Chiara Eklund on TikTok- ja Kick-striimauksesta tunnettu suomalainen somevaikuttaja, joka esiintyi Juulia Valikaisen kanssa MTV:n Kohujulkkikset-dokumentissa vuonna 2026.",
       "x": 500,
       "y": 1143,
       "pos3": [
@@ -945,24 +945,28 @@
       ],
       "featured": false,
       "types": [
+        "rappiostriimaaja",
+        "somevaikuttaja",
         "tosi-tv-osallistuja"
       ]
     },
     {
       "id": "megis",
-      "name": "Megis / Megarokkistara",
-      "group": "season1",
+      "name": "Megarokkistara / Juulia Valikainen",
+      "group": "rappio",
       "cat": "person",
-      "note": "Megarokkistara on nimetty PactHouse 1:n osallistujaksi ja vieraillut myöhemmin PactTalksissa.",
+      "note": "Juulia ”Megarokkistara” Valikainen on TikTokista ja Kick-lähetyksistä tunnettu rappiostriimaaja. Hän esiintyi Chiara Eklundin kanssa vuoden 2026 Kohujulkkikset-dokumentissa.",
       "x": 881,
       "y": 1155,
       "pos3": [
-        -2085,
-        168,
-        -454
+        1910,
+        -210,
+        1110
       ],
-      "featured": false,
+      "featured": true,
       "types": [
+        "rappiostriimaaja",
+        "somevaikuttaja",
         "tosi-tv-osallistuja"
       ]
     },
@@ -2649,6 +2653,102 @@
         -200,
         -400,
         2050
+      ],
+      "featured": false
+    },
+    {
+      "id": "niilo22",
+      "name": "Niilo22 / Mikael Kosola",
+      "group": "rappio",
+      "cat": "person",
+      "types": [
+        "videontekija"
+      ],
+      "note": "Mikael Kosola eli Niilo22 on vuodesta 2008 arjestaan videoita julkaissut suomalainen YouTube-pioneeri. Hän esiintyi Ylen Tubettajat-dokumentissa ja vuoden 2026 Niilo22 ja viimeinen megis -dokumentissa.",
+      "pos3": [
+        1760,
+        -230,
+        1230
+      ],
+      "featured": false
+    },
+    {
+      "id": "markoboy87",
+      "name": "Markoboy87",
+      "group": "rappio",
+      "cat": "person",
+      "types": [
+        "videontekija"
+      ],
+      "note": "Markoboy87 on Porista lähtöisin oleva suomalainen YouTube-pioneeri, joka tunnetaan etenkin juomien avaamis- ja maisteluvideoistaan sekä värikkäistä reaktioistaan.",
+      "pos3": [
+        1840,
+        -350,
+        940
+      ],
+      "featured": false
+    },
+    {
+      "id": "iltapalamies",
+      "name": "Iltapalamies / Asko Huttunen",
+      "group": "rappio",
+      "cat": "person",
+      "types": [
+        "videontekija"
+      ],
+      "note": "Asko Huttunen eli Iltapalamies on suomalainen varhainen videobloggaaja, joka teki ruoka-arvioita ja pianolla säestettyjä cover-esityksiä. Hän esiintyi Ylen vuoden 2014 Tubettajat-dokumentissa.",
+      "pos3": [
+        2300,
+        -320,
+        1300
+      ],
+      "featured": false
+    },
+    {
+      "id": "laitela92",
+      "name": "Laitela92 / Ismo Tauriainen",
+      "group": "rappio",
+      "cat": "person",
+      "types": [
+        "rappiostriimaaja"
+      ],
+      "note": "Ismo Tauriainen (s. 1992, kuoli lokakuussa 2025) oli Laitela92-nimellä tunnettu TikTok- ja Kick-striimaaja, joka vieraili Pottukoiran luona Virossa.",
+      "pos3": [
+        2070,
+        -390,
+        1380
+      ],
+      "featured": false
+    },
+    {
+      "id": "tubettajat_2014",
+      "name": "Tubettajat (Yle 2014)",
+      "group": "documents",
+      "cat": "show",
+      "types": [
+        "dokumenttiohjelma"
+      ],
+      "note": "Ylen vuoden 2014 dokumentti kolmen suomalaisen varhaisen videobloggaajan, Pasi Viherahon, Niilo22:n ja Iltapalamiehen, elämästä ja julkaisuista.",
+      "pos3": [
+        -380,
+        -250,
+        2250
+      ],
+      "featured": false
+    },
+    {
+      "id": "kohujulkkikset_2026",
+      "name": "Asian ytimessä.doc: Kohujulkkikset",
+      "group": "documents",
+      "cat": "show",
+      "types": [
+        "dokumenttiohjelma"
+      ],
+      "note": "Lokakuussa 2026 julkaistu MTV:n dokumentti seuraa Chiara Eklundin ja Juulia Valikaisen Kick-lähetyksiä sekä striimijulkisuuden ansaintaa.",
+      "pos3": [
+        -410,
+        -300,
+        2470
       ],
       "featured": false
     }
@@ -5625,6 +5725,103 @@
       ],
       "date": "2025",
       "detail": "Aller Studiosin tuottama dokumenttisarja."
+    },
+    {
+      "a": "megis",
+      "b": "kohujulkkikset_2026",
+      "type": "esiintyi",
+      "label": "dokumentin päähenkilö",
+      "src": [
+        "P133"
+      ],
+      "level": "reported",
+      "date": "2026-10-18",
+      "detail": ""
+    },
+    {
+      "a": "chiara",
+      "b": "kohujulkkikset_2026",
+      "type": "esiintyi",
+      "label": "dokumentin toinen päähenkilö",
+      "src": [
+        "P133"
+      ],
+      "level": "reported",
+      "date": "2026-10-18",
+      "detail": ""
+    },
+    {
+      "a": "megis",
+      "b": "chiara",
+      "type": "esiintyi-yhdessa",
+      "label": "MTV:n Kohujulkkikset-dokumentissa ja yhteisessä suorassa lähetyksessä",
+      "src": [
+        "P133"
+      ],
+      "level": "reported",
+      "date": "2026-10",
+      "detail": ""
+    },
+    {
+      "a": "niilo22",
+      "b": "tubettajat_2014",
+      "type": "esiintyi",
+      "label": "Ylen dokumentin päähenkilö",
+      "src": [
+        "P134"
+      ],
+      "level": "verified",
+      "date": "2014",
+      "detail": ""
+    },
+    {
+      "a": "pasi",
+      "b": "tubettajat_2014",
+      "type": "esiintyi",
+      "label": "Ylen dokumentin päähenkilö",
+      "src": [
+        "P134"
+      ],
+      "level": "verified",
+      "date": "2014",
+      "detail": ""
+    },
+    {
+      "a": "iltapalamies",
+      "b": "tubettajat_2014",
+      "type": "esiintyi",
+      "label": "Ylen dokumentin päähenkilö",
+      "src": [
+        "P134"
+      ],
+      "level": "verified",
+      "date": "2014",
+      "detail": ""
+    },
+    {
+      "a": "laitela92",
+      "b": "pottu",
+      "type": "vieraili",
+      "label": "vieraili Pottukoiran Viron-talossa lokakuussa 2025",
+      "src": [
+        "P138",
+        "P139"
+      ],
+      "level": "reported",
+      "date": "2025-10",
+      "detail": ""
+    },
+    {
+      "a": "laitela92",
+      "b": "pullis",
+      "type": "vieraili",
+      "label": "vieraili Pulliksen luona Viron-matkan aikana",
+      "src": [
+        "P138"
+      ],
+      "level": "reported",
+      "date": "2025-10",
+      "detail": ""
     }
   ],
   "sources": {
@@ -6292,6 +6489,51 @@
       "label": "Yle 18.6.2026: Pottukoiran rahapelimarkkinoinnin oikeusasia",
       "url": "https://yle.fi/a/74-20229893",
       "note": "80 päiväsakon käräjäoikeustuomio, ei lainvoimainen uutisointihetkellä; sama uutinen on myös lähteessä P59."
+    },
+    "P133": {
+      "label": "Seiska 18.10.2026: Chiara ja Megarokkistara MTV:n dokumentissa",
+      "url": "https://www.seiska.fi/katso/rappiostriimaajan-hurjat-tulot-yllattavat/2290862",
+      "note": "Nimeää Megarokkistaran Juulia Valikaiseksi ja Chiaran Chiara Eklundiksi; kuvaa MTV:n Kohujulkkikset-ohjelmaa ja Kick-haasteita."
+    },
+    "P134": {
+      "label": "Ylen Elävä arkisto 28.5.2014: Tubettajat-dokumentti",
+      "url": "https://yle.fi/a/20-119084",
+      "note": "2014 dokumentin kolme päähenkilöä: Pasi Viheraho, Niilo22 eli Mikael Kosola, Iltapalamies eli Asko Huttunen."
+    },
+    "P135": {
+      "label": "Yle 2026: Niilo22 ja energiajuomista irtautuminen",
+      "url": "https://yle.fi/a/74-20233073",
+      "note": "Ylen Perjantai-dokumentti Niilo22 ja viimeinen megis; 66 päivän kofeiinin vähentämisen haaste, yli 100 000 tilaajaa."
+    },
+    "P136": {
+      "label": "Yle 9.8.2025: Niilo22 esiintyi Simerockissa",
+      "url": "https://yle.fi/a/74-20171596",
+      "note": "Mikael Kosola, vuodesta 2008 tehdyt videot, Simerockin viiden minuutin esitys."
+    },
+    "P137": {
+      "label": "Yle 28.6.2018: Markoboy87:n henkilöhaastattelu",
+      "url": "https://yle.fi/a/3-10276104",
+      "note": "Markoboy87:n porilainen videoura vuodesta 2011, juomien avaamisvideot, Tubecon, 30 000 tilaajaa, Ylilaudan keräys."
+    },
+    "P138": {
+      "label": "Seiska 19.10.2025: Laitela92 eli Ismo Tauriainen kuoli",
+      "url": "https://www.seiska.fi/kotimaa/suomalainen-rappiostriimaaja-on-kuollut/1966750",
+      "note": "Nimi ja syntymävuosi, kuoleman vahvisti äiti; vierailu Pottukoiran luona Virossa, mukana Pullis, Pirkkis ja Tegelberg."
+    },
+    "P139": {
+      "label": "Gekkonen 20.10.2025: Laitela92:n viimeiset striimit",
+      "url": "https://gekkonen.net/tallaisen-viestin-rappiostriimaaja-ismo-tauriainen-lahetti-pottukoiralle-vain-hetkea-ennen-kuolemaansa/",
+      "note": "Ismo Tauriaisen TikTok- ja Kick-ura, lokakuun 2025 vierailu Virossa."
+    },
+    "P140": {
+      "label": "Kaupunkikanava 24.5.2022: rappiotubetuksen pioneereja",
+      "url": "https://kaupunkikanava.fi/hyppy-tyhjyyteen-sisallontuotannon-pimea-puoli/",
+      "note": "Joni Hakasalon kirjoitus tunnistaa varhaisia tubettajia Niilo22, Pasi, Markoboy, Sillu100, MarkoRepairs, DjPate246 ja Aatami86."
+    },
+    "P141": {
+      "label": "Seiska 21.10.2025: Laitela92:n kuoleman jatkouutinen",
+      "url": "https://www.seiska.fi/kotimaa/kuolleen-rappiostriimaajan-rakkaalta-sydantasarkeva-ulostulo/1968739",
+      "note": "Vahvistaa Ismo Tauriaisen kuoleman ja lähipiirin julkisen reagoinnin; kuolinsyytä ei ole vahvistettu."
     }
   },
   "date": "2026-11-01"

@@ -451,6 +451,87 @@
         "Etsi alkuperäiset Tritonin videot, kirjaa panokset ja tulokset."
       ],
       "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "early-youtube-rappiotube-history-2011-2026",
+      "title": "Varhaisten rappiotubettajien ja nykyisten IRL-striimaajien historia",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "niilo22",
+        "markoboy87",
+        "iltapalamies",
+        "pasi",
+        "tubettajat_2014",
+        "laitela92",
+        "pottu"
+      ],
+      "sourceIds": [
+        "P134",
+        "P135",
+        "P136",
+        "P137",
+        "P138",
+        "P140"
+      ],
+      "sourceUrls": [
+        "https://kaupunkikanava.fi/hyppy-tyhjyyteen-sisallontuotannon-pimea-puoli/"
+      ],
+      "notes": "1.11.2026: Ylen vuoden 2014 Tubettajat liittää Niilo22:n, Pasin ja Iltapalamiehen yhteen. Markoboylle Ylen 2018 henkilöhaastattelu. Laitela92:n kuolema ja vuoden 2025 Viron-vierailut Seiskassa. Kaupunkikanavan 2022 artikkeli nimeää lisäksi Aatami86:n, Sillu100:n, MarkoRepairsin ja DjPate246:n; niistä ei vielä tarkkaa uraselvitystä.",
+      "questions": [
+        "Mitä alkuperäisiä videoita Aatami86:n Englannin-vaiheesta löytyy?",
+        "Mitä uusia lähteitä Sillu100:n, MarkoRepairsin ja DjPate246:n urista löytyy?",
+        "Mitä ristiin esiintymisiä vanhoilla YouTube-hahmoilla oli?",
+        "Onko Laitela92:n täsmällisestä kuolinpäivästä julkista vahvistusta?"
+      ],
+      "queries": [
+        "\"Aatami86\" Swindon vlog",
+        "\"Sillu100\" YouTube",
+        "\"MarkoRepairs\" Niilo22",
+        "\"DjPate246\" tubettaja"
+      ],
+      "nextSteps": [
+        "Etsi alkuperäiset videokanavat ja ajoitetut lehtihaastattelut.",
+        "Erottele yhteinen dokumenttiin osallistuminen aidosta yhteistyöstä.",
+        "Älä arvaa Laitela92:n kuolinsyytä."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "megis-juulia-valikainen-background",
+      "title": "Megarokkistaran varhainen someura ja lähetykset",
+      "status": "in-progress",
+      "priority": "high",
+      "nodeIds": [
+        "megis",
+        "chiara",
+        "kohujulkkikset_2026",
+        "sampe_iippa_megis_2026",
+        "talks"
+      ],
+      "sourceIds": [
+        "P133",
+        "P76",
+        "P77",
+        "P7",
+        "P19"
+      ],
+      "notes": "1.11.2026: MTV-dokumentti vahvisti oikean nimen Juulia Valikainen ja suhteen Chiara Eklundin sisältöpiiriin. PactHouse 1 -osallistuminen perustuu vielä vain koontiin. Lokakuun PactTalks- ja Sampe-lähetysotsikot tarkistettu, mutta täysiä VOD:eja ei ole katsottu.",
+      "questions": [
+        "Milloin Juulian omat TikTok- ja Kick-lähetykset alkoivat?",
+        "Mikä on Megiksen tarkka PactHouse 1 -rooli alkuperäistallenteessa?",
+        "Mitä tapahtui Tornion yhteislähetyksissä lokakuussa 2026?"
+      ],
+      "queries": [
+        "\"Juulia Valikainen\" \"Megarokkistara\" 2024 2025",
+        "\"Megis\" \"Chiara Eklund\" striimi",
+        "\"Megarokkistara\" PactHouse 1"
+      ],
+      "nextSteps": [
+        "Etsi varhaisimmat julkiset videot ja haastattelut.",
+        "Katso PACT- ja Sampe-tallenteet sekä kirjaa muut läsnäolijat."
+      ],
+      "updatedAt": "2026-11-01"
     }
   ]
 }
