@@ -304,7 +304,10 @@
         -417,
         412
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/pirkkis.webp",
+      "imageSource": "https://image.seiska.fi/1988825.webp?compression=100&croph=100&cropw=100&height=630&imageId=1988825&width=1200&x=0&y=0",
+      "imageCredit": "Seiska; Kari Liimatan kuva Jouko Kärkkäisen kotialbumista (kuvakooste), 10.11.2025"
     },
     {
       "id": "bailu",
@@ -544,7 +547,10 @@
         669,
         -816
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/heiskari.webp",
+      "imageSource": "https://image.seiska.fi/1271097.webp?compression=100&croph=37.45&cropw=100&height=630&imageId=1271097&width=1200&x=0&y=6.86",
+      "imageCredit": "Seiska, Kristian Heiskari; henkilöhaastattelu"
     },
     {
       "id": "tegel",
@@ -559,7 +565,10 @@
         330,
         -865
       ],
-      "featured": true
+      "featured": true,
+      "image": "images/tegel.webp",
+      "imageSource": "https://image.seiska.fi/2070578.webp?compression=100&croph=100&cropw=100&height=630&imageId=2070578&width=1200&x=0&y=0",
+      "imageCredit": "Seiska, Juhana Tegelberg; artikkeli 10.2.2026"
     },
     {
       "id": "gekkonen",
@@ -967,7 +976,10 @@
         -726,
         350
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/janely.webp",
+      "imageSource": "https://image.seiska.fi/1540870.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=386&imageId=1540870&width=576&x=0.00&y=0.00",
+      "imageCredit": "Seiska, Jaanika Leino / Janely; henkilöhaastattelu"
     },
     {
       "id": "julle",
@@ -1051,7 +1063,10 @@
         984,
         -730
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/crista.webp",
+      "imageSource": "https://images.cdn.yle.fi/image/upload/c_crop%2Cx_0%2Cy_267%2Cw_4288%2Ch_2412/w_1200%2Car_1.91%2Cc_fill/q_auto%3Aeco%2Cf_auto%2Cfl_lossy/v1683615193/39-11105636459eda2a1698",
+      "imageCredit": "Svenska Yle, Crista Jaatisen henkilökuva"
     },
     {
       "id": "alex",
@@ -1081,7 +1096,10 @@
         950,
         -1179
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/minna.webp",
+      "imageSource": "https://pbs.twimg.com/media/DUJnnODW0AIekaY.jpg",
+      "imageCredit": "Minna Pajulahden X-profiili (@MinnaPajulahti), harjoittelukuva"
     },
     {
       "id": "aleksi",
@@ -1111,7 +1129,10 @@
         850,
         -1158
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/jussi.webp",
+      "imageSource": "https://kokfights.com/storage-uploads-path/2025/02/03-1-JUSSI-PIRTTIKANGAS-scaled.webp",
+      "imageCredit": "KOK Fights, Jussi Pirttikankaan ottelijakuva"
     },
     {
       "id": "pok",
@@ -1141,7 +1162,10 @@
         769,
         -674
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/max.webp",
+      "imageSource": "https://imageproxy.a2d.tv/?source=https%3A%2F%2Ftvmedia.image-service.eu-north-1-prod.vmnd.tv%2Fapi%2Fv2%2Fimg%2F66d837d8e4b02d1b74a507dc-1725446105300%3Flocation%3Dmain&width=1200",
+      "imageCredit": "MTV, Max Blomfeltin reality-haastattelu"
     },
     {
       "id": "tuuli",
@@ -1156,7 +1180,10 @@
         728,
         -1264
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/tuuli.webp",
+      "imageSource": "https://res.cloudinary.com/findance/image/fetch/f_auto/https%3A/www.findance.com/kuvat/cloudinary/tis6-tuuli-sxKZA.jpg",
+      "imageCredit": "Findance, Tuuli Lehtosen kuva"
     },
     {
       "id": "og",
@@ -1186,7 +1213,10 @@
         662,
         -963
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/erika.webp",
+      "imageSource": "https://im.mtvuutiset.fi/graphql/caas/v1/media/share/7914596/213ffe4a74b9310f98fe0516a9bb82ae/erika-helin-2.jpg",
+      "imageCredit": "MTV Uutiset, Erika Helinin henkilöhaastattelu"
     },
     {
       "id": "aapo",
@@ -1261,7 +1291,10 @@
         407,
         -812
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/renne.webp",
+      "imageSource": "https://api.mtvuutiset.fi/graphql/caas/v1/media/share/7462652/8a84260a5eb89dc1ac6f0062f8f58965/renne-korppila.jpg",
+      "imageCredit": "MTV Uutiset, Renne Korppilan henkilökuva"
     },
     {
       "id": "teemu",
@@ -1276,7 +1309,10 @@
         447,
         -981
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/teemu.webp",
+      "imageSource": "https://images.cdn.yle.fi/image/upload/f_auto%2Cc_limit%2Cw_3840%2Cq_auto/v1768229282/13-1-64204847-1699334582770",
+      "imageCredit": "Yle, Puoli seitsemän; Teemu Potapoff"
     },
     {
       "id": "pyhimys",
@@ -1652,7 +1688,10 @@
         385,
         765
       ],
-      "featured": true
+      "featured": true,
+      "image": "images/testotimo.webp",
+      "imageSource": "https://gekkonen.net/wp-content/uploads/2025/11/testotimo-696x497.jpg",
+      "imageCredit": "Gekkonen, Testotimo; loukkaantumisen jälkeinen päivitys"
     },
     {
       "id": "viro_pottu_2025",
