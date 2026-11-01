@@ -2,8 +2,8 @@
 
 ## Kolme varhaista tubettajaa samalla videolla
 
-Video yhdisti kolme toisistaan riippumattomista verkkokanavista tunnettua tekijää. [[pasi|Pasi Viheraho]] oli julkaissut jo pitkään arkeensa ja tekniikkaan liittyviä videoita ja pyörittänyt [[pasiradio|Pasiradiota]]. [[sillu10|Sillu100%]] tunnettiin ruoka-aiheisista videoista, ja DjPate246 kuvasi tamperelaista arkeaan. DjPaten kanavan julkaisema tapaamisvideo osoittaa heidän esiintyneen samassa tallenteessa tammikuussa 2014. [@P240] [@P114] [@P230] [@P234]
+Video yhdisti kolme toisistaan riippumattomista verkkokanavista tunnettua tekijää. [[pasi|Pasi Viheraho]] oli julkaissut jo pitkään arkeensa ja tekniikkaan liittyviä videoita ja pyörittänyt [[pasiradio|Pasiradiota]]. [[sillu10|Sillu100%]] tunnettiin ruoka-aiheisista videoista, ja DjPate246 kuvasi tamperelaista arkeaan. Kolmikko esiintyi yhdessä DjPaten sunnuntaina julkaisemassa videossa. [@P240] [@P114] [@P230] [@P234]
 
 ## Muut varhaiset kontaktit
 
-DjPaten kanavalla oli julkaistu jo 14. marraskuuta 2010 video *Djpate246 sai yllätys vieraan..*, jonka kuvauksessa mainitaan [[pasi|Viherahon]] näkökulma. Vuoden 2014 julkaisu tarjoaa kolmikon kohtaamisesta selkeämmän nimikohtaisen lähteen. [@P241] [@P240]
+DjPaten kanavalla oli julkaistu jo 14. marraskuuta 2010 video *Djpate246 sai yllätys vieraan..*, jonka kuvauksessa mainitaan [[pasi|Viherahon]] näkökulma. Neljä vuotta myöhemmin DjPate tapasi Viherahon lisäksi myös Sillun yhteisessä sunnuntaivideossa. [@P240] [@P241] [@P240]
