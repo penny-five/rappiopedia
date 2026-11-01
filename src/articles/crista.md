@@ -10,6 +10,6 @@ Jaatisen toimintaan liittyy Bellebarbie Oy. Suomen Asiakastiedon yritystiedoissa
 
 ## PactHouse 3 ja PactTalks
 
-Jaatinen osallistui [[s3|PactHouse 3:een]] toukokuussa 2026. Kauden päätyttyä hän jatkoi esiintymisiä PACTin keskusteluohjelmassa. Heinäkuun 12. päivän [[pacttalks_4_2026|PactTalksin neljännen jakson]] lähetysotsikossa hänet nimettiin BelleBarbiena yhdessä [[aapo|Aapo Olervon]] ja [[cuck|CuckTommin]] kanssa. [@P42] [@P7]
+Jaatinen osallistui [[s3|PactHouse 3:een]] toukokuussa 2026. Kauden päätyttyä hän jatkoi esiintymisiä PACTin keskusteluohjelmassa. Heinäkuun 12. päivän [[pacttalks_4_2026|PactTalksin neljännessä jaksossa]] hän vieraili BelleBarbie-nimellä yhdessä [[aapo|Aapo Olervon]] ja [[cuck|CuckTommin]] kanssa. [@P42] [@P7]
 
-Lokakuun 27. päivän PactTalks-jaksossa 94 Jaatinen esiintyi uudelleen CuckTommin kanssa. Nimet käyvät ilmi ohjelman lähetysarkistosta. [@P19]
+Lokakuun 27. päivänä Jaatinen esiintyi CuckTommin kanssa uudelleen PactTalksin jaksossa 94. [@P19]
