@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { focusedNodeIds, projectedEdgePoint, graphLabelScale } from '../src/lib/scene.js';
+import { focusedNodeIds, projectedEdgePoint, graphLabelScale, cameraTravelDirection } from '../src/lib/scene.js';
 
 test('focused neighborhood contains all enabled direct relations, including incoming edges', () => {
   const edges = [
@@ -18,7 +18,7 @@ test('focused labels have fixed size, ordinary labels shrink/grow with perspecti
   assert.equal(graphLabelScale(3, true), 1);
   assert.ok(graphLabelScale(.3, false) < graphLabelScale(.6, false));
   assert.equal(graphLabelScale(.01, false), .6);
-  assert.equal(graphLabelScale(3, false), 1.55);
+  assert.equal(graphLabelScale(3, false), 1);
 });
 
 test('projected edge points retain 3D depth ordering', () => {
@@ -28,4 +28,26 @@ test('projected edge points retain 3D depth ordering', () => {
   const p = projectedEdgePoint(a, b, .5);
   assert.ok(p.z > a.z && p.z < b.z);
   assert.ok(p.x > a.x && p.x < b.x);
+});
+
+test('labels never grow beyond the focused node label scale', () => {
+  for (const perspective of [.1, .4, 1, 5, 50]) {
+    assert.ok(graphLabelScale(perspective, false) <= graphLabelScale(perspective, true));
+  }
+});
+
+test('camera travel follows view direction and strafes without changing speed diagonally', () => {
+  const camera = { forward: { x: 0, y: 0, z: -1 }, right: { x: 1, y: 0, z: 0 } };
+  assert.deepEqual(cameraTravelDirection(new Set(['w']), camera), { x: 0, y: 0, z: -1 });
+  assert.deepEqual(cameraTravelDirection(new Set(['a']), camera), { x: -1, y: 0, z: 0 });
+  assert.deepEqual(cameraTravelDirection(new Set(['q']), camera), { x: 0, y: -1, z: 0 });
+  assert.deepEqual(cameraTravelDirection(new Set(['w', 's']), camera), { x: 0, y: 0, z: 0 });
+  const diagonal = cameraTravelDirection(new Set(['w', 'd']), camera);
+  assert.ok(Math.abs(Math.hypot(diagonal.x, diagonal.y, diagonal.z) - 1) < 1e-12);
+  assert.ok(diagonal.x > 0 && diagonal.z < 0);
+});
+
+test('forward travel respects camera pitch', () => {
+  const camera = { forward: { x: 0, y: -.6, z: -.8 }, right: { x: 1, y: 0, z: 0 } };
+  assert.deepEqual(cameraTravelDirection(new Set(['w']), camera), { x: 0, y: -.6, z: -.8 });
 });
