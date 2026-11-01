@@ -6,6 +6,12 @@ Seiska kuvasi Viherahoa heinäkuussa 2017 yhdeksi Suomen varhaisista YouTube-jul
 
 Viherahon kiinnostus tekniikkaan näkyi myös hänen kotistudiossaan, radio- ja puhelinlaitteissaan sekä itse rakentamissaan järjestelmissä. Seiskan haastattelussa hän kertoi saaneensa katsojilta lahjoituksina muun muassa elektroniikkaa ja muuta välineistöä. [@P114]
 
+## Yhteisvideot DjPate246:n ja Sillun kanssa
+
+[[djpate246|DjPate246:n]] 14. marraskuuta 2010 julkaistun *Djpate246 sai yllätys vieraan..* -videon kuvauksessa mainitaan Viherahon näkökulma. Selvempi kolmen tekijän yhteinen esiintyminen näkyy tammikuun 19. päivän 2014 [[djpate_sillu_pasi_2014|tapaamisvideossa]], jonka nimessä ovat Viheraho, [[sillu10|Sillu100%]] ja DjPate246. Videon kuvauksessa kohtaamista kutsutaan sunnuntain miitiksi. [@P241] [@P240]
+
+Vuoden 2012 *Omalla naamalla* -dokumenttihankkeen opinnäytetyössä Viheraho, DjPate246 ja [[markorepairs|MarkoRepairs]] nimettiin suomalaisen videobloggaamisen aikaisiksi tunnetuiksi tekijöiksi. [@P245]
+
 ## Vlogidokumentin kuvaukset vuonna 2012
 
 Pasi Viheraho oli yksi Jens Hattuniemen ja Mikko Lambergin [[vlogidokumentti_2012|Vlogidokumentin]] kolmesta haastateltavasta. Muut olivat [[niilo22|Niilo22]] ja [[markorepairs|MarkoRepairs]]. Tekijät kuvasivat henkilöitä ja yhdistivät materiaaliin heidän omia YouTube-videoitaan. Hattuniemi käsitteli dokumentin tekemistä ja sen tarjoamista tuotantoyhtiöille vuoden 2012 opinnäytetyössään. [@P227]
