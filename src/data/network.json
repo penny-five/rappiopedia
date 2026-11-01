@@ -2722,7 +2722,10 @@
         -350,
         940
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/markoboy87.webp",
+      "imageSource": "https://images.cdn.yle.fi/image/upload/ar_1.7777777777777777%2Cc_fill%2Cg_faces%2Ch_431%2Cw_767/dpr_2.0/q_auto%3Aeco/f_auto/fl_lossy/13-3-10276313",
+      "imageCredit": "Matias Väänänen / Yle Perjantai, Markoboy87:n henkilöhaastattelu 28.6.2018"
     },
     {
       "id": "iltapalamies",
