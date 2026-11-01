@@ -1,7 +1,11 @@
-**Alisa** on [[bamat|Bämät matkoilla]] -nimiseen striimi- ja someprojektiin liitetty suomalainen somehenkilö. Hänestä ja [[ruusu|Pinja Ruusutossusta]] keskusteltiin lokakuussa 2026 Redditin snäppijuoruyhteisössä. [@P65]
+**Mea Ainasoja**, joka tunnettiin aiemmin nimellä **Alisa Ainasoja**, on suomalainen somepersoona, joka nousi osaksi [[bamat|Bämät matkoilla]] -striimiprojektia syksyllä 2026. Sosiaalisen median keskusteluissa hänestä käytettiin vielä Alisa-nimeä, kun taas marraskuun 2026 uutisoinnissa häntä kutsuttiin Mea Ainasojaksi. [@P106] [@P103]
 
-## Bämät matkoilla ja Ranskan-matka
+## Nimenmuutos ja somesisällöt
 
-Reddit-keskustelussa käyttäjät kuvailivat Alisan ja Ruusutossun yhteistä Ranskan-matkaa ja mainitsivat projektin Kick- ja TikTok-sisältöjä. Kertomukset julkaistiin osana projektia koskevaa keskustelua. [@P65]
+Syyskuussa 2026 sosiaalisen median keskusteluissa kiinnitettiin huomiota siihen, että Alisa Ainasoja alkoi käyttää Mea-nimeä. Nimenmuutoksesta ja sen taustasta käytiin paljon keskustelua muun muassa Redditissä. [@P106]
 
-Projektin nimi esiintyi myös [[talks|PactTalksin]] lokakuun 2026 jaksojen otsikoissa. [@P64] [@P67]
+## Bämät matkoilla Nizzassa
+
+Ainasoja ja [[ruusu|Pinja Ruusutossu]] aloittivat lokakuussa 2026 [[bamat_nizza_2026|Nizzassa kuvatun]] Kick-realityprojektin, jonka sisältöön kuului matkan ja haasteiden suoratoistoa. Mukana kuvauksissa oli myös [[jethro|Jethro Rostedt]] ja muuta kuvausryhmää. [@P103]
+
+Matkan suunnitelmista keskusteltiin jo ennen lähtöä Redditissä. Marraskuun alussa Como kertoi Ruusutossun ja Ainasojan välirikon näkyneen ohjelman lähetyksissä. [@P65] [@P103]

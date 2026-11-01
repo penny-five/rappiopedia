@@ -76,26 +76,32 @@
     {
       "id": "bamat-pacttalks-2026",
       "title": "Bämät matkoilla -projekti ja PactTalks",
-      "status": "open",
+      "status": "in-progress",
       "priority": "medium",
       "nodeIds": [
         "bamat",
         "talks",
         "ruusu",
         "alisa_bamat",
-        "saini"
+        "saini",
+        "bamat_nizza_2026",
+        "jethro"
       ],
       "sourceIds": [
         "P64",
         "P65",
         "P66",
-        "P67"
+        "P67",
+        "P103",
+        "P106"
       ],
-      "notes": "Lähetysarkistoissa näkyvät PactTalksin jaksot 97–98. Redditissä keskustellaan Ranskan-matkasta ja projektin somesisällöstä.",
+      "notes": "Lähetysarkistoissa näkyvät PactTalksin jaksot 97–98. Redditissä keskustellaan Ranskan-matkasta ja projektin somesisällöstä. 1.11.2026 Como raportoi Nizzan striimeistä ja mukana olevista Pinja Ruusutossusta, Mea Ainasojasta (ent. Alisa) ja Jethro Rostedtista. 31.10. lähetyksen kiista on raportoitu Como.fi:ssä; alkuperäinen VOD tulee vielä tarkistaa. Vahvistettu samaksi projektiksi; vanha alisa_bamat-ID säilytetty.",
       "questions": [
         "Ketkä ovat mukana alkuperäisissä jaksoissa?",
         "Mitä projektin omissa julkaisuissa kerrotaan matkasta?",
-        "Mihin Sainin somejulkaisuja koskeva keskustelu perustuu?"
+        "Mihin Sainin somejulkaisuja koskeva keskustelu perustuu?",
+        "Mikä on Nizzan matkan jokaisen päiväkohtaisen Kick-VOD:n osoite ja mitä tapahtui 31.10. kuvatussa lähetyksessä?",
+        "Ketkä ovat Bämät matkoilla -ohjelman ilmoitetut tuottajat ja järjestäjät?"
       ],
       "queries": [
         "\"Bämät matkoilla\" \"PactTalks\" 97 98",
@@ -103,8 +109,11 @@
       ],
       "nextSteps": [
         "Katso jaksojen tallenteet.",
-        "Etsi keskusteluissa mainittujen somesisältöjen alkuperäiset linkit."
-      ]
+        "Etsi keskusteluissa mainittujen somesisältöjen alkuperäiset linkit.",
+        "Hae Nizzan striimien alkuperäiset tallenteet ja vertaa Comon 1.11.2026 kuvausta videomateriaaliin.",
+        "Tarkista Mea Ainasojan oman julkisen tilin nimikäytäntö ja mahdolliset tuotannon tekijäkrediitit."
+      ],
+      "updatedAt": "2026-11-01"
     },
     {
       "id": "upi-accident-2026",
@@ -303,6 +312,42 @@
         "Etsi yksilöityjä livejulkaisujen arkistolinkkejä ja tarkista osallistujat.",
         "Tarkista haastatteluihin perustuvien ajankohtien tarkkuus ja mahdolliset riippumattomat lähteet.",
         "Selvitä erillisiä tapahtumia ja lisää Rappiopediaan vain niitä tukevat lähteistetyt yhteydet."
+      ]
+    },
+    {
+      "id": "ruusutossu-panama-freakbob-2026",
+      "title": "Ruusutossun Panaman tapaus ja kasinolähetyksen välikohtaus",
+      "priority": "medium",
+      "status": "in-progress",
+      "nodeIds": [
+        "ruusu",
+        "ruusu_panama_2026",
+        "ruusu_freak_2026",
+        "freak"
+      ],
+      "sourceIds": [
+        "P100",
+        "P101",
+        "P102",
+        "P104",
+        "P105",
+        "P107"
+      ],
+      "notes": "Uuno 27.6. ja 30.6. kertoo 26.6. karkotuksesta ja Panaman maahanmuuttoviranomaisen lausumasta. 16.9. Uuno haastatteli Ruusutossua kasinolähetyksen Freakbob-asuhenkilön kiinnikäymisestä; hän sanoi tehneensä rikosilmoituksen. Ei tietoa oikeudellisesta jatkoratkaisusta.",
+      "questions": [
+        "Löytyykö Panaman maahanmuuttoviranomaisen alkuperäinen tiedote asianumerolla?",
+        "Kuka esiintyi Freakbob-asussa juuri 16.9. kuvatussa lähetyksessä?",
+        "Miten Ruusutossun kertoma rikosilmoitus on edennyt?"
+      ],
+      "queries": [
+        "\"Pinja Ruusutossu\" \"Migración Panamá\" 26.6.2026",
+        "\"Ruusutossu\" \"Freakbob\" kasino syyskuu 2026",
+        "\"Pinja Rajakari\" 2026 Panama"
+      ],
+      "nextSteps": [
+        "Etsi Panaman alkuperäisen tiedotteen pysyvä URL.",
+        "Selvitä tapahtuman video-/Kick-tallenne ja mahdollinen julkinen järjestäjä.",
+        "Päivitä asian lopputulos vasta lähteiden ilmaantuessa."
       ]
     }
   ]

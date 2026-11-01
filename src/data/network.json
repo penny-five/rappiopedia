@@ -211,10 +211,10 @@
     },
     {
       "id": "ruusu",
-      "name": "Pinja Ruusutossu",
+      "name": "Pinja ”Ruusutossu” Rajakari",
       "group": "talks",
       "cat": "person",
-      "note": "Pinja Ruusutossu on vieraillut PactTalksissa muun muassa elokuussa ja lokakuussa 2026.",
+      "note": "Pinja Ruusutossu eli Pinja Rajakari on suomalainen somepersoona ja striimaaja, jonka vuoden 2026 julkisuuteen kuuluivat Panaman-matka, PactTalks-vierailut ja Bämät matkoilla -reality.",
       "x": 3800,
       "y": 580,
       "pos3": [
@@ -227,7 +227,8 @@
       "imageCredit": "Ruusutossu maanpaossa -podcast, Apple Podcasts -kansikuva",
       "image": "images/ruusu.webp",
       "types": [
-        "henkilo"
+        "somevaikuttaja",
+        "striimaaja"
       ]
     },
     {
@@ -1612,7 +1613,7 @@
       "name": "Bämät Matkoilla",
       "group": "talks",
       "cat": "project",
-      "note": "Bämät matkoilla on striimi- ja someprojekti, joka on esiintynyt PactTalksin lähetysotsikoissa syksyllä 2026.",
+      "note": "Bämät matkoilla on Pinja Ruusutossun ja Mea Ainasojan Kick-realityprojekti, jossa kaksikko matkusti kuvausryhmän kanssa Ranskan Nizzaan lokakuussa 2026.",
       "x": 4216,
       "y": 839,
       "pos3": [
@@ -2129,10 +2130,10 @@
     },
     {
       "id": "alisa_bamat",
-      "name": "Alisa / Bämät matkoilla",
+      "name": "Mea (ent. Alisa) Ainasoja",
       "group": "talks",
       "cat": "person",
-      "note": "Alisa on suomalainen somehahmo, jonka kerrottiin Reddit-keskusteluissa olleen Ruusutossun kanssa Bämät matkoilla -striimireissulla.",
+      "note": "Mea Ainasoja, aiemmin Alisana tunnettu somepersoona, esiintyi Pinja Ruusutossun rinnalla Bämät matkoilla -striimiprojektin Nizzan-matkalla lokakuussa 2026.",
       "pos3": [
         987,
         306,
@@ -2270,6 +2271,54 @@
         1880,
         -760,
         1330
+      ],
+      "featured": false
+    },
+    {
+      "id": "ruusu_panama_2026",
+      "name": "Ruusutossun Panaman-kiinniotto ja karkotus 2026",
+      "group": "events",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Pinja Ruusutossu otettiin Panamassa kiinni huhtikuussa 2026, oli säilössä yli kaksi kuukautta ja karkotettiin Suomeen 26. kesäkuuta.",
+      "pos3": [
+        1100,
+        -410,
+        350
+      ],
+      "featured": false
+    },
+    {
+      "id": "bamat_nizza_2026",
+      "name": "Bämät matkoilla / Nizza 10–11.2026",
+      "group": "events",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "note": "Pinja Ruusutossu ja Mea Ainasoja tekivät Bämät matkoilla -projektiin kuuluvia Kick-lähetyksiä Nizzasta 2026 lokakuun lopulla. Jethro Rostedt osallistui matkan lähetyksiin.",
+      "pos3": [
+        1060,
+        420,
+        330
+      ],
+      "featured": true
+    },
+    {
+      "id": "ruusu_freak_2026",
+      "name": "Freakbob-välikohtaus kasinolähetyksessä 9.2026",
+      "group": "events",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Nettikasinon somelähetyksessä Freakbob-asuun pukeutunut henkilö tarttui Pinja Ruusutossuun syyskuussa 2026. Ruusutossu kertoi tehneensä tapahtumasta rikosilmoituksen.",
+      "pos3": [
+        1720,
+        -280,
+        -750
       ],
       "featured": false
     }
@@ -4825,6 +4874,84 @@
         "P95"
       ],
       "date": "2026-10-20"
+    },
+    {
+      "a": "ruusu",
+      "b": "ruusu_panama_2026",
+      "type": "involved-in",
+      "label": "otettiin kiinni ja karkotettiin Panamasta Suomeen",
+      "level": "reported",
+      "src": [
+        "P100",
+        "P101"
+      ],
+      "date": "2026-06-26"
+    },
+    {
+      "a": "ruusu",
+      "b": "bamat_nizza_2026",
+      "type": "osallistui",
+      "label": "pääesiintyjä Nizzassa",
+      "level": "reported",
+      "src": [
+        "P103"
+      ],
+      "date": "2026-10"
+    },
+    {
+      "a": "alisa_bamat",
+      "b": "bamat_nizza_2026",
+      "type": "osallistui",
+      "label": "esiintyi Ruusutossun kanssa Nizzan lähetyksissä",
+      "level": "reported",
+      "src": [
+        "P103"
+      ],
+      "date": "2026-10"
+    },
+    {
+      "a": "jethro",
+      "b": "bamat_nizza_2026",
+      "type": "osallistui",
+      "label": "osallistui matkan ohjelmaan ja tehtäviin",
+      "level": "reported",
+      "src": [
+        "P103"
+      ],
+      "date": "2026-10-31"
+    },
+    {
+      "a": "bamat",
+      "b": "bamat_nizza_2026",
+      "type": "sisaltaa",
+      "label": "Ranskan Nizzan realitystriimimatka",
+      "level": "reported",
+      "src": [
+        "P103"
+      ],
+      "date": "2026-10"
+    },
+    {
+      "a": "ruusu",
+      "b": "ruusu_freak_2026",
+      "type": "oli-kohteena",
+      "label": "koki kiinnipitämisen kasinolähetyksessä ja ilmoitti rikosilmoituksesta",
+      "level": "reported",
+      "src": [
+        "P102"
+      ],
+      "date": "2026-09-16"
+    },
+    {
+      "a": "freak",
+      "b": "ruusu_freak_2026",
+      "type": "nakyi",
+      "label": "Freakbob-asuun pukeutunut henkilö esiintyi välikohtauksessa",
+      "level": "reported",
+      "src": [
+        "P102"
+      ],
+      "date": "2026-09-16"
     }
   ],
   "sources": {
@@ -5327,6 +5454,46 @@
       "label": "Yle 22.10.2026: Rappiostriimin katsojien toimintavelvollisuus",
       "url": "https://yle.fi/a/74-20252789",
       "note": "Haastattelu poliisin kanssa auttamisvelvollisuudesta ja 20.10. kuolemasta; poliisi ei tiedota Kotkan tapauksesta enempää."
+    },
+    "P100": {
+      "label": "Uuno 27.6.2026: Ruusutossu karkotettiin Panamasta",
+      "url": "https://www.uuno.fi/pinja-ruusutossu-vapautettiin-vankilasta-panama-karkotti-suomeen-nain-arki-alkoi/",
+      "note": "Uuno viittaa Panaman viranomaisen julkiseen tiedotteeseen; Ruusutossu pidätettiin huhtikuun alussa ja palautettiin Suomeen kesäkuun lopulla."
+    },
+    "P101": {
+      "label": "Uuno 30.6.2026: Panaman karkotus 26.6.2026",
+      "url": "https://www.uuno.fi/pinja-ruusutossu-leveilee-nain-paljon-palautus-suomeen-maksoi/",
+      "note": "Raportoi palautuspäiväksi 26.6.2026 ja paikallisten maahanmuuttoviranomaisten kertomaksi syyksi oleskeluluvan umpeutumisen ja häiritsevän käytöksen."
+    },
+    "P102": {
+      "label": "Uuno 16.9.2026: Freakbob-asun välikohtaus kasinolähetyksessä",
+      "url": "https://www.uuno.fi/friikki-paavo-pesusieni-tarrasi-kiinni-pinja-ruusutossuun-rikosilmoitus/",
+      "note": "Nettikasinon somevideolla Freakbob-/Paavo Pesusieni -asuun pukeutunut henkilö tarttui Ruusutossuun; Ruusutossu kertoi tehneensä rikosilmoituksen pahoinpitelystä."
+    },
+    "P103": {
+      "label": "Como 1.11.2026: Bämät matkoilla -matka Nizzassa",
+      "url": "https://www.como.fi/uutiset/jethro-rostedt-umpihumalassa-suorassa-lahetyksessa-julkkisnainen-pakeni-paikalta-peppureikajuttujen-jalkeen/",
+      "note": "Kertoo Bämät matkoilla -lähetyksistä Nizzassa, päähenkilöistä Pinja Ruusutossu ja Mea Ainasoja sekä Jethron osallistumisesta ja 31.10. tapahtuneesta erimielisyydestä."
+    },
+    "P104": {
+      "label": "Lurk.ee 24.9.2026: Pinja Ruusutossu eli Pinja Rajakari",
+      "url": "https://lurk.ee/artikkelit/pinja-ruusutossu-laulaa-nyt-kaikuu-kaakelit",
+      "note": "Lurk mainitsee Pinja Rajakarin nimen, kuvailun TikTok-toiminnasta, lauluvideosta ja aiemmista ulkomaanmatkoista."
+    },
+    "P105": {
+      "label": "Tubetus lokakuu 2026: Ruusutossun paluu Kick-striimeihin",
+      "url": "https://tubetus.fi/rappiotube/ruusutossu-aloitti-striimauksen/",
+      "note": "Kuvaa Ruusutossun Kick-striimauksen aktivoitumista, Lontoon-matkan suunnittelua ja Pullikseen liittyviä puheita."
+    },
+    "P106": {
+      "label": "Reddit 21.9.2026: Alisa Ainasojan Mea-nimi",
+      "url": "https://www.reddit.com/r/snappijuorut/comments/1wm6vls/alisa_nyky%C3%A4%C3%A4n_mea/",
+      "note": "Keskustelu dokumentoi Alisa Ainasojan alkaneen käyttää Mea-nimeä syyskuussa 2026; Nizzan yhteydessä Como käyttää nimeä Mea Ainasoja."
+    },
+    "P107": {
+      "label": "Uuno 13.7.2026: Ruusutossun some- ja deittisisällöt",
+      "url": "https://www.uuno.fi/haluatko-paasta-pinja-ruusutossun-kanssa-treffeille-nain-se-kay/",
+      "note": "Käsittelee Ruusutossun paluuta Suomeen ja hänelle ominaista somepersoonaa, matkustusta ja julkista deittisisältöä."
     }
   },
   "date": "2026-11-01"

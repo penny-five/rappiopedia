@@ -1,13 +1,15 @@
-**Bämät matkoilla** on suomalainen striimi- ja someprojekti, joka nousi esiin lokakuussa 2026. Hankkeeseen yhdistettiin julkisissa verkkokeskusteluissa [[ruusu|Pinja Ruusutossu]] ja [[alisa_bamat|Alisa]], ja projektin nimi esiintyi [[talks|PactTalksin]] lähetysotsikoissa. [@P65] [@P64]
+**Bämät matkoilla** on suomalainen Kickissä esitetty reality- ja striimiprojekti, jonka päähenkilöitä olivat syksyllä 2026 [[ruusu|Pinja Ruusutossu]] ja [[alisa_bamat|Mea (ent. Alisa) Ainasoja]]. Ohjelmassa matkustettiin Ranskan Nizzaan, tehtiin erilaisia tehtäviä ja kuvattiin kaksikon elämää kuvausryhmän kanssa. [@P103]
 
-## Ranskan-striimimatka
+## PactTalksissa esitelty ohjelma
 
-Lokakuun 2026 Reddit-keskusteluissa kerrottiin Ruusutossun ja Alisan yhteisestä Ranskan-matkasta ja projektin somekanavista. Keskusteluissa esitetyt kuvaukset koskivat matkasisältöä ja projektin julkaisuja. [@P65]
+PACT-kanavan lokakuun 2026 lähetysarkistossa Bämät matkoilla mainitaan [[talks|PactTalksin]] jaksoissa 90, 97 ja 98. Ohjelman aiheesta keskusteltiin myös Redditissä ennen Ranskan-matkaa, jolloin Ainasojasta käytettiin vielä Alisa-nimeä. [@P19] [@P64] [@P67] [@P65]
 
-## PactTalks-vierailut
+## Nizzan realitymatka 2026
 
-PACT-kanavan lokakuun 2026 lähetysarkistossa Bämät matkoilla mainitaan jaksoissa 90, 97 ja 98. Jaksoja juonsi [[jethro|Jethro Rostedt]]. Jaksojen 97 ja 98 otsikoissa esiintyi myös `!stake`-tunniste. [@P19] [@P64] [@P67]
+Lokakuun viimeisellä viikolla Ruusutossu ja Ainasoja matkustivat Ranskaan [[bamat_nizza_2026|Nizzan striimimatkalle]]. Como kertoi 1. marraskuuta, että mukana oli kuvausryhmä ja että myös [[jethro|Jethro Rostedt]] osallistui lähetyksissä nähtyihin tehtäviin. [@P103]
+
+Comon mukaan matkan aikana kaksikon välit kiristyivät. Lokakuun viimeisen päivän striimissä Jethron humalainen käyttäytyminen herätti keskustelua, ja Ruusutossu poistui kesken illan lähetyksestä. [@P103]
 
 ## Sainiin liittynyt keskustelu
 
-Erillisessä Reddit-ketjussa keskustelijat kertoivat [[saini|Anthony ”Saini” Singhin]] jakaneen projektiin liittyviä julkaisuja sosiaalisessa mediassa. Keskustelu koski Sainin mahdollista osuutta hankkeeseen, mutta hänen roolistaan esitettiin eri tulkintoja. [@P66]
+Erillisessä lokakuun Reddit-ketjussa kirjoittajat kertoivat [[saini|Anthony ”Saini” Singhin]] jakaneen projektiin liittyviä somejulkaisuja. Tuotannollisesta roolista ja mahdollisista sopimuksista esitettiin erilaisia tulkintoja. [@P66]
