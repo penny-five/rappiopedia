@@ -1,7 +1,6 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { applyNetworkCorrections } from '../src/lib/network-corrections.js';
 
 const root = new URL('../', import.meta.url);
 const readJson = path => JSON.parse(readFileSync(new URL(path, root), 'utf8'));
@@ -62,7 +61,7 @@ function cli() {
   const limit = opt('--limit') || 12;
   const articles = readdirSync(new URL('src/articles/', root))
     .filter(f => f.endsWith('.md')).map(f => f.slice(0, -3));
-  const result = researchCandidates(applyNetworkCorrections(readJson('src/data/network.json'), readJson('src/data/network-corrections.json')),
+  const result = researchCandidates(readJson('src/data/network.json'),
     readJson('research/leads.json'), articles, { focus, limit });
 
   if (focus && result.matchingNodeIds.length === 0) {

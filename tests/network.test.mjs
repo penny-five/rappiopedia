@@ -4,11 +4,8 @@ import { readFileSync } from 'node:fs';
 import { shortestPath } from '../src/lib/graph.js';
 import { hierarchyGroups } from '../src/lib/hierarchy.js';
 import { relationVerb, relationHeading } from '../src/lib/relations.js';
-import { applyNetworkCorrections } from '../src/lib/network-corrections.js';
 const relationTypes=JSON.parse(readFileSync(new URL('../src/data/relation-types.json',import.meta.url),'utf8'));
-const baseData=JSON.parse(readFileSync(new URL('../src/data/network.json',import.meta.url),'utf8'));
-const corrections=JSON.parse(readFileSync(new URL('../src/data/network-corrections.json',import.meta.url),'utf8'));
-const data=applyNetworkCorrections(baseData,corrections);
+const data=JSON.parse(readFileSync(new URL('../src/data/network.json',import.meta.url),'utf8'));
 const nodes=new Map(data.nodes.map(n=>[n.id,n]));
 const levels=new Set(['verified','reported','observed','lead']);
 test('solmut yksilöllisiä ja 3D-koordinaatit olemassa',()=>{
@@ -109,16 +106,7 @@ test('TV reality show connections record independent programme participation', (
  }
 });
 
-test('relation corrections are deterministic and preserve sourced nodes',()=>{
- assert.equal(data.edges.length,baseData.edges.length-corrections.remove.length);
- assert.equal(corrections.edits.length,45);
- assert.equal(corrections.remove.length,5);
- assert.equal(data.nodes,baseData.nodes);
- assert.equal(data.sources,baseData.sources);
- const repeated=applyNetworkCorrections(baseData,corrections);
- assert.deepEqual(repeated.edges,data.edges);
-});
-test('corrected relation endpoints and duplicates are valid',()=>{
+test('network relation endpoints and duplicates are valid',()=>{
  const seen=new Set();
  for(const edge of data.edges){
   const a=nodes.get(edge.a),b=nodes.get(edge.b);

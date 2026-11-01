@@ -1,7 +1,5 @@
 import './styles.css';
-import BASE_DATA from './data/network.json';
-import CORRECTIONS from './data/network-corrections.json';
-import { applyNetworkCorrections } from './lib/network-corrections.js';
+import DATA from './data/network.json';
 import SKENES from './data/skenes.json';
 import RELATION_TYPES from './data/relation-types.json';
 import ENTITY_TYPES from './data/entity-types.json';
@@ -15,7 +13,6 @@ import { markdownExcerpt } from './lib/article-excerpt.js';
 import { searchNodes, searchSuggestionMarkup } from './lib/search.js';
 import { OVERVIEW_CAMERA, nodeIdFromHash } from './lib/navigation.js';
 
-const DATA=applyNetworkCorrections(BASE_DATA,CORRECTIONS);
 const N=DATA.nodes,E=DATA.edges,S=DATA.sources,by=Object.fromEntries(N.map(n=>[n.id,n]));
 const groupMeta=Object.fromEntries(Object.entries(SKENES).map(([id,skene])=>[id,[skene.label,skene.color]]));
 const levels={verified:{label:'Vahvistettu',color:'#16856c'},reported:{label:'Uutisoitu',color:'#356db4'},observed:{label:'Havaittu / päätelmä',color:'#a86b0a'},lead:{label:'Johtolanka / kiistetty',color:'#b04766'}};
