@@ -1422,7 +1422,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/pok.webp",
+      "imageSource": "https://www.pokbiil.com/wp-content/uploads/2022/08/Pok-Biil.jpg",
+      "imageCredit": "Nicky Neko Photography / Pok Biilin omat kotisivut, ottelijakuva"
     },
     {
       "id": "max",
@@ -1953,7 +1956,10 @@
       "featured": false,
       "types": [
         "henkilo"
-      ]
+      ],
+      "image": "images/joonasm.webp",
+      "imageSource": "https://image.seiska.fi/2166887.webp?compression=70&croph=42.25&cropw=100.00&format=jpg&height=348&imageId=2166887&width=620&x=0.00&y=22.70",
+      "imageCredit": "Miikka Kaskinen / Seiska, Joonas Mäkäräisen haastattelukuva (8.9.2026)"
     },
     {
       "id": "milla",
@@ -2521,7 +2527,10 @@
         600,
         -1570
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/matias_koistinen.webp",
+      "imageSource": "https://finnfighting.com/wp-content/uploads/2026/04/Matias-Koistinen-696x352.jpg",
+      "imageCredit": "Finnfighting.com, Matias Koistisen henkilökuva (8.4.2026)"
     },
     {
       "id": "max_hynninen",
