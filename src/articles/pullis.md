@@ -30,7 +30,7 @@ Useiden vuoden 2026 lähetysten otsikoissa esiintyy myös nettikasinoita vertail
 
 Heinäkuun 2026 alussa Pullis esiintyi samassa livessä [[megis|Megiksen]] kanssa. Myöhemmin [[mokkistriimit_july_2026|mökkireissulla]] olivat mukana muun muassa [[julwill|Julia Willman]], [[sampe|SampeF2]], [[chiara|Chiara]], [[pirkkis|Pirkkis]] ja [[isabell|Isabell Jansson]]. Heinäkuun 25.–26. päiviltä on katsojien jakamia videoita [[daniel|Daniel Hellmanin]] keikasta sekä Julian, Pulliksen ja Danielin suppailusta. [@P181] [@P174] [@P176] [@P177]
 
-Syyskuun [[mallorca_livet_2026|Mallorcan yhteisstriimeissä]] Pullis oli Sampen, Megiksen ja Chiaran seurueessa. [@P178]
+Syyskuun [[mallorca_livet_2026|Mallorcan yhteisstriimeissä]] Pullis oli Sampen, Megiksen ja Chiaran seurueessa. Syyskuun 22. päivänä hänen ja Sampen [[mallorca_rantalaukut_2026|laukut katosivat rannalta]] uintireissun aikana. Pullis kertoi lähetyksessä ottaneensa passin mukaan rannalle mahdollista skootterinvuokrausta varten. Seurue etsi tavaroita rannalta ja lähialueelta. [@P178] [@P264]
 
 ## 1vs1 Fighting
 
