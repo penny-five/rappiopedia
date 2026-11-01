@@ -4,7 +4,11 @@
 
 Upin lähetykset ovat käsitelleet arkea ja striimaajan elämää, mutta myös herättäneet huomiota päihtymisen ja häiriöiden vuoksi. Kieksin dokumentissa tarkastellaan laajemmin rappiostriimausta, sen katsojia ja tekijöiden elämää. Kieksi kuvasi jaksoa varten sekä Pulkkista että [[pirkkis|Pirkkistä]]. [@P45] [@P46]
 
-Heinäkuun 2026 Reddit-keskustelussa kuvailtiin Upin ja Pirkkiksen aiempia yhteislähetyksiä. Huhtikuun 2025 keskusteluketjussa Upi, Pirkkis ja [[taiga|Taiga]] yhdistettiin [[ams25|Amsterdamin-matkaan]]. [@P51] [@P52]
+## Misantrooppi ja varhaiset lähetyskanavat
+
+Upin vanhoissa videoissa esiintyi [[misantrooppi|Misantrooppi]] eli Atroksi kutsuttu rappiotuben hahmo. Hänet mainittiin Upin kaverina jo tammikuun 2023 keskustelussa, ja kaksikosta julkaistiin myöhemmin *Upi & misantrooppi* -niminen videokooste. Marraskuussa 2022 Upin lähetyksiä oli katsojien mukaan nähtävissä myös [[misantrooppi_kanava|Misantrooppi-nimisellä kanavalla]]. [@P295] [@P292] [@P285]
+
+Elokuussa 2024 [[ebinlauta|Ebinlaudalle]] perustettiin Upin lähetyksiä varten oma /upi/-alalauta. Sivuston ylläpito esitteli sen katselupaikkana ajalta, jolloin Upin striimaus muilla alustoilla oli vaikeutunut. [@P293]
 
 ## Yhteislähetykset ja Kieksin kohtaaminen
 
