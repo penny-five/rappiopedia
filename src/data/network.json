@@ -1488,7 +1488,7 @@
       "name": "OG Ulla-Maija",
       "group": "season3",
       "cat": "person",
-      "note": "OG osallistui PactHouse 3:een keväällä 2026.",
+      "note": "OG Ulla-Maija on artisti ja somepersoona, joka sijoittui PactHouse 3:ssa kolmanneksi vuonna 2026.",
       "x": 2576,
       "y": 1376,
       "pos3": [
@@ -1595,7 +1595,7 @@
       "name": "Harri Eskola",
       "group": "season3",
       "cat": "person",
-      "note": "Harri osallistui PactHouse 3:een keväällä 2026.",
+      "note": "Harri Eskola voitti Mini PactHousen keväällä 2026 ja pääsi sen kautta PactHouse 3:een, jossa sijoittui toiseksi.",
       "x": 2586,
       "y": 1530,
       "pos3": [
@@ -3579,6 +3579,184 @@
         860
       ],
       "featured": false
+    },
+    {
+      "id": "markorepairs",
+      "name": "MarkoRepairs / Marko Vanhanen",
+      "group": "old-school-tubetus",
+      "cat": "person",
+      "types": [
+        "videontekija"
+      ],
+      "pos3": [
+        1830,
+        170,
+        2510
+      ],
+      "note": "Marko Vanhanen eli MarkoRepairs on elektroniikka- ja arkivideoiden tekijä, joka voitti Keksijätehdas-ohjelman diskokahvinkeittimellään.",
+      "featured": false
+    },
+    {
+      "id": "sillu10",
+      "name": "Sillu100% / Sillu10",
+      "group": "old-school-tubetus",
+      "cat": "person",
+      "types": [
+        "videontekija"
+      ],
+      "pos3": [
+        2040,
+        260,
+        2690
+      ],
+      "note": "Sillu10 eli Sillu100% on ruoka- ja arkivideoistaan tunnettu varhainen tubettaja ja Julma Henri & Ystävät -ohjelman vuoden 2024 vieraileva juontaja.",
+      "featured": false
+    },
+    {
+      "id": "djpate246",
+      "name": "DjPate246",
+      "group": "old-school-tubetus",
+      "cat": "person",
+      "types": [
+        "videontekija"
+      ],
+      "pos3": [
+        1480,
+        160,
+        2620
+      ],
+      "note": "DjPate246 tunnetaan 2010-luvun alun tamperelaisista arkivideoista, muun muassa kauppakassien ja arjen tapahtumien kuvaamisesta.",
+      "featured": false
+    },
+    {
+      "id": "aatami86",
+      "name": "Aatami86",
+      "group": "old-school-tubetus",
+      "cat": "person",
+      "types": [
+        "videontekija",
+        "striimaaja"
+      ],
+      "pos3": [
+        1500,
+        260,
+        2450
+      ],
+      "note": "Aatami86 on suomalainen YouTube-videontekijä ja striimaaja, jonka Swindonin-vaiheesta Kaupunkikanava kirjoitti vuonna 2022.",
+      "featured": false
+    },
+    {
+      "id": "ratina_aatami_2026",
+      "name": "Ratinan pelikoneiden vahingontekoepäily 23.6.2026",
+      "group": "old-school-tubetus",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "pos3": [
+        1530,
+        20,
+        2500
+      ],
+      "note": "Poliisi tutki 23.6.2026 Ratinan pelikoneiden vahingoittamista. Rahapelisuomi yhdisti tapahtumasta levitetyn videon Aatami86-nimimerkkiin.",
+      "featured": false
+    },
+    {
+      "id": "marko_keksijatehdas_2011",
+      "name": "MarkoRepairsin Keksijätehdas-voitto (2011)",
+      "group": "old-school-tubetus",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "pos3": [
+        1850,
+        50,
+        2660
+      ],
+      "note": "Marko Vanhanen voitti Keksijätehdas-ohjelman vuonna 2011 diskokahvinkeittimellään.",
+      "featured": false
+    },
+    {
+      "id": "sillu_henri_2024",
+      "name": "Julma Henri & Ystävät: Sillu100% (16.5.2024)",
+      "group": "old-school-tubetus",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "pos3": [
+        2020,
+        100,
+        2630
+      ],
+      "note": "Julma Henri & Ystävät -sarjan 16.5.2024 videossa Sillu100% toimi vierailevana juontajana.",
+      "featured": false
+    },
+    {
+      "id": "vlogidokumentti_2012",
+      "name": "Vlogidokumentti (2012)",
+      "group": "documents",
+      "cat": "film",
+      "types": [
+        "dokumenttielokuva"
+      ],
+      "pos3": [
+        1710,
+        -190,
+        1800
+      ],
+      "note": "Jens Hattuniemen ja Mikko Lambergin vuonna 2012 toteutettu dokumenttihanke Pasi Viherahosta, Niilo22:sta ja MarkoRepairsista. Julkinen esitys on vahvistamatta.",
+      "featured": false
+    },
+    {
+      "id": "pact_treffit_2026",
+      "name": "PactHouse 3:n treffitehtävä 8.5.2026",
+      "group": "season3",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "pos3": [
+        -1000,
+        870,
+        -930
+      ],
+      "note": "PactHouse 3:n treffitehtävässä vieraat Susanna Penttilä ja Esko Eerikäinen valitsivat Harri Eskolan ja Tuuli Lehtosen.",
+      "featured": false
+    },
+    {
+      "id": "esko_eerikainen",
+      "name": "Esko Eerikäinen",
+      "group": "season3",
+      "cat": "person",
+      "types": [
+        "juontaja"
+      ],
+      "pos3": [
+        -920,
+        990,
+        -1040
+      ],
+      "note": "Esko Eerikäinen on suomalainen radio- ja televisiojuontaja, joka vieraili PactHouse 3:ssa toukokuussa 2026.",
+      "featured": false
+    },
+    {
+      "id": "susanna_penttila",
+      "name": "Susanna Penttilä",
+      "group": "season3",
+      "cat": "person",
+      "types": [
+        "yrittaja",
+        "somevaikuttaja"
+      ],
+      "pos3": [
+        -790,
+        1060,
+        -1010
+      ],
+      "note": "Susanna Penttilä on suomalainen vaatealan yrittäjä, malli ja OnlyFans-sisällöntuottaja, joka vieraili PactHouse 3:ssa.",
+      "featured": false
     }
   ],
   "edges": [
@@ -4165,15 +4343,17 @@
     {
       "a": "og",
       "b": "s3",
-      "label": "osallistuja",
+      "label": "sijoittui kolmanneksi PactHouse 3:n finaalissa",
       "src": [
         "P0",
         "P4",
-        "P42"
+        "P42",
+        "P6"
       ],
-      "level": "verified",
-      "date": "",
-      "type": "osallistui"
+      "level": "reported",
+      "date": "2026-05-10",
+      "type": "osallistui",
+      "detail": "Seiskan mukaan OG Ulla-Maija sai 18 prosenttia finaaliäänistä."
     },
     {
       "a": "erika",
@@ -7782,6 +7962,153 @@
         "P223",
         "P224"
       ]
+    },
+    {
+      "a": "markorepairs",
+      "b": "vlogidokumentti_2012",
+      "type": "esiintyi",
+      "label": "oli vuonna 2012 dokumentin haastateltavana",
+      "src": [
+        "P227"
+      ],
+      "level": "verified",
+      "date": "2012"
+    },
+    {
+      "a": "pasi",
+      "b": "vlogidokumentti_2012",
+      "type": "esiintyi",
+      "label": "oli vuonna 2012 dokumentin haastateltavana",
+      "src": [
+        "P227"
+      ],
+      "level": "verified",
+      "date": "2012"
+    },
+    {
+      "a": "niilo22",
+      "b": "vlogidokumentti_2012",
+      "type": "esiintyi",
+      "label": "oli vuonna 2012 dokumentin haastateltavana",
+      "src": [
+        "P227"
+      ],
+      "level": "verified",
+      "date": "2012"
+    },
+    {
+      "a": "markorepairs",
+      "b": "marko_keksijatehdas_2011",
+      "type": "voitti",
+      "label": "voitti Keksijätehdas-kilpailun diskokahvinkeittimellään",
+      "src": [
+        "P226"
+      ],
+      "level": "reported",
+      "date": "2011"
+    },
+    {
+      "a": "sillu10",
+      "b": "sillu_henri_2024",
+      "type": "juonsi",
+      "label": "toimi Julma Henri & Ystävät -jakson vierailevana juontajana",
+      "src": [
+        "P232"
+      ],
+      "level": "verified",
+      "date": "2024-05-16"
+    },
+    {
+      "a": "sillu10",
+      "b": "niilo22",
+      "type": "kohtasi",
+      "label": "tapasi Niilo22:n yhteisillä ruokailuvideoilla",
+      "src": [
+        "P233"
+      ],
+      "level": "reported",
+      "date": "2022–2023"
+    },
+    {
+      "a": "aatami86",
+      "b": "ratina_aatami_2026",
+      "type": "osallistui",
+      "label": "Rahapelisuomi yhdisti Aatami86:n Ratinan tapahtumasta julkaistuun videoon",
+      "src": [
+        "P228",
+        "P229"
+      ],
+      "level": "reported",
+      "date": "2026-06-23"
+    },
+    {
+      "a": "s3",
+      "b": "pact_treffit_2026",
+      "type": "sisaltaa",
+      "label": "kauden kahdeksantena päivänä järjestettiin treffitehtävä",
+      "src": [
+        "P236"
+      ],
+      "level": "reported",
+      "date": "2026-05-08"
+    },
+    {
+      "a": "esko_eerikainen",
+      "b": "pact_treffit_2026",
+      "type": "vieraili",
+      "label": "valitsi Tuuli Lehtosen treffikumppanikseen",
+      "src": [
+        "P236",
+        "P237"
+      ],
+      "level": "reported",
+      "date": "2026-05-08"
+    },
+    {
+      "a": "susanna_penttila",
+      "b": "pact_treffit_2026",
+      "type": "vieraili",
+      "label": "valitsi Harri Eskolan treffikumppanikseen",
+      "src": [
+        "P236",
+        "P237"
+      ],
+      "level": "reported",
+      "date": "2026-05-08"
+    },
+    {
+      "a": "harri",
+      "b": "pact_treffit_2026",
+      "type": "osallistui",
+      "label": "oli Susanna Penttilän valitsema treffikumppani",
+      "src": [
+        "P236"
+      ],
+      "level": "reported",
+      "date": "2026-05-08"
+    },
+    {
+      "a": "tuuli",
+      "b": "pact_treffit_2026",
+      "type": "osallistui",
+      "label": "oli Esko Eerikäisen valitsema treffikumppani",
+      "src": [
+        "P236"
+      ],
+      "level": "reported",
+      "date": "2026-05-08"
+    },
+    {
+      "a": "harri",
+      "b": "mini_pact_2026",
+      "type": "voitti",
+      "label": "voitti Mini PactHousen ja sai paikan kolmannelle kaudelle",
+      "src": [
+        "P6",
+        "P237"
+      ],
+      "level": "reported",
+      "date": "2026-03"
     }
   ],
   "sources": {
@@ -8914,6 +9241,62 @@
       "label": "Suomi24 24.8.2019: Tampereen Tero -keskustelu",
       "url": "https://keskustelu.suomi24.fi/t/15972920/tampereen-tero",
       "note": "Aikalaisten keskustelu TampereenTeron YouTube-katulähetyksistä ja katsojalahjoituksista; mielipiteet eivät ole vahvistettuja henkilötietoja."
+    },
+    "P226": {
+      "label": "ÄKS 22.3.2014: MarkoRepairsin videoura ja Keksijätehdas",
+      "url": "https://aksa.fi/keksijatehtaan-voitto-ja-yli-137-miljoonaa-katselukertaa-marko-vanhanen-on-internet-ilmio/"
+    },
+    "P227": {
+      "label": "Jens Hattuniemi (2012): Vlogidokumentti-hanke",
+      "url": "https://www.theseus.fi/bitstream/10024/42972/1/Hattuniemi_Jens_2012.pdf"
+    },
+    "P228": {
+      "label": "Rahapelisuomi 24.6.2026: Aatami86 ja Ratinan koneet",
+      "url": "https://rahapelisuomi.fi/aatami86-veikkaus-peliautomaatit-vasara-tampere-ratina/"
+    },
+    "P229": {
+      "label": "Poliisi 23.6.2026: Ratinan pelikoneiden vahingontekoepäily",
+      "url": "https://poliisi.fi/-/poliisilla-oli-halytystehtava-tampereen-ratinan-kauppakeskuksessa"
+    },
+    "P230": {
+      "label": "Vaasalaisia.info 28.11.2011: Sillu10:n ruokavideo",
+      "url": "https://vaasalaisia.info/suomen_paras_tillimakaroni_lindassa_vaasassa/"
+    },
+    "P231": {
+      "label": "SPEAKRJ 8.8.2022: Sillu10:n kanavatilasto",
+      "url": "https://www.speakrj.com/audit/report/UCyhWSmg6oZmxL5ysr2V4OJw/youtube"
+    },
+    "P232": {
+      "label": "EurocrackTV 16.5.2024: Sillu100% Julma Henri & Ystävät -jaksossa",
+      "url": "https://www.youtube.com/watch?v=pP9ImNV68Ko"
+    },
+    "P233": {
+      "label": "Niilo22 Wiki: Sillu10:n ja Niilo22:n tapaamiset",
+      "url": "https://niilo22.fandom.com/wiki/Luettelo_niilo22_skenen_henkil%C3%B6ist%C3%A4"
+    },
+    "P234": {
+      "label": "Jatkoaika 19.2.2014: DjPate246",
+      "url": "https://keskustelu.jatkoaika.com/threads/%E2%80%9Ddjpate246%E2%80%9D-ynn%C3%A4-muut-youtube-sankarit.58014/"
+    },
+    "P235": {
+      "label": "Offipalsta 31.1.2011: varhaiset YouTube-kanavat",
+      "url": "https://forums.offipalsta.com/showthread.php?t=80594"
+    },
+    "P236": {
+      "label": "Gekkonen 8.5.2026: PactHouse 3:n treffipäivä",
+      "url": "https://gekkonen.net/susanna-penttila-kuvasi-itseaan-kadulla-poliisien-kanssa-sain-pampusta-video/"
+    },
+    "P237": {
+      "label": "Seiska 10.5.2026: PactHousen treffivieraat",
+      "url": "https://www.seiska.fi/kotimaa/jethro-rostedt-torkeaa-puhetta-esko-eerikaisesta/2148394"
+    },
+    "P238": {
+      "label": "Yle 28.6.2026: Susanna Penttilän yrittäjyys",
+      "url": "https://yle.fi/a/74-20233408"
+    },
+    "P239": {
+      "label": "V2.fi 28.1.2026: Esko Eerikäinen Radio Novalla",
+      "url": "https://www.v2.fi/uutiset/viihde/55669/Esko-Eerikainen-kommentoi-juontajaparinsa-vaihtumista-Tehtiin-Suomen-parasta-radiota-heittamalla/"
     }
   },
   "date": "2026-11-01"
