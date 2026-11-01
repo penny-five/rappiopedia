@@ -3516,7 +3516,10 @@
         -245,
         970
       ],
-      "featured": true
+      "featured": true,
+      "image": "images/tampereentero.webp",
+      "imageSource": "https://kaupunkikanava.fi/wp-content/uploads/2022/05/Tampereen-tero-1.jpg",
+      "imageCredit": "YouTube-kuvakaappaus / Joni Hakasalo, Kaupunkikanava (24.5.2022)"
     },
     {
       "id": "tampereentero_hervanta_2019",
@@ -3596,7 +3599,10 @@
         2510
       ],
       "note": "Marko Vanhanen eli MarkoRepairs on elektroniikka- ja arkivideoiden tekijä, joka voitti Keksijätehdas-ohjelman diskokahvinkeittimellään.",
-      "featured": false
+      "featured": false,
+      "image": "images/markorepairs.webp",
+      "imageSource": "https://aksa.fi/wp-content/uploads/2014/03/Marko-Vanhanen3.jpg",
+      "imageCredit": "Max Steffansson / Äänekosken Kaupunkisanomat (ÄKS), 22.3.2014"
     },
     {
       "id": "sillu10",
@@ -3628,7 +3634,10 @@
         2620
       ],
       "note": "DjPate246 on 2010-luvun alusta lähtien videoita julkaissut suomalainen videobloggaaja. Hänen Pasi Jaakkola -nimiseltä YouTube-kanavaltaan löytyy myös yhteinen sunnuntaitapaaminen Pasi Viherahon ja Sillu100%:n kanssa 19.1.2014.",
-      "featured": false
+      "featured": false,
+      "image": "images/djpate246.webp",
+      "imageSource": "https://kaupunkikanava.fi/wp-content/uploads/2022/05/Djpate-kauppakassivideo-1.jpg",
+      "imageCredit": "YouTube-kuvakaappaus / Joni Hakasalo, Kaupunkikanava (24.5.2022)"
     },
     {
       "id": "aatami86",
@@ -3645,7 +3654,10 @@
         2450
       ],
       "note": "Aatami86 on suomalainen YouTube-videontekijä ja striimaaja, jonka Swindonin-vaiheesta Kaupunkikanava kirjoitti vuonna 2022.",
-      "featured": false
+      "featured": false,
+      "image": "images/aatami86.webp",
+      "imageSource": "https://kaupunkikanava.fi/wp-content/uploads/2022/05/Aatami86-1.jpg",
+      "imageCredit": "YouTube-kuvakaappaus / Joni Hakasalo, Kaupunkikanava (24.5.2022)"
     },
     {
       "id": "ratina_aatami_2026",
