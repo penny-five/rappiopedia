@@ -11,9 +11,9 @@
       "image": "images/pact.webp",
       "imageCredit": "PactHouse, brändin logo",
       "pos3": [
-        0,
-        50,
-        0
+        -1175,
+        -50,
+        80
       ],
       "featured": true,
       "imageSource": "https://pacthouse3.net/pact-logo.jpg"
@@ -27,9 +27,9 @@
       "x": 1890,
       "y": 285,
       "pos3": [
-        150,
-        -50,
-        -5
+        -1025,
+        -150,
+        75
       ],
       "featured": true
     },
@@ -42,9 +42,9 @@
       "x": 2260,
       "y": 320,
       "pos3": [
-        -200,
-        -30,
-        -160
+        -1375,
+        -130,
+        -80
       ],
       "featured": false
     },
@@ -57,9 +57,9 @@
       "x": 560,
       "y": 455,
       "pos3": [
-        -980,
-        400,
-        -500
+        -2279,
+        360,
+        -725
       ],
       "featured": true
     },
@@ -72,9 +72,9 @@
       "x": 1500,
       "y": 520,
       "pos3": [
-        -850,
-        -425,
-        570
+        -2274,
+        -479,
+        583
       ],
       "featured": true
     },
@@ -87,9 +87,9 @@
       "x": 2590,
       "y": 455,
       "pos3": [
-        -200,
-        665,
-        -890
+        -951,
+        769,
+        -886
       ],
       "featured": true
     },
@@ -102,9 +102,9 @@
       "x": 3650,
       "y": 380,
       "pos3": [
-        800,
-        490,
-        -210
+        557,
+        341,
+        -96
       ],
       "featured": true
     },
@@ -119,9 +119,9 @@
       "image": "images/jethro.webp",
       "imageCredit": "Seiska, PactHouse 3 -uutinen",
       "pos3": [
-        -290,
-        495,
-        -780
+        -1041,
+        599,
+        -776
       ],
       "featured": true,
       "imageSource": "https://image.seiska.fi/2141143.webp?compression=100&croph=57.33&cropw=80.13&height=630&imageId=2141143&width=1200&x=6.16&y=15.88"
@@ -135,9 +135,9 @@
       "x": 1690,
       "y": 760,
       "pos3": [
-        -1020,
-        -275,
-        430
+        -2444,
+        -329,
+        443
       ],
       "featured": true
     },
@@ -150,9 +150,9 @@
       "x": 1330,
       "y": 715,
       "pos3": [
-        -850,
-        -395,
-        805
+        -2274,
+        -449,
+        818
       ],
       "featured": true
     },
@@ -165,9 +165,9 @@
       "x": 430,
       "y": 680,
       "pos3": [
-        -1127,
-        706,
-        -479
+        -2426,
+        666,
+        -704
       ],
       "featured": true
     },
@@ -180,9 +180,9 @@
       "x": 3800,
       "y": 580,
       "pos3": [
-        1060,
-        390,
-        -10
+        817,
+        241,
+        104
       ],
       "featured": true
     },
@@ -197,9 +197,9 @@
       "image": "images/iippa.webp",
       "imageCredit": "Seiska, Iippadaa ja Pottukoira yhteiskuvassa",
       "pos3": [
-        1270,
-        -100,
-        830
+        1794,
+        30,
+        749
       ],
       "featured": true,
       "imageSource": "https://image.seiska.fi/1680693.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=1680693&width=576&x=0.00&y=0.00"
@@ -215,9 +215,9 @@
       "image": "images/pottu.webp",
       "imageCredit": "Seiska, Pottukoira-haastattelu",
       "pos3": [
-        1330,
-        -300,
-        500
+        1854,
+        -170,
+        419
       ],
       "featured": true,
       "imageSource": "https://image.seiska.fi/2184001.webp?compression=70&croph=100.00&cropw=100.00&format=jpg&height=767&imageId=2184001&width=576&x=0.00&y=0.00"
@@ -233,9 +233,9 @@
       "image": "images/sami.webp",
       "imageCredit": "Findance, Sami Kieksi",
       "pos3": [
-        975,
-        -50,
-        485
+        1499,
+        80,
+        404
       ],
       "featured": true,
       "imageSource": "https://res.cloudinary.com/findance/image/fetch/ar_3%3A2%2Cw_640%2Cc_auto%2Cg_auto%2Cf_auto/https%3A/www.findance.com/kuvat/cloudinary/tapausaarnio-tv-qhmyD.jpg"
@@ -249,9 +249,9 @@
       "x": 1090,
       "y": 2260,
       "pos3": [
-        1192,
-        -33,
-        367
+        1716,
+        97,
+        286
       ],
       "featured": true
     },
@@ -264,9 +264,9 @@
       "x": 670,
       "y": 2440,
       "pos3": [
-        1120,
-        -260,
-        610
+        1644,
+        -130,
+        529
       ],
       "featured": true
     },
@@ -279,9 +279,9 @@
       "x": 450,
       "y": 2620,
       "pos3": [
-        1289,
-        -260,
-        956
+        1813,
+        -130,
+        875
       ],
       "featured": false
     },
@@ -294,9 +294,9 @@
       "x": 900,
       "y": 2610,
       "pos3": [
-        822,
-        -547,
-        493
+        1346,
+        -417,
+        412
       ],
       "featured": false
     },
@@ -311,9 +311,9 @@
       "image": "images/bailu.webp",
       "imageCredit": "Matkapojat, Bailupaatti 2026 -juliste",
       "pos3": [
-        400,
-        -700,
-        -440
+        2631,
+        -560,
+        -1145
       ],
       "featured": true,
       "imageSource": "https://www.matkapojat.fi/images/imagemanager/thumbnails/MP_Bailupaatti_2026_Paakuva%2C%20p%C3%A4ivitetty.f5256ef39a95e9cb4b0a97be2f0240059485db75.jpg"
@@ -329,9 +329,9 @@
       "image": "images/korelon.webp",
       "imageCredit": "KPO Festarit, Korelon",
       "pos3": [
-        -270,
-        -660,
-        -560
+        1815,
+        -440,
+        -1401
       ],
       "featured": true,
       "imageSource": "https://cdn.s-cloud.fi/v1/w1024_q75/assets/dam-id/3f2bOjJQKr1B_8pGLdRUaj.webp?clientId=2085"
@@ -346,9 +346,9 @@
       "y": 2000,
       "imageCredit": "Wikimedia Commons, Slikin muotokuva",
       "pos3": [
-        -380,
-        -790,
-        -460
+        1705,
+        -570,
+        -1301
       ],
       "featured": true,
       "imageSource": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Slikimuotokuva.jpg"
@@ -364,9 +364,9 @@
       "image": "images/ossi.webp",
       "imageCredit": "Visnyk Poker, Ossi Ketola",
       "pos3": [
-        -580,
-        -880,
-        -310
+        1505,
+        -660,
+        -1151
       ],
       "featured": true,
       "imageSource": "https://visnyk.poker/storage/news/5586-a7583226ac34a01a1364ab8803f3d86c12cb8043.png.webp"
@@ -380,9 +380,9 @@
       "x": 3100,
       "y": 2320,
       "pos3": [
-        -308,
-        -563,
-        -703
+        1777,
+        -343,
+        -1544
       ],
       "featured": false
     },
@@ -395,9 +395,9 @@
       "x": 3550,
       "y": 2350,
       "pos3": [
-        -211,
-        -790,
-        -114
+        1874,
+        -570,
+        -955
       ],
       "featured": false
     },
@@ -410,9 +410,9 @@
       "x": 3740,
       "y": 2210,
       "pos3": [
-        -678,
-        -1077,
-        -577
+        1407,
+        -857,
+        -1418
       ],
       "featured": false
     },
@@ -425,9 +425,9 @@
       "x": 2390,
       "y": 2140,
       "pos3": [
-        537,
-        -473,
-        -227
+        2768,
+        -333,
+        -932
       ],
       "featured": true
     },
@@ -440,9 +440,9 @@
       "x": 2600,
       "y": 2250,
       "pos3": [
-        28,
-        -700,
-        -538
+        2259,
+        -560,
+        -1243
       ],
       "featured": true
     },
@@ -455,9 +455,9 @@
       "x": 4090,
       "y": 1510,
       "pos3": [
-        1550,
-        320,
-        340
+        2810,
+        625,
+        575
       ],
       "featured": true
     },
@@ -470,9 +470,9 @@
       "x": 3970,
       "y": 1680,
       "pos3": [
-        1380,
-        180,
-        440
+        2640,
+        485,
+        675
       ],
       "featured": true
     },
@@ -485,9 +485,9 @@
       "x": 4210,
       "y": 1670,
       "pos3": [
-        1710,
-        470,
-        365
+        2970,
+        775,
+        600
       ],
       "featured": false
     },
@@ -500,9 +500,9 @@
       "x": 980,
       "y": 660,
       "pos3": [
-        -740,
-        340,
-        -400
+        -2039,
+        300,
+        -625
       ],
       "featured": true
     },
@@ -515,9 +515,9 @@
       "x": 2110,
       "y": 2110,
       "pos3": [
-        684,
-        -987,
-        -589
+        2915,
+        -847,
+        -1294
       ],
       "featured": false
     },
@@ -530,9 +530,9 @@
       "x": 2570,
       "y": 920,
       "pos3": [
-        -5,
-        565,
-        -820
+        -756,
+        669,
+        -816
       ],
       "featured": false
     },
@@ -545,9 +545,9 @@
       "x": 580,
       "y": 830,
       "pos3": [
-        -760,
-        370,
-        -640
+        -2059,
+        330,
+        -865
       ],
       "featured": true
     },
@@ -560,9 +560,9 @@
       "x": 4447,
       "y": 1739,
       "pos3": [
-        -1360,
-        -107,
-        -553
+        -1299,
+        121,
+        2225
       ],
       "featured": true
     },
@@ -575,9 +575,9 @@
       "x": 4883,
       "y": 1727,
       "pos3": [
-        -1713,
-        -198,
-        -215
+        -1652,
+        30,
+        2563
       ],
       "featured": true
     },
@@ -590,9 +590,9 @@
       "x": 4441,
       "y": 1894,
       "pos3": [
-        -1622,
-        -318,
-        -916
+        -1561,
+        -90,
+        1862
       ],
       "featured": false
     },
@@ -605,9 +605,9 @@
       "x": 4869,
       "y": 1897,
       "pos3": [
-        -1270,
-        -447,
-        -302
+        -1209,
+        -219,
+        2476
       ],
       "featured": false
     },
@@ -620,9 +620,9 @@
       "x": 4460,
       "y": 2033,
       "pos3": [
-        -1871,
-        -582,
-        -464
+        -1810,
+        -354,
+        2314
       ],
       "featured": false
     },
@@ -635,9 +635,9 @@
       "x": 4877,
       "y": 2046,
       "pos3": [
-        -1540,
-        -390,
-        -500
+        -1479,
+        -162,
+        2278
       ],
       "featured": true
     },
@@ -650,9 +650,9 @@
       "x": 4433,
       "y": 2198,
       "pos3": [
-        -1383,
-        -748,
-        -679
+        -1322,
+        -520,
+        2099
       ],
       "featured": false
     },
@@ -665,9 +665,9 @@
       "x": 3670,
       "y": 260,
       "pos3": [
-        950,
-        792,
-        -254
+        707,
+        643,
+        -140
       ],
       "featured": false
     },
@@ -680,9 +680,9 @@
       "x": 98,
       "y": 999,
       "pos3": [
-        -806,
-        670,
-        -712
+        -2105,
+        630,
+        -937
       ],
       "featured": false
     },
@@ -695,9 +695,9 @@
       "x": 505,
       "y": 987,
       "pos3": [
-        -960,
-        615,
-        -128
+        -2259,
+        575,
+        -353
       ],
       "featured": false
     },
@@ -710,9 +710,9 @@
       "x": 869,
       "y": 1003,
       "pos3": [
-        -1212,
-        502,
-        -727
+        -2511,
+        462,
+        -952
       ],
       "featured": false
     },
@@ -725,9 +725,9 @@
       "x": 1248,
       "y": 989,
       "pos3": [
-        -597,
-        438,
-        -487
+        -1896,
+        398,
+        -712
       ],
       "featured": false
     },
@@ -740,9 +740,9 @@
       "x": 96,
       "y": 1155,
       "pos3": [
-        -1305,
-        357,
-        -222
+        -2604,
+        317,
+        -447
       ],
       "featured": false
     },
@@ -755,9 +755,9 @@
       "x": 500,
       "y": 1143,
       "pos3": [
-        -941,
-        298,
-        -822
+        -2240,
+        258,
+        -1047
       ],
       "featured": false
     },
@@ -770,9 +770,9 @@
       "x": 881,
       "y": 1155,
       "pos3": [
-        -786,
-        208,
-        -229
+        -2085,
+        168,
+        -454
       ],
       "featured": false
     },
@@ -785,9 +785,9 @@
       "x": 1257,
       "y": 1146,
       "pos3": [
-        -1280,
-        99,
-        -564
+        -2579,
+        59,
+        -789
       ],
       "featured": false
     },
@@ -800,9 +800,9 @@
       "x": 99,
       "y": 1296,
       "pos3": [
-        -852,
-        94,
-        -575
+        -2151,
+        54,
+        -800
       ],
       "featured": false
     },
@@ -815,9 +815,9 @@
       "x": 1276,
       "y": 982,
       "pos3": [
-        -909,
-        -116,
-        699
+        -2333,
+        -170,
+        712
       ],
       "featured": false
     },
@@ -830,9 +830,9 @@
       "x": 1602,
       "y": 966,
       "pos3": [
-        -931,
-        -145,
-        319
+        -2355,
+        -199,
+        332
       ],
       "featured": false
     },
@@ -845,9 +845,9 @@
       "x": 1918,
       "y": 966,
       "pos3": [
-        -537,
-        -190,
-        748
+        -1961,
+        -244,
+        761
       ],
       "featured": false
     },
@@ -860,9 +860,9 @@
       "x": 2255,
       "y": 959,
       "pos3": [
-        -1159,
-        -301,
-        641
+        -2583,
+        -355,
+        654
       ],
       "featured": false
     },
@@ -875,9 +875,9 @@
       "x": 1272,
       "y": 1126,
       "pos3": [
-        -635,
-        -355,
-        258
+        -2059,
+        -409,
+        271
       ],
       "featured": false
     },
@@ -890,9 +890,9 @@
       "x": 1599,
       "y": 1114,
       "pos3": [
-        -791,
-        -425,
-        996
+        -2215,
+        -479,
+        1009
       ],
       "featured": false
     },
@@ -905,9 +905,9 @@
       "x": 1902,
       "y": 1129,
       "pos3": [
-        -1107,
-        -487,
-        357
+        -2531,
+        -541,
+        370
       ],
       "featured": false
     },
@@ -920,9 +920,9 @@
       "x": 2226,
       "y": 1112,
       "pos3": [
-        -492,
-        -565,
-        552
+        -1916,
+        -619,
+        565
       ],
       "featured": false
     },
@@ -935,9 +935,9 @@
       "x": 1283,
       "y": 1263,
       "pos3": [
-        -1103,
-        -660,
-        826
+        -2527,
+        -714,
+        839
       ],
       "featured": false
     },
@@ -950,9 +950,9 @@
       "x": 1587,
       "y": 1271,
       "pos3": [
-        -841,
-        -672,
-        337
+        -2265,
+        -726,
+        350
       ],
       "featured": false
     },
@@ -965,9 +965,9 @@
       "x": 1915,
       "y": 1290,
       "pos3": [
-        -746,
-        -775,
-        692
+        -2170,
+        -829,
+        705
       ],
       "featured": false
     },
@@ -980,9 +980,9 @@
       "x": 2296,
       "y": 1077,
       "pos3": [
-        -95,
-        987,
-        -920
+        -846,
+        1091,
+        -916
       ],
       "featured": false
     },
@@ -995,9 +995,9 @@
       "x": 2588,
       "y": 1093,
       "pos3": [
-        -308,
-        989,
-        -713
+        -1059,
+        1093,
+        -709
       ],
       "featured": false
     },
@@ -1010,9 +1010,9 @@
       "x": 2853,
       "y": 1092,
       "pos3": [
-        -257,
-        982,
-        -1175
+        -1008,
+        1086,
+        -1171
       ],
       "featured": false
     },
@@ -1025,9 +1025,9 @@
       "x": 3142,
       "y": 1083,
       "pos3": [
-        12,
-        880,
-        -734
+        -739,
+        984,
+        -730
       ],
       "featured": false
     },
@@ -1040,9 +1040,9 @@
       "x": 3445,
       "y": 1070,
       "pos3": [
-        -525,
-        868,
-        -855
+        -1276,
+        972,
+        -851
       ],
       "featured": false
     },
@@ -1055,9 +1055,9 @@
       "x": 2278,
       "y": 1242,
       "pos3": [
-        57,
-        846,
-        -1183
+        -694,
+        950,
+        -1179
       ],
       "featured": false
     },
@@ -1070,9 +1070,9 @@
       "x": 2590,
       "y": 1235,
       "pos3": [
-        -193,
-        772,
-        -567
+        -944,
+        876,
+        -563
       ],
       "featured": false
     },
@@ -1085,9 +1085,9 @@
       "x": 2859,
       "y": 1227,
       "pos3": [
-        -460,
-        746,
-        -1162
+        -1211,
+        850,
+        -1158
       ],
       "featured": false
     },
@@ -1100,9 +1100,9 @@
       "x": 3162,
       "y": 1238,
       "pos3": [
-        227,
-        710,
-        -861
+        -524,
+        814,
+        -857
       ],
       "featured": false
     },
@@ -1115,9 +1115,9 @@
       "x": 3435,
       "y": 1234,
       "pos3": [
-        -466,
-        665,
-        -678
+        -1217,
+        769,
+        -674
       ],
       "featured": false
     },
@@ -1130,9 +1130,9 @@
       "x": 2290,
       "y": 1389,
       "pos3": [
-        -141,
-        624,
-        -1268
+        -892,
+        728,
+        -1264
       ],
       "featured": false
     },
@@ -1145,9 +1145,9 @@
       "x": 2576,
       "y": 1376,
       "pos3": [
-        33,
-        574,
-        -540
+        -718,
+        678,
+        -536
       ],
       "featured": false
     },
@@ -1160,9 +1160,9 @@
       "x": 2854,
       "y": 1399,
       "pos3": [
-        -513,
-        558,
-        -967
+        -1264,
+        662,
+        -963
       ],
       "featured": false
     },
@@ -1175,9 +1175,9 @@
       "x": 3140,
       "y": 1381,
       "pos3": [
-        107,
-        503,
-        -1057
+        -644,
+        607,
+        -1053
       ],
       "featured": false
     },
@@ -1190,9 +1190,9 @@
       "x": 3439,
       "y": 1376,
       "pos3": [
-        -318,
-        439,
-        -544
+        -1069,
+        543,
+        -540
       ],
       "featured": false
     },
@@ -1205,9 +1205,9 @@
       "x": 2273,
       "y": 1532,
       "pos3": [
-        -306,
-        450,
-        -1132
+        -1057,
+        554,
+        -1128
       ],
       "featured": false
     },
@@ -1220,9 +1220,9 @@
       "x": 2586,
       "y": 1530,
       "pos3": [
-        38,
-        381,
-        -785
+        -713,
+        485,
+        -781
       ],
       "featured": false
     },
@@ -1235,9 +1235,9 @@
       "x": 2880,
       "y": 1545,
       "pos3": [
-        -420,
-        303,
-        -816
+        -1171,
+        407,
+        -812
       ],
       "featured": false
     },
@@ -1250,9 +1250,9 @@
       "x": 3140,
       "y": 1540,
       "pos3": [
-        -147,
-        343,
-        -985
+        -898,
+        447,
+        -981
       ],
       "featured": false
     },
@@ -1265,9 +1265,9 @@
       "x": 3522,
       "y": 846,
       "pos3": [
-        651,
-        747,
-        35
+        408,
+        598,
+        149
       ],
       "featured": false
     },
@@ -1280,9 +1280,9 @@
       "x": 3852,
       "y": 842,
       "pos3": [
-        725,
-        681,
-        -588
+        482,
+        532,
+        -474
       ],
       "featured": false
     },
@@ -1295,9 +1295,9 @@
       "x": 4216,
       "y": 839,
       "pos3": [
-        1067,
-        566,
-        -14
+        824,
+        417,
+        100
       ],
       "featured": false
     },
@@ -1310,9 +1310,9 @@
       "x": 4561,
       "y": 840,
       "pos3": [
-        417,
-        490,
-        -168
+        174,
+        341,
+        -54
       ],
       "featured": false
     },
@@ -1325,9 +1325,9 @@
       "x": 3521,
       "y": 992,
       "pos3": [
-        1077,
-        394,
-        -525
+        834,
+        245,
+        -411
       ],
       "featured": false
     },
@@ -1340,9 +1340,9 @@
       "x": 3868,
       "y": 998,
       "pos3": [
-        806,
-        339,
-        95
+        563,
+        190,
+        209
       ],
       "featured": false
     },
@@ -1355,9 +1355,9 @@
       "x": 4198,
       "y": 987,
       "pos3": [
-        602,
-        233,
-        -418
+        359,
+        84,
+        -304
       ],
       "featured": false
     },
@@ -1370,9 +1370,9 @@
       "x": 4572,
       "y": 991,
       "pos3": [
-        997,
-        108,
-        -197
+        754,
+        -41,
+        -83
       ],
       "featured": false
     },
@@ -1383,9 +1383,9 @@
       "cat": "show",
       "note": "Julkkispelit on Nettipokeri.comiin liittyvä julkkisten pokerilähetys- ja tapahtumasarja, jossa on nähty myös PactHouse-osallistujia.",
       "pos3": [
-        280,
-        50,
-        1060
+        3880,
+        -72,
+        245
       ],
       "featured": true
     },
@@ -1396,9 +1396,9 @@
       "cat": "event",
       "note": "Julkkispelit-tapahtumaan Bratislavassa toukokuussa 2026 julkaistiin ennakkoon osallistujalista Nettipokeri.comissa.",
       "pos3": [
-        80,
-        -190,
-        1260
+        3680,
+        -312,
+        445
       ],
       "featured": false
     },
@@ -1409,9 +1409,9 @@
       "cat": "event",
       "note": "Julkkispelien Tallinnan-tapahtuman 25.–26. syyskuuta 2026 pelaajalista julkaistiin Nettipokeri.comissa.",
       "pos3": [
-        560,
-        220,
-        1250
+        4160,
+        98,
+        435
       ],
       "featured": false
     },
@@ -1422,9 +1422,9 @@
       "cat": "person",
       "note": "Mentalisti Noora Karma nimettiin Bratislavan Julkkispelien osallistujaksi toukokuussa 2026.",
       "pos3": [
-        280,
-        310,
-        1340
+        3880,
+        188,
+        525
       ],
       "featured": false
     },
@@ -1435,9 +1435,9 @@
       "cat": "person",
       "note": "VP Alakorva oli mukana julkaistuilla Julkkispelit-osallistujalistoilla kahdessa vuoden 2026 tapahtumassa.",
       "pos3": [
-        -40,
-        300,
-        1290
+        3560,
+        178,
+        475
       ],
       "featured": false
     },
@@ -1448,9 +1448,9 @@
       "cat": "person",
       "note": "Tero Lipponen nimettiin Julkkispelien osallistujaksi julkaistussa pelaajalistassa.",
       "pos3": [
-        430,
-        -265,
-        1470
+        4030,
+        -387,
+        655
       ],
       "featured": false
     },
@@ -1461,9 +1461,9 @@
       "cat": "person",
       "note": "Henri ”Hune” Hyttinen nimettiin Julkkispelien osallistujaksi julkaistussa pelaajalistassa.",
       "pos3": [
-        640,
-        -70,
-        1420
+        4240,
+        -192,
+        605
       ],
       "featured": false
     },
@@ -1474,9 +1474,9 @@
       "cat": "event",
       "note": "PactTalksin 11. elokuuta 2026 julkaistun lähetyksen juonsi Jethro Rostedt, ja mukana oli useita vieraita.",
       "pos3": [
-        1020,
-        320,
-        -140
+        777,
+        171,
+        -26
       ],
       "featured": false
     },
@@ -1487,9 +1487,9 @@
       "cat": "person",
       "note": "Johanna vieraili PactTalksissa 11. elokuuta 2026.",
       "pos3": [
-        1180,
-        480,
-        -390
+        937,
+        331,
+        -276
       ],
       "featured": false
     },
@@ -1500,9 +1500,9 @@
       "cat": "person",
       "note": "Joonas M. vieraili PactTalksissa 11. elokuuta 2026.",
       "pos3": [
-        1080,
-        720,
-        -120
+        837,
+        571,
+        -6
       ],
       "featured": false
     },
@@ -1513,9 +1513,9 @@
       "cat": "person",
       "note": "Milla vieraili PactTalksissa 11. elokuuta 2026.",
       "pos3": [
-        1150,
-        260,
-        100
+        907,
+        111,
+        214
       ],
       "featured": false
     },
@@ -1526,9 +1526,9 @@
       "cat": "show",
       "note": "Spurgu-TV on Pottukoiraan liittyvä Kick-lähetyskonsepti, jonka yhteislähetyksissä on esiintynyt Pirkkis.",
       "pos3": [
-        1530,
-        -400,
-        580
+        2054,
+        -270,
+        499
       ],
       "featured": true
     },
@@ -1539,9 +1539,9 @@
       "cat": "event",
       "note": "Pottukoira vieraili PactTalksin jaksossa, josta NOPEETNOUSUT-kanava julkaisi tallenteen 19. heinäkuuta 2026. Juontajina olivat Jethro Rostedt ja Okkishow.",
       "pos3": [
-        1000,
-        760,
-        -250
+        757,
+        611,
+        -136
       ],
       "featured": true
     },
@@ -1552,9 +1552,9 @@
       "cat": "person",
       "note": "Okkishow esiintyi Jethro Rostedtin rinnalla PactTalksin Pottukoira-jakson juontajana.",
       "pos3": [
-        1170,
-        910,
-        -300
+        927,
+        761,
+        -186
       ],
       "featured": false
     },
@@ -1565,9 +1565,9 @@
       "cat": "event",
       "note": "Pirkkis ja SampeF2 olivat marraskuussa 2025 yhteisellä striimausmatkalla Ateenassa, Kreikassa.",
       "pos3": [
-        1030,
-        -650,
-        -400
+        3261,
+        -510,
+        -1105
       ],
       "featured": true
     },
@@ -1578,9 +1578,9 @@
       "cat": "event",
       "note": "Redditissä keskusteltiin huhtikuussa 2025 Upin, Pirkkiksen ja Taigan yhteiseksi kuvaillusta striimausmatkasta Amsterdamiin.",
       "pos3": [
-        890,
-        -850,
-        -220
+        3121,
+        -710,
+        -925
       ],
       "featured": false
     },
@@ -1591,9 +1591,9 @@
       "cat": "person",
       "note": "Taiga on striimaaja, joka on liitetty Reddit-keskusteluissa Upin ja Pirkkiksen kanssa tehtyyn Amsterdamin-matkaan.",
       "pos3": [
-        1700,
-        300,
-        610
+        2960,
+        605,
+        845
       ],
       "featured": false
     },
@@ -1604,9 +1604,9 @@
       "cat": "event",
       "note": "Pohjois-Savon käräjäoikeus tuomitsi Pottukoiran kesäkuussa 2026 rahapelirikoksesta, kertoi Yle. Tuomio ei ollut uutisointihetkellä lainvoimainen.",
       "pos3": [
-        1740,
-        -160,
-        220
+        3000,
+        145,
+        455
       ],
       "featured": false
     },
@@ -1617,9 +1617,9 @@
       "cat": "person",
       "note": "Testotimo eli Timo Naapila on Kick-striimaaja, joka piti subathonin lokakuussa 2025 ja vieraili Pottukoiran luona Virossa.",
       "pos3": [
-        1560,
-        80,
-        530
+        2820,
+        385,
+        765
       ],
       "featured": true
     },
@@ -1630,9 +1630,9 @@
       "cat": "event",
       "note": "Pottukoira sai lokakuussa 2025 Virossa striimivieraita, joihin kuuluivat Aleksi Nurminen ja Testotimo.",
       "pos3": [
-        1070,
-        -505,
-        160
+        3301,
+        -365,
+        -545
       ],
       "featured": true
     },
@@ -1643,9 +1643,9 @@
       "cat": "event",
       "note": "Testotimo järjesti lokakuussa 2025 Kickissä maratonlähetyksen eli subathonin.",
       "pos3": [
-        1730,
-        105,
-        480
+        2990,
+        410,
+        715
       ],
       "featured": false
     },
@@ -1656,9 +1656,9 @@
       "cat": "person",
       "note": "Pasi Viheraho on suomalainen nettiradio- ja videontekijä, joka vieraili PactTalksissa lokakuussa 2026.",
       "pos3": [
-        960,
-        700,
-        75
+        717,
+        551,
+        189
       ],
       "featured": true
     },
@@ -1669,9 +1669,9 @@
       "cat": "show",
       "note": "Pasiradio on Pasi Viherahon vuonna 2007 aloittama suomalainen nettiradio.",
       "pos3": [
-        -1250,
-        -280,
-        -940
+        -1189,
+        -52,
+        1838
       ],
       "featured": false
     },
@@ -1682,9 +1682,9 @@
       "cat": "event",
       "note": "Pasi Viheraho vieraili Jethro Rostedtin juontamassa PactTalks-lähetyksessä 11. lokakuuta 2026.",
       "pos3": [
-        1030,
-        560,
-        -90
+        787,
+        411,
+        24
       ],
       "featured": false
     },
@@ -1695,9 +1695,9 @@
       "cat": "person",
       "note": "Rauno77 on Kick-striimaaja, joka teki Pottukoiran kanssa yhteislähetyksiä loppuvuonna 2025.",
       "pos3": [
-        1390,
-        -390,
-        830
+        1914,
+        -260,
+        749
       ],
       "featured": false
     },
@@ -1708,9 +1708,9 @@
       "cat": "person",
       "note": "Alisa on suomalainen somehahmo, jonka kerrottiin Reddit-keskusteluissa olleen Ruusutossun kanssa Bämät matkoilla -striimireissulla.",
       "pos3": [
-        1230,
-        455,
-        -140
+        987,
+        306,
+        -26
       ],
       "featured": false
     }

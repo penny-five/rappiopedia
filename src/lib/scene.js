@@ -60,3 +60,17 @@ export function cameraTravelDirection(keys, camera) {
   const length = Math.hypot(x, y, z);
   return length ? { x: x / length || 0, y: y / length || 0, z: z / length || 0 } : { x: 0, y: 0, z: 0 };
 }
+
+/** Axis-aligned 3D volume enclosing every member, with room for its labels. */
+export function bounds3D(nodes, padding = 0) {
+  if (!nodes.length) return null;
+  return {
+    min: [0, 1, 2].map(i => Math.min(...nodes.map(n => n.pos3[i])) - padding),
+    max: [0, 1, 2].map(i => Math.max(...nodes.map(n => n.pos3[i])) + padding)
+  };
+}
+
+/** Intersection of volumes, not merely their overlapping 2D projections. */
+export function boxesOverlap3D(a, b) {
+  return [0, 1, 2].every(i => a.min[i] < b.max[i] && b.min[i] < a.max[i]);
+}
