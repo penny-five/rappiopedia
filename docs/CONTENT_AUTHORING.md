@@ -23,12 +23,15 @@ Vanhojen solmujen tunnisteita ei kannata muuttaa, koska artikkeleiden sisäiset 
 
 `edges`-taulukossa yksittäinen yhteys sisältää:
 - `a` ja `b`: yhteyden osapuolten solmu-ID:t
-- `label`: mitä osapuolten välillä tapahtui
+- `type`: tunniste `src/data/relation-types.json`-rekisterissä
+- `label`: mitä juuri tässä yhteydessä tapahtui
 - `level`: `verified`, `reported`, `observed` tai `lead`
 - `src`: luettelo lähde-ID:istä
 - tarvittaessa `date` ja `detail`
 
 Lähteen tiedot lisätään saman tiedoston `sources`-osioon, jossa ovat lähdetunnisteet, linkit ja selitteet. Yhteyttä ei lisätä ilman lähdettä.
+
+Suhdetyypin `forward` tarkoittaa suunnan `a → b` ilmaisua, `reverse` tarkoittaa suunnan `b → a` ilmaisua. Jos suhde on molempiin suuntiin sama, käytä `symmetric: true` ja `verb`. Esimerkiksi isä–poika-suhteen muoto on `on isä` / `on poika`, mutta yhteinen striimaaminen on `striimasi yhdessä` kummastakin suunnasta. Lisää uudenlainen suhde ensin tyyppirekisteriin, sitten käytä tyyppiä verkostodatassa.
 
 Käytä tarkkoja suhdekuvauksia. ”Vieraili PactTalksissa 11.10.2026” kertoo enemmän kuin ”Pact-yhteys”. Jos kyse on suunnitellusta esiintymisestä, älä nimeä sitä toteutuneeksi osallistumiseksi.
 
@@ -43,7 +46,7 @@ Käytä tarkkoja suhdekuvauksia. ”Vieraili PactTalksissa 11.10.2026” kertoo 
 
 Myös Reddit- ja Ylilauta-ketjut voivat olla lähteitä. Linkitä täsmällinen keskustelu ja kuvaa, mitä siinä kerrotaan. Esimerkiksi käyttäjien kuvaama yhteinen matka voidaan kirjata raportoituna tapahtumana ilman virallisia matkustusasiakirjoja. Jos ketjussa vain arvaillaan, merkitse tieto sen mukaisesti.
 
-**Huhut, spekulaatio, henkilökohtaiset tapahtumat ja julkiset kiistat eivät ole automaattisesti artikkelin ulkopuolella.** Jos aihe on saanut julkista huomiota, kirjoita myös siitä. Kerro lukijalle, mitä todella tapahtui, mitä eri osapuolet ovat kertoneet, mistä epävarmat väitteet lähtivät ja mitä niistä myöhemmin selvisi. Yksittäinen julkinen väite tai keskustelu ei muutu vahvistetuksi tosiasiaksi pelkän julkaisemisen perusteella.
+**Käsittele myös julkisuudessa esitettyjä huhuja, kiistoja ja henkilökohtaisia tapahtumia.** Kerro tapahtumien kulusta, ihmisten kertomuksista ja mahdollisista myöhemmistä käänteistä. Ilmaise lähteessä esitetty väite luontevasti sen esittäjän kertomuksena, älä kirjoita perään erillistä varausosuutta.
 
 ## 3. Kirjoita artikkeli
 
