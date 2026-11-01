@@ -47,7 +47,11 @@ Myös Reddit- ja Ylilauta-ketjut voivat olla lähteitä. Linkitä täsmällinen 
 
 Artikkeli tallennetaan tiedostoon `src/articles/<id>.md`. Tiedostonimen pitää vastata solmun tunnistetta.
 
-Aloita kertomalla, kuka henkilö on tai mitä ohjelmaa tai tapahtumaa artikkeli käsittelee. Jatka aiheen mukaan: tausta, tuotannot, osallistumiset, tapahtumat ja muu oleellinen historia. Käytä otsikoita silloin, kun niistä on lukijalle hyötyä.
+**Henkilöartikkelin alussa pitää esitellä henkilö itsenäisenä aiheena.** Kerro nimi ja nimimerkki, mistä hänet tunnetaan ja mitä hän on tehnyt. Selvitä tarvittaessa hänen taustaansa ja uraansa myös Rappiopedian verkoston ulkopuolelta. Esimerkiksi ”X vieraili PactTalksissa” ei kerro, kuka X on.
+
+Kirjoita tämän jälkeen omaa toimintaansa käsittelevistä aiheista: ura, kanavat, ohjelmat, teokset ja julkiset esiintymiset. **Nosta tärkeät yksittäiset tapahtumat omiksi osioikseen.** Jos henkilö on ollut mukana paljon uutisoidussa onnettomuudessa, oikeusasiassa, kilpailussa tai muussa merkittävässä tapahtumassa, sille voi tehdä oman väliotsikon. Esimerkiksi Upi eli Arttu Pulkkinen tunnetaan rappiostriimaajana, ja hänen lokakuussa 2026 sattunut parvekeonnettomuutensa on perusteltu aihe omalle osiolleen. Osiossa kerrotaan tapahtuman ajankohta, uutisoitu kulku ja tiedossa olevat seuraukset lähteineen; ei arvailla motiiveja tai terveystietoja.
+
+**Artikkelin rakenne määräytyy sisällöstä.** Kaikkien artikkelien ei tarvitse sisältää samoja otsikoita, eikä pelkkä `Yhteydet`-luettelo riitä korvaamaan elämäkertaa. Lyhyen henkilöartikkelin voi aloittaa suoraan ingressillä ilman `## Yhteenveto` -otsikkoa.
 
 Kirjoita proosaa, älä hakukoneelle tehtyä avainsanalistaa. Vältä fraaseja kuten ”dokumentoidut yhteydet”, ”verkostosilta”, ”konteksti”, ”tulkinnan rajat” ja samanlaista automaattista huomautusta jokaisen artikkelin lopussa. Jos jokin yksittäinen tieto on epävarma, kerro se kyseisen tiedon yhteydessä.
 
@@ -72,7 +76,7 @@ Sivusto tukee `##`- ja `###`-otsikoita, kappaleita, luetteloita, **lihavoitua** 
 
 Tavallisia Markdown-linkkejä ja HTML-koodia ei voi käyttää artikkelisisällössä. Tarkista, että artikkelin viittaamat solmut ja lähteet ovat olemassa.
 
-Artikkelittomille solmuille näytetään `note`-tekstin ja yhteystietojen pohjalta koottu perusteksti. Siksi myös lyhyen kuvauksen pitää olla luettava.
+Artikkelittomille solmuille näytetään `note`-tekstin ja yhteystietojen pohjalta koottu perusteksti. Siksi myös lyhyen kuvauksen pitää alkaa henkilön tai aiheen tunnistamisesta. Jos henkilöstä on saatavilla kunnollista elämäkertatietoa tai hänen elämäänsä liittyy merkittävä julkinen tapahtuma, kirjoita oma artikkelitiedosto automaattisen tekstin sijaan.
 
 ## 4. Kuvat
 
