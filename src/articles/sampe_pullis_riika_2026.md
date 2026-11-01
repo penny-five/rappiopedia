@@ -4,4 +4,4 @@
 
 Yksi 3.–5. lokakuuta julkaistuista lähetyksistä oli nimeltään *Riika w/ Pullis ja Jenniveri*. Kolmikko esiintyi Sampen matkalähetysten otsikoissa viikonlopun aikana. [@P83]
 
-Sampe ja Pullis olivat tehneet yhteisstriimejä myös aiemmin, esimerkiksi [[mallorca_livet_2026|Mallorcalla syyskuussa]]. Myös [[mallorca_livet_2026|Mallorcan-matkalla]] syyskuussa Sampe oli striimannut Pulliksen kanssa. [@P178]
+Sampe ja Pullis olivat tehneet matkalähetyksiä yhdessä jo [[mallorca_livet_2026|Mallorcalla syyskuussa 2026]]. [@P178]
