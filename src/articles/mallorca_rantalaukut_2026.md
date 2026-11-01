@@ -8,6 +8,6 @@ Katsojien keskusteluissa kerrottiin, että laukuissa oli myös matkustusasiakirj
 
 ## Etsinnät ja matkan jatkuminen
 
-Kadonneita tavaroita etsittiin muun muassa rannalta ja läheisistä roska-astioista. Samana päivänä julkaistussa katsojakeskustelussa seurueen kerrottiin yrittäneen asioida poliisiasemalla. Varkaudesta ei ole tässä tiedossa viranomaisten yksilöimää epäiltyä. [@P178] [@P264]
+Kadonneita tavaroita etsittiin muun muassa rannalta ja läheisistä roska-astioista. Samana päivänä julkaistussa katsojakeskustelussa seurueen kerrottiin yrittäneen asioida poliisiasemalla. [@P178] [@P264]
 
 Rantapäivä oli osa [[mallorca_livet_2026|syyskuun Mallorcan yhteisstriimejä]]. Sampe ja Pullis olivat kuvanneet muiden tekijöiden kanssa jo kesällä [[mokkistriimit_july_2026|mökkilähetyksiä]], ja syksyn matka jatkoi saman seurueen yhteistä IRL-sisältöä. [@P174] [@P178]
