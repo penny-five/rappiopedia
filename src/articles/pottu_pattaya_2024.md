@@ -1,11 +1,15 @@
-**Pottukoiran Pattayan subathon** oli alkuvuonna 2024 Thaimaassa järjestetty [[pottu|Jouko ”Pottukoira” Kärkkäisen]] Spurgu-TV-lähetysmaraton. Hänen matkaseuranaan oli Ari-nimellä julkisuudessa esiintynyt ystävä. [@P183]
+**Pottukoiran Pattayan subathon** oli tammi–helmikuussa 2024 Thaimaassa lähetetty [[pottu|Jouko ”Pottukoira” Kärkkäisen]] Spurgu-TV-maraton. Hän matkusti 3. tammikuuta Pattayalle yhdessä [[fhat_ari|Arin]] kanssa, joka oli esiintynyt jo aiemmin Kärkkäisen suorissa lähetyksissä. Kaksikko kuvasi hotellielämää, juhlimista ja arkipäiväisiä tilanteita lähes kuuden viikon ajan. [@P271] [@P183] [@P184]
 
-## Pattayan lähetykset
+## Kuuden viikon striimausmatka
 
-Gekkonen kuvasi 7. tammikuuta 2024 käynnissä ollutta lähetystä, jossa seurattiin kaksikon hotellielämää, yöelämää ja muita tilanteita Pattayalla. Julkaisun mukaan Kick keskeytti lähetyksen tunniksi seksuaaliseen sisältöön liittyneen sääntörikkomuksen vuoksi. [@P183]
+Seiska kertoi 5. tammikuuta, että kaksikon Pattaya-lähetys oli jo käynnissä. Samana päivänä uutisoitiin Kärkkäisen saaneen lyhyen Kick-porttikiellon lähetyksen seksuaalisen sisällön vuoksi. Kärkkäinen ja Ari kuvasivat sittemmin muun muassa hotellista, ravintoloista ja rantakohteista. [@P183] [@P271] [@P277]
 
-Seiskan myöhemmässä haastattelussa Kärkkäinen kertoi viettäneensä Thaimaassa noin kuusi viikkoa ja tehneensä siellä ympärivuorokautista maratonlähetystä. Hän ei vahvistanut tarkkaa nettotuloa vaan huomautti matkan ja verojen kustannuksista. [@P184]
+Kärkkäinen ja Ari vaihtoivat matkan aikana majoituspaikkaa useasti. Tammikuun 22. päivänä Seiska kertoi Arin joutuneen sairaalaan. Ari puhui tilanteesta myös omassa TikTok-lähetyksessään ja kertoi liikkuneensa väliaikaisesti pyörätuolilla. Kärkkäinen jatkoi lähetyksiään muiden suomalaisten tuttaviensa kanssa Arin sairaalajakson aikana. [@P272]
 
-## Jatkosta
+Pattayan-maraton päättyi helmikuun puoliväliin mennessä. Maaliskuussa Seiska kuvasi matkan kestäneen kuusi viikkoa. Kärkkäinen kertoi haastattelussa, etteivät näkyvät lahjoitus- ja tilaustulot jääneet kokonaan hänen käteensä, sillä reissusta, majoituksesta ja veroista aiheutui kuluja. [@P184] [@P185]
 
-Maaliskuun 2024 [[pottu_phuket_2024|Phuketin subathonin]] yhteydessä Gekkonen kertoi, että Pattayan-matkan jälkeen Kärkkäisen ja Arin välit olivat rikkoutuneet. Lehti esitteli erimielisyyden heidän julkisten kertomustensa kautta. [@P185]
+## Välirikko ja eri striimikanavat
+
+Matkan jälkeen Kärkkäisen ja Arin välit katkesivat. Ari aloitti 25. helmikuuta omat lähetyksensä [[fhat_ari|FhatMaestro-nimellä]], ja maaliskuussa kaksikko teki sisältöä jo erikseen. Kärkkäinen puhui heidän riidastaan myös omissa lähetyksissään. [[pottu_ari_valirikko_2024|Välirikko]] oli yksi syy siihen, ettei Ari tullut mukaan Kärkkäisen seuraavalle Thaimaan-matkalle. [@P275] [@P273] [@P185]
+
+Pottukoira palasi 26. maaliskuuta Thaimaahan [[pottu_phuket_2024|Spurgu-TV:n kolmannelle kaudelle Phuketiin]], tällä kertaa ilman Aria. [@P185]
