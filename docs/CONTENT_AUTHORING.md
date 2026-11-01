@@ -109,3 +109,7 @@ npm run build
 Katso lisäksi itse, että teksti on luontevaa suomea, nimet ja päivät pitävät paikkansa, linkit vievät oikeisiin aiheisiin ja lähteet tukevat niitä väitteitä, joiden perässä ne ovat.
 
 Laajempaa lähteiden etsimistä varten on [tutkimusopas](RESEARCH_PLAYBOOK.md). Kesken jääneet tarkistukset voi kirjata [tutkimuslokiin](RESEARCH_LOG.md).
+
+## Suhdeverbit kartalla
+
+Jokaisella `src/data/network.json`-tiedoston `edges`-yhteydellä on `verb`-kenttä. Kirjoita siihen lyhyt, täsmällinen suomenkielinen verbi tai verbirakenne (esimerkiksi `juontaa`, `osallistui`, `vieraili`, `perusti`). Kenttä kuvaa suunnan `a` → `b`: `jethro` → `talks`, `verb: "juontaa"`. Rappioverse näyttää verbin valitun solmun yhteysviivalla. `label` kertoo tarkemman suhteen ja `src` sisältää sitä tukevat lähteet. Kiistetyissä ja keskeneräisissä suhteissa verbinkin tulee kuvata tiedon epävarmuus.

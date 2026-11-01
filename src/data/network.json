@@ -1717,15 +1717,16 @@
   ],
   "edges": [
     {
-      "a": "pact",
-      "b": "saini",
+      "a": "saini",
+      "b": "pact",
       "label": "perustaja",
       "src": [
         "P21"
       ],
       "level": "reported",
       "detail": "Julkaisu nimittää Singhiä perustajaksi.",
-      "date": ""
+      "date": "",
+      "verb": "perusti"
     },
     {
       "a": "pact",
@@ -1736,7 +1737,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "sisältää"
     },
     {
       "a": "pact",
@@ -1748,7 +1750,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "sisältää"
     },
     {
       "a": "pact",
@@ -1761,7 +1764,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "sisältää"
     },
     {
       "a": "pact",
@@ -1772,7 +1776,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "sisältää"
     },
     {
       "a": "pact",
@@ -1783,7 +1788,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "käyttää"
     },
     {
       "a": "pact",
@@ -1794,7 +1800,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "ylläpitää"
     },
     {
       "a": "pactchannel",
@@ -1805,7 +1812,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "julkaisee"
     },
     {
       "a": "pactchannel",
@@ -1816,7 +1824,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "lähettää"
     },
     {
       "a": "pactchannel",
@@ -1827,7 +1836,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "lähettää"
     },
     {
       "a": "lassi",
@@ -1838,7 +1848,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "tegel",
@@ -1849,7 +1860,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "kp",
@@ -1860,7 +1872,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "slay",
@@ -1871,7 +1884,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "emsku",
@@ -1882,7 +1896,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "ada",
@@ -1893,7 +1908,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "krisse",
@@ -1904,7 +1920,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "testo",
@@ -1915,7 +1932,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "chiara",
@@ -1926,7 +1944,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "megis",
@@ -1937,7 +1956,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "anton",
@@ -1948,7 +1968,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "karva",
@@ -1959,7 +1980,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden listaus yhdestä koontilähteestä. Tarkennettava alkutuotannon lähteellä.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "joachim",
@@ -1971,7 +1993,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "sahamies",
@@ -1983,7 +2006,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "tegel",
@@ -1995,7 +2019,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "daniel",
@@ -2007,7 +2032,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "ella",
@@ -2019,7 +2045,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "isabell",
@@ -2031,7 +2058,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "joni",
@@ -2043,7 +2071,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "kelly",
@@ -2055,7 +2084,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "liina",
@@ -2067,7 +2097,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "maga",
@@ -2079,7 +2110,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "nilu",
@@ -2091,7 +2123,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "stagala",
@@ -2103,7 +2136,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "janely",
@@ -2114,7 +2148,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "julle",
@@ -2125,7 +2160,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "jethro",
@@ -2138,7 +2174,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "heiskari",
@@ -2151,7 +2188,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "sara",
@@ -2164,7 +2202,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "amanda",
@@ -2177,7 +2216,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "henny",
@@ -2190,7 +2230,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "crista",
@@ -2203,7 +2244,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "alex",
@@ -2216,7 +2258,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "minna",
@@ -2229,7 +2272,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "aleksi",
@@ -2242,7 +2286,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "jussi",
@@ -2255,7 +2300,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "pok",
@@ -2268,7 +2314,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "max",
@@ -2281,7 +2328,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "tuuli",
@@ -2294,7 +2342,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "og",
@@ -2307,7 +2356,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "erika",
@@ -2320,7 +2370,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "aapo",
@@ -2333,7 +2384,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "elmer",
@@ -2346,7 +2398,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "janina",
@@ -2359,7 +2412,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "harri",
@@ -2372,7 +2426,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "renne",
@@ -2384,7 +2439,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "juonsi"
     },
     {
       "a": "teemu",
@@ -2396,7 +2452,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "juonsi"
     },
     {
       "a": "sahamies",
@@ -2408,7 +2465,8 @@
       ],
       "level": "verified",
       "detail": "Kilpailu päättyi joulukuussa 2025.",
-      "date": ""
+      "date": "",
+      "verb": "voitti"
     },
     {
       "a": "jethro",
@@ -2420,7 +2478,8 @@
       ],
       "level": "verified",
       "detail": "Päävoitto 50 000 euroa; lisätehtävistä 2 500 euroa.",
-      "date": ""
+      "date": "",
+      "verb": "voitti"
     },
     {
       "a": "jethro",
@@ -2432,7 +2491,8 @@
       ],
       "level": "reported",
       "detail": "Joachim on Jethron poika. Perhesuhde on julkisesti uutisoitu.",
-      "date": ""
+      "date": "",
+      "verb": "on isä"
     },
     {
       "a": "joni",
@@ -2444,7 +2504,8 @@
       ],
       "level": "verified",
       "detail": "Joni on 2. ja 3. kausien yhteinen osallistuja.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "lassi",
@@ -2455,7 +2516,8 @@
       ],
       "level": "reported",
       "detail": "Gekkosen 17.3.2026 jutussa he ovat samassa ravintolassa striimin aikana; ei päätelmää suhteesta.",
-      "date": ""
+      "date": "",
+      "verb": "esiintyi yhdessä"
     },
     {
       "a": "tegel",
@@ -2467,7 +2529,8 @@
       ],
       "level": "reported",
       "detail": "1. kauden osuus perustuu koontiin, 2. kausi tuotannon omaan listaan.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "jethro",
@@ -2479,7 +2542,8 @@
       ],
       "level": "verified",
       "detail": "Syksyn 2026 toistuvat jaksot.",
-      "date": ""
+      "date": "",
+      "verb": "juontaa"
     },
     {
       "a": "ruusu",
@@ -2490,7 +2554,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "26.10.2026"
+      "date": "26.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "iippa",
@@ -2501,7 +2566,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "20.10.2026"
+      "date": "20.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "megis",
@@ -2512,7 +2578,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "20.10.2026"
+      "date": "20.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "pyhimys",
@@ -2523,7 +2590,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "25.10.2026"
+      "date": "25.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "andypyro",
@@ -2534,7 +2602,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "28.10.2026"
+      "date": "28.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "bamat",
@@ -2545,7 +2614,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "23.10.2026"
+      "date": "23.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "alex",
@@ -2556,7 +2626,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "22.10.2026"
+      "date": "22.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "juha",
@@ -2567,7 +2638,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "24.10.2026"
+      "date": "24.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "crista",
@@ -2578,7 +2650,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "27.10.2026"
+      "date": "27.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "cuck",
@@ -2589,7 +2662,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "27.10.2026"
+      "date": "27.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "stagala",
@@ -2600,7 +2674,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "18.10.2026"
+      "date": "18.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "akam",
@@ -2611,7 +2686,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "18.10.2026"
+      "date": "18.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "kimrusi",
@@ -2622,7 +2698,8 @@
       ],
       "level": "verified",
       "detail": "Tallenteiden otsikkojen metadataa; ei tarkoita samaa mieltä tai liikesuhdetta.",
-      "date": "17.10.2026"
+      "date": "17.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "jasmilla",
@@ -2633,7 +2710,8 @@
       ],
       "level": "verified",
       "detail": "Jakson vieraana oli Jethro.",
-      "date": "16.10.2026"
+      "date": "16.10.2026",
+      "verb": "juonsi"
     },
     {
       "a": "ruusu",
@@ -2645,7 +2723,8 @@
       ],
       "level": "verified",
       "detail": "Vahvistettu ainakin 24.8.2026 ja 26.10.2026.",
-      "date": ""
+      "date": "",
+      "verb": "oli haastateltavana"
     },
     {
       "a": "iippa",
@@ -2656,7 +2735,8 @@
       ],
       "level": "verified",
       "detail": "Vierailu myös Megarokkistaran kanssa, ei päätelmää yksityissuhteista.",
-      "date": "20.10.2026"
+      "date": "20.10.2026",
+      "verb": "vieraili"
     },
     {
       "a": "megis",
@@ -2667,7 +2747,8 @@
       ],
       "level": "verified",
       "detail": "Vierailivat yhdessä PactTalksissa.",
-      "date": "20.10.2026"
+      "date": "20.10.2026",
+      "verb": "esiintyi yhdessä"
     },
     {
       "a": "pottu",
@@ -2679,7 +2760,8 @@
       ],
       "level": "verified",
       "detail": "Vuonna 2025 Iippadaa matkusti Pottukoiran luo Viroon; yhteistä striimiä kuvattiin.",
-      "date": ""
+      "date": "",
+      "verb": "striimasi yhdessä"
     },
     {
       "a": "sami",
@@ -2691,7 +2773,8 @@
       ],
       "level": "verified",
       "detail": "Sami Kieksin kuvausryhmä seurasi Pottukoiran ja Iippadaan yhteistä striimausta.",
-      "date": ""
+      "date": "",
+      "verb": "kuvasi"
     },
     {
       "a": "sami",
@@ -2703,7 +2786,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "kuvasi"
     },
     {
       "a": "sami",
@@ -2715,7 +2799,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "perusti"
     },
     {
       "a": "revul",
@@ -2726,7 +2811,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "tuotti"
     },
     {
       "a": "pottu",
@@ -2738,7 +2824,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "esiintyi"
     },
     {
       "a": "iippa",
@@ -2750,7 +2837,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "esiintyi"
     },
     {
       "a": "upi",
@@ -2761,7 +2849,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "esiintyi"
     },
     {
       "a": "pirkkis",
@@ -2772,7 +2861,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "esiintyi"
     },
     {
       "a": "revul",
@@ -2783,7 +2873,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "tuotti"
     },
     {
       "a": "sami",
@@ -2795,7 +2886,8 @@
       ],
       "level": "verified",
       "detail": "Tämä ei tarkoita henkilökohtaista suhdetta jokaiseen esiintyjään.",
-      "date": ""
+      "date": "",
+      "verb": "tuotti"
     },
     {
       "a": "iippa",
@@ -2806,7 +2898,8 @@
       ],
       "level": "reported",
       "detail": "Seiska kertoo osallistumisesta 31.10.2026.",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "pottu",
@@ -2817,7 +2910,8 @@
       ],
       "level": "verified",
       "detail": "Osallistumista oli mainostettu, mutta Pottukoira kertoi jääneensä pois nettiyhteyksien ja korvauksen vuoksi.",
-      "date": ""
+      "date": "",
+      "verb": "markkinoi"
     },
     {
       "a": "heiskari",
@@ -2828,7 +2922,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "julwill",
@@ -2839,7 +2934,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "osallistui"
     },
     {
       "a": "tegel",
@@ -2850,7 +2946,8 @@
       ],
       "level": "reported",
       "detail": "Seiskan mukaan jäi satamassa matkasta.",
-      "date": ""
+      "date": "",
+      "verb": "suunnitteli osallistumista"
     },
     {
       "a": "korelon",
@@ -2861,7 +2958,8 @@
       ],
       "level": "verified",
       "detail": "Esiintyjä tapahtuman virallisessa ohjelmassa.",
-      "date": ""
+      "date": "",
+      "verb": "esiintyi"
     },
     {
       "a": "ossi",
@@ -2872,7 +2970,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "järjesti"
     },
     {
       "a": "sliki",
@@ -2884,7 +2983,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "esiintyi"
     },
     {
       "a": "korelon",
@@ -2896,7 +2996,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "esiintyi"
     },
     {
       "a": "sliki",
@@ -2908,18 +3009,20 @@
       ],
       "level": "verified",
       "detail": "Musiikillista yhteistyötä ja Sastamalan tapahtuma.",
-      "date": ""
+      "date": "",
+      "verb": "esiintyi yhdessä"
     },
     {
-      "a": "sastamala",
-      "b": "freak",
+      "a": "freak",
+      "b": "sastamala",
       "label": "asuhahmo esiintyi lavalla",
       "src": [
         "P16"
       ],
       "level": "reported",
       "detail": "Asuun pukeutuneen henkilöllisyys ei ole vahvistettu.",
-      "date": ""
+      "date": "",
+      "verb": "esiintyi"
     },
     {
       "a": "freak",
@@ -2930,7 +3033,8 @@
       ],
       "level": "reported",
       "detail": "Ei osoita samaa tekijää eri keikoilla.",
-      "date": ""
+      "date": "",
+      "verb": "muistutti"
     },
     {
       "a": "sliki",
@@ -2941,7 +3045,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "oli kohteena"
     },
     {
       "a": "ossi",
@@ -2952,7 +3057,8 @@
       ],
       "level": "reported",
       "detail": "Ketola on kiistänyt osallisuutensa myöhempiin häiriöihin.",
-      "date": ""
+      "date": "",
+      "verb": "hyödynsi"
     },
     {
       "a": "ossi",
@@ -2963,7 +3069,8 @@
       ],
       "level": "lead",
       "detail": "Ketola on kiistänyt tapahtumien järjestämisen. Tekijöitä tai toimeksiantoa ei vahvistettu.",
-      "date": ""
+      "date": "",
+      "verb": "väitettiin järjestäneen"
     },
     {
       "a": "ossi",
@@ -2974,7 +3081,8 @@
       ],
       "level": "reported",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "liitettiin"
     },
     {
       "a": "duel",
@@ -2985,7 +3093,8 @@
       ],
       "level": "reported",
       "detail": "Monarch Duel MMA / Freakbob Fighting -merkinnät, sopimusmuoto ei tiedossa.",
-      "date": ""
+      "date": "",
+      "verb": "näkyi"
     },
     {
       "a": "aleksi",
@@ -2997,7 +3106,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "otteli"
     },
     {
       "a": "aleksi",
@@ -3008,7 +3118,8 @@
       ],
       "level": "reported",
       "detail": "Ei osoita sopimuksen osapuolia tai korvausta.",
-      "date": ""
+      "date": "",
+      "verb": "yhdistettiin"
     },
     {
       "a": "kasinok",
@@ -3019,7 +3130,8 @@
       ],
       "level": "observed",
       "detail": "Havainto: !kasinokurki-komento näkyy julkisessa lähetysotsikossa. Päättely: toistuva kaupallinen kanavaintegraatio tekee mainos- tai affiliate-yhteistyöstä todennäköisen. Maksaja, sopimus, korvaus tai omistaja eivät ole tarkistettuja.",
-      "date": "1.11.2026"
+      "date": "1.11.2026",
+      "verb": "näkyi"
     },
     {
       "a": "kasinok",
@@ -3030,7 +3142,8 @@
       ],
       "level": "observed",
       "detail": "Havainto: !kasinokurki-komento näkyy julkisessa lähetysotsikossa. Päättely: toistuva kaupallinen kanavaintegraatio tekee mainos- tai affiliate-yhteistyöstä todennäköisen. Maksaja, sopimus, korvaus tai omistaja eivät ole tarkistettuja.",
-      "date": "1.11.2026"
+      "date": "1.11.2026",
+      "verb": "näkyi"
     },
     {
       "a": "kasinok",
@@ -3041,7 +3154,8 @@
       ],
       "level": "observed",
       "detail": "Havainto: !kasinokurki-komento näkyy julkisessa lähetysotsikossa. Päättely: toistuva kaupallinen kanavaintegraatio tekee mainos- tai affiliate-yhteistyöstä todennäköisen. Maksaja, sopimus, korvaus tai omistaja eivät ole tarkistettuja.",
-      "date": "1.11.2026"
+      "date": "1.11.2026",
+      "verb": "näkyi"
     },
     {
       "a": "pullis",
@@ -3052,7 +3166,8 @@
       ],
       "level": "lead",
       "detail": "Yksittäinen viihdeblogi kirjoittaa suunnitellusta roolista ja poisjäännistä; vahvistava tuotantolähde puuttuu.",
-      "date": ""
+      "date": "",
+      "verb": "liitettiin"
     },
     {
       "a": "gekkonen",
@@ -3063,7 +3178,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "uutisoi"
     },
     {
       "a": "gekkonen",
@@ -3074,7 +3190,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "julkaisi"
     },
     {
       "a": "gekkonen",
@@ -3085,7 +3202,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "uutisoi"
     },
     {
       "a": "uuno",
@@ -3096,7 +3214,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "uutisoi"
     },
     {
       "a": "seiska",
@@ -3107,7 +3226,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "uutisoi"
     },
     {
       "a": "seiska",
@@ -3118,7 +3238,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "uutisoi"
     },
     {
       "a": "hs",
@@ -3129,7 +3250,8 @@
       ],
       "level": "verified",
       "detail": "Artikkelia ei saatu kokonaisuudessaan avattua; ensisijaiset yksityiskohdat tarkistettiin muualta.",
-      "date": ""
+      "date": "",
+      "verb": "uutisoi"
     },
     {
       "a": "nettipokeri",
@@ -3140,7 +3262,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "haastatteli"
     },
     {
       "a": "nettipokeri",
@@ -3151,7 +3274,8 @@
       ],
       "level": "verified",
       "detail": "",
-      "date": ""
+      "date": "",
+      "verb": "uutisoi"
     },
     {
       "a": "reddit",
@@ -3162,7 +3286,8 @@
       ],
       "level": "lead",
       "detail": "Keskustelukommentit dokumentoivat väitteiden olemassaolon, eivät todenna sisältöä.",
-      "date": ""
+      "date": "",
+      "verb": "keskusteli"
     },
     {
       "a": "sami",
@@ -3173,7 +3298,8 @@
       ],
       "level": "verified",
       "detail": "Ylen 2020 henkilöhaastattelussa sanotaan Kieksin olleen mukana Ylilauta-viestipalvelun toiminnassa. Se ei yksilöi omistus- tai nykyroolia.",
-      "date": "2020"
+      "date": "2020",
+      "verb": "osallistui"
     },
     {
       "a": "tegel",
@@ -3184,7 +3310,8 @@
       ],
       "level": "verified",
       "detail": "Juhana Tegelberg vieraili PactHouse 3 -talossa toukokuussa 2026. Tämä ei merkitse osallistujastatusta.",
-      "date": "5.5.2026"
+      "date": "5.5.2026",
+      "verb": "vieraili"
     },
     {
       "a": "aleksi",
@@ -3195,7 +3322,8 @@
       ],
       "level": "reported",
       "detail": "Gekkosen mukaan Nurminen auttoi Rostedtia eräässä suorassa lähetyksessä. Ei osoita muuta henkilökohtaista tai kaupallista suhdetta.",
-      "date": "7.5.2026"
+      "date": "7.5.2026",
+      "verb": "esiintyi yhdessä"
     },
     {
       "a": "julkkis",
@@ -3206,7 +3334,8 @@
       ],
       "level": "verified",
       "detail": "Nettipokeri.comin julkaisema tapahtumaohjelma.",
-      "date": "26.–27.5.2026"
+      "date": "26.–27.5.2026",
+      "verb": "sisälsi"
     },
     {
       "a": "julkkis",
@@ -3217,7 +3346,8 @@
       ],
       "level": "verified",
       "detail": "Nettipokeri.comin 25.9. julkaisema pelaajalista.",
-      "date": "25.–26.9.2026"
+      "date": "25.–26.9.2026",
+      "verb": "sisälsi"
     },
     {
       "a": "sahamies",
@@ -3228,7 +3358,8 @@
       ],
       "level": "reported",
       "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
-      "date": "26.–27.5.2026"
+      "date": "26.–27.5.2026",
+      "verb": "listattiin"
     },
     {
       "a": "daniel",
@@ -3239,7 +3370,8 @@
       ],
       "level": "reported",
       "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
-      "date": "26.–27.5.2026"
+      "date": "26.–27.5.2026",
+      "verb": "listattiin"
     },
     {
       "a": "jethro",
@@ -3250,7 +3382,8 @@
       ],
       "level": "reported",
       "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
-      "date": "26.–27.5.2026"
+      "date": "26.–27.5.2026",
+      "verb": "listattiin"
     },
     {
       "a": "joachim",
@@ -3261,7 +3394,8 @@
       ],
       "level": "reported",
       "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
-      "date": "26.–27.5.2026"
+      "date": "26.–27.5.2026",
+      "verb": "listattiin"
     },
     {
       "a": "amanda",
@@ -3272,7 +3406,8 @@
       ],
       "level": "reported",
       "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
-      "date": "26.–27.5.2026"
+      "date": "26.–27.5.2026",
+      "verb": "listattiin"
     },
     {
       "a": "noorak",
@@ -3283,7 +3418,8 @@
       ],
       "level": "reported",
       "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
-      "date": "26.–27.5.2026"
+      "date": "26.–27.5.2026",
+      "verb": "listattiin"
     },
     {
       "a": "vp",
@@ -3294,7 +3430,8 @@
       ],
       "level": "reported",
       "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
-      "date": "26.–27.5.2026"
+      "date": "26.–27.5.2026",
+      "verb": "listattiin"
     },
     {
       "a": "tero",
@@ -3305,7 +3442,8 @@
       ],
       "level": "reported",
       "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
-      "date": "26.–27.5.2026"
+      "date": "26.–27.5.2026",
+      "verb": "listattiin"
     },
     {
       "a": "hune",
@@ -3316,7 +3454,8 @@
       ],
       "level": "reported",
       "detail": "Nettipokeri.comin ennakkojulkaisun osallistujaluettelossa.",
-      "date": "26.–27.5.2026"
+      "date": "26.–27.5.2026",
+      "verb": "listattiin"
     },
     {
       "a": "sahamies",
@@ -3327,7 +3466,8 @@
       ],
       "level": "reported",
       "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
-      "date": "25.–26.9.2026"
+      "date": "25.–26.9.2026",
+      "verb": "listattiin"
     },
     {
       "a": "amanda",
@@ -3338,7 +3478,8 @@
       ],
       "level": "reported",
       "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
-      "date": "25.–26.9.2026"
+      "date": "25.–26.9.2026",
+      "verb": "listattiin"
     },
     {
       "a": "jethro",
@@ -3349,7 +3490,8 @@
       ],
       "level": "reported",
       "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
-      "date": "25.–26.9.2026"
+      "date": "25.–26.9.2026",
+      "verb": "listattiin"
     },
     {
       "a": "crista",
@@ -3360,7 +3502,8 @@
       ],
       "level": "reported",
       "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
-      "date": "25.–26.9.2026"
+      "date": "25.–26.9.2026",
+      "verb": "listattiin"
     },
     {
       "a": "vp",
@@ -3371,7 +3514,8 @@
       ],
       "level": "reported",
       "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
-      "date": "25.–26.9.2026"
+      "date": "25.–26.9.2026",
+      "verb": "listattiin"
     },
     {
       "a": "tero",
@@ -3382,7 +3526,8 @@
       ],
       "level": "reported",
       "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
-      "date": "25.–26.9.2026"
+      "date": "25.–26.9.2026",
+      "verb": "listattiin"
     },
     {
       "a": "hune",
@@ -3393,7 +3538,8 @@
       ],
       "level": "reported",
       "detail": "25.9.2026 päivätty tapahtumajulkaisu nimeää pelaajan.",
-      "date": "25.–26.9.2026"
+      "date": "25.–26.9.2026",
+      "verb": "listattiin"
     },
     {
       "a": "sara",
@@ -3404,7 +3550,8 @@
       ],
       "level": "reported",
       "detail": "Nettipokeri.com listaa Sara Chafakin Julkkispeleistä tutuksi. Ei tästä lähteestä tarkkaa jaksoa.",
-      "date": "2026"
+      "date": "2026",
+      "verb": "esiintyi"
     },
     {
       "a": "jethro",
@@ -3417,7 +3564,8 @@
       ],
       "level": "verified",
       "detail": "Useita yksilöityjä lähetyskokoonpanoja.",
-      "date": "2026"
+      "date": "2026",
+      "verb": "esiintyi"
     },
     {
       "a": "amanda",
@@ -3430,7 +3578,8 @@
       ],
       "level": "verified",
       "detail": "Useita yksilöityjä lähetyskokoonpanoja.",
-      "date": "2026"
+      "date": "2026",
+      "verb": "esiintyi"
     },
     {
       "a": "sahamies",
@@ -3443,7 +3592,8 @@
       ],
       "level": "verified",
       "detail": "Ilari Sahamies liittää PactHouse 2:n Julkkispelit-pokerituotantoihin.",
-      "date": "2026"
+      "date": "2026",
+      "verb": "esiintyi"
     },
     {
       "a": "jethro",
@@ -3454,7 +3604,8 @@
       ],
       "level": "verified",
       "detail": "Julkisesti kuvattu yhteinen ohjelmatilanne; ei yksin muuta liikesuhdetta.",
-      "date": "6.5.2026"
+      "date": "6.5.2026",
+      "verb": "keskusteli"
     },
     {
       "a": "joni",
@@ -3465,7 +3616,8 @@
       ],
       "level": "reported",
       "detail": "Kiinnostus tapahtumaan on raportoitu, mutta osallistumista ei ole tällä perusteella vahvistettu.",
-      "date": "6.5.2026"
+      "date": "6.5.2026",
+      "verb": "ilmaisi kiinnostuksensa"
     },
     {
       "a": "talks",
@@ -3476,7 +3628,8 @@
       ],
       "level": "verified",
       "detail": "Seiska raportoi ohjelman 11.8.2026 jaksosta.",
-      "date": "11.8.2026"
+      "date": "11.8.2026",
+      "verb": "sisältää"
     },
     {
       "a": "jethro",
@@ -3487,7 +3640,8 @@
       ],
       "level": "verified",
       "detail": "Jethro Rostedt juonsi lähetyksen.",
-      "date": "11.8.2026"
+      "date": "11.8.2026",
+      "verb": "juonsi"
     },
     {
       "a": "johanna",
@@ -3498,7 +3652,8 @@
       ],
       "level": "verified",
       "detail": "Uutisoitu yhteisesiintyminen PactTalksin ohjelmajaksossa, ei todistus laajemmasta yhteistyöstä.",
-      "date": "11.8.2026"
+      "date": "11.8.2026",
+      "verb": "vieraili"
     },
     {
       "a": "joonasm",
@@ -3509,7 +3664,8 @@
       ],
       "level": "verified",
       "detail": "Uutisoitu yhteisesiintyminen PactTalksin ohjelmajaksossa, ei todistus laajemmasta yhteistyöstä.",
-      "date": "11.8.2026"
+      "date": "11.8.2026",
+      "verb": "vieraili"
     },
     {
       "a": "milla",
@@ -3520,7 +3676,8 @@
       ],
       "level": "verified",
       "detail": "Uutisoitu yhteisesiintyminen PactTalksin ohjelmajaksossa, ei todistus laajemmasta yhteistyöstä.",
-      "date": "11.8.2026"
+      "date": "11.8.2026",
+      "verb": "vieraili"
     },
     {
       "a": "pottu",
@@ -3531,7 +3688,8 @@
         "P47",
         "P48",
         "P50"
-      ]
+      ],
+      "verb": "striimasi yhdessä"
     },
     {
       "a": "pottu",
@@ -3540,7 +3698,8 @@
       "level": "verified",
       "src": [
         "P48"
-      ]
+      ],
+      "verb": "striimasi"
     },
     {
       "a": "pirkkis",
@@ -3549,7 +3708,8 @@
       "level": "verified",
       "src": [
         "P48"
-      ]
+      ],
+      "verb": "vieraili"
     },
     {
       "a": "pottu",
@@ -3558,7 +3718,8 @@
       "level": "reported",
       "src": [
         "P55"
-      ]
+      ],
+      "verb": "vieraili"
     },
     {
       "a": "pirkkis",
@@ -3567,7 +3728,8 @@
       "level": "reported",
       "src": [
         "P57"
-      ]
+      ],
+      "verb": "esiintyi yhdessä"
     },
     {
       "a": "sami",
@@ -3577,7 +3739,8 @@
       "src": [
         "P45",
         "P46"
-      ]
+      ],
+      "verb": "haastatteli"
     },
     {
       "a": "sami",
@@ -3587,7 +3750,8 @@
       "src": [
         "P45",
         "P46"
-      ]
+      ],
+      "verb": "kuvasi"
     },
     {
       "a": "upi",
@@ -3597,7 +3761,8 @@
       "src": [
         "P45",
         "P46"
-      ]
+      ],
+      "verb": "esiintyi samassa dokumentissa"
     },
     {
       "a": "pottu",
@@ -3606,7 +3771,8 @@
       "level": "verified",
       "src": [
         "P53"
-      ]
+      ],
+      "verb": "vieraili"
     },
     {
       "a": "pact_pottu",
@@ -3615,25 +3781,28 @@
       "level": "verified",
       "src": [
         "P53"
-      ]
+      ],
+      "verb": "kuuluu"
     },
     {
-      "a": "pact_pottu",
-      "b": "jethro",
+      "a": "jethro",
+      "b": "pact_pottu",
       "label": "jakson juontaja",
       "level": "verified",
       "src": [
         "P53"
-      ]
+      ],
+      "verb": "juonsi"
     },
     {
-      "a": "pact_pottu",
-      "b": "okkishow",
+      "a": "okkishow",
+      "b": "pact_pottu",
       "label": "jakson toinen juontaja",
       "level": "verified",
       "src": [
         "P53"
-      ]
+      ],
+      "verb": "juonsi"
     },
     {
       "a": "pottu",
@@ -3643,7 +3812,8 @@
       "src": [
         "P53",
         "P54"
-      ]
+      ],
+      "verb": "vieraili"
     },
     {
       "a": "pirkkis",
@@ -3652,7 +3822,8 @@
       "level": "reported",
       "src": [
         "P49"
-      ]
+      ],
+      "verb": "matkusti"
     },
     {
       "a": "sampe",
@@ -3662,7 +3833,8 @@
       "src": [
         "P49",
         "P50"
-      ]
+      ],
+      "verb": "matkusti"
     },
     {
       "a": "pirkkis",
@@ -3671,7 +3843,8 @@
       "level": "reported",
       "src": [
         "P49"
-      ]
+      ],
+      "verb": "matkusti yhdessä"
     },
     {
       "a": "upi",
@@ -3682,7 +3855,8 @@
         "P52"
       ],
       "detail": "Keskustelupalstan tapahtumakuvaus riittää tämän arkisen matkaseurueyhteyden raportoimiseksi. Alkuperäinen ketju: P52. Ei väitettä sopimuksista tai muista teoista.",
-      "date": "2025-04"
+      "date": "2025-04",
+      "verb": "matkusti"
     },
     {
       "a": "pirkkis",
@@ -3693,7 +3867,8 @@
         "P52"
       ],
       "detail": "Keskustelupalstan tapahtumakuvaus riittää tämän arkisen matkaseurueyhteyden raportoimiseksi. Alkuperäinen ketju: P52. Ei väitettä sopimuksista tai muista teoista.",
-      "date": "2025-04"
+      "date": "2025-04",
+      "verb": "matkusti"
     },
     {
       "a": "taiga",
@@ -3704,7 +3879,8 @@
         "P52"
       ],
       "detail": "Keskustelupalstan tapahtumakuvaus riittää tämän arkisen matkaseurueyhteyden raportoimiseksi. Alkuperäinen ketju: P52. Ei väitettä sopimuksista tai muista teoista.",
-      "date": "2025-04"
+      "date": "2025-04",
+      "verb": "matkusti"
     },
     {
       "a": "upi",
@@ -3713,7 +3889,8 @@
       "level": "lead",
       "src": [
         "P51"
-      ]
+      ],
+      "verb": "väitettiin striimanneen yhdessä"
     },
     {
       "a": "pottu",
@@ -3722,7 +3899,8 @@
       "level": "reported",
       "src": [
         "P59"
-      ]
+      ],
+      "verb": "tuomittiin"
     },
     {
       "a": "pottu",
@@ -3731,7 +3909,8 @@
       "level": "reported",
       "src": [
         "P60"
-      ]
+      ],
+      "verb": "isännöi"
     },
     {
       "a": "testotimo",
@@ -3740,7 +3919,8 @@
       "level": "reported",
       "src": [
         "P60"
-      ]
+      ],
+      "verb": "vieraili"
     },
     {
       "a": "aleksi",
@@ -3749,7 +3929,8 @@
       "level": "reported",
       "src": [
         "P60"
-      ]
+      ],
+      "verb": "vieraili"
     },
     {
       "a": "pullis",
@@ -3758,7 +3939,8 @@
       "level": "reported",
       "src": [
         "P60"
-      ]
+      ],
+      "verb": "vieraili"
     },
     {
       "a": "pottu",
@@ -3767,7 +3949,8 @@
       "level": "reported",
       "src": [
         "P60"
-      ]
+      ],
+      "verb": "striimasi yhdessä"
     },
     {
       "a": "pottu",
@@ -3776,7 +3959,8 @@
       "level": "reported",
       "src": [
         "P60"
-      ]
+      ],
+      "verb": "striimasi yhdessä"
     },
     {
       "a": "testotimo",
@@ -3785,7 +3969,8 @@
       "level": "reported",
       "src": [
         "P61"
-      ]
+      ],
+      "verb": "järjesti"
     },
     {
       "a": "aleksi",
@@ -3794,7 +3979,8 @@
       "level": "reported",
       "src": [
         "P61"
-      ]
+      ],
+      "verb": "avusti"
     },
     {
       "a": "pasi",
@@ -3803,7 +3989,8 @@
       "level": "reported",
       "src": [
         "P63"
-      ]
+      ],
+      "verb": "vieraili"
     },
     {
       "a": "jethro",
@@ -3812,7 +3999,8 @@
       "level": "reported",
       "src": [
         "P63"
-      ]
+      ],
+      "verb": "juonsi"
     },
     {
       "a": "talks",
@@ -3821,7 +4009,8 @@
       "level": "reported",
       "src": [
         "P63"
-      ]
+      ],
+      "verb": "sisältää"
     },
     {
       "a": "pasi",
@@ -3830,7 +4019,8 @@
       "level": "reported",
       "src": [
         "P63"
-      ]
+      ],
+      "verb": "perusti"
     },
     {
       "a": "pottu",
@@ -3840,7 +4030,8 @@
       "src": [
         "P62"
       ],
-      "date": "2025-12"
+      "date": "2025-12",
+      "verb": "striimasi yhdessä"
     },
     {
       "a": "bamat",
@@ -3850,7 +4041,8 @@
       "src": [
         "P65"
       ],
-      "date": "2026-10"
+      "date": "2026-10",
+      "verb": "matkusti"
     },
     {
       "a": "bamat",
@@ -3860,7 +4052,8 @@
       "src": [
         "P65"
       ],
-      "date": "2026-10"
+      "date": "2026-10",
+      "verb": "matkusti"
     },
     {
       "a": "ruusu",
@@ -3870,7 +4063,8 @@
       "src": [
         "P65"
       ],
-      "date": "2026-10"
+      "date": "2026-10",
+      "verb": "matkusti"
     },
     {
       "a": "saini",
@@ -3880,7 +4074,8 @@
       "src": [
         "P66"
       ],
-      "date": "2026-10"
+      "date": "2026-10",
+      "verb": "jakoi"
     },
     {
       "a": "bamat",
@@ -3891,7 +4086,8 @@
         "P64",
         "P67"
       ],
-      "date": "2026-10-30"
+      "date": "2026-10-30",
+      "verb": "vieraili"
     }
   ],
   "sources": {

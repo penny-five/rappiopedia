@@ -14,6 +14,7 @@ test('kaikissa yhteyksissä validit solmut, tyypit ja lähteet',()=>{
  for(const e of data.edges){
  assert.ok(nodes.has(e.a),e.a);assert.ok(nodes.has(e.b),e.b);assert.notEqual(e.a,e.b);
  assert.ok(levels.has(e.level),e.level);assert.ok(e.label);
+ assert.ok(typeof e.verb==='string'&&e.verb.trim(),`Missing verb: ${e.a} → ${e.b}`);
  assert.ok(Array.isArray(e.src)&&e.src.length>0,`Missing source: ${e.a}-${e.b}`);
  for(const id of e.src)assert.ok(data.sources[id]?.url,`Missing source: ${id}`);
  }
@@ -27,4 +28,9 @@ test('lyhimmän reitin algoritmi kunnioittaa näyttösuodattimia',()=>{
  assert.equal(r.ns[0],'pact');assert.equal(r.ns.at(-1),'jethro');assert.equal(r.es.length,r.ns.length-1);
  assert.equal(shortestPath('pact','missing',data.edges,levels),null);
  assert.equal(shortestPath('pact','jethro',data.edges,new Set()),null);
+});
+
+test('suunnatut suhdeverbit ovat datassa',()=>{
+ assert.equal(data.edges.find(e=>e.a==='jethro'&&e.b==='talks')?.verb,'juontaa');
+ assert.equal(data.edges.find(e=>e.a==='saini'&&e.b==='pact')?.verb,'perusti');
 });
