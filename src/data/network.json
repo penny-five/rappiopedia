@@ -4053,6 +4053,54 @@
         565
       ],
       "featured": false
+    },
+    {
+      "id": "snappisensuroimaton",
+      "name": "r/snappisensuroimaton (2022–2025)",
+      "group": "media",
+      "cat": "site",
+      "types": [
+        "keskustelupalsta"
+      ],
+      "pos3": [
+        465,
+        -275,
+        -1950
+      ],
+      "featured": false,
+      "note": "Snappisensuroimaton oli Redditin suomalaisia somettajia ja rappiostriimaajia käsitellyt keskusteluyhteisö. Reddit poisti yhteisön 18.9.2025; sen seuraajaksi perustettiin r/snappisensuroimat0n."
+    },
+    {
+      "id": "snappisensuroimat0n",
+      "name": "r/snappisensuroimat0n (2025–)",
+      "group": "media",
+      "cat": "site",
+      "types": [
+        "keskustelupalsta"
+      ],
+      "pos3": [
+        500,
+        -345,
+        -1810
+      ],
+      "featured": false,
+      "note": "Snappisensuroimat0n on syyskuussa 2025 perustettu suomalaisia somevaikuttajia ja rappiostriimaajia seuraava Reddit-yhteisö, joka jatkoi poistetun Snappisensuroimattoman toimintaa. Yhteisössä jaetaan myös striimikatkelmia."
+    },
+    {
+      "id": "misantrooppi_kanava",
+      "name": "Misantrooppi (striimikanava)",
+      "group": "rappio",
+      "cat": "channel",
+      "types": [
+        "striimikanava"
+      ],
+      "pos3": [
+        2540,
+        -270,
+        810
+      ],
+      "featured": false,
+      "note": "Misantrooppi-nimiseltä verkkokanavalta kerrottiin katsotun Arttu ”Upi” Pulkkisen suoria lähetyksiä marraskuussa 2022. Kanavan tarkkaa osoitetta tai ylläpitäjän henkilöllisyyttä ei ole vahvistettu."
     }
   ],
   "edges": [
@@ -8884,6 +8932,99 @@
         "P184"
       ],
       "level": "reported"
+    },
+    {
+      "a": "reddit",
+      "b": "snappisensuroimaton",
+      "type": "sisaltaa",
+      "label": "suomalaisten somejuorujen keskusteluyhteisö vuosina 2022–2025",
+      "date": "2022–2025",
+      "level": "reported",
+      "src": [
+        "P280",
+        "P281"
+      ]
+    },
+    {
+      "a": "reddit",
+      "b": "snappisensuroimat0n",
+      "type": "sisaltaa",
+      "label": "syyskuussa 2025 perustettu uusi suomalainen somettajayhteisö",
+      "date": "2025-09-18",
+      "level": "reported",
+      "src": [
+        "P280",
+        "P282"
+      ]
+    },
+    {
+      "a": "snappisensuroimat0n",
+      "b": "snappisensuroimaton",
+      "type": "jatkoi-yhteisoa",
+      "label": "perustettiin 18.9.2025 poistetun alkuperäisen yhteisön seuraajaksi",
+      "date": "2025-09-18",
+      "level": "reported",
+      "src": [
+        "P280",
+        "P282"
+      ]
+    },
+    {
+      "a": "snappisensuroimaton",
+      "b": "upi",
+      "type": "kasitteli-aihetta",
+      "label": "katsojat seurasivat Upin subathonia ja aiempia striimejä helmikuussa 2025",
+      "date": "2025-02-01",
+      "level": "observed",
+      "src": [
+        "P288"
+      ]
+    },
+    {
+      "a": "snappisensuroimat0n",
+      "b": "upi",
+      "type": "kasitteli-aihetta",
+      "label": "keskusteli Upin suorista lähetyksistä ja lokakuun 2026 onnettomuudesta",
+      "date": "2026-10",
+      "level": "observed",
+      "src": [
+        "P289"
+      ]
+    },
+    {
+      "a": "snappisensuroimat0n",
+      "b": "megis",
+      "type": "kasitteli-aihetta",
+      "label": "käsitteli Megarokkistaran ja muiden rappiostriimaajien yhteislähetyksiä",
+      "date": "2026",
+      "level": "observed",
+      "src": [
+        "P174",
+        "P204"
+      ]
+    },
+    {
+      "a": "snappisensuroimat0n",
+      "b": "pullis",
+      "type": "kasitteli-aihetta",
+      "label": "julkaisi videokatkelmia Pulliksen Mallorcan-striimistä syyskuussa",
+      "date": "2026-09-22",
+      "level": "observed",
+      "src": [
+        "P264",
+        "P265"
+      ]
+    },
+    {
+      "a": "upi",
+      "b": "misantrooppi_kanava",
+      "type": "esiintyi",
+      "label": "Upin livejä kerrottiin näytetyn Misantrooppi-kanavalla marraskuussa 2022",
+      "date": "2022-11-27",
+      "level": "reported",
+      "src": [
+        "P285"
+      ]
     }
   ],
   "sources": {
@@ -10272,6 +10413,61 @@
       "label": "Como.fi: Pottukoira lopetti alkoholin ja alkoi treenata kolmen Spurgu-TV-kauden jälkeen",
       "url": "https://www.como.fi/uutiset/pottukoiralta-hammentava-tieto-ryyppaamisen-sijaan-livestriimeissa-nahdaan-nyt-tata/",
       "note": "Kärkkäinen kertoi lopettaneensa juomisen ja tupakoinnin sekä kuvanneensa painoliivitreenejä ja kalastusta kolmen Spurgu-TV-kauden jälkeen."
+    },
+    "P280": {
+      "label": "Reddit 18.9.2025: yhteisön käyttäjät Snappisensuroimattoman poistumisesta",
+      "url": "https://www.reddit.com/r/snappijuorut/comments/1nkmnp4",
+      "note": "Alkuperäinen r/snappisensuroimaton oli poistettu, ja keskustelijat nimesivät korvaajaksi r/snappisensuroimat0n:n."
+    },
+    "P281": {
+      "label": "Reddit 19.9.2025: alkuperäisen Snappisensuroimattoman palautusyrityksen tilanne",
+      "url": "https://www.reddit.com/r/snappijuorut/comments/1nlizh2",
+      "note": "Keskustelussa referoidaan alkuperäisen moderaattorin Redditin ylläpidolta saamaa vastausta: poistettua yhteisöä ei palauteta."
+    },
+    "P282": {
+      "label": "r/snappisensuroimat0n:n moderaattorit 23.9.2025: moderointi ja edeltäjäyhteisö",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1noo57a",
+      "note": "Yhteisön moderaattorit vastasivat kysymyksiin uuden palstan säännöistä ja aiemman yhteisön bannista."
+    },
+    "P283": {
+      "label": "r/snappisensuroimat0n:n moderaattorit 22.6.2026: kolme uutta moderaattoria",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1ucrv8v/hellurei_redditämmät/",
+      "note": "Moderaattorit kertoivat kolmesta uudesta valinnasta ja rajasivat häirintään ja doxxaamiseen liittyneet hakijat ulos."
+    },
+    "P284": {
+      "label": "Vaasan yliopisto 2026: Liina Uusi-Kauppila, Tuntemattomat kuin arkipäivän tuttuja",
+      "url": "https://osuva.uwasa.fi/server/api/core/bitstreams/72523639-77c3-4748-93e3-ba25079c2b39/content",
+      "note": "Kandidaatintutkielma tarkastelee r/snappisensuroimat0n:n parasosiaalisia suhteita viikon aineistolla 23.2.–1.3.2026; kertoo foorumin jatkaneen poistettua yhteisöä."
+    },
+    "P285": {
+      "label": "Vauva.fi 27.11.2022: Upin striimejä Misantrooppi-kanavalla",
+      "url": "https://www.vauva.fi/keskustelu/4904481/upi-striimi",
+      "note": "Aikalaiskeskustelun mukaan Upin suoratoistolähetyksiä saattoi marraskuussa 2022 katsoa Misantrooppi-nimiseltä kanavalta; kanavan omistaja ja tarkka URL puuttuvat."
+    },
+    "P286": {
+      "label": "Reddit 5.2.2024: katsojat mainitsevat Misantroopin Upin vanhoissa videoissa",
+      "url": "https://www.reddit.com/r/snappisensuroimaton/comments/1ajd2rj",
+      "note": "Kommentoija korjaa toisen katsojan mainitseman Nasanaattori-nimen Misantroopiksi Upin aiemmista striimitilanteista puhuttaessa."
+    },
+    "P287": {
+      "label": "Reddit 27.9.2026: Misantrooppi mainittu Upin vanhojen klippien yhteydessä",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1wrlo91/kenellä_juoruttavalla_nenee_sun_mielestä/",
+      "note": "Katsojat muistelevat vanhoja Upi-videoita ja nimeävät erään osallistujan Misantroopiksi; ei varmista henkilön nimeä eikä kanavan omistajuutta."
+    },
+    "P288": {
+      "label": "Reddit 1.2.2025: Upin subathon ja tausta vanhassa Snappisensuroimattomassa",
+      "url": "https://www.reddit.com/r/snappisensuroimaton/comments/1if61jg",
+      "note": "Vanhan subredditin keskustelussa käsitellään Upin subathon-lähetystä ja varhaisempien videoiden historiaa."
+    },
+    "P289": {
+      "label": "Reddit 20.10.2026: Upin tilanteesta keskusteltiin Snappisensuroimat0nissa",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1xb10mg/upista_mitään/",
+      "note": "Uuden subredditin ketjussa keskustellaan Upin lokakuun 2026 sairaalajakson huhujen ja somevideoiden paikkansapitävyydestä; terveystietoväitteitä ei käytetä faktana."
+    },
+    "P290": {
+      "label": "Reddit 4.11.2025: Snappisensuroimat0n:n kehorauhaa koskevat moderointisäännöt",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1ooirhk",
+      "note": "Keskustelu ja moderaattorin kommentti: kehon arvosteluun ja ulkonäön pilkkaamiseen liittyviä viestejä poistetaan."
     }
   },
   "date": "2026-11-01"
