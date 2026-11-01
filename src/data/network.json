@@ -1096,7 +1096,10 @@
       "featured": false,
       "types": [
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/kelly.webp",
+      "imageSource": "https://image.seiska.fi/2010579.webp?compression=70&croph=84.50&cropw=100.00&format=jpg&height=348&imageId=2010579&width=620&x=0.00&y=4.84",
+      "imageCredit": "Atte Kajova / Seiska, Kelly Kalonji elokuvan ensi-illassa (15.1.2025)"
     },
     {
       "id": "liina",
@@ -1862,7 +1865,10 @@
       "featured": false,
       "types": [
         "henkilo"
-      ]
+      ],
+      "image": "images/tero.webp",
+      "imageSource": "https://nettipokeri.com/wp-content/uploads/2025/11/IMG_1448-scaled-e1764093353472.jpg",
+      "imageCredit": "Nettipokeri.com, Tero ”BigWinPictures” Lipponen pokeripöydässä (2025)"
     },
     {
       "id": "hune",
