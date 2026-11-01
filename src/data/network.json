@@ -634,7 +634,10 @@
       "types": [
         "striimaaja",
         "tosi-tv-osallistuja"
-      ]
+      ],
+      "image": "images/kp.webp",
+      "imageSource": "https://dreamhack.com/stockholm/wp-content/uploads/sites/25/2026/09/kp2times_2026.jpg",
+      "imageCredit": "DreamHack Stockholm, KP2Timesin Creator Hub -esittelykuva (2026)"
     },
     {
       "id": "julwill",
@@ -2590,7 +2593,10 @@
         -50,
         2600
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/anna_maija_heinonen.webp",
+      "imageSource": "https://www.ses.fi/wp-content/uploads/2023/10/Anna-Maija-Heinonen-400x400.jpg",
+      "imageCredit": "Suomen elokuvasäätiö (SES), Anna-Maija Heinosen ohjaajaprofiilin henkilökuva"
     },
     {
       "id": "krista_moisio",
@@ -2606,7 +2612,10 @@
         -150,
         2550
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/krista_moisio.webp",
+      "imageSource": "https://www.ses.fi/wp-content/uploads/2023/10/Krista__Moisio_director_profile2-kopio-400x400.jpg",
+      "imageCredit": "Suomen elokuvasäätiö (SES), Krista Moision ohjaajaprofiilin henkilökuva"
     },
     {
       "id": "joonas_jaaskelainen",
