@@ -180,7 +180,7 @@
     },
     {
       "id": "kasinokurki-striimimarkkinointi-2026",
-      "title": "Kasinokurjen komennon kohde, taustayhtiö ja striimaajakytkökset",
+      "title": "Kasinokurki-kasinovertailun striimausmarkkinointi ja taustayhtiö",
       "status": "in-progress",
       "priority": "high",
       "nodeIds": [
@@ -206,7 +206,7 @@
         "https://www.reddit.com/r/snappisensuroimat0n/comments/1wdsail/sampen_mielipide_lassin_tuomioon/",
         "https://www.reddit.com/r/snappisensuroimat0n/comments/1wrdn9d/kasinokurjen_vastaus_pulliksen_k%C3%A4yt%C3%B6kseen/"
       ],
-      "notes": "Kick-otsikoissa näkyy !kasinokurki useilla kanavilla, myös kanavien omilla VOD-sivuilla. Kasinokurki.fi ja Kasinokurki.com ovat kaksi samannimistä affiliate-sivustoa. Komennon target URL, sivustojen keskinäinen suhde ja omistaja eivät käy ilmi näistä lähteistä. Redditissä väitetään vaihtelevasti Sampen, Sainin tai muiden toimijoiden olevan taustalla, eikä niitä pidä merkitä vahvistetuiksi henkilöyhteyksiksi.",
+      "notes": "Kasinokurki on nettikasinoiden vertailu- ja affiliate-markkinointipalvelu; tämä on vahvistettu palveluiden omista kuvauksista P78 ja P79. Nimi toistuu striimaajien !kasinokurki-otsikoissa (P81, P82, P83, P93), mikä on konkreettista brändinäkyvyyttä. Avoimet tutkimuskysymykset koskevat nimenomaisen bot-komennon URL-kohdetta, .fi/.com-verkkotunnusten mahdollista samaa ylläpitäjää sekä taustayhtiötä ja mahdollisia sopimuksia. Redditin henkilöarvaukset eivät anna varmuutta omistajasta.",
       "questions": [
         "Mihin URL-osoitteeseen !kasinokurki-botin chat-vastaus johtaa Pulliksen, Sampen ja KP2Timesin kanavilla?",
         "Onko .fi- ja .com-verkkotunnuksilla sama julkisesti ilmoitettu operaattori tai yhteystaho?",
@@ -223,7 +223,8 @@
         "Katso Kickin chat-vastaukset yksilöidyistä VOD-tallenteista ja tallenna kohde-URL:t.",
         "Etsi mahdollinen julkinen yhtiötunnus, sopimusilmoitus tai muu alkuperäinen toimijatieto.",
         "Vertaa väitettyjä omistajia vasta saatuun ensikäden lähteeseen, älä käytä keskenään ristiriitaisia Reddit-arvauksia faktana."
-      ]
+      ],
+      "updatedAt": "2026-11-01"
     },
     {
       "id": "pullis-dokumentti-ottelut-ja-striimit",

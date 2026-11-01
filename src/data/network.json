@@ -458,8 +458,8 @@
       "id": "kasinok",
       "name": "Kasinokurki",
       "group": "stream",
-      "cat": "lead",
-      "note": "Kasinokurki-nimi esiintyy useiden suomalaisten Kick-striimaajien lähetysotsikoiden komentona. Samannimisiä rahapelivertailuja on verkossa, mutta komennon kohdetta ja toimijan omistajaa ei ole vahvistettu.",
+      "cat": "media",
+      "note": "Kasinokurki on nettikasinoiden vertailu- ja kumppanuusmarkkinointipalvelu, jonka nimi näkyy muun muassa Pulliksen, SampeF2:n ja KP2Timesin Kick-lähetyksissä !kasinokurki-komentona.",
       "x": 4090,
       "y": 1510,
       "pos3": [

@@ -6,7 +6,7 @@ Vuoden 2026 lähetysarkistossa näkyy matkalähetyksiä muun muassa Tallinnasta,
 
 Lokakuun loppupuolella SampeF2:n lähetyksissä nimettiin myös [[iippa|Iippadaa]] ja [[megis|Megis]]. Molempien nimet esiintyvät samassa IRL-lähetyksen otsikossa, ja Megis mainitaan lisäksi seuraavien päivien Tornion-lähetyksissä. Tapahtumia käsittelee tarkemmin [[sampe_iippa_megis_2026|lokakuun yhteislähetyksistä kertova artikkeli]]. [@P76] [@P77]
 
-SampeF2:n striimiotsikoissa on esiintynyt esimerkiksi !kasinokurki-kanavakomento muiden tunnisteiden rinnalla. [@P76]
+SampeF2:n striimiotsikoissa on esiintynyt kasinovertailupalvelu [[kasinok|Kasinokurjen]] !kasinokurki-komento muiden tunnisteiden rinnalla. [@P76] [@P78]
 
 ## Pirkkiksen Ateenan-matka ja etsinnät 2025
 
