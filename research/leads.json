@@ -898,7 +898,9 @@
         "pottu_phuket_2024",
         "pottu_viro_sub_2024",
         "pottu_espanja_sub_2025",
-        "pottu_iippa_sub_2025"
+        "pottu_iippa_sub_2025",
+        "fhat_ari",
+        "pottu_ari_valirikko_2024"
       ],
       "sourceIds": [
         "P9",
@@ -911,14 +913,26 @@
         "P188",
         "P189",
         "P190",
-        "P191"
+        "P191",
+        "P271",
+        "P272",
+        "P273",
+        "P274",
+        "P275",
+        "P276",
+        "P277",
+        "P278",
+        "P279"
       ],
-      "notes": "1.11.2026: kuusi eri subathonia kirjattu omiksi tapahtumiksi Gekkosen, Seiskan ja Redditin perusteella. Syksyn 2023 42 päivää, Pattaya 1–2/2024, Phuket 3/2024 (uutisen mukaan kolmas kausi), Viro 11/2024 (mini), Gran Canaria 1/2025 (Pirkkis) sekä Viron yhteisstriimi 4–5/2025 (Iippadaa). Älä päättele väitettyjä kausinumeroita kaikille: Viron mini-subathon ja Espanjan neljäs kausi voivat esiintyä eri laskutavoissa. Maratonien tarkat päätösajat ja vierailijat vaativat alkuperäiset VOD:t.",
+      "notes": "1.11.2026: kuusi eri subathonia kirjattu omiksi tapahtumiksi Gekkosen, Seiskan ja Redditin perusteella. Syksyn 2023 42 päivää, Pattaya 1–2/2024, Phuket 3/2024 (uutisen mukaan kolmas kausi), Viro 11/2024 (mini), Gran Canaria 1/2025 (Pirkkis) sekä Viron yhteisstriimi 4–5/2025 (Iippadaa). Älä päättele väitettyjä kausinumeroita kaikille: Viron mini-subathon ja Espanjan neljäs kausi voivat esiintyä eri laskutavoissa. Maratonien tarkat päätösajat ja vierailijat vaativat alkuperäiset VOD:t.\n1.11.2026 jatkotutkimus: Fhat-Ari (FhatMaestro) liittyi alkuvuoden 2024 Pattayan-subathoniin. Matkalle lähtö 3.1.2024 (Seiska P271), sairaalajakso 22.1.2024 (Seiska P272), oma Kick-kanava 25.2.2024 (Kick/StreamsCharts/Suomi24 P274–P276), välirikko mediassa 13.–14.3.2024 (P184/P273/P277), Phuketin kolmas kausi 26.3.2024 ilman Aria (P185). Fhat-Arista ja välirikosta laadittu omat artikkelit. Iippadaan ja Pottukoiran 18.4.2025 alkaneen subathonin loppuvaiheeseen 5.5.2025 kuuluu riita musiikin kuuntelusta ja lyhyt lähetyskatko (Reddit P278), mutta tarkka lopetushetki ei ole erikseen tiedossa. Kolmen ensimmäisen kauden jälkeen Kärkkäinen kertoi kuntoilusta ja juomisen lopettamisesta (Como P279).",
       "questions": [
         "Mitkä olivat kunkin maratonin tarkat aloitus- ja lopetuspäivät ja mahdolliset tauot?",
         "Miten Pottukoira itse numerot eri kaudet verrattuna erillisiin mini-subathoneihin?",
         "Missä tallenteissa näkyvät Ari, BB-Jerry, Pirkkis ja Iippadaa?",
-        "Järjestettiinkö vuoden 2025 toukokuun jälkeen muita omaan artikkeliin sopivia subathoneita?"
+        "Järjestettiinkö vuoden 2025 toukokuun jälkeen muita omaan artikkeliin sopivia subathoneita?",
+        "Onko Pattayan subathonin tammikuun 2024 alkuperäisistä Kick-tallenteista katsottavissa Arin sairaalajaksoa tai 2024 välirikkoa käsittelevää keskustelua?",
+        "Jatkoivatko Pottukoira ja Fhat-Ari yhteistä striimaamista maaliskuun 2024 erkaantumisen jälkeen?",
+        "Mikä oli Pottukoiran ja Iippadaan toukokuun 2025 maratonin täsmällinen lopetushetki?"
       ],
       "queries": [
         "\"Pottukoira\" \"subathon\" \"season\" \"2023\" \"2024\"",
@@ -931,7 +945,9 @@
         "Avaa alkuperäiset Kick-arkistot ja vertaile päivämäärät uutisiin.",
         "Tarkista tallenteista selkeät vierailijat ja erittele toteutuneet tapahtumat ennakoista.",
         "Vahvista kunkin kauden numero alkuperäiseltä julkaisijalta ennen numeron lisäämistä nimiin.",
-        "Hae uudet ajanjaksot, mutta älä sekoita KP2Timesin subathoneita Pottukoiran tapahtumiin."
+        "Hae uudet ajanjaksot, mutta älä sekoita KP2Timesin subathoneita Pottukoiran tapahtumiin.",
+        "Tarkista alkuperäisistä Pattayan ja Phuketin VOD:eista henkilöiden esiintymiset, tarkat subathon-kaudet ja päivät.",
+        "Tarkista Iippadaan 5.5.2025 ja Pottukoiran Kick-tallenne maratonin lopun yksilöimiseksi."
       ],
       "updatedAt": "2026-11-01"
     },
@@ -1286,6 +1302,48 @@
         "Varmista Reinskin muut esiintymiset alkuperäisistä lähteistä ennen uusien henkilösuhteiden lisäämistä.",
         "Etsi ja varmenna henkilökuva kuvankeruuohjeen mukaan."
       ]
+    },
+    {
+      "id": "fhat-ari-kick-2024-2026",
+      "title": "Fhat-Arin oman Kick-uran jatko ja Pottukoira-yhteydet",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "fhat_ari",
+        "pottu",
+        "pottu_pattaya_2024",
+        "pottu_ari_valirikko_2024"
+      ],
+      "sourceIds": [
+        "P184",
+        "P185",
+        "P271",
+        "P272",
+        "P273",
+        "P274",
+        "P275",
+        "P276"
+      ],
+      "sourceUrls": [
+        "https://kick.com/fhatmaestro/about",
+        "https://streamscharts.com/channels/fhatmaestro?platform=kick"
+      ],
+      "notes": "1.11.2026: Fhat-Ari teki Pattayalla 2024 subathonin Pottukoiran kanssa, joutui 22.1. sairaalaan ja avasi oman Kick-kanavansa 25.2.2024. Seiska ja Como uutisoivat kaksikon välirikosta maaliskuussa. Henkilön iästä ja sukunimestä esiintyy keskenään ristiriitaisia kolmannen osapuolen tietoja, joten niitä ei julkaista.",
+      "questions": [
+        "Mitä konkreettisia merkittäviä omia 2024–2026 striimijaksoja ja vieraita FhatMaestrolla oli?",
+        "Löytyykö alkuperäiset VODit Pottukoiran ja Arin maaliskuun 2024 välirikosta?",
+        "Esiintyivätkö Fhat-Ari ja Pottukoira myöhemmin uudelleen yhdessä?"
+      ],
+      "queries": [
+        "\"fhatmaestro\" yhteisstriimi 2025 2026",
+        "\"FHAT Ari\" Pottukoira välirikko",
+        "site:kick.com/fhatmaestro alkuperäinen tallenne"
+      ],
+      "nextSteps": [
+        "Etsi FhatMaestron Kick-arkistosta ja alkuperäisvideoista itsenäistä urahistoriaa ilman nimien arvailua.",
+        "Tarkista myöhempien yhteisstriimien mahdollinen jälleennäkeminen ennen uusia relaatioita."
+      ],
+      "updatedAt": "2026-11-01"
     }
   ]
 }
