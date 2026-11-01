@@ -53,7 +53,7 @@ test('PACT and Rappiostriimaus share the same selectable nested sidebar hierarch
  assert.deepEqual(ids.slice(rappioIndex, rappioIndex + 2), ['rappio', 'pottu-streams']);
  assert.equal(items[pactIndex].label, 'PACT / OHJELMAPERHE');
  assert.equal(items[pactIndex].child, false);
- assert.equal(items[pactIndex + 1].label, 'PACT / TAUSTA JA ALUSTA');
+ assert.equal(items[pactIndex + 1].label, 'PACT / ALUSTA');
  for (const item of items.slice(pactIndex + 1, pactIndex + 6)) {
   assert.equal(item.child, true, item.id + ' must be indented under PACT');
  }
