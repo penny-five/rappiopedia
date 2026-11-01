@@ -10,4 +10,4 @@ Ylen otteluraportin mukaan Akam ja Stagala kävivät ottelunsa tuomaripisteisiin
 
 ## PactTalks lokakuussa 2026
 
-Akam palasi Stagalan kanssa samaan ohjelmaan 18. lokakuuta 2026. [[jethro|Jethro Rostedtin]] juontaman [[pacttalks_86_2026|PactTalksin jakson 86]] lähetysotsikko oli *Stagala vs Akam*. Tällä kertaa kaksikko esiintyi keskusteluohjelman erikoislähetyksessä, eikä lähetysotsikko yksin kerro heidän käyneen uutta ottelua. [@P7]
+Akam palasi Stagalan kanssa samaan ohjelmaan 18. lokakuuta 2026. [[jethro|Jethro Rostedtin]] juontaman [[pacttalks_86_2026|PactTalksin jakson 86]] lähetysotsikko oli *Stagala vs Akam*. Tällä kertaa kaksikko esiintyi keskusteluohjelmassa eikä nyrkkeilykehässä. [@P7]
