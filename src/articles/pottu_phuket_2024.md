@@ -1,7 +1,11 @@
-**Pottukoiran Phuketin subathon** oli Thaimaassa maaliskuussa 2024 alkanut Spurgu-TV:n kolmanneksi kaudeksi kutsuttu lähetysmaraton. [[pottu|Pottukoira]] saapui Phuketiin 26. maaliskuuta. Aiempi [[pottu_pattaya_2024|Pattayan subathon]] oli päättynyt helmikuun puolivälissä. [@P185]
+**Pottukoiran Phuketin subathon** alkoi 26. maaliskuuta 2024, kun [[pottu|Jouko ”Pottukoira” Kärkkäinen]] matkusti Thaimaahan aloittamaan Spurgu-TV:n kolmannen kauden. Edellinen [[pottu_pattaya_2024|Pattayan subathon]] oli päättynyt helmikuun puolivälissä. [@P185]
 
 ## Kolmas Spurgu-TV-kausi
 
-Gekkosen 28. maaliskuuta julkaiseman uutisen mukaan Phuketin lähetysten vierailevana esiintyjänä nähtiin Big Brother Suomesta tuttu Jerry. Pattayalla mukana ollut Ari ei enää osallistunut tähän matkaan. [@P185]
+Phuketin lähetykset käynnistyivät maaliskuun viimeisellä viikolla. Gekkosen 28. maaliskuuta julkaisemassa jutussa striimiä kerrottiin seuranneen ensimmäisinä päivinä enimmillään yli 12 000 katsojaa samanaikaisesti. [@P185]
 
-Lehti kertoi ensimmäisten päivien katsojamäärän nousseen parhaimmillaan yli 12 000:een samanaikaiseen katsojaan. Luku perustuu Gekkosen uutisointiin eikä ole tässä vahvistettu Kickin alkuperäisestä tilastosta. [@P185]
+Vierailevana esiintyjänä oli Big Brother Suomesta tunnettu Jerry. Pattayalla aiemmin mukana ollut [[fhat_ari|Fhat-Ari]] jäi pois tältä matkalta, sillä hänen ja Kärkkäisen [[pottu_ari_valirikko_2024|välit olivat rikkoutuneet]] alkuvuoden pitkän yhteisstriimin jälkeen. [@P185] [@P273]
+
+## Lähetysten jälkeinen kuntokuuri
+
+Kolmen ensimmäisen Spurgu-TV-kauden jälkeen Kärkkäinen kertoi lopettaneensa alkoholin käytön ja tupakoinnin sekä aloittaneensa kuntoilun. Hänen tuolloisissa suorissa lähetyksissään nähtiin painoliivitreenejä, juoksumatolla kävelyä ja kalastusta. Hän ilmoitti myöhemmin suunnittelevansa vielä uutta Spurgu-TV-kautta. [@P279]
