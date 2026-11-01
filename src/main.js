@@ -4,6 +4,7 @@ import SKENES from './data/skenes.json';
 import RELATION_TYPES from './data/relation-types.json';
 import ENTITY_TYPES from './data/entity-types.json';
 import { formatNodeTypes } from './lib/entity-types.js';
+import { NODE_CATEGORY_FILTERS, categoryFilterId, categoryCounts, categoryEnabled, edgeMatchesCategories } from './lib/category-filter.js';
 import { relationVerb, relationHeading } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
 import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, storedMovementSpeed, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
@@ -14,6 +15,7 @@ import { searchNodes, searchSuggestionMarkup } from './lib/search.js';
 import { OVERVIEW_CAMERA, nodeIdFromHash } from './lib/navigation.js';
 
 const N=DATA.nodes,E=DATA.edges,S=DATA.sources,by=Object.fromEntries(N.map(n=>[n.id,n]));
+const enabledCategories=new Set(NODE_CATEGORY_FILTERS.map(({id})=>id)),categoryTotals=categoryCounts(N);
 const groupMeta=Object.fromEntries(Object.entries(SKENES).map(([id,skene])=>[id,[skene.label,skene.color]]));
 const levels={verified:{label:'Vahvistettu',color:'#16856c'},reported:{label:'Uutisoitu',color:'#356db4'},observed:{label:'Havaittu / päätelmä',color:'#a86b0a'},lead:{label:'Johtolanka / kiistetty',color:'#b04766'}};
 const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d'),space=document.getElementById('space');
@@ -182,6 +184,7 @@ function drawDepthGuides(c,ps){
  const hubs=new Set(['pact','s1','s2','s3','talks','kieksidoc','bailu','sliki','kasinok','ylilauta']);
  ctx.save();
  for(const n of N){
+  if(!categoryEnabled(n,enabledCategories))continue;
   if(!hubs.has(n.id)&&n.id!==selected&&n.id!==hover)continue;
   const top=ps[n.id],foot=pr([n.pos3[0],groundY,n.pos3[2]],c);
   if(!top||!foot||n.pos3[1]<groundY)continue;
@@ -382,7 +385,7 @@ function layoutRelationshipLabels(ps,nodeItems){
  const nodeBoxes=nodeItems.filter(item=>item.label).map(({label})=>({x:label.bx,y:label.by,w:label.w,h:label.h}));
  ctx.save();ctx.font='700 11px DM Sans,Arial';
  for(const {edge:e,from} of relationshipLabelEdges(E,selected,pathNodes,pathEdges)){
-  if(!showLevels.has(e.level))continue;
+  if(!showLevels.has(e.level)||(!pathNodes.length&&!edgeMatchesCategories(e,by,enabledCategories)))continue;
   const p=ps[e.a],q=ps[e.b];if(!p||!q)continue;
   const dx=q.x-p.x,dy=q.y-p.y,len=Math.hypot(dx,dy);
   if(len<55||W<100)continue;
@@ -440,7 +443,7 @@ function draw(now){
  focusIds=routeView.active?new Set(pathNodes):focusedNodeIds(selected,E,showLevels);
  drawWorldGrid(c);
  if(!routeView.active){drawHierarchyVolumes(c);drawCluster(c);drawDepthGuides(c,ps)}
- const nodes=N.filter(n=>routeView.showsNode(n.id)).map(n=>({n,p:ps[n.id]}))
+ const nodes=N.filter(n=>routeView.showsNode(n.id)&&(routeView.active||categoryEnabled(n,enabledCategories))).map(n=>({n,p:ps[n.id]}))
   .filter(item=>item.p&&item.p.x>-190&&item.p.x<W+200&&item.p.y>-170&&item.p.y<H+200)
   .map(({n,p})=>nodeLayout(n,p));
  const labelPositions=placeNodeLabels(nodes,W,H,labelAnchors);
@@ -452,7 +455,7 @@ function draw(now){
  visiblePoints=nodes.map(nodeHitbox);
  const scene=[];
  E.forEach((e,i)=>{
-  if(!routeView.showsEdge(i)||!showLevels.has(e.level))return;
+  if(!routeView.showsEdge(i)||!showLevels.has(e.level)||(!routeView.active&&!edgeMatchesCategories(e,by,enabledCategories)))return;
   const a=ps[e.a],b=ps[e.b];if(!a||!b)return;
   if((a.x<-W&&b.x<-W)||(a.x>W*2&&b.x>W*2))return;
   const hi=routeView.active||!!selected&&(e.a===selected||e.b===selected);
@@ -502,9 +505,10 @@ function clearSelection(){
  showEmptyDetails();
  document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.';
  document.getElementById('rightpanel').classList.remove('mobileopen');
+ renderCategoryFilters();
 }
 function touchInfo(id){selected=id;pathNodes=[];pathEdges=[];showDetails(id);dirty=true;document.getElementById('rightpanel').classList.add('mobileopen')}
-function flyTo(id,zoom=true){const n=by[id];if(!n)return;const navigation=++cameraNavigation;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){if(navigation!==cameraNavigation)return;let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
+function flyTo(id,zoom=true){const n=by[id];if(!n)return;if(!categoryEnabled(n,enabledCategories)){enabledCategories.add(categoryFilterId(n.cat));renderCategoryFilters()}const navigation=++cameraNavigation;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){if(navigation!==cameraNavigation)return;let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
 function relatedForNode(id){
  return E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),relationHeading:relationHeading(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
   .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
@@ -524,6 +528,33 @@ function showDetails(id){
  document.getElementById('rightpanel').scrollTop=0;
 
 }
+
+function renderCategoryFilters(){
+ const box=document.getElementById('categories');
+ box.innerHTML=NODE_CATEGORY_FILTERS.map(({id,label})=>`<label class="category-option"><input type="checkbox" data-category="${id}" ${enabledCategories.has(id)?'checked':''}><span class="category-label">${label}</span><span class="category-number">${categoryTotals[id]}</span></label>`).join('');
+ document.getElementById('toggleCategories').textContent=enabledCategories.size===NODE_CATEGORY_FILTERS.length?'Tyhjennä':'Valitse kaikki';
+ const visibleCount=pathNodes.length?pathNodes.length:N.filter(n=>categoryEnabled(n,enabledCategories)).length;
+ document.getElementById('categoryCount').textContent=`${visibleCount} / ${N.length} solmua näkyvissä`;
+}
+function categoriesChanged(){
+ if(!pathNodes.length&&selected&&!categoryEnabled(by[selected],enabledCategories))clearSelection();
+ if(!pathNodes.length&&hover&&!categoryEnabled(by[hover],enabledCategories))hover=null;
+ renderCategoryFilters();
+ dirty=true;
+}
+document.getElementById('categories').addEventListener('change',event=>{
+ const input=event.target.closest('input[data-category]');
+ if(!input||!NODE_CATEGORY_FILTERS.some(({id})=>id===input.dataset.category))return;
+ if(input.checked)enabledCategories.add(input.dataset.category);
+ else enabledCategories.delete(input.dataset.category);
+ categoriesChanged();
+});
+document.getElementById('toggleCategories').addEventListener('click',()=>{
+ const allEnabled=enabledCategories.size===NODE_CATEGORY_FILTERS.length;
+ enabledCategories.clear();
+ if(!allEnabled)for(const {id} of NODE_CATEGORY_FILTERS)enabledCategories.add(id);
+ categoriesChanged();
+});
 function renderSectors(){
  const box=document.getElementById('sectors');
  const button=(id,name,color,count,child=false)=>`<button type="button" class="sector ${child?'sector-child ':''}${id===sector?'active':''}" data-sector="${id}" aria-pressed="${id===sector}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${count}</span></button>`;
@@ -535,7 +566,7 @@ function renderSectors(){
  box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{
   sector=b.dataset.sector;renderSectors();
   if(sector==='all'){cameraNavigation++;target={...OVERVIEW_CAMERA.target};dist=OVERVIEW_CAMERA.dist;clearSelection();return}
-  const p=centers[sector],n=N.find(n=>sectorGroups(sector).includes(n.group));
+  const p=centers[sector],n=N.find(n=>sectorGroups(sector).includes(n.group)&&categoryEnabled(n,enabledCategories));
   const st={...target},ed=vec(...p),stDist=dist;
   const desiredDist=Math.max(1600,Math.max(...groupBounds[sector].max.map((v,i)=>v-groupBounds[sector].min[i]))*2.4);
   const start=performance.now(),navigation=++cameraNavigation;
@@ -548,6 +579,7 @@ function renderSectors(){
   };
   requestAnimationFrame(animate);
   if(n)showDetails(n.id);
+  else clearSelection();
  });
 }
 function renderNameDensity(){
@@ -667,9 +699,11 @@ function doRoute(a,b){
  if(!r){
   document.getElementById('pathresult').textContent='Polkua ei löydy näillä näytönsuodattimilla.';
   pathNodes=[];pathEdges=[];
+  renderCategoryFilters();
   return;
  }
  pathNodes=r.ns;pathEdges=r.es;
+ renderCategoryFilters();
  const names=r.ns.map(id=>by[id].name);
  document.getElementById('pathresult').innerHTML=`<strong>${r.es.length} yhteyttä:</strong><br/>${names.map(esc).join(' → ')}`;
  selected=a;showDetails(a);
@@ -680,7 +714,7 @@ function doRoute(a,b){
   dist=Math.max(1450,Math.min(3150,550+Math.max(...pts.map(p=>Math.hypot(p[0]-m[0],p[1]-m[1],p[2]-m[2])))*3.2));
  }
 }
-document.getElementById('pathbtn').onclick=()=>doRoute(document.getElementById('from').value,document.getElementById('to').value);document.getElementById('clearpath').onclick=()=>{pathNodes=[];pathEdges=[];document.getElementById('pathresult').textContent='Polku tyhjennetty.'};
+document.getElementById('pathbtn').onclick=()=>doRoute(document.getElementById('from').value,document.getElementById('to').value);document.getElementById('clearpath').onclick=()=>{pathNodes=[];pathEdges=[];if(selected&&!categoryEnabled(by[selected],enabledCategories))clearSelection();renderCategoryFilters();document.getElementById('pathresult').textContent='Polku tyhjennetty.'};
 function openSources(){
  setArticleCollapsed(false);
  articlePanel.classList.remove('article-empty');
@@ -776,7 +810,7 @@ document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightp
  document.getElementById('leftpanel').classList.remove('mobileopen');
  if(articlePanel.classList.contains('mobileopen'))setArticleCollapsed(true);
  else {setArticleCollapsed(false);articlePanel.classList.add('mobileopen')}
-};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderNameDensity();
+};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderCategoryFilters();renderNameDensity();
 function openUrlNode(){
  const id=nodeIdFromHash(location.hash,by);
  if(id){selected=id;target=vec(...by[id].pos3);dist=1550;showDetails(id)}
