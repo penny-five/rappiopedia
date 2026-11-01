@@ -12,6 +12,7 @@ Rappiopedia on suomalaisen striimaus- ja nettiviihteen tietosanakirja. Sivusto k
 - Kerro tapahtumista, esiintymisistä, tuotannoista ja muista olennaisista asioista kokonaisin virkkein. Älä kirjoita muistiinpanotyylisiä luetteloita kuten ”Striimaaja; vieras; tapahtumakonteksti”.
 - Käytä otsikoita vain, kun niiden alla on oikeaa sisältöä. Älä pakota jokaiseen artikkeliin samaa ”Yhteenveto / Dokumentoidut yhteydet / Tulkinnan rajat” -rakennetta.
 - **Älä lisää artikkelien loppuun automaattisia varaumia** tyyliin ”yhteinen esiintyminen ei itsessään osoita taloudellista yhteistyötä”. Kerro epävarmuudesta siinä kohdassa, jossa se koskee käsiteltävää väitettä.
+- Huhut, julkinen spekulaatio, ristiriitaiset kertomukset ja henkilökohtaiset tapahtumat voivat olla merkittäviä osia aiheen historiaa. Älä jätä niitä pois yleisen kiellon perusteella. Kirjoita, kuka väitteen esitti, missä ja milloin; erottele tapahtumat, väitteet ja myöhemmät oikaisut. Älä muuta huhua omaksi faktaväitteeksi.
 - Älä kirjoita toimitusprosessista tai graafin rakenteesta osaksi henkilön elämäkertaa. Ilmaukset kuten ”tämä muodostaa verkostosillan” kuuluvat työmuistiinpanoihin, eivät artikkeliin.
 - Pidä henkilöiden, ohjelmien, tapahtumien ja julkaisujen nimet sekä ajankohdat tarkkoina. Älä täytä aukkoja arvauksilla.
 
@@ -29,11 +30,24 @@ Käytä myös Ylilautaa, Redditiä ja muita julkisia keskusteluja lähteinä, ku
 
 Tarkista ennen uuden solmun lisäämistä, löytyykö sama henkilö tai tapahtuma jo toisella nimellä. Pidä solmujen tunnisteet vakaina: artikkeleiden linkit ja sivuston URL-osoitteet käyttävät niitä.
 
+## Tutkimusaiheet, joita ei vielä ole selvitetty
+
+Avoimet tutkimusaiheet pidetään tiedostossa [`research/leads.json`](research/leads.json). Se on agenttien työjono, ei osa sivuston julkaistavaa sisältöä.
+
+- Lue tutkimusjono ennen uutta lähdekartoitusta. Valitse tärkeä avoin kysymys tai lisää uusi, jos aihe puuttuu.
+- Yhdistä tutkimus nykyisiin `nodeIds`- ja `sourceIds`-tunnisteisiin. Merkitse `questions`-kenttään selvitettävät asiat, `queries`-kenttään käyttökelpoiset haut ja `nextSteps`-kenttään seuraavat tarkistukset.
+- Kirjaa ristiriitaiset väitteet ja keskeneräiset havainnot `notes`-kenttään lähteineen. Julkiseen artikkeliin kuuluu se, mistä voidaan kirjoittaa lähteiden perusteella; työnkulun ohjeet, avoimet hakulistat ja agentin omat muistiinpanot jäävät tutkimustiedostoon.
+- Kun selvitys etenee, täydennä lähteet ja artikkeli tarvittaessa. Päivitä samalla tutkimusaiheen tila (`open`, `in-progress`, `blocked` tai `done`). Älä merkitse aihetta ratkaistuksi, jos kysymyksiä jäi.
+- `docs/RESEARCH_LOG.md` on päivättyjen havaintojen tekstimuotoinen loki; `research/leads.json` on koneellisesti luettava lista jatkotyöstä.
+
+Tutkimustiedosto ei käynnistä automaattista tutkimusta itsestään. Sitä käyttävät agentit lukevat ja päivittävät sitä osana tehtäväänsä.
+
 ## Artikkelit ja tekniikka
 
 | Polku | Sisältö |
 | --- | --- |
 | `src/data/network.json` | Solmut, yhteydet ja lähteet |
+| `research/leads.json` | Agenttien jatkotutkimukset; ei näytetä sivustolla |
 | `src/articles/<id>.md` | Varsinaiset artikkelitekstit |
 | `src/wiki.js` | Artikkelien näyttäminen ja automaattinen perusteksti |
 | `src/main.js` | 3D-kartta, haku, suodattimet ja yhteyspolut |
