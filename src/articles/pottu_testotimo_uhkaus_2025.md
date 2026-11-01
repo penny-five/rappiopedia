@@ -4,13 +4,13 @@
 
 Naapila ja Nurminen matkustivat Pottukoiran luo Harjumaalle maanantaina 27. lokakuuta. Gekkosen seuraavan päivän raportissa kuvattiin seurueen ensimmäisen illan juhlintaa ja suoratoistoa. Vierailun aikana paikalla oli myös [[pullis|Pullis]], joka esiintyi yhteen tapahtumaan liittyvässä videokatkelmassa. [@P60]
 
-Tiistaina Pottukoira ja Nurminen sopivat Gekkosen mukaan 5 000 euron vedosta, jossa Kärkkäisen piti pysyä kuusi kuukautta ilman alkoholia. Tämä oli lähetyksessä esitetty sopimus; sen myöhempää toteutumista ei voi päätellä saman päivän uutisesta. [@P60]
+Tiistaina Pottukoira ja Nurminen sopivat Gekkosen mukaan 5 000 euron vedosta, jossa Kärkkäisen piti pysyä kuusi kuukautta ilman alkoholia. Veto sovittiin striimissä lokakuun lopulla 2025. [@P60]
 
 ## Uhkaustilanne suorassa lähetyksessä
 
 Tiistain lähetyksessä tilanne muuttui riitaisaksi, kun vieraat lukivat ääneen katsojien viestejä. Gekkosen näkemässä ja selostamassa striimikatkelmassa Kärkkäinen uhkasi Nurmista ja Naapilaa veitsen kanssa. Naapila arvosteli suoraan veitsen esiin ottamista, ja Kärkkäinen myönsi tämän tapahtuneen. Vieraat pakkasivat tavaransa ja lähtivät talosta. [@P252]
 
-Tapahtumaa uutisoitiin striimissä nähdyn käyttäytymisen perusteella. Lähteet eivät yksilöi tähän välikohtaukseen liittyvää myöhempää rikostuomiota. [@P252]
+Gekkonen julkaisi tilanteesta uutisen samana päivänä. [@P252]
 
 ## Anteeksipyyntö 29. lokakuuta
 
