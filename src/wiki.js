@@ -5,6 +5,7 @@
  */
 import { articleBreadcrumbParts } from './lib/article-breadcrumb.js';
 import { groupRelatedByType } from './lib/relations.js';
+import { articleMarkdownFor } from './lib/article-content.js';
 const authored = import.meta.glob('./articles/*.md', {query:'?raw',import:'default',eager:true});
 export function escapeHtml(value){
   return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -42,21 +43,12 @@ export function markdownToHtml(text,nodes,sources){
   }
   flush();close();return output;
 }
-function fallbackArticle(node,related){
-  let text=(node.note||'')+'\n';
-  if(!related.length) return text;
-  text+='\n## Yhteydet\n';
-  for(const edge of related.slice(0,9)){
-    text+='- '+edge.relationVerb+' [['+edge.other.id+'|'+edge.other.name+']]'+(edge.label?' ('+edge.label+')':'')+(edge.src.length?' [@'+edge.src[0]+']':'')+'\n';
-  }
-  return text;
-}
 /** The single article source used by both the article panel and graph tooltips. */
-export function articleMarkdown(node,related=[]){
- return authored['./articles/'+node.id+'.md']||fallbackArticle(node,related);
+export function articleMarkdown(node){
+  return articleMarkdownFor(node, authored);
 }
 export function renderNodeArticle({node,related,nodes,sources,levels,group,category}){
-  const text=articleMarkdown(node,related);
+  const text=articleMarkdown(node);
   const sourceIds=[...new Set(related.flatMap(e=>e.src))].filter(id=>sources[id]);
   const name=escapeHtml(node.name);
   const breadcrumb=articleBreadcrumbParts(node,group).map(escapeHtml).join(' <span>›</span> ');
