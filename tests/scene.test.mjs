@@ -151,6 +151,6 @@ test('left-drag mouse look turns the camera in place instead of orbiting the tar
   }
 
   const source = readFileSync(new URL('../src/main.js', import.meta.url), 'utf8');
-  assert.match(source, /cam:projection\(\)\.cam/);
-  assert.match(source, /target=cameraTargetFromPosition\(pointer\.cam,yaw,pitch,dist\)/);
+  assert.match(source, /let cam=projection\(\)\.cam;yaw=pointer\.yaw/);
+  assert.match(source, /target=cameraTargetFromPosition\(cam,yaw,pitch,dist\)/);
 });
