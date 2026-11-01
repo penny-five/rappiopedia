@@ -56,6 +56,7 @@ Sivusto toimii selaimessa ilman erillistä palvelinta tai tietokantaa. Se rakenn
 | [`src/main.js`](src/main.js) | Verkostokartta, haku, suodattimet, kamera ja yhteyspolut |
 | [`src/wiki.js`](src/wiki.js) | Artikkelien esitys, sisälinkit ja datasta tuotetut perustekstit |
 | [`src/styles.css`](src/styles.css) | Sivuston ulkoasu |
+| [`research/leads.json`](research/leads.json) | Agenttien avoimet tutkimusaiheet; tiedostoa ei ladata sivustolle |
 | [`tests/`](tests/) | Datan ja viitteiden testit |
 
 Yhteys tallennetaan `network.json`-tiedostoon kahden solmu-ID:n välisenä reunana. Sillä on kuvaava `label`, näyttötaso `level` sekä lähteiden tunnisteet `src`. Artikkelissa `[[pottu|Pottukoira]]` avaa vastaavan solmun ja `[@P53]` viittaa lähdeluettelon julkaisuun.
