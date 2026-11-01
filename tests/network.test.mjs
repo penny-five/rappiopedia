@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { shortestPath } from '../src/lib/graph.js';
 import { hierarchyGroups } from '../src/lib/hierarchy.js';
+import { relationVerb } from '../src/lib/relations.js';
+const relationTypes=JSON.parse(readFileSync(new URL('../src/data/relation-types.json',import.meta.url),'utf8'));
 const data=JSON.parse(readFileSync(new URL('../src/data/network.json',import.meta.url),'utf8'));
 const nodes=new Map(data.nodes.map(n=>[n.id,n]));
 const levels=new Set(['verified','reported','observed','lead']);
@@ -14,7 +16,8 @@ test('kaikissa yhteyksissä validit solmut, tyypit ja lähteet',()=>{
  for(const e of data.edges){
  assert.ok(nodes.has(e.a),e.a);assert.ok(nodes.has(e.b),e.b);assert.notEqual(e.a,e.b);
  assert.ok(levels.has(e.level),e.level);assert.ok(e.label);
- assert.ok(typeof e.verb==='string'&&e.verb.trim(),`Missing verb: ${e.a} → ${e.b}`);
+ assert.ok(typeof e.type==='string'&&relationTypes[e.type],`Unknown relation type: ${e.type}`);
+ assert.ok(!('verb' in e),`Legacy inline verb: ${e.a}-${e.b}`);
  assert.ok(Array.isArray(e.src)&&e.src.length>0,`Missing source: ${e.a}-${e.b}`);
  for(const id of e.src)assert.ok(data.sources[id]?.url,`Missing source: ${id}`);
  }
@@ -30,7 +33,26 @@ test('lyhimmän reitin algoritmi kunnioittaa näyttösuodattimia',()=>{
  assert.equal(shortestPath('pact','jethro',data.edges,new Set()),null);
 });
 
-test('suunnatut suhdeverbit ovat datassa',()=>{
- assert.equal(data.edges.find(e=>e.a==='jethro'&&e.b==='talks')?.verb,'juontaa');
- assert.equal(data.edges.find(e=>e.a==='saini'&&e.b==='pact')?.verb,'perusti');
+test('suhdetyypit toimivat molempiin suuntiin',()=>{
+ for(const [id,type] of Object.entries(relationTypes)){
+  if(type.symmetric){
+   assert.ok(typeof type.verb==='string'&&type.verb.trim(),id);
+   assert.equal(type.forward,undefined,id);
+   assert.equal(type.reverse,undefined,id);
+  }else{
+   assert.ok(typeof type.forward==='string'&&type.forward.trim(),id);
+   assert.ok(typeof type.reverse==='string'&&type.reverse.trim(),id);
+  }
+ }
+ for(const e of data.edges){
+  const type=relationTypes[e.type];
+  assert.equal(relationVerb(e,e.a,relationTypes),type.symmetric?type.verb:type.forward);
+  assert.equal(relationVerb(e,e.b,relationTypes),type.symmetric?type.verb:type.reverse);
+ }
+ const father=data.edges.find(e=>e.a==='jethro'&&e.b==='joachim');
+ assert.equal(relationVerb(father,'jethro',relationTypes),'on isä');
+ assert.equal(relationVerb(father,'joachim',relationTypes),'on poika');
+ const shared=data.edges.find(e=>e.type==='striimasi-yhdessa');
+ assert.ok(shared);
+ assert.equal(relationVerb(shared,shared.a,relationTypes),relationVerb(shared,shared.b,relationTypes));
 });
