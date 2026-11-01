@@ -234,5 +234,9 @@
   "oli-avausvieras": {
     "forward": "oli avausvieraana",
     "reverse": "avausvieras oli"
+  },
+  "oli-puoliso": {
+    "symmetric": true,
+    "verb": "oli puoliso"
   }
 }
