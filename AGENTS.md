@@ -28,7 +28,7 @@
    - Kun mukana on merkittävä rikosväite, yksityisyyteen tunkeutuva väite tai muu vakava mainehaitta, edellytä tätä vahvempaa näyttöä tai jätä väite pois.
 5. `!kasinokurki`-tunnisteiden toistumista voi kuvata sponsorointi-/affiliate-yhteyteen vahvasti viittaavana havaintona, mutta sopimuksen osapuolet, euromäärät tai ehdot ovat avoimia.
 6. Ohjelman, risteilyn tai tapahtuman yhteinen esiintyminen ei sellaisenaan todista henkilön osallisuutta toisen tekoihin, yhteistä rahoitusta tai liikekumppanuutta.
-7. Kuvissa käytä tunnistettuja, oikein lisensoituja tai luvallisia kuvia ja atribuutioita; ei tekoälyn keksimiä tunnistettavaksi väitettyjä kasvokuvia.
+7. Tallenna kuvat projektin omiin assetteihin ja aja ne kuvien käsittelyskriptin läpi. Sovellus käyttää paikallisia optimoituja tiedostoja eikä hotlinkkaa kuvaa alkuperäiseltä sivustolta.
 
 ## Tutkimuksen käytännön työskentelytapa
 - Lue aina [docs/RESEARCH_PLAYBOOK.md](docs/RESEARCH_PLAYBOOK.md) ennen laajaa lähdekartoitusta. Se sisältää todellisessa työssä toimineet parihaku-, stream-arkisto-, foorumi- ja lähde-eheysmenetelmät.
