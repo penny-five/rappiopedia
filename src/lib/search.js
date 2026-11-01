@@ -45,6 +45,17 @@ export function searchNodes(nodes, query, limit = 8) {
   if (!term || limit <= 0) return [];
   // Short inputs would create too many accidental typo matches.
   const maxDistance = [...term].length >= 9 ? 2 : [...term].length >= 4 ? 1 : 0;
+  // Handle a transposed pair plus one other typo, but only for a leading name.
+  // Applying this to every word would flood results with unrelated alias matches.
+  const letters = [...term], adjacentSwaps = [];
+  if (maxDistance && letters.length >= 5 && !term.includes(' ')) {
+    for (let i = 0; i < letters.length - 1; i++) {
+      if (letters[i] === letters[i + 1]) continue;
+      const swapped = letters.slice();
+      [swapped[i], swapped[i + 1]] = [swapped[i + 1], swapped[i]];
+      adjacentSwaps.push(swapped.join(''));
+    }
+  }
   return nodes
     .map((node, index) => {
       const name = normalizedName(node.name);
@@ -61,8 +72,12 @@ export function searchNodes(nodes, query, limit = 8) {
         typoDistance(term, name, maxDistance),
         ...words.map(word => typoDistance(term, word, maxDistance))
       );
-      if (distance > maxDistance) return null;
-      return { node, name, rank: 4, distance, index };
+      if (distance <= maxDistance) return { node, name, rank: 4, distance, index };
+      if (adjacentSwaps.length && words[0] &&
+          adjacentSwaps.some(swapped => typoDistance(swapped, words[0], 1) === 1)) {
+        return { node, name, rank: 4, distance: 2, index };
+      }
+      return null;
     })
     .filter(Boolean)
     .sort((a, b) => a.rank - b.rank || a.distance - b.distance || a.name.localeCompare(b.name, 'fi') || a.index - b.index)
