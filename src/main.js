@@ -6,7 +6,7 @@ import ENTITY_TYPES from './data/entity-types.json';
 import { formatNodeTypes } from './lib/entity-types.js';
 import { relationVerb } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
-import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel } from './lib/scene.js';
+import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel } from './lib/scene.js';
 import { hierarchyGroups } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
@@ -266,9 +266,11 @@ function nodeLayout(n,p){
  });
  const scale=Math.max(.43,Math.min(1.48,p.sc*2.75));
  const r=(isSel?12:hot?9:isHub?8:5)*scale;
- let fade=sector!=='all'&&!notDim&&!hot&&!inPath?.2:1;
- if(selected&&!hot&&!inPath)fade*=.24;
- if(pathNodes.length&&!inPath)fade*=.21;
+ const alpha=nodeOpacity({
+  selected:!!selected,routeActive:!!pathNodes.length,focused:hot,onPath:inPath,
+  sectorDimmed:sector!=='all'&&!notDim,
+  distanceFactor:(dist+1800-p.z)/2300
+ });
  let label=null;
  if(showLabel&&(nameDensity==='all'||p.sc>.12||hot)){
   const withPic=!!n.image,enlarged=isSel||isHover||hot;
@@ -282,7 +284,7 @@ function nodeLayout(n,p){
   by=Math.max(8,Math.min(H-h-8,by));
   label={bx,by,w,h,withPic,enlarged,labelScale};
  }
- return {n,p,isSel,isHover,hot,inPath,isHub,dot,scale,r,fade,label};
+ return {n,p,isSel,isHover,hot,inPath,isHub,dot,scale,r,alpha,label};
 }
 function nodeHitbox(item){
  const {n,p,r,label,dot}=item;
@@ -321,15 +323,15 @@ function nodeLabelDisplay(item){
  ctx.restore();
 }
 function nodeDisplay(item){
- const {n,p,isSel,isHover,hot,inPath,dot,r,fade,label}=item;
+ const {n,p,isSel,isHover,hot,inPath,dot,r,alpha,label}=item;
  const col=groupMeta[n.group][1];
  if(dot){
-  ctx.fillStyle=tint(col,selected?.12:.36);
+  ctx.fillStyle=tint(col,alpha);
   ctx.beginPath();ctx.arc(p.x,p.y,Math.max(1,2.5*p.sc),0,Math.PI*2);ctx.fill();
   return;
  }
  ctx.save();
- ctx.globalAlpha=fade*(hot?1:Math.max(.3,Math.min(1,(dist+1800-p.z)/2300)));
+ ctx.globalAlpha=alpha;
  ctx.shadowColor=col;ctx.shadowBlur=isSel?19:isHover?12:hot?11:4;
  const sphere=ctx.createRadialGradient(p.x-r*.4,p.y-r*.5,r*.08,p.x,p.y,r*1.3);
  sphere.addColorStop(0,'#ffffff');sphere.addColorStop(.24,tint(col,.92));sphere.addColorStop(1,tint(col,.98));
