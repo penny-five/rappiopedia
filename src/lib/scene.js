@@ -74,3 +74,20 @@ export function bounds3D(nodes, padding = 0) {
 export function boxesOverlap3D(a, b) {
   return [0, 1, 2].every(i => a.min[i] < b.max[i] && b.min[i] < a.max[i]);
 }
+
+/** Fit a canvas label to the available space without squeezing its font. */
+export function truncateLabel(value, maxWidth, measure) {
+  const chars = Array.from(String(value ?? ''));
+  const text = chars.join('');
+  if (maxWidth <= 0) return '';
+  if (measure(text) <= maxWidth) return text;
+  const suffix = '…';
+  if (measure(suffix) > maxWidth) return '';
+  let low = 0, high = chars.length;
+  while (low < high) {
+    const mid = Math.ceil((low + high) / 2);
+    if (measure(chars.slice(0, mid).join('') + suffix) <= maxWidth) low = mid;
+    else high = mid - 1;
+  }
+  return chars.slice(0, low).join('') + suffix;
+}
