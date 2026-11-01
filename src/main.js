@@ -4,7 +4,7 @@ import SKENES from './data/skenes.json';
 import RELATION_TYPES from './data/relation-types.json';
 import ENTITY_TYPES from './data/entity-types.json';
 import { formatNodeTypes } from './lib/entity-types.js';
-import { relationVerb } from './lib/relations.js';
+import { relationVerb, relationHeading } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
 import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, storedMovementSpeed, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
 import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierarchyNavigationItems } from './lib/hierarchy.js';
@@ -506,7 +506,7 @@ function clearSelection(){
 function touchInfo(id){selected=id;pathNodes=[];pathEdges=[];showDetails(id);dirty=true;document.getElementById('rightpanel').classList.add('mobileopen')}
 function flyTo(id,zoom=true){const n=by[id];if(!n)return;const navigation=++cameraNavigation;if(location.hash!=='#/node/'+id)history.pushState({node:id},'','#/node/'+id);touchInfo(id);const p=n.pos3;let start={...target},stDist=dist;let end=vec(p[0],p[1],p[2]),dest=zoom?Math.max(700,Math.min(1450,dist)) : dist;let t0=performance.now();function anim(t){if(navigation!==cameraNavigation)return;let v=Math.min(1,(t-t0)/650);v=1-(1-v)**3;target=vec(start.x+(end.x-start.x)*v,start.y+(end.y-start.y)*v,start.z+(end.z-start.z)*v);dist=stDist+(dest-stDist)*v;if(v<1)requestAnimationFrame(anim)}requestAnimationFrame(anim)}
 function relatedForNode(id){
- return E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
+ return E.filter(e=>e.a===id||e.b===id).map(e=>({...e,relationVerb:relationVerb(e,id,RELATION_TYPES),relationHeading:relationHeading(e,id,RELATION_TYPES),other:by[e.a===id?e.b:e.a]}))
   .sort((a,b)=>({verified:0,reported:1,observed:2,lead:3})[a.level]-({verified:0,reported:1,observed:2,lead:3})[b.level]);
 }
 function showDetails(id){
