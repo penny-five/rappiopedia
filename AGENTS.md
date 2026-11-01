@@ -2,6 +2,14 @@
 
 Rappiopedia on suomalaisen striimaus- ja nettiviihteen tietosanakirja. Sivusto kertoo ihmisistä, ohjelmista ja tapahtumista sekä näyttää niiden yhteydet Rappioverse-nimisellä 3D-kartalla. Kävijän pitää pystyä lukemaan aiheesta kuin tietosanakirjasta ja siirtymään sen jälkeen kiinnostaviin yhteyksiin.
 
+## Aloita tutkimus- ja kirjoitustehtävä tästä
+
+Kun tehtävänä on etsiä Rappiopediaan uusia ihmisiä, tapahtumia tai yhteyksiä, jatkaa tutkimusjonoa tai kirjoittaa laajempia artikkeleita, lue ja noudata [Rappiopedian tutkimusagentin taitoa](.agents/skills/rappiopedia-research/SKILL.md). Se kuvaa lähteiden tutkimisesta julkaistuun artikkeliin ja verkostodataankin asti kulkevan työn.
+
+**Käyttäjän lähtöaihe on vapaaehtoinen.** Jos käyttäjä antaa henkilön, tapahtuman, nimiparin tai teeman, aloita siitä ja seuraa löytyviä yhteyksiä. Jos käyttäjä kehottaa jatkamaan oma-aloitteisesti, **valitse itse** lupaava tutkimusaihe `research/leads.json`-jonosta tai verkoston ja artikkelien aukoista. Komento `npm run research:candidates` näyttää mahdollisia aloituskohteita. Älä pysähdy pyytämään käyttäjältä aihetta, ellei sitä todella tarvita.
+
+Tavoitteena on tehdä tutkimustyö saman tehtävän aikana ja viedä konkreettiset löydöt lähteisiin, artikkeleihin ja yhteyksiin. Pelkkä suunnitelma tai tutkimusjonon kartuttaminen ei yleensä täytä pyyntöä lisätä sisältöä.
+
 ## Kirjoittaminen
 
 - Kirjoita **hyvää, tavallista suomea**. Oleta, ettei lukija tunne aihetta ennestään.
