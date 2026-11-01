@@ -3179,7 +3179,10 @@
         -250,
         1240
       ],
-      "featured": true
+      "featured": true,
+      "image": "images/kenukendall.webp",
+      "imageSource": "https://img.img-cdn.yle.fi/crop_extract%2Cw_5761%2Ch_3240%2Cx_0%2Cy_120/crop_fill%2Cw_767%2Ch_431%2Car_16%3A9%2Cdpr_1/f_auto/39-1596323698d8264d64c0/1770883188",
+      "imageCredit": "Sara Vertanen / Yle, Laura Keinänen Ylen Perjantai-haastattelussa (12.2.2026)"
     },
     {
       "id": "monnirs",
@@ -3739,7 +3742,10 @@
         -1040
       ],
       "note": "Esko Eerikäinen on suomalainen radio- ja televisiojuontaja, joka vieraili PactHouse 3:ssa toukokuussa 2026.",
-      "featured": false
+      "featured": false,
+      "image": "images/esko_eerikainen.webp",
+      "imageSource": "https://im.mtvuutiset.fi/image/8313094/landscape16_9/1600/900/bd2eb5fa1d56d0dbfcd3dd8f27602307/Yo/SomeSharing/esko-eerikainen.jpg",
+      "imageCredit": "Jukka Alasaari Photography / MTV Uutiset, Esko Eerikäisen ohjelmahaastattelu (15.12.2021)"
     },
     {
       "id": "susanna_penttila",
@@ -3756,7 +3762,10 @@
         -1010
       ],
       "note": "Susanna Penttilä on suomalainen vaatealan yrittäjä, malli ja OnlyFans-sisällöntuottaja, joka vieraili PactHouse 3:ssa.",
-      "featured": false
+      "featured": false,
+      "image": "images/susanna_penttila.webp",
+      "imageSource": "https://image.seiska.fi/1063848.webp?compression=70&format=webp&height=678&imageId=1063848&width=1200",
+      "imageCredit": "Tomi Natri / Seiska, Susanna Penttilä Férrer-liikkeessään (24.6.2023)"
     }
   ],
   "edges": [
