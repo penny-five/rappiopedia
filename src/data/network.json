@@ -9062,8 +9062,8 @@
       "a": "misantrooppi",
       "b": "upi",
       "type": "esiintyi-yhdessa",
-      "label": "esiintyivät yhdessä vanhoissa Upi-videoissa, joita jaettiin myöhemmin videokoosteissa",
-      "date": "2022–2025",
+      "label": "esiintyivät yhdessä vanhoissa Upi-videoissa, joista julkaistiin yhteinen videokooste lokakuussa 2025",
+      "date": "2025-10-26",
       "level": "reported",
       "src": [
         "P286",
@@ -9078,17 +9078,6 @@
       "label": "avasi Upi-aiheisen /upi/-alalautansa elokuussa 2024",
       "date": "2024-08",
       "level": "verified",
-      "src": [
-        "P293"
-      ]
-    },
-    {
-      "a": "ebinlauta",
-      "b": "ylilauta",
-      "type": "involved-in",
-      "label": "perustajien esittelyssä kuvattiin Ylilaudan /international/-alueelta siirtyneiden keskustelijoiden toimintaa",
-      "date": "2024",
-      "level": "reported",
       "src": [
         "P293"
       ]
@@ -10550,11 +10539,6 @@
       "label": "Ebinlauta: /upi/-alalauta ja Upin striimit 2024",
       "url": "https://ebinlauta.net/",
       "note": "Sivuston oma esittely kertoo Ebinlaudan perustetun 2024 ja /upi/-alaluokan avautuneen elokuussa 2024. Ylläpito kuvaa alalautaa Upin omaksi striimialustaksi, mutta nykyisessä valikossa ei näy tätä /upi/-luokkaa."
-    },
-    "P294": {
-      "label": "Crawl Census 2026: Ylilaudan robots.txt- ja HTTP 410 -estot",
-      "url": "https://crawlcensus.com/site/ylilauta.org",
-      "note": "Ulkopuolisen mittauksen mukaan Ylilauta ilmoittaa robots.txt-tiedostossa kieltävänsä GPTBot- ja OAI-SearchBot-hakijat; palvelin palauttaa datakeskuksista tulleille hakupyynnöille myös 410-vastauksia. Ei todiste tiettyjen keskusteluketjujen sisällöstä."
     }
   },
   "date": "2026-11-01"
