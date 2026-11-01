@@ -1451,7 +1451,10 @@
         188,
         525
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/noorak.webp",
+      "imageSource": "https://cdn.speakersforum.fi/media/speakersforum_fi/img/40_21/1200x630/noora_karma_5456.jpg",
+      "imageCredit": "Speakersforum, Noora Karman esiintyjäkuva"
     },
     {
       "id": "vp",
@@ -1516,7 +1519,10 @@
         331,
         -276
       ],
-      "featured": false
+      "featured": false,
+      "image": "images/johanna.webp",
+      "imageSource": "https://image.seiska.fi/1923297.webp?compression=70&format=webp&height=678&imageId=1923297&width=1200",
+      "imageCredit": "Seiska, Johanna Tukiaisen henkilökuva"
     },
     {
       "id": "joonasm",
