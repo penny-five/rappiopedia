@@ -6,6 +6,10 @@ Vaasalaisia.info esitteli marraskuussa 2011 Sillu10:n kuvaaman videon, jossa arv
 
 YouTube-kanavan tilastopalvelu SPEAKRJ kirjasi elokuussa 2022 Sillu10-kanavalle noin 3 100 tilaajaa, 986 videota ja 1,9 miljoonaa katselukertaa. Luvut kuvaavat tuolloista tilannetta, eivät myöhempiä kokonaislukuja. [@P231]
 
+## Tammikuun 2014 yhteistapaaminen
+
+[[djpate246|DjPate246]] julkaisi 19. tammikuuta 2014 videon nimeltä *Viheraho,Sillu100% And Djpate246 Osa1/1*. Kuvauksen mukaan kyse oli sunnuntain tapaamisesta. [[djpate_sillu_pasi_2014|Videolla]] esiintyivät Sillu100%, [[pasi|Pasi Viheraho]] ja DjPate246, joten heidän kohtaamisestaan on säilynyt tekijän oma julkaisu. [@P240]
+
 ## Niilo22:n tapaamiset
 
 Niilo22-faniwiki kertoo Sillun tavanneen [[niilo22|Niilo22:n]] useaan otteeseen. Fanivikin mukaan kaksikko kävi vuonna 2022 Subway-ravintolassa ja vuonna 2023 muun muassa Raxissa sekä kahvilla. Näistä tapaamisista on keskusteltu Niilo22:n seuraajayhteisössä. [@P233]
