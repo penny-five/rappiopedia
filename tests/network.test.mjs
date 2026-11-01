@@ -4,8 +4,11 @@ import { readFileSync } from 'node:fs';
 import { shortestPath } from '../src/lib/graph.js';
 import { hierarchyGroups } from '../src/lib/hierarchy.js';
 import { relationVerb, relationHeading } from '../src/lib/relations.js';
+import { applyNetworkCorrections } from '../src/lib/network-corrections.js';
 const relationTypes=JSON.parse(readFileSync(new URL('../src/data/relation-types.json',import.meta.url),'utf8'));
-const data=JSON.parse(readFileSync(new URL('../src/data/network.json',import.meta.url),'utf8'));
+const baseData=JSON.parse(readFileSync(new URL('../src/data/network.json',import.meta.url),'utf8'));
+const corrections=JSON.parse(readFileSync(new URL('../src/data/network-corrections.json',import.meta.url),'utf8'));
+const data=applyNetworkCorrections(baseData,corrections);
 const nodes=new Map(data.nodes.map(n=>[n.id,n]));
 const levels=new Set(['verified','reported','observed','lead']);
 test('solmut yksilöllisiä ja 3D-koordinaatit olemassa',()=>{
@@ -104,4 +107,34 @@ test('TV reality show connections record independent programme participation', (
    assert.ok(edge.src.length && edge.src.every(id => data.sources[id]?.url), person + ' missing TV source');
   }
  }
+});
+
+test('relation corrections are deterministic and preserve sourced nodes',()=>{
+ assert.equal(baseData.edges.length,342);
+ assert.equal(data.edges.length,337);
+ assert.equal(corrections.edits.length,45);
+ assert.equal(corrections.remove.length,5);
+ assert.equal(data.nodes,baseData.nodes);
+ assert.equal(data.sources,baseData.sources);
+ const repeated=applyNetworkCorrections(baseData,corrections);
+ assert.deepEqual(repeated.edges,data.edges);
+});
+test('corrected relation endpoints and duplicates are valid',()=>{
+ const seen=new Set();
+ for(const edge of data.edges){
+  const a=nodes.get(edge.a),b=nodes.get(edge.b);
+  assert.ok(a&&b,edge.a+'-'+edge.b);
+  if(edge.type==='vieraili') {assert.equal(a.cat,'person',edge.a);assert.ok(['show','event'].includes(b.cat),edge.b)}
+  if(edge.type==='projekti-ohjelmavieraana')assert.equal(a.cat,'project',edge.a);
+  if(edge.type==='haastatteli')assert.equal(b.cat,'person',edge.b);
+  if(['matkusti','listattiin','osallistui-projektiin'].includes(edge.type))assert.equal(a.cat,'person',edge.a);
+  if(['vieraili-luona','vieraili-toisen-lahetyksessa'].includes(edge.type)){assert.equal(a.cat,'person',edge.a);assert.equal(b.cat,'person',edge.b)}
+  const key=[edge.a,edge.b,edge.type,edge.label].join('|');
+  assert.ok(!seen.has(key),'Duplicate fact '+key);
+  seen.add(key);
+ }
+ assert.equal(relationTypes['oli-puoliso'].verb,'on entinen aviopuoliso');
+ const reversed=data.edges.find(e=>e.a==='pullis'&&e.b==='pottu'&&e.type==='vieraili-toisen-lahetyksessa');
+ assert.ok(reversed);
+ assert.equal(data.edges.some(e=>e.a==='pottu'&&e.b==='pullis'&&e.type==='vieraili'),false);
 });

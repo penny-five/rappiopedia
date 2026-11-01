@@ -82,11 +82,6 @@
     "headingForward": "Haastattelut",
     "headingReverse": "Haastateltavat"
   },
-  "coappeared": {
-    "symmetric": true,
-    "verb": "esiintyi yhdessä",
-    "heading": "Yhteiset esiintymiset"
-  },
   "striimasi-yhdessa": {
     "symmetric": true,
     "verb": "striimasi yhdessä",
@@ -139,22 +134,11 @@
     "headingForward": "Kohdistuneet välikohtaukset",
     "headingReverse": "Välikohtausten kohteet"
   },
-  "hyodynsi": {
-    "forward": "hyödynsi",
-    "reverse": "julkisuudessa hyödyntänyt",
-    "headingForward": "Hyödynnetyt hahmot ja brändit",
-    "headingReverse": "Brändin hyödyntäjät"
-  },
   "alleged-organizer": {
     "forward": "väitettiin järjestäneen",
     "reverse": "väitetty järjestäjä oli",
     "headingForward": "Järjestämisväitteet",
     "headingReverse": "Väitetyt järjestäjät"
-  },
-  "reported-association": {
-    "symmetric": true,
-    "verb": "yhdistettiin julkisuudessa",
-    "heading": "Julkisuudessa yhdistetyt"
   },
   "nakyi": {
     "forward": "näkyi",
@@ -198,23 +182,11 @@
     "headingForward": "Haastattelut",
     "headingReverse": "Haastattelijat"
   },
-  "discussed-online": {
-    "forward": "keskusteli aiheesta",
-    "reverse": "oli keskustelun aiheena",
-    "headingForward": "Verkkokeskustelujen aiheet",
-    "headingReverse": "Aiheesta käydyt keskustelut"
-  },
   "involved-in": {
     "forward": "oli mukana toiminnassa",
     "reverse": "toiminnassa mukana oli",
     "headingForward": "Toimintayhteydet",
     "headingReverse": "Mukana olleet"
-  },
-  "sisalsi": {
-    "forward": "sisälsi",
-    "reverse": "kuuluu tapahtumasarjaan",
-    "headingForward": "Tapahtumasarjan osat",
-    "headingReverse": "Tapahtumasarjat"
   },
   "listattiin": {
     "forward": "listattiin",
@@ -239,17 +211,6 @@
     "headingForward": "Omat lähetykset",
     "headingReverse": "Lähettäjät"
   },
-  "appeared-in-same-documentary": {
-    "symmetric": true,
-    "verb": "esiintyi samassa dokumentissa",
-    "heading": "Samassa dokumentissa esiintyneet"
-  },
-  "kuuluu": {
-    "forward": "kuuluu",
-    "reverse": "sisältää",
-    "headingForward": "Kokonaisuudet",
-    "headingReverse": "Kokonaisuuden osat"
-  },
   "matkusti": {
     "forward": "matkusti",
     "reverse": "matkustajana oli",
@@ -260,16 +221,6 @@
     "symmetric": true,
     "verb": "matkusti yhdessä",
     "heading": "Yhteiset matkat"
-  },
-  "reported-trip": {
-    "symmetric": true,
-    "verb": "liitettiin samaan matkaan",
-    "heading": "Keskusteluissa raportoidut matkat"
-  },
-  "reported-stream": {
-    "symmetric": true,
-    "verb": "keskustelussa väitettiin striimanneen yhdessä",
-    "heading": "Keskusteluissa raportoidut yhteisstriimit"
   },
   "tuomittiin": {
     "forward": "tuomittiin",
@@ -330,12 +281,6 @@
     "verb": "kohtasi",
     "heading": "Kohtaamiset"
   },
-  "juontaa-podcastia": {
-    "forward": "juontaa",
-    "reverse": "juontajana on",
-    "headingForward": "Podcast-juonnot",
-    "headingReverse": "Podcast-juontajat"
-  },
   "oli-avausvieras": {
     "forward": "oli avausvieraana",
     "reverse": "avausvieras oli",
@@ -346,5 +291,63 @@
     "symmetric": true,
     "verb": "on entinen aviopuoliso",
     "heading": "Entiset aviopuolisot"
+  },
+  "vieraili-luona": {
+    "forward": "vieraili luona",
+    "reverse": "luona vieraili",
+    "headingForward": "Henkilövierailut",
+    "headingReverse": "Vierailijat"
+  },
+  "vieraili-toisen-lahetyksessa": {
+    "forward": "vieraili lähetyksessä",
+    "reverse": "lähetyksen vieraana oli",
+    "headingForward": "Vierailut muiden lähetyksissä",
+    "headingReverse": "Lähetysten vieraat"
+  },
+  "projekti-ohjelmavieraana": {
+    "forward": "projektin tekijät vierailivat ohjelmassa",
+    "reverse": "ohjelmassa vieraili projekti",
+    "headingForward": "Projektin ohjelmavierailut",
+    "headingReverse": "Ohjelmassa vierailleet projektit"
+  },
+  "oli-samassa-lahetyksessa": {
+    "symmetric": true,
+    "verb": "oli samassa lähetyksessä",
+    "heading": "Samassa lähetyksessä esiintyneet"
+  },
+  "riiteli": {
+    "symmetric": true,
+    "verb": "riiteli",
+    "heading": "Julkiset riidat"
+  },
+  "osallistui-projektiin": {
+    "forward": "osallistui projektiin",
+    "reverse": "projektiin osallistui",
+    "headingForward": "Projektiosallistumiset",
+    "headingReverse": "Projektin osallistujat"
+  },
+  "liitettiin-brandiin": {
+    "forward": "liitettiin julkisuudessa",
+    "reverse": "yhdistettiin julkisuudessa",
+    "headingForward": "Julkisuudessa liitetyt brändit ja hahmot",
+    "headingReverse": "Brändiin tai hahmoon liitetyt"
+  },
+  "mainittiin-lahetysotsikossa": {
+    "forward": "mainittiin lähetysotsikossa",
+    "reverse": "otsikossa mainittiin",
+    "headingForward": "Lähetysotsikkomaininnat",
+    "headingReverse": "Otsikoissa mainitut"
+  },
+  "sponsoroi": {
+    "forward": "sponsoroi",
+    "reverse": "sponsorina oli",
+    "headingForward": "Sponsoroinnit",
+    "headingReverse": "Sponsorit"
+  },
+  "otettiin-kiinni": {
+    "forward": "otettiin kiinni",
+    "reverse": "kiinniotettuna oli",
+    "headingForward": "Kiinniotot",
+    "headingReverse": "Kiinniotetut"
   }
 }
