@@ -31,6 +31,25 @@ export function cameraLookDelta(target, yaw, pitch, distance, deltaX, deltaY) {
   };
 }
 
+/** Distances in the scene use world units, displayed as metres while flying. */
+export const MIN_MOVEMENT_SPEED = 40;
+export const MAX_MOVEMENT_SPEED = 6000;
+export const DEFAULT_MOVEMENT_SPEED = 900;
+
+/** Wheel adjusts flight speed, with trackpad and line/page-wheel normalization. */
+export function adjustMovementSpeed(speed, deltaY, deltaMode = 0) {
+  const pixels = deltaY * (deltaMode === 1 ? 18 : deltaMode === 2 ? 360 : 1);
+  const step = Math.max(-240, Math.min(240, pixels));
+  return Math.max(MIN_MOVEMENT_SPEED, Math.min(MAX_MOVEMENT_SPEED, speed * Math.exp(-step * .0025)));
+}
+
+/** Logarithmic readout gives both slow and fast flying useful meter precision. */
+export function movementSpeedFill(speed) {
+  const top = MAX_MOVEMENT_SPEED * 2.5;
+  const clamped = Math.max(MIN_MOVEMENT_SPEED, Math.min(top, speed));
+  return 100 * Math.log(clamped / MIN_MOVEMENT_SPEED) / Math.log(top / MIN_MOVEMENT_SPEED);
+}
+
 /** In route mode, only the chosen path's nodes and edges are visible and interactive. */
 export function routeVisibility(pathNodes, pathEdges) {
   const active = pathNodes.length > 0;
