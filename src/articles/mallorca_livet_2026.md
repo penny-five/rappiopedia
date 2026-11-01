@@ -8,4 +8,4 @@ Kaksikko ja muut seurueen jäsenet etsivät laukkuja rannalta ja kävivät katso
 
 ## Aiemmat yhteisstriimit
 
-Sampe, Pullis, Megis ja Chiara olivat esiintyneet samassa seurueessa myös [[mokkistriimit_july_2026|heinäkuun mökkistriimeissä]], joissa mukana oli lisäksi [[julwill|Julia Willman]]. Julia Willman ja Juulia ”Megis” Valikainen ovat eri henkilöitä: heinäkuun mökkimatkalla oli mukana molemmat, mutta Mallorcan syyskuun seurueeseen Julia Willmania ei näissä lähteissä nimetä. [@P174] [@P178]
+Sampe, Pullis, Megis ja Chiara olivat esiintyneet yhdessä myös [[mokkistriimit_july_2026|heinäkuun mökkistriimeissä]], joissa oli heidän lisäkseen mukana [[julwill|Julia Willman]]. Heinäkuun matkalla nähtiin siis sekä Julia Willman että Juulia ”Megis” Valikainen, kun taas syyskuun Mallorcan-lähetyksissä seurueen jäsenenä oli Megis. [@P174] [@P178]
