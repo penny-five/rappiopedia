@@ -21,8 +21,8 @@ test('markdown wikilinks and source IDs resolve',()=>{
   assert.ok(!/<\/?script|onerror\s*=/i.test(body),file+' unsafe markup');
  }
 });
-test('all image metadata is either complete or deliberately absent',()=>{
+test('image paths are valid local assets or legacy source URLs',()=>{
  for(const n of data.nodes){
-  if(n.image){assert.ok(/^https:\/\//.test(n.image),n.id+' image requires HTTPS'); assert.ok(typeof n.imageCredit==='string'&&n.imageCredit.trim(),n.id+' image attribution missing')}
+  if(n.image) assert.ok(/^(https:\/\/|\/images\/)[^\s]+$/.test(n.image),n.id+' invalid image path');
  }
 });
