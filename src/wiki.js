@@ -49,8 +49,12 @@ function fallbackArticle(node,related){
   }
   return text;
 }
+/** The single article source used by both the article panel and graph tooltips. */
+export function articleMarkdown(node,related=[]){
+ return authored['./articles/'+node.id+'.md']||fallbackArticle(node,related);
+}
 export function renderNodeArticle({node,related,nodes,sources,levels,group,category}){
-  const text=authored['./articles/'+node.id+'.md']||fallbackArticle(node,related);
+  const text=articleMarkdown(node,related);
   const sourceIds=[...new Set(related.flatMap(e=>e.src))].filter(id=>sources[id]);
   const name=escapeHtml(node.name);
   document.getElementById('dochead').innerHTML='<div class="breadcrumbs">Rappiopedia <span>›</span> '+escapeHtml(category)+' <span>›</span> '+name+'</div><h2>'+name+'</h2>';
