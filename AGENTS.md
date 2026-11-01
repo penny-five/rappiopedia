@@ -10,6 +10,10 @@ Kun tehtävänä on etsiä Rappiopediaan uusia ihmisiä, tapahtumia tai yhteyksi
 
 Tavoitteena on tehdä tutkimustyö saman tehtävän aikana ja viedä konkreettiset löydöt lähteisiin, artikkeleihin ja yhteyksiin. Pelkkä suunnitelma tai tutkimusjonon kartuttaminen ei yleensä täytä pyyntöä lisätä sisältöä.
 
+## Henkilökuvien kerääminen ja korjaaminen
+
+Kun tehtävänä on etsiä puuttuvia henkilökuvia, korjata väärä kuva tai täydentää kuvalähteitä, seuraa [Rappiopedian kuvankeruuskillin](.agents/skills/rappiopedia-images/SKILL.md) ohjeita. Aloitus henkilöstä on vapaaehtoinen: ilman lähtöaihetta listaa puutteet komennolla `npm run images:candidates`, etsi kuvien alkuperäiset julkaisut ja vie löydöt verkostodataan sekä optimointiin. Väärän kuvan vanha paikallinen WebP on myös korvattava, ettei se jää näkyviin.
+
 ## Kirjoittaminen
 
 - Kirjoita **hyvää, tavallista suomea**. Oleta, ettei lukija tunne aihetta ennestään.
