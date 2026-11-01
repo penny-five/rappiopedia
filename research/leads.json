@@ -1344,6 +1344,53 @@
         "Tarkista myöhempien yhteisstriimien mahdollinen jälleennäkeminen ennen uusia relaatioita."
       ],
       "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "misantrooppi-upi-early-streams",
+      "title": "Misantroopin, Upin ja varhaisten striimikanavien aikajana",
+      "status": "in-progress",
+      "priority": "high",
+      "nodeIds": [
+        "misantrooppi",
+        "misantrooppi_kanava",
+        "upi",
+        "tampereentero",
+        "ebinlauta"
+      ],
+      "sourceIds": [
+        "P285",
+        "P286",
+        "P287",
+        "P292",
+        "P293",
+        "P295"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/playlist?list=PLMLvOXzFlvaQGWDOMqdjSer45PNfFWO0K",
+        "https://ylilauta.org/tubetus/28xw6p",
+        "https://ylilauta.org/tubetus/2865bd",
+        "https://ylilauta.org/tubetus/27v9ac"
+      ],
+      "notes": "1.11.2026: Misantroopista lisätty henkilöartikkeli, 2023 Redditissä Upin kaveriksi nimetty henkilö (P295), helmikuun 2024 Redditin oikaisu nimestä (P286), 26.10.2025 YouTube-koostevideo P292 nimeää Atroksi, syyskuun 2026 Redditissä muistellaan videota (P287). Marraskuussa 2022 Upin lähetyksiä kerrottiin näytettävän Misantrooppi-nimisellä kanavalla (P285), mutta kanavan omistajuutta ei ole varmennettu. Videon kuvauksessa mainittu koko nimi on yhden lataajan ilmoitus, eikä sitä julkaistu vahvistettuna henkilötietona. Ebinlaudan oma sivu (P293) kertoo /upi/-alalautansa avautuneen elokuussa 2024. Ylilauta estää ChatGPT:n automaattista lukemista robots.txt:llä; Crawl Census raportoi myös HTTP 410 vastauksia datakeskusosoitteista. Ketjuja ei luettu suoraan, ja selvittämättömät viestit eivät ole artikkelien lähteitä.",
+      "questions": [
+        "Minkä alkuperäisten Upi-lähetysten (päivät, kanavat) katkelmista vuoden 2025 Upi & misantrooppi -kooste on tehty?",
+        "Oliko Misantrooppi-nimisen kanavan ylläpitäjä sama Atroksi kutsuttu videoissa esiintynyt henkilö?",
+        "Onko Atro/Misantrooppi itse vahvistanut koko nimensä ja oman striimaushistoriansa?",
+        "Oliko Ebinlaudan /upi/-alalauta toiminnassa vielä 2025–2026 ja mistä alkuperäiset lähetykset löytyvät?",
+        "Liittyykö käyttäjän ehdottamiin Ylilaudan /tubetus/-ketjuihin tarkkoja Upi–Misantrooppi-tapahtumia, jotka eivät esiinny muissa avattavissa lähteissä?"
+      ],
+      "queries": [
+        "\"Misantrooppi\" \"Upi\" 2022 2023 video",
+        "\"Atro\" \"Upi\" yhteisstriimi",
+        "\"Misantrooppi\" YouTube Kick Upin live",
+        "\"Ebinlauta\" \"/upi/\" striimi"
+      ],
+      "nextSteps": [
+        "Etsi 2025 YouTube-koosteen alkuperäisvideot tai julkaisevan kanavan lähdeviitteet ja kirjaa täsmälliset yhteistapahtumat niiden perusteella.",
+        "Tarkista /upi/-alalautaan liittyvä julkaistu sisältö Ebinlaudan omilta avoimilta sivuilta.",
+        "Tarkista käyttäjän mahdollisesti jakamien Ylilauta-viestien sisältö ja ajankohdat; älä väitä lukeneesi robots-estettyä ketjua."
+      ],
+      "updatedAt": "2026-11-01"
     }
   ]
 }
