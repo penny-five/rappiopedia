@@ -1510,6 +1510,84 @@
         100
       ],
       "featured": false
+    },
+    {
+      "id": "spurgu",
+      "name": "Spurgu-TV",
+      "group": "rappio",
+      "cat": "show",
+      "note": "Pottukoiran Kick-lähetyskonsepti; Pirkkis esiintyi yhteislähetyksissä.",
+      "pos3": [
+        1530,
+        -400,
+        580
+      ],
+      "featured": true
+    },
+    {
+      "id": "pact_pottu",
+      "name": "PactTalks / Pottukoira-vierailu",
+      "group": "talks",
+      "cat": "event",
+      "note": "NOPEETNOUSUT-kanavan 19.7.2026 julkaisema PactTalks-tallenne: Pottukoira vieraana, Jethro Rostedt ja Okkishow juontajina.",
+      "pos3": [
+        1000,
+        760,
+        -250
+      ],
+      "featured": true
+    },
+    {
+      "id": "okkishow",
+      "name": "Okkishow",
+      "group": "talks",
+      "cat": "person",
+      "note": "PactTalksin Pottukoira-jakson juontajaksi nimetty henkilö tai esiintyjänimi.",
+      "pos3": [
+        1170,
+        910,
+        -300
+      ],
+      "featured": false
+    },
+    {
+      "id": "ateena25",
+      "name": "Pirkkis ja SampeF2 / Ateena 11.2025",
+      "group": "events",
+      "cat": "event",
+      "note": "Ateenan marraskuun 2025 striimausmatka, josta uutisoitiin Pirkkiksen ja SampeF2:n yhteydessä.",
+      "pos3": [
+        1030,
+        -650,
+        -400
+      ],
+      "featured": true
+    },
+    {
+      "id": "ams25",
+      "name": "Amsterdamin striimimatka / 4.2025",
+      "group": "events",
+      "cat": "event",
+      "note": "Reddit-keskusteluissa kuvattu Upin, Pirkkiksen ja Taigan yhteinen matka; tapahtuman yksityiskohdat vaativat alkuperäistallenteita.",
+      "pos3": [
+        890,
+        -850,
+        -220
+      ],
+      "featured": false
+    },
+    {
+      "id": "taiga",
+      "name": "Taiga (striimaaja)",
+      "group": "stream",
+      "cat": "person",
+      "note": "Reddit-keskusteluissa Amsterdamin striimimatkaan ja Upi–Pirkkis-lähetyksiin liitetty toimija; henkilön taustaa tai sopimuksia ei vahvistettu.",
+      "pos3": [
+        1700,
+        300,
+        610
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -3318,6 +3396,193 @@
       "level": "verified",
       "detail": "Uutisoitu yhteisesiintyminen PactTalksin ohjelmajaksossa, ei todistus laajemmasta yhteistyöstä.",
       "date": "11.8.2026"
+    },
+    {
+      "a": "pottu",
+      "b": "pirkkis",
+      "label": "yhteiset SpurguTV-livelähetykset ja vierailut",
+      "level": "verified",
+      "src": [
+        "P47",
+        "P48",
+        "P50"
+      ]
+    },
+    {
+      "a": "pottu",
+      "b": "spurgu",
+      "label": "oman striimikonseptin lähettäjä",
+      "level": "verified",
+      "src": [
+        "P48"
+      ]
+    },
+    {
+      "a": "pirkkis",
+      "b": "spurgu",
+      "label": "esiintyi Pottukoiran lähetyksessä",
+      "level": "verified",
+      "src": [
+        "P48"
+      ]
+    },
+    {
+      "a": "pottu",
+      "b": "pullis",
+      "label": "Pottukoiran livevieras (median mukaan)",
+      "level": "reported",
+      "src": [
+        "P55"
+      ]
+    },
+    {
+      "a": "pirkkis",
+      "b": "iippa",
+      "label": "yhteisiä live-esiintymisiä / vierailuja (uutisoitu)",
+      "level": "reported",
+      "src": [
+        "P49"
+      ]
+    },
+    {
+      "a": "sami",
+      "b": "upi",
+      "label": "haastatteli ja kuvasi Ylen dokumenttiin",
+      "level": "verified",
+      "src": [
+        "P45",
+        "P46"
+      ]
+    },
+    {
+      "a": "sami",
+      "b": "pirkkis",
+      "label": "kuvasi Ylen dokumenttiin",
+      "level": "verified",
+      "src": [
+        "P45",
+        "P46"
+      ]
+    },
+    {
+      "a": "upi",
+      "b": "pirkkis",
+      "label": "samassa Kieksi-dokumentin kuvausympäristössä",
+      "level": "verified",
+      "src": [
+        "P45",
+        "P46"
+      ]
+    },
+    {
+      "a": "pottu",
+      "b": "pact_pottu",
+      "label": "PactTalks-jakson vieras",
+      "level": "verified",
+      "src": [
+        "P53"
+      ]
+    },
+    {
+      "a": "pact_pottu",
+      "b": "talks",
+      "label": "PactTalksin julkaistu videojakso",
+      "level": "verified",
+      "src": [
+        "P53"
+      ]
+    },
+    {
+      "a": "pact_pottu",
+      "b": "jethro",
+      "label": "jakson juontaja",
+      "level": "verified",
+      "src": [
+        "P53"
+      ]
+    },
+    {
+      "a": "pact_pottu",
+      "b": "okkishow",
+      "label": "jakson toinen juontaja",
+      "level": "verified",
+      "src": [
+        "P53"
+      ]
+    },
+    {
+      "a": "pottu",
+      "b": "talks",
+      "label": "PactTalks-jaksovierailu + lokakuun lähetysotsikkomaininta",
+      "level": "verified",
+      "src": [
+        "P53",
+        "P54"
+      ]
+    },
+    {
+      "a": "pirkkis",
+      "b": "ateena25",
+      "label": "samassa raportoidussa striimausmatkassa",
+      "level": "reported",
+      "src": [
+        "P49"
+      ]
+    },
+    {
+      "a": "sampe",
+      "b": "ateena25",
+      "label": "matkakumppani, kuvasi matkaa ja etsintää",
+      "level": "reported",
+      "src": [
+        "P49",
+        "P50"
+      ]
+    },
+    {
+      "a": "pirkkis",
+      "b": "sampe",
+      "label": "yhteinen Ateenan striimausmatka",
+      "level": "reported",
+      "src": [
+        "P49"
+      ]
+    },
+    {
+      "a": "upi",
+      "b": "ams25",
+      "label": "Reddit-käyttäjät kuvaavat matkalle osallistumista",
+      "level": "lead",
+      "src": [
+        "P52"
+      ]
+    },
+    {
+      "a": "pirkkis",
+      "b": "ams25",
+      "label": "Reddit-käyttäjät kuvaavat matkalle osallistumista",
+      "level": "lead",
+      "src": [
+        "P52"
+      ]
+    },
+    {
+      "a": "taiga",
+      "b": "ams25",
+      "label": "Reddit-käyttäjien mainitsema matkakumppani",
+      "level": "lead",
+      "src": [
+        "P52"
+      ]
+    },
+    {
+      "a": "upi",
+      "b": "pirkkis",
+      "label": "aiempia yhteislähetyksiä väitetään keskusteluketjussa",
+      "level": "lead",
+      "src": [
+        "P51"
+      ]
     }
   ],
   "sources": {
@@ -3545,6 +3810,66 @@
       "label": "Kasinohai 2026: PactHouse 1–3 osallistujakatsaus",
       "url": "https://www.kasinohai.com/uutiset/pacthouse-rappiostriimisisaltoa-ja-laitonta-rahapelimarkkinointia",
       "note": "Ensimmäisen kauden osallistujalistaan käytetty sekundäärilähde; ei sama näyttötaso kuin ohjelman virallinen osallistujasivu."
+    },
+    "P45": {
+      "label": "Yle Areena 13.4.2026: Kieksi K2 J1 Rappiostriimaus",
+      "url": "https://areena.yle.fi/1-73671935",
+      "note": "Ylen alkuperäinen dokumenttijakso ja ohjelmakuvaus."
+    },
+    "P46": {
+      "label": "Justsiks 14.4.2026: Kieksi haastattelee Upia ja Pirkkistä",
+      "url": "https://justsiks.fi/sami-kieksi-rappiostriimaus-dokumentti/1317/",
+      "note": "Haastattelu: Kieksi tapasi ja kuvasi Upin ja Pirkkiksen samassa jaksossa."
+    },
+    "P47": {
+      "label": "Seiska 2025: Pottukoira ja Pirkkis tekivät yhdessä sisältöä",
+      "url": "https://www.seiska.fi/vain-seiskassa/epatodellinen-kaanne-suosikkistriimaajan-shokkierossa/1790211",
+      "note": "Kuvaa Pottukoiran ja Pirkkiksen yhteisiä livestriimejä."
+    },
+    "P48": {
+      "label": "Gekkonen 20.5.2025: Pottukoira ja Pirkkis SpurguTV:ssä",
+      "url": "https://gekkonen.net/pottukoiran-tuorein-tempaus-jattaa-sanattomaksi/",
+      "note": "Nimetty yhteinen SpurguTV-livelähetys."
+    },
+    "P49": {
+      "label": "Seiska 10.11.2025: Pirkkis ja SampeF2 Ateenassa",
+      "url": "https://www.seiska.fi/kotimaa/il-ateenassa-kadonnut-rappiostriimaaja-on-poliisin-hallussa/1989249",
+      "note": "Matkaseuralaisuus ja yhteinen live-raportointi; myöhempi löytyminen."
+    },
+    "P50": {
+      "label": "Seiska 10.11.2025: Pottukoira Pirkkiksestä",
+      "url": "https://www.seiska.fi/kotimaa/huoli-herasi-minne-katosi-tunnettu-rappiostriimaaja/1988737",
+      "note": "Pottukoira kuvaa tuttavuutta ja yhteisiä vierailuja."
+    },
+    "P51": {
+      "label": "Reddit 26.7.2026: Pirkkis-lore",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1v6x1f0/pirkkis_lore/",
+      "note": "Anonyymi käyttäjä väittää Pirkkiksen esiintyneen aiemmin Upin striimeissä: toistaiseksi vain johtolanka."
+    },
+    "P52": {
+      "label": "Reddit 2.4.2025: Amsterdamin matkan keskusteluketju",
+      "url": "https://www.reddit.com/r/snappisensuroimaton/comments/1jps8zl",
+      "note": "Käyttäjien kertomukset Upista, Pirkkiksestä ja Taigasta; ei riippumatonta varmistusta."
+    },
+    "P53": {
+      "label": "NOPEETNOUSUT YouTube 19.7.2026: PactTalks / Pottukoira",
+      "url": "https://www.youtube.com/watch?v=7Bt0f7h66_I",
+      "note": "Julkaistu tallenne/kooste: juontajat Jethro Rostedt ja Okkishow, vieraana Pottukoira."
+    },
+    "P54": {
+      "label": "StatsForKick: pottukoiralive 23.10.2026 lähetysotsikko",
+      "url": "https://statsforkick.com/c/pottukoiralive?tab=streams",
+      "note": "Lähetysotsikko 'perjantaina pact talk feat jeti' on havainto ohjelmaan liittyvästä markkinoinnista, ei itsenäinen todiste toteutuneesta vierailusta."
+    },
+    "P55": {
+      "label": "Seiska 29.10.2025: Pottukoiran livevieraat",
+      "url": "https://www.seiska.fi/kotimaa/rappiostriimaaja-pottukoira-uhkaili-vieraitaan-veitsella-tapan-teidat/1976878",
+      "note": "Artikkeli nimeää Iippadaan, Pirkkiksen ja Pulliksen Pottukoiran vierailijoiksi. Muihin jutun väitteisiin ei tässä oteta kantaa."
+    },
+    "P56": {
+      "label": "Voice 2026: Kieksi seuraa Pottukoiraa, Iippadaata ja Upia",
+      "url": "https://www.voice.fi/viihde/uusi-sarja-seuraa-rappiostriimaajien-elamaa-nain-paljon-iippadaa-tienaa-kuukaudessa-sekoilemalla",
+      "note": "Dokumentin osallistujat, Iippadaan yhteisen striimausmatkan tausta."
     }
   },
   "date": "2026-11-01"
