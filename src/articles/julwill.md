@@ -20,7 +20,7 @@ Lokakuun 29. päivänä Julia teki [[julia_sampe_helsinki_2026|Helsingin yössä
 
 ## Kristian Heiskarin yhteislähetys
 
-Halloweenina 2026 Julia esiintyi [[heiskari|Kristian Heiskarin]] Kick-lähetyksessä. Gekkosen julkaisemien kuvien mukaan Heiskari pukeutui [[pottu|Pottukoiraksi]] ja Julia puolestaan Pottukoiran koiraa, Spukea, esittäväksi hahmoksi. Heiskari ja Julia tunnettiin entuudestaan eri Big Brother -kausista.
+Halloween-viikonloppuna 2026 Julia esiintyi [[heiskari|Kristian Heiskarin]] Kick-kanavalla [[heiskari_julia_spuke_2026|Pottukoira–Spuke-teemaisessa lähetyksessä]]. Heiskari pukeutui [[pottu|Jouko Kärkkäiseksi]] kapteeninlakkeineen ja tekotatuointeineen. Julia esitti Kärkkäisen Spuke-koiraa pörrökorvissa, tassuissa ja nimipannassa. Asut nähtiin myös Gekkosen ja Seiskan 31. lokakuuta julkaisemissa kuvissa. [@P266] [@P13]
 
 ## Bailupaatti 2026
 
