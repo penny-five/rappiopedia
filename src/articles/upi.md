@@ -8,7 +8,7 @@ Heinäkuun 2026 Reddit-keskustelussa kuvailtiin Upin ja Pirkkiksen aiempia yhtei
 
 ## Yhteislähetykset ja Kieksin kohtaaminen
 
-Upin ja [[pirkkis|Pirkkiksen]] aiempia yhteislähetyksiä muisteltiin heinäkuussa 2026 Redditin Pirkkis-keskustelussa. Huhti–kesän 2025 keskustelut liittivät heidät myös [[taiga|Taigan]] kanssa [[ams25|Amsterdamin striimimatkaan]]. Matkan tarkat tapahtumat ovat toistaiseksi keskustelijoiden kertomusten varassa. [@P51] [@P52]
+Upin ja [[pirkkis|Pirkkiksen]] aiempia yhteislähetyksiä muisteltiin heinäkuussa 2026 Redditin Pirkkis-keskustelussa. Huhti–kesän 2025 keskustelut liittivät heidät myös [[taiga|Taigan]] kanssa [[ams25|Amsterdamin striimimatkaan]]. Maaliskuun 31. päivän keskustelussa yksi kirjoittaja kertoi Pirkkiksen jääneen pois paluulennoilta ja Upin pysyneen tämän seurana. Tapahtumien kulku perustuu tässä katsojakertomuksiin, ei vielä tarkistettuun alkuperäistallenteeseen. [@P51] [@P52] [@P194]
 
 Sami Kieksi kertoi dokumenttia koskevassa haastattelussa matkustaneensa Kajaaniin tapaamaan Upia ja Pirkkistä. Hän tapasi kuvattavat ensin ilman kameroita, ennen varsinaisia kuvauksia. Kieksin kuvauksen mukaan tällä pyrittiin helpottamaan seuraavan päivän kuvaustilanteita. [@P46]
 
