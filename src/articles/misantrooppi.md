@@ -8,4 +8,4 @@ Lokakuun 26. päivänä 2025 Analalisa-niminen YouTube-kanava julkaisi videon *U
 
 ## Misantrooppi-niminen kanava
 
-Misantrooppi-nimi liittyy myös paikkaan, josta Upin lähetyksiä katsottiin. Marraskuussa 2022 Vauva.fi:n keskustelussa kysyttiin Upin uusien striimien osoitetta, ja toinen kirjoittaja ohjasi katsomaan [[misantrooppi_kanava|Misantrooppi-nimistä kanavaa]]. Kanavan ylläpitäjän henkilöllisyys ei käy ilmi kyseisestä keskustelusta. [@P285]
+Misantrooppi-nimi liittyy myös paikkaan, josta Upin lähetyksiä katsottiin. Marraskuussa 2022 Vauva.fi:n keskustelussa kysyttiin Upin uusien striimien osoitetta, ja toinen kirjoittaja ohjasi katsomaan [[misantrooppi_kanava|Misantrooppi-nimistä kanavaa]]. Näin Misantrooppi-nimi esiintyi sekä Upin seurassa nähdyssä henkilöstä että hänen lähetyspaikastaan puhuttaessa. [@P285]
