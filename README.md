@@ -59,7 +59,7 @@ Sivusto toimii selaimessa ilman erillistä palvelinta tai tietokantaa. Se rakenn
 | [`research/leads.json`](research/leads.json) | Agenttien avoimet tutkimusaiheet; tiedostoa ei ladata sivustolle |
 | [`tests/`](tests/) | Datan ja viitteiden testit |
 
-Yhteys tallennetaan `network.json`-tiedostoon kahden solmu-ID:n välisenä reunana. Sillä on kuvaava `label`, näyttötaso `level` sekä lähteiden tunnisteet `src`. Artikkelissa `[[pottu|Pottukoira]]` avaa vastaavan solmun ja `[@P53]` viittaa lähdeluettelon julkaisuun.
+Yhteys tallennetaan `network.json`-tiedostoon kahden solmu-ID:n välisenä reunana. Sillä on [suhdetyyppirekisteriin](src/data/relation-types.json) viittaava `type`, tapahtumaa kuvaava `label`, näyttötaso `level` sekä lähteiden tunnisteet `src`. Artikkelissa `[[pottu|Pottukoira]]` avaa vastaavan solmun ja `[@P53]` viittaa lähdeluettelon julkaisuun.
 
 Sisällön lisäämistä käsitellään tarkemmin [kirjoitusohjeessa](docs/CONTENT_AUTHORING.md). Tutkimuksen lähteet ja keskeneräiset selvitykset löytyvät [tutkimusmuistiinpanoista](docs/RESEARCH_LOG.md) ja [tiedonhankinnan ohjeesta](docs/RESEARCH_PLAYBOOK.md).
 
