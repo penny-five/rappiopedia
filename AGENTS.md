@@ -88,6 +88,16 @@ Automaattisesti tuotettu perusteksti ei korvaa toimitettua henkilöartikkelia. T
 
 Käyttöliittymä on suomenkielinen, vaalea ja tietosanakirjamainen. Säilytä 3D-kartan pyöritys, zoomaus, siirtäminen ja kohteiden avaaminen. PACTin ohjelmat kuuluvat samaan kartalla näytettävään ryhmään.
 
+## Rappioverse: 3D-skenet eivät saa leikata toisiaan
+
+**Tämä on toistuva regressio:** uusien solmujen lisääminen, niiden `pos3`-koordinaattien tai `group`-ryhmän muuttaminen sekä skenejen uudelleensijoittelu ovat aiemmin aiheuttaneet `tests/layout.test.mjs`-testien kaatumisen (esimerkiksi `rappio intersects PACT` ja `talks intersects rappio`).
+
+- **Säilytä 3D-tilavuuksien erillisyys joka kerta, kun muutat verkostodataa tai sijoittelua.** Rajat lasketaan kaikkien skenen solmujen `pos3`-koordinaateista, eivät vain keskussolmuista tai näkyvästä projektiosta. `src/lib/scene.js`-tiedoston `bounds3D` käyttää yksittäisille skeneille 100 yksikön marginaalia; `src/lib/hierarchy.js` määrittelee PACT-ohjelmaperheen, jonka koko jäsenistöstä laskettavalla ylätason rajalla on 145 yksikön marginaali.
+- **Tarkista kaksi ehtoa:** (1) minkään kahden yksittäisen skenen 3D-rajalaatikot eivät leikkaa toisiaan ja (2) yksikään PACT-perheeseen kuulumaton skene ei leikkaa PACTin yhteistä ylätason rajalaatikkoa. PACTin sisäisten skenejen kuuluminen ylätason tilavuuteen on tarkoituksellista.
+- **Aja vähintään `node --test tests/layout.test.mjs` heti jokaisen `pos3`-, `group`- tai sijoittelumuutoksen jälkeen** ja ennen commitia. Aja sen lisäksi `npm test` ja `npm run build` ennen kuin ilmoitat työn valmiiksi. Varmista myös, että koko testiajo onnistuu; osa testeistä voi mennä läpi, vaikka layout-testit kaatuvat.
+- **Korjaa ongelma koordinaateissa tai sijoittelussa, älä testejä heikentämällä.** Älä poista päällekkäisyystestejä, ohita skenejä, pienennä marginaaleja vain testin läpäisemiseksi tai piilota päällekkäisyyttä visuaalisesti. Siirrä tarvittaessa skenen solmuja yhtenä kokonaisuutena niin, että niiden keskinäinen sijoittelu ja yhteydet säilyvät.
+- Jos et voi suorittaa testejä ympäristössäsi, tarkista samat ehdot ohjelmallisesti **päivitetystä datasta** ja kerro käyttäjälle nimenomaisesti, mitä tarkistit ja mitä et pystynyt ajamaan. Älä väitä `npm test`-komennon onnistuneen ilman todellista ajoa.
+
 ## Muutosten tekeminen
 
 1. Tutki olemassa oleva data ja koodi ennen muutoksia. Korjaa lähteeseen, älä vain näkyvään tekstiin.
