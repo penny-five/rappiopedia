@@ -13,7 +13,8 @@ export const hierarchyGroups = [
     groups: ['core', 'season1', 'season2', 'season3', 'talks'],
     color: '#25899d',
     labelColor: '#226d7e',
-    padding: 145
+    padding: 145,
+    fillOpacity: 0.02
   },
   {
     id: 'rappio-universe',

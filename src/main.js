@@ -522,8 +522,9 @@ function showDetails(id){
 }
 function renderSectors(){
  const box=document.getElementById('sectors');
- const button=(id,name,color,count,child=false)=>`<button class="sector ${child?'sector-child ':''}${id===sector?'active':''}" data-sector="${id}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${count}</span></button>`;
- box.innerHTML=button('all','KOKO AVARUUS','#444',N.length)+
+ const button=(id,name,color,count,child=false)=>`<button type="button" class="sector ${child?'sector-child ':''}${id===sector?'active':''}" data-sector="${id}" aria-pressed="${id===sector}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${count}</span></button>`;
+ const overviewIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-3 3-4.5 6-4.5 9s1.5 6 4.5 9M12 3c3 3 4.5 6 4.5 9s-1.5 6-4.5 9"/></svg>';
+ box.innerHTML=`<button type="button" class="sector-overview ${sector==='all'?'active':''}" data-sector="all" aria-pressed="${sector==='all'}" title="Palauta koko Rappioverse näkyviin"><span class="overview-icon">${overviewIcon}</span><span class="overview-copy"><span class="title">KOKO AVARUUS</span><span class="overview-hint">Palauta yleisnäkymä</span></span><span class="count">${N.length}</span></button>`+
   hierarchyNavigationItems(SKENES).map(({id,label,color,child})=>
    button(id,label,color,N.filter(n=>sectorGroups(id).includes(n.group)).length,child)
   ).join('');

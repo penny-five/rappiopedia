@@ -316,3 +316,21 @@ test('movement arrows are identical vector icons and elevation buttons use Q/E',
  assert.match(css,/\.movement-height \[data-move-key="q"\] svg\{transform:rotate\(180deg\)\}/);
  assert.match(css,/\.movement-directions \[data-move-key="arrowleft"\] svg\{transform:rotate\(-90deg\)\}/);
 });
+
+test('all-space navigation is styled separately and the sidebar remains wider when collapsed', () => {
+ const main=readFileSync(new URL('../src/main.js',import.meta.url),'utf8');
+ const css=readFileSync(new URL('../src/styles.css',import.meta.url),'utf8');
+ assert.match(main,/class="sector-overview/);
+ assert.match(main,/data-sector="all"/);
+ assert.match(main,/Palauta yleisnäkymä/);
+ assert.match(main,/aria-pressed="/);
+ assert.match(css,/\.sector-overview\.active\{/);
+ assert.match(css,/\.sector-overview \.overview-icon svg/);
+ assert.match(css,/grid-template-columns:256px minmax\(0,1fr\) minmax\(365px/);
+ assert.match(css,/grid-template-columns:225px minmax\(0,1fr\) minmax\(330px/);
+ assert.match(css,/\.app\.article-collapsed\{grid-template-columns:256px/);
+ assert.match(css,/\.app\.article-collapsed\{grid-template-columns:225px/);
+ assert.match(css,/\.left\{position:absolute;top:72px;bottom:0;left:0;width:280px/);
+ assert.match(css,/\.hud strong\{[^}]*font:700 16px\/1\.35 'DM Sans'/);
+ assert.doesNotMatch(css,/\.hud strong\{[^}]*Georgia/);
+});

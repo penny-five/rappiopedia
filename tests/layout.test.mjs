@@ -209,3 +209,13 @@ test('approved scene placements reflect people’s own productions, not single a
  for (const id of ['big_brother', 'temptation_island']) assert.equal(byId[id].group, 'television', id);
  assert.equal(skenes.television.label, 'TV-OHJELMAT / REALITY');
 });
+
+test('PACT and Rappiostriimaus parent volumes both use subtle tinted fills', () => {
+ for(const id of ['pact-universe','rappio-universe']){
+  const family=hierarchyGroups.find(item=>item.id===id);
+  assert.ok(family,'missing family '+id);
+  assert.ok(family.fillOpacity>0&&family.fillOpacity<.05,id+' should have a subtle fill');
+ }
+ const main=readFileSync(new URL('../src/main.js',import.meta.url),'utf8');
+ assert.match(main,/if\(family\.fillOpacity\)drawTintedVolume\(c,bounds,family\.color,family\.fillOpacity\)/);
+});
