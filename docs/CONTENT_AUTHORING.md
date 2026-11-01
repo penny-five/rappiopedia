@@ -6,10 +6,12 @@ Rappiopedian sisältö koostuu artikkeleista ja niiden taustalla olevasta verkos
 
 Avaa [`src/data/network.json`](../src/data/network.json). Sen `nodes`-taulukossa ovat sivuston aiheet. Tarkista ensin, onko aihe jo mukana toisella nimellä.
 
+Skenet (nimet, värit ja 3D-marginaalit) määritellään tiedostossa [`src/data/skenes.json`](../src/data/skenes.json). `rappio` sisältää ensisijaisesti itsenäisen rappiostriimauksen, `kasinokurki` lähteistetysti Kasinokurki-nimeä lähetyksissään käyttävät tekijät. PACT-vierailu voi pysyä yhteytenä ilman että henkilö sijoitetaan PACT-skeneen. Rappiostriimauksen marginaali on 160 yksikköä, muiden oletus on 100; skenejä ei saa sijoittaa lomittain.
+
 Solmun kentät:
 - `id`: pysyvä, lyhyt tunniste, esimerkiksi `jethro`
 - `name`: sivulla näkyvä nimi
-- `group`: kartan aihealue, esimerkiksi `season3` tai `rappio`
+- `group`: ensisijainen skene, esimerkiksi `season3`, `rappio` tai `kasinokurki`. Ryhmän pitää löytyä `src/data/skenes.json`-rekisteristä; ryhmä ei tarkoita henkilön kaikkia yhteyksiä.
 - `cat`: yleinen sisältöluokka `src/data/entity-types.json`-rekisteristä, esimerkiksi `person`, `place`, `site` tai `event`
 - `types`: **lista** saman rekisterin tarkemmista tyyppi-ID:istä, esimerkiksi `["rappiostriimaaja"]` tai `["juontaja", "tosi-tv-osallistuja"]`
 - `note`: lyhyt kuvaus kokonaisilla suomenkielisillä virkkeillä
