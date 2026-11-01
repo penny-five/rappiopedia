@@ -58,7 +58,7 @@ export function renderNodeArticle({node,related,nodes,sources,levels,group,categ
   const text=articleMarkdown(node,related);
   const sourceIds=[...new Set(related.flatMap(e=>e.src))].filter(id=>sources[id]);
   const name=escapeHtml(node.name);
-  const breadcrumb=articleBreadcrumbParts(node,group,category).map(escapeHtml).join(' <span>›</span> ');
+  const breadcrumb=articleBreadcrumbParts(node,group).map(escapeHtml).join(' <span>›</span> ');
   document.getElementById('dochead').innerHTML='<div class="breadcrumbs">'+breadcrumb+'</div><h2>'+name+'</h2>';
   const initials=node.name.replace(/[^\p{L}\p{N} ]/gu,' ').trim().split(/\s+/).slice(0,2).map(x=>x[0]).join('');
   const picture=node.image?'<img loading="lazy" referrerpolicy="no-referrer" alt="'+name+'" src="'+escapeHtml(node.image)+'">':'';
@@ -78,7 +78,7 @@ export function renderNodeArticle({node,related,nodes,sources,levels,group,categ
   document.getElementById('sources').innerHTML=sourceIds.map(id=>'<a target="_blank" rel="noopener noreferrer" href="'+escapeHtml(sources[id].url)+'">['+escapeHtml(id)+'] '+escapeHtml(sources[id].label)+'<small>'+escapeHtml(sources[id].note||'')+'</small></a>').join('')||'<p class="empty">Ei lähteitä.</p>';
 }
 export function renderSourceArchive(sources){
-  document.getElementById('dochead').innerHTML='<div class="breadcrumbs">Rappiopedia <span>›</span> Arkisto</div><h2>Lähteet</h2><div class="article-kicker">Verkoston julkisten lähteiden arkisto</div>';
+  document.getElementById('dochead').innerHTML='<div class="breadcrumbs">Arkisto</div><h2>Lähteet</h2><div class="article-kicker">Verkoston julkisten lähteiden arkisto</div>';
   document.getElementById('articleBody').innerHTML='<p>Rappiopedian artikkeleissa ja verkostokartassa käytetyt lähteet.</p>';
   document.getElementById('relhead').textContent='';
   document.getElementById('relations').innerHTML='';
