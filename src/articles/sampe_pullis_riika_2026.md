@@ -1,7 +1,7 @@
-**SampeF2:n Riian-yhteislähetykset** olivat [[sampe|SampeF2:n]] Kick-kanavalla 3.–5. lokakuuta 2026 julkaistuja Latviassa kuvattuja IRL-lähetyksiä. Arkistoitujen lähetysten otsikoissa nimettiin [[pullis|Pullis]] ja Jenniveri. [@P76] [@P83]
+**SampeF2:n Riian-yhteislähetykset** olivat [[sampe|SampeF2:n]] Kick-kanavalla 3.–5. lokakuuta 2026 julkaistuja Latviassa kuvattuja IRL-lähetyksiä. Sampe nimesi matkaseuralaisikseen [[pullis|Pulliksen]] ja Jenniverin. [@P76] [@P83]
 
-## Matkan lähetysarkisto
+## Lähetykset Riiasta
 
-StreamRecorderin aineistossa Riian-lähetyksillä oli muun muassa otsikko *Riika w/ Pullis ja Jenniveri*. Lähetysotsikoista nähdään ilmoitetut osallistujat mutta ei koko videon tapahtumia. [@P83]
+Yksi 3.–5. lokakuuta julkaistuista lähetyksistä oli nimeltään *Riika w/ Pullis ja Jenniveri*. Kolmikko esiintyi Sampen matkalähetysten otsikoissa viikonlopun aikana. [@P83]
 
-Sampe ja Pullis olivat tehneet yhteisstriimejä myös aiemmin, esimerkiksi [[mallorca_livet_2026|Mallorcalla syyskuussa]]. Jenniverin tarkempaa identiteettiä ei ole vahvistettu käytetyistä lähteistä. [@P178]
+Sampe ja Pullis olivat tehneet yhteisstriimejä myös aiemmin, esimerkiksi [[mallorca_livet_2026|Mallorcalla syyskuussa]]. Myös [[mallorca_livet_2026|Mallorcan-matkalla]] syyskuussa Sampe oli striimannut Pulliksen kanssa. [@P178]
