@@ -3984,6 +3984,38 @@
       ],
       "featured": false,
       "note": "Rauno77:n ja Jalluton_Pihtaajan omien Kick-kanavien 9.9.2026 lähetysotsikot mainitsevat toisensa Jyväskylän-seudun IRL-lähetyksissä."
+    },
+    {
+      "id": "mallorca_rantalaukut_2026",
+      "name": "Sampen ja Pulliksen laukkujen katoaminen Mallorcalla 22.9.2026",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "SampeF2:n ja Pulliksen laukut katosivat Mallorcan rannalta 22. syyskuuta 2026. Rantapäivää kuvattiin suorissa lähetyksissä, ja katsojien jakamissa videoissa kaksikko kertoi kadonneista laukuista ja matkustusasiakirjoista.",
+      "pos3": [
+        2635,
+        -185,
+        1100
+      ],
+      "featured": false
+    },
+    {
+      "id": "heiskari_julia_spuke_2026",
+      "name": "Heiskarin ja Julian Pottukoira–Spuke-lähetys Halloweenina 2026",
+      "group": "rappio",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "note": "Kristian Heiskari pukeutui lokakuun 2026 Halloween-lähetyksessään Pottukoiraksi ja Julia Willman Kärkkäisen Spuke-koiraksi. Kaksikko esiintyi yhdessä Heiskarin Kick-kanavalla.",
+      "pos3": [
+        2320,
+        -370,
+        1280
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -8670,6 +8702,88 @@
         "P258"
       ],
       "level": "observed"
+    },
+    {
+      "a": "mallorca_livet_2026",
+      "b": "mallorca_rantalaukut_2026",
+      "type": "sisaltaa",
+      "label": "22. syyskuuta striimatun rantapäivän aikana katosivat Sampen ja Pulliksen laukut",
+      "date": "2026-09-22",
+      "src": [
+        "P178",
+        "P264"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "sampe",
+      "b": "mallorca_rantalaukut_2026",
+      "type": "osallistui",
+      "label": "rannalta katosi Sampen laukku ja matkustusasiakirjoja",
+      "date": "2026-09-22",
+      "src": [
+        "P178",
+        "P264"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pullis",
+      "b": "mallorca_rantalaukut_2026",
+      "type": "osallistui",
+      "label": "Pullis kertoi laukustaan ja kadonneista matkustusasiakirjoista rannalla",
+      "date": "2026-09-22",
+      "src": [
+        "P178",
+        "P265"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "chiara",
+      "b": "mallorca_rantalaukut_2026",
+      "type": "osallistui",
+      "label": "oli muun seurueen kanssa rannalla laukkujen katoamisen aikaan",
+      "date": "2026-09-22",
+      "src": [
+        "P178"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "megis",
+      "b": "mallorca_rantalaukut_2026",
+      "type": "osallistui",
+      "label": "oli seurueen kanssa Mallorcan rantapäivänä",
+      "date": "2026-09-22",
+      "src": [
+        "P178"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "heiskari",
+      "b": "heiskari_julia_spuke_2026",
+      "type": "esiintyi",
+      "label": "pukeutui suorassa Kick-lähetyksessään Pottukoiraksi",
+      "date": "2026-10",
+      "src": [
+        "P266",
+        "P13"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "julwill",
+      "b": "heiskari_julia_spuke_2026",
+      "type": "esiintyi",
+      "label": "esiintyi samassa lähetyksessä Spuke-koiraksi pukeutuneena",
+      "date": "2026-10",
+      "src": [
+        "P266",
+        "P13"
+      ],
+      "level": "reported"
     }
   ],
   "sources": {
@@ -9978,6 +10092,21 @@
       "label": "Seiska 28.6.2026: Pottukoiran työ ja elämä Virossa",
       "url": "https://www.seiska.fi/vain-seiskassa/pottukoiran-erikoishaastattelu-avoin-tilitys-alkoholista-ja-haasteista/2181447",
       "note": "Henkilöhaastattelu striimausurasta, aiemmista kalastusvideoista ja markkinointityöstä, muutosta Hüüruun 2024."
+    },
+    "P264": {
+      "label": "Reddit 22.9.2026: Pulliksen ja Sampen tavarat vietiin rannalta",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1wn9trj/pulliksen_ja_sampen_kamat_p%C3%B6llitty/",
+      "note": "Samana päivänä julkaistun videoketjun otsikko ja keskustelu kuvaavat kadonneita rantalaukkuja, passeja ja seurueen ensimmäisiä etsintöjä."
+    },
+    "P265": {
+      "label": "Reddit 22.9.2026: Mallorca, uinti ennen laukkujen katoamista",
+      "url": "https://www.reddit.com/r/snappisensuroimat0n/comments/1wndd6g/selfiekepit_uimassa_hetki_ennen_katastrofia_very/",
+      "note": "Samana päivän julkaistu klippi rannalla uimisesta ja kadonneista laukuista."
+    },
+    "P266": {
+      "label": "Gekkonen 31.10.2026: Kristian Heiskarin ja Julia Willmanin Halloween-asut",
+      "url": "https://gekkonen.net/tosi-tv-tahti-pukeutui-pottukoiraksi-katso-julkkisten-hurjat-ja-hulvattomat-halloween-asut/",
+      "note": "Kick-lähetyksestä otetussa kuvassa Heiskari Pottukoira-asussa ja Julia Spuke-koiraksi pukeutuneena; lähteenä myös Seiska 31.10.2026."
     }
   },
   "date": "2026-11-01"
