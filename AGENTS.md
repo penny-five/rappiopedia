@@ -31,6 +31,12 @@
 7. Älä julkaise yksityisosoitteita, ei-julkisia henkilötietoja tai tunnistamattomien henkilöiden identiteettiarvauksia. Vältä perusteettomia rikosväitteitä.
 8. Kuvissa käytä tunnistettuja, oikein lisensoituja tai luvallisia kuvia ja atribuutioita; ei tekoälyn keksimiä tunnistettavaksi väitettyjä kasvokuvia.
 
+## Tutkimuksen käytännön työskentelytapa
+- Lue aina [docs/RESEARCH_PLAYBOOK.md](docs/RESEARCH_PLAYBOOK.md) ennen laajaa lähdekartoitusta. Se sisältää todellisessa työssä toimineet parihaku-, stream-arkisto-, foorumi- ja lähde-eheysmenetelmät.
+- Merkitse uusia löytöjä ja avoimia tarkistuksia [docs/RESEARCH_LOG.md](docs/RESEARCH_LOG.md) -lokiin.
+- Etsi kytkentöjä tapahtumasolmujen kautta: "X osallistui ohjelmaan" ja "X vieraili toisen lähetyksessä" ovat eri reunat.
+- Jokaiselle lähde-ID:lle on kirjattava URL ja tarkkaan rajattu väite. Älä muuta viite-ID:n merkitystä vanhoille artikkeleille.
+
 ## Implementation
 - Säilytä vakaat solmu-ID:t: artikkelilinkit ja URL-hashit käyttävät niitä.
 - Älä korvaa 3D-karttaa 2D-luettelolla. Orbit/pan/zoom ja visuaalinen hierarkia ovat tuotteen ydin.
