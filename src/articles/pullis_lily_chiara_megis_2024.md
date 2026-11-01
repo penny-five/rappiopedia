@@ -2,4 +2,4 @@
 
 ## Samassa suorassa lähetyksessä
 
-Ketjuun liitettiin lähetyskatkelmia ja kommentteja osallistujista. Julkaisun päivämäärä ei yksin varmista lähetyksen tarkkaa aloitusaikaa. Lily ja Pullis tekivät myöhemmin myös [[lily_pullis_viro_2025|yhteislähetyksiä Virossa]] helmikuussa 2025. [@P208] [@P207]
+Ketjuun liitettiin lähetyskatkelmia ja kommentteja osallistujista. Myöhemmin [[lily|Lily]] ja [[pullis|Pullis]] tekivät [[lily_pullis_viro_2025|yhteisiä lähetyksiä Virossa]] helmikuussa 2025. [@P208] [@P207]
