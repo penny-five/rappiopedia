@@ -1,11 +1,17 @@
-**Mea Ainasoja**, joka tunnettiin aiemmin nimellä **Alisa Ainasoja**, on suomalainen somepersoona, joka nousi osaksi [[bamat|Bämät matkoilla]] -striimiprojektia syksyllä 2026. Sosiaalisen median keskusteluissa hänestä käytettiin vielä Alisa-nimeä, kun taas marraskuun 2026 uutisoinnissa häntä kutsuttiin Mea Ainasojaksi. [@P106] [@P103]
+**Mea Ainasoja**, aiemmin **Alisa Ainasoja**, on suomalainen TikTokista ja muista somekanavista tunnettu sisällöntuottaja. Hän esiintyi syksyllä 2026 [[ruusu|Pinja Ruusutossun]] kanssa [[bamat|Bämät matkoilla]] -nimisessä Kick-realityprojektissa. [@P106] [@P103]
 
-## Nimenmuutos ja somesisällöt
+## Varhaiset TikTok-lähetykset
 
-Syyskuussa 2026 sosiaalisen median keskusteluissa kiinnitettiin huomiota siihen, että Alisa Ainasoja alkoi käyttää Mea-nimeä. Nimenmuutoksesta ja sen taustasta käytiin paljon keskustelua muun muassa Redditissä. [@P106]
+Ainasoja tuli tunnetuksi jo ennen Kick-aikaa TikTokin live-lähetyksistä sekä oman arjen ja kuulumisten jakamisesta. Hänen videoistaan keskusteltiin esimerkiksi suomalaisissa Snappijuorut- ja TikTok-aiheisissa verkkoyhteisöissä vuosina 2023–2025.
 
-## Bämät matkoilla Nizzassa
+## Mea-nimen käyttöönotto
 
-Ainasoja ja [[ruusu|Pinja Ruusutossu]] aloittivat lokakuussa 2026 [[bamat_nizza_2026|Nizzassa kuvatun]] Kick-realityprojektin, jonka sisältöön kuului matkan ja haasteiden suoratoistoa. Mukana kuvauksissa oli myös [[jethro|Jethro Rostedt]] ja muuta kuvausryhmää. [@P103]
+Syyskuussa 2026 Ainasoja alkoi käyttää julkisesti Mea-nimeä. Muutos huomattiin sosiaalisessa mediassa 21. syyskuuta, ja lokakuun lopun uutisoinnissa häneen viitattiin jo Mea Ainasojana. [@P106] [@P103]
 
-Matkan suunnitelmista keskusteltiin jo ennen lähtöä Redditissä. Marraskuun alussa Como kertoi Ruusutossun ja Ainasojan välirikon näkyneen ohjelman lähetyksissä. [@P65] [@P103]
+## Bämät matkoilla ja PactTalks
+
+Ainasojan ja Pinja Ruusutossun [[bamat|Bämät matkoilla]] -projekti esiteltiin syksyllä [[talks|PactTalksin]] lähetyksissä. Lokakuun lopussa he lähtivät [[bamat_nizza_2026|Nizzaan]] Ranskaan. Heidän mukanaan oli kuvausryhmä, ja ohjelmaan osallistui myös [[jethro|Jethro Rostedt]]. [@P19] [@P103]
+
+## Nizzan matkan tapahtumat
+
+Como kertoi 1. marraskuuta 2026 ohjelmassa näkyneistä erimielisyyksistä. Lokakuun 31. päivän lähetyksessä Ruusutossu poistui kesken illan kuvausryhmän luota, minkä jälkeen Ainasoja ja Rostedt jatkoivat ohjelman tehtäviä yhdessä. [@P103]
