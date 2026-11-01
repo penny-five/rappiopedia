@@ -20,7 +20,7 @@ Liimatta ei ole esiintynyt ainoastaan Pottukoiran kanssa. Marraskuun 2025 uutisi
 
 ## Yhteisstriimi Chiaran ja Megiksen kanssa heinäkuussa 2026
 
-Heinäkuun 5. päivänä 2026 Redditissä julkaistiin videokatkelma, jossa Pirkkis esiintyi [[chiara|Chiara Eklundin]] ja [[megis|Megarokkistaran]] seurassa suorassa lähetyksessä. Kohtaamisesta on [[pirkkis_chiara_megis_2026|oma artikkelinsa]]. Keskustelussa kiisteltiin siitä, oliko kyse ensimmäisestä tapaamisesta, eikä asia selviä käytettävissä olevasta katkelmasta. [@P203]
+Heinäkuun 5. päivänä 2026 Redditissä julkaistiin videokatkelma, jossa Pirkkis esiintyi [[chiara|Chiara Eklundin]] ja [[megis|Megarokkistaran]] seurassa suorassa lähetyksessä. [[pirkkis_chiara_megis_2026|Lähetyksestä]] keskusteltiin Redditissä myös siksi, että osa katsojista piti kohtaamista kolmikon ensitapaamisena, kun taas toiset kiistivät tämän. [@P203]
 
 ## Väkivaltatilanne suorassa lähetyksessä toukokuussa 2026
 
@@ -32,7 +32,7 @@ Gekkonen uutisoi 22. toukokuuta 2026, että Pirkkikseen oli kohdistunut väkival
 
 ## Matka Ateenaan ja katoaminen 2025
 
-Marraskuussa 2025 Pirkkis matkusti [[sampe|SampeF2:n]] kanssa Ateenaan. Häneen ei saatu yhteyttä 8. marraskuuta lähtien, ja Sampe julkaisi videoita etsinnöistä. Seiska kertoi 10. marraskuuta, että Pirkkis oli löytynyt; Sampen mukaan Kreikan poliisi oli ottanut hänet kiinni jo kaksi päivää aiemmin. Matkan aikana keskusteltiin myös Pirkkiksen passia koskeneesta väitteestä. Tapahtumista kerrotaan tarkemmin [[ateena25|Ateenan-matkan artikkelissa]]. [@P50] [@P49]
+Marraskuussa 2025 Pirkkis matkusti [[sampe|SampeF2:n]] kanssa Ateenaan. Häneen ei saatu yhteyttä 8. marraskuuta lähtien, ja Sampe julkaisi videoita etsinnöistä. Seiska kertoi 10. marraskuuta, että Pirkkis oli löytynyt; Sampen mukaan Kreikan poliisi oli ottanut hänet kiinni jo kaksi päivää aiemmin. Matkan aikana keskusteltiin myös Pirkkiksen passia koskeneesta väitteestä. Pirkkiksen [[ateena25|Ateenan-matka]] nousi laajaan julkisuuteen, kun Sampe yritti löytää kadonneen matkaseuransa suoratoistossa. [@P50] [@P49]
 
 Gekkosen 11. marraskuuta julkaisemassa jatkouutisessa kerrottiin, että [[sampe|SampeF2]] nouti Pirkkiksen poliisin luota ja että tämä oli käynyt lyhyessä oikeudenkäynnissä. Pirkkis kertoi omassa striimissään kiinnioton liittyneen toisen henkilön puhelimesta syntyneeseen väärinkäsitykseen. [@P74]
 
