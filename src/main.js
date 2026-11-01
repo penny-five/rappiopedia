@@ -12,6 +12,7 @@ import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierar
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
 import { searchNodes, searchSuggestionMarkup } from './lib/search.js';
+import { routeCandidateEntries, resolveRouteTarget } from './lib/route-candidates.js';
 import { OVERVIEW_CAMERA, nodeIdFromHash } from './lib/navigation.js';
 
 const N=DATA.nodes,E=DATA.edges,S=DATA.sources,by=Object.fromEntries(N.map(n=>[n.id,n]));
@@ -534,7 +535,7 @@ function renderCategoryFilters(){
  box.innerHTML=NODE_CATEGORY_FILTERS.map(({id,label})=>`<label class="category-option"><input type="checkbox" data-category="${id}" ${enabledCategories.has(id)?'checked':''}><span class="category-label">${label}</span><span class="category-number">${categoryTotals[id]}</span></label>`).join('');
  document.getElementById('toggleCategories').disabled=enabledCategories.size===NODE_CATEGORY_FILTERS.length;
  const chosenCount=N.filter(n=>categoryEnabled(n,enabledCategories)).length;
- document.getElementById('categoryCount').textContent=`${chosenCount} / ${N.length} kohdetta valittu`;
+ document.getElementById('categoryCount').textContent=`${chosenCount} kohdetta valittu`;
 }
 function categoriesChanged(){
  if(!pathNodes.length&&selected&&!categoryEnabled(by[selected],enabledCategories))clearSelection();
@@ -692,23 +693,16 @@ for(const button of document.querySelectorAll('#movementPad [data-move-key]')){
 };
 const routeTargets=new Map();
 function fillPathCandidates(){
- const nameCounts=new Map();
- for(const n of N){
-  const key=n.name.trim().toLocaleLowerCase('fi');
-  nameCounts.set(key,(nameCounts.get(key)||0)+1);
- }
  routeTargets.clear();
- const sorted=N.slice().sort((a,b)=>a.name.localeCompare(b.name,'fi'));
- document.getElementById('routeCandidates').innerHTML=sorted.map(n=>{
-  const duplicate=nameCounts.get(n.name.trim().toLocaleLowerCase('fi'))>1;
-  const displayName=duplicate?`${n.name} (${n.id})`:n.name;
-  routeTargets.set(displayName.trim().toLocaleLowerCase('fi'),n.id);
-  return `<option value="${esc(displayName)}" label="${esc(formatNodeTypes(n,ENTITY_TYPES))}"></option>`;
+ const candidates=routeCandidateEntries(N);
+ document.getElementById('routeCandidates').innerHTML=candidates.map(candidate=>{
+  routeTargets.set(candidate.displayName.trim().toLocaleLowerCase('fi'),candidate.id);
+  return `<option value="${esc(candidate.displayName)}" label="${esc(formatNodeTypes(by[candidate.id],ENTITY_TYPES))}"></option>`;
  }).join('');
  document.getElementById('pathresult').textContent='Valitse kaksi kohdetta ja näytä niiden yhteys.';
 }
 function selectedRouteTarget(field){
- return routeTargets.get(document.getElementById(field).value.trim().toLocaleLowerCase('fi'))??null;
+ return resolveRouteTarget(document.getElementById(field).value,routeTargets);
 }
 function findRouteFromInputs(){
  const from=selectedRouteTarget('from'),to=selectedRouteTarget('to');
