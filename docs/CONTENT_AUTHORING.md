@@ -1,64 +1,107 @@
-# Rappiopedia: Content Authoring Guide
+# Sisällön lisääminen Rappiopediaan
 
-## Perusperiaate
-Rappiopedia on lähteistetty yhteysensyklopedia, Rappioverse sen tutkittava 3D-graafi. Kirjoita artikkelit neutraalisti, selkeästi ja suomeksi. Erota lähteen osoittama havainto, uutisoitu väite, oma perusteltu päätelmä ja avoin kysymys.
+Rappiopedian sisältö koostuu artikkeleista ja niiden taustalla olevasta verkostodatasta. Artikkeli kertoo aiheesta lukijalle. Verkostodata yhdistää saman henkilön, ohjelman tai tapahtuman muihin aiheisiin.
 
-## Datan lisääminen
-Muokkaa `src/data/network.json`: `nodes` sisältää kohteet, `edges` suhteet ja `sources` lähteet.
-Uusi solmu tarvitsee vakaan lyhyen `id`-tunnisteen, julkisen `name`-nimen, `group`-ryhmän, `cat`-luokan, neutraalin `note`-kuvauksen, kolmen numeron `pos3`-koordinaatit sekä `featured`-arvon.
-Suhde tarvitsee `a`, `b`, selkeän `label`-tekstin, `level`-luokituksen, `src`-lähde-ID-listan ja tarvittaessa `detail` / `date`. Älä lisää lähteetöntä suhdetta.
+## 1. Lisää tai päivitä solmu
 
-## Artikkelit
-Artikkelit ovat muotoa `src/articles/<id>.md`. Sama `id` kuin solmulla. Tuki: toisen ja kolmannen tason otsikot (`##`, `###`), kappaleet, **lihavoitu**, *kursivoitu*, listat ja lainauslohkot.
-- `[[jethro|Jethro Rostedt]]` linkittää toiseen solmuun.
-- `[@P6]` on lähdeviite, jonka URL ja nimi löytyvät `network.json`-tiedoston `sources`-osiosta.
-- HTML, ulkopuoliset Markdown-linkit ja scriptit eivät ole tuettuja artikkelisisällössä.
-- Muista tarkistaa että kaikki sisälinkitetyt ID:t ovat olemassa.
+Avaa [`src/data/network.json`](../src/data/network.json). Sen `nodes`-taulukossa ovat sivuston aiheet. Tarkista ensin, onko aihe jo mukana toisella nimellä.
+
+Solmun kentät:
+- `id`: pysyvä, lyhyt tunniste, esimerkiksi `jethro`
+- `name`: sivulla näkyvä nimi
+- `group`: kartan aihealue, esimerkiksi `season3` tai `rappio`
+- `cat`: aihetyyppi, esimerkiksi `person`, `show` tai `event`
+- `note`: lyhyt kuvaus kokonaisilla suomenkielisillä virkkeillä
+- `pos3`: sijainti kartalla kolmena lukuna
+- `featured`: näytetäänkö kohteen nimi kartan perustilassa
+
+Esimerkiksi `note`-kentässä kannattaa kirjoittaa ”Jethro Rostedt voitti PactHouse 3:n ja on juontanut PactTalksia.”, ei ”PactHouse 3 -voittaja; PactTalks-juontaja”.
+
+Vanhojen solmujen tunnisteita ei kannata muuttaa, koska artikkeleiden sisäiset linkit ja sivuston osoitteet käyttävät niitä.
+
+## 2. Merkitse yhteydet ja lähteet
+
+`edges`-taulukossa yksittäinen yhteys sisältää:
+- `a` ja `b`: yhteyden osapuolten solmu-ID:t
+- `label`: mitä osapuolten välillä tapahtui
+- `level`: `verified`, `reported`, `observed` tai `lead`
+- `src`: luettelo lähde-ID:istä
+- tarvittaessa `date` ja `detail`
+
+Lähteen tiedot lisätään saman tiedoston `sources`-osioon, jossa ovat lähdetunnisteet, linkit ja selitteet. Yhteyttä ei lisätä ilman lähdettä.
+
+Käytä tarkkoja suhdekuvauksia. ”Vieraili PactTalksissa 11.10.2026” kertoo enemmän kuin ”Pact-yhteys”. Jos kyse on suunnitellusta esiintymisestä, älä nimeä sitä toteutuneeksi osallistumiseksi.
+
+### Mitä näyttötaso tarkoittaa?
+
+| Taso | Milloin sitä käytetään |
+| --- | --- |
+| `verified` | Tallenne, kuva, ohjelman oma julkaisu tai muu alkuperäinen aineisto osoittaa kyseisen tapahtuman |
+| `reported` | Tapahtuma on kerrottu uutisessa, haastattelussa tai yksilöidyssä ensikäden havainnossa |
+| `observed` | Julkisista tiedoista tehdään perusteltu havainto tai tulkinta, esimerkiksi lähetysotsikoissa toistuvasta tunnisteesta |
+| `lead` | Kyse on vielä selvittämättömästä, ristiriitaisesta tai välillisestä tiedosta |
+
+Myös Reddit- ja Ylilauta-ketjut voivat olla lähteitä. Linkitä täsmällinen keskustelu ja kuvaa, mitä siinä kerrotaan. Esimerkiksi käyttäjien kuvaama yhteinen matka voidaan kirjata raportoituna tapahtumana ilman virallisia matkustusasiakirjoja. Jos ketjussa vain arvaillaan, merkitse tieto sen mukaisesti.
+
+## 3. Kirjoita artikkeli
+
+Artikkeli tallennetaan tiedostoon `src/articles/<id>.md`. Tiedostonimen pitää vastata solmun tunnistetta.
+
+Aloita kertomalla, kuka henkilö on tai mitä ohjelmaa tai tapahtumaa artikkeli käsittelee. Jatka aiheen mukaan: tausta, tuotannot, osallistumiset, tapahtumat ja muu oleellinen historia. Käytä otsikoita silloin, kun niistä on lukijalle hyötyä.
+
+Kirjoita proosaa, älä hakukoneelle tehtyä avainsanalistaa. Vältä fraaseja kuten ”dokumentoidut yhteydet”, ”verkostosilta”, ”konteksti”, ”tulkinnan rajat” ja samanlaista automaattista huomautusta jokaisen artikkelin lopussa. Jos jokin yksittäinen tieto on epävarma, kerro se kyseisen tiedon yhteydessä.
 
 Esimerkki:
 
 ```md
-## Yhteenveto
-**PactHouse 3** kuului [[pact|PACT]]-ohjelmaperheeseen. [@P0]
+## PactHouse 3
 
-## Dokumentoidut yhteydet
-- [[jethro|Jethro Rostedt]] — voittaja. [@P6]
-- [[talks|PactTalks]] — sama ohjelmabrändi. [@P7]
+PactHouse 3 järjestettiin Kreikassa toukokuussa 2026.
+Kauden voitti [[jethro|Jethro Rostedt]]. [@P6]
 
-## Avoimet kysymykset
-> Ohjelmayhteys ei osoita yhteistä omistusta.
+## Osallistujat
+
+Ohjelmassa olivat mukana muun muassa [[amanda|Amanda Harkimo]]
+ja [[heiskari|Kristian Heiskari]]. [@P0]
 ```
 
-## Evidenssiluokat: lähde voi olla myös foorumi
+Sivusto tukee `##`- ja `###`-otsikoita, kappaleita, luetteloita, **lihavoitua** ja *kursivoitua* tekstiä sekä lainauksia. Viittaustavat ovat:
 
-**Ylilauta, Reddit ja muut julkiset foorumit hyväksytään itsenäisiksi lähteiksi.** Rappiopedia kartoittaa muun muassa striimejä, matkaseurueita, esiintymisiä ja skenen sisäisiä tapahtumia. Niistä ei yleensä ole matkustusasiakirjoja, rekisterimerkintöjä eikä journalistisia uutisia, eikä niitä tarvitse vaatia. Merkitse kuitenkin selvästi, *mitä lähde kertoo*.
+- `[[pottu|Pottukoira]]` — linkki toiselle Rappiopedian sivulle
+- `[@P53]` — lähdeviite `network.json`-tiedoston `sources`-osioon
 
-| Luokka | Todistusaineiston laatu | Esimerkki |
-|---|---|---|
-| `verified` | Alkuperäinen tarkistettava kuva, video, striimitallenne, virallinen julkaisu tai muu väitteen suoraan näyttävä aineisto — myös foorumilla julkaistuna | "Videolla X ja Y esiintyvät yhdessä." |
-| `reported` | Yksilöity ensi käden kuvaus, uskottava silminnäkijäraportti tai useita aidosti riippumattomia yhtäpitäviä kuvauksia; myös foorumilta | "Ylilaudan ketjun mukaan X ja Y olivat samalla reissulla." |
-| `observed` | Julkisesta sisällöstä nähty signaali ja siitä tehty perusteltu päätelmä, esim. usean striimin sponsori-/affiliate-tunniste | "Toistuva !kasinokurki viittaa vahvasti kaupalliseen yhteistyöhön." |
-| `lead` | Yksittäinen epämääräinen huhu, nimettömän kirjoittajan spekulaatio, kiistetty tai keskenään ristiriitainen tieto | "Yksittäinen kommentoija arveli X:n järjestäneen matkan." |
+Tavallisia Markdown-linkkejä ja HTML-koodia ei voi käyttää artikkelisisällössä. Tarkista, että artikkelin viittaamat solmut ja lähteet ovat olemassa.
 
-### Foorumilähteen arviointi käytännössä
+Artikkelittomille solmuille näytetään `note`-tekstin ja yhteystietojen pohjalta koottu perusteksti. Siksi myös lyhyen kuvauksen pitää olla luettava.
 
-1. Linkitä **yksilöity ketju tai kommentti** lähdearkistoon, kirjaa päiväys ja väitteen sisältö. Alkuperäinen kuva tai klippi kannattaa linkittää rinnalle, jos se on saatavilla.
-2. Arvioi, kirjoittaako käyttäjä **omista havainnoistaan vai toistaako hän kuulemaansa**. Ajankohtainen, yksityiskohtainen ja helposti tarkistettava havainto voi riittää vähäriskisen suhteen merkitsemiseen.
-3. Useamman käyttäjän toisistaan riippumattomat yhtenevät kertomukset lisäävät näyttöä. Pelkkä kommenttien määrä tai huhun lainaaminen ei tuo riippumatonta vahvistusta.
-4. Tavallisen matkustamisen, ohjelmavierailun ja yhteislähetyksen voi merkitä `reported`-tasolle foorumin perusteella. Ilmaise lähde tekstissä, älä kirjoita varmentamatonta havaintoa absoluuttisena faktana.
-5. **Älä vaadi matkustusasiakirjoja** tai muita epärealistisia dokumentteja. Vakaviin rikos-, väkivalta-, hyväksikäyttö- tai petosväitteisiin tarvitaan huomattavasti vahvempi näyttö ja huolellinen attribuutio; pelkkä foorumihuhu ei riitä.
+## 4. Kuvat
 
-Esimerkiksi **Upin, Pirkkiksen ja Taigan Amsterdamin-matkaa** koskevan ketjun voi merkitä tapahtuman lähteeksi ja tarvittaessa `reported`-tasolle, jos keskustelu sisältää tunnistettavia, ajankohtaisia ensi käden kertomuksia. Jos kyse on vain yhden kommentoijan arvauksesta, käytä `lead`-tasoa. Tapahtumaa ei tarvitse todistaa lentolipulla.
+Kuvia voi käsitellä skriptillä `scripts/process_images.py`. Se muuntaa lähdekuvat pieniksi WebP-tiedostoiksi `public/images/`-hakemistoon ja voi päivittää kuvatiedoston polun verkostodataan.
 
-## Kuvien käsittely
-Kuvat kuuluvat Rappiopedian omaan tiedostorakenteeseen, eivät suoraan ulkoisten palvelimien URL-osoitteisiin. Hae kuvat ensin paikalliseen lähdekuvakansioon, aja projektin kuvamankeli ja käytä graafissa tuloksena syntyviä optimoituja kuvia. `node.image` osoittaa paikalliseen assettiin, esimerkiksi `images/pottu.webp`. Kokoa henkilöt, tapahtumat ja ohjelmat samaan käsittelyputkeen; kuvaa ei tarvitse käsitellä käsin jokaisella lisäyskerralla.
+Asenna ensin Pillow ja käsittele paikalliset kuvat:
 
-## Tiedonhankinnan toistettava työprosessi
-Laajemmat käytännöt ovat [Research Playbookissa](RESEARCH_PLAYBOOK.md). Uusi tutkimushaara aloitetaan nimeämällä **kaksi tutkittavaa sektoria**, etsimällä niiden väliin sopivaa tapahtumaa tai henkilöä ja kirjaamalla haussa käytetyt nimialiakset. Lähetysmetadatasta tarkistetaan vieraat ja päivät. Foorumien ajankohtaisista kommenteista saadaan osallistujien kertomukset; kummallakaan lähdetyypillä ei yksin päätellä yksityisiä sopimuksia. Kirjaa myös mikä ei auennut tai mitä ei löytynyt.
+```sh
+python -m pip install Pillow
+python scripts/process_images.py --update-data
+```
 
-## Tarkistuslista
-- Identiteetti (esim. Ruusutossu) ja ohjelmakausi täsmäävät.
-- Yhteys ja lähde kuvaavat samaa tapahtumaa.
-- Sisälinkit ja lähdekoodit löytyvät datasta.
-- Epävarmat asiat on attribuoitu eikä ketään syyllistetä niiden perusteella.
-- `npm test`, `npm run build`, ja Actions-tarkistus onnistuvat ennen julkaisuilmoitusta.
+Alkuperäiset tiedostot löytyvät kansiosta `assets/source-images/`, nimettyinä solmu-ID:n mukaan. Jos `image`-kentässä on ladattava verkko-osoite, skripti voi myös hakea sen:
+
+```sh
+python scripts/process_images.py --download --update-data
+```
+
+Näin julkaistavaan sivustoon ei tarvitse lisätä suuria alkuperäiskuvia. Käsittelyn epäonnistuessa skripti ilmoittaa virheestä ja säilyttää verkko-osoitteen `imageSource`-kentässä myöhempää yritystä varten.
+
+## 5. Tarkista muutos
+
+Suorita projektin juuressa:
+
+```sh
+npm test
+npm run build
+```
+
+Katso lisäksi itse, että teksti on luontevaa suomea, nimet ja päivät pitävät paikkansa, linkit vievät oikeisiin aiheisiin ja lähteet tukevat niitä väitteitä, joiden perässä ne ovat.
+
+Laajempaa lähteiden etsimistä varten on [tutkimusopas](RESEARCH_PLAYBOOK.md). Kesken jääneet tarkistukset voi kirjata [tutkimuslokiin](RESEARCH_LOG.md).
