@@ -1,7 +1,11 @@
-**Mallorcan yhteisstriimit** olivat syyskuussa 2026 Espanjan Mallorcalla tehtyjä lähetyksiä. Katsojien aikalaiskertomuksissa seurueeseen kuuluivat [[sampe|SampeF2]], [[pullis|Pullis]], [[megis|Megarokkistara]] ja [[chiara|Chiara Eklund]]. [@P178]
+**Mallorcan yhteisstriimit** olivat syyskuussa 2026 Espanjan Mallorcalla tehtyjä IRL-lähetyksiä. Mukana olivat [[sampe|SampeF2]], [[pullis|Pullis]], [[megis|Megarokkistara]] eli Juulia Valikainen ja [[chiara|Chiara Eklund]]. Katsojat seurasivat seurueen yhteistä matkaa useiden tekijöiden kanavilla. [@P178]
 
 ## Rantapäivä 22. syyskuuta
 
-Redditissä keskusteltiin Sampen ja Pulliksen rannalla kadonneista laukuista. Livejä katsoneiden mukaan Sampe, Pullis ja Chiara olivat olleet uimassa, kun Megis ja Jennifer olivat hieman kauempana rannalla. [@P178]
+Matkan aikana seurue vietti päivän Mallorcan rannalla. Sampe, Pullis ja Chiara olivat uimassa, kun Megis ja Jennifer-niminen matkaseurueen jäsen olivat kauempana omien tavaroidensa luona. Rannalla huomattiin myöhemmin, että Sampen ja Pulliksen laukut olivat kadonneet. Lähetyksissä kerrottiin myös laukkujen mukana menneistä passeista ja muusta omaisuudesta. [@P178] [@P264] [@P265]
 
-Samoihin striimipiireihin kuuluneet tekijät esiintyivät yhdessä jo [[mokkistriimit_july_2026|heinäkuun mökkireissulla]]. [@P174]
+Kaksikko ja muut seurueen jäsenet etsivät laukkuja rannalta ja kävivät katsojien mukaan myös poliisiasemalla. [[mallorca_rantalaukut_2026|Laukkujen katoaminen]] nousi yhdeksi syyskuun matkan seuratuimmista tapahtumista. [@P178] [@P264]
+
+## Aiemmat yhteisstriimit
+
+Sampe, Pullis, Megis ja Chiara olivat esiintyneet samassa seurueessa myös [[mokkistriimit_july_2026|heinäkuun mökkistriimeissä]], joissa mukana oli lisäksi [[julwill|Julia Willman]]. Julia Willman ja Juulia ”Megis” Valikainen ovat eri henkilöitä: heinäkuun mökkimatkalla oli mukana molemmat, mutta Mallorcan syyskuun seurueeseen Julia Willmania ei näissä lähteissä nimetä. [@P174] [@P178]
