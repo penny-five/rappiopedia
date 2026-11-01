@@ -322,7 +322,7 @@ test('all-space navigation is styled separately and the sidebar remains wider wh
  const css=readFileSync(new URL('../src/styles.css',import.meta.url),'utf8');
  assert.match(main,/class="sector-overview/);
  assert.match(main,/data-sector="all"/);
- assert.match(main,/Palauta yleisnäkymä/);
+ assert.match(main,/Palaa yleisnäkymään/);
  assert.match(main,/aria-pressed="/);
  assert.match(css,/\.sector-overview\.active\{/);
  assert.match(css,/\.sector-overview \.overview-icon svg/);
