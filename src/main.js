@@ -591,7 +591,8 @@ space.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;if
 document.getElementById('zoomIn').onclick=()=>dist=Math.max(450,dist*.75);document.getElementById('zoomOut').onclick=()=>dist=Math.min(12000,dist*1.32);document.getElementById('home').onclick=reset;document.getElementById('reset').onclick=reset;document.getElementById('clearSelection').onclick=clearSelection;
 document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightpanel').classList.remove('mobileopen');document.getElementById('leftpanel').classList.toggle('mobileopen')};document.getElementById('rightmenu').onclick=()=>{document.getElementById('leftpanel').classList.remove('mobileopen');document.getElementById('rightpanel').classList.toggle('mobileopen')};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderModes();
 function openUrlNode(){
- const id=decodeURIComponent(location.hash.replace(/^#\/node\//,''));
+ const originalId=decodeURIComponent(location.hash.replace(/^#\/node\//,''));
+ const id=originalId==='okkishow'?'joachim':originalId;
  if(by[id]){selected=id;target=vec(...by[id].pos3);dist=1550;showDetails(id)}else if(location.hash==='#/'){selected=null;showEmptyDetails()}else{showDetails('pact')}
 }
 window.addEventListener('popstate',openUrlNode);

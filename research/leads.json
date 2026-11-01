@@ -349,6 +349,50 @@
         "Selvitä tapahtuman video-/Kick-tallenne ja mahdollinen julkinen järjestäjä.",
         "Päivitä asian lopputulos vasta lähteiden ilmaantuessa."
       ]
+    },
+    {
+      "id": "pact-programmes-2025-2026-expanded",
+      "title": "PACTin kaudet, juontajat ja PactTalksin jaksoarkisto",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "pact",
+        "s2",
+        "s3",
+        "talks",
+        "joachim",
+        "mini_pact_2026",
+        "jethro",
+        "pasi"
+      ],
+      "sourceIds": [
+        "P7",
+        "P19",
+        "P42",
+        "P108",
+        "P109",
+        "P111",
+        "P112",
+        "P115"
+      ],
+      "notes": "1.11.2026: PactHouse 2:n 1.–3. sijat kirjattu, PactHouse 3:n Elmerin poistaminen ja Harri Eskolan toinen sija lisätty. Okkishow vahvistettu Joachim Rostedtiksi. PactTalks-arkistosta 1, 20, 80–83 ja 84 löydetty uusia vieraita/juontajia. Jaksojen otsikot eivät yksin paljasta haastattelujen tarkkaa sisältöä.",
+      "questions": [
+        "Ketkä olivat PactHouse 3:n muut finalistit ja missä järjestyksessä putoamiset tapahtuivat?",
+        "Kuka oli Mini PactHousen toinen yhteisvoittaja?",
+        "Mitä PactTalksin jaksoissa 1, 20 ja 80–83 todella keskusteltiin?",
+        "Mikä on PactTalksin loppuvuoden 2026 alkuperäis-VOD:ien pysyvä osoite?"
+      ],
+      "queries": [
+        "\"PactHouse 3\" finaali kilpailijat poistumiset toukokuu 2026",
+        "\"Mini PactHouse\" kaksi voittajaa maaliskuu 2026",
+        "site:kick.com/pact/videos \"PactTalks\""
+      ],
+      "nextSteps": [
+        "Tarkista PactHouse 3:n pudotukset alkuperäisistä koosteista tai videoista.",
+        "Tunnista Mini PactHousen toinen voittaja ensikäden lähteellä.",
+        "Katso PactTalksin yksittäiset VOD:t ja lisää asiallisia sisältöyhteyksiä, jos aihetta."
+      ],
+      "updatedAt": "2026-11-01"
     }
   ]
 }

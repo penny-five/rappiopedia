@@ -210,5 +210,13 @@
   "menehtyi": {
     "forward": "menehtyi",
     "reverse": "menehtynyt henkilö"
+  },
+  "poistettiin-tuotannosta": {
+    "forward": "poistettiin tuotannosta",
+    "reverse": "tuotannosta poistettiin"
+  },
+  "sijoittui-toiseksi": {
+    "forward": "sijoittui toiseksi",
+    "reverse": "toiseksi sijoittui"
   }
 }

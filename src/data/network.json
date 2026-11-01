@@ -5,7 +5,7 @@
       "name": "PACT / PactHouse",
       "group": "core",
       "cat": "show",
-      "note": "PACT on suomalainen Kickissä esitettävä suoratoistoviihteen ohjelmakokonaisuus, johon kuuluvat PactHouse-kaudet ja PactTalks.",
+      "note": "PACT on suomalainen suoratoistoviihteen ohjelmaperhe, johon kuuluvat PactHouse-kilpailut, Mini PactHouse ja PactTalks-keskusteluohjelma.",
       "x": 2080,
       "y": 170,
       "image": "images/pact.webp",
@@ -80,7 +80,7 @@
       "name": "PactHouse 2",
       "group": "season2",
       "cat": "show",
-      "note": "PactHouse 2 järjestettiin Marbellassa 1.–7. joulukuuta 2025. Kauden voitti Ilari Sahamies.",
+      "note": "PactHouse 2 järjestettiin Marbellassa 1.–7. joulukuuta 2025. Ilari Sahamies voitti, Isabell Jansson oli toinen ja Joachim ”Okkishow” Rostedt kolmas.",
       "x": 1500,
       "y": 520,
       "pos3": [
@@ -98,7 +98,7 @@
       "name": "PactHouse 3",
       "group": "season3",
       "cat": "show",
-      "note": "PactHouse 3 järjestettiin Kreikassa 1.–10. toukokuuta 2026. Kauden voitti Jethro Rostedt.",
+      "note": "PactHouse 3 järjestettiin Ateenassa 1.–10.5.2026. Kauden juonsivat Renne Korppila ja Teemu Potapoff. Jethro Rostedt voitti kilpailun ja Harri Eskola sijoittui toiseksi.",
       "x": 2590,
       "y": 455,
       "pos3": [
@@ -116,7 +116,7 @@
       "name": "PactTalks",
       "group": "talks",
       "cat": "show",
-      "note": "PactTalks on PACTin Kick-kanavalla julkaistava keskusteluohjelma, jonka vieraana on käynyt suomalaisia netti- ja viihdealan henkilöitä.",
+      "note": "PactTalks on heinäkuussa 2026 alkanut PACTin Kick-keskusteluohjelma. Pääjuontajana on toiminut Jethro Rostedt; ohjelmassa on nähty myös muita juontajia ja laaja vierasjoukko.",
       "x": 3650,
       "y": 380,
       "pos3": [
@@ -134,7 +134,7 @@
       "name": "Jethro Rostedt",
       "group": "season3",
       "cat": "person",
-      "note": "Jethro Rostedt voitti PactHouse 3:n ja on juontanut PactTalksia.",
+      "note": "Jethro Rostedt on suomalainen kiinteistönvälittäjä, yrittäjä ja televisiopersoona, joka voitti PactHouse 3:n ja juontaa PactTalksia.",
       "x": 2750,
       "y": 640,
       "image": "images/jethro.webp",
@@ -153,10 +153,10 @@
     },
     {
       "id": "joachim",
-      "name": "Joachim Rostedt",
+      "name": "Joachim ”Okkishow” Rostedt",
       "group": "season2",
       "cat": "person",
-      "note": "Joachim Rostedt osallistui PactHouse 2:een. Hän on Jethro Rostedtin poika.",
+      "note": "Joachim ”Okkishow” Rostedt on striimaaja, PactHouse 2:n kolmanneksi sijoittunut kilpailija, Mini PactHousen yhteisvoittaja ja PactTalksin juontaja.",
       "x": 1690,
       "y": 760,
       "pos3": [
@@ -166,6 +166,8 @@
       ],
       "featured": true,
       "types": [
+        "striimaaja",
+        "juontaja",
         "tosi-tv-osallistuja"
       ]
     },
@@ -1932,22 +1934,6 @@
       ]
     },
     {
-      "id": "okkishow",
-      "name": "Okkishow",
-      "group": "talks",
-      "cat": "person",
-      "note": "Okkishow esiintyi Jethro Rostedtin rinnalla PactTalksin Pottukoira-jakson juontajana.",
-      "pos3": [
-        927,
-        761,
-        -186
-      ],
-      "featured": false,
-      "types": [
-        "juontaja"
-      ]
-    },
-    {
       "id": "ateena25",
       "name": "Pirkkis ja SampeF2 / Ateena 11.2025",
       "group": "events",
@@ -2067,7 +2053,7 @@
       "name": "Pasi Viheraho",
       "group": "talks",
       "cat": "person",
-      "note": "Pasi Viheraho on suomalainen nettiradio- ja videontekijä, joka vieraili PactTalksissa lokakuussa 2026.",
+      "note": "Pasi Viheraho on suomalainen varhaisen YouTube-julkisuuden videontekijä ja Pasiradion vuonna 2007 perustanut radiopersoona.",
       "pos3": [
         717,
         551,
@@ -2087,7 +2073,7 @@
       "name": "Pasiradio",
       "group": "media",
       "cat": "show",
-      "note": "Pasiradio on Pasi Viherahon vuonna 2007 aloittama suomalainen nettiradio.",
+      "note": "Pasiradio on Pasi Viherahon vuonna 2007 käynnistämä harrastuspohjainen internet- ja FM-radio, jossa kuullaan keskusteluja, musiikkia ja kuulijapuheluita.",
       "pos3": [
         -1189,
         -52,
@@ -2321,6 +2307,86 @@
         2460,
         -320,
         -1530
+      ],
+      "featured": false
+    },
+    {
+      "id": "mini_pact_2026",
+      "name": "Mini PactHouse (maaliskuu 2026)",
+      "group": "season2",
+      "cat": "show",
+      "types": [
+        "tuotantokausi"
+      ],
+      "note": "Mini PactHouse oli Virossa maaliskuussa 2026 järjestetty viikonlopun mittainen suoratoistoreality, jonka yhteisvoittajiin kuului Joachim Rostedt.",
+      "pos3": [
+        -2430,
+        -560,
+        85
+      ],
+      "featured": false
+    },
+    {
+      "id": "tippa_t",
+      "name": "Tippa-T",
+      "group": "talks",
+      "cat": "person",
+      "types": [
+        "rap-artisti"
+      ],
+      "note": "PactTalksin 9. heinäkuuta 2026 esitetyn avausjakson vieraaksi nimetty artisti.",
+      "pos3": [
+        1220,
+        420,
+        65
+      ],
+      "featured": false
+    },
+    {
+      "id": "cruella_johansson",
+      "name": "Cruella Johansson",
+      "group": "talks",
+      "cat": "person",
+      "types": [
+        "henkilo"
+      ],
+      "note": "PactTalksin lokakuun 2026 jaksossa 81 vieraillut henkilö.",
+      "pos3": [
+        1230,
+        310,
+        -300
+      ],
+      "featured": false
+    },
+    {
+      "id": "tuukka_kuru",
+      "name": "Tuukka Kuru",
+      "group": "talks",
+      "cat": "person",
+      "types": [
+        "henkilo"
+      ],
+      "note": "PactTalksin lokakuun 2026 jaksossa 82 vieraillut henkilö.",
+      "pos3": [
+        1310,
+        160,
+        -70
+      ],
+      "featured": false
+    },
+    {
+      "id": "jouni_honkanen",
+      "name": "Jouni ”Jones” Honkanen",
+      "group": "talks",
+      "cat": "person",
+      "types": [
+        "henkilo"
+      ],
+      "note": "PactTalksin lokakuun 2026 jaksossa 83 vieraillut henkilö.",
+      "pos3": [
+        1090,
+        -40,
+        200
       ],
       "featured": false
     }
@@ -4409,7 +4475,7 @@
       "type": "juonsi"
     },
     {
-      "a": "okkishow",
+      "a": "joachim",
       "b": "pact_pottu",
       "label": "jakson toinen juontaja",
       "level": "verified",
@@ -4954,6 +5020,152 @@
         "P102"
       ],
       "date": "2026-09-16"
+    },
+    {
+      "a": "elmer",
+      "b": "s3",
+      "type": "poistettiin-tuotannosta",
+      "label": "tuotanto poisti kilpailusta 4.5.2026",
+      "src": [
+        "P108",
+        "P113"
+      ],
+      "level": "reported",
+      "date": "2026-05-04",
+      "detail": "Tuotanto ilmoitti sääntörikkomuksesta mutta ei julkistanut poistamisen tarkkaa syytä."
+    },
+    {
+      "a": "harri",
+      "b": "s3",
+      "type": "sijoittui-toiseksi",
+      "label": "toinen sija PactHouse 3:n finaalissa",
+      "src": [
+        "P109"
+      ],
+      "level": "reported",
+      "date": "2026-05-10",
+      "detail": ""
+    },
+    {
+      "a": "joachim",
+      "b": "mini_pact_2026",
+      "type": "voitti",
+      "label": "Mini PactHouse -kilpailun yhteisvoittaja",
+      "src": [
+        "P112"
+      ],
+      "level": "reported",
+      "date": "2026-03",
+      "detail": ""
+    },
+    {
+      "a": "pact",
+      "b": "mini_pact_2026",
+      "type": "sisaltaa",
+      "label": "Mini PactHouse -reality kuuluu PACTin ohjelmakokonaisuuteen",
+      "src": [
+        "P112"
+      ],
+      "level": "reported",
+      "date": "2026-03",
+      "detail": ""
+    },
+    {
+      "a": "joachim",
+      "b": "talks",
+      "type": "juonsi",
+      "label": "juonsi heinäkuussa Jethro Rostedtin rinnalla",
+      "src": [
+        "P7",
+        "P53"
+      ],
+      "level": "verified",
+      "date": "2026-07",
+      "detail": ""
+    },
+    {
+      "a": "saini",
+      "b": "talks",
+      "type": "juonsi",
+      "label": "juonsi jakson 20, vieraana Ilari Sahamies",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-08-03",
+      "detail": ""
+    },
+    {
+      "a": "sahamies",
+      "b": "talks",
+      "type": "vieraili",
+      "label": "jakson 20 ilmoitettu vieras",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-08-03",
+      "detail": ""
+    },
+    {
+      "a": "megis",
+      "b": "talk_pasi",
+      "type": "vieraili",
+      "label": "nimetty toiseksi vieraaksi Pasi Viherahon rinnalle jaksossa 80",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-10-11",
+      "detail": ""
+    },
+    {
+      "a": "tippa_t",
+      "b": "talks",
+      "type": "vieraili",
+      "label": "jakson 1 lähetysotsikossa nimetty vieras",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-07-09",
+      "detail": ""
+    },
+    {
+      "a": "cruella_johansson",
+      "b": "talks",
+      "type": "vieraili",
+      "label": "jakson 81 lähetysotsikossa nimetty vieras",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-10-13",
+      "detail": ""
+    },
+    {
+      "a": "tuukka_kuru",
+      "b": "talks",
+      "type": "vieraili",
+      "label": "jakson 82 lähetysotsikossa nimetty vieras",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-10-14",
+      "detail": ""
+    },
+    {
+      "a": "jouni_honkanen",
+      "b": "talks",
+      "type": "vieraili",
+      "label": "jakson 83 lähetysotsikossa nimetty vieras",
+      "src": [
+        "P7"
+      ],
+      "level": "observed",
+      "date": "2026-10-15",
+      "detail": ""
     }
   ],
   "sources": {
@@ -4995,7 +5207,7 @@
     "P7": {
       "label": "KickTracker: PactTalks lähetyshistoria",
       "url": "https://kicktracker.net/pact/streams",
-      "note": "Lähetysten otsikot, päivämäärät, juontaja ja vieraat"
+      "note": "KickTrackerin Pact-kanavan lähetyshistoria: jaksojen otsikot ja ajankohdat 9.7.–31.10.2026, nimetyt vieraat sekä vaihtoehtoiset juontajat."
     },
     "P8": {
       "label": "Uuno: Ruusutossu PactTalksissa",
@@ -5055,7 +5267,7 @@
     "P19": {
       "label": "KickTracker: PactTalks jaksot",
       "url": "https://kicktracker.net/pact",
-      "note": "Jaksot 84–95 lokakuussa 2026"
+      "note": "PactTalksin lokakuun 2026 lähetysotsikot, mukana jaksot 80–98 ja niiden ilmoitetut vieraat."
     },
     "P20": {
       "label": "Reddit: Korelon & Sliki -keskustelu",
@@ -5496,6 +5708,71 @@
       "label": "Uuno 13.7.2026: Ruusutossun some- ja deittisisällöt",
       "url": "https://www.uuno.fi/haluatko-paasta-pinja-ruusutossun-kanssa-treffeille-nain-se-kay/",
       "note": "Käsittelee Ruusutossun paluuta Suomeen ja hänelle ominaista somepersoonaa, matkustusta ja julkista deittisisältöä."
+    },
+    "P108": {
+      "label": "Seiska 4.5.2026: Elmer Andberg poistettiin PactHouse 3:sta",
+      "url": "https://www.seiska.fi/kotimaa/mita-tapahtui-realitysarjan-kuvauksissa-tis-elmer-poistettiin-talosta/2142930",
+      "note": "Tuotannon päätös Elmer Andbergin poistamisesta ja päivämäärä."
+    },
+    "P109": {
+      "label": "Como 11.5.2026: PactHouse 3:n finaali ja Harri Eskola",
+      "url": "https://www.como.fi/uutiset/tassa-on-pacthouse-3n-voittaja-joka-kuittasi-50-donaa-miten-kay-rahojen/",
+      "note": "Jethro Rostedt voitti 44 prosentin ääniosuudella; Harri Eskola toinen; 50 000 euron pääpalkinto."
+    },
+    "P110": {
+      "label": "Voice.fi 11.5.2026: Jethron PactHouse-voitto 52 500 euroa",
+      "url": "https://www.voice.fi/ilmiot/jethro-rostedt-voitti-vei-kotiin-52-500-euron-potin",
+      "note": "Voice raportoi kokonaisvoittopotin nousseen 52 500 euroon."
+    },
+    "P111": {
+      "label": "Nettipokeri.com 29.3.2026: Joachim Okkishow Rostedt",
+      "url": "https://nettipokeri.com/joachim-okkishow-rostedt-julkkispeleille-isa-jetin-jalanjaljissa/",
+      "note": "Vahvistaa nimimerkin Okkishow ja Joachim Rostedtin samaksi henkilöksi, isä Jethron, PactHouse 2:n kolmannen sijan ja pokeriesiintymiset."
+    },
+    "P112": {
+      "label": "Gekkonen 12.3.2026: Joachim voitti Mini PactHousen",
+      "url": "https://gekkonen.net/jethro-rostedtin-joachim-poika-voittoon-virossa/",
+      "note": "Virossa järjestetty Mini PactHouse, kaksi yhteisvoittajaa, 5 000 euroa jaetuksi palkinnoksi."
+    },
+    "P113": {
+      "label": "Seiska 5.5.2026: Elmer Andberg kommentoi poistamista",
+      "url": "https://www.seiska.fi/kotimaa/reality-sarjasta-poistettu-tis-elmer-rikkoo-hiljaisuuden/2143245",
+      "note": "Tuotannon mukaan sääntörikkomus; poistamisen syyn yksityiskohtia ei ilmoitettu."
+    },
+    "P114": {
+      "label": "Seiska 30.7.2017: Pasi Viherahon YouTube-ura ja Pasiradio",
+      "url": "https://www.seiska.fi/kotimaa/pasi-51-oli-youtuben-ensimmaisia-suomalaisjulkkiksia-yli-43-miljoonaa-katselukertaa-video/206274",
+      "note": "Vuoden 2017 taustahaastattelu: yli 43 miljoonaa katselua, radio vuodesta 2007, tekniikka ja videot."
+    },
+    "P115": {
+      "label": "Seiska 15.10.2026: Jethron hovioikeustuomio, velat ja PactTalks",
+      "url": "https://www.seiska.fi/vain-seiskassa/jethro-rostedt-kommentoi-rikostuomiotaan-edessa-yhdyskuntapalvelu/2281844",
+      "note": "Elokuussa 2026 vahvistettu veropetostuomio, 90 tunnin yhdyskuntapalvelu, velkatilanne, kuusi PactTalks-lähetystä viikossa."
+    },
+    "P116": {
+      "label": "Otava: Jethro – Makso mitä makso (14.10.2026)",
+      "url": "https://otava.fi/kirjat/jethro-makso-mita-makso/",
+      "note": "Otavan teosesittely, julkaisupäivä 14.10.2026, Leena Ylimutka; Jethron TV-uran ja kirjan teemat."
+    },
+    "P117": {
+      "label": "Seiska 4.6.2026: PactHouse 3:n päättyminen ja seuraava kausi",
+      "url": "https://www.seiska.fi/kotimaa/pacthouseen-uudet-julkkikset-heita-katsojat-toivovat-mukaan/2172735",
+      "note": "Kolmas kausi päättyi 10.5. ja uuden kauden osallistujahaku käynnistyi."
+    },
+    "P118": {
+      "label": "Pasiradio.com: radion omat toiminta- ja lähetyskuvaukset",
+      "url": "https://www.pasiradio.com/",
+      "note": "Harrastusradio vuodesta 2007, lahjoitusrahoitus, FM-lähetykset, musiikki ja suoratoiston kuuntelu."
+    },
+    "P119": {
+      "label": "Seiska 27.7.2017: Viherahon ruoanlaitto ja elektroniikka",
+      "url": "https://www.seiska.fi/kotimaa/pystytko-katsomaan-oksentamatta-seiskan-toimittaja-testasi-youtube-tahti-pasi-viherahon-ruoat/206468",
+      "note": "Videoita tekniikasta, ruoanlaitosta ja arjesta; haastateltu 2017."
+    },
+    "P120": {
+      "label": "Gekkonen 9.12.2025: PactHouse 2 -finaalin tulokset",
+      "url": "https://gekkonen.net/stagalalla-ja-kelly-kalonjilla-sutinaa-pacthousessa/",
+      "note": "Ilari Sahamies ensimmäinen, Isabell Jansson toinen, Joachim Okkishow Rostedt kolmas. Finaali sunnuntaina 7.12.2025."
     }
   },
   "date": "2026-11-01"

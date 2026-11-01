@@ -8,7 +8,7 @@ Lokakuussa 2025 Pottukoiran luona Virossa vierailivat [[aleksi|Aleksi Nurminen]]
 
 ## PactTalks
 
-Pottukoira esiintyi vuonna 2026 [[pact_pottu|PactTalksin videotallenteessa]], jonka juontajiksi nimettiin [[jethro|Jethro Rostedt]] ja [[okkishow|Okkishow]]. [@P53]
+Pottukoira esiintyi vuonna 2026 [[pact_pottu|PactTalksin videotallenteessa]], jonka juontajiksi nimettiin [[jethro|Jethro Rostedt]] ja [[joachim|Joachim ”Okkishow” Rostedt]]. [@P53]
 
 ## Rahapelimarkkinointia koskeva tuomio
 
