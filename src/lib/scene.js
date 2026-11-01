@@ -36,5 +36,5 @@ export function cameraTravelDirection(keys, camera) {
   const y = camera.forward.y * forward + camera.right.y * right + vertical;
   const z = camera.forward.z * forward + camera.right.z * right;
   const length = Math.hypot(x, y, z);
-  return length ? { x: x / length, y: y / length, z: z / length } : { x: 0, y: 0, z: 0 };
+  return length ? { x: x / length || 0, y: y / length || 0, z: z / length || 0 } : { x: 0, y: 0, z: 0 };
 }
