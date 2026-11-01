@@ -57,11 +57,12 @@ export function renderNodeArticle({node,related,nodes,sources,levels,group,categ
   const text=articleMarkdown(node,related);
   const sourceIds=[...new Set(related.flatMap(e=>e.src))].filter(id=>sources[id]);
   const name=escapeHtml(node.name);
-  document.getElementById('dochead').innerHTML='<div class="breadcrumbs">Rappiopedia <span>›</span> '+escapeHtml(category)+' <span>›</span> '+name+'</div><h2>'+name+'</h2>';
+  const breadcrumb=['Rappiopedia',group,category,node.name].filter(Boolean).map(escapeHtml).join(' <span>›</span> ');
+  document.getElementById('dochead').innerHTML='<div class="breadcrumbs">'+breadcrumb+'</div><h2>'+name+'</h2>';
   const initials=node.name.replace(/[^\p{L}\p{N} ]/gu,' ').trim().split(/\s+/).slice(0,2).map(x=>x[0]).join('');
   const picture=node.image?'<img loading="lazy" referrerpolicy="no-referrer" alt="'+name+'" src="'+escapeHtml(node.image)+'">':'';
   const box='<div class="infobox"><div class="infobox-head">'+name+'</div><div class="infobox-media"><span>'+escapeHtml(initials)+'</span>'+picture+'</div><dl>'+
-    '<div><dt>'+(node.types?.length>1?'Tyypit':'Tyyppi')+'</dt><dd>'+escapeHtml(category)+'</dd></div><div><dt>Kokonaisuus</dt><dd>'+escapeHtml(group)+'</dd></div>'+
+    '<div><dt>'+(node.types?.length>1?'Tyypit':'Tyyppi')+'</dt><dd>'+escapeHtml(category)+'</dd></div><div><dt>Skene</dt><dd>'+escapeHtml(group)+'</dd></div>'+
     '<div><dt>Yhteyksiä</dt><dd>'+related.length+'</dd></div><div><dt>Lähteitä</dt><dd>'+sourceIds.length+'</dd></div></dl></div>';
   document.getElementById('articleBody').innerHTML=box+markdownToHtml(text,nodes,sources);
   const img=document.querySelector('#articleBody .infobox-media img');
