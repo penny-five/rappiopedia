@@ -12,7 +12,7 @@ Rappiopedia on suomalaisen striimaus- ja nettiviihteen tietosanakirja. Sivusto k
 - Kerro tapahtumista, esiintymisistä, tuotannoista ja muista olennaisista asioista kokonaisin virkkein. Älä kirjoita muistiinpanotyylisiä luetteloita kuten ”Striimaaja; vieras; tapahtumakonteksti”.
 - Käytä otsikoita vain, kun niiden alla on oikeaa sisältöä. Älä pakota jokaiseen artikkeliin samaa ”Yhteenveto / Dokumentoidut yhteydet / Tulkinnan rajat” -rakennetta.
 - **Älä lisää artikkelien loppuun automaattisia varaumia** tyyliin ”yhteinen esiintyminen ei itsessään osoita taloudellista yhteistyötä”. Kerro epävarmuudesta siinä kohdassa, jossa se koskee käsiteltävää väitettä.
-- Huhut, julkinen spekulaatio, ristiriitaiset kertomukset ja henkilökohtaiset tapahtumat voivat olla merkittäviä osia aiheen historiaa. Älä jätä niitä pois yleisen kiellon perusteella. Kirjoita, kuka väitteen esitti, missä ja milloin; erottele tapahtumat, väitteet ja myöhemmät oikaisut. Älä muuta huhua omaksi faktaväitteeksi.
+- Kirjoita myös julkisuutta saaneista huhuista, ristiriitaisista kertomuksista, kiistoista ja henkilökohtaisista tapahtumista silloin, kun ne ovat aiheen kannalta olennaisia. Esittele kertomukset luontevasti osana tapahtumahistoriaa ja viittaa niiden lähteisiin. Älä korvaa aihetta varauksilla tai poissulkemisella.
 - Älä kirjoita toimitusprosessista tai graafin rakenteesta osaksi henkilön elämäkertaa. Ilmaukset kuten ”tämä muodostaa verkostosillan” kuuluvat työmuistiinpanoihin, eivät artikkeliin.
 - Pidä henkilöiden, ohjelmien, tapahtumien ja julkaisujen nimet sekä ajankohdat tarkkoina. Älä täytä aukkoja arvauksilla.
 
@@ -42,11 +42,16 @@ Avoimet tutkimusaiheet pidetään tiedostossa [`research/leads.json`](research/l
 
 Tutkimustiedosto ei käynnistä automaattista tutkimusta itsestään. Sitä käyttävät agentit lukevat ja päivittävät sitä osana tehtäväänsä.
 
+## Suhdetyypit
+
+`src/data/relation-types.json` sisältää uudelleenkäytettävät suhteiden tyypit. Kun lisäät yhteyden `network.json`-tiedostoon, valitse ensin sopiva `type`. Uutta suhdetta varten lisää uusi tyyppi rekisteriin ennen yhteyden lisäämistä. Suunnattuun tyyppiin kuuluvat `forward` ja `reverse`, esimerkiksi `on isä` ja `on poika`. Symmetriselle tyypille riittää `symmetric: true` ja `verb`, esimerkiksi `esiintyi yhdessä`. Älä kirjoita yksittäisille yhteyksille omaa `verb`-kenttää. `label` voi yhä kuvata nimenomaista tapahtumaa.
+
 ## Artikkelit ja tekniikka
 
 | Polku | Sisältö |
 | --- | --- |
 | `src/data/network.json` | Solmut, yhteydet ja lähteet |
+| `src/data/relation-types.json` | Suhteiden tyypit ja molempien suuntien verbimuodot |
 | `research/leads.json` | Agenttien jatkotutkimukset; ei näytetä sivustolla |
 | `src/articles/<id>.md` | Varsinaiset artikkelitekstit |
 | `src/wiki.js` | Artikkelien näyttäminen ja automaattinen perusteksti |
