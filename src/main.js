@@ -503,7 +503,7 @@ function clearSelection(){
  selected=null;pathNodes=[];pathEdges=[];hover=null;dirty=true;
  if(location.hash!=='#/')history.replaceState({node:null},'','#/');
  showEmptyDetails();
- document.getElementById('pathresult').textContent='Valitse kaksi nimeä ja näytä yhteyspolku.';
+ document.getElementById('pathresult').textContent='Valitse kaksi kohdetta ja näytä niiden yhteys.';
  document.getElementById('rightpanel').classList.remove('mobileopen');
  renderCategoryFilters();
 }
@@ -532,9 +532,9 @@ function showDetails(id){
 function renderCategoryFilters(){
  const box=document.getElementById('categories');
  box.innerHTML=NODE_CATEGORY_FILTERS.map(({id,label})=>`<label class="category-option"><input type="checkbox" data-category="${id}" ${enabledCategories.has(id)?'checked':''}><span class="category-label">${label}</span><span class="category-number">${categoryTotals[id]}</span></label>`).join('');
- document.getElementById('toggleCategories').textContent=enabledCategories.size===NODE_CATEGORY_FILTERS.length?'Tyhjennä':'Valitse kaikki';
- const visibleCount=pathNodes.length?pathNodes.length:N.filter(n=>categoryEnabled(n,enabledCategories)).length;
- document.getElementById('categoryCount').textContent=`${visibleCount} / ${N.length} solmua näkyvissä`;
+ document.getElementById('toggleCategories').disabled=enabledCategories.size===NODE_CATEGORY_FILTERS.length;
+ const chosenCount=N.filter(n=>categoryEnabled(n,enabledCategories)).length;
+ document.getElementById('categoryCount').textContent=`${chosenCount} / ${N.length} kohdetta valittu`;
 }
 function categoriesChanged(){
  if(!pathNodes.length&&selected&&!categoryEnabled(by[selected],enabledCategories))clearSelection();
@@ -550,23 +550,22 @@ document.getElementById('categories').addEventListener('change',event=>{
  categoriesChanged();
 });
 document.getElementById('toggleCategories').addEventListener('click',()=>{
- const allEnabled=enabledCategories.size===NODE_CATEGORY_FILTERS.length;
  enabledCategories.clear();
- if(!allEnabled)for(const {id} of NODE_CATEGORY_FILTERS)enabledCategories.add(id);
+ for(const {id} of NODE_CATEGORY_FILTERS)enabledCategories.add(id);
  categoriesChanged();
 });
 function renderSectors(){
  const box=document.getElementById('sectors');
  const button=(id,name,color,count,child=false)=>`<button type="button" class="sector ${child?'sector-child ':''}${id===sector?'active':''}" data-sector="${id}" aria-pressed="${id===sector}"><span class="led" style="color:${color};background:${color}"></span><span class="title">${name}</span><span class="count">${count}</span></button>`;
  const overviewIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-3 3-4.5 6-4.5 9s1.5 6 4.5 9M12 3c3 3 4.5 6 4.5 9s-1.5 6-4.5 9"/></svg>';
- box.innerHTML=`<button type="button" class="sector-overview ${sector==='all'?'active':''}" data-sector="all" aria-pressed="${sector==='all'}" title="Palauta koko Rappioverse näkyviin"><span class="overview-icon">${overviewIcon}</span><span class="overview-copy"><span class="title">KOKO AVARUUS</span><span class="overview-hint">Palauta yleisnäkymä</span></span><span class="count">${N.length}</span></button>`+
+ box.innerHTML=`<button type="button" class="sector-overview ${sector==='all'?'active':''}" data-sector="all" aria-pressed="${sector==='all'}" title="Siirry koko kartan yleisnäkymään"><span class="overview-icon">${overviewIcon}</span><span class="overview-copy"><span class="title">Palaa yleisnäkymään</span><span class="overview-hint">Kaikki skenet kartalla</span></span><span class="count">${N.length}</span></button>`+
   hierarchyNavigationItems(SKENES).map(({id,label,color,child})=>
    button(id,label,color,N.filter(n=>sectorGroups(id).includes(n.group)).length,child)
   ).join('');
  box.querySelectorAll('[data-sector]').forEach(b=>b.onclick=()=>{
   sector=b.dataset.sector;renderSectors();
   if(sector==='all'){cameraNavigation++;target={...OVERVIEW_CAMERA.target};dist=OVERVIEW_CAMERA.dist;clearSelection();return}
-  const p=centers[sector],n=N.find(n=>sectorGroups(sector).includes(n.group)&&categoryEnabled(n,enabledCategories));
+  const p=centers[sector];
   const st={...target},ed=vec(...p),stDist=dist;
   const desiredDist=Math.max(1600,Math.max(...groupBounds[sector].max.map((v,i)=>v-groupBounds[sector].min[i]))*2.4);
   const start=performance.now(),navigation=++cameraNavigation;
@@ -578,8 +577,8 @@ function renderSectors(){
    if(t<1)requestAnimationFrame(animate);
   };
   requestAnimationFrame(animate);
-  if(n)showDetails(n.id);
-  else clearSelection();
+  // A scene selection moves the camera only; an article opens when a node is chosen.
+  clearSelection();
  });
 }
 function renderNameDensity(){
@@ -691,13 +690,44 @@ for(const button of document.querySelectorAll('#movementPad [data-move-key]')){
  button.addEventListener('keyup',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();release()}});
  button.addEventListener('blur',release);
 };
-function fillSelects(){let sorted=N.slice().sort((a,b)=>a.name.localeCompare(b.name,'fi'));for(let id of ['from','to'])document.getElementById(id).innerHTML=sorted.map(n=>`<option value="${esc(n.id)}">${esc(n.name)}</option>`).join('');document.getElementById('from').value='iippa';document.getElementById('to').value='sliki'}
+const routeTargets=new Map();
+function fillPathCandidates(){
+ const nameCounts=new Map();
+ for(const n of N){
+  const key=n.name.trim().toLocaleLowerCase('fi');
+  nameCounts.set(key,(nameCounts.get(key)||0)+1);
+ }
+ routeTargets.clear();
+ const sorted=N.slice().sort((a,b)=>a.name.localeCompare(b.name,'fi'));
+ document.getElementById('routeCandidates').innerHTML=sorted.map(n=>{
+  const duplicate=nameCounts.get(n.name.trim().toLocaleLowerCase('fi'))>1;
+  const displayName=duplicate?`${n.name} (${n.id})`:n.name;
+  routeTargets.set(displayName.trim().toLocaleLowerCase('fi'),n.id);
+  return `<option value="${esc(displayName)}" label="${esc(formatNodeTypes(n,ENTITY_TYPES))}"></option>`;
+ }).join('');
+ document.getElementById('pathresult').textContent='Valitse kaksi kohdetta ja näytä niiden yhteys.';
+}
+function selectedRouteTarget(field){
+ return routeTargets.get(document.getElementById(field).value.trim().toLocaleLowerCase('fi'))??null;
+}
+function findRouteFromInputs(){
+ const from=selectedRouteTarget('from'),to=selectedRouteTarget('to');
+ if(!from||!to){
+  document.getElementById('pathresult').textContent='Valitse molemmat kohteet hakukenttien ehdotuksista.';
+  return;
+ }
+ if(from===to){
+  document.getElementById('pathresult').textContent='Valitse kaksi eri kohdetta.';
+  return;
+ }
+ doRoute(from,to);
+}
 function route(from,to){return shortestPath(from,to,E,showLevels)}
 function doRoute(a,b){
  const r=route(a,b);
  hover=null;dirty=true;
  if(!r){
-  document.getElementById('pathresult').textContent='Polkua ei löydy näillä näytönsuodattimilla.';
+  document.getElementById('pathresult').textContent='Yhteyttä ei löytynyt valituilla yhteyksien varmuustasoilla.';
   pathNodes=[];pathEdges=[];
   renderCategoryFilters();
   return;
@@ -714,7 +744,15 @@ function doRoute(a,b){
   dist=Math.max(1450,Math.min(3150,550+Math.max(...pts.map(p=>Math.hypot(p[0]-m[0],p[1]-m[1],p[2]-m[2])))*3.2));
  }
 }
-document.getElementById('pathbtn').onclick=()=>doRoute(document.getElementById('from').value,document.getElementById('to').value);document.getElementById('clearpath').onclick=()=>{pathNodes=[];pathEdges=[];if(selected&&!categoryEnabled(by[selected],enabledCategories))clearSelection();renderCategoryFilters();document.getElementById('pathresult').textContent='Polku tyhjennetty.'};
+document.getElementById('pathbtn').onclick=findRouteFromInputs;
+document.getElementById('clearpath').onclick=()=>{
+ pathNodes=[];pathEdges=[];
+ document.getElementById('from').value='';
+ document.getElementById('to').value='';
+ if(selected&&!categoryEnabled(by[selected],enabledCategories))clearSelection();
+ renderCategoryFilters();
+ document.getElementById('pathresult').textContent='Valinnat tyhjennetty.';
+};
 function openSources(){
  setArticleCollapsed(false);
  articlePanel.classList.remove('article-empty');
@@ -810,7 +848,7 @@ document.getElementById('leftmenu').onclick=()=>{document.getElementById('rightp
  document.getElementById('leftpanel').classList.remove('mobileopen');
  if(articlePanel.classList.contains('mobileopen'))setArticleCollapsed(true);
  else {setArticleCollapsed(false);articlePanel.classList.add('mobileopen')}
-};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillSelects();renderSectors();renderCategoryFilters();renderNameDensity();
+};document.getElementById('nodecount').textContent=N.length;document.getElementById('edgecount').textContent=E.length;fillPathCandidates();renderSectors();renderCategoryFilters();renderNameDensity();
 function openUrlNode(){
  const id=nodeIdFromHash(location.hash,by);
  if(id){selected=id;target=vec(...by[id].pos3);dist=1550;showDetails(id)}
