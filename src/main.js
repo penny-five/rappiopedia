@@ -471,12 +471,14 @@ let dirty=false;requestAnimationFrame(draw);
 function showEmptyDetails(){
  document.title='Rappiopedia — Rappioverse';
  articlePanel.classList.add('article-empty');
+ articlePanel.classList.remove('article-archive');
+ document.getElementById('articlePaneLabel').textContent='Artikkeli';
+ document.getElementById('backToArticle').hidden=true;
  document.getElementById('dochead').innerHTML='';
  document.getElementById('articleBody').innerHTML='<div class="article-empty-state"><span class="empty-article-icon" aria-hidden="true">⌖</span><h2>Ei avointa artikkelia</h2><p>Klikkaa kartalla kiinnostavaa solmua avataksesi sen artikkelin ja yhteydet.</p><p>Voit myös etsiä henkilöä tai ohjelmaa yläreunan haulla.</p></div>';
  document.getElementById('relations').innerHTML='';
  document.getElementById('sources').innerHTML='';
- document.getElementById('wikiArticleTab').classList.add('active');
- document.getElementById('wikiSourcesTab').classList.remove('active');
+
 }
 function clearSelection(){
  selected=null;pathNodes=[];pathEdges=[];hover=null;dirty=true;
@@ -497,14 +499,15 @@ function showDetails(id){
  const wasCollapsed=articleApp.classList.contains('article-collapsed');
  setArticleCollapsed(false);
  if(wasCollapsed&&window.innerWidth<=680)articlePanel.classList.add('mobileopen');
- articlePanel.classList.remove('article-empty');
+ articlePanel.classList.remove('article-empty','article-archive');
+ document.getElementById('articlePaneLabel').textContent='Artikkeli';
+ document.getElementById('backToArticle').hidden=true;
  selected=id;document.title=n.name+' — Rappiopedia';
  if(location.hash!=='#/node/'+id)history.replaceState({node:id},'','#/node/'+id);
  const related=relatedForNode(id);
  renderNodeArticle({node:n,related,nodes:by,sources:S,levels,group:groupMeta[n.group][0],category:formatNodeTypes(n,ENTITY_TYPES)});
  document.getElementById('rightpanel').scrollTop=0;
- document.getElementById('wikiArticleTab').classList.add('active');
- document.getElementById('wikiSourcesTab').classList.remove('active');
+
 }
 function renderSectors(){
  const box=document.getElementById('sectors');
@@ -646,16 +649,17 @@ document.getElementById('pathbtn').onclick=()=>doRoute(document.getElementById('
 function openSources(){
  setArticleCollapsed(false);
  articlePanel.classList.remove('article-empty');
+ articlePanel.classList.add('article-archive');
+ document.getElementById('articlePaneLabel').textContent='Lähdearkisto';
+ document.getElementById('backToArticle').hidden=false;
  document.title='Lähteet — Rappiopedia';
  renderSourceArchive(S);
  document.getElementById('rightpanel').classList.add('mobileopen');
  document.getElementById('rightpanel').scrollTop=0;
- document.getElementById('wikiSourcesTab').classList.add('active');
- document.getElementById('wikiArticleTab').classList.remove('active');
+
 }
 document.getElementById('allSources').onclick=openSources;
-document.getElementById('wikiSourcesTab').onclick=openSources;
-document.getElementById('wikiArticleTab').onclick=()=>selected?showDetails(selected):showEmptyDetails();
+document.getElementById('backToArticle').onclick=()=>selected?showDetails(selected):showEmptyDetails();
 document.getElementById('rightpanel').addEventListener('click',event=>{
  const el=event.target.closest('[data-focus]');
  if(el&&by[el.dataset.focus])flyTo(el.dataset.focus);
