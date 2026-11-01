@@ -45,7 +45,7 @@ function fallbackArticle(node,related){
   if(!related.length) return text;
   text+='\n## Yhteydet\n';
   for(const edge of related.slice(0,9)){
-    text+='- [['+edge.other.id+'|'+edge.other.name+']] — '+edge.label+(edge.src.length?' [@'+edge.src[0]+']':'')+'\n';
+    text+='- '+edge.relationVerb+' [['+edge.other.id+'|'+edge.other.name+']]'+(edge.label?' ('+edge.label+')':'')+(edge.src.length?' [@'+edge.src[0]+']':'')+'\n';
   }
   return text;
 }
@@ -65,7 +65,7 @@ export function renderNodeArticle({node,related,nodes,sources,levels,group,categ
   document.getElementById('relhead').textContent='Yhteydet ('+related.length+')';
   document.getElementById('relations').innerHTML=related.map(e=>'<div class="rel"><div class="rel-top">'+
     '<button type="button" data-focus="'+escapeHtml(e.other.id)+'">'+escapeHtml(e.other.name)+'</button>'+
-    '<label>'+escapeHtml(levels[e.level]?.label||e.level)+'</label></div><div class="lbl"><span class="rel-verb">'+escapeHtml(e.verb||'')+'</span> '+escapeHtml(e.label)+(e.date?' · '+escapeHtml(e.date):'')+'</div>'+
+    '<label>'+escapeHtml(levels[e.level]?.label||e.level)+'</label></div><div class="lbl"><span class="rel-verb">'+escapeHtml(e.relationVerb)+'</span> '+escapeHtml(e.label)+(e.date?' · '+escapeHtml(e.date):'')+'</div>'+
     (e.detail?'<div class="meta">'+escapeHtml(e.detail)+'</div>':'')+
     '<div>'+e.src.filter(id=>sources[id]).map(id=>'<a href="'+escapeHtml(sources[id].url)+'" target="_blank" rel="noopener noreferrer">['+escapeHtml(id)+']</a>').join(' ')+'</div></div>').join('')||'<p class="empty">Ei suoria yhteysmerkintöjä.</p>';
   document.getElementById('srcHead').textContent='Lähteet ('+sourceIds.length+')';
