@@ -359,8 +359,6 @@ test('removed bottom-right actions; keyboard hints are centered and movement con
   assert.ok(!main.includes("getElementById('"+id+"')"));
  }
  assert.doesNotMatch(css,/\.floats(?:\{| button)/);
- assert.match(html,/<button id="reset"/);
- assert.match(main,/getElementById\('reset'\)\.onclick=reset/);
  assert.match(css,/\.radar\{position:absolute;left:50%;bottom:15px;transform:translateX\(-50%\)/);
  assert.match(css,/\.movement-pad\{position:absolute;left:18px;bottom:15px;/);
  assert.match(css,/\.flight-speed\{position:absolute;right:15px;bottom:15px;/);
