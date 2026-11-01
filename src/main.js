@@ -7,7 +7,7 @@ import { formatNodeTypes } from './lib/entity-types.js';
 import { NODE_CATEGORY_FILTERS, categoryFilterId, categoryCounts, categoryEnabled, edgeMatchesCategories } from './lib/category-filter.js';
 import { relationVerb, relationHeading } from './lib/relations.js';
 import { shortestPath } from './lib/graph.js';
-import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, storedMovementSpeed, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
+import { focusedNodeIds, graphLabelScale, graphNodePresentation, projectedEdgePoint, connectionStrokeWidth, cameraTravelDirection, cameraPositionFromTarget, cameraLookDelta, adjustMovementSpeed, movementSpeedFill, DEFAULT_MOVEMENT_SPEED, storedMovementSpeed, nodeOpacity, bounds3D, routeVisibility, relationshipLabelEdges, truncateLabel, placeNodeLabels } from './lib/scene.js';
 import { hierarchyGroups, hierarchyBounds, sectorGroups, isHierarchyRoot, hierarchyNavigationItems } from './lib/hierarchy.js';
 import { articleMarkdown, renderNodeArticle, renderSourceArchive } from './wiki.js';
 import { markdownExcerpt } from './lib/article-excerpt.js';
@@ -274,13 +274,13 @@ function drawCluster(c) {
   }
  }
 }
-function drawLink(p,q,e,highlight,dim,dashPhase=0){
+function drawLink(p,q,e,highlight,dim,dashPhase=0,lineWidth=highlight?2.2:1){
  const color=levels[e.level].color,base=highlight?.88:dim?.055:(sector==='all'?.24:.36);
  const fog=z=>Math.max(.26,Math.min(1,(dist+1850-z)/2400));
  const grad=ctx.createLinearGradient(p.x,p.y,q.x,q.y);
  grad.addColorStop(0,tint(color,base*(highlight?1:fog(p.z))));
  grad.addColorStop(1,tint(color,base*(highlight?1:fog(q.z))));
- ctx.strokeStyle=grad;ctx.lineWidth=highlight?2.2:1;
+ ctx.strokeStyle=grad;ctx.lineWidth=lineWidth;
  ctx.setLineDash(e.level==='lead'?[5,7]:[]);ctx.lineDashOffset=-dashPhase;
  ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.stroke();
  ctx.setLineDash([]);ctx.lineDashOffset=0;
@@ -462,13 +462,18 @@ function draw(now){
   const hi=routeView.active||!!selected&&(e.a===selected||e.b===selected);
   let dim=(!!selected&&!hi)||(sector!=='all'&&!sectorMatches(by[e.a].group)&&!sectorMatches(by[e.b].group)&&!hi);
   // Subdivide edges in depth so a closer line can correctly occlude a distant label.
-  const segments=Math.min(16,Math.max(1,Math.ceil(Math.abs(a.z-b.z)/240)));
+  const depthSegments=Math.min(16,Math.max(1,Math.ceil(Math.abs(a.z-b.z)/240)));
+  // The highlighted link widens all the way to the other node, not just near its origin.
+  const tapered=hi&&(e.a===selected||e.b===selected);
+  const taperSegments=tapered?Math.min(40,Math.max(8,Math.ceil(Math.hypot(b.x-a.x,b.y-a.y)/10))):1;
+  const segments=Math.max(depthSegments,taperSegments);
   let dashPhase=0;
   for(let j=0;j<segments;j++){
    const p=projectedEdgePoint(a,b,j/segments);
    const q=projectedEdgePoint(a,b,(j+1)/segments);
    const phase=dashPhase;
-   scene.push({z:(p.z+q.z)/2,order:0,draw:()=>drawLink(p,q,e,hi,dim,phase)});
+   const lineWidth=connectionStrokeWidth(e,selected,(j+.5)/segments,hi);
+   scene.push({z:(p.z+q.z)/2,order:0,draw:()=>drawLink(p,q,e,hi,dim,phase,lineWidth)});
    dashPhase+=Math.hypot(q.x-p.x,q.y-p.y);
   }
   if(hi){
