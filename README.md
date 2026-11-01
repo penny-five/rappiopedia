@@ -1,35 +1,35 @@
-# Rappioverse // 3D-tutkintakartta
+# Rappiopedia
 
-Interaktiivinen, lähteistetty 3D-verkosto suomalaisen viihde-, Kick- ja rappiostriimausskenen julkisista yhteyksistä.
+**Rappiopedia** on suomenkielinen, lähteisiin perustuva yhteysensyklopedia. **Rappioverse** on sen interaktiivinen, pyöritettävä 3D-verkostokartta.
 
-## Kehitys (Node.js 22+)
+Käyttöliittymä on vaalea ja Wikipedia-henkinen: kartta on vasemmalla ja valitun henkilön, ohjelman tai tapahtuman tietosanakirjasivu oikealla. Artikkelitekstit ovat Markdownia; sisäiset linkit avaavat suoraan vastaavan solmun Rappioverse-kartassa.
+
+## Käynnistys
+Node.js 22+.
+
 ```sh
 npm install
 npm run dev
 npm test
 npm run build
-npm run preview
 ```
 
-## Projektin rakenne
-- `index.html` – pieni sovelluksen käynnistyspiste
-- `src/main.js` – 3D-visualisointi ja käyttöliittymä
-- `src/styles.css` – tumman tutkintapaneelin tyylit
-- `src/data/network.json` – erillinen muokattava tietoaineisto: nodes, edges, sources
-- `src/lib/graph.js` – testattava yhteyspolun haku
-- `src/lib/hierarchy.js` – PACT-ohjelmaperheen hierarkia (EI väite yhteisestä omistuksesta)
-- `tests/` – automaattiset aineisto- ja graafitestit
-- `.github/workflows/deploy.yml` – testaus + buildi + GitHub Pages -julkaisu
+## Rakenne
+- `index.html` — käyttöliittymän runko
+- `src/main.js` — 3D-projektio, kamera, haku ja solmun valinta
+- `src/wiki.js` — turvallinen Markdown-artikkelinäkymä ja lähdearkisto
+- `src/styles.css` — mustavalkoinen UI
+- `src/data/network.json` — solmut, yhteydet ja lähteet
+- `src/articles/*.md` — toimitetut artikkelit, muille generoidaan lähdepohjainen perusartikkeli
+- `src/lib/hierarchy.js` — PACTin ylätason ryhmittely
+- `tests/` — graafin ja sisälinkkien eheys
+- `AGENTS.md` — agenttien kehitys- ja tietoturvaohjeet
+- `docs/CONTENT_AUTHORING.md` — toimituksellinen sisällöntuotanto-opas
 
-## GitHub Pages
-Kun Pages on kytketty repon asetuksista päälle, julkaistu sivu: https://penny-five.github.io/rappioverse/
+## Julkaisu
+GitHub Actionsin `.github/workflows/deploy.yml` testaa ja rakentaa `main`-haaran muutokset sekä pyrkii julkaisemaan GitHub Pagesiin. Alkuasetuksena valitse repon **Settings → Pages → Source: GitHub Actions**. Julkaisuosoite, kun Pages on otettu käyttöön: https://penny-five.github.io/rappioverse/ .
 
-Kertaluonteinen valinta: **Settings → Pages → Build and deployment → Source: GitHub Actions**. `main`-haaran push testataan ja rakennetaan Viten avulla; vain onnistunut build julkaistaan. Pull requestit vain testataan.
+## Lähde- ja turvallisuusperiaate
+Yhteinen ohjelma tai tapahtuma osoittaa kontaktin, ei omistusta, rahoitusta tai osallistumista muiden tekoihin. Dokumentoitu tieto, uutisoitu väite, julkiseen tunnisteeseen perustuva päätelmä ja foorumijohtolanka näkyvät erillisinä. Foorumiväitteitä ei nosteta faktoiksi ilman riippumatonta näyttöä.
 
-## Tiedon tulkinta
-Yhteyden tasot: `verified` = dokumentoitu, `reported` = uutisoitu, `observed` = julkisen tunnisteen tai esiintymisen havainto (voi viitata kaupalliseen yhteistyöhön), `lead` = vahvistamaton johtolanka. Yhteinen ohjelma, tapahtuma tai some-verkosto ei todista henkilöiden syyllisyyttä, rahoitus- tai sopimussuhdetta.
-
-Kuvat ovat tällä hetkellä ulkoisia URL-linkkejä ja voivat olla latautumatta. Älä lisää valokuvia julkiseen repoon ilman tarvittavia käyttöoikeuksia.
-
-### Buildin riippuvuudet
-Vite on toistaiseksi suoraan versioon sidottu, mutta `package-lock.json` ei ole vielä mukana, koska npm-rekisteri ei vastannut paikallisessa ympäristössä. Työnkulku käyttää `npm install`-komentoa kunnes lukitustiedosto saadaan luotua.
+Ulkoiset kuvalinkit voivat rajoittaa hotlinkkausta. Kuvia ei kopioida repoon ilman käyttöoikeuksia.
