@@ -4021,6 +4021,38 @@
         1280
       ],
       "featured": false
+    },
+    {
+      "id": "fhat_ari",
+      "name": "Fhat-Ari / FhatMaestro",
+      "group": "rappio",
+      "cat": "person",
+      "types": [
+        "rappiostriimaaja"
+      ],
+      "note": "Fhat-Ari eli FhatMaestro on suomalainen Kick-striimaaja, joka esiintyi Pottukoiran lähetyksissä ja Pattayan subathonissa alkuvuonna 2024. Hän avasi oman FhatMaestro-kanavan helmikuussa 2024 ja jatkoi itsenäisiä IRL- ja keskustelulähetyksiä.",
+      "pos3": [
+        2775,
+        -100,
+        1170
+      ],
+      "featured": false
+    },
+    {
+      "id": "pottu_ari_valirikko_2024",
+      "name": "Pottukoiran ja Fhat-Arin välirikko 2024",
+      "group": "pottu-streams",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Pottukoiran ja Fhat-Arin lähetysyhteistyö päättyi kuuden viikon Pattayan-subathonin jälkeen keväällä 2024. Ari perusti oman Kick-kanavansa helmikuun lopulla ja kaksikon riitaa käsiteltiin maaliskuussa mediassa.",
+      "pos3": [
+        3250,
+        -415,
+        565
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -8789,6 +8821,69 @@
         "P13"
       ],
       "level": "reported"
+    },
+    {
+      "a": "fhat_ari",
+      "b": "pottu_pattaya_2024",
+      "type": "esiintyi",
+      "label": "striimasi Pottukoiran kanssa Pattayalla tammikuusta helmikuuhun 2024",
+      "date": "2024-01-03",
+      "src": [
+        "P271",
+        "P272",
+        "P184"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "fhat_ari",
+      "b": "pottu",
+      "type": "striimasi-yhdessa",
+      "label": "tekivät yhteisiä Kick-lähetyksiä ennen ja aikana Pattayan-matkan",
+      "date": "2024-01",
+      "src": [
+        "P271",
+        "P184"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "fhat_ari",
+      "b": "kick",
+      "type": "kayttaa",
+      "label": "oma FhatMaestro-kanava aloitti helmikuussa 2024",
+      "date": "2024-02-25",
+      "src": [
+        "P274",
+        "P275",
+        "P276"
+      ],
+      "level": "verified"
+    },
+    {
+      "a": "fhat_ari",
+      "b": "pottu_ari_valirikko_2024",
+      "type": "osallistui",
+      "label": "jatkoi oman FhatMaestro-kanavan lähetyksiä Pottukoirasta erillään",
+      "date": "2024-03",
+      "src": [
+        "P273",
+        "P184",
+        "P274"
+      ],
+      "level": "reported"
+    },
+    {
+      "a": "pottu",
+      "b": "pottu_ari_valirikko_2024",
+      "type": "osallistui",
+      "label": "otti julkisesti yhteen Arin kanssa Pattayan-matkan jälkeen",
+      "date": "2024-03",
+      "src": [
+        "P273",
+        "P184"
+      ],
+      "level": "reported"
     }
   ],
   "sources": {
@@ -10132,6 +10227,51 @@
       "label": "Gekkonen 25.4.2026: Heiskarin PactHouse 3 -julkistus",
       "url": "https://gekkonen.net/kaksi-vuotta-metsassa-elanyt-kristian-heiskari-palasi-julkisuuteen-talta-han-nayttaa-nyt/",
       "note": "PactHouse-kampanjavideo, jossa Anthony Singh soitti Heiskarille ja kutsui hänet Ateenan 1.–10.5.2026 realityyn."
+    },
+    "P271": {
+      "label": "Seiska 4.1.2024: Pottukoira ja Ari lähtivät Pattayalle 3.1.",
+      "url": "https://www.seiska.fi/kotimaa/tubettaja-pottukoira-matkusti-thaimaahan-kuvaamaan-kohuttua-livestriimia-salakuva-lentoasemalta/1232757",
+      "note": "Seiskan lukija havaitsi Pottukoiran ja Arin Helsinki-Vantaalla 3.1.2024; Ari oli jo aiemmin esiintynyt Pottukoiran lähetyksissä."
+    },
+    "P272": {
+      "label": "Seiska 22.1.2024: Ari sairaalassa Pattayan subathonin aikana",
+      "url": "https://www.seiska.fi/kotimaa/pottukoiran-kohuttu-livestriimi-jatkuu-outoa-puhetta-huumeista-ystava-joutui-sairaalaan/1249486",
+      "note": "Pattayan-matkan ja yhteisstriimin aikana Ari joutui sairaalahoitoon; hän kertoi liikkuneensa hetkellisesti pyörätuolilla TikTok-lähetyksessään."
+    },
+    "P273": {
+      "label": "Como.fi 14.3.2024: Pottukoiran ja Arin välit poikki",
+      "url": "https://www.como.fi/uutiset/pottukoiran-ja-arin-valit-tulehtuivat-pottukoiralta-erikoinen-uhkaus/",
+      "note": "Kaksikon omat lähetykset ja Pottukoiran maaliskuiset Aria koskevat uhkaavat puheet; ei vahvista myöhempää fyysistä kohtaamista."
+    },
+    "P274": {
+      "label": "Kick: FhatMaestron oma suoratoistokanava",
+      "url": "https://kick.com/fhatmaestro/about",
+      "note": "Striimaajan oma Kick-tili ja kanavakuvaus."
+    },
+    "P275": {
+      "label": "StreamsCharts: FhatMaestron Kick-kanavan lähetys- ja perustamishistoria",
+      "url": "https://streamscharts.com/channels/fhatmaestro?platform=kick",
+      "note": "25.2.2024 avattu kanava, Just Chatting- ja IRL-lähetyksiä, myöhempi lähetyshistoria. Ikä ja henkilön koko nimi epäjohdonmukaisia muualla verkossa; niitä ei käytetä."
+    },
+    "P276": {
+      "label": "Suomi24 26.2.2024: Fhat-Arin uusi Kick-kanava",
+      "url": "https://keskustelu.suomi24.fi/t/18287245/fhat-arin-uusi-kanava%21",
+      "note": "Aikalaisketju jakaa Fhat-Arin oman Kick-kanavan fhatmaestro-osoitteen 26.2.2024."
+    },
+    "P277": {
+      "label": "Seiska 13.3.2024: Kärkkäinen kertoo Pattayan-matkasta",
+      "url": "https://www.seiska.fi/kotimaa/suosikkistriimaaja-pottukoira-tilittaa-tasa-arvosta-miksi-naiset-saavat-tehda-mita-haluavat/1294923",
+      "note": "Seiskan Pottukoira-haastattelu kuuden viikon Pattayan-matkan ja Arin mukanaolon jälkeen."
+    },
+    "P278": {
+      "label": "Reddit 5.5.2025: Pottukoiran ja Iippadaan subathonin viimeisen tunnin riita",
+      "url": "https://www.reddit.com/r/snappisensuroimaton/comments/1kf0yej",
+      "note": "Aikalaisketjun mukaan Pottukoira halusi viimeisen tunnin ajan keskustella chatille ilman musiikkia. Striimi keskeytyi hetkeksi riidan jälkeen ja jatkui."
+    },
+    "P279": {
+      "label": "Como.fi: Pottukoira lopetti alkoholin ja alkoi treenata kolmen Spurgu-TV-kauden jälkeen",
+      "url": "https://www.como.fi/uutiset/pottukoiralta-hammentava-tieto-ryyppaamisen-sijaan-livestriimeissa-nahdaan-nyt-tata/",
+      "note": "Kärkkäinen kertoi lopettaneensa juomisen ja tupakoinnin sekä kuvanneensa painoliivitreenejä ja kalastusta kolmen Spurgu-TV-kauden jälkeen."
     }
   },
   "date": "2026-11-01"
