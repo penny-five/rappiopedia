@@ -20,7 +20,9 @@ Verkostosta voi hakea nimellä, rajata näkymää aihepiirin mukaan, tarkastella
 Esimerkiksi:
 
 - **PACT / PactHouse / PactTalks:** ohjelmakaudet, osallistujat, juontajat ja vieraat.
-- **Rappiostriimaus:** Pottukoira, Iippadaa, Upi, Pirkkis, Sami Kieksin dokumentit ja niihin liittyvät lähetykset.
+- **Rappiostriimaus:** Pottukoira, Iippadaa, Upi, Pirkkis ja muut itsenäiset rappiostriimaajat sekä heihin liittyvät lähetykset.
+- **Kasinokurki:** Kasinokurki-palvelu sekä sen tunnisteen lähetyksissään esille tuoneet Pullis, SampeF2 ja KP2Times.
+- **Dokumentit ja muu nettiviihde:** Sami Kieksin dokumentit, Ruusutossun realityprojektit, Ice Cage, Sliki ja Ketolan Duel-aiheiset tapahtumat.
 - **Tapahtumat ja muu nettiviihde:** Bailupaatti, Slikin ja Korelonin esiintymiset, Ice Cage, Julkkispelit sekä rahapelibrändien näkyminen striimisisällöissä.
 - **Media ja keskustelut:** uutisjutut, julkaistut lähetykset ja yksilöidyt foorumikeskustelut, joista yhteystietoja on kerätty.
 
@@ -52,6 +54,7 @@ Sivusto toimii selaimessa ilman erillistä palvelinta tai tietokantaa. Se rakenn
 | Tiedosto | Tarkoitus |
 | --- | --- |
 | [`src/data/network.json`](src/data/network.json) | Solmut (`nodes`), yhteydet (`edges`) ja lähdeluettelo (`sources`) |
+| [`src/data/skenes.json`](src/data/skenes.json) | Skenet, niiden nimet, värit ja 3D-laatikoiden marginaalit |
 | [`src/articles/`](src/articles/) | Käsin kirjoitetut suomenkieliset Markdown-artikkelit |
 | [`src/main.js`](src/main.js) | Verkostokartta, haku, suodattimet, kamera ja yhteyspolut |
 | [`src/wiki.js`](src/wiki.js) | Artikkelien esitys, sisälinkit ja datasta tuotetut perustekstit |
