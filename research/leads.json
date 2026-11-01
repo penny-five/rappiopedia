@@ -768,6 +768,131 @@
         "Täydennä reitti vasta vahvistettujen lähteiden perusteella."
       ],
       "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "pottukoira-subathon-chronology-2023-2025",
+      "title": "Pottukoiran eri subathonien kausijako, tallenteet ja vieraat",
+      "status": "in-progress",
+      "priority": "high",
+      "nodeIds": [
+        "pottu",
+        "pirkkis",
+        "iippa",
+        "spurgu",
+        "pottu_sub_2023",
+        "pottu_pattaya_2024",
+        "pottu_phuket_2024",
+        "pottu_viro_sub_2024",
+        "pottu_espanja_sub_2025",
+        "pottu_iippa_sub_2025"
+      ],
+      "sourceIds": [
+        "P9",
+        "P182",
+        "P183",
+        "P184",
+        "P185",
+        "P186",
+        "P187",
+        "P188",
+        "P189",
+        "P190",
+        "P191"
+      ],
+      "notes": "1.11.2026: kuusi eri subathonia kirjattu omiksi tapahtumiksi Gekkosen, Seiskan ja Redditin perusteella. Syksyn 2023 42 päivää, Pattaya 1–2/2024, Phuket 3/2024 (uutisen mukaan kolmas kausi), Viro 11/2024 (mini), Gran Canaria 1/2025 (Pirkkis) sekä Viron yhteisstriimi 4–5/2025 (Iippadaa). Älä päättele väitettyjä kausinumeroita kaikille: Viron mini-subathon ja Espanjan neljäs kausi voivat esiintyä eri laskutavoissa. Maratonien tarkat päätösajat ja vierailijat vaativat alkuperäiset VOD:t.",
+      "questions": [
+        "Mitkä olivat kunkin maratonin tarkat aloitus- ja lopetuspäivät ja mahdolliset tauot?",
+        "Miten Pottukoira itse numerot eri kaudet verrattuna erillisiin mini-subathoneihin?",
+        "Missä tallenteissa näkyvät Ari, BB-Jerry, Pirkkis ja Iippadaa?",
+        "Järjestettiinkö vuoden 2025 toukokuun jälkeen muita omaan artikkeliin sopivia subathoneita?"
+      ],
+      "queries": [
+        "\"Pottukoira\" \"subathon\" \"season\" \"2023\" \"2024\"",
+        "\"Spurgu-TV\" \"Season 4\" \"Pirkkis\"",
+        "\"pottukoiralive\" \"subathon\" site:kick.com/pottukoiralive/videos",
+        "site:reddit.com/r/snappisensuroimaton \"Pottukoira\" \"subathon\"",
+        "site:gekkonen.net \"Pottukoira\" \"subathon\" 2026"
+      ],
+      "nextSteps": [
+        "Avaa alkuperäiset Kick-arkistot ja vertaile päivämäärät uutisiin.",
+        "Tarkista tallenteista selkeät vierailijat ja erittele toteutuneet tapahtumat ennakoista.",
+        "Vahvista kunkin kauden numero alkuperäiseltä julkaisijalta ennen numeron lisäämistä nimiin.",
+        "Hae uudet ajanjaksot, mutta älä sekoita KP2Timesin subathoneita Pottukoiran tapahtumiin."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "upi-pirkkis-amsterdam-2025",
+      "title": "Upin, Pirkkiksen ja Taigan Amsterdamin-matkan alkuperäislähetykset",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "upi",
+        "pirkkis",
+        "taiga",
+        "ams25"
+      ],
+      "sourceIds": [
+        "P51",
+        "P52",
+        "P194"
+      ],
+      "sourceUrls": [
+        "https://www.reddit.com/r/snappisensuroimaton/comments/1jo5rxu"
+      ],
+      "notes": "31.3.2025 Reddit-keskustelija väitti Pirkkiksen myöhästyneen kahdelta paluulennolta ja Upin jääneen Pirkkiksen seuraksi. 2.4.2025 ja 26.7.2026 ketjuissa mainitaan sama seurue. Vain keskustelut tarkistettu, joten lentojen ja tapahtumien kulku on vahvistamatta.",
+      "questions": [
+        "Löytyykö alkuperäinen Amsterdamin tai Taigan stream/VOD, josta seurue ja ajankohdat varmistuvat?",
+        "Onko lentotarina todennettavissa tai perustuuko se yhden kommentoijan tulkintaan?",
+        "Mitkä olivat matkan täsmälliset päivät ja esiintyivätkö muutkin striimaajat samoissa lähetyksissä?"
+      ],
+      "queries": [
+        "\"Upi\" \"Pirkkis\" \"Taiga\" \"Amsterdam\" 2025",
+        "\"Pirkkis\" \"lennolta\" \"Taiga\" 2025",
+        "site:reddit.com/r/snappisensuroimaton \"taigan porukan\" 2025",
+        "site:gekkonen.net \"Upi\" \"Taiga\" \"Pirkkis\""
+      ],
+      "nextSteps": [
+        "Etsi jokaisen seurueen striimikanavien maalis–huhtikuun 2025 julkaisut.",
+        "Tarkista keskusteluketjujen mahdolliset videoliitteet ja aikaleimat.",
+        "Päivitä Amsterdamin artikkelin osallistujat ja aikajana vain löydettyjen todisteiden perusteella."
+      ],
+      "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "pirkkis-lives-2026-followup",
+      "title": "Pirkkiksen vuoden 2026 suorat lähetykset ja toukokuun väkivaltatilanteen jatko",
+      "status": "in-progress",
+      "priority": "medium",
+      "nodeIds": [
+        "pirkkis",
+        "pottu",
+        "mokkistriimit_july_2026"
+      ],
+      "sourceIds": [
+        "P192",
+        "P193",
+        "P174",
+        "P175"
+      ],
+      "notes": "22.5.2026 Gekkonen uutisoi videolla näkyvästä Pirkkikseen kohdistuneesta lyönnistä ja silmäkulman haavasta. 14.7. Redditissä kuvattu vierailu Pottukoiran luona, sekä heinäkuun mökkilähetyksiä. Alkuperäisen Kick-arkiston ja mahdollisten viranomaistietojen tarkistus puuttuu.",
+      "questions": [
+        "Löytyykö 22.5.2026 väkivaltatilanteen tarkka lähetyspäivä ja tallenne?",
+        "Onko tapauksesta tiedossa rikostutkintaa tai päätöstä?",
+        "Mitä 14.7.2026 Pottukoira-vierailun ja mökkilähetysten alkuperäisvideot näyttävät?"
+      ],
+      "queries": [
+        "\"Pirkkis\" \"Pirkka Ukko\" \"22.5.2026\" live",
+        "\"Pirkkis\" \"Pottukoira\" \"14.7.2026\"",
+        "site:gekkonen.net \"Pirkkis\" \"pahoinpideltiin\"",
+        "site:reddit.com/r/snappisensuroimat0n \"pirkkis\" \"pottukoiran luokse\""
+      ],
+      "nextSteps": [
+        "Tarkista uutisen linkkaama alkuperäinen video ja lähetysajankohta.",
+        "Vältä hyökkääjän henkilöllisyyden arvaamista keskustelupalstoilta.",
+        "Vertaa heinäkuun yksilöityjä videoita nykyisiin yhteysreunoihin."
+      ],
+      "updatedAt": "2026-11-01"
     }
   ]
 }
