@@ -2868,7 +2868,7 @@
     },
     {
       "id": "kp_thailand_2026",
-      "name": "KP2Timesin Thaimaan-lähetykset 2026",
+      "name": "Pulliksen ja KP2Timesin Thaimaan-striimit 2026",
       "group": "rappio",
       "cat": "event",
       "types": [
@@ -2880,7 +2880,7 @@
         980
       ],
       "featured": false,
-      "note": "KP2Timesin loppulokakuun 2026 Thaimaa-aiheiset Kick-lähetykset."
+      "note": "Pullis ja KP2Times tekivät loka–marraskuussa 2026 Thaimaassa Kick-lähetyksiä Bangkokista ja Pattayalta. Pulliksen 3. marraskuuta Pattayalla lähettämä striimi nousi Gekkosen uutisiin."
     },
     {
       "id": "big_brother",
@@ -4133,6 +4133,22 @@
       ],
       "featured": false,
       "note": "Ebinlauta on vuonna 2024 perustettu suomalainen kuvalauta. Sivusto kertoo ylläpitäneensä elokuussa 2024 avattua /upi/-alalautaa Arttu Pulkkisen striimien ympärillä."
+    },
+    {
+      "id": "pullis_pattaya_live_2026",
+      "name": "Pulliksen Pattayan Kick-lähetys 3.11.2026",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "group": "rappio",
+      "note": "Gekkosen mukaan Pulliksen Pattayan Kick-lähetyksessä 3.11.2026 kuului intiimiin tilanteeseen viittaavia ääniä, kun kamera näytti muuta kuvaa mutta mikrofoni oli päällä.",
+      "pos3": [
+        2770,
+        -70,
+        940
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -6988,9 +7004,10 @@
       "a": "kp",
       "b": "kp_thailand_2026",
       "type": "striimasi",
-      "label": "Thaimaan IRL-lähetykset",
+      "label": "Thaimaan IRL-lähetykset Bangkokissa ja Pattayalla",
       "src": [
-        "P143"
+        "P143",
+        "P296"
       ],
       "level": "reported",
       "date": "2026-10"
@@ -9081,6 +9098,50 @@
       "src": [
         "P293"
       ]
+    },
+    {
+      "a": "pullis",
+      "b": "kp_thailand_2026",
+      "type": "matkusti",
+      "label": "teki KP2Timesin kanssa Bangkokin ja Pattayan striimausmatkan",
+      "date": "2026-10",
+      "level": "reported",
+      "src": [
+        "P296"
+      ]
+    },
+    {
+      "a": "pullis",
+      "b": "kp",
+      "type": "travelled-together",
+      "label": "yhteinen Thaimaan-matka Bangkokiin ja Pattayalle",
+      "date": "2026-10",
+      "level": "reported",
+      "src": [
+        "P296"
+      ]
+    },
+    {
+      "a": "kp_thailand_2026",
+      "b": "pullis_pattaya_live_2026",
+      "type": "sisaltaa",
+      "label": "Pattayan 3. marraskuuta 2026 lähetys",
+      "date": "2026-11-03",
+      "level": "reported",
+      "src": [
+        "P296"
+      ]
+    },
+    {
+      "a": "pullis",
+      "b": "pullis_pattaya_live_2026",
+      "type": "striimasi",
+      "label": "3.11. lähetyksestä kuului intiimiin tilanteeseen viittaavia ääniä",
+      "date": "2026-11-03",
+      "level": "reported",
+      "src": [
+        "P296"
+      ]
     }
   ],
   "sources": {
@@ -10544,6 +10605,11 @@
       "label": "Reddit 2.1.2023: Misantrooppi kuvattiin Upin kaveriksi",
       "url": "https://www.reddit.com/r/Suomi/comments/1019rkk/kuolinbingo_2023_ja_edellisvuoden_tulokset/",
       "note": "Aikalaiskeskustelun yksittäisessä nimilistassa mainittiin erikseen Upi ja 'Misantrooppi (Upin kaveri)'. Todistaa nimen ja julkisen yhteyden, ei ketjun muiden väitteiden oikeellisuutta."
+    },
+    "P296": {
+      "label": "Gekkonen 4.11.2026: Pulliksen ja KP2Timesin Pattayan-striimit",
+      "url": "https://gekkonen.net/rappiostriimaaja-pullis-otti-ison-riskin-thaimaassa-seksiaanet-kuuluivat-suorassa-lahetyksessa/",
+      "note": "Gekkosen mukaan Pullis ja KP2Times striimasivat Bangkokin jälkeen Pattayalla. 3.11.2026 Pulliksen lähetyksestä kuului intiimiin tilanteeseen viittaavia ääniä kameran näyttäessä muuta kuvaa. Juttu arvioi mahdollisia seuraamusriskejä, ei raportoi toteutuneista seuraamuksista."
     }
   },
   "date": "2026-11-01"
