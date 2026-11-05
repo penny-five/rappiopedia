@@ -1710,7 +1710,7 @@
       "name": "Bämät Matkoilla",
       "group": "reality",
       "cat": "project",
-      "note": "Bämät matkoilla on Pinja Ruusutossun ja Mea Ainasojan Kick-realityprojekti, jossa kaksikko matkusti kuvausryhmän kanssa Ranskan Nizzaan lokakuussa 2026.",
+      "note": "Bämät matkoilla on Pinja Ruusutossun ja Mea Ainasojan Nizzan-matkalla lokakuussa 2026 alkanut Kick-realityprojekti. Marraskuun alussa Bämät-kanava jatkoi lähetyksiä ja Ruusutossu aloitti erilliset Tossut matkoilla -striimit.",
       "x": 4216,
       "y": 839,
       "pos3": [
@@ -2416,7 +2416,7 @@
       "types": [
         "striimausmatka"
       ],
-      "note": "Pinja Ruusutossu ja Mea Ainasoja tekivät Bämät matkoilla -projektiin kuuluvia Kick-lähetyksiä Nizzasta 2026 lokakuun lopulla. Jethro Rostedt osallistui matkan lähetyksiin.",
+      "note": "Bämät matkoilla -realityä striimattiin Ranskan Nizzasta loka–marraskuussa 2026. Osallistujia olivat Pinja Ruusutossu ja Mea Ainasoja; Jethro Rostedt oli mukana 31.10. kohua herättäneessä illassa.",
       "pos3": [
         2140,
         625,
@@ -4147,6 +4147,38 @@
         2770,
         -70,
         940
+      ],
+      "featured": false
+    },
+    {
+      "id": "bamat_jethro_nizza_2026",
+      "name": "Bämät matkoilla: Jethron Nizzan-ilta 31.10.2026",
+      "cat": "event",
+      "types": [
+        "striimilahetys"
+      ],
+      "group": "reality",
+      "note": "Bämät matkoilla -realityn Nizzan-lähetyksessä 31.10.2026 Jethro Rostedtin humaltuminen ja puheet johtivat Pinja Ruusutossun poistumiseen kesken illan.",
+      "pos3": [
+        2135,
+        760,
+        -180
+      ],
+      "featured": false
+    },
+    {
+      "id": "tossut_matkoilla_2026",
+      "name": "Tossut matkoilla – Ruusutossun Nizzan-lähetykset 11/2026",
+      "cat": "event",
+      "types": [
+        "striimausmatka"
+      ],
+      "group": "reality",
+      "note": "Pinja Ruusutossu aloitti 1.11.2026 omalla Kick-kanavallaan Tossut matkoilla -nimiset lähetykset Nizzasta Bämät matkoilla -projektin rinnalla. Hän käytti myöhemmin myös Jämät matkoilla -nimeä.",
+      "pos3": [
+        2060,
+        820,
+        -100
       ],
       "featured": false
     }
@@ -9142,6 +9174,78 @@
       "src": [
         "P296"
       ]
+    },
+    {
+      "a": "bamat_nizza_2026",
+      "b": "bamat_jethro_nizza_2026",
+      "type": "sisaltaa",
+      "label": "31.10. Nizzan iltalähetys",
+      "date": "2026-10-31",
+      "level": "reported",
+      "src": [
+        "P103",
+        "P297"
+      ]
+    },
+    {
+      "a": "jethro",
+      "b": "bamat_jethro_nizza_2026",
+      "type": "osallistui",
+      "label": "osallistui illan striimiin ja jatkoi Mean kanssa",
+      "date": "2026-10-31",
+      "level": "reported",
+      "src": [
+        "P103",
+        "P297"
+      ]
+    },
+    {
+      "a": "ruusu",
+      "b": "bamat_jethro_nizza_2026",
+      "type": "osallistui",
+      "label": "poistui kesken Nizzan iltalähetyksen",
+      "date": "2026-10-31",
+      "level": "reported",
+      "src": [
+        "P103",
+        "P297"
+      ]
+    },
+    {
+      "a": "alisa_bamat",
+      "b": "bamat_jethro_nizza_2026",
+      "type": "osallistui",
+      "label": "jatkoi iltalähetystä Jethro Rostedtin kanssa",
+      "date": "2026-10-31",
+      "level": "reported",
+      "src": [
+        "P103",
+        "P297"
+      ]
+    },
+    {
+      "a": "ruusu",
+      "b": "tossut_matkoilla_2026",
+      "type": "striimasi",
+      "label": "Tossut matkoilla -nimellä alkaneet Nizzan rinnakkaislähetykset",
+      "date": "2026-11-01",
+      "level": "verified",
+      "src": [
+        "P299",
+        "P300"
+      ]
+    },
+    {
+      "a": "bamat",
+      "b": "bamat_nizza_2026",
+      "type": "sisaltaa",
+      "label": "Bämät matkoilla -Nizzan tuotanto jatkui marraskuun alkuun",
+      "date": "2026-11-04",
+      "level": "verified",
+      "src": [
+        "P298",
+        "P301"
+      ]
     }
   ],
   "sources": {
@@ -10610,6 +10714,31 @@
       "label": "Gekkonen 4.11.2026: Pulliksen ja KP2Timesin Pattayan-striimit",
       "url": "https://gekkonen.net/rappiostriimaaja-pullis-otti-ison-riskin-thaimaassa-seksiaanet-kuuluivat-suorassa-lahetyksessa/",
       "note": "Gekkosen mukaan Pullis ja KP2Times striimasivat Bangkokin jälkeen Pattayalla. 3.11.2026 Pulliksen lähetyksestä kuului intiimiin tilanteeseen viittaavia ääniä kameran näyttäessä muuta kuvaa. Juttu arvioi mahdollisia seuraamusriskejä, ei raportoi toteutuneista seuraamuksista."
+    },
+    "P297": {
+      "label": "Gekkonen 2.11.2026: Jethro Rostedt ja Ruusutossun poistuminen Bämät matkoilla -lähetyksestä",
+      "url": "https://gekkonen.net/jethro-rostedt-umpikannissa-suorassa-lahetyksessa-pinja-ruusutossu-lahti-latkimaan-kanninen-vanha-vtun-haiseva-laja/",
+      "note": "Gekkonen selostaa 31.10. Nizzan striimiä: Jethro humaltui, Ruusutossu poistui seurueesta ja Mea Ainasoja sekä Jethro jatkoivat lähetystä."
+    },
+    "P298": {
+      "label": "Kick / bamatmatkoilla: projektin oma striimikanava",
+      "url": "https://kick.com/bamatmatkoilla",
+      "note": "Kanavan oma profiili ja 4.11.2026 Day 8 -lähetys; lähetykset jatkuivat vielä Ruusutossun omien rinnakkaisstriimien aikana."
+    },
+    "P299": {
+      "label": "Kick / ruusutossu: Tossut matkoilla -kanavakuvaus 11/2026",
+      "url": "https://kick.com/ruusutossu",
+      "note": "Ruusutossun oma kanavakuvaus mainitsee 'TOSSUT MATKOILLA 1.11 - ???' sekä olevansa Ranskassa samassa kaupungissa kuin 'Jämät matkoilla'. Sivun otsikko voi muuttua uusien lähetysten mukana."
+    },
+    "P300": {
+      "label": "StatsForKick: Ruusutossun Nizzan-striimien otsikot 1.–4.11.2026",
+      "url": "https://statsforkick.com/c/ruusutossu?tab=streams",
+      "note": "1.11. Tossut matkoilla; 2.11. 'JAHDATAAN JÄMIÄ MATKOILLA'; 3.11. 'MENNÄÄN POLIISILLE'; 4.11. 'JÄMÄT MATKOILLA SOPIMUS LEAKED'. Nämä ovat lähetysotsikoita, eivät vahvistettuja poliisikäyntejä tai sopimuksen julkaisuja."
+    },
+    "P301": {
+      "label": "StatsForKick: Bämät matkoilla -kanavan Nizzan lähetyshistoria 10–11/2026",
+      "url": "https://statsforkick.com/c/bamatmatkoilla?tab=streams",
+      "note": "Bämät matkoilla -kanava lähetti 28.–31.10. sekä 1., 3. ja 4.11.2026; 4.11. käytettiin Day 8 -otsikkoa. Lähetystilastojen päivät/ajat ovat seurantapalvelusta."
     }
   },
   "date": "2026-11-01"
