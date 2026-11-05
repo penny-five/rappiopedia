@@ -24,6 +24,8 @@ Karttunen on lähettänyt Kickissä sisältöä muun muassa Tallinnasta ja yhtei
 
 [[sampe|SampeF2:n]] lähetysarkiston mukaan lokakuun 3.–5. päivänä 2026 striimattiin [[sampe_pullis_riika_2026|Riian-matkalta]] otsikolla, jossa olivat Pullis ja Jenniveri. Samassa arkistossa näkyy aiempi syyskuun Tallinnan-lähetys, jonka otsikossa mainittiin Pullis ja [[anton|Anton Koskela]]. Pulliksen omalla Kick-kanavalla julkaistiin myöhemmin Iippadaa ja Megistä koskeva Tallinnan-lähetys sekä Thaimaa-matkan IRL-lähetyksiä. [@P83] [@P93] [@P81]
 
+Marraskuussa 2026 Pullis teki [[kp_thailand_2026|Thaimaan-striimausmatkan]] [[kp|KP2Timesin]] kanssa. Kaksikko striimasi ensin Bangkokissa ja siirtyi sitten Pattayalle. Pulliksen [[pullis_pattaya_live_2026|3. marraskuuta lähettämässä Kick-striimissä]] kuului Gekkosen mukaan intiimiin tilanteeseen viittaavia ääniä, vaikka kamera ei näyttänyt itse tilannetta. [@P296]
+
 Useiden vuoden 2026 lähetysten otsikoissa esiintyy myös nettikasinoita vertailevan [[kasinok|Kasinokurjen]] !kasinokurki-komento. Samaa bränditunnistetta käyttävät myös muut striimaajat. [@P81] [@P83] [@P78] [@P81] [@P83]
 
 ## Yhteisstriimit Julian ja Megiksen kanssa
