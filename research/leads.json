@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-05",
   "description": "Agents' research backlog. This file is not imported by the public application.",
   "leads": [
     {
@@ -77,7 +77,7 @@
       "id": "bamat-pacttalks-2026",
       "title": "Bämät matkoilla -projekti ja PactTalks",
       "status": "in-progress",
-      "priority": "medium",
+      "priority": "high",
       "nodeIds": [
         "bamat",
         "talks",
@@ -85,7 +85,9 @@
         "alisa_bamat",
         "saini",
         "bamat_nizza_2026",
-        "jethro"
+        "jethro",
+        "bamat_jethro_nizza_2026",
+        "tossut_matkoilla_2026"
       ],
       "sourceIds": [
         "P64",
@@ -93,27 +95,42 @@
         "P66",
         "P67",
         "P103",
-        "P106"
+        "P106",
+        "P297",
+        "P298",
+        "P299",
+        "P300",
+        "P301"
       ],
-      "notes": "Lähetysarkistoissa näkyvät PactTalksin jaksot 97–98. Redditissä keskustellaan Ranskan-matkasta ja projektin somesisällöstä. 1.11.2026 Como raportoi Nizzan striimeistä ja mukana olevista Pinja Ruusutossusta, Mea Ainasojasta (ent. Alisa) ja Jethro Rostedtista. 31.10. lähetyksen kiista on raportoitu Como.fi:ssä; alkuperäinen VOD tulee vielä tarkistaa. Vahvistettu samaksi projektiksi; vanha alisa_bamat-ID säilytetty.",
+      "notes": "Lähetysarkistoissa näkyvät PactTalksin jaksot 97–98. Redditissä keskustellaan Ranskan-matkasta ja projektin somesisällöstä. 1.11.2026 Como raportoi Nizzan striimeistä ja mukana olevista Pinja Ruusutossusta, Mea Ainasojasta (ent. Alisa) ja Jethro Rostedtista. 31.10. lähetyksen kiista on raportoitu Como.fi:ssä; alkuperäinen VOD tulee vielä tarkistaa. Vahvistettu samaksi projektiksi; vanha alisa_bamat-ID säilytetty.\n5.11.2026: 31.10. Nizzan illasta on sekä Como 1.11. (P103) että Gekkonen 2.11. (P297). Ruusutossu poistui Jethron humaltumisen ja puheiden jälkeen; Jethro ja Mea jatkoivat lähetystä. Ruusutossu aloitti 1.11. omat Tossut matkoilla -nimiset Nizza-striimit; oma Kick-bio (P299) käyttää 'Jämät matkoilla' -nimeä toisesta tuotannosta. Ruusutossun lähetysarkistossa P300: 2.11. 'JAHDATAAN JÄMIÄ MATKOILLA', 3.11. 'MENNÄÄN POLIISILLE', 4.11. 'JÄMÄT MATKOILLA SOPIMUS LEAKED'. Otsikot eivät todista poliisikäyntiä tai sopimuksen julkaisemista. Bämät-kanava jatkoi 3.–4.11. (P298/P301), joten ohjelman lopettamista ei voi vahvistaa. Nizzan Jethro-ilta ja Ruusutossun soololähetykset on lisätty omiksi solmuiksi.",
       "questions": [
         "Ketkä ovat mukana alkuperäisissä jaksoissa?",
         "Mitä projektin omissa julkaisuissa kerrotaan matkasta?",
         "Mihin Sainin somejulkaisuja koskeva keskustelu perustuu?",
         "Mikä on Nizzan matkan jokaisen päiväkohtaisen Kick-VOD:n osoite ja mitä tapahtui 31.10. kuvatussa lähetyksessä?",
-        "Ketkä ovat Bämät matkoilla -ohjelman ilmoitetut tuottajat ja järjestäjät?"
+        "Ketkä ovat Bämät matkoilla -ohjelman ilmoitetut tuottajat ja järjestäjät?",
+        "Mitä Ruusutossu tarkoitti 3.11. MENNÄÄN POLIISILLE -otsikolla, ja mikä mahdollinen viranomaistapahtuma näkyy alkuperäisellä videolla?",
+        "Julkaisiko Ruusutossu 4.11. oikean sopimusasiakirjan vai oliko SOPIMUS LEAKED vain lähetysotsikko?",
+        "Ketkä esiintyivät Bämät matkoilla -kanavan 3.–4.11. lähetyksissä Ruusutossun striimatessa erikseen?",
+        "Jatkuiko Bämät matkoilla -projekti aiotun marraskuun 8. päivän jälkeen tai päättyikö se aiemmin?"
       ],
       "queries": [
         "\"Bämät matkoilla\" \"PactTalks\" 97 98",
-        "\"Bämät matkoilla\" Ruusutossu Alisa Ranska"
+        "\"Bämät matkoilla\" Ruusutossu Alisa Ranska",
+        "site:kick.com/ruusutossu/videos JÄMÄT MATKOILLA SOPIMUS LEAKED",
+        "site:reddit.com/r/snappisensuroimat0n Ruusutossu Bämät matkoilla 4.11.2026",
+        "site:gekkonen.net Ruusutossu Mea Nizza marraskuu 2026",
+        "site:kick.com/bamatmatkoilla/videos 3.11.2026 4.11.2026"
       ],
       "nextSteps": [
         "Katso jaksojen tallenteet.",
         "Etsi keskusteluissa mainittujen somesisältöjen alkuperäiset linkit.",
         "Hae Nizzan striimien alkuperäiset tallenteet ja vertaa Comon 1.11.2026 kuvausta videomateriaaliin.",
-        "Tarkista Mea Ainasojan oman julkisen tilin nimikäytäntö ja mahdolliset tuotannon tekijäkrediitit."
+        "Tarkista Mea Ainasojan oman julkisen tilin nimikäytäntö ja mahdolliset tuotannon tekijäkrediitit.",
+        "Avaa 1.–4.11. Ruusutossun ja Bämät-kanavan alkuperäiset Kick-VODit ja kirjaa sisällön tapahtumat aikaleimoineen.",
+        "Varmista sopimus- ja poliisiväitteet ensikäden materiaalista; älä päättele niitä otsikoista."
       ],
-      "updatedAt": "2026-11-01"
+      "updatedAt": "2026-11-05"
     },
     {
       "id": "upi-accident-2026",
@@ -690,18 +707,23 @@
         "bamat",
         "bamat_nizza_2026",
         "talks",
-        "jethro"
+        "jethro",
+        "bamat_jethro_nizza_2026",
+        "tossut_matkoilla_2026"
       ],
       "sourceIds": [
         "P103",
         "P106",
-        "P19"
+        "P19",
+        "P297",
+        "P300",
+        "P301"
       ],
       "sourceUrls": [
         "https://www.reddit.com/r/snappisensuroimaton/comments/16qtmto",
         "https://www.como.fi/uutiset/jethro-rostedt-umpihumalassa-suorassa-lahetyksessa-julkkisnainen-pakeni-paikalta-peppureikajuttujen-jalkeen/"
       ],
-      "notes": "1.11.2026: Mea on jo oma solmu ja artikkeli reality-skenessä. 24.9.2023 Reddit-ketju kertoo Alisa Ainasojan TikTok-taukoilmoituksesta ja seuraavan päivän paluusta suoratoistoon. Lokakuun 2026 Nizza-jaksot sekä 31.10. kiista kuvattu Comossa; alkuperäisiä VOD:eja ei tarkistettu.",
+      "notes": "1.11.2026: Mea on jo oma solmu ja artikkeli reality-skenessä. 24.9.2023 Reddit-ketju kertoo Alisa Ainasojan TikTok-taukoilmoituksesta ja seuraavan päivän paluusta suoratoistoon. Lokakuun 2026 Nizza-jaksot sekä 31.10. kiista kuvattu Comossa; alkuperäisiä VOD:eja ei tarkistettu.\n5.11.2026: Gekkonen selosti 31.10. Nizzan striimiä ja Bämät-kanavan lähetysarkisto näyttää sarjan jatkuneen 3.–4.11. Ruusutossun omalla kanavalla oli samaan aikaan eri ohjelmanimellä tehtyjä lähetyksiä. Mean ohjelmaesiintymiset näissä myöhemmissä jaksoissa kannattaa varmistaa itse tallenteista.",
       "questions": [
         "Milloin Ainasojan oma TikTok-liveura alkoi ja mitä vanhoista arkistoista voi varmentaa?",
         "Mikä Mean nykyinen julkinen käyttäjänimi ja oma kanava ovat?",
@@ -718,7 +740,7 @@
         "Tarkista Bämät matkoilla -projektin VODit ja nimetyt esiintyjät.",
         "Erottele Redditissä esitetyt kertomukset lähteistetystä tapahtumahistoriasta."
       ],
-      "updatedAt": "2026-11-01"
+      "updatedAt": "2026-11-05"
     },
     {
       "id": "julia-megis-pullis-2026-joint-streams",
@@ -1391,6 +1413,44 @@
         "Tarkista käyttäjän mahdollisesti jakamien Ylilauta-viestien sisältö ja ajankohdat; älä väitä lukeneesi robots-estettyä ketjua."
       ],
       "updatedAt": "2026-11-01"
+    },
+    {
+      "id": "pullis-kp-thaimaa-pattaya-2026",
+      "title": "Pulliksen ja KP2Timesin Thaimaan-striimit sekä 3.11. Pattayan-lähetys",
+      "status": "in-progress",
+      "priority": "high",
+      "nodeIds": [
+        "pullis",
+        "kp",
+        "kp_thailand_2026",
+        "pullis_pattaya_live_2026"
+      ],
+      "sourceIds": [
+        "P81",
+        "P143",
+        "P144",
+        "P296"
+      ],
+      "sourceUrls": [
+        "https://gekkonen.net/rappiostriimaaja-pullis-otti-ison-riskin-thaimaassa-seksiaanet-kuuluivat-suorassa-lahetyksessa/"
+      ],
+      "notes": "5.11.2026: Gekkonen raportoi 4.11. kaksikon striimanneen ensin Bangkokissa, sitten Pattayalla. Lehden mukaan Pulliksen 3.11. Kick-lähetyksestä kuului intiimiin tilanteeseen viittaavia ääniä mikrofonin jäätyä päälle. Lehti puhui mahdollisista Kick-sääntöjen ja Thaimaan lain riskeistä, mutta ei uutisoinut toteutuneista seuraamuksista. KP:n lokakuun Thaimaa-arkistot ovat aiemmin P143:ssa ja Pulliksen 31.10. Kick-VOD P81:ssä.",
+      "questions": [
+        "Löytyykö Pulliksen 3.11.2026 Pattayan-lähetyksen alkuperäinen Kick-VOD ja tarkka aikaleima?",
+        "Millä päivämäärällä Pullis ja KP2Times saapuivat Bangkokiin ja siirtyivät Pattayalle?",
+        "Onko tapauksella seurauksia Kick-tilille tai viranomaisten toiminnassa, vai jäikö se uutisoiduksi riskiksi?"
+      ],
+      "queries": [
+        "Pullis KP2Times Pattaya 3.11.2026 Kick VOD",
+        "site:reddit.com/r/snappisensuroimat0n Pullis KP Pattaya 3 marraskuuta 2026",
+        "site:gekkonen.net Pullis Pattaya poliisi Kick marraskuu 2026"
+      ],
+      "nextSteps": [
+        "Tarkista 3.11. Kickin alkuperäinen lähetys ja aikaleimat, jos VOD on julkaistu.",
+        "Hae mahdolliset uutisten jatko-osat, mutta älä tulkitse riskejä tuomioiksi tai porttikielloiksi.",
+        "Tarkenna päiväkohtainen matkareitti tallenteiden tai aikalaisjulkaisujen perusteella."
+      ],
+      "updatedAt": "2026-11-05"
     }
   ]
 }
