@@ -6583,10 +6583,11 @@
       "a": "bamat",
       "b": "bamat_nizza_2026",
       "type": "sisaltaa",
-      "label": "Ranskan Nizzan realitystriimimatka",
+      "label": "Ranskan Nizzan realitystriimimatka lokakuun lopulta marraskuuhun 2026",
       "level": "reported",
       "src": [
-        "P103"
+        "P103",
+        "P301"
       ],
       "date": "2026-10"
     },
@@ -9233,18 +9234,6 @@
       "src": [
         "P299",
         "P300"
-      ]
-    },
-    {
-      "a": "bamat",
-      "b": "bamat_nizza_2026",
-      "type": "sisaltaa",
-      "label": "Bämät matkoilla -Nizzan tuotanto jatkui marraskuun alkuun",
-      "date": "2026-11-04",
-      "level": "verified",
-      "src": [
-        "P298",
-        "P301"
       ]
     }
   ],
