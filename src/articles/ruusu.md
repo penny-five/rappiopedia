@@ -24,8 +24,10 @@ Syyskuussa 2026 Ruusutossu osallistui nettikasinon järjestämään somevideokuv
 
 Tapaus on kuvattu myös [[ruusu_freak_2026|kasinosomelähetyksen välikohtauksen artikkelissa]]. [@P102]
 
-## Bämät matkoilla Nizzassa lokakuussa 2026
+## Bämät matkoilla ja Tossut matkoilla Nizzassa 2026
 
-Lokakuun lopulla Ruusutossu matkusti Ranskan Nizzaan yhdessä [[alisa_bamat|Mea Ainasojan]], aiemmin Alisa-nimellä tunnetun somepersoonan, kanssa. He tekivät [[bamat|Bämät matkoilla]] -nimistä Kick-realityä, jonka lähetyksissä kaksikko suoritti tehtäviä ja matkusti kuvausryhmän mukana. Myös Jethro Rostedt osallistui ohjelman matkaosuuksiin. [@P103] [@P65]
+Lokakuun lopulla Ruusutossu matkusti Ranskan Nizzaan yhdessä [[alisa_bamat|Mea Ainasojan]], aiemmin Alisa-nimellä tunnetun somepersoonan, kanssa. He aloittivat [[bamat|Bämät matkoilla]] -nimisen Kick-realityn, jonka lähetyksissä kaksikko suoritti tehtäviä kuvausryhmän kanssa. Myös Jethro Rostedt osallistui [[bamat_nizza_2026|matkan]] ohjelmaan. [@P103] [@P301]
 
-Como kertoi 1. marraskuuta lähetyksissä ilmenneistä erimielisyyksistä Ruusutossun ja Ainasojan välillä. Lehden mukaan 31. lokakuuta esitetyssä ohjelmassa Jethron käyttäytymisestä syntyi lisäksi kiistaa, ja Ruusutossu poistui kuvausryhmän luota kesken illan. Matkasta on erillinen [[bamat_nizza_2026|Nizzan tapahtuma-artikkeli]]. [@P103]
+Como kertoi 1. marraskuuta Ruusutossun ja Mean välien kiristyneen. [[bamat_jethro_nizza_2026|Lokakuun 31. päivän lähetyksessä]] Jethron humaltuminen ja puheet johtivat Ruusutossun poistumiseen kesken illan. Hän arvosteli myöhemmin Jethron käytöstä, mistä myös Gekkonen uutisoi 2. marraskuuta. [@P103] [@P297]
+
+Marraskuun 1. päivänä Ruusutossu aloitti omalla Kick-kanavallaan [[tossut_matkoilla_2026|Tossut matkoilla -lähetykset]] Nizzasta. Hän käytti alkuperäisestä projektista *Jämät matkoilla* -nimitystä ja julkaisi 2.–4. marraskuuta omia lähetyksiä otsikoilla, joissa puhuttiin toisen seurueen jahtaamisesta, poliisille menemisestä ja sopimuksen vuotamisesta. Bämät matkoilla -kanava jatkoi samaan aikaan omia lähetyksiään. [@P299] [@P300] [@P301]
