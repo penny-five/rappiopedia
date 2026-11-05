@@ -14,4 +14,6 @@ Ainasojan ja Pinja Ruusutossun [[bamat|Bämät matkoilla]] -projekti esiteltiin 
 
 ## Nizzan matkan tapahtumat
 
-Como kertoi 1. marraskuuta 2026 ohjelmassa näkyneistä erimielisyyksistä. Lokakuun 31. päivän lähetyksessä Ruusutossu poistui kesken illan kuvausryhmän luota, minkä jälkeen Ainasoja ja Rostedt jatkoivat ohjelman tehtäviä yhdessä. [@P103]
+Como kertoi 1. marraskuuta 2026 ohjelmassa näkyneistä erimielisyyksistä. Lokakuun 31. päivän [[bamat_jethro_nizza_2026|iltalähetyksessä]] Ruusutossu poistui kesken illan kuvausryhmän luota, minkä jälkeen Ainasoja ja Rostedt jatkoivat lähetystä yhdessä. Gekkonen uutisoi samasta tilanteesta seuraavana päivänä ja kertoi Ruusutossun arvostelleen Jethron käytöstä. [@P103] [@P297]
+
+Ruusutossu alkoi 1. marraskuuta striimata erikseen [[tossut_matkoilla_2026|Tossut matkoilla -nimellä]], mutta Bämät matkoilla -kanavan lähetykset jatkuivat 3.–4. marraskuuta. [@P300] [@P301]
