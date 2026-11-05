@@ -4,9 +4,9 @@
 
 KP2Timesin [[kp_eurotrip_2026|kahdeksanpäiväinen subathon]] näkyy 8.–15. syyskuuta 2026 arkistoiduissa Kick-otsikoissa. Lähetykset etenivät Amsterdamista Pariisiin ja lopuksi paluumatkaan Suomeen. Lähetyksissä näkyivät myös `!goals`- ja `!kasinokurki`-komennot. [@P142]
 
-## Thaimaa lokakuussa 2026
+## Thaimaa loka–marraskuussa 2026
 
-Lokakuun 27.–31. päivän [[kp_thailand_2026|Thaimaan-lähetykset]] sisälsivät useiden tuntien IRL-striimejä. Marraskuun 1. päivän lähetysotsikossa mainittiin passin katoaminen, mutta otsikko ei osoita tapahtuman yksityiskohtia. [@P143] [@P144]
+Lokakuun 27.–31. päivän [[kp_thailand_2026|Thaimaan-lähetykset]] sisälsivät useiden tuntien IRL-striimejä. Marraskuun 1. päivän lähetysotsikossa mainittiin passin katoaminen. KP2Times teki matkan yhdessä [[pullis|Pulliksen]] kanssa; kaksikko lähetti sisältöä ensin Bangkokissa ja myöhemmin Pattayalla. Gekkonen uutisoi 4. marraskuuta Pulliksen [[pullis_pattaya_live_2026|3. marraskuuta lähetetystä Pattayan-striimistä]]. [@P143] [@P144] [@P296]
 
 ## PactHouse ja Kasinokurki
 
