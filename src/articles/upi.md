@@ -29,3 +29,9 @@ Kirkkonummen [[killinmaki_2026|Killinmäen retkipaikalla]] paloi 21. syyskuuta 2
 Maanantaina 5. lokakuuta 2026 Upi loukkaantui pudottuaan kerrostalon parvekkeelta Kirkkonummella. Samana iltana alueelle hälytettiin poliisi- ja pelastushenkilöstöä sekä lääkärihelikopteri. Lähetyksestä levinneissä tallenteissa Pulkkinen poistui kameran kuvasta parvekkeen suuntaan, mutta varsinaista putoamista ei tallenteissa nähty. [@P68] [@P69] [@P92]
 
 Uuno kertoi 6. lokakuuta lähdetietojensa perusteella Pulkkisen selvinneen hengissä ja joutuneen sairaalahoitoon. Seuraavana päivänä Länsi-Uudenmaan poliisi vahvisti Gekkoselle, ettei 5. lokakuuta olleessa viranomaistehtävässä kuollut ketään eikä asiassa epäilty rikosta. Poliisi ei kertonut putoamisen tarkempaa kulkua. [@P92] [@P91]
+
+## Toipuminen ja vetäytyminen striimauksesta
+
+Uuno haastatteli Pulkkista 9. marraskuuta 2026. Hän kertoi päässeensä jo kävelemään, mutta toipuvansa edelleen vakavasta onnettomuudesta. Pulkkisen mukaan kaulan ja selän alueelle tuli useita murtumia, joita oli hoidettu leikkauksessa ruuveilla. Hän sanoi, ettei muista itse putoamista: ensimmäinen muistikuva on hälytysajoneuvon kyydistä. [@P302]
+
+Pulkkinen kertoi olleensa ilman alkoholia sairaalasta päästyään. Samassa haastattelussa hän sanoi haluavansa jättää aiemman sekoilun ja striimaamisen taakseen sekä vetäytyä julkisuudesta. Hän kuvasi aiemman striimaajapersoonansa päättymistä sanoilla ”Upi kuoli tuossa tilanteessa” ja toivoi saavansa toipua rauhassa. Kyse oli hänen omasta kuvauksestaan elämänmuutoksesta. [@P302]
