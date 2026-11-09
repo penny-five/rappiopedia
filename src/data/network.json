@@ -348,7 +348,7 @@
       "name": "Upi / Arttu Pulkkinen",
       "group": "rappio",
       "cat": "person",
-      "note": "Arttu ”Upi” Pulkkinen on suomalainen striimaaja ja Ylen Kieksi-dokumentin esiintyjä. Häntä epäiltiin syyskuussa 2026 Killinmäen laavupalosta, ja lokakuussa hän loukkaantui parvekeonnettomuudessa.",
+      "note": "Arttu ”Upi” Pulkkinen on suomalainen rappiostriimaaja ja Ylen Kieksi-dokumentin esiintyjä. Häntä epäiltiin syyskuussa 2026 Killinmäen laavupalosta, ja lokakuussa hän loukkaantui parvekeonnettomuudessa. Marraskuussa hän kertoi aikovansa vetäytyä striimauksesta.",
       "x": 450,
       "y": 2620,
       "pos3": [
@@ -3377,7 +3377,7 @@
       "types": [
         "tapahtuma"
       ],
-      "note": "Upi loukkaantui parvekkeelta putoamisessa Kirkkonummella 5. lokakuuta 2026 kesken suoran lähetyksen.",
+      "note": "Upi loukkaantui parvekkeelta putoamisessa Kirkkonummella 5. lokakuuta 2026 kesken suoran lähetyksen. Marraskuussa hän kertoi edelleen toipuvansa ja aikovansa vetäytyä striimauksesta.",
       "pos3": [
         2610,
         -40,
@@ -8036,7 +8036,8 @@
         "P68",
         "P69",
         "P91",
-        "P92"
+        "P92",
+        "P302"
       ],
       "level": "reported"
     },
@@ -10728,7 +10729,12 @@
       "label": "StatsForKick: Bämät matkoilla -kanavan Nizzan lähetyshistoria 10–11/2026",
       "url": "https://statsforkick.com/c/bamatmatkoilla?tab=streams",
       "note": "Bämät matkoilla -kanava lähetti 28.–31.10. sekä 1., 3. ja 4.11.2026; 4.11. käytettiin Day 8 -otsikkoa. Lähetystilastojen päivät/ajat ovat seurantapalvelusta."
+    },
+    "P302": {
+      "label": "Uuno 9.11.2026: Upin haastattelu parvekeonnettomuuden jälkeen",
+      "url": "https://www.uuno.fi/uuno-loysi-parvekkeelta-pudonneen-rappiostriimaaja-upin-mulle-on-laitettu-ruuveja-moneen-paikkaan/",
+      "note": "Panu Hörkön ensikäden haastattelussa Pulkkinen kertoo 5.10.2026 tapahtuneen putoamisen jälkeisestä toipumisestaan, vammoistaan, muistikatkosta ja aikeestaan lopettaa striimaus. Tarkempaa toipumispaikkaa ei julkaista."
     }
   },
-  "date": "2026-11-01"
+  "date": "2026-11-09"
 }
