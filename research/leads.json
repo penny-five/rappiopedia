@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-09",
   "description": "Agents' research backlog. This file is not imported by the public application.",
   "leads": [
     {
@@ -139,16 +139,18 @@
       "priority": "medium",
       "nodeIds": [
         "upi",
-        "killinmaki_2026"
+        "killinmaki_2026",
+        "upi_parveke_2026"
       ],
       "sourceIds": [
         "P68",
         "P69",
         "P90",
         "P91",
-        "P92"
+        "P92",
+        "P302"
       ],
-      "notes": "Yle ja Uuno ovat uutisoineet Kirkkonummen onnettomuudesta. Tarkista mahdolliset täsmennykset aiemmin julkaistuihin tietoihin. 1.11.2026: Uuno raportoi Killinmäen 21.9.2026 palosta ja vahingontekotutkinnasta. Gekkonen sai poliisilta 7.10. tiedon: 5.10. parveketilanteessa ei kuollut ketään eikä epäilty rikosta. Kyse eri tutkinta-asiasta.",
+      "notes": "Yle ja Uuno ovat uutisoineet Kirkkonummen onnettomuudesta. Tarkista mahdolliset täsmennykset aiemmin julkaistuihin tietoihin. 1.11.2026: Uuno raportoi Killinmäen 21.9.2026 palosta ja vahingontekotutkinnasta. Gekkonen sai poliisilta 7.10. tiedon: 5.10. parveketilanteessa ei kuollut ketään eikä epäilty rikosta. Kyse eri tutkinta-asiasta. 9.11.2026: Uuno julkaisi Panu Hörkön tekemän Pulkkisen haastattelun (P302). Pulkkinen kertoi pystyvänsä kävelemään, mutta toipuvansa edelleen; hänen mukaansa kaulan ja selän alueella oli murtumia ja leikkauksessa asennettuja ruuveja. Hän ei muista putoamista ja sanoi aikovansa lopettaa striimaamisen sekä vetäytyä julkisuudesta. Haastattelu ei selvitä putoamisen syytä. Toipumispaikan yksilöintiä ei jatkoselvityksessä tarvita.",
       "questions": [
         "Mitä tapahtuma-ajasta ja kulusta on vahvistettu?",
         "Onko lehdissä myöhempiä korjauksia?",
@@ -161,10 +163,9 @@
       "nextSteps": [
         "Vertaa julkaistujen juttujen ajankohdat ja väitteet.",
         "Päivitä artikkelin onnettomuusosiota, jos lähteet tarkentuvat.",
-        "Etsi myöhemmät poliisin vahingontekotutkintaa koskevat tiedotteet ja mahdollinen päätös.",
-        "Selvitä, onko Kirkkonummen onnettomuudesta myöhempi ensikäden haastattelu."
+        "Etsi myöhemmät poliisin vahingontekotutkintaa koskevat tiedotteet ja mahdollinen päätös."
       ],
-      "updatedAt": "2026-11-01"
+      "updatedAt": "2026-11-09"
     },
     {
       "id": "sampe-oct2026-joint-streams",
