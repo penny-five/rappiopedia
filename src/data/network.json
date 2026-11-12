@@ -4181,6 +4181,22 @@
         -100
       ],
       "featured": false
+    },
+    {
+      "id": "nummela_freak_2026",
+      "name": "Friikki-Paavon ja järjestyksenvalvojan välikohtaus Nummelassa 6.11.2026",
+      "group": "rap",
+      "cat": "event",
+      "types": [
+        "tapahtuma"
+      ],
+      "note": "Nummelassa Slikin keikan yhteydessä 6.11.2026 järjestyksenvalvoja potki yhtä neljästä Friikki-Paavoksi pukeutuneesta alaikäisestä. Poliisi tutkii järjestyksenvalvojaa pahoinpitelystä, ja syyttäjä arvioi poliisin toimintaa.",
+      "pos3": [
+        2020,
+        -540,
+        -1770
+      ],
+      "featured": false
     }
   ],
   "edges": [
@@ -9236,6 +9252,42 @@
         "P299",
         "P300"
       ]
+    },
+    {
+      "a": "freak",
+      "b": "nummela_freak_2026",
+      "type": "nakyi",
+      "label": "neljä Friikki-Paavoksi pukeutunutta alaikäistä oli keikkapaikalla",
+      "level": "reported",
+      "src": [
+        "P303",
+        "P304"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "a": "sliki",
+      "b": "nummela_freak_2026",
+      "type": "esiintyi",
+      "label": "X Lounge Barin keikka, jonka edustalla välikohtaus sattui",
+      "level": "reported",
+      "src": [
+        "P303",
+        "P306"
+      ],
+      "date": "2026-11-06"
+    },
+    {
+      "a": "keikkah",
+      "b": "nummela_freak_2026",
+      "type": "sisaltaa",
+      "label": "Nummelan keikan edustan välikohtaus",
+      "level": "reported",
+      "src": [
+        "P303",
+        "P305"
+      ],
+      "date": "2026-11-06"
     }
   ],
   "sources": {
@@ -10734,6 +10786,26 @@
       "label": "Uuno 9.11.2026: Upin haastattelu parvekeonnettomuuden jälkeen",
       "url": "https://www.uuno.fi/uuno-loysi-parvekkeelta-pudonneen-rappiostriimaaja-upin-mulle-on-laitettu-ruuveja-moneen-paikkaan/",
       "note": "Panu Hörkön ensikäden haastattelussa Pulkkinen kertoo 5.10.2026 tapahtuneen putoamisen jälkeisestä toipumisestaan, vammoistaan, muistikatkosta ja aikeestaan lopettaa striimaus. Tarkempaa toipumispaikkaa ei julkaista."
+    },
+    "P303": {
+      "label": "Uuno 9.11.2026: Friikki-Paavon ja järjestyksenvalvojan välikohtaus Nummelassa",
+      "url": "https://www.uuno.fi/kohuvideo-jarjestyksenvalvoja-potkaisi-alaikaista-friikki-paavoa-jalkovaliin-poliisi-epailee-nyt-rikoksesta/",
+      "note": "6.11.2026 Nummelassa neljä alaikäistä Freakbob-asuihin pukeutunutta nuorta pyrki häiritsemään Slikin keikkaa. Video näyttää järjestyksenvalvojan potkivan yhtä nuorista kahdesti; poliisi aloitti esitutkinnan."
+    },
+    "P304": {
+      "label": "Länsi-Uudenmaan poliisi 9.11.2026: järjestyksenvalvojaa epäillään pahoinpitelystä",
+      "url": "https://poliisi.fi/-/poliisi-epailee-jarjestyksenvalvojaa-pahoinpitelysta-syyttaja-arvioi-poliisin-toimintaa-samassa-tilanteessa",
+      "note": "Poliisin tiedotteen mukaan neljä alaikäistä naamiaisasuista henkilöä poistettiin 6.11.2026 tapahtumapaikalta Nummelassa; järjestyksenvalvojaa epäillään pahoinpitelystä, ja poliisirikosyksikkö tekee poliisin toiminnasta esiselvityksen."
+    },
+    "P305": {
+      "label": "Yle 10.11.2026: Freakbob-asut Slikin rap-keikoilla ja Nummelan tapaus",
+      "url": "https://yle.fi/a/74-20256068",
+      "note": "Yle taustoittaa syksyn 2026 häiriöitä Kotkassa, Oulussa ja muilla paikkakunnilla sekä Nummelan tapausta. Ketola kiistää osallisuutensa myöhempien keikkahäiriöiden järjestämiseen."
+    },
+    "P306": {
+      "label": "Biletti: SLIKI @ X Lounge Bar Nummela 6.11.2026",
+      "url": "https://biletti.fi/en/e/sliki-at-x-lounge-bar-nummela",
+      "note": "Tapahtuman lipunmyynti-ilmoitus vahvistaa Slikin esiintymisen X Lounge Barissa Vihdin Nummelassa 6.11.2026; sisältää myös artistin musiikkiuran perustietoja."
     }
   },
   "date": "2026-11-09"

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09",
+  "updatedAt": "2026-11-12",
   "description": "Agents' research backlog. This file is not imported by the public application.",
   "leads": [
     {
@@ -1452,6 +1452,40 @@
         "Tarkenna päiväkohtainen matkareitti tallenteiden tai aikalaisjulkaisujen perusteella."
       ],
       "updatedAt": "2026-11-05"
+    },
+    {
+      "id": "nummela-freakbob-2026",
+      "title": "Nummelan Friikki-Paavo-välikohtauksen rikostutkinnan eteneminen",
+      "priority": "medium",
+      "status": "in-progress",
+      "nodeIds": [
+        "nummela_freak_2026",
+        "freak",
+        "sliki",
+        "keikkah"
+      ],
+      "sourceIds": [
+        "P303",
+        "P304",
+        "P305",
+        "P306"
+      ],
+      "sourceUrls": [],
+      "notes": "Länsi-Uudenmaan poliisi aloitti 9.11.2026 esitutkinnan järjestyksenvalvojan epäillystä pahoinpitelystä 6.11.2026 Nummelassa. Poliisirikosyksikkö tekee erillisen esiselvityksen poliisien toiminnasta. Asian myöhempi tutkinta- tai syyteratkaisu on avoin. Freakbob on useiden henkilöiden käyttämä asu, eikä yksittäisten alaikäisten henkilöllisyyttä tule päätellä aiemmista esiintymisistä.",
+      "questions": [
+        "Onko järjestyksenvalvojaa koskevasta esitutkinnasta tehty syyte- tai muu päätös?",
+        "Mikä oli poliisirikosyksikön esiselvityksen tulos?"
+      ],
+      "queries": [
+        "Nummela Freakbob järjestyksenvalvoja pahoinpitely syyte 2026",
+        "Länsi-Uudenmaan poliisi 6.11.2026 Nummela jatkotiedote",
+        "valtakunnansyyttäjä Nummela poliisirikosyksikkö Freakbob"
+      ],
+      "nextSteps": [
+        "Tarkista poliisin ja syyttäjälaitoksen mahdolliset jatkotiedotteet.",
+        "Päivitä tapahtuma-artikkeli, jos tutkinnasta tai oikeuskäsittelystä tulee vahvistettu uusi tieto."
+      ],
+      "updatedAt": "2026-11-12"
     }
   ]
 }
